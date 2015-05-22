@@ -6,7 +6,7 @@ There are a variety of reasons you might not get good quality output from Tesser
 
 ## DPI
 
-Tesseract works best with text using a DPI of at least 300 dpi, so it may be beneficial to resize images. For more information see [the FAQ](FAQ#Is_there_a_Minimum_Text_Size?_%28It_won%27t_read_screen_text!%29).
+Tesseract works best with text using a DPI of at least 300 dpi, so it may be beneficial to resize images. For more information see [the FAQ](FAQ#is-there-a-minimum-text-size-it-wont-read-screen-text).
 
 ## Image processing
 
@@ -55,7 +55,7 @@ Disabling the dictionaries Tesseract uses should increase recognition if most of
 
 It is also possible to add words to the word list Tesseract uses to help recognition, or to add common character patterns, which can further help to improve accuracy if you have a good idea of the sort of input you expect. This is explained in more detail in the [Tesseract manual](http://tesseract-ocr.googlecode.com/svn-history/trunk/doc/tesseract.1.html#_config_files_and_augmenting_with_user_data).
 
-If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](ControlParams). See the [FAQ for an example](https://code.google.com/p/tesseract-ocr/wiki/FAQ#How_do_I_recognize_only_digits?).
+If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](ControlParams). See the [FAQ for an example](FAQ#how-do-i-recognize-only-digits).
 
 
 ## Examples
