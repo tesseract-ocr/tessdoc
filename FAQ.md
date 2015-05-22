@@ -84,7 +84,7 @@ If you see this error, than you have problem with leptonica installation - e.g. 
 
 # Can't open eng.unicharset?
 
-You don't have language training data installed. Read the [ReadMe](http://code.google.com/p/tesseract-ocr/wiki/ReadMe) wiki page.
+You don't have language training data installed. Read the [ReadMe](https://github.com/tesseract-ocr/tesseract/blob/master/README.md) wiki page.
 
 # leptonica library missing
 
@@ -176,7 +176,7 @@ sudo dpkg -i *.deb
 
 # How do I Edit Box files used in training?
 
-There are a variety of programs to help with this, see [the AddOns page](http://code.google.com/p/tesseract-ocr/wiki/AddOns#Tesseract_box_editors_and_traning_tools).
+There are a variety of programs to help with this, see [the AddOns page](AddOns#Tesseract_box_editors_and_traning_tools).
 
 # Utf8 buffer too big, size=xx (Error during training)
 
@@ -278,7 +278,7 @@ To go the opposite way and turn off the dictionary, you can either delete the ap
 
 # What are configs and how can I have more?
 
-Config is an overloaded word in tesseract. One meaning is a file of [control parameters](http://code.google.com/p/tesseract-ocr/wiki/ControlParams) used for debugging or modifying its behaviour, such as tessdata/configs/segdemo.
+Config is an overloaded word in tesseract. One meaning is a file of [control parameters](ControlParams) used for debugging or modifying its behaviour, such as tessdata/configs/segdemo.
 
 The other meaning is used in training and in the classifier:
 
@@ -382,7 +382,7 @@ See suggestions in [issue 42](http://code.google.com/p/tesseract-ocr/issues/deta
 
 ## Delphi wrapper for tessdll.dll
 
-Have a look  at [Addon Wiki](http://code.google.com/p/tesseract-ocr/wiki/AddOns) or see comments in [issue 88](http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
+Have a look  at [Addon Wiki](AddOns) or see comments in [issue 88](http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
 
 ## In-complete OCR result
 
@@ -406,7 +406,7 @@ See suggestions how to improve input image in [issue 488](http://code.google.com
 
 ## error message: Font id = -1/0, class id = 1/105 on sample 0
 
-This means that font name is not in font\_properties or font\_properties does not meet [requirements](http://code.google.com/p/tesseract-ocr/wiki/TrainingTesseract3#Requirements_for_text_input_files)
+This means that font name is not in font\_properties or font\_properties does not meet [requirements](TrainingTesseract#Requirements_for_text_input_files)
 
 # Can I use Tesseract for handwriting recognition?
 

@@ -69,8 +69,8 @@ Tesseract has been trained for many languages, check for your language on the [D
 Tesseract can also be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](3rdParty) page for a sample of what has been done with it.
 
 Also, it's free software, so if you want to pitch in and help, please do!
-If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](http://code.google.com/p/tesseract-ocr/issues/list)
+If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues)
 
 # Support
 
-First read the [Wiki](http://code.google.com/p/tesseract-ocr/w/list), particularly the [FAQ](FAQ) to see if your problem is addressed there. If not, search the the [Tesseract user forum](http://groups.google.com/group/tesseract-ocr) or the [Tesseract developer forum](http://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.
+First read the [Wiki](https://github.com/tesseract-ocr/tesseract/wiki), particularly the [FAQ](FAQ) to see if your problem is addressed there. If not, search the the [Tesseract user forum](http://groups.google.com/group/tesseract-ocr) or the [Tesseract developer forum](http://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.
