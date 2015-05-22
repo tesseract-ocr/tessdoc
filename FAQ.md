@@ -228,11 +228,11 @@ There is a minimum text size for reasonable accuracy. You have to consider resol
 
 # Why is the output is empty or of poor quality?
 
-Read the [ImproveQuality](ImproveQuality.md) wiki page.
+Read the [ImproveQuality](ImproveQuality) wiki page.
 
 # How do I generate the language data files?
 
-Read the [TrainingTesseract](TrainingTesseract.md) wiki page.
+Read the [TrainingTesseract](TrainingTesseract) wiki page.
 
 # How do I unpack or alter existing language data files?
 
@@ -244,13 +244,13 @@ Use the combine\_tessdata command. See the [combine\_tessdata manual page](http:
 
 Easy: Replace `tessdata/eng.user-words` with your own word list, in the same format - UTF8 text, one word per line.
 
-More difficult, but better for a large dictionary: Replace `tessdata/eng.word-dawg` with one created from your own word list, using wordlist2dawg. See the TrainingTesseract wiki page for details.
+More difficult, but better for a large dictionary: Replace `tessdata/eng.word-dawg` with one created from your own word list, using wordlist2dawg. See the [TrainingTesseract](TrainingTesseract) wiki page for details.
 
 ## Tesseract 3
 
 To add an extra word list, create a .user-words file as explained in [tesseract(1)](http://tesseract-ocr.googlecode.com/svn/trunk/doc/tesseract.1.html#_config_files_and_augmenting_with_user_data).
 
-If you want to replace the whole dictionary, you will need to unpack the .traineddata file, create a new word-dawg file, and then pack the files back into a .traineddata file. See TrainingTesseract3 for more details.
+If you want to replace the whole dictionary, you will need to unpack the .traineddata file, create a new word-dawg file, and then pack the files back into a .traineddata file. See [TrainingTesseract](TrainingTesseract) for more details.
 
 
 # wordlist2dawg doesn't work!

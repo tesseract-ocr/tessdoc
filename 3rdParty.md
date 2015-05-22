@@ -4,7 +4,7 @@
 
 | **Name** | **Linux** | **Mac** | **Windows** | **License** | **Description** |
 |:---------|:----------|:--------|:------------|:------------|:----------------|
-|[Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           |  [GPL APLGv3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and OCR'ing PDF files |
+| [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GPL APLGv3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and OCR'ing PDF files |
 | [YAGF](http://symmetrica.net/cuneiform-linux/yagf-en.html) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
 | [gImageReader](http://sourceforge.net/projects/gimagereader/) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
 | [SunnyPage OCR](http://www.sunnypage.ge/en/) |           |         | X           | Proprietary | A GUI frontend for Tesseract OCR engine with automatic adjustment of image brightness, image processing and PDF support.|
