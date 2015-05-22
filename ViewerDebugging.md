@@ -39,7 +39,7 @@ tesseract phototest.tif test1 segdemo inter
 
 You should see something like this:
 
-![http://lh6.ggpht.com/_HR0CYjyaJ_s/S_7LOuetvbI/AAAAAAAAB7k/MMH2OiwiPfA/s800/tesseract_debug.png](http://lh6.ggpht.com/_HR0CYjyaJ_s/S_7LOuetvbI/AAAAAAAAB7k/MMH2OiwiPfA/s800/tesseract_debug.png)
+![tesseract_debug](https://github.com/tesseract-ocr/tesseract/wiki/tesseract_debug.png)
 
 The words found in the image are represented as blue rectangles. There are 3 menus:
 
