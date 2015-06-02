@@ -58,7 +58,13 @@ Tesseract also includes a hOCR mode, which produces a special HTML file with the
   tesseract myscan.png out hocr
 ```
 
-More information about the various options is available in the [Tesseract manpage](http://tesseract-ocr.googlecode.com/svn/trunk/doc/tesseract.1.html).
+You can create searchable pdf directly from tesseract (>=3.03):
+
+```
+  tesseract myscan.png out pdf
+```
+
+More information about the various options is available in the [Tesseract manpage](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc).
 
 # Other Languages
 
