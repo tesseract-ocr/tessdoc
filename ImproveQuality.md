@@ -53,7 +53,7 @@ By default Tesseract is optimised to recognise sentences of words. If you're try
 
 Disabling the dictionaries Tesseract uses should increase recognition if most of your text isn't dictionary words. They can be disabled by setting the both of the [configuration variables](ControlParams) `load_system_dawg` and `load_freq_dawg` to `false`.
 
-It is also possible to add words to the word list Tesseract uses to help recognition, or to add common character patterns, which can further help to improve accuracy if you have a good idea of the sort of input you expect. This is explained in more detail in the [Tesseract manual](http://tesseract-ocr.googlecode.com/svn-history/trunk/doc/tesseract.1.html#_config_files_and_augmenting_with_user_data).
+It is also possible to add words to the word list Tesseract uses to help recognition, or to add common character patterns, which can further help to improve accuracy if you have a good idea of the sort of input you expect. This is explained in more detail in the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
 If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](ControlParams). See the [FAQ for an example](FAQ#how-do-i-recognize-only-digits).
 

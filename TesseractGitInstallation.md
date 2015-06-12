@@ -15,7 +15,7 @@ On Debian or Ubuntu, you can probably do that with:
 Afterwards, the steps for installing the git version of Tesseract, do this:
 
 ```
-    svn checkout http://tesseract-ocr.googlecode.com/svn/trunk/ tesseract-ocr
+    git clone https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
     cd tesseract-ocr
     ./autogen.sh
     ./configure

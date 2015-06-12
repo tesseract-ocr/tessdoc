@@ -27,17 +27,17 @@ Spain July 25, 2009. https://dl.acm.org/citation.cfm?id=1577804
 ## Manual Pages
 
 There are manual pages for tesseract tools available in svn:
-  * [ambiguous\_words](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/ambiguous_words.1.html)
-  * [cntraining](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/cntraining.1.html)
-  * [combine\_tessdata](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/combine_tessdata.1.html)
-  * [dawg2wordlist](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/dawg2wordlist.1.html)
-  * [mftraining](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/mftraining.1.html)
-  * [shapeclustering](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/shapeclustering.1.html)
-  * [tesseract](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/tesseract.1.html)
-  * [unicharset\_extractor](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/unicharset_extractor.1.html)
-  * [wordlist2dawg](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/wordlist2dawg.1.html)
+  * [ambiguous\_words](https://github.com/tesseract-ocr/tesseract/blob/master/doc/ambiguous_words.1.asc)
+  * [cntraining](https://github.com/tesseract-ocr/tesseract/blob/master/doc/cntraining.1.asc)
+  * [combine\_tessdata](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc)
+  * [dawg2wordlist](https://github.com/tesseract-ocr/tesseract/blob/master/doc/dawg2wordlist.1.asc)
+  * [mftraining](https://github.com/tesseract-ocr/tesseract/blob/master/doc/mftraining.1.asc)
+  * [shapeclustering](https://github.com/tesseract-ocr/tesseract/blob/master/doc/shapeclustering.1.asc)
+  * [tesseract](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
+  * [unicharset\_extractor](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset_extractor.1.asc)
+  * [wordlist2dawg](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
 
-plus description of [unicharambigs](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/unicharambigs.5.html) and [unicharset](http://tesseract-ocr.googlecode.com/svn-history/r719/trunk/doc/unicharset.5.html) files
+plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc) files
 
 ## Other
 

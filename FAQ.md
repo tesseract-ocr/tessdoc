@@ -220,7 +220,7 @@ Read the [TrainingTesseract](TrainingTesseract) wiki page.
 
 ## How do I unpack or alter existing language data files?
 
-Use the combine\_tessdata command. See the [combine\_tessdata manual page](http://tesseract-ocr.googlecode.com/svn-history/trunk/doc/combine_tessdata.1.html) for details on its usage.
+Use the combine\_tessdata command. See the [combine\_tessdata manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) for details on its usage.
 
 ## How do I provide my own dictionary?
 
@@ -232,7 +232,7 @@ More difficult, but better for a large dictionary: Replace `tessdata/eng.word-da
 
 ### Tesseract 3
 
-To add an extra word list, create a .user-words file as explained in [tesseract(1)](http://tesseract-ocr.googlecode.com/svn/trunk/doc/tesseract.1.html#_config_files_and_augmenting_with_user_data).
+To add an extra word list, create a .user-words file as explained in [tesseract(1)](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
 If you want to replace the whole dictionary, you will need to unpack the .traineddata file, create a new word-dawg file, and then pack the files back into a .traineddata file. See [TrainingTesseract](TrainingTesseract) for more details.
 
@@ -354,7 +354,7 @@ tesseract phototest.tif phototest quiet
 
 ## How can I get the coordinates and confidence of each character?
 
-There are two options. If you would rather not get into programming, you can use Tesseract's hocr output format (read the [Tesseract manual page](http://tesseract-ocr.googlecode.com/svn-history/trunk/doc/tesseract.1.html) for details). If you are comfortable programming, use the [Tesseract API](http://code.google.com/p/tesseract-ocr/source/browse/trunk/api/baseapi.h).
+There are two options. If you would rather not get into programming, you can use Tesseract's hocr output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](http://code.google.com/p/tesseract-ocr/source/browse/trunk/api/baseapi.h).
 
 
 ## Issues with older versions of tesseract
