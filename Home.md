@@ -35,18 +35,24 @@ If you want to use another language, [download the appropriate training data](ht
 Install and update MSYS2. 
 ( http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/ )
 
-Open an MSYS2 command prompt (or the 32-bit or 64-bit command prompts if you plan on building 32-bit or 64-bit things) from the start menu entries. Install {32-bit,64-bit} MinGW-w64 GCC:
+Open an MSYS2 command prompt (or the 32-bit or 64-bit command prompts if you plan on building 32-bit or 64-bit things) from the start menu entries. 
+
+Install {32-bit,64-bit} MinGW-w64 GCC:
 
 pacman -S mingw-w64-{i686,x86_64}-gcc
+
 Install tesseract-OCR:
 
 pacman -S mingw-w64-{i686,x86_64}-tesseract-ocr
+
 and optionally the data files:
 
 pacman -S mingw-w64-tesseract-ocr-osd mingw-w64-{i686,x86_64}-tesseract-ocr-eng
+
 And you're done. Of course, you can still compile the various dependencies yourself, but why bother? If you really want to, you can start from the build scripts for the packages you can install in MSYS2, which are located here:
 
 https://github.com/Alexpux/MINGW-packages
+
 Just open the PKGBUILD files and you can see the build steps required. Note that all these scripts assume the dependencies have been installed within MSYS2.
 
 Also note that the installed packages and compilers are all independent of MSYS2 as you'd expect: you can use it only as a tool to keep your development tree up to date, and build from any other Windows environment.
