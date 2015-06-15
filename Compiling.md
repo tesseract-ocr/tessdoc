@@ -22,9 +22,13 @@ sudo apt-get install libcairo2-dev   # (if you plan to make the training tools)
 
 You also need to install [Leptonica](http://www.leptonica.org/). There is an apt-get package libleptonica-dev, **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
 
-**3.01 requires at least v1.67 of Leptonica.** 3.02 requires at least v1.69 of Leptonica. (Both available in Ubuntu 12.04 Precise Pangolin.)
-**3.03 requires at least v1.70 of Leptonica. (Both available in Ubuntu 14.04 Trusty Tahr.)**
-**3.04 requires at least v1.71 of Leptonica.**
+** 3.01 requires at least v1.67 of Leptonica.
+
+** 3.02 requires at least v1.69 of Leptonica. (Both available in Ubuntu 12.04 Precise Pangolin.)
+
+** 3.03 requires at least v1.70 of Leptonica. (Both available in Ubuntu 14.04 Trusty Tahr.)**
+
+** 3.04 requires at least v1.71 of Leptonica.**
 
 The sources are at http://www.leptonica.org/. The instructions at [Leptonica README](http://www.leptonica.org/source/README.html) are clear, but basically it is as described in [Compilation](#Compilation) below.
 
