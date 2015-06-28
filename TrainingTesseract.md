@@ -62,7 +62,7 @@ The traineddata file is simply a concatenation of the input files, with a table 
 ## Requirements for text input files
 
 Text input files (lang.config, lang.unicharambigs, font\_properties, box files, wordlists for dictionaries...) need to meet these criteria:
-  * ASCII or UTF-8 encoding without [BOM](http://en.wikipedia.org/wiki/Byte_order_mark/)
+  * ASCII or UTF-8 encoding without [BOM](http://en.wikipedia.org/wiki/Byte_order_mark)
   * Unix [end-of-line marker](http://en.wikipedia.org/wiki/Newline) ('\n')
   * The last character must be an end of line marker ('\n'). Some text editors will show this as an empty line at the end of file. If you omit this you will get an error message containing "last\_char == '\n':Error:Assert failed..."
 
