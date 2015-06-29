@@ -37,6 +37,7 @@
     * [tesseract-android-tools](http://code.google.com/p/tesseract-android-tools/): set of Android APIs
     * [Mobile OCR](http://code.google.com/p/mobileocr/): The goal of Mobile OCR is to create an application for the Android platform that will recognize text from an image taken by the phone's camera. The application will be fully accessible to low vision and blind users
   * _iOS_:
+    * [Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS) - Tesseract OCR iOS is a Framework for iOS7+, compiled also for armv7s and arm64.
     * [OCR-iOS-Example](https://github.com/robmathews/OCR-iOS-Example) - a simple example of how to do optical character recognition (OCR) on iOS.
     * [Tesseract-iPhone-Demo ](https://github.com/nolanbrown/Tesseract-iPhone-Demo) - example based on tesseract 2.04.
   * _More OS_:
