@@ -42,6 +42,7 @@ plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/b
 ## Other
 
   * [Ray Smith Publications](http://research.google.com/pubs/author4479.html)
+  * Video [PhotoTechEDU Day 11: Document Image Analysis with Leptonica](https://www.youtube.com/watch?v=pCZtGRUa_7s) 
   * [The extraction and recognition of text from multimedia document images](http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.380162) by Smith, R.W. (Ph.D. thesis), 1987
   * [Training Tesseract for Ancient Greek OCR](http://eutypon.gr/eutypon/pdf/e2012-29/e29-a01.pdf) by Nick White
   * [Shirorekha Chopping Integrated Tesseract OCR Engine for Enhanced Hindi Language Recognition](http://research.ijcaonline.org/volume39/number6/pxc3877076.pdf) by Nitin Mishra, C. Patvardhan, C. Vasantha Lakshmi, Sarika Singh
