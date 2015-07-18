@@ -41,13 +41,13 @@ parallel "tesseract {} {} -l eng hocr; hocr2pdf -i {} -n -o {}.pdf < {}.html" ::
 
 ## Windows: tesseract closes automatically right after launching
 
-Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need program with a graphical interface there are several available from the [3rdParty](http://code.google.com/p/tesseract-ocr/wiki/3rdParty#GUI) page.
+Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface there are several available from the [3rdParty](http://code.google.com/p/tesseract-ocr/wiki/3rdParty#GUI) page.
 
 ## What output formats can Tesseract produce?
 
-Tesseract's standard output is plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
+Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
 
-With the configfile 'hocr' tesseract will produce xhtml output compliant with [hocr specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if operation system use other than utf-8 encoding for filesystem names - see [issue 809](http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
+With the configfile 'hocr' tesseract will produce xhtml output compliant with the [hocr specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
 
 ## libtesseract.so.3: cannot open shared object file
 
@@ -55,11 +55,11 @@ Run 'sudo ldconfig' after 'sudo make install'. See [issue 621](http://code.googl
 
 ## Tesseract does not work
 
-Please ensure there is only one installation of tesseract e.g. there are reported problems(in case of shared build) if tesseract 3.01 and 3.02 are installed on the same computer. See e.g. [issue 793](http://code.google.com/p/tesseract-ocr/issues/detail?id=793)
+Please ensure there is only one installation of tesseract e.g. there are reported problems (in case of shared build) if tesseract 3.01 and 3.02 are installed on the same computer. See e.g. [issue 793](http://code.google.com/p/tesseract-ocr/issues/detail?id=793)
 
 ## Error in pixReadStream:
 
-If you see this error, than you have problem with leptonica installation - e.g. there is missing support for your image format. Usually needed image library was not installed properly during leptonica build or there is some configure problem within leptonica.
+If you see this error, than you have a problem with your leptonica installation - e.g. there is missing support for your image format. Usually this means the relevant image library was not installed properly during leptonica build or there is some configure problem within leptonica.
 > Please check issues
 [340](http://code.google.com/p/tesseract-ocr/issues/detail?id=340), [391](http://code.google.com/p/tesseract-ocr/issues/detail?id=391) and [443](http://code.google.com/p/tesseract-ocr/issues/detail?id=443)
 
@@ -91,14 +91,14 @@ read_tif_image:Error:Illegal image format:Compression
 Windows (Visual C++):
 Libtiff support can be added in either VC++6 or VC++Express with the following:
 
-Goto the [Windows download for libtiff](http://gnuwin32.sourceforge.net/packages/tiff.htm) and follow these steps:
+Go to the [Windows download for libtiff](http://gnuwin32.sourceforge.net/packages/tiff.htm) and follow these steps:
 ```
 Download and run the setup program.
 Add the paths for include and library files in tools/options/directories
 Add HAVE_LIBTIFF to the preprocessor definitions.
 Add libtiff.lib to the list of libraries.
 Rebuild.
-Make libtiff3.dll be in your path somewhere.
+Put libtiff3.dll be in your path somewhere.
 This is done by control panel/system/advanced/environment variables and adding c:/program files/gnuwin32/bin to PATH.
 Keep your fingers crossed...
 ```
@@ -192,7 +192,7 @@ tesseract imagename outputbase digits
 
 ## How do I add just one character or one font to my favourite language, without having to retrain from scratch?
 
-There not possible to add just one character or font. You need to retrain from scratch. See the TrainingTesseract wiki.
+It is not possible to add just one character or font. You need to retrain from scratch. See the TrainingTesseract wiki.
 
 ## How do I produce searchable PDF output?
 
@@ -207,7 +207,7 @@ tesseract phototest.tif phototest pdf
 
 There is a minimum text size for reasonable accuracy. You have to consider resolution as well as point size. Accuracy drops off below 10pt x 300dpi, rapidly below 8pt x 300dpi. A quick check is to count the pixels of the x-height of your characters. (X-height is the height of the lower case x.) At 10pt x 300dpi x-heights are typically about 20 pixels, although this can vary dramatically from font to font. Below an x-height of 10 pixels, you have very little chance of accurate results, and below about 8 pixels, most of the text will be "noise removed".
 
-## Why is the output is empty or of poor quality?
+## Why is the output empty or of poor quality?
 
 Read the [ImproveQuality](ImproveQuality) wiki page.
 
