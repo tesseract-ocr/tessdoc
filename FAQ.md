@@ -41,9 +41,6 @@ parallel "tesseract {} {} -l eng hocr; hocr2pdf -i {} -n -o {}.pdf < {}.html" ::
 
 ## Windows: tesseract closes automatically right after launching
 
-
-## Windows: tesseract closes automatically right after launching
-
 Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need program with a graphical interface there are several available from the [3rdParty](http://code.google.com/p/tesseract-ocr/wiki/3rdParty#GUI) page.
 
 ## What output formats can Tesseract produce?
