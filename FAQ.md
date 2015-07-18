@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-A collection of frequently asked questions and the answers, or pointers to them. If you have question, please post it to forums. Wiki comments are for wiki commenting and not for Troubleshooting.
+A collection of frequently asked questions and the answers, or pointers to them. If you have a question, please post it to the forums. Wiki comments are for wiki commenting and not for Troubleshooting.
 
 ## Rules and advice
 
@@ -272,21 +272,21 @@ Other ways to fix the problem:
 
 If files contain very similar looking samples, then you can cat them together to make a single file to reduce the total number of files. DON'T do this if the characters in two files look very different.
 
-Increase MAX\_NUM\_CONFIGS (in classify/intproto.h) There are consequences. You will make inttemp files generated with a different value of MAX\_NUM\_CONFIGS unreadable. We are working towards overcoming this weakness for version 3.0. Will not be in 2.04 though. Also, classification will be slower and use more memory.
+Increase MAX\_NUM\_CONFIGS (in [intproto.h](https://github.com/tesseract-ocr/tesseract/blob/master/classify/intproto.h)) There are consequences. You will make inttemp files generated with a different value of MAX\_NUM\_CONFIGS unreadable. We are working towards overcoming this weakness for version 3.0. Will not be in 2.04 though. Also, classification will be slower and use more memory.
 
 ## There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images
 
-Try to clean adaptive data with `ClearAdaptiveClassifier()` or turn off adaptive classifier with config variables:
+Try to clear the adaptive data with `ClearAdaptiveClassifier()` or turn off the adaptive classifier with config variables:
 ```
 classify_enable_learning 0
 classify_enable_adaptive_matcher 0
 ```
 
-See also discussion on [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ)
+See also the discussion on the [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ)
 
-## [Diacritics](http://en.wikipedia.org/wiki/Diacritic) above and below glyph are ignored/cause garbage output
+## [Diacritics](http://en.wikipedia.org/wiki/Diacritic) above and below the glyph are ignored/cause garbage output
 
-Try to increase default value (1.25) of textord\_min\_linesize to higher value. Some users report good results with value 2.5.
+Try to increase the default value (1.25) of textord\_min\_linesize to higher value. Some users report good results with value 2.5.
 
 ## Where is the documentation?
 
@@ -294,17 +294,17 @@ You're looking at it. If things aren't clear, search on the [Tesseract Google Gr
 
 ## How can I try the next version?
 
-Periodically stable versions go to the downloads page. Between releases, and in particular, just before a new release, the latest code is available from svn. You can find the source here: http://code.google.com/p/tesseract-ocr/source/checkout where you can check it out either by command line, or by following the link to the howto on using various client programs and plugins.
+Periodically stable versions go to the downloads page. Between releases, and in particular, just before a new release, the latest code is available from git. You can find the source here: https://github.com/tesseract-ocr/tesseract.git where you can check it out either by command line, or by following the link to the howto on using various client programs and plugins.
 
 ## actual\_tessdata\_num\_entries_<= TESSDATA\_NUM\_ENTRIES:Error:Assert failed:in file ..\ccutil\tessdatamanager.cpp, line 55_
 
-If you get error during running **tesseract**, please check if you use correct version of traineddata (e.g. 3.00 with 3.01). You can not use 3.01 traineddata with tesseract 3.00.
+If you get an error while running **tesseract**, please check if you are using the correct version of traineddata (e.g. 3.00 with 3.01). You can not use 3.01 traineddata with tesseract 3.00.
 
 ## last\_char == '\n':Error:Assert failed:in file ..\ccutil\tessdatamanager.cpp, line 95
 
 If you get error during running **combine\_tessdata**:
 
-This indicates your lang.unicharambigs is missing empty line at the end of file.
+This indicates that your lang.unicharambigs is missing an empty line at the end of the file.
 
 ## Error: Illegal min or max specification
 
@@ -350,7 +350,7 @@ With tesseract 3.02 you can use config "quiet". E.g.:
 tesseract phototest.tif phototest quiet
 ```
 
-**Warning:** Both options will cause that you will not see error message if there is any.
+**Warning:** Both options will cause you to not see the error message if there is one.
 
 ## How can I get the coordinates and confidence of each character?
 
@@ -362,15 +362,15 @@ _(informations from issue tracker with Status: Look-here-for-help.)_
 
 ### How to port Tesseract engine into vb6 project?
 
-See suggestions in [issue 42](http://code.google.com/p/tesseract-ocr/issues/detail?id=42).
+See the suggestions in [issue 42](http://code.google.com/p/tesseract-ocr/issues/detail?id=42).
 
 ### Delphi wrapper for tessdll.dll
 
-Have a look  at [Addon Wiki](AddOns) or see comments in [issue 88](http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
+Have a look  at [Addon Wiki](AddOns) or see the comments in [issue 88](http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
 
-### In-complete OCR result
+### Incomplete OCR result
 
-See suggestions in [issue 44](http://code.google.com/p/tesseract-ocr/issues/detail?id=44).
+See the suggestions in [issue 44](http://code.google.com/p/tesseract-ocr/issues/detail?id=44).
 
 ### error LNK2001: unresolved external symbol "public: static char **cdecl TessBaseAPI::TesseractRect(unsigned char const**,int,int,int,int,int,int)" (?TesseractRect@TessBaseAPI@@SAPADPBEHHHHHH@Z)
 
@@ -386,11 +386,11 @@ Or have a look at other suggestions in [issue 471](http://code.google.com/p/tess
 
 ### Training failed  with error message "mf.cpp:78: FEATURE\_SET\_STRUCT**ExtractMicros..."**
 
-See suggestions how to improve input image in [issue 488](http://code.google.com/p/tesseract-ocr/issues/detail?id=488).
+See suggestions on how to improve the input image in [issue 488](http://code.google.com/p/tesseract-ocr/issues/detail?id=488).
 
 ### error message: Font id = -1/0, class id = 1/105 on sample 0
 
-This means that font name is not in font\_properties or font\_properties does not meet [requirements](TrainingTesseract#Requirements_for_text_input_files)
+This means that the font name is not in font\_properties or font\_properties does not meet [requirements](TrainingTesseract#Requirements_for_text_input_files)
 
 ## Can I use Tesseract for handwriting recognition?
 
