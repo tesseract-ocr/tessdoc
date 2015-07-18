@@ -2,17 +2,17 @@
 
 A collection of frequently asked questions and the answers, or pointers to them. If you have question, please post it to forums. Wiki comments are for wiki commenting and not for Troubleshooting.
 
-## Rules and advises
+## Rules and advice
 
-  * If you found a bug - please create issue: Please make sure you are able to replicate problem with tesseract executables on Linux or Windows. For other platforms or external/your programs (including tesseract wrappers) please use tesseract forums.
-  * Use the latest official release (optionally: try to check if problem is not already solved in git repository).
+  * If you found a bug - please create an issue: Please make sure you are able to replicate the problem with tesseract executables on Linux or Windows. For other platforms or external/your programs (including tesseract wrappers) please use the tesseract forums.
+  * Use the latest official release (optionally: try to check if the problem is not already solved in the git repository).
   * Don't mix tesseracts version language files.
-  * Post example files e.g. if you have problem with training. Just posting error messages is not sufficient if you used input file. Source of problem is hidden in input files usually.
-  * Do not post programs or libraries (e.g. program for editing box files) - post link where they can be downloaded
-  * Try to find optimal format for example images - 20Mb image is not helpful. Multi-page tiff is useful only in case you have problem with multi-page functionality. E.g. 2 colour png provide same information as truecolour uncompressed tiff (tesseract will convert it to 2 colours anyway).
-  * Copy error message from terminal/console/windows command line (yes, it is possible on Windows too) instead of sending screen-shot.
-  * Use [tesseract developer](http://groups.google.com/group/tesseract-dev/) forum to share updates, bug fixes, improvements, add-ons for Tesseract. For general questions and support please use [tesseract-ocr user] (http://groups.google.com/group/tesseract-ocr/) forum.
-  * Read wiki, search issues (also closed), search in tesseract forum before you post your issues/question. Maybe it was solved already.
+  * Post example files e.g. if you have problem with training. Just posting error messages is not sufficient if you used an input file. The source of the problem is usually hidden in input files.
+  * Do not post programs or libraries (e.g. program for editing box files) - post a link where they can be downloaded
+  * Try to find the optimal format for example images - a 20Mb image is not helpful. A multi-page tiff is useful only if you have problem with multi-page functionality. E.g. 2 colour png provides the same information as a truecolour uncompressed tiff (tesseract will convert it to 2 colours anyway).
+  * Copy the error message from the terminal/console/windows command line (yes, it is possible on Windows too) instead of sending a screen-shot.
+  * Use the [tesseract developer](http://groups.google.com/group/tesseract-dev/) forum to share updates, bug fixes, improvements, add-ons for Tesseract. For general questions and support please use the [tesseract-ocr user] (http://groups.google.com/group/tesseract-ocr/) forum.
+  * Read the wiki, search issues (also closed), search in the tesseract forum before you post your issues/question. Maybe it was solved already.
 
 ## How is confidence calculated?
 * **Character** - Compute a distance measure between 0 and 1 of the character from a training sample:
