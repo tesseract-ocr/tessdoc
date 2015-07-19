@@ -213,7 +213,7 @@ tesseract phototest.tif phototest pdf
 Let's say you have an amazing but slow multipage scanning device. It would be 
 nice to OCR during scanning. In this example, the scanning program is sending 
 image filenames to Tesseract as they are produced. Tesseract streams a 
-searchable PDF to stdout.
+searchable PDF to stdout. You will need Tesseract v3.04 or later for this feature.
 
 ```
 scanimage --batch --batch-print | tesseract -c stream_filelist=true - - pdf
