@@ -208,6 +208,16 @@ Searchable PDF output is a standard feature as of Tesseract version 3.03.
 tesseract phototest.tif phototest pdf
 ```
 
+## How to do streaming
+
+Let's say you have an amazing but slow multipage scanning device. It would be 
+nice to OCR during scanning. In this example, the scanning program is sending 
+image filenames to Tesseract as they are produced. Tesseract streams a 
+searchable PDF to stdout.
+
+...
+scanimage --batch --batch-print | tesseract -c stream_filelist=true - - pdf
+...
 
 ## Is there a Minimum Text Size? (It won't read screen text!)
 
