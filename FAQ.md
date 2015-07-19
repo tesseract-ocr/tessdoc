@@ -39,6 +39,10 @@ you can run:
 parallel "tesseract {} {} -l eng hocr; hocr2pdf -i {} -n -o {}.pdf < {}.html" ::: *.tif
 ```
 
+Note that this example is a little obsolete. You will get better results having Tesseract 
+produce one page PDF files in parallel, then splicing them together at the end using QPDF
+or similar. 
+
 ## Windows: tesseract closes automatically right after launching
 
 Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface there are several available from the [3rdParty](http://code.google.com/p/tesseract-ocr/wiki/3rdParty#GUI) page.
