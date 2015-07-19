@@ -51,7 +51,9 @@ Tesseract is a command line program, so you need to run it from the [command lin
 
 Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
 
-With the configfile 'hocr' tesseract will produce xhtml output compliant with the [hocr specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
+With the configfile 'hocr' tesseract will produce xhtml output compliant with the [hocr specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
+
+With the configfile 'pdf' tesseract will produce searchable PDF.
 
 ## libtesseract.so.3: cannot open shared object file
 
