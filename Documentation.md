@@ -1,4 +1,4 @@
-# Technical papers describing various aspects of Tesseract.
+# Technical papers describing various aspects of Tesseract
 
 ## Copyright Notice
 
@@ -38,6 +38,10 @@ There are manual pages for tesseract tools available in svn:
   * [wordlist2dawg](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
 
 plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc) files
+
+## Doxygen
+
+Documentation of tesseract generated from source code by [doxygen](http://www.doxygen.org) can be found on [tesseract-ocr.github.io](https://tesseract-ocr.github.io/index.html)
 
 ## Other
 
