@@ -100,7 +100,7 @@ More information about the various options is available in the [Tesseract manpag
 
 # Other Languages
 
-Tesseract has been trained for many languages, check for your language in the Tessdata repository at (https://github.com/tesseract-ocr/tessdata) page. 
+Tesseract has been trained for many languages (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages), check for your language in the Tessdata repository at (https://github.com/tesseract-ocr/tessdata) page. 
 
 It can also be trained to support other languages and scripts; for more details see [TrainingTesseract](TrainingTesseract).
 
