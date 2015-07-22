@@ -31,8 +31,9 @@ If you want to use another language, [download the appropriate training data](ht
 ## MSYS2
 
 Install and update MSYS2. 
+ Follow instructions at
 ```
-  Follow instructions at http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/ 
+ http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/ 
 ```
 
 Open an MSYS2 command prompt (or the 32-bit or 64-bit command prompts if you plan on building 32-bit or 64-bit things) from the start menu entries. 
