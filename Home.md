@@ -84,13 +84,19 @@ Or to do the same with German:
   tesseract myscan.png out -l deu
 ```
 
+It can even be used with multiple languages traineddata at a time eg. English and German:
+
+```
+  tesseract myscan.png out -l eng+deu
+```
+
 Tesseract also includes a hOCR mode, which produces a special HTML file with the coordinates of each word. This can be used to create a searchable pdf, using a tool such as [Hocr2PDF](http://exactcode.de/site/open_source/exactimage/hocr2pdf). To use it, use the 'hocr' config option, like this:
 
 ```
   tesseract myscan.png out hocr
 ```
 
-You can create searchable pdf directly from tesseract (>=3.03):
+You can also create a searchable pdf directly from tesseract ( versions >=3.03):
 
 ```
   tesseract myscan.png out pdf
