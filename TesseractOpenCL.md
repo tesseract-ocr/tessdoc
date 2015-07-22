@@ -18,6 +18,14 @@
 5.	Build and run the solution.
 
 ## Building Tesseract on Linux with OpenCL
-  1. To build on Linux use ./configure --enable-opencl.
+  1. Make sure you have installed OpenCL sdk and libtiff-dev
   1. The OpenCL header and library paths are currently defined by the variables OPENCL\_HDR\_PATH and OPENCL\_LIB in configure.ac. These have to be set to the appropriate paths depending on the OpenCL installation.
-  
+  1. To build on Linux use
+```
+./configure --enable-opencl
+```
+or if you want to specified opencl include (`/opt/AMDAPP/include/`)  and library (`/opt/AMDAPP/lib/x86_64/`) paths:
+```
+export LIBRARY_PATH=/opt/AMDAPP/lib/x86_64/:$LIBRARY_PATH
+CPPFLAGS+=-I/opt/AMDAPP/include/ ./configure --enable-opencl 
+```
