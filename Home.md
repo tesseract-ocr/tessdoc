@@ -49,13 +49,7 @@ and optionally the data files:
 
 pacman -S mingw-w64-tesseract-ocr-osd mingw-w64-{i686,x86_64}-tesseract-ocr-eng
 
-And you're done. Of course, you can still compile the various dependencies yourself, but why bother? If you really want to, you can start from the build scripts for the packages you can install in MSYS2, which are located here:
-
-https://github.com/Alexpux/MINGW-packages
-
-Just open the PKGBUILD files and you can see the build steps required. Note that all these scripts assume the dependencies have been installed within MSYS2.
-
-Also note that the installed packages and compilers are all independent of MSYS2 as you'd expect: you can use it only as a tool to keep your development tree up to date, and build from any other Windows environment.
+And you're done. 
 
 ## Other Platforms
 
