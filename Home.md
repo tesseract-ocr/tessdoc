@@ -30,10 +30,10 @@ If you want to use another language, [download the appropriate training data](ht
 
 ## MSYS2
 
-(Copied from post by rubenvb at http://stackoverflow.com/questions/29960825/error-during-making-xz-5-2-1-with-mingw-msys )
-
 Install and update MSYS2. 
-( http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/ )
+```
+  Follow instructions at http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/ 
+```
 
 Open an MSYS2 command prompt (or the 32-bit or 64-bit command prompts if you plan on building 32-bit or 64-bit things) from the start menu entries. 
 
@@ -56,6 +56,8 @@ and the data files:
 ```
 
 And you're done. 
+
+(These instructions were copied from post by rubenvb at http://stackoverflow.com/questions/29960825/error-during-making-xz-5-2-1-with-mingw-msys )
 
 ## Other Platforms
 
