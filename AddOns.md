@@ -39,6 +39,8 @@ Platform support depends on used language and experience of user.
 
 ## Other Training Tools
 
+  *  [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | Box Editor and Training Tool    
+
   * [MzTesseract](https://github.com/mazluta/MzTesseract) - MS Windows program that can train new langauge from top to bottom
   * [FrankenPlus](https://github.com/this-is-ari/python-tesseract-3.02-training) - tool for creating font training for Tesseract OCR engine from page images. More information about Franken+ is at at [IT'S ALIVE!](http://emop.tamu.edu/node/54Franken+:) and [Franken+ homepage](http://dh-emopweb.tamu.edu/Franken+/).
   * [python-tesseract-3.02-training](https://github.com/this-is-ari/python-tesseract-3.02-training) - script to automate the generation of Tesseract 3.02 training files
@@ -62,8 +64,7 @@ Platform support depends on used language and experience of user.
   * **Polish Fraktur**: training as [result of the IMPACT project](http://dl.psnc.pl/activities/projekty/impact/results/), [trained dataset](http://dl.psnc.pl/download/tesseract_traineddata.zip)
   * **Ancient Greek**: http://ancientgreekocr.org
   * **Chinese simplefied**: see issue [296](http://code.google.com/p/tesseract-ocr/issues/detail?id=296); download http://ubuntuone.com/p/3Yw/
-  * **Indic**: http://code.google.com/p/tesseractindic/, https://github.com/debayan/Tesseract-Indic-OCR/
-  * **Indian and South Asian languages**: http://code.google.com/p/parichit/
+  * **Indic**: http://code.google.com/p/tesseractindic/, https://github.com/debayan/Tesseract-Indic-OCR/, http://code.google.com/p/parichit/ (All are Obsolete)
   * **Irish uncial**: https://github.com/jimregan/tesseract-gle-uncial
   * **Polish**: http://code.google.com/p/tesseract-polish/
   * **Fraktur** (dan, deu, swe):  https://github.com/paalberti/tesseract-dan-fraktur
