@@ -83,7 +83,7 @@ Some of the procedure is inevitably manual. As much automated help as possible i
 The first step is to determine the full character set to be used, and prepare a text or word processor file containing a set of examples. The most important points to bear in mind when creating a training file are:
   * Make sure there are a minimum number of samples of each character. 10 is good, but 5 is OK for rare characters.
   * There should be more samples of the more frequent characters - at least 20.
-  * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.[.md](.md){}<>/?** is terrible. Much better is **The (quick) [brown](brown.md) {fox} jumps! over the $3,456.78 `<lazy>` #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
+  * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.{}&lt;&gt;/?** is terrible. Much better is **The (quick) brown {fox} jumps! over the $3,456.78 &lt;lazy&gt; #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
 
 ### **NEW** Automated method
 
