@@ -39,15 +39,21 @@ Open an MSYS2 command prompt (or the 32-bit or 64-bit command prompts if you pla
 
 Install {32-bit,64-bit} MinGW-w64 GCC:
 
-pacman -S mingw-w64-{i686,x86_64}-gcc
+```
+ pacman -S mingw-w64-{i686,x86_64}-gcc
+```
 
 Install tesseract-OCR:
 
-pacman -S mingw-w64-{i686,x86_64}-tesseract-ocr
+```
+ pacman -S mingw-w64-{i686,x86_64}-tesseract-ocr
+```
 
-and optionally the data files:
+and the data files:
 
-pacman -S mingw-w64-tesseract-ocr-osd mingw-w64-{i686,x86_64}-tesseract-ocr-eng
+```
+ pacman -S mingw-w64-tesseract-ocr-osd mingw-w64-{i686,x86_64}-tesseract-ocr-eng
+```
 
 And you're done. 
 
