@@ -1,16 +1,20 @@
 # How to use the tools provided to train Tesseract3 for a new language.
 
+For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
+
 # Introduction
 
-Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results.
+Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
 
-For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
+Please check the list of [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages)  for which traineddata is already available as of release 3.04 bwfore embarking on training.
+
+Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh) for an easy way to execute various phases of training Tesseract.  3rd Party tools are also available for training.
 
 # Background and Limitations
 
 Tesseract was originally designed to recognize English text only. Efforts have been made to modify the engine and its training system to make them able to deal with other languages and UTF-8 characters. Tesseract 3.0 can handle any Unicode characters (coded with UTF-8), but there are limits as to the range of languages that it will be successful with, so please take this section into account before building up your hopes that it will work well on your particular language!
 
-Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (right-to-left). Tesseract currently handles scripts like Arabic with an auxiliary engine called cube (included in Tesseract 3.0+)
+Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (right-to-left). Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract 3.0+). Traineddata for additional [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) has been provided by Google for the 3.04 release. 
 
 Tesseract is slower with large character set languages (like Chinese), but it seems to work OK.
 
