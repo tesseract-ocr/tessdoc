@@ -118,7 +118,9 @@ Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http:/
 ## Mingw+Msys or Cygwin
 
 For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](http://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
+
 For Cygwin have a look at blog [How to build Tesseract on Cygwin](http://vorba.ch/2014/tesseract-cygwin.html).
+Simon Eigeldinger started provide [tesseract compiled by cygwin](http://domasofan.spdns.eu/tesseract/).
 
 # Miscellaneous
 
