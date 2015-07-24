@@ -3,8 +3,11 @@
 # Introduction
 
 This page keeps the most up-to-date release notes.
+# Tesseract release notes July 11 2015 - V3.04.00.
+  * Added OpenCL support (experimental)
+  * Many bug fixes
 
-# Tesseract release notes Feb 4 2014 = V3.03 (rc1).
+# Tesseract release notes Feb 4 2014 - V3.03(rc1).
   * Added new training tool text2image to generate box/tif file pairs from text and truetype fonts.
   * Added support for PDF output with searchable text.
   * Removed entire IMAGE class and all code in image directory.
