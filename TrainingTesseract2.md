@@ -1,4 +1,6 @@
-# How to use the tools provided to train Tesseract for a new language.
+*How to use the tools provided to train Tesseract 2.x for a new language*
+
+**NOTE:** These instructions are for an older version of Tesseract. Training instructions for the current version (3.x) are [[here|TrainingTesseract]].
 
 # Introduction
 
