@@ -60,9 +60,15 @@ And you're done.
 
 (These instructions were copied from post by rubenvb at http://stackoverflow.com/questions/29960825/error-during-making-xz-5-2-1-with-mingw-msys )
 
+## Cygwin
+
+Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) 64bit [Cygwin](https://www.cygwin.com/)
+
+
 ## Other Platforms
 
 Tesseract may work on more exotic platforms too. You can either try [compiling it yourself](Compiling), or take a look at the list of [other projects using Tesseract](3rdParty).
+
 
 # Running Tesseract
 
