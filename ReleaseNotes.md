@@ -4,10 +4,40 @@
 
 This page keeps the most up-to-date release notes.
 # Tesseract release notes July 11 2015 - V3.04.00.
-  * Added OpenCL support (experimental)
-  * Many bug fixes
+  * Tesseract development is now done with git and hosted at github.com 
+(Previously we used Subversion as a vcs and code.google.com for hosting).
+  * Tesseract now requires leptonica 1.71 or a higher version.
+  * Removed official support for VS 2008.
+  * Added support for many more script/languages.
+  * Major updates to training system as a result of extensive testing on 100 languages.
+  * Improved performance with PIC compilation option.
+  * Significant change to invisible font system in pdf output to improve 
+correctness and compatibility with external programs, particularly ghostscript.
+  * Improved font identification.
+  * Major change to improve layout analysis for heavily diacritic languages: 
+Thai, Vietnamese, Kannada, Telugu etc.
+  * Fixed problems with shifted baselines so recognition can recover from 
+layout analysis errors.
+  * Major refactor to improve speed on difficult images, especially when 
+running a heap checker.
+  * Moved params from global in page layout to tesseractclass.
+  * Improved single column layout analysis.
+  * Allow ocr output to multiple formats using tesseract command line executable.
+  * Fixed issues with mixed eng+ara scripts.
+  * Improved script consistency in numbers.
+  * Major refactor of control.cpp to enable line recognition.
+  * Added tesstrain.sh - a master training script.
+  * Added ability to text2image training tool to just list available fonts.
+  * Added ability to text2image to underline words.
+  * Improved efficiency of image processing for PDF output.
+  * Added parameter description for each paramater listed with 'print-parameters' 
+command line option.
+  * Added font info to hocr output.
+  * Enabled streaming input and output of multi-page documents.
+  * Many bug fixes.
 
 # Tesseract release notes Feb 4 2014 - V3.03(rc1).
+  * Added OpenCL support (experimental).
   * Added new training tool text2image to generate box/tif file pairs from text and truetype fonts.
   * Added support for PDF output with searchable text.
   * Removed entire IMAGE class and all code in image directory.
