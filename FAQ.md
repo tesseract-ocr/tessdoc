@@ -44,8 +44,7 @@ Table of Contents
   * [Where is the documentation?](#where-is-the-documentation)
   * [How can I try the next version?](#how-can-i-try-the-next-version)
   * [actual_tessdata_num_entries_&lt;= TESSDATA_NUM_ENTRIES:Error:Assert failed:in file ..\ccutil\tessdatamanager.cpp, line 55_](#actual_tessdata_num_entries_-tessdata_num_entrieserrorassert-failedin-file-ccutiltessdatamanagercpp-line-55_)
-  * [last_char == '
-':Error:Assert failed:in file ..\ccutil\tessdatamanager.cpp, line 95](#last_char--nerrorassert-failedin-file-ccutiltessdatamanagercpp-line-95)
+  * [last_char == '\n':Error:Assert failed:in file ..\ccutil\tessdatamanager.cpp, line 95](#last_char--nerrorassert-failedin-file-ccutiltessdatamanagercpp-line-95)
   * [Error: Illegal min or max specification](#error-illegal-min-or-max-specification)
   * [Error: X classes in inttemp while unicharset contains Y unichars.](#error-x-classes-in-inttemp-while-unicharset-contains-y-unichars)
   * [Error: Size of unicharset is greater than MAX_NUM_CLASSES](#error-size-of-unicharset-is-greater-than-max_num_classes)
@@ -56,7 +55,7 @@ Table of Contents
     * [How to port Tesseract engine into vb6 project?](#how-to-port-tesseract-engine-into-vb6-project)
     * [Delphi wrapper for tessdll.dll](#delphi-wrapper-for-tessdlldll)
     * [Incomplete OCR result](#incomplete-ocr-result)
-    * [error LNK2001: unresolved external symbol "public: static char <strong>cdecl TessBaseAPI::TesseractRect(unsigned char const</strong>,int,int,int,int,int,int)" (?TesseractRect@TessBaseAPI@@SAPADPBEHHHHHH@Z)](#error-lnk2001-unresolved-external-symbol-public-static-char-cdecl-tessbaseapitesseractrectunsigned-char-constintintintintintint-tesseractrecttessbaseapisapadpbehhhhhhz" aria-hidden="true"><span class="octicon octicon-link"></span></a>error LNK2001: unresolved external symbol "public: static char <strong>cdecl TessBaseAPI::TesseractRect(unsigned char const</strong>,int,int,int,int,int,int))
+    * [error LNK2001: unresolved external symbol "public: static char cdecl TessBaseAPI::TesseractRect(unsigned char const,int,int,int,int,int,int)" (?TesseractRect@TessBaseAPI@@SAPADPBEHHHHHH@Z)](#error-lnk2001-unresolved-external-symbol-public-static-char-cdecl-tessbaseapitesseractrectunsigned-char-constintintintintintint-tesseractrecttessbaseapisapadpbehhhhhhz)
     * [box overlaps no blobs or blobs in multiple rows error when training](#box-overlaps-no-blobs-or-blobs-in-multiple-rows-error-when-training)
     * [Training failed  with error message "mf.cpp:78: FEATURE_SET_STRUCT<strong>ExtractMicros..."</strong> ](#training-failed--with-error-message-mfcpp78-feature_set_structextractmicros)
     * [error message: Font id = -1/0, class id = 1/105 on sample 0](#error-message-font-id---10-class-id--1105-on-sample-0)
