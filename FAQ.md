@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-A collection of frequently asked questions and the answers, or pointers to them. If you have a question, please post it to the forums. Wiki comments are for wiki commenting and not for Troubleshooting.
+A collection of frequently asked questions and the answers, or pointers to them. If you have a question, please post it to the forums.
 
   * [Rules and advice](#rules-and-advice)
 
