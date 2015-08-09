@@ -6,7 +6,6 @@ A collection of frequently asked questions and the answers, or pointers to them.
 
 Table of Contents
 =================
-  * [How is confidence calculated?](#how-is-confidence-calculated)
   * [Can I increase speed of OCR?](#can-i-increase-speed-of-ocr)
   * [Windows: tesseract closes automatically right after launching](#windows-tesseract-closes-automatically-right-after-launching)
   * [What output formats can Tesseract produce?](#what-output-formats-can-tesseract-produce)
@@ -16,7 +15,6 @@ Table of Contents
   * [Can't open eng.unicharset?](#cant-open-engunicharset)
   * [leptonica library missing](#leptonica-library-missing)
   * [Can't read compressed Tiff files](#cant-read-compressed-tiff-files)
-  * [Can I use tesseract for barcode recognition?](#can-i-use-tesseract-for-barcode-recognition)
   * [No output with color images](#no-output-with-color-images)
   * [Does it support multi-page tiff files?](#does-it-support-multi-page-tiff-files)
   * [Why doesn't viewer/svutil.cpp compile?](#why-doesnt-viewersvutilcpp-compile)
@@ -51,6 +49,9 @@ Table of Contents
   * [How can I make the error messages go to tesseract.log instead of stderr?](#how-can-i-make-the-error-messages-go-to-tesseractlog-instead-of-stderr)
   * [How can I supress tesseract info line?](#how-can-i-supress-tesseract-info-line)
   * [How can I get the coordinates and confidence of each character?](#how-can-i-get-the-coordinates-and-confidence-of-each-character)
+  * [How is confidence calculated?](#how-is-confidence-calculated)
+  * [Can I use Tesseract for handwriting recognition?](#can-i-use-tesseract-for-handwriting-recognition)
+  * [Can I use tesseract for barcode recognition?](#can-i-use-tesseract-for-barcode-recognition)
   * [Issues with older versions of tesseract](#issues-with-older-versions-of-tesseract)
     * [How to port Tesseract engine into vb6 project?](#how-to-port-tesseract-engine-into-vb6-project)
     * [Delphi wrapper for tessdll.dll](#delphi-wrapper-for-tessdlldll)
@@ -59,7 +60,6 @@ Table of Contents
     * [box overlaps no blobs or blobs in multiple rows error when training](#box-overlaps-no-blobs-or-blobs-in-multiple-rows-error-when-training)
     * [Training failed  with error message "mf.cpp:78: FEATURE_SET_STRUCT<strong>ExtractMicros..."</strong> ](#training-failed--with-error-message-mfcpp78-feature_set_structextractmicros)
     * [error message: Font id = -1/0, class id = 1/105 on sample 0](#error-message-font-id---10-class-id--1105-on-sample-0)
-  * [Can I use Tesseract for handwriting recognition?](#can-i-use-tesseract-for-handwriting-recognition)
   * [My question isn't in here!](#my-question-isnt-in-here)
 
 ## Rules and advice
@@ -73,14 +73,6 @@ Table of Contents
   * Copy the error message from the terminal/console/windows command line (yes, it is possible on Windows too) instead of sending a screen-shot.
   * Use the [tesseract developer](http://groups.google.com/group/tesseract-dev/) forum to share updates, bug fixes, improvements, add-ons for Tesseract. For general questions and support please use the [tesseract-ocr user] (http://groups.google.com/group/tesseract-ocr/) forum.
   * Read the wiki, search issues (also closed), search in the tesseract forum before you post your issues/question. Maybe it was solved already.
-
-## How is confidence calculated?
-* **Character** - Compute a distance measure between 0 and 1 of the character from a training sample:
-  * *certainty* = -20 * distance
-  * *rating* = distance * outline length
-* **Word:**
-  * *certainty* = min over word of character certainty.
-  * *rating* = sum over word of character rating.
 
 ## Can I increase speed of OCR?
 
@@ -174,11 +166,6 @@ Non-Windows (and Cygwin): Install **libtiff-dev.** Procedure differs from OS to 
 sudo apt-get install libtiff-dev
 ```
 or some variant thereof should do the trick, **before** running configure.
-
-
-## Can I use tesseract for barcode recognition?
-
-No. Tesseract is for text recognition.
 
 ## No output with color images
 
@@ -429,6 +416,21 @@ tesseract phototest.tif phototest quiet
 
 There are two options. If you would rather not get into programming, you can use Tesseract's hocr output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](http://code.google.com/p/tesseract-ocr/source/browse/trunk/api/baseapi.h).
 
+## How is confidence calculated?
+* **Character** - Compute a distance measure between 0 and 1 of the character from a training sample:
+  * *certainty* = -20 * distance
+  * *rating* = distance * outline length
+* **Word:**
+  * *certainty* = min over word of character certainty.
+  * *rating* = sum over word of character rating.
+
+## Can I use Tesseract for handwriting recognition?
+
+You can, but it won't work very well, as Tesseract is designed for printed text. Take a look at the [Lipi Toolkit](http://lipitk.sourceforge.net/) project instead.
+
+## Can I use tesseract for barcode recognition?
+
+No. Tesseract is for text recognition.
 
 ## Issues with older versions of tesseract
 _(informations from issue tracker with Status: Look-here-for-help.)_
@@ -464,10 +466,6 @@ See suggestions on how to improve the input image in [issue 488](http://code.goo
 ### error message: Font id = -1/0, class id = 1/105 on sample 0
 
 This means that the font name is not in font\_properties or font\_properties does not meet [requirements](TrainingTesseract#Requirements_for_text_input_files)
-
-## Can I use Tesseract for handwriting recognition?
-
-You can, but it won't work very well, as Tesseract is designed for printed text. Take a look at the [Lipi Toolkit](http://lipitk.sourceforge.net/) project instead.
 
 # My question isn't in here!
 
