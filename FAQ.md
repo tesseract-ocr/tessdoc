@@ -55,7 +55,7 @@ Table of Contents
     * [How to port Tesseract engine into vb6 project?](#how-to-port-tesseract-engine-into-vb6-project)
     * [Delphi wrapper for tessdll.dll](#delphi-wrapper-for-tessdlldll)
     * [Incomplete OCR result](#incomplete-ocr-result)
-    * [error LNK2001: unresolved external symbol "public: static char cdecl TessBaseAPI::TesseractRect(unsigned char const,int,int,int,int,int,int)" (?TesseractRect@TessBaseAPI@@SAPADPBEHHHHHH@Z)](#error-lnk2001-unresolved-external-symbol-public-static-char-cdecl-tessbaseapitesseractrectunsigned-char-constintintintintintint-tesseractrecttessbaseapisapadpbehhhhhhz)
+    * [error LNK2001: unresolved external symbol "public: static char cdecl TessBaseAPI::TesseractRect(unsigned char const,int,int,int,int,int,int)"](#error-lnk2001-unresolved-external-symbol-public-static-char-cdecl-tessbaseapitesseractrectunsigned-char-constintintintintintint-tesseractrecttessbaseapisapadpbehhhhhhz)
     * [box overlaps no blobs or blobs in multiple rows error when training](#box-overlaps-no-blobs-or-blobs-in-multiple-rows-error-when-training)
     * [Training failed  with error message "mf.cpp:78: FEATURE_SET_STRUCT<strong>ExtractMicros..."</strong> ](#training-failed--with-error-message-mfcpp78-feature_set_structextractmicros)
     * [error message: Font id = -1/0, class id = 1/105 on sample 0](#error-message-font-id---10-class-id--1105-on-sample-0)
