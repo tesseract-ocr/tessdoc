@@ -85,7 +85,7 @@ The first step is to determine the full character set to be used, and prepare a 
   * There should be more samples of the more frequent characters - at least 20.
   * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.{}&lt;&gt;/?** is terrible. Much better is **The (quick) brown {fox} jumps! over the $3,456.78 &lt;lazy&gt; #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
 
-### **NEW** Automated method
+### Automated method (new in 3.03)
 
 Prepare a utf-8 text file (`training_text.txt`) containing your training text according to the above specification.
 Obtain truetype/opentype font files for the fonts that you wish to recognize.
