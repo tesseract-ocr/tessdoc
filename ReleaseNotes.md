@@ -8,7 +8,7 @@ This page keeps the most up-to-date release notes.
 (Previously we used Subversion as a vcs and code.google.com for hosting).
   * Tesseract now requires leptonica 1.71 or a higher version.
   * Removed official support for VS 2008.
-  * Added support for many more script/languages.
+  * Added support for many more scripts/languages.
   * Major updates to training system as a result of extensive testing on 100 languages.
   * Improved performance with PIC compilation option.
   * Significant change to invisible font system in pdf output to improve 
