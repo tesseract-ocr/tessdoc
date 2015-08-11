@@ -3,6 +3,18 @@
 There are a variety of reasons you might not get good quality output from Tesseract. It's important to note that unless you're using a very unusual font or a new language retraining Tesseract is unlikely to help.
 
 
+* [Image processing](#image-processing)
+* [Rescaling](#rescaling)
+* [Binarisation](#binarisation)
+* [Noise Removal](#noise-removal)
+* [Rotation / Deskewing](#rotation--deskewing)
+* [Border Removal](#border-removal)
+* [Examples](#examples)
+* [Page segmentation method](#page-segmentation-method)
+* [Dictionaries, word lists, and patterns](#dictionaries-word-lists-and-patterns)
+* [Still having problems?](#still-having-problems)
+
+
 ## Image processing
 
 Tesseract does various image processing operations internally (using the Leptonica library) before doing the actual OCR. It generally does a very good job of this, but there will inevitably be cases where it isn't good enough, which can result in a significant reduction in accuracy.
@@ -50,7 +62,7 @@ If you need an example how to improve image quality programmatically, have a loo
   * [crop\_morphology.py](https://github.com/danvk/oldnyc/blob/master/ocr/tess/crop_morphology.py) - [Finding blocks of text in an image using Python, OpenCV and numpy](http://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html)
 
 
-## Segmentation method
+## Page segmentation method
 
 By default Tesseract expects a page of text when it segments an image. If you're just seeking to OCR a small region try a different segmentation mode, using the `-psm` argument. Note that adding a border to the text may also help, see [issue 398](https://code.google.com/p/tesseract-ocr/issues/detail?id=398).
 
