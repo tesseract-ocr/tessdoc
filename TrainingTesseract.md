@@ -2,6 +2,29 @@
 
 For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
+  * [Introduction](#introduction)
+  * [Background and Limitations](#background-and-limitations)
+  * [Additional Libraries required](#additional-libraries-required)
+  * [Building the training tools](#building-the-training-tools)
+  * [Data files required](#data-files-required)
+    * [Requirements for text input files](#requirements-for-text-input-files)
+    * [How little can you get away with?](#how-little-can-you-get-away-with)
+  * [Training Procedure](#training-procedure)
+    * [Generate Training Images](#generate-training-images)
+      * [Automated method (new in 3.03)](#automated-method-new-in-303)
+      * [Old Manual method](#old-manual-method)
+    * [Make Box Files](#make-box-files)
+      * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
+      * [Tif/Box pairs provided!](#tifbox-pairs-provided)
+    * [Run Tesseract for Training](#run-tesseract-for-training)
+    * [Compute the Character Set](#compute-the-character-set)
+    * [set_unicharset_properties (new in 3.03)](#set_unicharset_properties-new-in-303)
+    * [font_properties (new in 3.01)](#font_properties-new-in-301)
+    * [Clustering](#clustering)
+    * [Dictionary Data (Optional)](#dictionary-data-optional)
+    * [The last file (unicharambigs)](#the-last-file-unicharambigs)
+  * [Putting it all together](#putting-it-all-together)
+
 # Introduction
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
