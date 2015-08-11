@@ -2,6 +2,21 @@
 
 **NOTE:** These instructions are for an older version of Tesseract. Training instructions for the current version (3.x) are [[here|TrainingTesseract]].
 
+  * [Introduction](#introduction)
+  * [Background and Limitations](#background-and-limitations)
+  * [Data files required](#data-files-required)
+  * [Training Procedure](#training-procedure)
+    * [Generate Training Images](#generate-training-images)
+    * [Make Box Files](#make-box-files)
+      * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
+      * [Tif/Box pairs provided!](#tifbox-pairs-provided)
+    * [Run Tesseract for Training](#run-tesseract-for-training)
+    * [Clustering](#clustering)
+    * [Compute the Character Set](#compute-the-character-set)
+    * [Dictionary Data](#dictionary-data)
+    * [The last file](#the-last-file)
+  * [Putting it all together](#putting-it-all-together)
+
 # Introduction
 
 Tesseract 2.0 is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results.
@@ -153,7 +168,7 @@ tesseract fontfile.tif fontfile -l yournewlanguage batch.nochop makebox
 ```
 This should make the 2nd box file easier to make, as there is a good chance that Tesseract will recognize most of the text correctly. You can always iterate this sequence adding more fonts to he training set (i.e. to the command line of mfTraining and cnTraining below) as you make them, but note that there is no incremental training mode that allows you to add new training data to existing sets. This means that each time you run mfTraining and cnTraining you are making new data files from scratch from the tr files you give on the command line, and these programs cannot take an existing intproto/pffmtable/normproto and add to them directly.
 
-### **New!** Tif/Box pairs provided!
+### Tif/Box pairs provided!
 
 The Tif/Box file pairs are on the downloads page. (Note the tiff files are G4 compressed
 to save space, so you will have to have libtiff or uncompress them first). You could
