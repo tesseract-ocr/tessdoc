@@ -4,12 +4,12 @@ There are a variety of reasons you might not get good quality output from Tesser
 
 
 * [Image processing](#image-processing)
-* [Rescaling](#rescaling)
-* [Binarisation](#binarisation)
-* [Noise Removal](#noise-removal)
-* [Rotation / Deskewing](#rotation--deskewing)
-* [Border Removal](#border-removal)
-* [Examples](#examples)
+  * [Rescaling](#rescaling)
+  * [Binarisation](#binarisation)
+  * [Noise Removal](#noise-removal)
+  * [Rotation / Deskewing](#rotation--deskewing)
+  * [Border Removal](#border-removal)
+  * [Examples](#examples)
 * [Page segmentation method](#page-segmentation-method)
 * [Dictionaries, word lists, and patterns](#dictionaries-word-lists-and-patterns)
 * [Still having problems?](#still-having-problems)
