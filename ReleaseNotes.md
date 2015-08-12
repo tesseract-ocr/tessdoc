@@ -1,9 +1,23 @@
 # Release Notes.
 
 # Introduction
-
 This page keeps the most up-to-date release notes.
-# Tesseract release notes July 11 2015 - V3.04.00.
+
+Table of Contents
+=================
+  * [Tesseract release notes July 11 2015 - V3.04.00](#tesseract-release-notes-july-11-2015---v30400)
+  * [Tesseract release notes Feb 4 2014 - V3.03(rc1)](#tesseract-release-notes-feb-4-2014---v303rc1)
+  * [Tesseract release notes Oct 23 2012 - V3.02.02](#tesseract-release-notes-oct-23-2012---v30202)
+  * [Tesseract release notes Oct 21 2011 - V3.01](#tesseract-release-notes-oct-21-2011---v301)
+  * [Tesseract release notes Sep 30 2010 - V3.00](#tesseract-release-notes-sep-30-2010---v300)
+  * [Tesseract release notes June 30 2009 - V2.04](#tesseract-release-notes-june-30-2009---v204)
+  * [Tesseract release notes April 22 2008 - V2.03](#tesseract-release-notes-april-22-2008---v203)
+  * [Tesseract release notes April 21 2008 - V2.02](#tesseract-release-notes-april-21-2008---v202)
+  * [Tesseract release notes Aug 30, 2007 - V2.01](#tesseract-release-notes-aug-30-2007---v201)
+  * [Tesseract release notes Jul 18, 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
+  * [Tesseract release notes May 15, 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
+
+# Tesseract release notes July 11 2015 - V3.04.00
   * Tesseract development is now done with git and hosted at github.com 
 (Previously we used Subversion as a vcs and code.google.com for hosting).
   * Tesseract now requires leptonica 1.71 or a higher version.
@@ -36,7 +50,7 @@ command line option.
   * Enabled streaming input and output of multi-page documents.
   * Many bug fixes.
 
-# Tesseract release notes Feb 4 2014 - V3.03(rc1).
+# Tesseract release notes Feb 4 2014 - V3.03(rc1)
   * Added OpenCL support (experimental).
   * Added new training tool text2image to generate box/tif file pairs from text and truetype fonts.
   * Added support for PDF output with searchable text.
@@ -153,7 +167,7 @@ to make it more usable.
   * Portability fixes for Windows for new code.
   * Updates to autoconf system for new code.
 
-# Tesseract release notes Aug 30, 2007 - V2.01.
+# Tesseract release notes Aug 30, 2007 - V2.01
 (See also release notes for 2.00 below for usage information)
 
 No major functionality change. Just a bunch of bug fixes.
@@ -172,7 +186,7 @@ There are new data files for German Fraktur (deu-f) and Brazillian Portuguese (p
 
 **STOP PRESS** There is a minor bug in unicharset\_extractor. Since this is only applicable to training, the main tarball is fine unless you need to run training, in which case, overwrite your unicharset\_extractor.cpp and unicharset\_extractor.exe with the ones in tesseract-2.01.patch1.tar.gz.
 
-# Tesseract release notes Jul 18, 2007 - V2.00.
+# Tesseract release notes Jul 18, 2007 - V2.00
 (See also release notes for 1.04 below for additional usage information)
 
 First release of the International version.
@@ -210,7 +224,7 @@ List of changes in this release:
 Tesseract 2.00 has undergone more compatibility testing than any previous version. There have even been fixes to make the accuracy more consistent across platforms. Having said that, there have been many changes to the code, and portability may have been broken, so 64 bit and Mac platforms may not work or even build as well as before.
 
 
-# Tesseract release notes May 15, 2007 - V1.04.
+# Tesseract release notes May 15, 2007 - V1.04
 
 **Windows users only**
 
