@@ -126,7 +126,7 @@ training/text2image --text=training_text.txt --outputbase=eng.TimesNewRomanBold.
 
 There are a lot of other command-line arguments available to text2image. See training/text2image.cpp for more information.
 
-If you can use text2image for your application, great! Now skip to Run Tesseract For Training below.
+If you used text2image, you can skip next step - 'Make Box Files', and move to [Run Tesseract for Training](#run-tesseract-for-training).
 
 ### Old Manual method
 
