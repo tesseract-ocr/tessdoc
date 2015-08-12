@@ -279,7 +279,7 @@ tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] box.train.st
 
 **NOTE** that although tesseract requires language data to be present for this step, the language data is not used, so English will do, whatever language you are training.
 
-The first form sends all the errors to tesseract.log (on all platforms) like it did on windows versions 2.03 and below. With box.train.stderr, all errors are sent to stderr, on all platforms, just like it did on non-windows platforms for versions 2.03 and below.
+The first form sends all the errors to a file named tesseract.log. The second form sends all errors to stderr. 
 
 Note that the box filename must match the tif filename, including the path, or Tesseract won't find it. The output of this step is `fontfile.tr` which contains the features of each character of the training page. `[lang].[fontname].exp[num].txt` will also be written with a single newline and no text.
 
