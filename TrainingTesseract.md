@@ -99,7 +99,7 @@ You **must** create unicharset, inttemp, normproto, pfftable using the procedure
 
 # Training Procedure
 
-Some of the procedure is inevitably manual. As much automated help as possible is provided. More automated tools may appear in the future, but will require a complex install/build process. The tools referenced below are all built in the training subdirectory.
+Some of the procedure is inevitably manual. As much automated help as possible is provided. The tools referenced below are all built in the training subdirectory.
 
 ## Generate Training Images
 
