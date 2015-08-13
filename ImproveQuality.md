@@ -9,6 +9,7 @@ There are a variety of reasons you might not get good quality output from Tesser
   * [Noise Removal](#noise-removal)
   * [Rotation / Deskewing](#rotation--deskewing)
   * [Border Removal](#border-removal)
+  * [Tools / Libraries](#tools--libraries)
   * [Examples](#examples)
 * [Page segmentation method](#page-segmentation-method)
 * [Dictionaries, word lists, and patterns](#dictionaries-word-lists-and-patterns)
@@ -19,7 +20,7 @@ There are a variety of reasons you might not get good quality output from Tesser
 
 Tesseract does various image processing operations internally (using the Leptonica library) before doing the actual OCR. It generally does a very good job of this, but there will inevitably be cases where it isn't good enough, which can result in a significant reduction in accuracy.
 
-You can see how Tesseract has processed the image by using the [configuration variable](ControlParams) `tessedit_write_images` to `true` when running Tesseract. If the resulting `tessinput.tif` file looks problematic, try some of these image processing operations before passing the image to Tesseract, whether with a dedicated postprocessing tool like [Scan Tailor](http://scantailor.sourceforge.net/) or [unpaper](https://www.flameeyes.eu/projects/unpaper), using a graphics editor like [ImageJ](http://rsb.info.nih.gov/ij/) or [Gimp](http://www.gimp.org), with a batch image editor like [ImageMagick](http://www.imagemagick.org), or in code using an image processing library like [Leptonica](http://leptonica.com).
+You can see how Tesseract has processed the image by using the [configuration variable](ControlParams) `tessedit_write_images` to `true` when running Tesseract. If the resulting `tessinput.tif` file looks problematic, try some of these image processing operations before passing the image to Tesseract. 
 
 ### Rescaling
 
@@ -51,6 +52,16 @@ A skewed image is when an page has been scanned when not straight. The quality o
 ![borders.png](https://github.com/tesseract-ocr/tesseract/wiki/borders.png)
 
 Scanned pages often have dark borders around them. These can be erroneously picked up as extra characters, especially if they vary in shape and gradation.
+
+### Tools / Libraries
+
+* [Leptonica](http://leptonica.com)
+* [OpenCV](http://opencv.org/)
+* [Scan Tailor](http://scantailor.sourceforge.net/)
+* [ImageMagick](http://www.imagemagick.org)
+* [unpaper](https://www.flameeyes.eu/projects/unpaper)
+* [ImageJ](http://rsb.info.nih.gov/ij/)
+* [Gimp](http://www.gimp.org)
 
 ### Examples
 
