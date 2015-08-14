@@ -77,6 +77,9 @@ Platform support depends on used language and experience of user.
 
   * http://www.tesseract-training.com/
 
+## Ports
+
+  * **[tesseract-emscripten](https://github.com/naptha/tesseract-emscripten)**: fork of tesseract for emscripten - part of [Project Naptha](http://projectnaptha.com/)
 
 ## Tesseract wrappers
 
@@ -108,7 +111,6 @@ Platform support depends on used language and experience of user.
 **PHP**: https://code.google.com/p/php-tesseract/
 
 **Objective-C**: https://github.com/ldiqual/tesseract-ios
-
 
 ### Tesseract 2.0x
 
