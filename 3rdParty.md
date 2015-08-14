@@ -44,6 +44,7 @@
     * [ScanBizCards](http://www.scanbizcards.com): Mobile solution for business card scanning. _Requirements:_ iPhone 4/iPhone 3/Android 2.0
 
 ## Others
+  * [TopOCR](http://www.topocr.com/) - high Quality OCR for Cameras with tesseract-ocr support (paid product)
   * [Simple OCR Web Server](https://github.com/ybur-yug/python_ocr_tutorial) using python, flask, tesseract-ocr, and leptonica
   * [Display OCR](https://github.com/arturaugusto/display_ocr) is OpenCV-Python + python-tesseract real-time image preprocess and OCR of 7 segments font.
   * [OpenOCR](https://github.com/tleyden/open-ocr) makes it simple to host your own OCR REST API.
