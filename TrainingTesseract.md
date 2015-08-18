@@ -1,4 +1,4 @@
-# How to use the tools provided to train Tesseract3 for a new language.
+# How to use the tools provided to train Tesseract 3.0x for a new language.
 
 For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
