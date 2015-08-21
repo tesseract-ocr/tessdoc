@@ -465,7 +465,7 @@ See suggestions on how to improve the input image in [issue 488](http://code.goo
 
 ### error message: Font id = -1/0, class id = 1/105 on sample 0
 
-This means that the font name is not in font\_properties or font\_properties does not meet [requirements](TrainingTesseract#Requirements_for_text_input_files)
+This means that the font name is not in font\_properties or font\_properties does not meet [requirements](../TrainingTesseract#requirements-for-text-input-files).
 
 # My question isn't in here!
 
