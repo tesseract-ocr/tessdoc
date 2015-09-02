@@ -1,4 +1,4 @@
-# Release Notes.
+# Release Notes
 
 # Introduction
 This page keeps the most up-to-date release notes.
