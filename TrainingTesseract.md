@@ -502,3 +502,5 @@ tesseract image.tif output -l lang
 (Actually, you can use any string you like for the language code, but if you want anybody else to be able to use it easily, ISO 639 is the way to go.)
 
 More options of combine\_tessdata can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/master/training/combine_tessdata.cpp#L23).
+
+You can inspect some of the internals of traineddata files  in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
