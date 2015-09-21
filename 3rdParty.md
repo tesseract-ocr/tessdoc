@@ -23,7 +23,6 @@
 ## Online OCR services
 
   * [WeOCR](http://ocr1.sc.isc.tohoku.ac.jp/e1/): is a platform for Web-enabled OCR (Optical Character Reader/Recognition) systems that enables people to use character recognition over networks
-  * [OCRextrACT](http://www.ocr-extract.com/):  is an online access to the tesseract via a WeOCR interface
   * [CustomOCR](http://www.customocr.com/index.php?r=site/page&view=demos.tesseract_ocr)
   * [Free OCR](http://www.free-ocr.com/)
   * [i2OCR](http://www.i2ocr.com/)
