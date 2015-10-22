@@ -481,7 +481,7 @@ In this format, the "error" and "correction" are simple utf-8 strings separated 
 
 Like most other files used in training, the 'unicharambigs' file must be encoded as UTF8, and must end with a newline character.
 
-The unicharambigs format is also described in the [unicharambigs(5) man page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc).
+The unicharambigs format is also described in the [unicharambigs(5) man page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharambigs.5.asc).
 
 The unicharambigs file may also be non-existent.
 
