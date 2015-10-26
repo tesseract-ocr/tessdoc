@@ -59,6 +59,7 @@ Platform support depends on used language and experience of user.
 
 ## Community training projects
 
+  * **Tesseract-MICR-OCR**: https://github.com/BigPino67/Tesseract-MICR-OCR
   * **Latin**: https://github.com/ryanfb/latinocr-lattraining
   * **tesseract-georgian**: https://github.com/ddohler/tesseract-georgian
   * **Polish Fraktur**: training as [result of the IMPACT project](http://dl.psnc.pl/activities/projekty/impact/results/), [trained dataset](http://dl.psnc.pl/download/tesseract_traineddata.zip)
