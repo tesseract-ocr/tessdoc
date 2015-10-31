@@ -17,6 +17,16 @@ Table of Contents
   * [Tesseract release notes Jul 18, 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
   * [Tesseract release notes May 15, 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
 
+
+# IN DEVELOPMENT
+  * Added osd renderer for psm 0. Works for single page and multi-page images.
+  * Improve tesstrain.sh script.
+  * Simplify build and run of ScrollView.
+  * Use Travis CI and Appveyor Continuous Integration services.
+  * Added option to build tesseract with CMake build system.
+  * Enable OpenMP support
+  * Added option to build tesseract without cube (-DNO_CUBE_BUILD)
+
 # Tesseract release notes July 11 2015 - V3.04.00
   * Tesseract development is now done with git and hosted at github.com 
 (Previously we used Subversion as a vcs and code.google.com for hosting).
