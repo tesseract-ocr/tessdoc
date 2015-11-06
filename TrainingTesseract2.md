@@ -60,13 +60,13 @@ The first step is to determine the full character set to be used, and prepare a 
   * Make sure there are a minimum number of samples of each character. 10 is good, but 5 is OK for rare characters.
   * There should be more samples of the more frequent characters - at least 20.
   * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.[.md](.md){}<>/?** is terrible. Much better is **The (quick) [brown](brown.md) {fox} jumps! over the $3,456.78 `<lazy>` #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
-  * It is **ABSOLUTLEY VITAL** to space out the text a bit when printing, so up the inter-character and inter-line spacing in your word processor. Not spacing text out sufficiently will cause "FAILURE! box overlaps no blobs or blobs in multiple rows" errors during tr file generation, whcih leads to FATALITY - 0 labelled samples of "x", which leads to "Error: X classes in inttemp while unicharset contains Y unichars" and you can't use your nice new data files.
+  * It is **ABSOLUTELY VITAL** to space out the text a bit when printing, so up the inter-character and inter-line spacing in your word processor. Not spacing text out sufficiently will cause "FAILURE! box overlaps no blobs or blobs in multiple rows" errors during tr file generation, which leads to FATALITY - 0 labeled samples of "x", which leads to "Error: X classes in inttemp while unicharset contains Y unichars" and you can't use your nice new data files.
   * The training data currently needs to fit in a single tiff image, but it may be multi-page tiff (if you have libtiff installed).
   * There is no need to train with multiple sizes. 10 point will do. (An exception to this is very small text. If you want to recognize text with an x-height smaller than about 15 pixels, you should either train it specifically or scale your images before trying to recognize them.)
   * **DO NOT MIX FONTS ON A PAGE** (In a single .tr file to be precise.) This will cause features to be dropped at clustering, which leads to recognition errors.
   * The example boxtiff files on the downloads page will help if you are not sure how to format your training data.
 
-Next print and scan (or use some electronic rendering method) to create an image of your training page. Upto 32 training images can be used. It is best to create pages in a mix of fonts and styles, including italic and bold.
+Next print and scan (or use some electronic rendering method) to create an image of your training page. Up to 32 training images can be used. It is best to create pages in a mix of fonts and styles, including italic and bold.
 
 **NOTE:** training from real images is actually quite hard, due to the spacing-out requirements. This will be improved in a future release. For now it is much easier if you can print/scan your own training text.
 
@@ -105,7 +105,7 @@ e 236 450 255 474
 n 259 451 281 474
 ```
 
-Since Tesseract was run in English mode, it does not correctly recognize the umlaut. This character needs to be corrected using a suitable editor. An editor that understands UTF-8 should be used for this purpose. HTML editors are usually a good choice. (Mozilla on linux allows you to edit utf8 text files directly from the browser. Firefox and IE do not let you do this. MS Word is very good at handling different text encodings, and Notepad++ is another editor that understands UTF-8.) Linux and Windows both have a character map that can be used for copying characters that cannot be typed. In this case the u needs to be changed to Ã¼.
+Since Tesseract was run in English mode, it does not correctly recognize the umlaut. This character needs to be corrected using a suitable editor. An editor that understands UTF-8 should be used for this purpose. HTML editors are usually a good choice. (Mozilla on Linux allows you to edit utf8 text files directly from the browser. Firefox and IE do not let you do this. MS Word is very good at handling different text encodings, and Notepad++ is another editor that understands UTF-8.) Linux and Windows both have a character map that can be used for copying characters that cannot be typed. In this case the u needs to be changed to Ã¼.
 
 In theory, each line in the box file should represent one of the characters from your training file, but if you have a horizontally broken character, such as the lower double quote â€ž it will probably have 2 boxes that need to be merged!
 
@@ -152,11 +152,11 @@ e 367 499 386 524
 " 389 520 407 532
 ```
 
-If you didn't sucessfully space out the characters on the training image, some may have been joined into a single box. In this case, you can either remake the images with better spacing and start again, or if the pair is common, put both characters at the start of the line, leaving the bounding box to represent them both. (As of 2.04, there is a limit of 24 bytes for the description of a "character". This will allow you between 6 and 24 unicodes to describe the character, depending on where your codes sit in the unicode set. If anyone hits this limit, please file an issue describing your situation.)
+If you didn't successfully space out the characters on the training image, some may have been joined into a single box. In this case, you can either remake the images with better spacing and start again, or if the pair is common, put both characters at the start of the line, leaving the bounding box to represent them both. (As of 2.04, there is a limit of 24 bytes for the description of a "character". This will allow you between 6 and 24 unicodes to describe the character, depending on where your codes sit in the unicode set. If anyone hits this limit, please file an issue describing your situation.)
 
 **Note** that the coordinate system used in the box file has (0,0) at the bottom-left.
 
-If you have an editor that understands UTF-8, this process will be a lot easier than if it doesn't, as each UTF-8 character has upto 4 bytes to code it, and dumb editors will show you all the bytes separately.
+If you have an editor that understands UTF-8, this process will be a lot easier than if it doesn't, as each UTF-8 character has up to 4 bytes to code it, and dumb editors will show you all the bytes separately.
 
 There are several visual tools for editing box file - please check [AddOns wiki](AddOns#For_Tesseract-OCR_2.0x).
 
@@ -180,11 +180,11 @@ subset of an existing language, or add different characters/shapes to an existin
   1. Cat the filtered box files in an identical way to the .tr files for handing off to unicharset\_extractor.
   1. Run the rest of the training process.
 Caution! This is not quite as simple as it sounds! cntraining and mftraining can only
-take upto 32 .tr files, so you must cat all the files from multiple languages for the
+take up to 32 .tr files, so you must cat all the files from multiple languages for the
 same font together to make 32 language-combined, but font-individual files.
 The characters found in the tr files **must** match the sequence
 of characters found in the box files when given to unicharset\_extractor, so you have to
-cat the box files togther in the **same order** as the tr files.
+cat the box files together in the **same order** as the tr files.
 The command lines for cn/mftraining and unicharset\_extractor must be given the .tr
 and .box files (respectively) in the **same order** just in case you have different
 filterings for the different fonts.
