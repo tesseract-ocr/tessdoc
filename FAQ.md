@@ -47,7 +47,7 @@ Table of Contents
   * [Error: X classes in inttemp while unicharset contains Y unichars.](#error-x-classes-in-inttemp-while-unicharset-contains-y-unichars)
   * [Error: Size of unicharset is greater than MAX_NUM_CLASSES](#error-size-of-unicharset-is-greater-than-max_num_classes)
   * [How can I make the error messages go to tesseract.log instead of stderr?](#how-can-i-make-the-error-messages-go-to-tesseractlog-instead-of-stderr)
-  * [How can I supress tesseract info line?](#how-can-i-supress-tesseract-info-line)
+  * [How can I suppress tesseract info line?](#how-can-i-suppress-tesseract-info-line)
   * [How can I get the coordinates and confidence of each character?](#how-can-i-get-the-coordinates-and-confidence-of-each-character)
   * [How is confidence calculated?](#how-is-confidence-calculated)
   * [Can I use Tesseract for handwriting recognition?](#can-i-use-tesseract-for-handwriting-recognition)
@@ -368,7 +368,7 @@ This indicates that your lang.unicharambigs is missing an empty line at the end 
 
 ## Error: Illegal min or max specification
 
-This can happend if number format ("locale" on linux or "Regional and Language Options" in Windows) is different than English format. Solution is to set your locale (in code) of LC\_NUMERIC to "C"  before calling tesseract. In some cases you need to include locale.h:
+This can happen if number format ("locale" on linux or "Regional and Language Options" in Windows) is different than English format. Solution is to set your locale (in code) of LC\_NUMERIC to "C"  before calling tesseract. In some cases you need to include locale.h:
 ```
 #include <locale.h>
 setlocale (LC_NUMERIC, "C");
@@ -384,7 +384,7 @@ See also information in issues [250](http://code.google.com/p/tesseract-ocr/issu
 There are 2 possibilities:
 X ~= Y, usually with X < Y: Usually caused by a failed training process. Look for FATALITY messages from the tr file generation process. Looks like the training process failed to pick up some samples of some characters, and they didn't make it into the inttemp file (in mftraining) because there was no entry in the tr file. There are bad problems with applybox that make this a problem for a lot of people. The character samples need to be spaced out.
 
-X a wild number (very large + or -) and Y a sane number between 100 and a few thousand, depending on the language: Corrupt inttemp file, or (if you have **NOT** trained youself) your hardware has a funny endian architecture that is not automatically detected. Big-endian or Little-endian 32 and 64 bit **SHOULD** work, but mixed endian (0x12345678 -> 0x56 0x78 0x12 0x13 or similar) will **NOT** work. Get a sensible hardware architecture, or retrain yourself. Then your inttemp will match the hardware.
+X a wild number (very large + or -) and Y a sane number between 100 and a few thousand, depending on the language: Corrupt inttemp file, or (if you have **NOT** trained yourself) your hardware has a funny endian architecture that is not automatically detected. Big-endian or Little-endian 32 and 64 bit **SHOULD** work, but mixed endian (0x12345678 -> 0x56 0x78 0x12 0x13 or similar) will **NOT** work. Get a sensible hardware architecture, or retrain yourself. Then your inttemp will match the hardware.
 
 ## Error: Size of unicharset is greater than MAX\_NUM\_CLASSES
 
@@ -399,7 +399,7 @@ debug\_file tesseract.log
 call the file 'logfile' and put it in tessdata/configs/
 Then add logfile to the end of your command line.
 
-## How can I supress tesseract info line?
+## How can I suppress tesseract info line?
 
 See [issue 579](http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On linux you can redirect stderr and stdout output to /dev/null. E.g.:
 ```
