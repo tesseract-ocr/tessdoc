@@ -115,12 +115,25 @@ Windows relevant files are located in vs2008 directory (e.g. 'tesseract-3.01\vs2
 
 Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http://vorba.ch/2014/tesseract-3.03-vs2013.html).
 
+If you have Visual Studio 2015, checkout the repository at [Leptonica 1.72 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/leptonica) and click on build_tesseract.bat. After that you still need to download the language packs.
+
 ## Mingw+Msys or Cygwin
 
 For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](http://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
 
 For Cygwin have a look at blog [How to build Tesseract on Cygwin](http://vorba.ch/2014/tesseract-cygwin.html).
-Simon Eigeldinger started provide [tesseract compiled by cygwin](http://domasofan.spdns.eu/tesseract/).
+Simon Eigeldinger has provided binaries [tesseract compiled by cygwin](http://domasofan.spdns.eu/tesseract/).
+
+On cygwin Marco Atzeri has packaged Tesseract as well as the training utilities for 3.04.00 along with some training data. Instruction for cygwin installation is here:
+https://cygwin.com/cygwin-ug-net/setup-net.html
+
+Tesseract specific packages to be installed:
+
+tesseract-ocr                           3.04.00-2
+tesseract-ocr-eng                       3.04-1
+tesseract-training-core                 3.04-1
+tesseract-training-eng                  3.04-1
+tesseract-training-util                 3.04.00-2
 
 # Miscellaneous
 
