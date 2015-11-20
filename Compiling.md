@@ -127,6 +127,7 @@ Simon Eigeldinger has provided binaries [tesseract compiled by cygwin](http://do
 On cygwin Marco Atzeri has packaged Tesseract as well as the training utilities for 3.04.00 along with some training data. Instruction for cygwin installation is here:
 https://cygwin.com/cygwin-ug-net/setup-net.html
 
+```
 Tesseract specific packages to be installed:
 
 tesseract-ocr                           3.04.00-2
@@ -134,6 +135,7 @@ tesseract-ocr-eng                       3.04-1
 tesseract-training-core                 3.04-1
 tesseract-training-eng                  3.04-1
 tesseract-training-util                 3.04.00-2
+```
 
 # Miscellaneous
 
