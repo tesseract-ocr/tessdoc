@@ -117,9 +117,13 @@ Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http:/
 
 If you have Visual Studio 2015, checkout the repository at [Leptonica 1.72 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/leptonica) and click on build_tesseract.bat. After that you still need to download the language packs.
 
-## Mingw+Msys or Cygwin
+## Mingw+Msys or Msys2
 
 For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](http://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
+
+On Msys2 
+
+## Cygwin
 
 For Cygwin have a look at blog [How to build Tesseract on Cygwin](http://vorba.ch/2014/tesseract-cygwin.html).
 Simon Eigeldinger has provided binaries [tesseract compiled by cygwin](http://domasofan.spdns.eu/tesseract/).
