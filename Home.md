@@ -64,6 +64,18 @@ And you're done.
 
 Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) 64bit [Cygwin](https://www.cygwin.com/)
 
+Instruction for cygwin installation is here:
+https://cygwin.com/cygwin-ug-net/setup-net.html
+
+```
+Tesseract specific packages to be installed:
+
+tesseract-ocr                           3.04.00-2
+tesseract-ocr-eng                       3.04-1
+tesseract-training-core                 3.04-1
+tesseract-training-eng                  3.04-1
+tesseract-training-util                 3.04.00-2
+```
 
 ## Other Platforms
 
