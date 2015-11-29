@@ -59,7 +59,7 @@
   * [thu-ipv6-login](https://code.google.com/p/thu-ipv6-login/) a python script for IPv6 authentication in Tsinghua University with support for OCR of authcode
   * [Wolfram Mathematica 9.0](http://www.wolfram.com/mathematica/) use tesseract for [recognizing text](https://groups.google.com/d/msg/tesseract-ocr/NmxFclHcsAE/-KaiT5oJ8oQJ)
   * [node-dv](https://github.com/creatale/node-dv) is a node.js library for processing and understanding scanned documents
-  * [hocr-tools](https://hocr-tools.googlecode.com) - python tools for manipulating and evaluating the hOCR format for representing multi-lingual OCR results by embedding them into HTML. They include hocr-pdf tool for creating searchable pdf.
+  * [hocr-tools](https://github.com/tmbdev/hocr-tools) - python tools for manipulating and evaluating the hOCR format for representing multi-lingual OCR results by embedding them into HTML. They include hocr-pdf tool for creating searchable pdf.
   * [PyPDFOCR](https://github.com/virantha/pypdfocr) - Tesseract-OCR based PDF filing
   * [OCRmyPDF](https://github.com/fritz-hh/OCRmyPDF/tree/master) - adds OCR text layer to scanned PDF files, allowing them to be searched. Places OCRed text accurately below the image to ease copy/paste. Keeps exact resolution of original embedded images or, if requested, oversamples the images before OCRing so as to get better results. If requested, deskews and/or cleans the image before performing OCR. Validates generated file against PDF/A-1b specification using JHOVE. Debug mode for easy verification of OCR results. Processes pages in parallel on multi-core CPUs.
   * [node-dv](https://github.com/schulzch/node-dv/) is a node.js library for processing and understanding scanned documents
