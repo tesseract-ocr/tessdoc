@@ -9,7 +9,7 @@
 | [gImageReader](http://sourceforge.net/projects/gimagereader/) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
 | [SunnyPage OCR](http://www.sunnypage.ge/en/) |           |         | X           | Proprietary | A GUI frontend for Tesseract OCR engine with automatic adjustment of image brightness, image processing and PDF support.|
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
-| [OCRFeeder](http://live.gnome.org/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
+| [OCRFeeder](https://wiki.gnome.org/action/show/Apps/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
 | [PDF OCR X](http://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
 | [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
