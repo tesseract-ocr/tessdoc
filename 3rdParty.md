@@ -11,7 +11,7 @@
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
 | [OCRFeeder](http://live.gnome.org/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
 | [PDF OCR X](http://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
-| [Lector](http://code.google.com/p/lector/) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
+| [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
 | [Lime OCR](http://code.google.com/p/lime-ocr/) |           |         | X           | GPL v3      | A simple, free OCR software for Windows using tesseract-ocr engine |
 | [Ocrivist](http://code.google.com/p/ocrivist/) | X         |         |             | GPL v3      | Ocrivist is a utility which makes it possible to scan and OCR books and other printed documents to PDF or Djvu format |
