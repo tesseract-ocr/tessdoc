@@ -1,6 +1,6 @@
 # External tools, wrappers and training projects for Tesseract.
 
-## Tesseract box editors and traning tools
+## Tesseract box editors and training tools
 
 Platform support depends on used language and experience of user.
 
