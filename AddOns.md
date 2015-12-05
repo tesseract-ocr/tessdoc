@@ -55,6 +55,7 @@ Platform support depends on used language and experience of user.
   * [train.ps1](http://sourceforge.net/p/vietocr/code/HEAD/tree/jTessBoxEditor/trunk/tools/): Windows powershell script for Automate Tesseract 3.01 language data pack generation process.
   * [Update unicharambigs.exe](http://code.google.com/p/tesseract-ocr/issues/detail?id=544): A small (windows) C# program for editing "lang.unicharambigs" file
   * [train\_tess.pl](http://code.google.com/p/tesseract-ocr/issues/detail?id=640): perl script to facilitate training
+  * [boxedit](https://github.com/danvk/boxedit/) A web-based editor for Tesseract box files
 
 
 ## Community training projects
