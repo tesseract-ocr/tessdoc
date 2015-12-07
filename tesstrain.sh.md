@@ -1,4 +1,4 @@
-tesstrain.sh is a script that automatically calls the appropriate programs to create a new training for a language.
+[tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain_utils.sh) is a script that automatically calls the appropriate programs to create a new training for a language.
 
 It uses various programs for training, so you need to build them with 'make training' before using it.
 
@@ -83,4 +83,4 @@ For other variables that can be set, you're best off just reading the `set_lang_
 
 # tesstrain_utils.sh
 
-Note that the majority of the work that `tesstrain.sh` does is actually imported from the `training/tesstrain_utils.sh` file, so if you're curious about exactly what it is doing, or want to change its behaviour, look there.
+Note that the majority of the work that `tesstrain.sh` does is actually imported from the [training/tesstrain_utils.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain_utils.sh) file, so if you're curious about exactly what it is doing, or want to change its behaviour, look there.
