@@ -30,7 +30,7 @@ Tesseract works best on images which have a DPI of at least 300 dpi, so it may b
 
 ![binarisation.png](https://github.com/tesseract-ocr/tesseract/wiki/binarisation.png)
 
-This is converting an image to black and white. Tesseract does this internally, but it can make mistakes, particularly if the page background is of uneven darkness.
+This is converting an image to black and white. Tesseract does this internally, but the result can be suboptimal, particularly if the page background is of uneven darkness.
 
 
 ### Noise Removal
