@@ -75,7 +75,7 @@ To set options for your language, look towards the end of `language-specific.sh`
 
 ## Fonts
 
-You can either set the fonts to use as an argument to tesstrain.sh (as `--fontlist 'Font 1+Font 2'`) or by specifying the fonts in `language-specific.sh`.
+You can either set the fonts to use as an argument to tesstrain.sh (as `--fontlist 'Font 1' 'Font 2'`) or by specifying the fonts in `language-specific.sh`.
 
 ## Other options
 
