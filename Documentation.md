@@ -27,6 +27,7 @@ Spain July 25, 2009. https://dl.acm.org/citation.cfm?id=1577804
 ## Other publications from Ray Smith
 
   * [Ray Smith Publications](http://research.google.com/pubs/author4479.html)
+  * [The extraction and recognition of text from multimedia document images](http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.380162) by Smith, R.W. (Ph.D. thesis), 1987
   * [Slides from Tutorial on Tesseract presented at DAS2014](https://drive.google.com/file/d/0B7l10Bj_LprhbUlIUFlCdGtDYkE/edit?usp=sharing)
 
 ## Manual Pages
@@ -50,8 +51,7 @@ Documentation of tesseract generated from source code by [doxygen](http://www.do
 
 ## Other
 
-  * Video [PhotoTechEDU Day 11: Document Image Analysis with Leptonica](https://www.youtube.com/watch?v=pCZtGRUa_7s) 
-  * [The extraction and recognition of text from multimedia document images](http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.380162) by Smith, R.W. (Ph.D. thesis), 1987
+  * Video [PhotoTechEDU Day 11: Document Image Analysis with Leptonica](https://www.youtube.com/watch?v=pCZtGRUa_7s)
   * [Training Tesseract for Ancient Greek OCR](http://eutypon.gr/eutypon/pdf/e2012-29/e29-a01.pdf) by Nick White
   * [Shirorekha Chopping Integrated Tesseract OCR Engine for Enhanced Hindi Language Recognition](http://research.ijcaonline.org/volume39/number6/pxc3877076.pdf) by Nitin Mishra, C. Patvardhan, C. Vasantha Lakshmi, Sarika Singh
   * [Report on the comparison of Tesseract and ABBYY FineReader OCR engines](http://lib.psnc.pl/dlibra/docmetadata?id=358&from=publication&showContent=true) by Heliński, Kmieciak, and Parkoła
