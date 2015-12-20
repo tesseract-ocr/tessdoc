@@ -72,7 +72,7 @@ If you want to restrict recognition to a sub-rectangle of the image - call _SetR
 
 # Result iterator example
 
-There is posibility to get confidence value and BoundingBox per word from ResultIterator:
+There is possibility to get confidence value and BoundingBox per word from ResultIterator:
 
 ```
   Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
@@ -95,7 +95,7 @@ There is posibility to get confidence value and BoundingBox per word from Result
   }
 ```
 
-Of course there is posibility to use other [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/master/ccstruct/publictypes.h#L204).
+Of course there is possibility to use other [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/master/ccstruct/publictypes.h#L204).
 
 
 
