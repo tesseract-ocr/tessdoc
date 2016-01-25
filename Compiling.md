@@ -95,6 +95,12 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 # Windows
 
+## 3.03rc-1
+
+Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http://vorba.ch/2014/tesseract-3.03-vs2013.html).
+
+If you have Visual Studio 2015, checkout the repository at [Leptonica 1.72 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/leptonica) and click on build_tesseract.bat. After that you still need to download the language packs.
+
 ## 3.02
 
 For tesseract-ocr 3.02 please follow instruction in [Visual Studio 2008 Developer Notes for Tesseract-OCR](http://tesseract-ocr.googlecode.com/svn/trunk/vs2008/doc/setup.html#using-the-latest-tesseractocr-sources).
@@ -110,12 +116,6 @@ Download these packages from the [Downloads](http://code.google.com/p/tesseract-
 Unpack them to one directory (e.g. `tesseract-3.01`). Note that `tesseract-ocr-[version].eng.tar.gz` names the root directory `'tesseract-ocr'` instead of `'tesseract-[version]'`.
 
 Windows relevant files are located in vs2008 directory (e.g. 'tesseract-3.01\vs2008'). The same build process as usual applies: Open tesseract.sln with VC++Express 2008 and build all (or just Tesseract.) It should compile (in at least release mode) without having to install anything further. The dll dependencies and Leptonica are included. Output will be in tesseract-3.01\vs2008\bin (or tesseract-3.01\vs2008\bin.rd or tesseract-3.01\vs2008\bin.dbg based on configuration build).
-
-# 3.03rc-1
-
-Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http://vorba.ch/2014/tesseract-3.03-vs2013.html).
-
-If you have Visual Studio 2015, checkout the repository at [Leptonica 1.72 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/leptonica) and click on build_tesseract.bat. After that you still need to download the language packs.
 
 ## Mingw+Msys or Msys2
 
