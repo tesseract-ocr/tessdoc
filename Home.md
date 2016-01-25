@@ -16,8 +16,21 @@ If Tesseract isn't available for your distribution, or you want to use a newer v
 
 ## Mac OS X
 
-The easiest way to install Tesseract is with [MacPorts](https://www.macports.org/). Once it is installed, you can install Tesseract by running the command `sudo port install tesseract`, and any language with `sudo port install tesseract-<langcode>`. List of available langcodes can be found on [MacPorts tesseract page](https://www.macports.org/ports.php?by=name&substr=tesseract-). 
-Other option is to install tesseract using Homebrew with the command:
+You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh).
+
+####MacPorts
+To install Tesseract run this command: 
+```
+sudo port install tesseract
+```
+To install any language data, run:
+```
+sudo port install tesseract-<langcode>
+```
+List of available langcodes can be found on [MacPorts tesseract page](https://www.macports.org/ports.php?by=name&substr=tesseract-).
+
+####Homebrew
+To install Tesseract run this command:
 ```
 brew install tesseract
 ```
