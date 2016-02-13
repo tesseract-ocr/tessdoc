@@ -159,7 +159,8 @@ apt-get install mingw-w64-tools
 
 These prerequisites will be needed:
 
-* libpng, libtiff, zlib (binaries for Mingw-w64 available)
+* libpng, libtiff, zlib (binaries for Mingw-w64 available as part of the GTK+ bundles)
+* [libicu](https://github.com/svn2github/icu4c)
 * [liblcms2](https://github.com/mm2/Little-CMS)
 * [openjpeg](https://github.com/uclouvain/openjpeg)
 * [leptonica](https://github.com/DanBloomberg/leptonica/)
