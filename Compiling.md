@@ -142,16 +142,19 @@ tesseract-training-util                 3.04.00-2
 ```
 
 ## Mingw-w64
-[Mingw-w64](http://mingw-w64.org/) allows building 32 bit or 64 bit executables for Windows.
-It can be used for native compilations on Windows, but also for cross compilations on Linux.
+[Mingw-w64](http://mingw-w64.org/) allows building 32- or 64-bit executables for Windows.
+It can be used for native compilations on Windows,
+but also for cross compilations on Linux (which are easier and faster than native compilations).
 Most large Linux distributions already contain packages with the tools need for a cross build.
 Before building Tesseract, it is necessary to build some prerequisites.
 
-For Debian and similar distributions (e. g. Ubuntu), all required tools can be installed like that:
+For Debian and similar distributions (e. g. Ubuntu), the cross tools can be installed like that:
 
 ```
-apt-get install mingw-w64        # Development environment targeting 32- and 64-bit Windows
-apt-get install mingw-w64-tools  # Development tools for 32- and 64-bit Windows
+# Development environment targeting 32- and 64-bit Windows (required)
+apt-get install mingw-w64
+# Development tools for 32- and 64-bit Windows (optional)
+apt-get install mingw-w64-tools
 ```
 
 These prerequisites will be needed:
