@@ -141,6 +141,26 @@ tesseract-training-eng                  3.04-1
 tesseract-training-util                 3.04.00-2
 ```
 
+## Mingw-w64
+[Mingw-w64](http://mingw-w64.org/) allows building 32 bit or 64 bit executables for Windows.
+It can be used for native compilations on Windows, but also for cross compilations on Linux.
+Most large Linux distributions already contain packages with the tools need for a cross build.
+Before building Tesseract, it is necessary to build some prerequisites.
+
+For Debian and similar distributions (e. g. Ubuntu), all required tools can be installed like that:
+
+```
+apt-get install mingw-w64        # Development environment targeting 32- and 64-bit Windows
+apt-get install mingw-w64-tools  # Development tools for 32- and 64-bit Windows
+```
+
+These prerequisites will be needed:
+
+* libpng, libtiff, zlib (binaries for Mingw-w64 available)
+* [liblcms2](https://github.com/mm2/Little-CMS)
+* [openjpeg](https://github.com/uclouvain/openjpeg)
+* [leptonica](https://github.com/DanBloomberg/leptonica/)
+
 # Miscellaneous
 
 * [Standalone Tesseract build bash script](http://pastebin.com/VnGLHfbr)
