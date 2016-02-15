@@ -25,7 +25,7 @@ Table of Contents
   * Use Travis CI and Appveyor Continuous Integration services.
   * Added option to build tesseract with CMake build system.
   * Enable OpenMP support
-  * Added option to build tesseract without cube ovr engine (-DNO_CUBE_BUILD).
+  * Added option to build tesseract without cube ocr engine (-DNO_CUBE_BUILD).
   * Improved pdf output for OS X Preview. 
 
 # Tesseract release notes July 11 2015 - V3.04.00
