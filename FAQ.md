@@ -97,15 +97,15 @@ or similar.
 
 ## Windows: tesseract closes automatically right after launching
 
-Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface there are several available from the [[3rdParty]] page.
+Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [[3rdParty]] page.
 
 ## What output formats can Tesseract produce?
 
-Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
+Tesseract can produce plain text, PDF, and HTML output. Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
 
-With the configfile 'hocr' tesseract will produce xhtml output compliant with the [hocr specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
+With the configfile 'hocr' tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
 
-With the configfile 'pdf' tesseract will produce searchable PDF.
+With the configfile 'pdf' tesseract will produce searchable PDF containing pages images with a hidden, searchable text layer.
 
 ## libtesseract.so.3: cannot open shared object file
 
@@ -139,7 +139,7 @@ or:
 CPPFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" ./configure
 ```
 
-## Can't read compressed Tiff files
+## Can't read compressed TIFF files
 
 I get this error message:
 ```
@@ -179,7 +179,7 @@ The API (TessBaseAPI) should be OK with 1, 8, 24 or 32 bit images.
 
 ## Does it support multi-page tiff files?
 
-Only with 2.03 and later, and only if you have libtiff installed. See Compressed Tiff above.
+Yes, with all versions 2.03 and later, as long as you have libtiff installed. See Compressed Tiff above.
 
 ## Why doesn't viewer/svutil.cpp compile?
 
@@ -219,6 +219,13 @@ There is an upper limit of 30 bytes for the utf-8 representation of each recogni
 
 ## How do I recognize only digits?
 
+### Tesseract 3
+
+Use the `digits` config file like this:
+```
+tesseract imagename outputbase digits
+```
+
 ### Tesseract 2.03
 
 Use
@@ -235,12 +242,6 @@ tesseract image.tif outputbase nobatch digits
 ```
 **Warning:** Until the old and new config variables get merged, you **must** have the `nobatch` parameter too.
 
-### Tesseract 3
-
-A digits config file is already created, so just run a tesseract command like this:
-```
-tesseract imagename outputbase digits
-```
 
 
 ## How do I add just one character or one font to my favourite language, without having to retrain from scratch?
@@ -249,7 +250,7 @@ It is not possible to add just one character or font. You need to retrain from s
 
 ## How do I produce searchable PDF output?
 
-Searchable PDF output is a standard feature as of Tesseract version 3.03.
+Searchable PDF output is a standard feature as of Tesseract version 3.03. Use the `pdf` config file like this:
 
 ```
 tesseract phototest.tif phototest pdf
@@ -263,8 +264,9 @@ image filenames to Tesseract as they are produced. Tesseract streams a
 searchable PDF to stdout. You will need Tesseract v3.04 or later for this feature.
 
 ```
-scanimage --batch --batch-print | tesseract -c stream_filelist=true - - pdf
+scanimage --batch --batch-print | tesseract -c stream_filelist=true - - pdf > output.pdf
 ```
+
 
 ## Is there a Minimum Text Size? (It won't read screen text!)
 
@@ -284,18 +286,17 @@ Use the combine\_tessdata command. See the [combine\_tessdata manual page](https
 
 ## How do I provide my own dictionary?
 
-### Tesseract 2
-
-Easy: Replace `tessdata/eng.user-words` with your own word list, in the same format - UTF8 text, one word per line.
-
-More difficult, but better for a large dictionary: Replace `tessdata/eng.word-dawg` with one created from your own word list, using wordlist2dawg. See the [TrainingTesseract](TrainingTesseract) wiki page for details.
-
 ### Tesseract 3
 
 To add an extra word list, create a .user-words file as explained in [tesseract(1)](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
 If you want to replace the whole dictionary, you will need to unpack the .traineddata file, create a new word-dawg file, and then pack the files back into a .traineddata file. See [TrainingTesseract](TrainingTesseract) for more details.
 
+### Tesseract 2
+
+Easy: Replace `tessdata/eng.user-words` with your own word list, in the same format - UTF8 text, one word per line.
+
+More difficult, but better for a large dictionary: Replace `tessdata/eng.word-dawg` with one created from your own word list, using wordlist2dawg. See the [TrainingTesseract](TrainingTesseract) wiki page for details.
 
 ## wordlist2dawg doesn't work!
 
@@ -414,7 +415,7 @@ tesseract phototest.tif phototest quiet
 
 ## How can I get the coordinates and confidence of each character?
 
-There are two options. If you would rather not get into programming, you can use Tesseract's hocr output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h).
+There are two options. If you would rather not get into programming, you can use Tesseract's hOCR output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h).
 
 ## How is confidence calculated?
 * **Character** - Compute a distance measure between 0 and 1 of the character from a training sample:
