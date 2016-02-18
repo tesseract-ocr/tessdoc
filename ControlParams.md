@@ -45,7 +45,7 @@ Note that the default value may change; check the source code if you need to be 
 | enable\_new\_segsearch | 0                   | Enable new segmentation search path. It could solve the problem of dividing one character to two characters |
 | language\_model\_ngram\_on | 0                   | Turn on/off the use of character ngram model. |
 | textord\_force\_make\_prop\_words | F                   | Force proportional word segmentation on all rows. |
-| edges\_max\_children\_per\_outline  | 40                  | Max number of children inside a character outline. Increase this value if [some of KANJI characters are not recognized (rejected)](https://code.google.com/p/tesseract-ocr/issues/detail?id=1022). |
+| edges\_max\_children\_per\_outline  | 40                  | Max number of children inside a character outline. Increase this value if [some of KANJI characters are not recognized (rejected)](https://web.archive.org/web/*/https://code.google.com/p/tesseract-ocr/issues/detail?id=1022). |
 
 
 If you find a parameter that you consider useful, please add a comment to this page, and we will copy it into the page as we find it.
