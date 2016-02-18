@@ -97,29 +97,29 @@ or similar.
 
 ## Windows: tesseract closes automatically right after launching
 
-Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface there are several available from the [3rdParty](http://code.google.com/p/tesseract-ocr/wiki/3rdParty#GUI) page.
+Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface there are several available from the [[3rdParty]] page.
 
 ## What output formats can Tesseract produce?
 
 Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
 
-With the configfile 'hocr' tesseract will produce xhtml output compliant with the [hocr specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
+With the configfile 'hocr' tesseract will produce xhtml output compliant with the [hocr specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
 
 With the configfile 'pdf' tesseract will produce searchable PDF.
 
 ## libtesseract.so.3: cannot open shared object file
 
-Run 'sudo ldconfig' after 'sudo make install'. See [issue 621](http://code.google.com/p/tesseract-ocr/issues/detail?id=621).
+Run 'sudo ldconfig' after 'sudo make install'. See [issue 621](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=621).
 
 ## Tesseract does not work
 
-Please ensure there is only one installation of tesseract e.g. there are reported problems (in case of shared build) if tesseract 3.01 and 3.02 are installed on the same computer. See e.g. [issue 793](http://code.google.com/p/tesseract-ocr/issues/detail?id=793)
+Please ensure there is only one installation of tesseract e.g. there are reported problems (in case of shared build) if tesseract 3.01 and 3.02 are installed on the same computer. See e.g. [issue 793](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=793)
 
 ## Error in pixReadStream:
 
 If you see this error, than you have a problem with your leptonica installation - e.g. there is missing support for your image format. Usually this means the relevant image library was not installed properly during leptonica build or there is some configure problem within leptonica.
 > Please check issues
-[340](http://code.google.com/p/tesseract-ocr/issues/detail?id=340), [391](http://code.google.com/p/tesseract-ocr/issues/detail?id=391) and [443](http://code.google.com/p/tesseract-ocr/issues/detail?id=443)
+[340](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=340), [391](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=391) and [443](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=443)
 
 ## Can't open eng.unicharset?
 
@@ -376,7 +376,7 @@ setlocale (LC_NUMERIC, "C");
 
 Other option is to adjust your user locale/regional settings.
 
-See also information in issues [250](http://code.google.com/p/tesseract-ocr/issues/detail?id=250) and [228](http://code.google.com/p/tesseract-ocr/issues/detail?id=228)
+See also information in issues [250](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=250) and [228](https://web.archive.org/web/20151128085645/http://code.google.com/p/tesseract-ocr/issues/detail?id=228)
 
 ## Error: X classes in inttemp while unicharset contains Y unichars.
 
@@ -388,7 +388,7 @@ X a wild number (very large + or -) and Y a sane number between 100 and a few th
 
 ## Error: Size of unicharset is greater than MAX\_NUM\_CLASSES
 
-Just increase MAX\_NUM\_CLASSES (in dict/matchdefs.h) for your build. See issues [670](https://code.google.com/p/tesseract-ocr/issues/detail?id=670) and [743](https://code.google.com/p/tesseract-ocr/issues/detail?id=743)
+Just increase MAX\_NUM\_CLASSES (in dict/matchdefs.h) for your build. See issues [670](https://web.archive.org/web/*/https://code.google.com/p/tesseract-ocr/issues/detail?id=670) and [743](https://web.archive.org/web/*/https://code.google.com/p/tesseract-ocr/issues/detail?id=743)
 
 ## How can I make the error messages go to tesseract.log instead of stderr?
 
@@ -401,7 +401,7 @@ Then add logfile to the end of your command line.
 
 ## How can I suppress tesseract info line?
 
-See [issue 579](http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On linux you can redirect stderr and stdout output to /dev/null. E.g.:
+See [issue 579](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On linux you can redirect stderr and stdout output to /dev/null. E.g.:
 ```
 tesseract phototest.tif phototest 1>/dev/null 2>&1
 ```
@@ -414,7 +414,7 @@ tesseract phototest.tif phototest quiet
 
 ## How can I get the coordinates and confidence of each character?
 
-There are two options. If you would rather not get into programming, you can use Tesseract's hocr output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](http://code.google.com/p/tesseract-ocr/source/browse/trunk/api/baseapi.h).
+There are two options. If you would rather not get into programming, you can use Tesseract's hocr output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h).
 
 ## How is confidence calculated?
 * **Character** - Compute a distance measure between 0 and 1 of the character from a training sample:
@@ -437,19 +437,19 @@ _(informations from issue tracker with Status: Look-here-for-help.)_
 
 ### How to port Tesseract engine into vb6 project?
 
-See the suggestions in [issue 42](http://code.google.com/p/tesseract-ocr/issues/detail?id=42).
+See the suggestions in [issue 42](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=42).
 
 ### Delphi wrapper for tessdll.dll
 
-Have a look  at [Addon Wiki](AddOns) or see the comments in [issue 88](http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
+Have a look  at [Addon Wiki](AddOns) or see the comments in [issue 88](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
 
 ### Incomplete OCR result
 
-See the suggestions in [issue 44](http://code.google.com/p/tesseract-ocr/issues/detail?id=44).
+See the suggestions in [issue 44](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=44).
 
 ### error LNK2001: unresolved external symbol "public: static char **cdecl TessBaseAPI::TesseractRect(unsigned char const**,int,int,int,int,int,int)" (?TesseractRect@TessBaseAPI@@SAPADPBEHHHHHH@Z)
 
-If you are using version 2.04 and VC++ 6 add a #define TESSDLL\_IMPORTS before you include baseapi.h. (see [issue 297](http://code.google.com/p/tesseract-ocr/issues/detail?id=297)
+If you are using version 2.04 and VC++ 6 add a #define TESSDLL\_IMPORTS before you include baseapi.h. (see [issue 297](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=297)
 
 ### box overlaps no blobs or blobs in multiple rows error when training
 
@@ -457,11 +457,11 @@ If you get this error try to use pagesegmenation value 5 or 6. E.g.:
 ```
 tesseract input_image output -psm 6 batch.nochop makebox
 ```
-Or have a look at other suggestions in [issue 471](http://code.google.com/p/tesseract-ocr/issues/detail?id=471)
+Or have a look at other suggestions in [issue 471](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=471)
 
 ### Training failed  with error message "mf.cpp:78: FEATURE\_SET\_STRUCT**ExtractMicros..."**
 
-See suggestions on how to improve the input image in [issue 488](http://code.google.com/p/tesseract-ocr/issues/detail?id=488).
+See suggestions on how to improve the input image in [issue 488](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=488).
 
 ### error message: Font id = -1/0, class id = 1/105 on sample 0
 
