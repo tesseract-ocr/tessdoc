@@ -14,16 +14,16 @@ Table of Contents
   * [Error in pixReadStream:](#error-in-pixreadstream)
   * [Can't open eng.unicharset?](#cant-open-engunicharset)
   * [leptonica library missing](#leptonica-library-missing)
-  * [Can't read compressed Tiff files](#cant-read-compressed-tiff-files)
+  * [Can't read compressed TIFF files](#cant-read-compressed-tiff-files)
   * [No output with color images](#no-output-with-color-images)
-  * [Does it support multi-page tiff files?](#does-it-support-multi-page-tiff-files)
+  * [Does it support multi-page TIFF files?](#does-it-support-multi-page-tiff-files)
   * [Why doesn't viewer/svutil.cpp compile?](#why-doesnt-viewersvutilcpp-compile)
   * [Where are the training tools for Ubuntu 14.04 ?](#where-are-the-training-tools-for-ubuntu-1404-)
   * [How do I Edit Box files used in training?](#how-do-i-edit-box-files-used-in-training)
   * [Utf8 buffer too big, size=xx (Error during training)](#utf8-buffer-too-big-sizexx-error-during-training)
   * [How do I recognize only digits?](#how-do-i-recognize-only-digits)
-    * [Tesseract 2.03](#tesseract-203)
     * [Tesseract 3](#tesseract-3)
+    * [Tesseract 2.03](#tesseract-203)
   * [How do I add just one character or one font to my favourite language, without having to retrain from scratch?](#how-do-i-add-just-one-character-or-one-font-to-my-favourite-language-without-having-to-retrain-from-scratch)
   * [How do I produce searchable PDF output?](#how-do-i-produce-searchable-pdf-output)
   * [How to do streaming](#how-to-do-streaming)
@@ -32,8 +32,8 @@ Table of Contents
   * [How do I generate the language data files?](#how-do-i-generate-the-language-data-files)
   * [How do I unpack or alter existing language data files?](#how-do-i-unpack-or-alter-existing-language-data-files)
   * [How do I provide my own dictionary?](#how-do-i-provide-my-own-dictionary)
-    * [Tesseract 2](#tesseract-2)
     * [Tesseract 3](#tesseract-3-1)
+    * [Tesseract 2](#tesseract-2)
   * [wordlist2dawg doesn't work!](#wordlist2dawg-doesnt-work)
   * [How to increase the trust in/strength of the dictionary?](#how-to-increase-the-trust-instrength-of-the-dictionary)
   * [What are configs and how can I have more?](#what-are-configs-and-how-can-i-have-more)
@@ -69,14 +69,14 @@ Table of Contents
   * Don't mix tesseracts version language files.
   * Post example files e.g. if you have problem with training. Just posting error messages is not sufficient if you used an input file. The source of the problem is usually hidden in input files.
   * Do not post programs or libraries (e.g. program for editing box files) - post a link where they can be downloaded
-  * Try to find the optimal format for example images - a 20Mb image is not helpful. A multi-page tiff is useful only if you have problem with multi-page functionality. E.g. 2 colour png provides the same information as a truecolour uncompressed tiff (tesseract will convert it to 2 colours anyway).
+  * Try to find the optimal format for example images - a 20Mb image is not helpful. A multi-page TIFF is useful only if you have problem with multi-page functionality. E.g. 2 colour png provides the same information as a truecolour uncompressed TIFF (tesseract will convert it to 2 colours anyway).
   * Copy the error message from the terminal/console/windows command line (yes, it is possible on Windows too) instead of sending a screen-shot.
   * Use the [tesseract developer](http://groups.google.com/group/tesseract-dev/) forum to share updates, bug fixes, improvements, add-ons for Tesseract. For general questions and support please use the [tesseract-ocr user] (http://groups.google.com/group/tesseract-ocr/) forum.
   * Read the wiki, search issues (also closed), search in the tesseract forum before you post your issues/question. Maybe it was solved already.
 
 ## Can I increase speed of OCR?
 
-If you are processing several  images you can run tesseract in parallel with [GNU Parallel](http://www.gnu.org/software/parallel/).
+If you are processing several images, you can run tesseract in parallel with [GNU Parallel](http://www.gnu.org/software/parallel/).
 E.g. instead of:
 ```
 find . -maxdepth 1 -name "*.tif" -print0 | while IFS= read -r -d '' n; do 
@@ -177,9 +177,9 @@ With libtiff, Tesseract reads compressed tiff files, but can't handle **any** co
 
 The API (TessBaseAPI) should be OK with 1, 8, 24 or 32 bit images.
 
-## Does it support multi-page tiff files?
+## Does it support multi-page TIFF files?
 
-Yes, with all versions 2.03 and later, as long as you have libtiff installed. See Compressed Tiff above.
+Yes, with all versions 2.03 and later, as long as you have libtiff installed. See Compressed TIFF above.
 
 ## Why doesn't viewer/svutil.cpp compile?
 
