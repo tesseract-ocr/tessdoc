@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 
 Table of Contents
 =================
+  * [Tesseract release notes Feb 11 2015 - V3.04.01](#tesseract-release-notes-feb-16-2016---v30401)
   * [Tesseract release notes July 11 2015 - V3.04.00](#tesseract-release-notes-july-11-2015---v30400)
   * [Tesseract release notes Feb 4 2014 - V3.03(rc1)](#tesseract-release-notes-feb-4-2014---v303rc1)
   * [Tesseract release notes Oct 23 2012 - V3.02.02](#tesseract-release-notes-oct-23-2012---v30202)
@@ -19,14 +20,16 @@ Table of Contents
 
 
 # IN DEVELOPMENT
+  * Use Travis CI and Appveyor Continuous Integration services.
+  * Added option to build tesseract with CMake build system.
+
+# Tesseract release notes Feb 16 2016 - V3.04.01
   * Added osd renderer for psm 0. Works for single page and multi-page images.
   * Improve tesstrain.sh script.
   * Simplify build and run of ScrollView.
-  * Use Travis CI and Appveyor Continuous Integration services.
-  * Added option to build tesseract with CMake build system.
-  * Enable OpenMP support
+  * Improved pdf output for OS X Preview.
   * Added option to build tesseract without cube ocr engine (-DNO_CUBE_BUILD).
-  * Improved pdf output for OS X Preview. 
+  * Enable OpenMP support.
 
 # Tesseract release notes July 11 2015 - V3.04.00
   * Tesseract development is now done with git and hosted at github.com 
