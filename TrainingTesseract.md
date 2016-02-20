@@ -125,7 +125,7 @@ Note that the argument to --font may contain spaces, and thus must be quoted. Eg
 training/text2image --text=training_text.txt --outputbase=eng.TimesNewRomanBold.exp0 --font='Times New Roman Bold' --fonts_dir=/usr/share/fonts
 ```
 
-There are a lot of other command-line arguments available to text2image. Run `text2image --help` for more information.
+There are a lot of other command-line arguments available to text2image. Run `text2image --help` to get more information.
 
 If you used text2image, you can skip next step - 'Make Box Files', and move to [Run Tesseract for Training](#run-tesseract-for-training).
 
