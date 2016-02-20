@@ -44,7 +44,7 @@ Tesseract is slower with large character set languages (like Chinese), but it se
 
 Tesseract needs to know about different shapes of the same character by having different fonts separated explicitly. This used to be limited to 32 fonts, but the limit has been raised to 64. It is set by the constant MAX\_NUM\_CONFIGS defined in intproto.h. Note that runtime is heavily dependent on the number of fonts provided, and training more than 32 will result in a significant slow-down.
 
-Any language that has different punctuation and numbers is going to be disadvantaged by some of the hard-coded algorithms that assume ASCII punctuation and digits. To be fixed in 3.02.
+For versions 3.00/3.01, any language that has different punctuation and numbers is going to be disadvantaged by some of the hard-coded algorithms that assume ASCII punctuation and digits. [Fixed in 3.02]
 
 You need to run all commands in the same folder where are located your input files.
 
