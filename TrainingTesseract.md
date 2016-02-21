@@ -364,7 +364,7 @@ Each line of the font\_properties file is formatted as follows:
 ```
 <fontname> <italic> <bold> <fixed> <serif> <fraktur>
 ```
-where `<fontname>` is a string naming the font (no spaces allowed!), and `<italic>, <bold>, <fixed>, <serif> and <fraktur>` are all simple 0 or 1 flags indicating whether the font has the named property.
+where `<fontname>` is a string naming the font (no spaces allowed!), and `<italic>`, `<bold>`, `<fixed>`, `<serif>` and `<fraktur>` are all simple 0 or 1 flags indicating whether the font has the named property.
 
 When running mftraining, each .tr filename must match an entry in the font\_properties file, or mftraining will abort. At some point, possibly before the release of 3.01, this matching requirement is likely to shift to the font name in the .tr file itself. The name of the .tr file may be either fontname.tr or `[lang].[fontname].exp[num].tr`.
 
