@@ -28,7 +28,7 @@ Table of Contents
   * Improve tesstrain.sh script.
   * Simplify build and run of ScrollView.
   * Improved pdf output for OS X Preview.
-  * INCOMPATIBLE fix to hOCR line height information - [commit #225](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
+  * INCOMPATIBLE fix to hOCR line height information - commit [134ebc3](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
   * Added option to build tesseract without cube ocr engine (-DNO_CUBE_BUILD).
   * Enable OpenMP support.
 
