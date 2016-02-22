@@ -443,7 +443,9 @@ wordlist2dawg frequent_words_list lang.freq-dawg lang.unicharset
 wordlist2dawg words_list lang.word-dawg lang.unicharset
 ```
 
-For right-to-left languages (RTL) use option _"-r 1"_. Other options can be found in [wordlist2dawg Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
+For languages written from right to left (RTL), like Arabic and Hebrew, add `-r 1` to the `wordlist2dawg` command.
+
+Other options can be found in [wordlist2dawg Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
 
 **NOTE:** If a dictionary file is included in the combined traineddata, it must contain at least one entry.  Dictionary files that would otherwise be empty are not required for the combine\_tessdata step.
 
