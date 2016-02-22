@@ -343,9 +343,9 @@ W 5 Latin 40
 
 Japanese or Chinese alphabetic character properties are represented by the binary number 00001 (1 in hexadecimal).
 
-If your system supports the wctype functions, these values will be set automatically by unicharset\_extractor **and there is no need to edit the unicharset file.** On some older systems (eg Windows 95), the unicharset file must be edited by hand to add these property description codes.
+If your system supports the wctype functions, these values will be set automatically by `unicharset_extractor` and **there is no need to edit the** `unicharset` **file**. On some very old systems (eg Windows 95), the `unicharset` file must be edited by hand to add these property description codes.
 
-**NOTE** The unicharset file must be regenerated whenever inttemp, normproto and pffmtable are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync. This is made easier than in previous versions by running unicharset\_extractor before mftraining and cntraining, and giving the unicharset to mftraining.
+**NOTE:** The `unicharset` file must be regenerated whenever `inttemp`, `normproto` and `pffmtable` are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync. This is made easier than in previous versions by running `unicharset_extractor` before `mftraining` and `cntraining`, and giving the `unicharset` to `mftraining`.
 
 Last two columns represent type of script (Latin, Common, Greek, Cyrillic, Han, null) and id code of character given language.
 
