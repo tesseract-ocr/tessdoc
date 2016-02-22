@@ -506,7 +506,7 @@ The `unicharambigs` file may also be non-existent.
 
 # Putting it all together
 
-That is all there is to it! All you need to do now is collect together all (shapetable, normproto, inttemp, pffmtable) the files and rename them with a `lang.` prefix, where lang is the 3-letter code for your language taken from http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes and then run combine\_tessdata on them as follows:
+That is all there is to it! All you need to do now is collect together all the files (`shapetable`, `normproto`, `inttemp`, `pffmtable`) and rename them with a `lang.` prefix, where lang is the 3-letter code for your language taken from http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes and then run `combine_tessdata` on them as follows:
 ```
 combine_tessdata lang.
 ```
@@ -520,6 +520,6 @@ tesseract image.tif output -l lang
 
 (Actually, you can use any string you like for the language code, but if you want anybody else to be able to use it easily, ISO 639 is the way to go.)
 
-More options of combine\_tessdata can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/master/training/combine_tessdata.cpp#L23).
+More options of `combine_tessdata` can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/master/training/combine_tessdata.cpp#L23).
 
 You can inspect some of the internals of traineddata files  in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
