@@ -243,7 +243,7 @@ If you are trying to train a new character set, it is a good idea to put in the 
 ```
 tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] -l yournewlanguage batch.nochop makebox
 ```
-This should make the 2nd box file easier to make, as there is a good chance that Tesseract will recognize most of the text correctly. You can always iterate this sequence adding more fonts to he training set (i.e. to the command line of `mftraining` and `cntraining` below) as you make them, but note that there is no incremental training mode that allows you to add new training data to existing sets. This means that each time you run `mftraining` and `cntraining` you are making new data files from scratch from the tr files you give on the command line, and these programs cannot take an existing intproto/pffmtable/normproto and add to them directly.
+This should make the 2nd box file easier to make, as there is a good chance that Tesseract will recognize most of the text correctly. You can always iterate this sequence adding more fonts to he training set (i.e. to the command line of `mftraining` and `cntraining` below) as you make them, but note that there is no incremental training mode that allows you to add new training data to existing sets. This means that each time you run `mftraining` and `cntraining` you are making new data files from scratch from the tr files you give on the command line, and these programs cannot take an existing `intproto` / `pffmtable` / `normproto` and add to them directly.
 
 ### Tif/Box pairs provided!
 
