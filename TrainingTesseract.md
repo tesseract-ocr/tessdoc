@@ -291,10 +291,11 @@ Note that the box filename must match the tif filename, including the path, or T
 
 Another error that can occur **that is also fatal and needs attention** is an error about "Box file format error on line n". If preceded by "Bad utf-8 char..." then the utf-8 codes are incorrect and need to be fixed. The error "utf-8 string too long..." indicates that you have exceeded the 24 byte limit on a character description. If you need a description longer than 24 bytes, please file an issue.
 
-There is no need to edit the content of the `[lang].[fontname].exp[num].tr` file. The font name inside it need not be set. For the curious, here is some information on the format:
+There is no need to edit the content of the `[lang].[fontname].exp[num].tr` file. The font name inside it need not be set.
+
+For the curious, here is some information on the format. Every character in the box file has a corresponding set of entries in the .tr file (in order) like this:
+
 ```
-Every character in the box file has a corresponding set of entries in
-the .tr file (in order) like this
 UnknownFont <utf8 code(s)> 2
 mf <number of features>
 x y length dir 0 0
@@ -302,17 +303,17 @@ x y length dir 0 0
 above)
 cn 1
 ypos length x2ndmoment y2ndmoment
+```
 
-The mf features are polygon segments of the outline normalized to the
-1st and 2nd moments.
-x= x position [-0.5.0.5]
-y = y position [-0.25, 0.75]
-length is the length of the polygon segment [0,1.0]
+The `mf` features are polygon segments of the outline normalized to the
+1st and 2nd moments.  
+x= x position [-0.5,0.5]  
+y = y position [-0.25,0.75]  
+length is the length of the polygon segment [0,1.0]  
 dir is the direction of the segment [0,1.0]
 
-The cn feature is to correct for the moment normalization to
+The `cn` feature is to correct for the moment normalization to
 distinguish position and size (eg c vs C and , vs ')
-```
 
 ## Compute the Character Set
 
