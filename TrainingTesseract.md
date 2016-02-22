@@ -447,7 +447,7 @@ For languages written from right to left (RTL), like Arabic and Hebrew, add `-r 
 
 Other options can be found in [wordlist2dawg Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
 
-**NOTE:** If a dictionary file is included in the combined traineddata, it must contain at least one entry.  Dictionary files that would otherwise be empty are not required for the combine\_tessdata step.
+**NOTE:** If a dictionary file is included in the combined traineddata, it must contain at least one entry.  Dictionary files that would otherwise be empty are not required for the `combine_tessdata` step.
 
 Words with unusual spellings should be added to the dictionary files. Unusual spellings can include mixtures of alphabetical characters with punctuation or numeric characters. (E.g. i18n, l10n, google.com, news.bbc.co.uk, io9.com, utf8, ucs2)
 
