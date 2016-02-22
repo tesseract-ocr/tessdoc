@@ -456,7 +456,7 @@ If you need example files for dictionary wordlists, uncombine (with [combine\_te
 
 ## The last file (unicharambigs)
 
-The final data file that Tesseract uses is called unicharambigs. It describes possible ambiguities between characters or sets of characters, and is manually generated. To understand the file format, look at the following example:
+The final data file that Tesseract uses is called `unicharambigs`. It describes possible ambiguities between characters or sets of characters, and is manually generated. To understand the file format, look at the following example:
 
 ```
 v1
@@ -498,11 +498,11 @@ iii m 0
 
 In this format, the "error" and "correction" are simple utf-8 strings separated by a space, and, after another space, the same type specifier as v1 (0 for optional and 1 for mandatory substitution). Note the downside of this simpler format is that Tesseract has to encode the utf-8 strings into the components of the unicharset. In complex scripts, this encoding may be ambiguous. In this case, the encoding is chosen such as to use the least utf-8 characters for each component, ie the shortest unicharset components will make up the encoding.
 
-Like most other files used in training, the 'unicharambigs' file must be encoded as UTF8, and must end with a newline character.
+Like most other files used in training, the `unicharambigs` file must be encoded as UTF8, and must end with a newline character.
 
-The unicharambigs format is also described in the [unicharambigs(5) man page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharambigs.5.asc).
+The `unicharambigs` format is also described in the [unicharambigs(5) man page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharambigs.5.asc).
 
-The unicharambigs file may also be non-existent.
+The `unicharambigs` file may also be non-existent.
 
 # Putting it all together
 
