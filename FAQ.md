@@ -240,9 +240,8 @@ and then your command line becomes:
 ```
 tesseract image.tif outputbase nobatch digits
 ```
-**Warning:** Until the old and new config variables get merged, you **must** have the `nobatch` parameter too.
 
-
+**Warning:** In versions 2.03/2.04 (but not in version 3.00 and up), you **must** put `nobatch` before `digits`.
 
 ## How do I add just one character or one font to my favourite language, without having to retrain from scratch?
 
