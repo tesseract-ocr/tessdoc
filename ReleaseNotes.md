@@ -24,7 +24,7 @@ Table of Contents
   * Added option to build tesseract with CMake build system.
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
-  * Added osd renderer for psm 0. Works for single page and multi-page images.
+  * Added OSD renderer for psm 0. Works for single page and multi-page images.
   * Improve tesstrain.sh script.
   * Simplify build and run of ScrollView.
   * Improved pdf output for OS X Preview.
