@@ -182,7 +182,7 @@ e 236 451 255 475 0
 n 259 452 281 475 0
 ```
 
-Since Tesseract was run in English mode, it does not correctly recognize the umlaut. This character needs to be corrected using a suitable editor. An editor that understands UTF-8 should be used for this purpose. HTML editors are usually a good choice. (Mozilla on linux allows you to edit utf8 text files directly from the browser. Firefox and IE do not let you do this. MS Word is very good at handling different text encodings, and Notepad++ is another editor that understands UTF-8.) Linux and Windows both have a character map that can be used for copying characters that cannot be typed. In this case the u needs to be changed to ü.
+Since Tesseract was run in English mode, it does not correctly recognize the umlaut. This character needs to be corrected using an editor that supports UTF-8. Recommended editors: Notepad++, gedit, KWrite, Geany, Vim, Emacs, Atom.io, TextMate,  Sublime Text. Choose one! Linux and Windows both have a character map that can be used for copying characters that cannot be typed. In this case the u needs to be changed to ü.
 
 In theory, each line in the box file should represent one of the characters from your training file, but if you have a horizontally broken character, such as the lower double quote „ it will probably have 2 boxes that need to be merged!
 
