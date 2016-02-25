@@ -69,7 +69,7 @@ sudo make training-install
 
 # Data files required
 
-To train for another language, you have to create some data files in the `tessdata` subdirectory, and then crunch these together into a single file, using combine\_tessdata. The naming convention is `languagecode.file_name` Language codes for released files follow the ISO 639-3 standard, but any string can be used. The files used for English (3.00) are:
+To train for another language, you have to create some data files in the `tessdata` subdirectory, and then crunch these together into a single file, using `combine_tessdata`. The naming convention is `languagecode.file_name` Language codes for released files follow the ISO 639-3 standard, but any string can be used. The files used for English (3.00) are:
   * `tessdata/eng.config`
   * `tessdata/eng.unicharset`
   * `tessdata/eng.unicharambigs`
