@@ -45,7 +45,7 @@ Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (r
 
 Tesseract is slower with large character set languages (like Chinese), but it seems to work OK.
 
-Tesseract needs to know about different shapes of the same character by having different fonts separated explicitly. This used to be limited to 32 fonts, but the limit has been raised to 64. It is set by the constant MAX\_NUM\_CONFIGS defined in intproto.h. Note that runtime is heavily dependent on the number of fonts provided, and training more than 32 will result in a significant slow-down.
+Tesseract needs to know about different shapes of the same character by having different fonts separated explicitly. The number of fonts is limited to 64 fonts. Note that runtime is heavily dependent on the number of fonts provided, and training more than 32 will result in a significant slow-down.
 
 For versions 3.00/3.01, any language that has different punctuation and numbers is going to be disadvantaged by some of the hard-coded algorithms that assume ASCII punctuation and digits. [Fixed in 3.02]
 
@@ -99,7 +99,7 @@ Text input files (lang.config, lang.unicharambigs, font\_properties, box files, 
 
 ## How little can you get away with?
 
-You **must** create `unicharset`, `inttemp`, `normproto`, `pffmtable` using the procedure described below. If you are only trying to recognize a limited range of fonts (like a single font for instance), then a single training page might be enough. The other files no longer need to be provided, but will most likely improve accuracy, depending on your application.
+You **must** create `unicharset`, `inttemp`, `normproto`, `pffmtable` using the procedure described below. If you are only trying to recognize a limited range of fonts (like a single font for instance), then a single training page might be enough. The other files no longer need to be provided, but will most likely improve accuracy, dep Unlike the previous wiki, github wiki doesn't have comments ending on your application.
 
 # Training Procedure
 
