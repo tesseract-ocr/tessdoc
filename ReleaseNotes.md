@@ -27,9 +27,9 @@ Table of Contents
   * Added OSD renderer for psm 0. Works for single page and multi-page images.
   * Improve tesstrain.sh script.
   * Simplify build and run of ScrollView.
-  * Improved pdf output for OS X Preview.
+  * Improved PDF output for OS X Preview utility.
   * INCOMPATIBLE fix to hOCR line height information - commit [134ebc3](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
-  * Added option to build tesseract without cube ocr engine (-DNO_CUBE_BUILD).
+  * Added option to build tesseract without cube OCR engine (-DNO_CUBE_BUILD).
   * Enable OpenMP support.
 
 # Tesseract release notes July 11 2015 - V3.04.00
@@ -37,8 +37,9 @@ Table of Contents
 (Previously we used Subversion as a vcs and code.google.com for hosting).
   * Tesseract now requires leptonica 1.71 or a higher version.
   * Removed official support for VS 2008.
-  * Added support for many more scripts/languages.
+  * Added support for 39 additional scripts/languages, including: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid
   * Major updates to training system as a result of extensive testing on 100 languages.
+  * New training data for over 100 languages
   * Improved performance with PIC compilation option.
   * Significant change to invisible font system in pdf output to improve 
 correctness and compatibility with external programs, particularly ghostscript.
@@ -59,9 +60,9 @@ running a heap checker.
   * Added ability to text2image training tool to just list available fonts.
   * Added ability to text2image to underline words.
   * Improved efficiency of image processing for PDF output.
-  * Added parameter description for each paramater listed with 'print-parameters' 
+  * Added parameter description for each parameter listed with 'print-parameters' 
 command line option.
-  * Added font info to hocr output.
+  * Added font info to hOCR output.
   * Enabled streaming input and output of multi-page documents.
   * Many bug fixes.
 
