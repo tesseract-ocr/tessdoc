@@ -212,13 +212,14 @@ This version recognizes the following languages:
   * German  - deu
   * Spanish - spa
   * Dutch   - nld
+
 The language codes follow ISO 639-2. The default language is English.
 To recognize another language:
 ```
 tesseract inputimage outputbase -l langcode
 ```
 
-To train on a new language, see TrainingTesseract.
+To train on a new language, see [TrainingTesseract2](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract2).
 More languages will be appearing over time.
 
 List of changes in this release:
@@ -232,11 +233,7 @@ List of changes in this release:
   * Made some improvements to consistency of accuracy across platforms.
   * Added vc++ express support.
 
-
-
-### xx.00 Version Warning
-
-Tesseract 2.00 has undergone more compatibility testing than any previous version. There have even been fixes to make the accuracy more consistent across platforms. Having said that, there have been many changes to the code, and portability may have been broken, so 64 bit and Mac platforms may not work or even build as well as before.
+**Warning:** Tesseract 2.00 has undergone more compatibility testing than any previous version. There have even been fixes to make the accuracy more consistent across platforms. Having said that, there have been many changes to the code, and portability may have been broken, so 64 bit and Mac platforms may not work or even build as well as before.
 
 
 # Tesseract release notes May 15, 2007 - V1.04
