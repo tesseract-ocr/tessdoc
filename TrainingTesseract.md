@@ -114,7 +114,7 @@ The first step is to determine the full character set to be used, and prepare a 
 
 ### Automated method (new in 3.03)
 
-Prepare a utf-8 text file (`training_text.txt`) containing your training text according to the above specification.
+Prepare a UTF-8 text file (`training_text.txt`) containing your training text according to the above specification.
 Obtain truetype/opentype font files for the fonts that you wish to recognize.
 Run the following command for each font in turn to create a matching tif/box file pair.
 
@@ -291,14 +291,14 @@ Note that the box filename must match the tif filename, including the path, or T
 
 **Important** Check for errors in the output from apply\_box. If there are FATALITIES reported, then there is no point continuing with the training process until you fix the box file. The new box.train.stderr config file makes is easier to choose the location of the output. A FATALITY usually indicates that this step failed to find any training samples of one of the characters listed in your box file. Either the coordinates are wrong, or there is something wrong with the image of the character concerned. If there is no workable sample of a character, it can't be recognized, and the generated inttemp file won't match the unicharset file later and Tesseract will abort.
 
-Another error that can occur **that is also fatal and needs attention** is an error about "Box file format error on line n". If preceded by "Bad utf-8 char..." then the utf-8 codes are incorrect and need to be fixed. The error "utf-8 string too long..." indicates that you have exceeded the 24 byte limit on a character description. If you need a description longer than 24 bytes, please file an issue.
+Another error that can occur **that is also fatal and needs attention** is an error about "Box file format error on line n". If preceded by "Bad utf-8 char..." then the UTF-8 codes are incorrect and need to be fixed. The error "utf-8 string too long..." indicates that you have exceeded the 24 byte limit on a character description. If you need a description longer than 24 bytes, please file an issue.
 
 There is no need to edit the content of the `[lang].[fontname].exp[num].tr` file. The font name inside it need not be set.
 
 For the curious, here is some information on the format. Every character in the box file has a corresponding set of entries in the .tr file (in order) like this:
 
 ```
-UnknownFont <utf8 code(s)> 2
+UnknownFont <UTF-8 code(s)> 2
 mf <number of features>
 x y length dir 0 0
 ... (there are a set of these determined by <number of features>
@@ -498,9 +498,9 @@ m rn 0
 iii m 0
 ```
 
-In this format, the "error" and "correction" are simple utf-8 strings separated by a space, and, after another space, the same type specifier as v1 (0 for optional and 1 for mandatory substitution). Note the downside of this simpler format is that Tesseract has to encode the utf-8 strings into the components of the unicharset. In complex scripts, this encoding may be ambiguous. In this case, the encoding is chosen such as to use the least utf-8 characters for each component, ie the shortest unicharset components will make up the encoding.
+In this format, the "error" and "correction" are simple UTF-8 strings separated by a space, and, after another space, the same type specifier as v1 (0 for optional and 1 for mandatory substitution). Note the downside of this simpler format is that Tesseract has to encode the UTF-8 strings into the components of the unicharset. In complex scripts, this encoding may be ambiguous. In this case, the encoding is chosen such as to use the least UTF-8 characters for each component, ie the shortest unicharset components will make up the encoding.
 
-Like most other files used in training, the `unicharambigs` file must be encoded as UTF8, and must end with a newline character.
+Like most other files used in training, the `unicharambigs` file must be encoded as UTF-8, and must end with a newline character.
 
 The `unicharambigs` format is also described in the [unicharambigs(5) man page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharambigs.5.asc).
 
