@@ -29,7 +29,7 @@ Table of Contents
   * Simplify build and run of ScrollView.
   * Improved PDF output for OS X Preview utility.
   * INCOMPATIBLE fix to hOCR line height information - commit [134ebc3](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
-  * Added option to build tesseract without cube OCR engine (-DNO_CUBE_BUILD).
+  * Added option to build tesseract without Cube OCR engine (-DNO_CUBE_BUILD).
   * Enable OpenMP support.
 
 # Tesseract release notes July 11 2015 - V3.04.00
