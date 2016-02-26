@@ -33,8 +33,8 @@ Table of Contents
   * Enable OpenMP support.
 
 # Tesseract release notes July 11 2015 - V3.04.00
-  * Tesseract development is now done with git and hosted at github.com 
-(Previously we used Subversion as a vcs and code.google.com for hosting).
+  * Tesseract development is now done with Git and hosted at github.com 
+(Previously we used Subversion as a VCS and code.google.com for hosting).
   * Tesseract now requires leptonica 1.71 or a higher version.
   * Removed official support for VS 2008.
   * Added support for 39 additional scripts/languages, including: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid
