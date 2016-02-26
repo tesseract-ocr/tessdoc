@@ -21,7 +21,7 @@ Table of Contents
 
 # IN DEVELOPMENT
   * Use Travis CI and Appveyor Continuous Integration services.
-  * Added option to build tesseract with CMake build system.
+  * Added option to build Tesseract with CMake build system.
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
   * Added OSD renderer for psm 0. Works for single page and multi-page images.
@@ -29,7 +29,7 @@ Table of Contents
   * Simplify build and run of ScrollView.
   * Improved PDF output for OS X Preview utility.
   * INCOMPATIBLE fix to hOCR line height information - commit [134ebc3](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
-  * Added option to build tesseract without Cube OCR engine (-DNO_CUBE_BUILD).
+  * Added option to build Tesseract without Cube OCR engine (-DNO_CUBE_BUILD).
   * Enable OpenMP support.
 
 # Tesseract release notes July 11 2015 - V3.04.00
