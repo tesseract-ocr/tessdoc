@@ -184,7 +184,7 @@ n 259 452 281 475 0
 
 Since Tesseract was run in English mode, it does not correctly recognize the umlaut. This character needs to be corrected using an editor that supports UTF-8. In this case the `u` needs to be changed to `ü`.
 
-Recommended editors that support UTF-8: Notepad++, gedit, KWrite, Geany, Vim, Emacs, Atom.io, TextMate,  Sublime Text. Choose one! Linux and Windows both have a character map that can be used for copying characters that cannot be typed.
+Recommended editors that support UTF-8: Notepad++, gedit, KWrite, Geany, Vim, Emacs, Atom, TextMate,  Sublime Text. Choose one! Linux and Windows both have a character map that can be used for copying characters that cannot be typed.
 
 In theory, each line in the box file should represent one of the characters from your training file, but if you have a horizontally broken character, such as the lower double quote „ it will probably have 2 boxes that need to be merged!
 
