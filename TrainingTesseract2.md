@@ -48,7 +48,7 @@ To train for another language, you have to create 8 data files in the `tessdata`
 
 How little can you get away with?
 
-You **must** create inttemp, normproto, pfftable, freq-dawg, word-dawg and unicharset using the procedure described below. If you are only trying to recognize a limited range of fonts (like a single font for instance), then a single training page might be enough. DangAmbigs and user-words may be empty files. The dictionary files freq-dawg and word-dawg don't have to be given many words if you don't have a wordlist to hand, but accuracy will be lower than if you have a decent sized (10s of thousands for English say) dictionary, but for 2.04 and below at least, empty dawg files and dawgs with no words are NOT allowed.
+You **must** create inttemp, normproto, pffmtable, freq-dawg, word-dawg and unicharset using the procedure described below. If you are only trying to recognize a limited range of fonts (like a single font for instance), then a single training page might be enough. DangAmbigs and user-words may be empty files. The dictionary files freq-dawg and word-dawg don't have to be given many words if you don't have a wordlist to hand, but accuracy will be lower than if you have a decent sized (10s of thousands for English say) dictionary, but for 2.04 and below at least, empty dawg files and dawgs with no words are NOT allowed.
 
 # Training Procedure
 
