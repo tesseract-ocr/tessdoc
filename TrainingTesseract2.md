@@ -105,7 +105,7 @@ e 236 450 255 474
 n 259 451 281 474
 ```
 
-Since Tesseract was run in English mode, it does not correctly recognize the umlaut. This character needs to be corrected using a suitable editor. An editor that understands UTF-8 should be used for this purpose. HTML editors are usually a good choice. (Mozilla on Linux allows you to edit utf8 text files directly from the browser. Firefox and IE do not let you do this. MS Word is very good at handling different text encodings, and Notepad++ is another editor that understands UTF-8.) Linux and Windows both have a character map that can be used for copying characters that cannot be typed. In this case the u needs to be changed to Ã¼.
+Since Tesseract was run in English mode, it does not correctly recognize the umlaut. This character needs to be corrected using a suitable editor. An editor that understands UTF-8 should be used for this purpose. HTML editors are usually a good choice. (Mozilla on Linux allows you to edit UTF-8 text files directly from the browser. Firefox and IE do not let you do this. MS Word is very good at handling different text encodings, and Notepad++ is another editor that understands UTF-8.) Linux and Windows both have a character map that can be used for copying characters that cannot be typed. In this case the u needs to be changed to Ã¼.
 
 In theory, each line in the box file should represent one of the characters from your training file, but if you have a horizontally broken character, such as the lower double quote â€ž it will probably have 2 boxes that need to be merged!
 
@@ -210,13 +210,13 @@ Note that the box filename must match the tif filename, including the path, or T
 
 **Important** Check for errors in the output from apply\_box. If there are FATALITIES reported, then there is no point continuing with the training process until you fix the box file. The new box.train.stderr config file makes is easier to choose the location of the output. A FATALITY usually indicates that this step failed to find any training samples of one of the characters listed in your box file. Either the coordinates are wrong, or there is something wrong with the image of the character concerned. If there is no workable sample of a character, it can't be recognized, and the generated inttemp file won't match the unicharset file later and Tesseract will abort.
 
-Another error that can occur **that is also fatal and needs attention** is an error about "Box file format error on line n". If preceded by "Bad utf-8 char..." then the utf-8 codes are incorrect and need to be fixed. The error "utf-8 string too long..." indicates that you have exceeded the 8 (v2.01) byte limit on a character description. If you need a description longer than 8 bytes, please file an issue. Box file format errors without either of the above errors indicate either something wrong with the bounding box integers, or possibly a blank line in the box file. Blank lines are actually harmless, and the error can be ignored in this case. They could be ignored by the code, but it doesn't ignore them in case there is something unintentional wrong with the box file.
+Another error that can occur **that is also fatal and needs attention** is an error about "Box file format error on line n". If preceded by "Bad utf-8 char..." then the UTF-8 codes are incorrect and need to be fixed. The error "utf-8 string too long..." indicates that you have exceeded the 8 (v2.01) byte limit on a character description. If you need a description longer than 8 bytes, please file an issue. Box file format errors without either of the above errors indicate either something wrong with the bounding box integers, or possibly a blank line in the box file. Blank lines are actually harmless, and the error can be ignored in this case. They could be ignored by the code, but it doesn't ignore them in case there is something unintentional wrong with the box file.
 
 There is no need to edit the content of the fontfile.tr file. The font name inside it need not be set. For the curious, here is some information on the format:
 ```
 Every character in the box file has a corresponding set of entries in
 the .tr file (in order) like this
-UnknownFont <utf8 code(s)> 2
+UnknownFont <UTF-8 code(s)> 2
 mf <number of features>
 x y length dir 0 0
 ... (there are a set of these determined by <number of features>
