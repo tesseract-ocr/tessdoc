@@ -393,13 +393,13 @@ The character shape features can be clustered using the `shapeclustering`, `mftr
 
 ### shapeclustering (new in 3.02)
 
+`shapeclustering` **should not be used except for the Indic languages.**
+
 ```
 shapeclustering -F font_properties -U unicharset lang.fontname.exp0.tr lang.fontname.exp1.tr ...
 ```
 
 `shapeclustering` creates a master shape table by shape clustering and writes it to a file named `shapetable`.
-
-**NOTE:** `shapeclustering` currently should not be used except for the [Indic languages](https://groups.google.com/d/msg/tesseract-dev/Z1lTKePp-hY/kUtGy4gdNS4J).
 
 ### mftraining
 
