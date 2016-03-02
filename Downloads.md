@@ -12,8 +12,9 @@ Currently, there is no **official** Windows installer for newer versions.
 
 ## 3rd party Windows exe's/installer
 
-  * binaries compiled by @egorpugin (ref issue 209)
+  * binaries compiled by @egorpugin (ref issue # 209)
     https://www.dropbox.com/s/8t54mz39i58qslh/tesseract-3.05.00dev-win32-vc19.zip?dl=1
+
     You have to install VC2015 x86 redist from microsoft.com in order to run them.
     Leptonica is built with all libs except for libjp2k.
 
