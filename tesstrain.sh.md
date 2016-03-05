@@ -5,7 +5,7 @@ It uses various programs for training, so you need to build them with 'make trai
 # Example usage
 
 ```
-$ tesstrain.sh --lang kan --langdata_dir /path/to/mylangdata
+$ ./tesstrain.sh --lang kan --langdata_dir /path/to/mylangdata
 ```
 
 This is the most common usage of `tesstrain.sh`. See the comments at the top of `tesstrain.sh` for a description of all of the arguments it accepts.
