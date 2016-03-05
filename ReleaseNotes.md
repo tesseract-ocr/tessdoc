@@ -117,7 +117,7 @@ command line option.
 
 # Tesseract release notes Oct 21 2011 - V3.01
   * Thread-safety! Moved all critical globals and statics to members of the appropriate class. Tesseract is now thread-safe (multiple instances can be used in parallel in multiple threads.) with the minor exception that some control parameters are still global and affect all threads.
-  * Added Cube, a new recognizer for Arabic. Cube can also be used in combination with normal Tesseract for other languages with an improvement in accuracy at the cost of (much) lower speed. **There is no training module for Cube.**
+  * Added Cube, a new recognizer for Arabic and Hindi. Cube can also be used in combination with normal Tesseract for other languages with an improvement in accuracy at the cost of (much) lower speed. **There is no training module for Cube.**
   * `OcrEngineMode` in `Init` replaces `AccuracyVSpeed` to control cube.
   * Greatly improved segmentation search with consequent accuracy and speed improvements, especially for Chinese.
   * Added `PageIterator` and `ResultIterator` as cleaner ways to get the full results out of Tesseract, that are not currently provided by any of the `TessBaseAPI::Get*` methods. All other methods, such as the `ETEXT_STRUCT` in particular are deprecated and will be deleted in the future.
