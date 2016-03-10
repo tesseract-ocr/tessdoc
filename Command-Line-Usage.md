@@ -3,10 +3,10 @@
 # Tesseract --help
 
     Usage:
-      C:\msys32\mingw32\bin\tesseract.exe --help | --help-psm | --version
-      C:\msys32\mingw32\bin\tesseract.exe --list-langs [--tessdata-dir PATH]
-      C:\msys32\mingw32\bin\tesseract.exe --print-parameters [options...] [configfile...]
-      C:\msys32\mingw32\bin\tesseract.exe imagename|stdin outputbase|stdout [options...] [configfile...]
+      tesseract --help | --help-psm | --version
+      tesseract  --list-langs [--tessdata-dir PATH]
+      tesseract  --print-parameters [options...] [configfile...]
+      tesseract  imagename|stdin outputbase|stdout [options...] [configfile...]
     
     OCR options:
       --tessdata-dir PATH   Specify the location of tessdata path.
@@ -38,7 +38,9 @@
       --list-langs          List available languages for tesseract engine.
       --print-parameters    Print tesseract parameters to stdout.
 
-# Simplest Invocation
+# Simplest Invocation to OCR an image
+
+    tesseract imagename outputbase
 
 # Using One Language
 
