@@ -14,15 +14,15 @@ The copy of tesstrain.sh that ships with Ubuntu is slightly modified to have a f
 filled out, because many of the directory locations are standardized. The documentation is in the standard location.
 
 ```
-  /usr/share/doc/tesseract/README.debian
+/usr/share/doc/tesseract/README.debian
 ```
 
 The modification saves some typing.  This is an example of training for Japanese.
 
 ```
-   git clone https://github.com/tesseract-ocr/langdata.git 
-   apt-get install fonts-noto-cjk fonts-japanese-mincho.ttf fonts-takao-gothic fonts-vlgothic
-   tesstrain.sh --lang jpn --langdata_dir langdata
+git clone https://github.com/tesseract-ocr/langdata.git 
+apt-get install fonts-noto-cjk fonts-japanese-mincho.ttf fonts-takao-gothic fonts-vlgothic
+tesstrain.sh --lang jpn --langdata_dir langdata
 ```
 
 # Langdata
@@ -55,6 +55,21 @@ These are general files that can affect multiple languages, but may be edited if
  * [Script].xheights
  * [Script].unicharset
  * font_properties
+
+Nick White's xheight tool can be used to find xheight of different fonts.To clone it and build the xheights tool, do the following:
+
+```
+$ git clone http://ancientgreekocr.org/grctraining.git
+$ cd grctraining
+$ make tools/xheights
+```
+
+To see how it's used for the Greek training, do:
+
+```
+$ make langdata/Greek.xheights
+``` 
+
 
 # Langdata files
 
