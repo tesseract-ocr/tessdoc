@@ -54,13 +54,11 @@ The following command would give the same result as above, if eng.traineddata an
 
     tesseract  --tessdata-dir /usr/share ./testing/phototest.tif ./testing/phototest  -l eng
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-![eurotext.png](http://dev.blog.fairway.ne.jp/wp-content/uploads/2014/04/eurotext.png)
-
 ## Using Multiple Languages
 
     tesseract  --tessdata-dir /usr/share ./testing/eurotext.png ./testing/eurotext-engdeu -l eng+deu
+
+![eurotext.png](http://dev.blog.fairway.ne.jp/wp-content/uploads/2014/04/eurotext.png)
 
 The output can be different based on the order of languages, so -l eng+deu can give different result than -l deu+eng.
 
