@@ -42,7 +42,7 @@
 
     tesseract imagename outputbase
 
-This uses **English **as the default language and 3 as the Page Segmentation Mode. The default output format is **text**.
+This uses **English** as the default language and 3 as the Page Segmentation Mode. The default output format is **text**.
 
 osd.traineddata, for Orientation and Segmentation and eng.traineddata and other language data files for English should be in the "tessdata" directory. TESSDATA_PREFIX environment variable should be set to the parent directory of "tessdata" directory. 
 
@@ -54,11 +54,13 @@ The following command would give the same result as above, if eng.traineddata an
 
     tesseract  --tessdata-dir /usr/share ./testing/phototest.tif ./testing/phototest  -l eng
 
-    ![phototest.tif](https://github.com/tesseract-ocr/tesseract/blob/master/testing/phototest.tif?raw=true)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![eurotext.png](http://dev.blog.fairway.ne.jp/wp-content/uploads/2014/04/eurotext.png)
 
 ## Using Multiple Languages
 
-    tesseract  --tessdata-dir /usr/share ./testing/eurotext.tif ./testing/eurotext-engdeu -l eng+deu
+    tesseract  --tessdata-dir /usr/share ./testing/eurotext.png ./testing/eurotext-engdeu -l eng+deu
 
 The output can be different based on the order of languages, so -l eng+deu can give different result than -l deu+eng.
 
