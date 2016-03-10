@@ -1,6 +1,6 @@
-# [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
+## [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
 
-# Tesseract --help
+## Tesseract --help
 
     Usage:
       tesseract --help | --help-psm | --version
@@ -38,21 +38,21 @@
       --list-langs          List available languages for tesseract engine.
       --print-parameters    Print tesseract parameters to stdout.
 
-# Simplest Invocation to OCR an image
+## Simplest Invocation to OCR an image
 
     tesseract imagename outputbase
 
-# Using One Language
+## Using One Language
 
-# Using Multiple Languages
+## Using Multiple Languages
 
-# Using different Page Segmentation Modes
+## Using different Page Segmentation Modes
 
-# Searchable pdf ouptput
+## Searchable pdf ouptput
 
-# HOCR output
+## HOCR output
 
-# TSV output (only available in 3.05-dev in master branch)
+## TSV output (only available in 3.05-dev in master branch)
 
 
 
