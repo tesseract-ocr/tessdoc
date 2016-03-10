@@ -10,6 +10,21 @@ $ ./tesstrain.sh --lang kan --langdata_dir /path/to/mylangdata --tessdata_dir /p
 
 This is the most common usage of `tesstrain.sh`. See the comments at the top of `tesstrain.sh` for a description of all of the arguments it accepts.
 
+The copy of tesstrain.sh that ships with Ubuntu is slightly modified to have a few of the default parameters automatically
+filled out, because many of the directory locations are standardized. The documentation is in the standard location.
+
+```
+  /usr/share/doc/tesseract/README.debian
+```
+
+The modification saves some typing.  This is an example of training for Japanese.
+
+```
+   git clone https://github.com/tesseract-ocr/langdata.git 
+   apt-get install fonts-noto-cjk fonts-japanese-mincho.ttf fonts-takao-gothic fonts-vlgothic
+   tesstrain.sh --lang jpn --langdata_dir langdata
+```
+
 # Langdata
 
 tesstrain.sh needs certain files to use in the training process. These are normally stored in a 'langdata' directory. The langdata for the languages that are officially supported by Tesseract are all stored in the [langdata](https://github.com/tesseract-ocr/langdata) repository, but you can of course store langdata wherever you want.
