@@ -1,7 +1,7 @@
 # [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
 
 # Tesseract --help
-
+++++
 Usage:
   C:\msys32\mingw32\bin\tesseract.exe --help | --help-psm | --version
   C:\msys32\mingw32\bin\tesseract.exe --list-langs [--tessdata-dir PATH]
@@ -37,7 +37,7 @@ Single options:
   -v, --version         Show version information.
   --list-langs          List available languages for tesseract engine.
   --print-parameters    Print tesseract parameters to stdout.
-
+++++
 
 # Simplest Invocation
 
