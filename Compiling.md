@@ -165,6 +165,16 @@ These prerequisites will be needed:
 * [openjpeg](https://github.com/uclouvain/openjpeg)
 * [leptonica](https://github.com/DanBloomberg/leptonica/)
 
+# on OS X with MacPorts
+
+```
+  git clone git@github.com:tesseract-ocr/tesseract.git
+  cd tesseract
+  ./autogen.sh
+  ./configure --with-extra-libraries=/opt/local/lib
+  make
+  sudo make install
+```
 # Miscellaneous
 
 * [Standalone Tesseract build bash script](http://pastebin.com/VnGLHfbr)
