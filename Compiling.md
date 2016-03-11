@@ -95,11 +95,13 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 # Windows
 
+## 3.04
+
+If you have Visual Studio 2015, checkout the repository at [Leptonica 1.72 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/leptonica) and click on build_tesseract.bat. After that you still need to download the language packs.
+
 ## 3.03rc-1
 
 Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http://vorba.ch/2014/tesseract-3.03-vs2013.html).
-
-If you have Visual Studio 2015, checkout the repository at [Leptonica 1.72 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/leptonica) and click on build_tesseract.bat. After that you still need to download the language packs.
 
 ## 3.02
 
