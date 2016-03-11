@@ -1,31 +1,24 @@
-# How to run UNLV tests on Tesseract.
+# How to run UNLV tests on Tesseract
 
 # Introduction
 
-Tesseract 2.0 provides scripts that make it possible to run some of the UNLV tests published in the Fourth Annual Test of OCR Accuracy.
+Tesseract 2.0+ provides scripts that make it possible to run some of the UNLV tests published in the Fourth Annual Test of OCR Accuracy.
 See [AT-1995.pdf](https://github.com/tesseract-ocr/docs/blob/master/AT-1995.pdf) (originally available at http://www.isri.unlv.edu/). The main purpose of providing these test scripts is to enable Tesseract users to verify that their installation is correct, and that no architecture-specific problems are causing bad recognition accuracy. It also serves as a benchmark to demonstrate accuracy improvements of each version. Developers working on Tesseract may find the benchmarking tools useful for measuring experimental new modules.
 
 Note that **some** architecture-specific variation is bound to occur. Most of these should be caused by varying treatment and optimization of floating-point arithmetic between compilers. It is also possible of course that there are memory initialization errors that show up as differences between architectures, but we claim to have found most of these already in the unicodeization process.
 
 # Caveat
 
-You **must** include libtiff in your build to be able to run these tests, as the UNLV images are G4 compressed. Linux users have libtiff included automatically in the build if it is installed. (sudo apt-get install libtiff4-dev is a possible incantation to install it.) On windows, follow the instructions in the ReleaseNotes wiki. Another alternative would be to hack the reorgdata.sh script to convert all the images to uncompressed as it copies them, but that will take significantly more disk space.
+The UNLV images are G4 compressed, so you must build Tesseract with TIFF support, but all recent versions include libtiff by default. 
 
 Windows users also have to have some unix shell script capability, perhaps via cygwin or equivalent.
 
 # Downloading the images
 
-The current scripts only cover tests of the 3b, Bb, Mb and Nb test sets. The adaptive thresholding in the open-source Tesseract is not the same as in the original as the original adaptive thresholding was not included in the open source release, so the 8 bit grey image tests would not compare correctly, and the other resolutions, while interesting, do not really serve a useful regression testing purpose.
+The current scripts only cover tests of the 3B test sets (ie 300 dpi bitonal). The adaptive thresholding in the open-source Tesseract is not the same as in the original as the original adaptive thresholding was not included in the open source release, so the 8 bit grey image tests would not compare correctly, and the other resolutions, while interesting, do not really serve a useful regression testing purpose.
 
-  1. Goto http://isri-ocr-evaluation-tools.googlecode.com and get 3b.tgz, Bb.tgz, Mb.tgz and Nb.tgz.
-  1. Extract the files. It doesn't really matter where in your filesystem you put them, but they must go under a common root so you have directories 3, B, M and N in, for example, `/users/me/ISRI-OCRtk` It is probably better to put them outside of your main tesseract-ocr directory, so that they will not have to move when you get the next version.
-  1. Reorganize the files. The lack of tif extensions on the images is inconvenient, so there is a script to reorganize the data to match the rest of the test scripts. cd to `/users/me/ISRI-OCRtk` or wherever 3, B, M and N ended up and run
-```
-/blah/blah/tesseract-ocr/testing/reorgdata.sh 3B
-```
-(Substitute your own path to your tesseract root directory.) This makes directories doe3.3B, bus.3B, mag.3B and news.3B.
-You can now get rid of 3, B, M, and N unless you want to get some of the
-other scanning resolutions out of them.
+  1. Goto https://code.google.com/archive/p/isri-ocr-evaluation-tools/downloads and get: [bus.3B.tar.gz](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/isri-ocr-evaluation-tools/bus.3B.tar.gz), doe3.3B.tar.gz, mag.3B.tar.gz, news.3B.tar.gz. There are also additional sets available which aren't currently used: legal.3B.tar.gz, rep.3B.tar.gz spn.3B.tar.gz (Spanish)
+  1. Extract the files into the `tesseract/testing/unlv` subdirectory
 
 # Downloading the tools from UNLV
 
