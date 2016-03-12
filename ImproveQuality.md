@@ -75,12 +75,12 @@ If you need an example how to improve image quality programmatically, have a loo
 
 ## Page segmentation method
 
-By default Tesseract expects a page of text when it segments an image. If you're just seeking to OCR a small region try a different segmentation mode, using the `-psm` argument. Note that adding a border to the text may also help, see [issue 398](https://code.google.com/p/tesseract-ocr/issues/detail?id=398).
+By default Tesseract expects a page of text when it segments an image. If you're just seeking to OCR a small region try a different segmentation mode, using the `-psm` argument. Note that adding a white border to text which is too tightly cropped may also help, see [issue 398](https://web.archive.org/web/20151209085049/https://code.google.com/p/tesseract-ocr/issues/detail?id=398).
 
 
 ## Dictionaries, word lists, and patterns
 
-By default Tesseract is optimised to recognise sentences of words. If you're trying to recognise something else, like receipts, price lists, or codes, there are a few things you can do to improve the accuracy of your results, as well as double-checking that the appropriate [segmentation method](#Segmentation_method) is selected.
+By default Tesseract is optimized to recognize sentences of words. If you're trying to recognize something else, like receipts, price lists, or codes, there are a few things you can do to improve the accuracy of your results, as well as double-checking that the appropriate [segmentation method](#Segmentation_method) is selected.
 
 Disabling the dictionaries Tesseract uses should increase recognition if most of your text isn't dictionary words. They can be disabled by setting the both of the [configuration variables](ControlParams) `load_system_dawg` and `load_freq_dawg` to `false`.
 
