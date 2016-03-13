@@ -46,6 +46,8 @@ sudo make install
 sudo ldconfig
 ```
 
+Since we have to compile leptonica in ubuntu 14.04, we should use LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make instead of make.
+
 On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
 
 If you want the training tools (3.03), you will also need to run the following commands:
@@ -53,6 +55,7 @@ If you want the training tools (3.03), you will also need to run the following c
 ```
 make training
 sudo make training-install
+sudo ldconfig
 ```
 
 Build of training tools is not available if you do not have necessary dependencies (pay attention to messages from ./configure script).
