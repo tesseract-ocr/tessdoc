@@ -55,7 +55,6 @@ If you want the training tools (3.03), you will also need to run the following c
 ```
 make training
 sudo make training-install
-sudo ldconfig
 ```
 
 Build of training tools is not available if you do not have necessary dependencies (pay attention to messages from ./configure script).
