@@ -13,6 +13,9 @@ There are 3 different types:
 Characterized by **INIT** in its initialization macro.
 These parameters can **only** be set at the ` TessBaseAPI::Init ` function that takes a list of config files.
 
+*NOTE*: You can't change init only parameter with tesseract executable option `-c`.
+
+
 The rest can be set through ` TessBaseAPI::SetVariable ` and make 2 further groups:
 
 ### General parameters
