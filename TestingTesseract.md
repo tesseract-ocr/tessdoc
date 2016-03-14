@@ -105,3 +105,58 @@ vc6     Total   58610   -       -8.11%  15994   -       0.16%   12586   -       
 ```
 
 Future work may be directed at making these discrepancies smaller, if not eliminating them completely, on the grounds that where there is variation, there is room for improvement...
+
+### Results for more recent versions of Tesseract 
+
+All compiled with Apple C compiler Apple LLVM version 7.0.2 (clang-700.1.81) with target x86_64-apple-darwin14.3.0.
+
+```
+Testid  Testset Character               Word                    Non-stopword
+                Errors  Acc     Change  Errors  Acc     Change  Errors  Acc     Change
+3.04.01 bus.3B  8816    97.24%  47.94%  2221    95.68%  36.17%  1629    94.62   25.99%
+3.04.01 doe3.3B 48306   96.70%  32.89%  9903    95.36%  26.54%  9020    93.43   28.09%
+3.04.01 mag.3B  30860   95.37%  105.15% 7034    93.85%  54.05%  5228    92.25   54.72%
+3.04.01 news.3B 19073   96.12%  196.53% 3432    95.92%  76.36%  2685    94.53   78.76%
+3.04.01 Total   107055  -       67.84%  22590   -       41.46%  18562   -       40.45%
+```
+
+```
+Testid  Testset Character               Word                    Non-stopword
+                Errors  Acc     Change  Errors  Acc     Change  Errors  Acc     Change
+3.03rc1	bus.3B	8816	97.24%	47.94%	2221	95.68%	36.17%	1629	94.62	25.99%
+3.03rc1	doe3.3B	48306	96.70%	32.89%	9903	95.36%	26.54%	9020	93.43	28.09%
+3.03rc1	mag.3B	30860	95.37%	105.15%	7034	93.85%	54.05%	5228	92.25	54.72%
+3.03rc1	news.3B	19073	96.12%	196.53%	3432	95.92%	76.36%	2685	94.53	78.76%
+3.03rc1	Total	107055	-	67.84%	22590	-	41.46%	18562	-	40.45%
+```
+
+```
+Testid  Testset Character               Word                    Non-stopword
+                Errors  Acc     Change  Errors  Acc     Change  Errors  Acc     Change
+3.02.02	bus.3B	6039	98.11%	1.34%	1541	97.01%	-5.52%	1240	95.90	-4.10%
+3.02.02	doe3.3B	35988	97.54%	-0.99%	8482	96.03%	8.38%	7640	94.43	8.49%
+3.02.02	mag.3B	14367	97.84%	-4.49%	3891	96.60%	-14.78%	3024	95.52	-10.51%
+3.02.02	news.3B	7148	98.55%	11.13%	1484	98.23%	-23.74%	1152	97.65	-23.30%
+3.02.02	Total	63542	-	-0.38%	15398	-	-3.58%	13056	-	-1.21%
+```
+
+```
+Testid  Testset Character               Word                    Non-stopword
+                Errors  Acc     Change  Errors  Acc     Change  Errors  Acc     Change
+3.01	bus.3B	22384	93.00%	275.63%	2253	95.62%	38.14%	1863	93.85	44.08%
+3.01	doe3.3B	301312	79.41%	728.94%	13924	93.48%	77.92%	11665	91.50	65.65%
+3.01	mag.3B	160024	75.98%	963.78%	10698	90.65%	134.30%	7261	89.24	114.89%
+3.01	news.3B	43454	91.17%	575.59%	3469	95.87%	78.26%	2380	95.15	58.46%
+3.01	Total	527174	-	726.51%	30344	-	90.02%	23169	-	75.31%
+```
+
+```
+Testid  Testset Character               Word                    Non-stopword
+                Errors  Acc     Change  Errors  Acc     Change  Errors  Acc     Change
+2.04	bus.3B	6422	97.99%	7.77%	1750	96.60%	7.30%	1361	95.51	5.26%
+2.04	doe3.3B	29514	97.98%	-18.80%	7963	96.27%	1.75%	6762	95.07	-3.98%
+2.04	mag.3B	14568	97.81%	-3.16%	4289	96.25%	-6.07%	3053	95.47	-9.65%
+2.04	news.3B	7655	98.44%	19.01%	1730	97.94%	-11.10%	1208	97.54	-19.57%
+2.04	Total	58159	-	-8.82%	15732	-	-1.48%	12384	-	-6.30%
+```
+
