@@ -164,11 +164,150 @@ Testid  Testset Character               Word                    Non-stopword
 
 ## Introduction
 
-Nick White forked a repository of the ISRI OCR evaluation tools to make them work easily with UTF-8, and included some helper scripts: http://ancientgreekocr.org/ocr-evaluation-tools.git 
+Nick White forked a repository of the ISRI OCR evaluation tools to make them work easily with UTF-8, and included some helper scripts.
+
+```
+git clone https://ancientgreekocr.org/ocr-evaluation-tools.git
+Tools to test OCR accuracy.
+```
 
 Of particular relevance here is the 'tessaccsummary' script, which when given a directory of images and corresponding ground truth text and a .traineddata file will OCR each page and print the accuracy, and an average summary at the end. 
 
-git clone https://ancientgreekocr.org/ocr-evaluation-tools.git
-Tools to test OCR accuracy.
-
 ## Hindi
+
+A dataset comprising of 100 scanned images of hindi document images and their ground truth files is available from http://ocr.iiit.ac.in/Hindi100.html as part of DAS 2016 work - 'Multilingual OCR for Indic Scripts' by Mathew, Minesh and Singh, Ajeet  and Jawahar, C.~V.
+
+Modified version of the ocr-evaluation-tools (https://github.com/Shreeshrii/ocr-evaluation-tools.git) was used for processing these, with average character accuracy of 89%.
+
+```
+ocr-evaluation-tools$ bash ./tessaccsummary ../imagesjpg/hin ../ hin  jpg
+jpg
+100: 88.25%
+101: 89.75%
+102: 91.21%
+103: 89.76%
+104: 86.75%
+105: 91.16%
+106: 79.34%
+107: 87.65%
+108: 88.76%
+109: 91.86%
+110: 90.03%
+111: 89.59%
+112: 89.69%
+113: 89.57%
+114: 90.64%
+115: 90.72%
+116: 91.21%
+117: 88.18%
+118: 88.54%
+119: 81.04%
+120: 79.68%
+121: 82.42%
+122: 73.18%
+123: 85.80%
+124: 82.14%
+125: 78.73%
+126: 94.29%
+127: 90.51%
+128: 91.72%
+129: 90.66%
+130: 93.42%
+131: 92.03%
+132: 80.75%
+133: 86.38%
+134: 89.38%
+135: 73.36%
+136: 86.19%
+137: 86.69%
+138: 90.56%
+139: 88.41%
+140: 93.81%
+141: 89.50%
+142: 93.79%
+143: 91.04%
+144: 92.99%
+145: 94.13%
+146: 93.69%
+147: 93.17%
+148: 91.04%
+149: 93.34%
+150: 89.79%
+151: 86.45%
+152: 90.85%
+153: 94.79%
+154: 89.32%
+155: 94.25%
+156: 95.87%
+157: 94.82%
+158: 94.71%
+159: 93.28%
+160: 91.84%
+161: 94.02%
+162: 95.26%
+163: 92.18%
+164: 89.46%
+165: 90.92%
+166: 92.65%
+167: 93.05%
+168: 91.90%
+169: 95.63%
+170: 95.03%
+171: 83.53%
+172: 83.31%
+173: 85.96%
+174: 89.36%
+175: 87.15%
+176: 82.92%
+177: 91.13%
+178: 88.28%
+179: 93.64%
+180: 92.60%
+181: 86.59%
+182: 86.99%
+183: 86.17%
+184: 85.01%
+185: 94.27%
+186: 94.74%
+187: 95.10%
+188: 91.65%
+189: 93.81%
+190: 88.26%
+191: 89.37%
+192: 88.91%
+193: 91.49%
+194: 94.64%
+195: 93.06%
+196: 92.49%
+197: 91.27%
+198: 83.87%
+199: 85.31%
+hin001: 82.12%
+average: 89.46%
+```
+______________________________________________
+However, a different dataset with a few 300 dpi greyscale images of one page of hindi text in multiple fonts got lower accuracy results, mainly because of low accuracy with one of the samples. Results are as follows:
+
+Character Accuracy
+
+```
+~/tesseract-ocr/ocr-evaluation-tools$ bash ./tessaccsummary ../imagespng/hin ../ hin
+hincode-aparajita: 45.02%
+hincode-kokila: 94.83%
+hincode-mangal: 83.50%
+hincode-nirmala: 89.94%
+hincode-sanskrit: 86.31%
+hincode-utsaah: 90.03%
+average: 81.61%
+```
+### Word Accuracy
+```
+~/tesseract-ocr/ocr-evaluation-tools$ bash ./tessaccsummary -w ../imagespng/hin ../ hin
+hincode-aparajita: 25.73%
+hincode-kokila: 86.89%
+hincode-mangal: 68.93%
+hincode-nirmala: 73.30%
+hincode-sanskrit: 72.82%
+hincode-utsaah: 75.73%
+average: 67.23%
+```
