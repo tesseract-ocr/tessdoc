@@ -95,8 +95,38 @@ Output
     marrön räpido salta sobre el perro
     perezoso. A raposa marrom räpida
     salta sobre o cäo preguieoso.
+
+## Order of multiple languages
     
-The output can be different based on the order of languages, so -l eng+deu can give different result than -l deu+eng.
+The output can be different based on the order of languages, so -l eng+hin can give different result than -l hin+eng.
+
+Following examples use a greyscale version of this image which has text in multiple languages - Hindi and English.
+
+![bilingual.jpg](https://i.ytimg.com/vi/Z0qDeKu7TWA/hqdefault.jpg)
+
+Using English as primary language and then Hindi
+
+     tesseract  --tessdata-dir ./ ./testing/bilingual.jpg ./testing/bilingual-enghin -l eng+hin
+
+Output
+
+    हिदीसेअंठौजी
+    HINDI To
+    
+    ENGLISH
+    —
+
+Using Hindi as primary language and then English
+
+     tesseract  --tessdata-dir ./ ./testing/bilingual.jpg ./testing/bilingual-hineng -l hin+eng
+
+Output
+
+    हिंदी से अंग्रेजी
+    H I N D I T o
+    
+    E N G L I S H
+    —
           
 ## Searchable pdf output
 
