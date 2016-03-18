@@ -164,7 +164,7 @@ Testid  Testset Character               Word                    Non-stopword
 
 ## Introduction
 
-Nick White forked a repository of the ISRI OCR evaluation tools to make them work easily with UTF-8, and included some helper scripts.
+Nick White had forked a repository of the ISRI OCR evaluation tools to make them work easily with UTF-8, and included some helper scripts.
 
 ```
 git clone https://ancientgreekocr.org/ocr-evaluation-tools.git
@@ -181,7 +181,6 @@ Modified version of the ocr-evaluation-tools (https://github.com/Shreeshrii/ocr-
 
 ```
 ocr-evaluation-tools$ bash ./tessaccsummary ../imagesjpg/hin ../ hin  jpg
-jpg
 100: 88.25%
 101: 89.75%
 102: 91.21%
@@ -288,7 +287,7 @@ average: 89.46%
 ______________________________________________
 However, a different dataset with a few 300 dpi greyscale images of one page of hindi text in multiple fonts got lower accuracy results, mainly because of low accuracy with one of the samples. Results are as follows:
 
-Character Accuracy
+### Character Accuracy
 
 ```
 ~/tesseract-ocr/ocr-evaluation-tools$ bash ./tessaccsummary ../imagespng/hin ../ hin
