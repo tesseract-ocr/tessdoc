@@ -54,8 +54,9 @@ ____________________________________
 Following examples use this image which has text in multiple languages.
 
 ![eurotext.png](http://dev.blog.fairway.ne.jp/wp-content/uploads/2014/04/eurotext.png)
-
 ## Using One Language
+
+Add '-l LANG' to the command where LANG is three character language code from the list of supported languages. If this is not given then English language is assumed by default.
 
     tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng
 
@@ -75,6 +76,8 @@ Output
     salta sobre 0 C50 preguieoso.
 
 ## Using Multiple Languages
+
+Add '-l LANG[+LANG]' to the command line to use multiple languages together for recognition 
 
     tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-engdeu -l eng+deu
 
@@ -102,6 +105,8 @@ The output can be different based on the order of languages, so -l eng+deu can g
 This creates a pdf with the image and a separate searchable text layer with the recognized text.
 
 ## HOCR output
+
+Use 'hocr' config file by adding hocr at the end of the command to get the HOCR output.
 
     tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng hocr
 
@@ -153,6 +158,8 @@ Output
     
 
 ## TSV output (Currently available in 3.05-dev in master branch on github)
+
+Use 'tsv' config file by adding tsv at the end of the command to get the TSV output.
 
     tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng tsv
 
