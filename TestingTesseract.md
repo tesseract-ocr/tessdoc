@@ -160,3 +160,15 @@ Testid  Testset Character               Word                    Non-stopword
 2.04	Total	58159	-	-8.82%	15732	-	-1.48%	12384	-	-6.30%
 ```
 
+# How to use OCR Evaluation Tools by Nick White
+
+## Introduction
+
+Nick White forked a repository of the ISRI OCR evaluation tools to make them work easily with UTF-8, and included some helper scripts: http://ancientgreekocr.org/ocr-evaluation-tools.git 
+
+Of particular relevance here is the 'tessaccsummary' script, which when given a directory of images and corresponding ground truth text and a .traineddata file will OCR each page and print the accuracy, and an average summary at the end. 
+
+git clone https://ancientgreekocr.org/ocr-evaluation-tools.git
+Tools to test OCR accuracy.
+
+## Hindi
