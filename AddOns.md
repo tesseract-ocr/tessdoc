@@ -65,7 +65,6 @@ Platform support depends on used language and experience of user.
   * **tesseract-georgian**: https://github.com/ddohler/tesseract-georgian
   * **Polish Fraktur**: training as [result of the IMPACT project](http://dl.psnc.pl/activities/projekty/impact/results/), [trained dataset](http://dl.psnc.pl/download/tesseract_traineddata.zip)
   * **Ancient Greek**: http://ancientgreekocr.org
-  * **Chinese simplefied**: see issue [296](http://code.google.com/p/tesseract-ocr/issues/detail?id=296); download http://ubuntuone.com/p/3Yw/
   * **Indic**: http://code.google.com/p/tesseractindic/, https://github.com/debayan/Tesseract-Indic-OCR/, http://code.google.com/p/parichit/ (All are Obsolete)
   * **Irish uncial**: https://github.com/jimregan/tesseract-gle-uncial
   * **Polish**: http://code.google.com/p/tesseract-polish/
