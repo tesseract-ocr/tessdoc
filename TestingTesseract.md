@@ -285,28 +285,36 @@ hin001: 82.12%
 average: 89.46%
 ```
 ______________________________________________
-However, a different dataset with a few 300 dpi greyscale images of one page of hindi text in multiple fonts (https://github.com/Shreeshrii/imageshin) got lower accuracy results, mainly because of low accuracy with one of the samples. Results are as follows:
+A different dataset with a few 300 dpi greyscale images of one page of hindi text in multiple fonts (https://github.com/Shreeshrii/imageshin) 
 
 ### Character Accuracy
 
 ```
-~/tesseract-ocr/ocr-evaluation-tools$ bash ./tessaccsummary ../imagespng/hin ../ hin
-hincode-aparajita: 45.02%
-hincode-kokila: 94.83%
-hincode-mangal: 83.50%
-hincode-nirmala: 89.94%
-hincode-sanskrit: 86.31%
-hincode-utsaah: 90.03%
-average: 81.61%
+$ time bash ./tessaccsummary ../imageshin ../ hin png
+hin001: 81.83%
+hin-kokila: 94.92%
+hin-mangal: 83.50%
+hin-nirmala: 90.57%
+hin-sanskrit: 86.40%
+hin-utsaah: 90.21%
+average: 87.90%
+
+real    3m21.020s
+user    2m51.977s
+sys     0m27.498s
 ```
 ### Word Accuracy
 ```
-~/tesseract-ocr/ocr-evaluation-tools$ bash ./tessaccsummary -w ../imagespng/hin ../ hin
-hincode-aparajita: 25.73%
-hincode-kokila: 86.89%
-hincode-mangal: 68.93%
-hincode-nirmala: 73.30%
-hincode-sanskrit: 72.82%
-hincode-utsaah: 75.73%
-average: 67.23%
+$ time bash ./tessaccsummary -w ../imageshin ../ hin png
+hin001: 67.33%
+hin-kokila: 87.38%
+hin-mangal: 68.93%
+hin-nirmala: 75.73%
+hin-sanskrit: 73.79%
+hin-utsaah: 76.21%
+average: 74.89%
+
+real    3m22.813s
+user    2m53.653s
+sys     0m27.620s
 ```
