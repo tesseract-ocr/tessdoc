@@ -285,7 +285,7 @@ hin001: 82.12%
 average: 89.46%
 ```
 ______________________________________________
-However, a different dataset with a few 300 dpi greyscale images of one page of hindi text in multiple fonts got lower accuracy results, mainly because of low accuracy with one of the samples. Results are as follows:
+However, a different dataset with a few 300 dpi greyscale images of one page of hindi text in multiple fonts (https://github.com/Shreeshrii/imageshin) got lower accuracy results, mainly because of low accuracy with one of the samples. Results are as follows:
 
 ### Character Accuracy
 
