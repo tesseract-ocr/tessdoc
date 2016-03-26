@@ -131,7 +131,7 @@ To list all fonts in your system which can render the training text, run:
 ```
 training/text2image --text=training_text.txt --outputbase=eng --fonts_dir=/usr/share/fonts  --find_fonts --min_coverage=1.0 --render_per_font=false
 ```
-A 'eng.fontlist.txt' will be created.
+A 'eng.fontlist.txt' file will be created.
 
 There are a lot of other command-line arguments available to `text2image`. Run `text2image --help` to get more information.
 
