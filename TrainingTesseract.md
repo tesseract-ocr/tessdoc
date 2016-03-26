@@ -127,6 +127,11 @@ Note that the argument to --font may contain spaces, and thus must be quoted. Eg
 ```
 training/text2image --text=training_text.txt --outputbase=eng.TimesNewRomanBold.exp0 --font='Times New Roman Bold' --fonts_dir=/usr/share/fonts
 ```
+To list all fonts in your system which can render the training text, run:  
+```
+training/text2image --text=training_text.txt --outputbase=eng --fonts_dir=/usr/share/fonts  --find_fonts --min_coverage=1.0 --render_per_font=false
+```
+A 'eng.fontlist.txt' will be created.
 
 There are a lot of other command-line arguments available to `text2image`. Run `text2image --help` to get more information.
 
