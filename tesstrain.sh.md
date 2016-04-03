@@ -50,7 +50,7 @@ These files can optionally be in your langdata directory and will be used by tes
 
 ## General files
 
-These are general files that can affect multiple languages, but may be edited if needed (note that [Script] is the script name, e.g. 'Greek' or 'Hebrew'):
+These are general files that can affect multiple languages, but may be edited if needed (note that [Script] is the script name, e.g. 'Greek' or 'Hebrew' or 'Devanagari'. One script can be used for multiple languages, eg. Devanagari script for Hindi, Sanskrit, Marathi, Nepali etc.):
 
  * [Script].xheights
  * [Script].unicharset
