@@ -61,7 +61,7 @@ Nick White's xheight tool can be used to find xheight of different fonts.To clon
 ```
 $ git clone http://ancientgreekocr.org/grctraining.git
 $ cd grctraining
-$ make tools/xheights
+$ make tools/xheight
 ```
 
 To see how it's used for the Greek training, do:
