@@ -83,11 +83,11 @@ https://cygwin.com/cygwin-ug-net/setup-net.html
 ```
 Tesseract specific packages to be installed:
 
-tesseract-ocr                           3.04.00-2
+tesseract-ocr                           3.04.01-1
 tesseract-ocr-eng                       3.04-1
 tesseract-training-core                 3.04-1
 tesseract-training-eng                  3.04-1
-tesseract-training-util                 3.04.00-2
+tesseract-training-util                 3.04.01-1
 ```
 
 ## Other Platforms
