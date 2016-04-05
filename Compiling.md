@@ -121,11 +121,98 @@ Unpack them to one directory (e.g. `tesseract-3.01`). Note that `tesseract-ocr-[
 
 Windows relevant files are located in vs2008 directory (e.g. 'tesseract-3.01\vs2008'). The same build process as usual applies: Open tesseract.sln with VC++Express 2008 and build all (or just Tesseract.) It should compile (in at least release mode) without having to install anything further. The dll dependencies and Leptonica are included. Output will be in tesseract-3.01\vs2008\bin (or tesseract-3.01\vs2008\bin.rd or tesseract-3.01\vs2008\bin.dbg based on configuration build).
 
-## Mingw+Msys or Msys2
+## Mingw+Msys
 
 For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](http://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
 
-On Msys2 
+## Msys2 
+
+Download and install Msys2 as given at [MSYS2 installation](https://sourceforge.net/p/msys2/wiki/MSYS2%20installation/)
+Also read instructions at [Contributing to MSYS2](https://sourceforge.net/p/msys2/wiki/Contributing%20to%20MSYS2/)
+
+The core packages groups you need to install if you wish to build from PKGBUILDs are:
+- base-devel for any building
+- msys2-devel for building msys2 packages
+- mingw-w64-i686-toolchain for building mingw32 packages
+- mingw-w64-x86_64-toolchain for building mingw64 packages
+
+To build the release package, use PKGBUILD from https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-tesseract-ocr
+
+To build from the github source, create a PKGBUILD with the following commands.
+
+```
+#
+_realname=tesseract-ocr
+pkgbase=mingw-w64-${_realname}-git
+pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
+provides=("${MINGW_PACKAGE_PREFIX}-${_realname}")
+replaces=("${MINGW_PACKAGE_PREFIX}-${_realname}")
+pkgver=1310.60176fc
+pkgrel=1
+pkgdesc="Tesseract OCR (mingw-w64)"
+arch=('any')
+url="https://github.com/tesseract-ocr/tesseract"
+license=("Apache License 2.0")
+makedepends=("${MINGW_PACKAGE_PREFIX}-gcc" "${MINGW_PACKAGE_PREFIX}-pkg-config")
+depends=(${MINGW_PACKAGE_PREFIX}-cairo
+	 ${MINGW_PACKAGE_PREFIX}-cairomm
+	 ${MINGW_PACKAGE_PREFIX}-fontconfig
+         ${MINGW_PACKAGE_PREFIX}-gcc-libs
+         ${MINGW_PACKAGE_PREFIX}-icu
+	 icu-devel
+	 git
+         ${MINGW_PACKAGE_PREFIX}-leptonica
+         ${MINGW_PACKAGE_PREFIX}-pango
+	 ${MINGW_PACKAGE_PREFIX}-pangomm
+	 ${MINGW_PACKAGE_PREFIX}-tesseract-data-eng
+         ${MINGW_PACKAGE_PREFIX}-zlib)
+options=('!libtool' '!emptydirs' '!strip' 'debug')
+source=("tesseract"::"git+https://github.com/tesseract-ocr/tesseract.git#branch=master"
+        https://github.com/tesseract-ocr/tessdata/raw/master/osd.traineddata)
+sha256sums=('SKIP'
+            '9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff')
+pkgver() {
+  cd "${srcdir}/tesseract"
+  printf "%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+prepare() {
+  cd "${srcdir}/tesseract"
+  ./autogen.sh
+}
+build() {
+  [[ -d "${srcdir}/build-${MINGW_CHOST}" ]] && rm -rf "${srcdir}/build-${MINGW_CHOST}"
+  mkdir "${srcdir}/build-${MINGW_CHOST}"
+  cd "${srcdir}/build-${MINGW_CHOST}"
+  local -a extra_config
+  if check_option "debug" "y"; then
+    extra_config+=( --enable-debug )
+  fi
+  "${srcdir}/tesseract"/configure \
+    --build=${MINGW_CHOST} \
+    --host=${MINGW_CHOST} \
+    --target=${MINGW_CHOST} \
+    --prefix=${MINGW_PREFIX} \
+    LIBLEPT_HEADERSDIR=${MINGW_PREFIX}/include \
+    "${extra_config[@]}"
+  make
+}
+package() {
+  cd "${srcdir}/build-${MINGW_CHOST}"
+  make DESTDIR="${pkgdir}" install
+  make training
+  make DESTDIR="${pkgdir}" training-install
+  mkdir -p ${pkgdir}${MINGW_PREFIX}/share/tessdata
+  install -Dm0644 ${srcdir}/osd.traineddata ${pkgdir}${MINGW_PREFIX}/share/tessdata/osd.traineddata
+}
+
+```
+build and install as follows:
+
+```
+cd MINGW-packages/mingw-w64-tesseract-ocr
+makepkg-mingw -sLf
+pacman -U mingw-w64-*-tesseract-ocr-*-any.pkg.tar.xz
+```
 
 ## Cygwin
 
