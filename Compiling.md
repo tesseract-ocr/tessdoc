@@ -266,6 +266,31 @@ These prerequisites will be needed:
   make
   sudo make install
 ```
+## To install tesseract with training tools
+In the above training tools are not installed. You can install not only tesseract but also training tools like below.
+### Install packages required by training tools
+```
+sudo port install cairo pango
+sudo port install leptonica
+sudo port install icu
+```
+
+### Build and Install
+```
+git clone https://github.com/tesseract-ocr/tesseract/
+cd tesseract
+./autogen.sh
+./configure \
+    --with-extra-libraries=/opt/local/lib \
+    --with-extra-includes=/opt/local/include \
+    LDFLAGS=-L/opt/loca/lib \
+    CPPFLAGS=-I/opt/local/include
+make
+sudo make install
+
+make training
+sudo make training-install
+```
 # Miscellaneous
 
 * [Standalone Tesseract build bash script](http://pastebin.com/VnGLHfbr)
