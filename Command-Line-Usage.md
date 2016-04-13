@@ -48,7 +48,7 @@ osd.traineddata, for Orientation and Segmentation and eng.traineddata and other 
 
 The following command would give the same result as above, if eng.traineddata and osd.traineddata files are in /usr/share/tessdata directory.
 
-    tesseract --tessdata-dir /usr/share imagename outputbase -l eng psm 3
+    tesseract --tessdata-dir /usr/share imagename outputbase -l eng -psm 3
 ____________________________________
 
 Following examples use this image which has text in multiple languages.
