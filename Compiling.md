@@ -283,7 +283,7 @@ cd tesseract
 ./configure \
     --with-extra-libraries=/opt/local/lib \
     --with-extra-includes=/opt/local/include \
-    LDFLAGS=-L/opt/loca/lib \
+    LDFLAGS=-L/opt/local/lib \
     CPPFLAGS=-I/opt/local/include
 make
 sudo make install
