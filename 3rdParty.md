@@ -44,7 +44,7 @@
 
 ## Others
   * [Tess4J - A Java JNA wrapper for Tesseract OCR API.](https://github.com/nguyenq/tess4j)
-  * [Traineddata inspector](https://te-traineddata-ui.herokuapp.com) -  to inspect some of the internals of traineddata files 
+  * [Traineddata inspector](https://mazoea.com/te/traineddata/) -  to inspect some of the internals of traineddata files 
   * [TopOCR](http://www.topocr.com/) - high Quality OCR for Cameras with tesseract-ocr support (paid product)
   * [Simple OCR Web Server](https://github.com/ybur-yug/python_ocr_tutorial) using python, flask, tesseract-ocr, and leptonica
   * [Display OCR](https://github.com/arturaugusto/display_ocr) is OpenCV-Python + python-tesseract real-time image preprocess and OCR of 7 segments font.
