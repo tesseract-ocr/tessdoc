@@ -15,7 +15,6 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
       * [Automated method (new in 3.03)](#automated-method-new-in-303)
       * [Old Manual method](#old-manual-method)
     * [Make Box Files](#make-box-files)
-      * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
     * [Run Tesseract for Training](#run-tesseract-for-training)
     * [Compute the Character Set](#compute-the-character-set)
     * [set_unicharset_properties (new in 3.03)](#set_unicharset_properties-new-in-303)
@@ -243,14 +242,6 @@ If you didn't successfully space out the characters on the training image, some 
 The last number on each line is the page number (0-based) of that character in the multi-page tiff file.
 
 There are several visual tools for editing box file - please check [AddOns wiki](AddOns#Tesseract_box_editors_and_traning_tools).
-
-### Bootstrapping a new character set
-
-If you are trying to train a new character set, it is a good idea to put in the effort on a single font to get one good box file, run the rest of the training process, and then use Tesseract in your new language to make the rest of the box files as follows:
-```
-tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] -l yournewlanguage batch.nochop makebox
-```
-This should make the 2nd box file easier to make, as there is a good chance that Tesseract will recognize most of the text correctly. You can always iterate this sequence adding more fonts to he training set (i.e. to the command line of `mftraining` and `cntraining` below) as you make them, but note that there is no incremental training mode that allows you to add new training data to existing sets. This means that each time you run `mftraining` and `cntraining` you are making new data files from scratch from the tr files you give on the command line, and these programs cannot take an existing `intproto` / `pffmtable` / `normproto` and add to them directly.
 
 ## Run Tesseract for Training
 
