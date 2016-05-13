@@ -103,5 +103,14 @@ This should make the 2nd box file easier to make, as there is a good chance that
 
 ### Tif/Box pairs provided!
 
-**Some** Tif/Box file pairs are on the downloads page. (Note the tiff files are G4 compressed
+Tif/Box file pairs are available in the [Downloads Archive on SourceForge](http://sourceforge.net/projects/tesseract-ocr-alt/files/) for these languages:  
+[Dutch](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.nld.tar.gz/download)
+[English](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.eng.tar.gz/download)
+[French](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.fra.tar.gz/download)
+[Gernan](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.deu.tar.gz/download)
+[Gernan-fraktur](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.deu-f.tar.gz/download)
+[Italic](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.ita.tar.gz/download)
+[Spanish](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.spa.tar.gz/download)
+
+Note the tiff files are G4 compressed
 to save space, so you will have to have libtiff or uncompress them first).
