@@ -1,6 +1,6 @@
-  * [Make Box Files](#make-box-files)
-    * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
-    * [Tif/Box pairs provided!](#tifbox-pairs-provided)
+* [Make Box Files](#make-box-files)
+  * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
+  * [Tif/Box pairs provided!](#tifbox-pairs-provided)
 
 
 ## Make Box Files
