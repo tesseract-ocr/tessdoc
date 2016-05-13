@@ -1,5 +1,6 @@
-*How to use the tools provided to train Tesseract 3.0x for a new language.*
+*How to use the tools provided to train Tesseract 3.03–3.04 for a new language.*
 
+For training Tesseract 3.00–3.02 see [Training Tesseract 3.00 – 3.02](Training Tesseract 3.00 – 3.02).  
 For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
   * [Introduction](#introduction)
