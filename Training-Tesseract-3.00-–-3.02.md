@@ -27,6 +27,8 @@
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
 
+[3rd Party training tools] (AddOns) are also available for training.
+
 Please check the list of [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages)  for which traineddata is already available as of release 3.04 before embarking on training.
 
 # Background and Limitations
