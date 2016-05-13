@@ -4,21 +4,16 @@
 
   * [Introduction](#introduction)
   * [Background and Limitations](#background-and-limitations)
-  * [Additional Libraries required](#additional-libraries-required)
-  * [Building the training tools](#building-the-training-tools)
   * [Data files required](#data-files-required)
     * [Requirements for text input files](#requirements-for-text-input-files)
     * [How little can you get away with?](#how-little-can-you-get-away-with)
   * [Training Procedure](#training-procedure)
     * [Generate Training Images](#generate-training-images)
-      * [Automated method (new in 3.03)](#automated-method-new-in-303)
-      * [Old Manual method](#old-manual-method)
     * [Make Box Files](#make-box-files)
       * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
       * [Tif/Box pairs provided!](#tifbox-pairs-provided)
     * [Run Tesseract for Training](#run-tesseract-for-training)
     * [Compute the Character Set](#compute-the-character-set)
-    * [set_unicharset_properties (new in 3.03)](#set_unicharset_properties-new-in-303)
     * [font_properties (new in 3.01)](#font_properties-new-in-301)
     * [Clustering](#clustering)
       * [shapeclustering](#shapeclustering-new-in-302) (new in 3.02)
@@ -34,9 +29,6 @@ Tesseract 3.0x is fully trainable. This page describes the training process, pro
 
 Please check the list of [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages)  for which traineddata is already available as of release 3.04 before embarking on training.
 
-Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh) for an easy way to execute various
-phases of training Tesseract. More information on using it can be found on the [tesstrain.sh](tesstrain.sh) page. [3rd Party training tools] (AddOns) are also available for training.
-
 # Background and Limitations
 
 Tesseract was originally designed to recognize English text only. Efforts have been made to modify the engine and its training system to make them able to deal with other languages and UTF-8 characters. Tesseract 3.0 can handle any Unicode characters (coded with UTF-8), but there are limits as to the range of languages that it will be successful with, so please take this section into account before building up your hopes that it will work well on your particular language!
@@ -50,22 +42,6 @@ Tesseract needs to know about different shapes of the same character by having d
 For versions 3.00/3.01, any language that has different punctuation and numbers is going to be disadvantaged by some of the hard-coded algorithms that assume ASCII punctuation and digits. [Fixed in 3.02]
 
 You need to run all commands in the same folder where your input files are located.
-
-# Additional Libraries required
-Beginning with 3.03, additional libraries are required to build the training tools.
-```
-sudo apt-get install libicu-dev
-sudo apt-get install libpango1.0-dev
-sudo apt-get install libcairo2-dev
-```
-
-# Building the training tools
-
-Beginning with 3.03, if you're compiling Tesseract from source you need to make and install the training tools with separate make commands. Once the above additional libraries have been installed, run the following from the tesseract source directory:
-```
-make training
-sudo make training-install
-```
 
 # Data files required
 
@@ -111,31 +87,6 @@ The first step is to determine the full character set to be used, and prepare a 
   * Make sure there are a minimum number of samples of each character. 10 is good, but 5 is OK for rare characters.
   * There should be more samples of the more frequent characters - at least 20.
   * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.{}&lt;&gt;/?** is terrible. Much better is **The (quick) brown {fox} jumps! over the $3,456.78 &lt;lazy&gt; #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
-
-### Automated method (new in 3.03)
-
-Prepare a UTF-8 text file (`training_text.txt`) containing your training text according to the above specification.
-Obtain truetype/opentype font files for the fonts that you wish to recognize.
-Run the following command for each font in turn to create a matching tif/box file pair.
-
-```
-training/text2image --text=training_text.txt --outputbase=[lang].[fontname].exp0 --font='Font Name' --fonts_dir=/path/to/your/fonts
-```
-
-Note that the argument to --font may contain spaces, and thus must be quoted. Eg:
-
-```
-training/text2image --text=training_text.txt --outputbase=eng.TimesNewRomanBold.exp0 --font='Times New Roman Bold' --fonts_dir=/usr/share/fonts
-```
-To list all fonts in your system which can render the training text, run:  
-```
-training/text2image --text=training_text.txt --outputbase=eng --fonts_dir=/usr/share/fonts  --find_fonts --min_coverage=1.0 --render_per_font=false
-```
-A 'eng.fontlist.txt' file will be created.
-
-There are a lot of other command-line arguments available to `text2image`. Run `text2image --help` to get more information.
-
-If you used `text2image`, you can skip next step - 'Make Box Files', and move to [Run Tesseract for Training](#run-tesseract-for-training).
 
 ### Old Manual method
 
@@ -356,14 +307,6 @@ Last two columns represent type of script (Latin, Common, Greek, Cyrillic, Han, 
 
 **NOTE:** The `unicharset` file must be regenerated whenever `inttemp`, `normproto` and `pffmtable` are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync.
 
-## set\_unicharset\_properties (new in 3.03)
-
-A new tool and set of data files in 3.03 allow the addition of extra properties in the unicharset, mostly sizes obtained from fonts.
-
-```
-training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
-```
-
 ## font\_properties (new in 3.01)
 
 A new requirement for training in 3.01 is a `font_properties` file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized. The `font_properties` file is a text file specified by the `-F filename` option to `mftraining`.
@@ -493,17 +436,6 @@ Type indicator [could have](https://github.com/tesseract-ocr/tesseract/blob/mast
 Each separate character must be included in the unicharset. That is, all of the characters used must be part of the language that is being trained.
 
 The rules are not bidirectional, so if you want 'rn' to be considered when 'm' is detected and vise versa you need a rule for each.
-
-Version 3.03 and on supports a new, simpler format for the unicharambigs file:
-
-```
-v2
-'' " 1
-m rn 0
-iii m 0
-```
-
-In this format, the "error" and "correction" are simple UTF-8 strings separated by a space, and, after another space, the same type specifier as v1 (0 for optional and 1 for mandatory substitution). Note the downside of this simpler format is that Tesseract has to encode the UTF-8 strings into the components of the unicharset. In complex scripts, this encoding may be ambiguous. In this case, the encoding is chosen such as to use the least UTF-8 characters for each component, ie the shortest unicharset components will make up the encoding.
 
 Like most other files used in training, the `unicharambigs` file must be encoded as UTF-8, and must end with a newline character.
 
