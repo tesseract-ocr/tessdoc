@@ -18,9 +18,9 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
     * [Run Tesseract for Training](#run-tesseract-for-training)
     * [Compute the Character Set](#compute-the-character-set)
     * [set_unicharset_properties (new in 3.03)](#set_unicharset_properties-new-in-303)
-    * [font_properties (new in 3.01)](#font_properties-new-in-301)
+    * [font_properties](#font_properties)
     * [Clustering](#clustering)
-      * [shapeclustering](#shapeclustering-new-in-302) (new in 3.02)
+      * [shapeclustering](#shapeclustering)
       * [mftraining](#mftraining)
       * [cntraining](#cntraining)
     * [Dictionary Data (Optional)](#dictionary-data-optional)
@@ -246,9 +246,9 @@ A new tool and set of data files in 3.03 allow the addition of extra properties 
 training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
 ```
 
-## font\_properties (new in 3.01)
+## font\_properties
 
-A new requirement for training in 3.01 is a `font_properties` file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized. The `font_properties` file is a text file specified by the `-F filename` option to `mftraining`.
+Now you need to create a `font_properties` file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized. The `font_properties` file is a text file specified by the `-F filename` option to `mftraining`.
 
 Each line of the `font_properties` file is formatted as follows:
 ```
@@ -278,7 +278,7 @@ When the character features of all the training pages have been extracted, we ne
 
 The character shape features can be clustered using the `shapeclustering`, `mftraining` and `cntraining` programs:
 
-### shapeclustering (new in 3.02)
+### shapeclustering
 
 `shapeclustering` **should not be used except for the Indic languages.**
 
