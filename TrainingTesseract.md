@@ -421,4 +421,4 @@ length is the length of the polygon segment [0,1.0]
 dir is the direction of the segment [0,1.0]
 
 The `cn` feature is to correct for the moment normalization to
-distinguish position and size (eg c vs C and , vs ')
+distinguish position and size (eg `c` vs `C` and `,` vs `'`)
