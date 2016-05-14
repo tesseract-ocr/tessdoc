@@ -17,7 +17,7 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
     * [Make Box Files](#make-box-files)
     * [Run Tesseract for Training](#run-tesseract-for-training)
     * [Generate the unicharset file](#generate-the-unicharset-file)
-      * [Compute the Character Set](#compute-the-character-set)
+      * [unicharset_extractor](#unicharset_extractor)
       * [set_unicharset_properties](#set_unicharset_properties)
     * [font_properties](#font_properties)
     * [Clustering](#clustering)
@@ -201,7 +201,7 @@ Currently, generating the unicharset file is done in two steps using these comma
 
 See [The unicharset file format](#the-unicharset-file-format).
 
-### Compute the Character Set
+### unicharset_extractor
 
 Tesseract needs to know the set of possible characters it can output. To generate the `unicharset` data file, use the `unicharset_extractor` program on the box files generated above:
 
