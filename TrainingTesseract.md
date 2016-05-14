@@ -87,7 +87,7 @@ and
   * `tessdata/eng.user-words`
 may still be provided separately.
 
-The traineddata file is simply a concatenation of the input files, with a table of contents that contains the offsets of the known file types. See ccutil/tessdatamanager.h in the source code for a list of the currently accepted filenames. **NOTE** the files in the traineddata file are different from the list used prior to 3.00, and will most likely change, possibly dramatically in future revisions.
+The traineddata file is simply a concatenation of the input files, with a table of contents that contains the offsets of the known file types. See ccutil/tessdatamanager.h in the source code for a list of the currently accepted filenames.
 
 ## Requirements for text input files
 
