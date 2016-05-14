@@ -184,27 +184,7 @@ Another error that can occur **that is also fatal and needs attention** is an er
 
 There is no need to edit the content of the `[lang].[fontname].exp[num].tr` file. The font name inside it need not be set.
 
-For the curious, here is some information on the format. Every character in the box file has a corresponding set of entries in the .tr file (in order) like this:
-
-```
-UnknownFont <UTF-8 code(s)> 2
-mf <number of features>
-x y length dir 0 0
-... (there are a set of these determined by <number of features>
-above)
-cn 1
-ypos length x2ndmoment y2ndmoment
-```
-
-The `mf` features are polygon segments of the outline normalized to the
-1st and 2nd moments.  
-x= x position [-0.5,0.5]  
-y = y position [-0.25,0.75]  
-length is the length of the polygon segment [0,1.0]  
-dir is the direction of the segment [0,1.0]
-
-The `cn` feature is to correct for the moment normalization to
-distinguish position and size (eg c vs C and , vs ')
+For the curious, [here](#the-tr-file-format) is some information on the format. 
 
 ## Compute the Character Set
 
@@ -416,3 +396,29 @@ tesseract image.tif output -l lang
 More options of `combine_tessdata` can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/master/training/combine_tessdata.cpp#L23).
 
 You can inspect some of the internals of traineddata files  in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
+
+#Appendices
+
+##The *.tr file format
+
+Every character in the box file has a corresponding set of entries in the .tr file (in order) like this:
+
+```
+UnknownFont <UTF-8 code(s)> 2
+mf <number of features>
+x y length dir 0 0
+... (there are a set of these determined by <number of features>
+above)
+cn 1
+ypos length x2ndmoment y2ndmoment
+```
+
+The `mf` features are polygon segments of the outline normalized to the
+1st and 2nd moments.  
+x= x position [-0.5,0.5]  
+y = y position [-0.25,0.75]  
+length is the length of the polygon segment [0,1.0]  
+dir is the direction of the segment [0,1.0]
+
+The `cn` feature is to correct for the moment normalization to
+distinguish position and size (eg c vs C and , vs ')
