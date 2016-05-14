@@ -1,5 +1,7 @@
 # How to build Tesseract with OpenCL
 
+**Important note**: OpenCL support in Tesseract is still considered experimental. There are some major bugs associated with it ([#53](https://github.com/tesseract-ocr/tesseract/issues/53), [#71](https://github.com/tesseract-ocr/tesseract/issues/71), [#124](https://github.com/tesseract-ocr/tesseract/issues/124) and others).
+
 ## Building Tesseract on VS 2010 with OpenCL
 
 1.	Open the Tesseract Visual Studio 2010 solution file under \\tesseract-ocr\vs2010\tesseract.sln
