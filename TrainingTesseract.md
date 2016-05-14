@@ -12,12 +12,12 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
     * [How little can you get away with?](#how-little-can-you-get-away-with)
   * [Training Procedure](#training-procedure)
     * [Generate Training Images](#generate-training-images)
-      * [Automated method (new in 3.03)](#automated-method-new-in-303)
+      * [Automated method](#automated-method)
       * [Old Manual method](#old-manual-method)
     * [Make Box Files](#make-box-files)
     * [Run Tesseract for Training](#run-tesseract-for-training)
     * [Compute the Character Set](#compute-the-character-set)
-    * [set_unicharset_properties (new in 3.03)](#set_unicharset_properties-new-in-303)
+    * [set_unicharset_properties](#set_unicharset_properties)
     * [font_properties](#font_properties)
     * [Clustering](#clustering)
       * [shapeclustering](#shapeclustering)
@@ -111,7 +111,9 @@ The first step is to determine the full character set to be used, and prepare a 
   * There should be more samples of the more frequent characters - at least 20.
   * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.{}&lt;&gt;/?** is terrible. Much better is **The (quick) brown {fox} jumps! over the $3,456.78 &lt;lazy&gt; #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
 
-### Automated method (new in 3.03)
+### Automated method
+
+*New in 3.03*
 
 Prepare a UTF-8 text file (`training_text.txt`) containing your training text according to the above specification.
 Obtain truetype/opentype font files for the fonts that you wish to recognize.
@@ -238,9 +240,11 @@ Last two columns represent type of script (Latin, Common, Greek, Cyrillic, Han, 
 
 **NOTE:** The `unicharset` file must be regenerated whenever `inttemp`, `normproto` and `pffmtable` are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync.
 
-## set\_unicharset\_properties (new in 3.03)
+## set\_unicharset\_properties
 
-A new tool and set of data files in 3.03 allow the addition of extra properties in the unicharset, mostly sizes obtained from fonts.
+*New in 3.03*
+
+This tool, together with a set of data files, allow the addition of extra properties in the unicharset, mostly sizes obtained from fonts.
 
 ```
 training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
