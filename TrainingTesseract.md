@@ -16,8 +16,9 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
       * [Old Manual method](#old-manual-method)
     * [Make Box Files](#make-box-files)
     * [Run Tesseract for Training](#run-tesseract-for-training)
-    * [Compute the Character Set](#compute-the-character-set)
-    * [set_unicharset_properties](#set_unicharset_properties)
+    * [Generate the unicharset file](#generate-the-unicharset-file)
+      * [Compute the Character Set](#compute-the-character-set)
+      * [set_unicharset_properties](#set_unicharset_properties)
     * [font_properties](#font_properties)
     * [Clustering](#clustering)
       * [shapeclustering](#shapeclustering)
@@ -186,7 +187,17 @@ There is no need to edit the content of the `[lang].[fontname].exp[num].tr` file
 
 For the curious, [here](#the-tr-file-format) is some information on the format. 
 
-## Compute the Character Set
+## Generate the unicharset file
+
+Tesseract’s unicharset file contains information on each symbol (unichar) the Tesseract OCR engine is trained to recognize.
+
+Currently, generating the unicharset file is done in two steps using these commands: `unicharset_extractor` and `set_unicharset_properties`.
+
+**NOTE:** The `unicharset` file must be regenerated whenever `inttemp`, `normproto` and `pffmtable` are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync.
+
+See [The unicharset file format](#the-unicharset-file-format).
+
+### Compute the Character Set
 
 Tesseract needs to know the set of possible characters it can output. To generate the `unicharset` data file, use the `unicharset_extractor` program on the box files generated above:
 
@@ -194,33 +205,7 @@ Tesseract needs to know the set of possible characters it can output. To generat
 unicharset_extractor lang.fontname.exp0.box lang.fontname.exp1.box ...
 ```
 
-Tesseract needs to have access to character properties isalpha, isdigit, isupper, islower, ispunctuation. This data must be encoded in the `unicharset` data file. Each line of this file corresponds to one character. The character in UTF-8 is followed by a hexadecimal number representing a binary mask that encodes the properties. Each bit corresponds to a property. If the bit is set to 1, it means that the property is true. The bit ordering is (from least significant bit to most significant bit): isalpha, islower, isupper, isdigit.
-
-Example:
-
-  * ';' is an punctuation character. Its properties are thus represented by the binary number 10000 (10 in hexadecimal).
-  * 'b' is an alphabetic character and a lower case character. Its properties are thus represented by the binary number 00011 (3 in hexadecimal).
-  * 'W' is an alphabetic character and an upper case character. Its properties are thus represented by the binary number 00101 (5 in hexadecimal).
-  * '7' is just a digit. Its properties are thus represented by the binary number 01000 (8 in hexadecimal).
-  * '=' does is not punctuation not digit or alphabetic character. Its properties are thus represented by the binary number 00000 (0 in hexadecimal).
-
-```
-; 10 Common 46
-b 3 Latin 59
-W 5 Latin 40
-7 8 Common 66
-= 0 Common 93
-```
-
-Japanese or Chinese alphabetic character properties are represented by the binary number 00001 (1 in hexadecimal).
-
-If your system supports the wctype functions, these values will be set automatically by `unicharset_extractor` and **there is no need to edit the** `unicharset` **file**. On some very old systems (eg Windows 95), the `unicharset` file must be edited by hand to add these property description codes.
-
-Last two columns represent type of script (Latin, Common, Greek, Cyrillic, Han, NULL) and id code of character given language.
-
-**NOTE:** The `unicharset` file must be regenerated whenever `inttemp`, `normproto` and `pffmtable` are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync.
-
-## set\_unicharset\_properties
+### set\_unicharset\_properties
 
 *New in 3.03*
 
@@ -395,9 +380,9 @@ More options of `combine_tessdata` can be found on its [Manual Page](https://git
 
 You can inspect some of the internals of traineddata files  in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
 
-#Appendices
+# Appendices
 
-##The *.tr file format
+## The *.tr file format
 
 Every character in the box file has a corresponding set of entries in the .tr file (in order) like this:
 
@@ -420,3 +405,60 @@ dir is the direction of the segment [0,1.0]
 
 The `cn` feature is to correct for the moment normalization to
 distinguish position and size (eg `c` vs `C` and `,` vs `'`)
+
+## The unicharset file format
+
+Tesseract’s unicharset file contains information on each symbol (unichar) the Tesseract OCR engine is trained to recognize.
+
+The first line of a unicharset file contains the number of unichars in the file. 
+
+After this line, each subsequent line provides information for a single unichar. The first such line contains a placeholder reserved for the space character.
+
+Each unichar is referred to within Tesseract by its Unichar ID, which is the line number (minus 1) within the unicharset file. Therefore, space gets unichar 0.
+
+Each unichar line in the unicharset file should have these space-separated fields:  
+`character` `properties` `glyph_metrics` `script` `other_case` `direction` `mirror` `normed_form`
+
+* `character`  
+The UTF-8 encoded string to be produced for this unichar.
+* `properties`  
+An integer mask of character properties, one per bit. From least to most significant bit, these are: isalpha, islower, isupper, isdigit, ispunctuation.
+* `glyph_metrics`  
+Ten comma-separated integers representing various standards for where this glyph is to be found within a baseline-normalized coordinate system where 128 is normalized to x-height.
+  - `min_bottom`, `max_bottom`  
+The ranges where the bottom of the character can be found.
+  - `min_top`, `max_top`  
+The ranges where the top of the character may be found.
+  - `min_width`, `max_width`  
+Horizontal width of the character.
+  - `min_bearing`, `max_bearing`  
+How far from the usual start position does the leftmost part of the character begin.
+  - `min_advance`, `max_advance`  
+How far from the printer’s cell left do we advance to begin the next character.
+* `script`  
+Name of the script (Latin, Common, Greek, Cyrillic, Han, null).
+* `other_case`  
+The Unichar ID of the other case version of this character (upper or lower).
+* `direction`  
+The Unicode BiDi direction of this character, as defined by ICU’s enum UCharDirection. (0 = Left to Right, 1 = Right to Left, 2 = European Number…​)
+* `mirror`  
+The Unichar ID of the BiDirectional mirror of this character. For example the mirror of open paren is close paren, but Latin Capital C has no mirror, so it remains a Latin Capital C.
+* `normed_form`  
+The UTF-8 representation of a "normalized form" of this unichar for the purpose of blaming a module for errors given ground truth text. For instance, a left or right single quote may normalize to an ASCII quote.
+
+### More about the `properties` field  
+
+TBD
+
+### Example
+
+```
+110
+NULL 0 NULL 0
+N 5 59,68,216,255,87,236,0,27,104,227 Latin 11 0 1 N
+Y 5 59,68,216,255,91,205,0,47,91,223 Latin 33 0 2 Y
+1 8 59,69,203,255,45,128,0,66,74,173 Common 3 2 3 1
+9 8 18,66,203,255,89,156,0,39,104,173 Common 4 2 4 9
+a 3 58,65,186,198,85,164,0,26,97,185 Latin 56 0 5 a
+...
+```
