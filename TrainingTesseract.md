@@ -96,7 +96,7 @@ Text input files (lang.config, lang.unicharambigs, font\_properties, box files, 
 
 ## How little can you get away with?
 
-You **must** create `unicharset`, `inttemp`, `normproto`, `pffmtable` using the procedure described below. If you are only trying to recognize a limited range of fonts (like a single font for instance), then a single training page might be enough. The other files no longer need to be provided, but will most likely improve accuracy, depending on your application.
+You **must** create `unicharset`, `inttemp`, `normproto`, `pffmtable` using the procedure described below. If you are only trying to recognize a limited range of fonts (like a single font for instance), then a single training page might be enough. The other files do not need to be provided, but will most likely improve accuracy, depending on your application.
 
 # Training Procedure
 
