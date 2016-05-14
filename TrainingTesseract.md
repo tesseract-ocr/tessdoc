@@ -274,7 +274,7 @@ shapeclustering -F font_properties -U unicharset eng.timesitalic.exp0.tr
 mftraining -F font_properties -U unicharset -O eng.unicharset eng.timesitalic.exp0.tr 
 ```
 
-**Note** that in 3.03, there is a default `font_properties` file, that covers 3000 fonts (not necessarily accurately) located in this repo: [https://github.com/tesseract-ocr/langdata](https://raw.githubusercontent.com/tesseract-ocr/langdata/master/font_properties).
+**Note**: There is a default `font_properties` file, that covers 3000 fonts (not necessarily accurately) located in this repo: [https://github.com/tesseract-ocr/langdata](https://raw.githubusercontent.com/tesseract-ocr/langdata/master/font_properties).
 
 ## Clustering
 
