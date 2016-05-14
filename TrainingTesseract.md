@@ -384,8 +384,6 @@ That is all there is to it! All you need to do now is collect together all the f
 combine_tessdata lang.
 ```
 
-**NOTE: Don't forget dot at the end!**
-
 The resulting lang.traineddata goes in your tessdata directory. Tesseract can then recognize text in your language (in theory) with the following:
 ```
 tesseract image.tif output -l lang
