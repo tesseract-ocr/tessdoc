@@ -48,8 +48,6 @@ Tesseract needs to know about different shapes of the same character by having d
 
 For versions 3.00/3.01, any language that has different punctuation and numbers is going to be disadvantaged by some of the hard-coded algorithms that assume ASCII punctuation and digits. [Fixed in 3.02]
 
-You need to run all commands in the same folder where your input files are located.
-
 # Additional Libraries required
 Beginning with 3.03, additional libraries are required to build the training tools.
 ```
@@ -103,6 +101,8 @@ You **must** create `unicharset`, `inttemp`, `normproto`, `pffmtable` using the 
 # Training Procedure
 
 Some of the procedure is inevitably manual. As much automated help as possible is provided. The tools referenced below are all built in the training subdirectory.
+
+You need to run all commands in the same folder where your input files are located.
 
 ## Generate Training Images
 
