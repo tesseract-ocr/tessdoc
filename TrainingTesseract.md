@@ -28,6 +28,10 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
     * [The last file (unicharambigs)](#the-last-file-unicharambigs)
   * [Putting it all together](#putting-it-all-together)
 
+**Appendices** 
+* [The *.tr file format](#the-tr-file-format)
+* [The unicharset file format](#the-unicharset-file-format)
+
 # Introduction
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
