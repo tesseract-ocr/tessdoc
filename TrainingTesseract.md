@@ -452,16 +452,6 @@ The Unichar ID of the BiDirectional mirror of this character. For example the mi
 * `normed_form`  
 The UTF-8 representation of a "normalized form" of this unichar for the purpose of blaming a module for errors given ground truth text. For instance, a left or right single quote may normalize to an ASCII quote.
 
-### More about the `properties` field  
-
-**Char** | **Punctuation** | **Digit** | **Upper** | **Lower** |  **Alpha** | **Binary num** |  **Hex.**
-:------: | :-------------: | :-------: | :--------: | :------: | :--------: | -------------: | --------:
-; | 1 | 0 | 0 | 0 | 0 | 10000 | 10
-b | 0 | 0 | 0 | 1 | 1 | 00011 | 3
-W | 0 | 0 | 1 | 0 | 1 | 00101 | 5
-7 | 0 | 1 | 0 | 0 | 0 | 01000 | 8
-= | 0 | 0 | 0 | 0 | 0 | 00000 | 0
-
 ### Example
 
 ```
@@ -474,3 +464,13 @@ Y 5 59,68,216,255,91,205,0,47,91,223 Latin 33 0 2 Y
 a 3 58,65,186,198,85,164,0,26,97,185 Latin 56 0 5 a
 ...
 ```
+
+### More about the `properties` field  
+
+**Char** | **Punctuation** | **Digit** | **Upper** | **Lower** |  **Alpha** | **Binary num** |  **Hex.**
+:------: | :-------------: | :-------: | :--------: | :------: | :--------: | -------------: | --------:
+; | 1 | 0 | 0 | 0 | 0 | 10000 | 10
+b | 0 | 0 | 0 | 1 | 1 | 00011 | 3
+W | 0 | 0 | 1 | 0 | 1 | 00101 | 5
+7 | 0 | 1 | 0 | 0 | 0 | 01000 | 8
+= | 0 | 0 | 0 | 0 | 0 | 00000 | 0
