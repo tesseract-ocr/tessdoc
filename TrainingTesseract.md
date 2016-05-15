@@ -442,7 +442,7 @@ How far from the usual start position does the leftmost part of the character be
   - `min_advance`, `max_advance`  
 How far from the printer’s cell left do we advance to begin the next character.
 * `script`  
-Name of the script (Latin, Common, Greek, Cyrillic, Han, null).
+Name of the script (Latin, Common, Greek, Cyrillic, Han, NULL).
 * `other_case`  
 The Unichar ID of the other case version of this character (upper or lower).
 * `direction`  
