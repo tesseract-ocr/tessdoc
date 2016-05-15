@@ -454,7 +454,13 @@ The UTF-8 representation of a "normalized form" of this unichar for the purpose 
 
 ### More about the `properties` field  
 
-TBD
+**Char** | **Punctuation** | **Digit** | **Upper** | **Lower** |  **Alpha** | **Binary num** |  **Hex.**
+-------- | --------------- | --------- | --------- | --------- | ---------- | -------------- | ---------
+; | 1 | 0 | 0 | 0 | 0 | 10000 | 10
+b | 0 | 0 | 0 | 1 | 1 | 00011 | 3
+W | 0 | 0 | 1 | 0 | 1 | 00101 | 5
+7 | 0 | 1 | 0 | 0 | 0 | 01000 | 8
+= | 0 | 0 | 0 | 0 | 0 | 00000 | 0
 
 ### Example
 
