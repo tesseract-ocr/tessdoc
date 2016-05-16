@@ -2,7 +2,7 @@
 
 **Important note**: Before you invest time and efforts on training Tessetact, it is highly recommended to read the [ImproveQuality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) page.
 
-For training Tesseract 3.00–3.02 see [Training Tesseract 3.00–3.02](Training Tesseract 3.00–3.02).  
+For training Tesseract 3.00–3.02 see [Training Tesseract 3.00–3.02](Training-Tesseract-3.00–3.02).  
 For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
   * [Introduction](#introduction)
