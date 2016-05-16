@@ -124,8 +124,7 @@ For example:
 ```
 The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.{}&lt;&gt;/?
 ```
-is terrible!  
-Much better is:
+is terrible! Much better is:
 ```
 The (quick) brown {fox} jumps! over the $3,456.78 &lt;lazy&gt; #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?
 ```
