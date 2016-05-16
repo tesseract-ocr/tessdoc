@@ -13,7 +13,7 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
     * [Requirements for text input files](#requirements-for-text-input-files)
     * [How little can you get away with?](#how-little-can-you-get-away-with)
   * [Training Procedure](#training-procedure)
-    * [Generate Training Images](#generate-training-images)
+    * [Generate Training Images and Box Files](#generate-training-images-and-box-files)
       * [Automated method](#automated-method)
       * [Old Manual method](#old-manual-method)
         * [Make Box Files](#make-box-files)
@@ -111,7 +111,7 @@ Some of the procedure is inevitably manual. As much automated help as possible i
 
 You need to run all commands in the same folder where your input files are located.
 
-## Generate Training Images
+## Generate Training Images and Box Files
 
 The first step is to determine the full character set to be used, and prepare a text or word processor file containing a set of examples. The most important points to bear in mind when creating a training file are:
 
