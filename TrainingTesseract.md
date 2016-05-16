@@ -16,7 +16,7 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
     * [Generate Training Images](#generate-training-images)
       * [Automated method](#automated-method)
       * [Old Manual method](#old-manual-method)
-    * [Make Box Files](#make-box-files)
+        * [Make Box Files](#make-box-files)
     * [Run Tesseract for Training](#run-tesseract-for-training)
     * [Generate the unicharset file](#generate-the-unicharset-file)
       * [unicharset_extractor](#unicharset_extractor)
@@ -155,7 +155,7 @@ In this example, the `training_text.txt` file contains text written in English. 
 
 There are a lot of other command-line arguments available to `text2image`. Run `text2image --help` to get more information.
 
-If you used `text2image`, you can skip next step - 'Make Box Files', and move to [Run Tesseract for Training](#run-tesseract-for-training).
+If you used `text2image`, you can move to [Run Tesseract for Training](#run-tesseract-for-training) step.
 
 ### Old Manual method
 
@@ -174,7 +174,7 @@ You will also need to save your training text as a UTF-8 text file for use in th
 **Clarification for large amounts of training data**
 The 64 images limit is for the number of **FONTS.** Each font should be put in a single multi-page tiff and the box file can be modified to specify the page number for each character after the coordinates. Thus an arbitrarily large amount of training data may be created for any given font, allowing training for large character-set languages. An alternative to multi-page tiffs is to create many single-page tiffs for a single font, and then you must cat together the tr files for each font into several single-font tr files. In any case, the input tr files to mftraining must each contain a single font.
 
-## Make Box Files
+#### Make Box Files
 
 See the separate [Make Box Files page](https://github.com/tesseract-ocr/tesseract/wiki/Make-Box-Files).
 
