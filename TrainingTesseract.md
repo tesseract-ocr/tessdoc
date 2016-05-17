@@ -54,8 +54,6 @@ Tesseract is slower with large character set languages (like Chinese), but it se
 
 Tesseract needs to know about different shapes of the same character by having different fonts separated explicitly. The number of fonts is limited to 64 fonts. Note that runtime is heavily dependent on the number of fonts provided, and training more than 32 will result in a significant slow-down.
 
-For versions 3.00/3.01, any language that has different punctuation and numbers is going to be disadvantaged by some of the hard-coded algorithms that assume ASCII punctuation and digits. [Fixed in 3.02]
-
 # Additional Libraries required
 Beginning with 3.03, additional libraries are required to build the training tools.
 ```
