@@ -41,7 +41,9 @@ Tesseract 3.0x is fully trainable. This page describes the training process, pro
 Please check the list of [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages)  for which traineddata is already available as of release 3.04 before embarking on training.
 
 Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh) for an easy way to execute various
-phases of training Tesseract. More information on using it can be found on the [tesstrain.sh](tesstrain.sh) page. [3rd Party training tools] (AddOns) are also available for training.
+phases of training Tesseract. More information on using it can be found on the [tesstrain.sh](tesstrain.sh) page.
+
+[3rd Party training tools] (AddOns) are also available for training.
 
 # Background and Limitations
 
