@@ -177,7 +177,7 @@ The 64 images limit is for the number of **FONTS.** Each font should be put in a
 
 #### Make Box Files
 
-See the separate [Make Box Files page](https://github.com/tesseract-ocr/tesseract/wiki/Make-Box-Files).
+See the separate [Make Box Files](https://github.com/tesseract-ocr/tesseract/wiki/Make-Box-Files) page.
 
 ## Run Tesseract for Training
 
