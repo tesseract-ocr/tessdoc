@@ -311,7 +311,6 @@ Seven of the files are coded as a Directed Acyclic Word Graph (DAWG), and the ot
 | punc-dawg | dawg     | A dawg made from punctuation patterns found around words. The _"word"_ part is replaced by a single space. |
 | number-dawg | dawg     | A dawg made from tokens which originally contained digits. Each digit is replaced by a space character. |
 | bigram-dawg | dawg     | A dawg of word bigrams where the words are separated by a space and each digit is replaced by a _?_. |
-| unambig-dawg | dawg     | TODO: Describe. |
 | user-words | text     | A list of extra words to add to the dictionary. Usually left empty to be added by users if they require it; see [tesseract(1)](http://tesseract-ocr.googlecode.com/svn/trunk/doc/tesseract.1.html#_config_files_and_augmenting_with_user_data). |
 
 To make the DAWG dictionary files, you first need a wordlist for your language. You may find an appropriate dictionary file to use as the basis for a wordlist from the spellcheckers (e. g. [ispell](http://ficus-www.cs.ucla.edu/geoff/ispell-dictionaries.html), [aspell](http://aspell.net/) or [hunspell](http://hunspell.sourceforge.net/)) - be careful about the license. The wordlist is formatted as a UTF-8 text file with one word per line. Split the wordlist into needed sets e.g.: the frequent words, and the rest of the words, and then use `wordlist2dawg` to make the DAWG files:
