@@ -382,7 +382,7 @@ The `unicharambigs` file may also be non-existent.
 
 # Putting it all together
 
-That is all there is to it! All you need to do now is collect together all the files (`shapetable`, `normproto`, `inttemp`, `pffmtable`) and rename them with a `lang.` prefix, where lang is the 3-letter code for your language taken from http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes and then run `combine_tessdata` on them as follows:
+That is all there is to it! All you need to do now is collect together all the files (`shapetable`, `normproto`, `inttemp`, `pffmtable`, `unicharset`) and rename them with a `lang.` prefix, where lang is the 3-letter code for your language taken from http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes and then run `combine_tessdata` on them as follows:
 ```
 combine_tessdata lang.
 ```
