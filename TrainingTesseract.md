@@ -307,7 +307,6 @@ Seven of the files are coded as a Directed Acyclic Word Graph (DAWG), and the ot
 | freq-dawg | dawg     | A dawg made from the most frequent words which would have gone into word-dawg. |
 | punc-dawg | dawg     | A dawg made from punctuation patterns found around words. The _"word"_ part is replaced by a single space. |
 | number-dawg | dawg     | A dawg made from tokens which originally contained digits. Each digit is replaced by a space character. |
-| fixed-length-dawgs | dawg     | Several dawgs of different fixed lengths —— useful for languages like Chinese. [Not used since version 3.03] |
 | bigram-dawg | dawg     | A dawg of word bigrams where the words are separated by a space and each digit is replaced by a _?_. |
 | unambig-dawg | dawg     | TODO: Describe. |
 | user-words | text     | A list of extra words to add to the dictionary. Usually left empty to be added by users if they require it; see [tesseract(1)](http://tesseract-ocr.googlecode.com/svn/trunk/doc/tesseract.1.html#_config_files_and_augmenting_with_user_data). |
