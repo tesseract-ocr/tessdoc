@@ -382,17 +382,18 @@ The `unicharambigs` file may also be non-existent.
 
 # Putting it all together
 
-That is all there is to it! All you need to do now is collect together all the files (`shapetable`, `normproto`, `inttemp`, `pffmtable`, `unicharset`) and rename them with a `lang.` prefix, where lang is the 3-letter code for your language taken from http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes and then run `combine_tessdata` on them as follows:
+That is all there is to it! All you need to do now is collect together all the files (`shapetable`, `normproto`, `inttemp`, `pffmtable`, `unicharset`) and rename them with a `lang.` prefix (for example `eng.`), and then run `combine_tessdata` on them as follows:
 ```
 combine_tessdata lang.
 ```
+
+Although you can use any string you like for the language code, we recommend that you use a 3-letter code 
+for your language matching one of the [ISO 639-2 codes](http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes).
 
 The resulting lang.traineddata goes in your tessdata directory. Tesseract can then recognize text in your language (in theory) with the following:
 ```
 tesseract image.tif output -l lang
 ```
-
-(Actually, you can use any string you like for the language code, but if you want anybody else to be able to use it easily, ISO 639 is the way to go.)
 
 More options of `combine_tessdata` can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/master/training/combine_tessdata.cpp#L23).
 
