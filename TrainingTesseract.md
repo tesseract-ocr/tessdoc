@@ -425,7 +425,7 @@ ypos length x2ndmoment y2ndmoment
 ```
 
 The `mf` features are polygon segments of the outline normalized to the
-1st and 2nd moments. The 'mf' line will followed by a set of lines determined by \<number of features\>.  
+1st and 2nd moments. The `mf` line will followed by a set of lines determined by \<number of features\>.  
 x is x position [-0.5,0.5]  
 y is y position [-0.25,0.75]  
 length is the length of the polygon segment [0,1.0]  
