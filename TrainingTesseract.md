@@ -41,6 +41,8 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
 If you had some problems during the training process and you need help, use [tesseract-ocr](https://groups.google.com/forum/#!forum/tesseract-ocr) mailing-list to ask your question(s).
 
+**PLEASE DO NOT** report your problems and ask questions about training as [issues] (https://github.com/tesseract-ocr/tesseract/issues)!
+
 # Introduction
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
