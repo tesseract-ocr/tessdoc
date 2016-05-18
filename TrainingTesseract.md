@@ -216,7 +216,7 @@ Currently, generating the `unicharset` file is done in two steps using these com
 
 **NOTE:** The `unicharset` file must be regenerated whenever `inttemp`, `normproto` and `pffmtable` are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync.
 
-For in-depth details about the `unicharset` file format, see [this appendix](#the-unicharset-file-format).
+For more details about the `unicharset` file format, see [this appendix](#the-unicharset-file-format).
 
 ### unicharset_extractor
 
@@ -236,7 +236,7 @@ This tool, together with a set of data files, allow the addition of extra proper
 training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
 ```
 
-(#example)
+After running `unicharset_extractor` and `set_unicharset_propertie`, you should get a `unicharset` file with all the fields set to the right values, like in this [example](#example).
 
 ## font\_properties
 
