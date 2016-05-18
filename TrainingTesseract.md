@@ -212,11 +212,11 @@ For the curious, [here](#the-tr-file-format) is some information on the format.
 
 Tesseract’s unicharset file contains information on each symbol (unichar) the Tesseract OCR engine is trained to recognize.
 
-Currently, generating the unicharset file is done in two steps using these commands: `unicharset_extractor` and `set_unicharset_properties`.
+Currently, generating the `unicharset` file is done in two steps using these commands: `unicharset_extractor` and `set_unicharset_properties`.
 
 **NOTE:** The `unicharset` file must be regenerated whenever `inttemp`, `normproto` and `pffmtable` are generated (i.e. they must **all** be recreated when the box file is changed) as they have to be in sync.
 
-See [The unicharset file format](#the-unicharset-file-format).
+For in-depth details about the `unicharset` file format, see [this appendix](#the-unicharset-file-format).
 
 ### unicharset_extractor
 
@@ -235,6 +235,8 @@ This tool, together with a set of data files, allow the addition of extra proper
 ```
 training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
 ```
+
+(#example)
 
 ## font\_properties
 
