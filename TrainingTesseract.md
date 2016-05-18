@@ -7,7 +7,7 @@ Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/b
 For training Tesseract 3.00–3.02 see [Training Tesseract 3.00–3.02](Training-Tesseract-3.00–3.02).  
 For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
-  * [Questions about the training process](questions-about-the-training-process)  
+  * [Questions about the training process](#questions-about-the-training-process)  
   * [Introduction](#introduction)
   * [Background and Limitations](#background-and-limitations)
   * [Additional Libraries required](#additional-libraries-required)
