@@ -7,6 +7,7 @@ Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/b
 For training Tesseract 3.00–3.02 see [Training Tesseract 3.00–3.02](Training-Tesseract-3.00–3.02).  
 For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
+  * [Questions about the training process](questions-about-the-training-process)  
   * [Introduction](#introduction)
   * [Background and Limitations](#background-and-limitations)
   * [Additional Libraries required](#additional-libraries-required)
@@ -35,6 +36,10 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 **Appendices** 
 * [The *.tr file format](#the-tr-file-format)
 * [The unicharset file format](#the-unicharset-file-format)
+
+# Questions about the training process  
+
+If you had some problems during the training process and you need help, use [tesseract-ocr](https://groups.google.com/forum/#!forum/tesseract-ocr) mailing-list to ask your question(s).
 
 # Introduction
 
