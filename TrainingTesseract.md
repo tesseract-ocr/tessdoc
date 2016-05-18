@@ -419,16 +419,15 @@ Every character in the box file has a corresponding set of entries in the .tr fi
 UnknownFont <UTF-8 code(s)> 2
 mf <number of features>
 x y length dir 0 0
-... (there are a set of these determined by <number of features>
-above)
+...
 cn 1
 ypos length x2ndmoment y2ndmoment
 ```
 
 The `mf` features are polygon segments of the outline normalized to the
-1st and 2nd moments.  
-x= x position [-0.5,0.5]  
-y = y position [-0.25,0.75]  
+1st and 2nd moments. The 'mf' line will followed by a set of lines determined by <number of features>.
+x is x position [-0.5,0.5]  
+y is y position [-0.25,0.75]  
 length is the length of the polygon segment [0,1.0]  
 dir is the direction of the segment [0,1.0]
 
