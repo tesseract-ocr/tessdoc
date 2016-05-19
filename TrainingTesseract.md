@@ -516,4 +516,4 @@ W | 0 | 0 | 1 | 0 | 1 | 00101 | 5
 7 | 0 | 1 | 0 | 0 | 0 | 01000 | 8
 = | 0 | 0 | 0 | 0 | 0 | 00000 | 0
 
-In columns 2-5, `0` means 'No', `1` means 'Yes'.
+In columns 2-6, `0` means 'No', `1` means 'Yes'.
