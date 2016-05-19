@@ -259,9 +259,9 @@ where `fontname` is a string naming the font (no spaces allowed!), and `italic`,
 timesitalic 1 0 0 1 0
 ```
 
-When running `mftraining`, each .tr filename must match an entry in the `font_properties` file, or `mftraining` will abort. At some point, possibly before the release of 3.01, this matching requirement is likely to shift to the font name in the .tr file itself. The name of the .tr file may be either `fontname.tr` or `[lang].[fontname].exp[num].tr`.
-
 The `font_properties` file will be used by the `shapeclustering` and `mftraining` commands.
+
+When running `mftraining`, each `fontname` field in the [*.tr file](#the-tr-file-format) must match an `fontname` entry in the `font_properties` file, or `mftraining` will abort.
 
 **Note**: There is a default `font_properties` file, that covers 3000 fonts (not necessarily accurately) located in this repo: [https://github.com/tesseract-ocr/langdata](https://raw.githubusercontent.com/tesseract-ocr/langdata/master/font_properties).
 
