@@ -410,23 +410,32 @@ You can inspect some of the internals of traineddata files  in 3rd party online 
 Every character in the box file has a corresponding set of entries in the .tr file (in order) like this:
 
 ```
-UnknownFont <UTF-8 code(s)> 2
+<fontname> <character> <left> <top> <right> <bottom> <pagenum>
+ 4
 mf <number of features>
-x y length dir 0 0
+<x> <y> <length> <dir> 0 0
 ...
 cn 1
-ypos length x2ndmoment y2ndmoment
+<ypos> <length> <x2ndmoment> <y2ndmoment>
+if <number of features>
+...
+tb 1
+...
 ```
 
-The `mf` features are polygon segments of the outline normalized to the
+The Micro Features (`mf`) are polygon segments of the outline normalized to the
 1st and 2nd moments. The `mf` line will followed by a set of lines determined by \<number of features\>.  
 x is x position [-0.5,0.5]  
 y is y position [-0.25,0.75]  
 length is the length of the polygon segment [0,1.0]  
 dir is the direction of the segment [0,1.0]
 
-The `cn` feature is to correct for the moment normalization to
+The CharNorm Features (`cn`) are used to correct for the moment normalization to
 distinguish position and size (eg `c` vs `C` and `,` vs `'`)
+
+`if` - Int Features 
+
+`tb` - Geo Features
 
 ## The unicharset file format
 
