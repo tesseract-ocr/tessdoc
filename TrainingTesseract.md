@@ -32,7 +32,7 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
   * [mftraining](#mftraining)
   * [cntraining](#cntraining)
 * [Dictionary Data (Optional)](#dictionary-data-optional)
-* [The last file (unicharambigs)](#the-last-file-unicharambigs)
+* [The unicharambigs file](#the-unicharambigs-file)
 * [Putting it all together](#putting-it-all-together)
 
 **Appendices** 
@@ -333,9 +333,11 @@ Words with unusual spellings should be added to the dictionary files. Unusual sp
 If you need example files for dictionary wordlists, uncombine (with [combine\_tessdata](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc)) existing language data file (e.g. eng.traineddata) and then extract wordlist with [dawg2wordlist](https://github.com/tesseract-ocr/tesseract/blob/master/doc/dawg2wordlist.1.asc)
 
 
-## The last file (unicharambigs)
+## The unicharambigs file
 
-The final data file that Tesseract uses is called `unicharambigs`. It describes possible ambiguities between characters or sets of characters, and is manually generated. To understand the file format, look at the following example:
+The `unicharambigs` file is a text file that describes possible ambiguities between characters or sets of characters, and is manually generated.
+
+To understand the file format, look at the following example:
 
 ```
 v1
