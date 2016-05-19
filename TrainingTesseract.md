@@ -247,7 +247,7 @@ After running `unicharset_extractor` and `set_unicharset_propertie`, you should 
 
 ## font\_properties
 
-Now you need to create a `font_properties` file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized. The `font_properties` file is a text file specified by the `-F filename` option to `mftraining`.
+Now you need to create a `font_properties` text file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized.
 
 Each line of the `font_properties` file is formatted as follows:
 `fontname` `italic` `bold` `fixed` `serif` `fraktur`  
