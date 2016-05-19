@@ -243,7 +243,7 @@ This tool, together with a set of data files, allow the addition of extra proper
 training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
 ```
 
-After running `unicharset_extractor` and `set_unicharset_propertie`, you should get a `unicharset` file with all the fields set to the right values, like in this [example](#example).
+After running `unicharset_extractor` and `set_unicharset_propertie`, you should get a `unicharset` file with all the fields set to the right values, like in this [example](#an-example-of-the-unicharset-file).
 
 ## font\_properties
 
@@ -474,7 +474,7 @@ The Unichar ID of the BiDirectional mirror of this character. For example the mi
 * `normed_form`  
 The UTF-8 representation of a "normalized form" of this unichar for the purpose of blaming a module for errors given ground truth text. For instance, a left or right single quote may normalize to an ASCII quote.
 
-### Example
+### An example of the unicharset file
 
 ```
 110
