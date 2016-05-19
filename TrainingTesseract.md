@@ -347,6 +347,7 @@ v1
 ```
 
 The first line is a version identifier.  
+
 The remaining lines are **tab** separated fields, in the following format:  
 ```
 <number of characters for match source> <characters for match source> <number of characters for match target> <characters for match target> <type indicator>
@@ -356,8 +357,8 @@ Type indicator [could have](https://github.com/tesseract-ocr/tesseract/blob/mast
 
 | **Value** | **Type** | **Description** |
 |:----------|:---------|:----------------|
-| 0         | A non-mandatory substitution. This informs tesseract to consider the ambiguity as a hint to the segmentation search that it should continue working if replacement of 'source' with 'target' creates a dictionary word from a non-dictionary word. Dictionary words that can be turned to another dictionary word via the ambiguity will not be used to train the adaptive classifier. |
-| 1         | A mandatory substitution. This informs tesseract to always replace the matched 'source' with the 'target' strings. |
+| 0         | A non-mandatory substitution. | This informs tesseract to consider the ambiguity as a hint to the segmentation search that it should continue working if replacement of 'source' with 'target' creates a dictionary word from a non-dictionary word. Dictionary words that can be turned to another dictionary word via the ambiguity will not be used to train the adaptive classifier. |
+| 1         | A mandatory substitution. | This informs tesseract to always replace the matched 'source' with the 'target' strings. |
 
 | **Example line** | **Explanation** |
 |:-----------------|:----------------|
