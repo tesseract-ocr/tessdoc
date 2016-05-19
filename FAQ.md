@@ -2,7 +2,7 @@
 
 A collection of frequently asked questions and the answers, or pointers to them. If you have a question, please post it to the forums.
 
-  * [Rules and advices](#rules-and-advice)
+  * [Rules and advice](#rules-and-advice)
 
 Table of Contents
 =================
