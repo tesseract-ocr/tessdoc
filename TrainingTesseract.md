@@ -430,12 +430,12 @@ y is y position [-0.25,0.75]
 length is the length of the polygon segment [0,1.0]  
 dir is the direction of the segment [0,1.0]
 
-The CharNorm Features (`cn`) are used to correct for the moment normalization to
+The Char Norm features (`cn`) are used to correct for the moment normalization to
 distinguish position and size (eg `c` vs `C` and `,` vs `'`)
 
 `if` - Int Features 
 
-`tb` - Geo Features
+`tb` - Geo features
 
 ## The unicharset file format
 
