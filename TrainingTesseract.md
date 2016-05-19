@@ -7,15 +7,15 @@ Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/b
 For training Tesseract 3.00–3.02 see [Training Tesseract 3.00–3.02](Training-Tesseract-3.00–3.02).  
 For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
-  [Questions about the training process](#questions-about-the-training-process)  
+[Questions about the training process](#questions-about-the-training-process)  
 
-  * [Introduction](#introduction)
-  * [Background and Limitations](#background-and-limitations)
-  * [Additional Libraries required](#additional-libraries-required)
-  * [Building the training tools](#building-the-training-tools)
-  * [Data files required](#data-files-required)
-    * [Requirements for text input files](#requirements-for-text-input-files)
-    * [How little can you get away with?](#how-little-can-you-get-away-with)
+* [Introduction](#introduction)
+* [Background and Limitations](#background-and-limitations)
+* [Additional Libraries required](#additional-libraries-required)
+* [Building the training tools](#building-the-training-tools)
+* [Data files required](#data-files-required)
+  * [Requirements for text input files](#requirements-for-text-input-files)
+  * [How little can you get away with?](#how-little-can-you-get-away-with)
  
 [**Training Procedure**](#training-procedure)
 * [Generate Training Images and Box Files](#generate-training-images-and-box-files)
