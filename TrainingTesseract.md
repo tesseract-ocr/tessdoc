@@ -249,7 +249,7 @@ After running `unicharset_extractor` and `set_unicharset_propertie`, you should 
 
 Now you need to create a `font_properties` text file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized.
 
-Each line of the `font_properties` file is formatted as follows:
+Each line of the `font_properties` file is formatted as follows:  
 `fontname` `italic` `bold` `fixed` `serif` `fraktur`  
 where `fontname` is a string naming the font (no spaces allowed!), and `italic`, `bold`, `fixed`, `serif` and `fraktur` are all simple `0` or `1` flags indicating whether the font has the named property.
 
