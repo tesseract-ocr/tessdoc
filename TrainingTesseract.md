@@ -169,15 +169,12 @@ If you used `text2image`, you can move to [Run Tesseract for Training](#run-tess
 
 ### Old Manual method
 
-  * [Only relevant to version 3.00, fixed in 3.01] It is sometimes important to space out the text a bit when printing, so up the inter-character and inter-line spacing in your word processor. Not spacing text out sufficiently will cause "FAILURE! box overlaps no blobs or blobs in multiple rows" errors during tr file generation, which leads to FATALITY - 0 labelled samples of "x", which leads to "Error: X classes in inttemp while unicharset contains Y unichars" and you can't use your nice new data files.
   * The training data should be grouped by font. Ideally, all samples of a single font should go in a single tiff file, but this may be multi-page tiff (if you have libtiff or leptonica installed), so the total training data in a single font may be many pages and many 10s of thousands of characters, allowing training for large-character-set languages.
   * There is no need to train with multiple sizes. 10 point will do. (An exception to this is very small text. If you want to recognize text with an x-height smaller than about 15 pixels, you should either train it specifically or scale your images before trying to recognize them.)
   * **DO NOT MIX FONTS IN AN IMAGE FILE** (In a single .tr file to be precise.) This will cause features to be dropped at clustering, which leads to recognition errors.
   * The example boxtiff files on the downloads page will help if you are not sure how to format your training data.
 
 Next print and scan (or use some electronic rendering method) to create an image of your training page. Up to 64 training files can be used (of multiple pages). It is best to create a mix of fonts and styles (but in separate files), including italic and bold.
-
-**NOTE:** [Only relevant to version 3.00, fixed in 3.01] Training from real images is actually quite hard, due to the spacing-out requirements. It is much easier if you can print/scan your own training text.
 
 You will also need to save your training text as a UTF-8 text file for use in the next step where you have to insert the codes into another file.
 
