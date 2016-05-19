@@ -26,7 +26,7 @@ For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 * [Generate the unicharset file](#generate-the-unicharset-file)
   * [unicharset_extractor](#unicharset_extractor)
   * [set_unicharset_properties](#set_unicharset_properties)
-* [font_properties](#font_properties)
+* [The font_properties file](#the-font_properties-file)
 * [Clustering](#clustering)
   * [shapeclustering](#shapeclustering)
   * [mftraining](#mftraining)
@@ -244,7 +244,7 @@ training/set_unicharset_properties -U input_unicharset -O output_unicharset --sc
 
 After running `unicharset_extractor` and `set_unicharset_propertie`, you should get a `unicharset` file with all the fields set to the right values, like in this [example](#an-example-of-the-unicharset-file).
 
-## font\_properties
+## The font\_properties file
 
 Now you need to create a `font_properties` text file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized.
 
