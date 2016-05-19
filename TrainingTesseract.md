@@ -344,9 +344,10 @@ v1
 3       i i i   1       m       0
 ```
 
-The first line is a version identifier. The remaining lines are tab separated fields, in the following format:
+The first line is a version identifier.  
+The remaining lines are **tab** separated fields, in the following format:  
 ```
-<number of characters for match source> <tab> <characters for match source> <tab> <number of characters for match target> <tab> <characters for match target> <tab> <type indicator>
+<number of characters for match source> <characters for match source> <number of characters for match target> <characters for match target> <type indicator>
 ```
 
 Type indicator [could have](https://github.com/tesseract-ocr/tesseract/blob/master/ccutil/ambigs.h#L44) following values:
