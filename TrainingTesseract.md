@@ -418,9 +418,10 @@ mf <number of features>
 cn 1
 <ypos> <length> <x2ndmoment> <y2ndmoment>
 if <number of features>
+<x> <y> <dir>
 ...
 tb 1
-...
+<bottom> <top> <Width>
 ```
 
 The Micro Features (`mf`) are polygon segments of the outline normalized to the
