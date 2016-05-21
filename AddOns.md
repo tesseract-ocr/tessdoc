@@ -100,6 +100,7 @@ Platform support depends on used language and experience of user.
   * https://github.com/jflesch/pyocr - A python wrapper for Tesseract and Cuneiform
   * https://github.com/gregjurman/tesserwrap - Python bindings to the Tesseract API
   * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
+  * [tesserocr](https://github.com/sirfz/tesserocr) - A simple, Pillow-friendly, wrapper around Tesseract's C++ API using Cython 
 
 **Ruby**:
   * https://github.com/meh/ruby-tesseract-ocr/ - wrapper for tesseract 3.0x using the C++ API
