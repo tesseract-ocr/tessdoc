@@ -265,7 +265,7 @@ The `font_properties` file will be used by the `shapeclustering` and `mftraining
 
 When running `mftraining`, each `fontname` field in the [*.tr file](#the-tr-file-format) must match an `fontname` entry in the `font_properties` file, or `mftraining` will abort.
 
-**Note**: There is a default `font_properties` file, that covers 3000 fonts (not necessarily accurately) located in this repo: [https://github.com/tesseract-ocr/langdata](https://raw.githubusercontent.com/tesseract-ocr/langdata/master/font_properties).
+**Note**: There is a default [font_properties](https://raw.githubusercontent.com/tesseract-ocr/langdata/master/font_properties) file, that covers 3000 fonts (not necessarily accurately) located in the langdata repository.
 
 ## Clustering
 
