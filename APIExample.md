@@ -209,6 +209,48 @@ print result_text
 
 Example of passing python file object to C-API can be found at [pastebin](http://pastebin.com/yDTkNfNm).
 
+Example of extracting orientation (from [pyocr](https://github.com/jflesch/pyocr/blob/master/src/pyocr/libtesseract/tesseract_raw.py)):
+```
+# ... /snip
+class OSResults(Structure):
+    _fields_ = [
+        ('orientations', c_float * 4),
+        ('scripts_na', c_float * 4 * (116 + 1 + 2 + 1)),
+        ('unicharset', c_void_p),
+        ('best_orientation_id', c_int),
+        ('best_script_id', c_int),
+        ('best_sconfidence', c_float),
+        ('best_oconfidence', c_float),
+        ('padding', c_char_p * 512),
+    ]
+
+# ... /snip
+
+def create_tess_api(prefix=TESSDATA_PREFIX, lang='eng'):
+    # ... /snip
+    tesseract.TessBaseAPIDetectOS.argtypes = [base_api, POINTER(OSResults)]
+    tesseract.TessBaseAPIDetectOS.restype = c_bool
+    # ... /snip
+
+def get_orientation(tesseract, leptonica, api, path, mode=0):
+    tesseract.TessBaseAPISetPageSegMode(api, mode)
+    pix = leptonica.pixRead(path)
+    tesseract.TessBaseAPISetImage2(api, pix)
+    osr = OSResults()
+    it = tesseract.TessBaseAPIDetectOS(api, byref(osr))
+
+    if it and osr:
+        orientation, direction, line_order = c_int(), c_int(), c_int()
+        skew = c_float()
+
+        tesseract.TessPageIteratorOrientation(
+            it, byref(orientation), byref(direction), byref(line_order),
+            byref(skew))
+
+        print('%s: %s' % (path, osr.best_orientation_id))
+        print('confidence: %s' % osr.best_oconfidence)
+```
+
 # Example using the C-API in a C program
 
 The C-API can of course also be used by regular C programs, as in this very basic example.
