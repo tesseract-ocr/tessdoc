@@ -18,7 +18,7 @@
 | [Tesseract-GUI](http://tesseract-gui.sourceforge.net) | X         |         |             | GPL v2      | Tessract-GUI is not a front-end for tesseract-ocr, it is just a graphical way to use it  with simple image manipulation through ImageMagick |
 | [QTesseract](http://code.google.com/p/qtesseract/) | X         |         |             | LGPL v3     | QT GUI for the Tesseract OCR |
 | [TessOCR(KISI)](http://djvu.life.coocan.jp/TessOCR/doc/tessOCR_eng.html) |           | X       |             | Apache 2.0  | A free OCR tool |
-| [pmOCR](http://github.com/deajan/pmocr/) | x         |          |          | BSD | Batch OCR tool, also on file event OCR with tesseract |
+| [pmOCR](http://github.com/deajan/pmocr/) | X         |          |          | BSD | Batch OCR tool, also file monitor event OCR with tesseract |
 
 ## Online OCR services
 
