@@ -37,9 +37,8 @@ Table of Contents
 (Previously we used Subversion as a VCS and code.google.com for hosting).
   * Tesseract now requires leptonica 1.71 or a higher version.
   * Removed official support for VS 2008.
-  * Added support for 39 additional scripts/languages, including: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid
   * Major updates to training system as a result of extensive testing on 100 languages.
-  * New training data for over 100 languages
+  * New training data for over 100 languages. Added support for 39 additional scripts/languages: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid.
   * Improved performance with PIC compilation option.
   * Significant change to invisible font system in pdf output to improve 
 correctness and compatibility with external programs, particularly ghostscript.
