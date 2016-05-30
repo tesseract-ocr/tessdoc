@@ -58,7 +58,7 @@ Table of Contents
     * [Incomplete OCR result](#incomplete-ocr-result)
     * [error LNK2001: unresolved external symbol "public: static char cdecl TessBaseAPI::TesseractRect(unsigned char const,int,int,int,int,int,int)"](#error-lnk2001-unresolved-external-symbol-public-static-char-cdecl-tessbaseapitesseractrectunsigned-char-constintintintintintint-tesseractrecttessbaseapisapadpbehhhhhhz)
     * [box overlaps no blobs or blobs in multiple rows error when training](#box-overlaps-no-blobs-or-blobs-in-multiple-rows-error-when-training)
-    * [Training failed  with error message "mf.cpp:78: FEATURE_SET_STRUCT<strong>ExtractMicros..."</strong> ](#training-failed--with-error-message-mfcpp78-feature_set_structextractmicros)
+    * [Training failed  with error message "mf.cpp:78: FEATURE_SET_STRUCT\* ExtractMicros..."](#training-failed--with-error-message-mfcpp78-feature_set_struct-extractmicros)
     * [error message: Font id = -1/0, class id = 1/105 on sample 0](#error-message-font-id---10-class-id--1105-on-sample-0)
   * [My question isn't in here!](#my-question-isnt-in-here)
 
@@ -453,7 +453,7 @@ tesseract input_image output -psm 6 batch.nochop makebox
 ```
 Or have a look at other suggestions in [issue 471](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=471)
 
-### Training failed  with error message "mf.cpp:78: FEATURE\_SET\_STRUCT**ExtractMicros..."**
+### Training failed  with error message "mf.cpp:78: FEATURE\_SET\_STRUCT\* ExtractMicros..."
 
 See suggestions on how to improve the input image in [issue 488](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=488).
 
