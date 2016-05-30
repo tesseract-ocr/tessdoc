@@ -64,15 +64,9 @@ Table of Contents
 
 ## Rules and advice
 
-  * If you found a bug - please create an issue: Please make sure you are able to replicate the problem with tesseract executables on Linux or Windows. For other platforms or external/your programs (including tesseract wrappers) please use the tesseract forums.
-  * Use the latest official release (optionally: try to check if the problem is not already solved in the git repository).
-  * Don't mix tesseracts version language files.
-  * Post example files e.g. if you have problem with training. Just posting error messages is not sufficient if you used an input file. The source of the problem is usually hidden in input files.
-  * Do not post programs or libraries (e.g. program for editing box files) - post a link where they can be downloaded
-  * Try to find the optimal format for example images - a 20Mb image is not helpful. A multi-page TIFF is useful only if you have problem with multi-page functionality. E.g. 2 colour png provides the same information as a truecolour uncompressed TIFF (tesseract will convert it to 2 colours anyway).
-  * Copy the error message from the terminal/console/windows command line (yes, it is possible on Windows too) instead of sending a screen-shot.
-  * Use the [tesseract developer](http://groups.google.com/group/tesseract-dev/) forum to share updates, bug fixes, improvements, add-ons for Tesseract. For general questions and support please use the [tesseract-ocr user] (http://groups.google.com/group/tesseract-ocr/) forum.
-  * Read the wiki, search issues (also closed), search in the tesseract forum before you post your issues/question. Maybe it was solved already.
+If you think you found a bug in Tesseract, please create an issue. Questions should be asked in the [users mailing-list](https://groups.google.com/d/forum/tesseract-ocr).
+
+You **must** read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/master/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
 
 ## Can I increase speed of OCR?
 
