@@ -39,7 +39,7 @@ brew install tesseract
 
 An installer is available for Windows from our [download](Downloads) page. This includes the English training data.
 
-If you want to use another language, [download the appropriate training data](http://code.google.com/p/tesseract-ocr/downloads/list), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract OCR\tessdata`.
+If you want to use another language, [download the appropriate training data](https://github.com/tesseract-ocr/tessdata), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract OCR\tessdata`.
 
 ## MSYS2
 
