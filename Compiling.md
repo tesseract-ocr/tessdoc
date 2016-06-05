@@ -111,13 +111,13 @@ For tesseract-ocr 3.02 please follow instruction in [Visual Studio 2008 Develope
 
 ## 3.01
 
-Download these packages from the [Downloads](https://sourceforge.net/projects/tesseract-ocr-alt/files/) page:
+Download these packages from the [Downloads Archive on SourceForge](https://sourceforge.net/projects/tesseract-ocr-alt/files/) page:
 
   * `tesseract-3.01.tar.gz` - Tesseract source
   * `tesseract-3.01-win_vs.zip` - Visual studio (2008 & 2010) solution with necessary libraries
   * `tesseract-ocr-3.01.eng.tar.gz` - English language file for tesseract (or download other language training file)
 
-Unpack them to one directory (e.g. `tesseract-3.01`). Note that `tesseract-ocr-[version].eng.tar.gz` names the root directory `'tesseract-ocr'` instead of `'tesseract-[version]'`.
+Unpack them to one directory (e.g. `tesseract-3.01`). Note that `tesseract-ocr-3.01.eng.tar.gz` names the root directory `'tesseract-ocr'` instead of `'tesseract-3.01'`.
 
 Windows relevant files are located in vs2008 directory (e.g. 'tesseract-3.01\vs2008'). The same build process as usual applies: Open tesseract.sln with VC++Express 2008 and build all (or just Tesseract.) It should compile (in at least release mode) without having to install anything further. The dll dependencies and Leptonica are included. Output will be in tesseract-3.01\vs2008\bin (or tesseract-3.01\vs2008\bin.rd or tesseract-3.01\vs2008\bin.dbg based on configuration build).
 
