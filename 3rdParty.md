@@ -6,7 +6,7 @@
 |:---------|:----------|:--------|:------------|:------------|:----------------|
 | [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GNU AGPL v3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and OCR'ing PDF files |
 | [YAGF](http://sourceforge.net/projects/yagf-ocr/) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
-| [gImageReader](http://sourceforge.net/projects/gimagereader/) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
+| [gImageReader](https://github.com/manisandro/gImageReader) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
 | [SunnyPage OCR](http://www.sunnypage.ge/en/) |           |         | X           | Proprietary | A GUI frontend for Tesseract OCR engine with automatic adjustment of image brightness, image processing and PDF support.|
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
 | [OCRFeeder](https://wiki.gnome.org/action/show/Apps/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
