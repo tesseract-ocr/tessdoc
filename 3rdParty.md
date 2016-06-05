@@ -14,7 +14,7 @@
 | [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
 | [Lime OCR](http://code.google.com/p/lime-ocr/) |           |         | X           | GPL v3      | A simple, free OCR software for Windows using tesseract-ocr engine |
-| [Ocrivist](http://code.google.com/p/ocrivist/) | X         |         |             | GPL v3      | Ocrivist is a utility which makes it possible to scan and OCR books and other printed documents to PDF or Djvu format |
+| [Ocrivist](http://www.ocrivist.com/) | X         |         |             | GPL v3      | Ocrivist is a utility which makes it possible to scan and OCR books and other printed documents to PDF or Djvu format |
 | [Tesseract-GUI](http://tesseract-gui.sourceforge.net) | X         |         |             | GPL v2      | Tessract-GUI is not a front-end for tesseract-ocr, it is just a graphical way to use it  with simple image manipulation through ImageMagick |
 | [QTesseract](http://code.google.com/p/qtesseract/) | X         |         |             | LGPL v3     | QT GUI for the Tesseract OCR |
 | [TessOCR(KISI)](http://djvu.life.coocan.jp/TessOCR/doc/tessOCR_eng.html) |           | X       |             | Apache 2.0  | A free OCR tool |
