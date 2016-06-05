@@ -111,11 +111,11 @@ For tesseract-ocr 3.02 please follow instruction in [Visual Studio 2008 Develope
 
 ## 3.01
 
-Download these packages from the [Downloads](http://code.google.com/p/tesseract-ocr/downloads/list) page:
+Download these packages from the [Downloads](https://sourceforge.net/projects/tesseract-ocr-alt/files/) page:
 
-  * `tesseract-[version].tar.gz` - Tesseract source
-  * `tesseract-[version]-win_vs.zip` - Visual studio (2008 & 2010) solution with necessary libraries
-  * `tesseract-ocr-[version].eng.tar.gz` - English language file for tesseract (or download other language training file)
+  * `tesseract-3.01.tar.gz` - Tesseract source
+  * `tesseract-3.01-win_vs.zip` - Visual studio (2008 & 2010) solution with necessary libraries
+  * `tesseract-ocr-3.01.eng.tar.gz` - English language file for tesseract (or download other language training file)
 
 Unpack them to one directory (e.g. `tesseract-3.01`). Note that `tesseract-ocr-[version].eng.tar.gz` names the root directory `'tesseract-ocr'` instead of `'tesseract-[version]'`.
 
