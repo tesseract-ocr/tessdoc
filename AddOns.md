@@ -103,8 +103,8 @@ Platform support depends on used language and experience of user.
   * http://code.google.com/p/python-tesseract/ is a wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
 
 **Ruby**:
-  * https://github.com/meh/ruby-tesseract-ocr/ - wrapper for tesseract 3.0x using the C++ API
-  * https://github.com/dannnylo/rtesseract
+  * [ruby-tesseract-ocr](https://github.com/meh/ruby-tesseract-ocr/) - wrapper for tesseract 3.0x using the C++ API
+  * [rtesseract](https://github.com/dannnylo/rtesseract)
 
 **Java**: http://tess4j.sourceforge.net/ (JNA wrapper)
 
@@ -112,7 +112,7 @@ Platform support depends on used language and experience of user.
 
 **Objective-C**: https://github.com/ldiqual/tesseract-ios
 
-**Clojure**: https://github.com/antoniogarrote/clj-tesseract
+**Clojure**: [clj-tesseract](https://github.com/antoniogarrote/clj-tesseract)
 
 ### Tesseract 2.0x
 
