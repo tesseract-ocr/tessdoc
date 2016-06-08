@@ -106,13 +106,13 @@ Platform support depends on used language and experience of user.
   * https://github.com/meh/ruby-tesseract-ocr/ - wrapper for tesseract 3.0x using the C++ API
   * https://github.com/dannnylo/rtesseract
 
-**Clojure**: https://github.com/antoniogarrote/clj-tesseract
-
 **Java**: http://tess4j.sourceforge.net/ (JNA wrapper)
 
 **PHP**: https://code.google.com/p/php-tesseract/
 
 **Objective-C**: https://github.com/ldiqual/tesseract-ios
+
+**Clojure**: https://github.com/antoniogarrote/clj-tesseract
 
 ### Tesseract 2.0x
 
