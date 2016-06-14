@@ -11,7 +11,7 @@ Platform support depends on used language and experience of user.
 
 | **Name** | **Last update** | **Language** | Multipage support |
 |:---------|:----------------|:-------------|:------------------|
-| [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | March 2015      | Java         | yes               |
+| [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | April 2016      | Java         | yes               |
 | [QT Box Editor](http://zdenop.github.com/qt-box-editor/) | July 2013       | C++, Qt4/Qt5 | yes               |
 | [tesseract-box-editor](https://github.com/scotts48/tesseract-box-editor) | Feb 2013        | .NET 4       | yes               |
 | [Tesseract-OCR boxfile AJAX editor](http://pp19dd.com/tesseract-ocr-chopper/) | March 2012      | online tool  |
