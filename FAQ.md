@@ -48,7 +48,7 @@ Table of Contents
   * [Error: Size of unicharset is greater than MAX_NUM_CLASSES](#error-size-of-unicharset-is-greater-than-max_num_classes)
   * [How can I make the error messages go to tesseract.log instead of stderr?](#how-can-i-make-the-error-messages-go-to-tesseractlog-instead-of-stderr)
   * [How can I suppress tesseract info line?](#how-can-i-suppress-tesseract-info-line)
-  * [How can I get the coordinates and confidence of each character?](#how-can-i-get-the-coordinates-and-confidence-of-each-character)
+  * [How can I get the coordinates and confidence of each word?](#how-can-i-get-the-coordinates-and-confidence-of-each-word)
   * [How is confidence calculated?](#how-is-confidence-calculated)
   * [Can I use Tesseract for handwriting recognition?](#can-i-use-tesseract-for-handwriting-recognition)
   * [Can I use tesseract for barcode recognition?](#can-i-use-tesseract-for-barcode-recognition)
@@ -406,7 +406,7 @@ tesseract phototest.tif phototest quiet
 
 **Warning:** Both options will cause you to not see the error message if there is one.
 
-## How can I get the coordinates and confidence of each character?
+## How can I get the coordinates and confidence of each word?
 
 There are two options. If you would rather not get into programming, you can use Tesseract's hOCR output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h).
 
