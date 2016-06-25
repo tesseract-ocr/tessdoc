@@ -55,5 +55,5 @@ Documentation of tesseract generated from source code by [doxygen](http://www.do
   * [Training Tesseract for Ancient Greek OCR](http://eutypon.gr/eutypon/pdf/e2012-29/e29-a01.pdf) by Nick White
   * [Shirorekha Chopping Integrated Tesseract OCR Engine for Enhanced Hindi Language Recognition](http://research.ijcaonline.org/volume39/number6/pxc3877076.pdf) by Nitin Mishra, C. Patvardhan, C. Vasantha Lakshmi, Sarika Singh
   * [Report on the comparison of Tesseract and ABBYY FineReader OCR engines](http://lib.psnc.pl/dlibra/docmetadata?id=358&from=publication&showContent=true) by Heliński, Kmieciak, and Parkoła
-  * [The hOCR Embedded OCR Workflow and Output Format](https://docs.google.com/document/d/1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0/edit) (hOCR specification)
+  * [The hOCR Embedded OCR Workflow and Output Format](https://github.com/kba/hocr-spec/blob/master/hocr-spec.md) (hOCR specification)
   * [Text Detection on Nokia N900 Using Stroke Width Transform](https://sites.google.com/site/roboticssaurav/strokewidthnokia) (with source code)
