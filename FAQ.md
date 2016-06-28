@@ -9,6 +9,7 @@ Table of Contents
   * [Can I increase speed of OCR?](#can-i-increase-speed-of-ocr)
   * [Windows: tesseract closes automatically right after launching](#windows-tesseract-closes-automatically-right-after-launching)
   * [What output formats can Tesseract produce?](#what-output-formats-can-tesseract-produce)
+  * [How to interpret hOCR baseline output?](#how-to-interpret-hocr-baseline-output)
   * [libtesseract.so.3: cannot open shared object file](#libtesseractso3-cannot-open-shared-object-file)
   * [Tesseract does not work](#tesseract-does-not-work)
   * [Error in pixReadStream:](#error-in-pixreadstream)
@@ -100,6 +101,16 @@ Tesseract can produce plain text, PDF, and HTML output. Tesseract's standard out
 With the configfile 'hocr' tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
 
 With the configfile 'pdf' tesseract will produce searchable PDF containing pages images with a hidden, searchable text layer.
+
+## How to interpret hOCR baseline output?
+
+The hOCR output for the first line of eurotext.tif contains the following information:
+```
+<span class='ocr_line' id='line_1_1' title="bbox 105 66 823 113; baseline 0.015 -18; …
+```
+bbox is the bounding box of the line in image coordinates (blue). The two numbers for the baseline are the slope (1st number) and constant term (2nd number) of a linear equation describing the baseline relative to the bottom left corner of the bounding box (red). The baseline crosses the y-axis at `-18` and its slope angle is `arctan(0.015) = 0.86°`.
+In general, the baseline is described by a polynomial of order `n` with the coefficients `pn … p0` with n = 1 for a linear (i.e. straight) line [see hOCR spec](https://github.com/kba/hocr-spec/blob/master/hocr-spec.md#3-terminology-and-representation).
+![hOCR baseline](https://cloud.githubusercontent.com/assets/19879328/16414153/6a52a9d4-3d36-11e6-8b0f-ff6faf05fddd.png)
 
 ## libtesseract.so.3: cannot open shared object file
 
