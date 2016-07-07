@@ -105,11 +105,12 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 ``git clone https://github.com/tesseract-ocr/tesseract tesseract``
 4. Run
     ```
-cd tesseract
-cppan
-mkdir build && cd build
-cmake .. -DSTATIC=1
-```
+    cd tesseract
+    cppan
+    mkdir build && cd build
+    cmake .. -DSTATIC=1
+    ```
+5. dfgdfgd
 
 Then build a solution (`tesseract.sln`) in your Visual Studio version.
 
