@@ -97,6 +97,21 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 # Windows
 
+## 3.05 and later
+
+1. Download and install Git, CMake and put them in PATH.
+2. [Download](https://cppan.org/client/cppan-master-win32-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`. CPPAN is a source package distribution system. Add CPPAN client in PATH too. (VS2015 redist is required.)
+3. Run
+```
+git clone https://github.com/tesseract-ocr/tesseract tesseract
+cd tesseract
+cppan
+mkdir build && cd build
+cmake .. -DSTATIC=1
+```
+
+Then build a solution (`tesseract.sln`) in your Visual Studio version.
+
 ## 3.04.01
 
 If you have Visual Studio 2015, checkout the repository at [Leptonica 1.73 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/leptonica) and click on build_tesseract.bat. After that you still need to download the language packs.
