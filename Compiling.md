@@ -103,13 +103,12 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 2. [Download](https://cppan.org/client/cppan-master-win32-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`. CPPAN is a source package distribution system. Add CPPAN client in PATH too. (VS2015 redist is required.)
 3. If you have a release archive, unpack it to `tesseract` dir. If you're using master branch run
 ```git clone https://github.com/tesseract-ocr/tesseract tesseract```
-3. Run
-```
-cd tesseract
+4. Run
+```cd tesseract
 cppan
 mkdir build && cd build
-cmake .. -DSTATIC=1
-```
+cmake .. -DSTATIC=1```
+5. 123
 
 Then build a solution (`tesseract.sln`) in your Visual Studio version.
 
