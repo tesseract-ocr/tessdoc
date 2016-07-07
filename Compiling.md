@@ -97,7 +97,7 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 # Windows
 
-## 3.05, master branch and later
+## master branch, 3.05 and later
 
 1. Download and install Git, CMake and put them in PATH.
 2. [Download](https://cppan.org/client/cppan-master-win32-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`. CPPAN is a source package distribution system. Add CPPAN client in PATH too. (VS2015 redist is required.)
