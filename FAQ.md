@@ -27,6 +27,7 @@ Table of Contents
     * [Tesseract 2.03](#tesseract-203)
   * [How do I add just one character or one font to my favourite language, without having to retrain from scratch?](#how-do-i-add-just-one-character-or-one-font-to-my-favourite-language-without-having-to-retrain-from-scratch)
   * [How do I produce searchable PDF output?](#how-do-i-produce-searchable-pdf-output)
+  * [The produced searchable PDF seems to only contain spaces](#the-produced-searchable-pdf-seems-to-only-contain-spaces)
   * [How to do streaming](#how-to-do-streaming)
   * [Is there a Minimum Text Size? (It won't read screen text!)](#is-there-a-minimum-text-size-it-wont-read-screen-text)
   * [Why is the output empty or of poor quality?](#why-is-the-output-empty-or-of-poor-quality)
@@ -259,6 +260,11 @@ Searchable PDF output is a standard feature as of Tesseract version 3.03. Use th
 ```
 tesseract phototest.tif phototest pdf
 ```
+
+## The produced searchable PDF seems to only contain spaces
+
+Note that the hidden, searchable text layer in the resulting PDF can be not understood by you PDF reader. For example, Preview.app in Mac OS X might only "see" spaces instead of text. Try using the original Adobe Acrobat Reader.
+
 
 ## How to do streaming
 
