@@ -95,7 +95,7 @@ To see a complete list of supported page segmentation modes, use `tesseract -h`.
 
 ## Dictionaries, word lists, and patterns
 
-By default Tesseract is optimized to recognize sentences of words. If you're trying to recognize something else, like receipts, price lists, or codes, there are a few things you can do to improve the accuracy of your results, as well as double-checking that the appropriate [segmentation method](#Segmentation_method) is selected.
+By default Tesseract is optimized to recognize sentences of words. If you're trying to recognize something else, like receipts, price lists, or codes, there are a few things you can do to improve the accuracy of your results, as well as double-checking that the appropriate [segmentation method](#page-segmentation-method) is selected.
 
 Disabling the dictionaries Tesseract uses should increase recognition if most of your text isn't dictionary words. They can be disabled by setting the both of the [configuration variables](ControlParams) `load_system_dawg` and `load_freq_dawg` to `false`.
 
