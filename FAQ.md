@@ -261,9 +261,9 @@ Searchable PDF output is a standard feature as of Tesseract version 3.03. Use th
 tesseract phototest.tif phototest pdf
 ```
 
-## The produced searchable PDF seems to only contain spaces
+## The searchable PDF seems to contain only spaces or spaces between the letters of words
 
-Note that the hidden, searchable text layer in the resulting PDF can be not understood by you PDF reader. For example, Preview.app in Mac OS X might only "see" spaces instead of text. Try using the original Adobe Acrobat Reader.
+There may be nothing wrong with the PDF itself, but its hidden, searchable text layer may be not understood by your PDF reader. For example, Preview.app in Mac OS X is well known for having problems like this, and might "see" only spaces and no text. Try using Adobe Acrobat Reader instead.
 
 
 ## How to do streaming
