@@ -1,6 +1,6 @@
 *How to use the tools provided to train Tesseract 3.03–3.04 for a new language.*
 
-**Important note**: Before you invest time and efforts on training Tessetact, it is highly recommended to read the [ImproveQuality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) page.
+**Important note**: Before you invest time and efforts on training Tesseract, it is highly recommended to read the [ImproveQuality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) page.
 
 Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh) for an easy way to execute the various phases of training Tesseract. More information on using it can be found on the [tesstrain.sh](tesstrain.sh) page.
 
