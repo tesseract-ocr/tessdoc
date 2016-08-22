@@ -45,6 +45,7 @@
 ## Others
   * [ocr-fileformat](https://github.com/UB-Mannheim/ocr-fileformat) - Validate and transform between OCR file formats (hOCR, ALTO, PAGE, FineReader)
   * [Tess4J](https://github.com/nguyenq/tess4j) - A Java JNA wrapper for Tesseract OCR API.
+  * [tesseract4java](https://github.com/tesseract4java/tesseract4java) - Java GUI and Tools for Tesseract OCR
   * [Traineddata inspector](https://mazoea.com/te/traineddata/) -  to inspect some of the internals of traineddata files 
   * [TopOCR](http://www.topocr.com/) - high Quality OCR for Cameras with tesseract-ocr support (paid product)
   * [Simple OCR Web Server](https://github.com/ybur-yug/python_ocr_tutorial) using python, flask, tesseract-ocr, and leptonica
