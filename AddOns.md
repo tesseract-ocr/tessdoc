@@ -38,7 +38,7 @@ Platform support depends on used language and experience of user.
 
 
 ## Other Training Tools
-
+     
   *  [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | Box Editor and Training Tool    
 
   * [MzTesseract](https://github.com/mazluta/MzTesseract) - MS Windows program that can train new langauge from top to bottom
@@ -56,6 +56,7 @@ Platform support depends on used language and experience of user.
   * [Update unicharambigs.exe](http://code.google.com/p/tesseract-ocr/issues/detail?id=544): A small (windows) C# program for editing "lang.unicharambigs" file
   * [train\_tess.pl](http://code.google.com/p/tesseract-ocr/issues/detail?id=640): perl script to facilitate training
   * [boxedit](https://github.com/danvk/boxedit/) A web-based editor for Tesseract box files
+  * [TrainYourTesseract](http://trainyourtesseract.com) | Free online "no-hassle" TTF file to trainedata converter 
 
 
 ## Community training projects
