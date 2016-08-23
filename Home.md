@@ -121,7 +121,7 @@ It can even be used with multiple languages traineddata at a time eg. English an
   tesseract myscan.png out -l eng+deu
 ```
 
-Tesseract also includes a hOCR mode, which produces a special HTML file with the coordinates of each word. This can be used to create a searchable pdf, using a tool such as [Hocr2PDF](http://exactcode.de/site/open_source/exactimage/hocr2pdf). To use it, use the 'hocr' config option, like this:
+Tesseract also includes a hOCR mode, which produces a special HTML file with the coordinates of each word. This can be used to create a searchable pdf, using a tool such as [Hocr2PDF](https://exactcode.com/opensource/exactimage/). To use it, use the 'hocr' config option, like this:
 
 ```
   tesseract myscan.png out hocr
