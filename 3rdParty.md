@@ -19,6 +19,7 @@
 | [QTesseract](http://code.google.com/p/qtesseract/) | X         |         |             | LGPL v3     | QT GUI for the Tesseract OCR |
 | [TessOCR(KISI)](http://djvu.life.coocan.jp/TessOCR/doc/tessOCR_eng.html) |           | X       |             | Apache 2.0  | A free OCR tool |
 | [pmOCR](http://github.com/deajan/pmocr/) | X         |          |          | BSD | Batch OCR tool, also file monitor event OCR with tesseract |
+| [tesseract4java](http://github.com/tesseract4java/tesseract4java) | X         | X        | X        | GPLv3 | A cross-platform GUI for training and running Tesseract with advanced features like batch recognition and accuracy evaluation |
 
 ## Online OCR services
 
@@ -45,7 +46,6 @@
 ## Others
   * [ocr-fileformat](https://github.com/UB-Mannheim/ocr-fileformat) - Validate and transform between OCR file formats (hOCR, ALTO, PAGE, FineReader)
   * [Tess4J](https://github.com/nguyenq/tess4j) - A Java JNA wrapper for Tesseract OCR API.
-  * [tesseract4java](https://github.com/tesseract4java/tesseract4java) - Java GUI and Tools for Tesseract OCR
   * [Traineddata inspector](https://mazoea.com/te/traineddata/) -  to inspect some of the internals of traineddata files 
   * [TopOCR](http://www.topocr.com/) - high Quality OCR for Cameras with tesseract-ocr support (paid product)
   * [Simple OCR Web Server](https://github.com/ybur-yug/python_ocr_tutorial) using python, flask, tesseract-ocr, and leptonica
