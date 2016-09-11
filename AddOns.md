@@ -107,7 +107,7 @@ Platform support depends on used language and experience of user.
   * [ruby-tesseract-ocr](https://github.com/meh/ruby-tesseract-ocr/) - wrapper for tesseract 3.0x using the C++ API
   * [rtesseract](https://github.com/dannnylo/rtesseract)
 
-**Java**: https://github.com/nguyenq/tess4j. Docs and discussion - http://tess4j.sourceforge.net/ (JNA wrapper)
+**Java**: [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussion - http://tess4j.sourceforge.net/
 
 **PHP**:
   * [tesseract-ocr-for-php](https://github.com/thiagoalessio/tesseract-ocr-for-php)
