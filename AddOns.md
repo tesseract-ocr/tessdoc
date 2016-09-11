@@ -109,7 +109,9 @@ Platform support depends on used language and experience of user.
 
 **Java**: https://github.com/nguyenq/tess4j. Docs and discussion - http://tess4j.sourceforge.net/ (JNA wrapper)
 
-**PHP**: https://code.google.com/p/php-tesseract/
+**PHP**:
+  * [tesseract-ocr-for-php](https://github.com/thiagoalessio/tesseract-ocr-for-php)
+  * https://code.google.com/p/php-tesseract/
 
 **Objective-C**: https://github.com/ldiqual/tesseract-ios
 
