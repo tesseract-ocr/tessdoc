@@ -88,7 +88,7 @@ Platform support depends on used language and experience of user.
 ### Tesseract 3.0x
 
 **C wrapper**:
-  * 3.02 includes C API
+  * Tesseract versions 3.02 and up include [C API](https://github.com/tesseract-ocr/tesseract/blob/master/api/capi.h)
   * for 3.00 (and 3.01?) see http://code.google.com/p/ocrivist/source/browse/#svn%2Ftessintf where is C wrapper with Freepascal bindings
 
 **.Net**:
