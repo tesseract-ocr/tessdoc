@@ -113,7 +113,9 @@ Platform support depends on used language and experience of user.
   * [tesseract-ocr-for-php](https://github.com/thiagoalessio/tesseract-ocr-for-php)
   * https://code.google.com/p/php-tesseract/
 
-**Objective-C**: https://github.com/ldiqual/tesseract-ios
+**Objective-C**:
+  * [Tesseract OCR iOS](https://github.com/gali8/Tesseract-OCR-iOS) 
+  * https://github.com/ldiqual/tesseract-ios
 
 **Clojure**: [clj-tesseract](https://github.com/antoniogarrote/clj-tesseract)
 
