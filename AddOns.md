@@ -92,7 +92,7 @@ Platform support depends on used language and experience of user.
   * for 3.00 (and 3.01?) see http://code.google.com/p/ocrivist/source/browse/#svn%2Ftessintf where is C wrapper with Freepascal bindings
 
 **.Net**:
-  * https://github.com/charlesw/tesseract - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
+  * [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
   * http://code.google.com/p/tesseractdotnet/
 
 **Python**:
