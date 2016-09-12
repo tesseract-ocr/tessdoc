@@ -131,6 +131,4 @@ Platform support depends on used language and experience of user.
 
 **.NET**: http://www.pixel-technology.com/freeware/tessnet2/
 
-**Java**:
-  * [tess4j (0.4)](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
-  * http://code.google.com/p/tesjeract (JNI wrapper)
+**Java**: [tess4j (0.4)](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
