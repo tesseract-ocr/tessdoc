@@ -33,7 +33,9 @@ apt-get package libleptonica-dev
 
 **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
 
-**Tesseract Version** | **Minimum version of Leptonica required** | **Remarks**
+Tesseract versions and the minimum version of Leptonica required:
+
+**Tesseract** | **Leptonica** | **Remarks**
 :-------------------: | :---------------------------------------: | :---------
 3.04 | 1.71 |
 3.03 | 1.70 | Both available in Ubuntu 14.04 Trusty Tahr
