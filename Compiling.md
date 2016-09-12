@@ -11,6 +11,7 @@
 If they are not already installed, you need the following libraries (Ubuntu):
 ```
 sudo apt-get install autoconf automake libtool
+sudo apt-get install pkg-config
 sudo apt-get install libpng12-dev
 sudo apt-get install libjpeg62-dev
 sudo apt-get install libtiff4-dev
