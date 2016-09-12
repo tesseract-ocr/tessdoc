@@ -23,7 +23,15 @@ sudo apt-get install libpango1.0-dev
 sudo apt-get install libcairo2-dev
 ```
 
-You also need to install [Leptonica](http://www.leptonica.org/). There is an apt-get package libleptonica-dev, **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
+You also need to install [Leptonica](http://www.leptonica.org/).
+
+One option is to use install the distro's Leptonica package: 
+
+```
+apt-get package libleptonica-dev
+```
+
+**but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
 
 ** 3.01 requires at least v1.67 of Leptonica.
 
