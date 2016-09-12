@@ -33,13 +33,12 @@ apt-get package libleptonica-dev
 
 **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
 
-** 3.01 requires at least v1.67 of Leptonica.
-
-** 3.02 requires at least v1.69 of Leptonica. (Both available in Ubuntu 12.04 Precise Pangolin.)
-
-** 3.03 requires at least v1.70 of Leptonica. (Both available in Ubuntu 14.04 Trusty Tahr.)**
-
-** 3.04 requires at least v1.71 of Leptonica.**
+**Tesseract Version** | **Minimum version of Leptonica required** | **Remarks**
+:-------------------: | :---------------------------------------: | :---------
+3.04 | 1.71 |
+3.03 | 1.70 | Both available in Ubuntu 14.04 Trusty Tahr
+3.02 | 1.69 | Both available in Ubuntu 12.04 Precise Pangolin
+3.01 | 1.67 |
 
 The sources are at http://www.leptonica.org/. The instructions at [Leptonica README](http://www.leptonica.org/source/README.html) are clear, but basically it is as described in [Compilation](#Compilation) below.
 
