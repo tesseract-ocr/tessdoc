@@ -15,9 +15,12 @@ sudo apt-get install libpng12-dev
 sudo apt-get install libjpeg62-dev
 sudo apt-get install libtiff4-dev
 sudo apt-get install zlib1g-dev
-sudo apt-get install libicu-dev      # (if you plan to make the training tools)
-sudo apt-get install libpango1.0-dev # (if you plan to make the training tools)
-sudo apt-get install libcairo2-dev   # (if you plan to make the training tools)
+```
+if you plan to install the training tools, you also need the following libraries: 
+```
+sudo apt-get install libicu-dev
+sudo apt-get install libpango1.0-dev
+sudo apt-get install libcairo2-dev
 ```
 
 You also need to install [Leptonica](http://www.leptonica.org/). There is an apt-get package libleptonica-dev, **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
