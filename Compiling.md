@@ -293,7 +293,8 @@ These prerequisites will be needed:
 In the above training tools are not installed. You can install not only tesseract but also training tools like below.
 ### Install packages required by training tools
 ```
-sudo port install cairo pango
+sudo port install cairo pango 
+sudo port install pkgconfig
 sudo port install leptonica
 sudo port install icu
 ```
