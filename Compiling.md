@@ -28,7 +28,7 @@ You also need to install [Leptonica](http://www.leptonica.org/).
 One option is to use install the distro's Leptonica package: 
 
 ```
-apt-get package libleptonica-dev
+apt-get install libleptonica-dev
 ```
 
 **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
