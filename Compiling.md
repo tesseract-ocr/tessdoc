@@ -302,6 +302,7 @@ sudo port install pkgconfig
 sudo port install leptonica
 ```
 
+## Compilation
 ```
   git clone git@github.com:tesseract-ocr/tesseract.git
   cd tesseract
