@@ -292,7 +292,15 @@ These prerequisites will be needed:
 * [openjpeg](https://github.com/uclouvain/openjpeg)
 * [leptonica](https://github.com/DanBloomberg/leptonica/)
 
-# on OS X with MacPorts
+# OS X with MacPorts
+
+## Install required packages
+
+```
+sudo port install automake autoconf
+sudo port install pkgconfig
+sudo port install leptonica
+```
 
 ```
   git clone git@github.com:tesseract-ocr/tesseract.git
@@ -302,15 +310,16 @@ These prerequisites will be needed:
   make
   sudo make install
 ```
+
 ## To install tesseract with training tools
+
 In the above training tools are not installed. You can install not only tesseract but also training tools like below.
+
 ### Install packages required by training tools
+
 ```
 sudo port install cairo pango 
-sudo port install pkgconfig
-sudo port install leptonica
 sudo port install icu +devel
-sudo port install automake autoconf
 ```
 
 ### Build and Install
