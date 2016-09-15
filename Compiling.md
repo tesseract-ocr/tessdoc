@@ -26,7 +26,7 @@ sudo apt-get install libcairo2-dev
 
 You also need to install [Leptonica](http://www.leptonica.org/).
 
-One option is to use install the distro's Leptonica package: 
+One option is to install the distro's Leptonica package: 
 
 ```
 apt-get install libleptonica-dev
