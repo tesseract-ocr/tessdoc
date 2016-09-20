@@ -97,9 +97,9 @@ make install
 
 ## Language Data
 
-  1. Download langugage data file (e.g. 'wget http://tesseract-ocr.googlecode.com/files/tesseract-ocr-3.01.eng.tar.gz' for 3.01 version)
-  1. Decompress it ('tar xf tesseract-ocr-3.01.eng.tar.gz')
-  1. Move it to installation of tessdata (e.g. 'mv tesseract-ocr/tessdata $TESSDATA\_PREFIX' if defined TESSDATA\_PREFIX)
+  1. Download language data file (e.g. 'https://github.com/tesseract-ocr/tessdata/archive/master.zip' for 3.01 version)
+  1. Decompress it
+  1. Move it to installation of `tessdata` (e.g. 'mv tessdata $TESSDATA\_PREFIX' if defined `TESSDATA_PREFIX`)
 
 You can also use:
 ```
