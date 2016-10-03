@@ -39,6 +39,7 @@ Table of Contents
   * Removed official support for VS 2008.
   * Major updates to training system as a result of extensive testing on 100 languages.
   * New training data for over 100 languages. Added support for 39 additional scripts/languages: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid.
+  * Added a backup adaptive classifier to take over from primary when it fills on a large document.
   * Improved performance with PIC compilation option.
   * Significant change to invisible font system in pdf output to improve 
 correctness and compatibility with external programs, particularly ghostscript.
