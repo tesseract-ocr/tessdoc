@@ -23,6 +23,7 @@
 
 ## Online OCR services
 
+  * [OCR.net](http://ocr.net): Powered by PDF OCR X in back-end.  Converts PDFs and Images to Text or searchable PDF.
   * [WeOCR](http://ocr1.sc.isc.tohoku.ac.jp/e1/): is a platform for Web-enabled OCR (Optical Character Reader/Recognition) systems that enables people to use character recognition over networks
   * [CustomOCR](http://www.customocr.com/index.php?r=site/page&view=demos.tesseract_ocr)
   * [Free OCR](http://www.free-ocr.com/)
