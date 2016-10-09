@@ -283,11 +283,12 @@ variable. Note that the directory must end in a /
 
 Fixed a bunch of name collisions - mostly with STL.  
 Made some preliminary changes for unicode compatibility. Includes a new data
-file (unicharset) and renaming of the other data files to eng.**to support
+file (unicharset) and renaming of the other data files to eng. to support
 different languages.  
-There are also several other minor bug fixes and portability improvements
-for 64 bit, the latest visual studio compiler etc. Thanks to all who have
-contributed these fixes.**
+There are also several other minor bug fixes and **portability improvements**
+for 64 bit, the latest visual studio compiler etc.  
+
+**Thanks to all who have contributed these fixes.**
 
 NOTE: This is likely to be the last English-only release!
 Apologies in advance to non-windows users for bloating the distribution with
