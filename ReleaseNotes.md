@@ -114,8 +114,8 @@ command line option.
   * Fixed endian bug in dawg reader.
   * C API (thanks to Tobias Müller)
   * New solution for VS 2008 (thanks to Tom Powers)
-  * Many other fixes, including the way in which the chopper finds chops and messes with the outline while it does so.
-
+  * Fixed the way in which the chopper finds chops and messes with the outline while it does so.
+  * Many other fixes.
 
 # Tesseract release notes Oct 21 2011 - V3.01
   * Thread-safety! Moved all critical globals and statics to members of the appropriate class. Tesseract is now thread-safe (multiple instances can be used in parallel in multiple threads.) with the minor exception that some control parameters are still global and affect all threads.
