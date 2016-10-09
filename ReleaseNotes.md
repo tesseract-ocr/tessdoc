@@ -257,7 +257,7 @@ It will output the text from phototest.tif with bounding box information.
 
 The distribution now includes tesseract.exe and tessdll.dll
 which **might** work out of the box! There are no guarantees as you need
-VC++6 versions of mfc and crt (at least) for it to work. (Batteries not
+VC++6 versions of MFC and CRT (at least) for it to work. (Batteries not
 included, and certainly no installshield.)
 
 **Important note for anyone building with make: i.e. anyone except devstudio
@@ -281,10 +281,10 @@ variable. Note that the directory must end in a /
 
 **All users**
 
-Fixed a bunch of name collisions - mostly with stl.
+Fixed a bunch of name collisions - mostly with STL.  
 Made some preliminary changes for unicode compatibility. Includes a new data
 file (unicharset) and renaming of the other data files to eng.**to support
-different languages.
+different languages.  
 There are also several other minor bug fixes and portability improvements
 for 64 bit, the latest visual studio compiler etc. Thanks to all who have
 contributed these fixes.**
