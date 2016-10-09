@@ -167,7 +167,7 @@ command line option.
 
 # Tesseract release notes April 22 2008 - V2.03
 2.02 was unrunnable, due to a last-minute "simple" change.
-2.03 fixes the problem.
+2.03 fixes the problem.  
 It also adds an include check for leptonica
 to make it more usable.
 
