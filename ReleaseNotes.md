@@ -235,7 +235,7 @@ List of changes in this release:
   * Fixed problems with copyright and registered symbols.
   * Fixed extern "C" declarations problem.
   * Made some improvements to consistency of accuracy across platforms.
-  * Added vc++ express support.
+  * Added VC++ express support.
 
 **Warning:** Tesseract 2.00 has undergone more compatibility testing than any previous version. There have even been fixes to make the accuracy more consistent across platforms. Having said that, there have been many changes to the code, and portability may have been broken, so 64 bit and Mac platforms may not work or even build as well as before.
 
