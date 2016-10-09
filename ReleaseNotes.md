@@ -67,6 +67,7 @@ command line option.
   * Many bug fixes.
 
 # Tesseract release notes Feb 4 2014 - V3.03(rc1)
+  * Tesseract now requires Leptonica 1.70 or a higher version.
   * Added OpenCL support (experimental).
   * Added new training tool text2image to generate box/tif file pairs from text and truetype fonts.
   * Added support for PDF output with searchable text.
@@ -83,6 +84,7 @@ command line option.
   * More training source data included.
 
 # Tesseract release notes Oct 23 2012 - V3.02.02
+  * Tesseract now requires Leptonica 1.69 or a higher version.
   * Moved ResultIterator/PageIterator to ccmain.
   * Added Right-to-left/Bidi capability in the output iterators for Hebrew/Arabic.
   * Added paragraph detection in layout analysis/post OCR.
