@@ -162,12 +162,13 @@ command line option.
   * Removed dependence on lua from the viewer making it a **lot** faster. Also the viewer now compiles and works (on Linux.) Also works on windows via a pre-built ScrollView.jar.
   * Fixed the following issues: 1, 63, 67, 71, 76, 79, 81, 82, 84, 106, 108, 111, 112, 128, 129, 130, 133, 135, 142, 143, 145, 146, 147, 153, 154, 160, 165, 169, 170, 175, 177, 187, 192, 195, 199, 201, 205, 209.
   * This is the last version to support VC++6!
-  * This may also be the last version to compile without leptonica!
+  * This may also be the last version to compile without Leptonica!
   * Windows version now outputs to stderr by default, fixing a lot of the problems with lack of visible meaningful error messages.
 
 # Tesseract release notes April 22 2008 - V2.03
 2.02 was unrunnable, due to a last-minute "simple" change.
-2.03 fixes the problem and also adds an include check for leptonica
+2.03 fixes the problem.
+It also adds an include check for leptonica
 to make it more usable.
 
 # Tesseract release notes April 21 2008 - V2.02
@@ -177,7 +178,7 @@ to make it more usable.
   * Added multipage tiff support for training and running.
   * Updated graphics output to talk to new java-based viewer.
   * Added ability to save n-best lists.
-  * Added leptonica support for more file types.
+  * Added Leptonica support for more file types.
   * Improved Init/End to make them safe.
   * Reduced memory use of dictionaries.
   * Added some new APIs to TessBaseAPI.
