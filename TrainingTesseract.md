@@ -275,7 +275,7 @@ The character shape features can be clustered using the `shapeclustering`, `mftr
 
 ### shapeclustering
 
-`shapeclustering` **should not be used except for the Indic languages.**
+`shapeclustering` **should not normally be used except for the Indic languages.** (It may be necessary to use `shapeclustering` for Latin-alphabet languages where base characters are combined with two or more non-spacing modifiers, e.g. ḗ, ɔ̄́, r̥̄: this includes, but may not be limited to, Indic languages in Latin transcription. Failure to do so will lead `mftraining` to give an `Assert failed:in file unicharset.cpp` error.)
 
 ```
 shapeclustering -F font_properties -U unicharset lang.fontname.exp0.tr lang.fontname.exp1.tr ...
