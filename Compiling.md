@@ -112,11 +112,11 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 ## master branch, 3.05 and later
 
-### Using tesseract
+#### Using tesseract
 
 **!!!IMPORTANT!!!** To use tesseract in your application (to include tess or to link it into your app) see this very simple example https://github.com/tesseract-ocr/tesseract/wiki/User-App-Example.
 
-### Develop tesseract
+#### Develop tesseract
 
 **For development purposes** of tesseract itself do the next steps:
 
