@@ -41,7 +41,7 @@ Table of Contents
   * New training data for over 100 languages. Added support for 39 additional scripts/languages: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid.
   * Added a backup adaptive classifier to take over from primary when it fills on a large document.
   * Improved performance with PIC compilation option.
-  * Significant change to invisible font system in pdf output to improve 
+  * Significant change to invisible font system in PDF output to improve 
 correctness and compatibility with external programs, particularly ghostscript.
   * Improved font identification.
   * Major change to improve layout analysis for heavily diacritic languages: 
@@ -52,7 +52,7 @@ layout analysis errors.
 running a heap checker.
   * Moved params from global in page layout to tesseractclass.
   * Improved single column layout analysis.
-  * Allow ocr output to multiple formats using tesseract command line executable.
+  * Allow OCR output to multiple formats using tesseract command line executable.
   * Fixed issues with mixed eng+ara scripts.
   * Improved script consistency in numbers.
   * Major refactor of control.cpp to enable line recognition.
