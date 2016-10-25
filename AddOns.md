@@ -1,4 +1,4 @@
-# External tools, wrappers and training projects for Tesseract.
+# External tools, wrappers and training projects for Tesseract
 
 ## Tesseract box editors and training tools
 
