@@ -1,4 +1,4 @@
-# GUIs and Other Projects using Tesseract OCR.
+# GUIs and Other Projects using Tesseract OCR
 
 ## GUI
 
