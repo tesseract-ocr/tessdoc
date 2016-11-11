@@ -12,7 +12,7 @@ More details about tesseract-ocr API can found at [baseapi.h](https://github.com
 
 Code:
 
-```
+```c++
 #include <tesseract/baseapi.h>
 #include <leptonica/allheaders.h>
 
