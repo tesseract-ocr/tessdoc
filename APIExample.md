@@ -46,14 +46,14 @@ int main()
 Program must be linked to tesseract-ocr library and leptonica library.
 
 If you want to restrict recognition to a sub-rectangle of the image - call _SetRectangle(left, top, width, height)_ after SetImage. Each SetRectangle clears the recogntion results so multiple rectangles can be recognized with the same image. E.g.
-```
+```c++
   api->SetRectangle(30, 86, 590, 100);
 ```
 
 
 # GetComponentImages example
 
-```
+```c++
   Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
   tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
   api->Init(NULL, "eng");
@@ -74,7 +74,7 @@ If you want to restrict recognition to a sub-rectangle of the image - call _SetR
 
 There is possibility to get confidence value and BoundingBox per word from ResultIterator:
 
-```
+```c++
   Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
   tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
   api->Init(NULL, "eng");
@@ -101,7 +101,7 @@ Of course there is possibility to use other [PageiteratorLevel](https://github.c
 
 # Orientation and script detection (OSD) example
 
-```
+```c++
   const char* inputfile = "/usr/src/tesseract/testing/eurotext.tif";
   tesseract::Orientation orientation;
   tesseract::WritingDirection direction;
@@ -127,7 +127,7 @@ Explanation for result codes are in [publictypes.h](https://github.com/tesseract
 
 # Example of iterator over the classifier choices for a single symbol
 
-```
+```c++
 
   Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
   tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
