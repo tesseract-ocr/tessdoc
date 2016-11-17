@@ -1,1 +1,1 @@
-See Training-Tesseract[Training-Tesseract]
+See https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract/[Training-Tesseract]
