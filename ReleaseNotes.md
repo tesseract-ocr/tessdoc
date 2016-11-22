@@ -20,6 +20,9 @@ Table of Contents
 
 
 # IN DEVELOPMENT
+  * Added new neural network system based on LSTMs, with major accuracy gains.
+  * Improvements to PDF rendering.
+  * Fixes to trainingdata rendering.
   * Use Travis CI and Appveyor Continuous Integration services.
   * Added option to build Tesseract with CMake build system.
 

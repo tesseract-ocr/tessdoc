@@ -10,7 +10,7 @@
 # Introduction
 
 Tesseract 4.00 includes a new neural network subsystem configured as a textline
-recognizer. It has its origins in OCROpus' Python-based LSTM implementation, but
+recognizer. It has its origins in OCRopus' Python-based LSTM implementation, but
 has been totally redesigned for Tesseract in C++. The neural network system in
 Tesseract pre-dates Tensor Flow, but is compatible with it, as there is a
 network description language called [Variable Graph Specification
@@ -20,7 +20,7 @@ https://github.com/tensorflow/models/tree/master/street
 The idea of VGSL is that it is possible to build a neural network and train it
 without having to learn a lot of anything. There is no need to learn Python,
 Tensor Flow, or even write any C++ code. It is merely required to understand the
-VGSL specification language well enough to build syntactially correct network
+VGSL specification language well enough to build syntactically correct network
 descriptions. Some basic knowledge of what the various neural network layer
 types are and how they are combined will go a very long way.
 
@@ -32,10 +32,10 @@ text within a large document, or it can be used in conjunction with an external
 text detector to recognize text from an image of a single textline.
 
 The neural network engine is selected by specifying `OEM_LSTM_ONLY` as the
-`OcrEngineMode` to `TessBaseAPI::Init.` (It will probably be made the default by
+`OcrEngineMode` to `TessBaseAPI::Init`. (It will probably be made the default by
 release of 4.00.) From an API perspective, *that is all that is required to use
 it.* To recognize text from an image of a single text line, use
-`SetPageSegMode(PSM_RAW_LINE).` This can be used from the command-line with
+`SetPageSegMode(PSM_RAW_LINE)`. This can be used from the command-line with
 `-psm 13`
 
 The neural network engine has not yet been integrated to enable the multi-
@@ -80,7 +80,7 @@ The initial implementation lacks the following:
 
 All network layer types are derived from the `Network` base-class. The
 `Plumbing` sub-class is a base-class for layers that manipulate other layers in
-some way, eg by reshaping their input/output or organising a group of layers.
+some way, e.g. by reshaping their input/output or organising a group of layers.
 
 The input/output data "Tensor" is `NetworkIO` and the weights are stored in a
 `WeightMatrix,` both of which contain a Tesseract `GENERIC_2D_ARRAY` to hold the
