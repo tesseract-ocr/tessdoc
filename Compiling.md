@@ -301,6 +301,8 @@ These prerequisites will be needed:
 
 # OS X with MacPorts
 
+(These instructions are probably outdated.)
+
 ## Install required packages
 
 ```
@@ -346,6 +348,31 @@ sudo make install
 make training
 sudo make training-install
 ```
+
+# macOS with Homebrew
+
+## Install dependencies
+
+```
+brew install automake autoconf
+brew install pkgconfig
+brew install leptonica
+brew install gcc
+```
+
+## Compile
+
+As of November 2016, the build is broken with clang (error on use of `-fopenmp`). These instructions use gcc-6.
+
+```
+git clone https://github.com/tesseract-ocr/tesseract/
+cd tesseract
+./autogen.sh
+./configure CC=gcc-6 CXX=g++-6
+make -j
+sudo make install
+```
+
 # Miscellaneous
 
 * [Standalone Tesseract build bash script](http://pastebin.com/VnGLHfbr)
