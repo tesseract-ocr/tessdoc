@@ -1,6 +1,6 @@
 # How to build Tesseract with OpenCL
 
-**Important note**: OpenCL support in Tesseract is still considered experimental. There are some major bugs associated with it ([#53](https://github.com/tesseract-ocr/tesseract/issues/53), [#71](https://github.com/tesseract-ocr/tesseract/issues/71), [#124](https://github.com/tesseract-ocr/tesseract/issues/124) and others).
+**Important note**: OpenCL support in Tesseract is still considered experimental. There are some major bugs associated with it.
 
 ## Building Tesseract on VS 2010 with OpenCL
 
