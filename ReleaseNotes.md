@@ -20,6 +20,7 @@ Table of Contents
 
 
 # IN DEVELOPMENT
+  * Tesseract now requires Leptonica 1.73 or a higher version.
   * Added new neural network system based on LSTMs, with major accuracy gains.
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
