@@ -83,6 +83,7 @@
   * [ocrodjvu](http://jwilk.net/software/ocrodjvu) is a wrapper for OCR systems, that allows you to perform OCR on DjVu files
   * [PaRADIIT](https://sites.google.com/site/paradiitproject/home) (Pattern Redundancy Analysis for Document Image Indexation & Transcription) is a project initiated and sponsored by 2 successive Google DH awards. It aims to turn ancient books, especially from the Renaissance, into accessible digital libraries.
   * [The ISRI Analytic Tools](https://github.com/eddieantonio/isri-ocr-evaluation-tools) consist of 17 tools for measuring the performance of and experimenting with OCR output.
+  * [pdf2pdfocr](https://github.com/LeoFCardoso/pdf2pdfocr) is a tool to OCR a PDF (or supported images) and add a text layer in the original file making it a searchable PDF. It is a python script that uses tesseract and other open source tools. Linux, macOS and Windows supported.
 
 ### IMPACT related
 
