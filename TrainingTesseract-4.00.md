@@ -187,114 +187,27 @@ We will use that data later to demonstrate tuning.
 The lstmtraining program is a multi-purpose tool for training neural networks.
 The following table describes its command-line options:
 
-| **Flag**               | **Type** | **Default** | **Explanation**    |
-| :--------------------  | :------: | :---------: | :----------------- |
-| `U`                    | `string` | none        | Path to the        |
-:                        :          :             : unicharset for the :
-:                        :          :             : character set.     :
-| `script_dir`           | `string` | none        | Path to the        |
-:                        :          :             : langdata directory :
-:                        :          :             : used to get        :
-:                        :          :             : script unicharsets :
-:                        :          :             : and the            :
-:                        :          :             : radical-stroke     :
-:                        :          :             : table.             :
-| `net_spec`             | `string` | none        | Specifies the      |
-:                        :          :             : topology of the    :
-:                        :          :             : network.           :
-| `model_output`         | `string` | none        | Base path of       |
-:                        :          :             : output model       :
-:                        :          :             : files/checkpoints. :
-| `max_image_MB`         | `int`    | `6000`      | Maximum amount of  |
-:                        :          :             : memory to use for  :
-:                        :          :             : caching            :
-:                        :          :             : images.            :
-| `learning_rate`        | `double` | `1e-4`      | Initial learning   |
-:                        :          :             : rate for SGD       :
-:                        :          :             : algorithm.         :
-| `train_mode`           | `int`    | `80`        | Flags from         |
-:                        :          :             : `TrainingFlags` in :
-:                        :          :             : `lstmrecognizer.h` :
-:                        :          :             : Possible values=   :
-:                        :          :             : `64` for Compress  :
-:                        :          :             : unicharset, `16`   :
-:                        :          :             : for round-robin    :
-:                        :          :             : training.          :
-| `net_mode`             | `int`    | `192`       | Flags from         |
-:                        :          :             : `NetworkFlags` in  :
-:                        :          :             : `network.h`        :
-:                        :          :             : Possible values=   :
-:                        :          :             : `128` for Adam     ;
-:                        :          :             : optimization       :
-:                        :          :             : instead of         :
-:                        :          :             : momentum           :
-:                        :          :             : `64` to allow      :
-:                        :          :             : different layers   :
-:                        :          :             : to have their own  :
-:                        :          :             : learning rates,    :
-:                        :          :             : discovered         :
-:                        :          :             : automatically.     :
-| `perfect_sample_delay` | `int`    | `4`         | When the network   |
-:                        :          :             : gets good, only    :
-:                        :          :             : backprop           :
-:                        :          :             : a perfect sample   :
-:                        :          :             : after this many    :
-:                        :          :             : imperfect samples  :
-:                        :          :             : have been seen     :
-:                        :          :             : since              :
-:                        :          :             : the last perfect   :
-:                        :          :             : sample was allowed :
-:                        :          :             : through.           :
-| `debug_interval`       | `int`    | `0`         | If non-zero show   |
-:                        :          :             : visual debugging   :
-:                        :          :             : every this         :
-:                        :          :             : many iterations.   :
-| `weight_range`         | `double` | `0.1`       | Range of random    |
-:                        :          :             : values to          :
-:                        :          :             : initialize         :
-:                        :          :             : weights.           :
-| `momentum`             | `double` | `0.9`       | Momentum for alpha |
-:                        :          :             : smoothing          :
-:                        :          :             : gradients.         :
-| `max_iterations`       | `int`    | `0`         | Stop training      |
-:                        :          :             : after this many    :
-:                        :          :             : iterations.        :
-| `target_error_rate`    | `double` | `0.01`      | Stop training if   |
-:                        :          :             : the mean percent   :
-:                        :          :             : error rate gets    :
-:                        :          :             : below this value.  :
-| `continue_from`        | `string` | none        | Path to previous   |
-:                        :          :             : checkpoint from    :
-:                        :          :             : which to           :
-:                        :          :             : continue training  :
-:                        :          :             : or fine tune.      :
-| `stop_training`        | `bool`   | `false`     | Convert the        |
-:                        :          :             : training           :
-:                        :          :             : checkpoint in      :
-:                        :          :             : `--continue_from`  :
-:                        :          :             : to a recognition   :
-:                        :          :             : model.             :
-| `append_index`         | `int`    | `-1`        | Cut the head off   |
-:                        :          :             : the network at the :
-:                        :          :             : given index        :
-:                        :          :             : and append         :
-:                        :          :             : `--net_spec`       :
-:                        :          :             : network in place   :
-:                        :          :             : of the cut off     :
-:                        :          :             : part.              :
-| `train_listfile`       | `string` | none        | Filename of a file |
-:                        :          :             : listing training   :
-:                        :          :             : data               :
-:                        :          :             : files.             :
-| `eval_listfile`        | `string` | none        | Filename of a file |
-:                        :          :             : listing evaluation :
-:                        :          :             : data               :
-:                        :          :             : files to be used   :
-:                        :          :             : in evaluating the  :
-:                        :          :             : model              :
-:                        :          :             : independently of   :
-:                        :          :             : the training       :
-:                        :          :             : data.              :
+| **Flag** | **Type** | **Default** | **Explanation** |
+| :-------------------- | :------: | :---------: | :----------------- |
+| `U` | `string` | none | Path to the unicharset for the character set. |
+| `script_dir` | `string` | none | Path to the langdata directory used to get script unicharsets and the radical-stroke table. |
+| `net_spec` | `string` | none | Specifies the topology of the network. |
+| `model_output` | `string` | none | Base path of output model files/checkpoints. |
+| `max_image_MB` | `int` | `6000` | Maximum amount of memory to use for caching images. |
+| `learning_rate` | `double` | `1e-4` | Initial learning rate for SGD algorithm. |
+| `train_mode` | `int` | `80` | Flags from `TrainingFlags` in `lstmrecognizer.h` Possible values= `64` for Compress unicharset, `16` for round-robin training. |
+| `net_mode` | `int` | `192` | Flags from `NetworkFlags` in `network.h` Possible values= `128` for Adam optimization instead of momentum `64` to allow different layers to have their own learning rates, discovered automatically. |
+| `perfect_sample_delay` | `int` | `4` | When the network gets good, only backprop a perfect sample after this many imperfect samples have been seen since the last perfect sample was allowed through.|
+| `debug_interval` | `int` | `0` | If non-zero show visual debugging every this many iterations. |
+| `weight_range` | `double` | `0.1` | Range of random values to initialize weights. |
+| `momentum` | `double` | `0.9` | Momentum for alpha smoothing gradients. |
+| `max_iterations` | `int` | `0` | Stop training after this many iterations. |
+| `target_error_rate` | `double` | `0.01` | Stop training if the mean percent error rate gets below this value. |
+| `continue_from` | `string` | none | Path to previous checkpoint from which to continue training or fine tune. |
+| `stop_training` | `bool` | `false` | Convert the training checkpoint in `--continue_from` to a recognition model. |
+| `append_index` | `int` | `-1` | Cut the head off the network at the given index and append `--net_spec` network in place of the cut off part. |
+| `train_listfile` | `string` | none | Filename of a file listing training data files. |
+| `eval_listfile` | `string` | none | Filename of a file listing evaluation data files to be used in evaluating the model independently of the training data. |
 
 Most of the flags work with defaults, and several are only required for
 particular operations listed below, but first some detailed comments on the more
