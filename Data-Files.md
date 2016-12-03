@@ -246,6 +246,6 @@ Arabic:
 [ara.cube.lm](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.lm), 
 [ara.cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.nn), 
 [ara.cube.params](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.params), 
-[ara.cube.word-freq](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.word-freq), 
+[ara.cube.word-freq](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.word-freq), 
 [ara.cube.size](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.size), 
-[ara.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.tesseract_cube.nn)
+[ara.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.tesseract_cube.nn)
