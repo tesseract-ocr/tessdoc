@@ -7,7 +7,7 @@ amh | Amharic | [amh.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 ara | Arabic | [ara.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ara.traineddata)
 asm | Assamese | [asm.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/asm.traineddata)
 aze | Azerbaijani | [aze.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/aze.traineddata)
-aze_cyrl | Azerbaijani - Cyrilic | [https://github.com/tesseract-ocr/tessdata/rData Filesaw/4.00/aze_cyrl.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ @aze_cyrl.traineddata)
+aze_cyrl | Azerbaijani - Cyrilic | [aze_cyrl.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/aze_cyrl.traineddata)
 bel | Belarusian | [bel.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/bel.traineddata)
 ben | Bali | [ben.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ben.traineddata)
 bod | Tibetan | [bod.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/bod.traineddata)
