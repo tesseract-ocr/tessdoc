@@ -222,3 +222,6 @@ uzb_cyrl | Uzbek - Cyrilic | [uzb_cyrl.traineddata](https://github.com/tesseract
 vie | Vietnamese | [vie.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/vie.traineddata)
 yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/yid.traineddata)
 
+### 3.04 Cube Data files
+
+TBD
