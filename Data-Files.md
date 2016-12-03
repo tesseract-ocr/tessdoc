@@ -239,3 +239,13 @@ Hindi:
 [hin.cube.params](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.params), 
 [hin.cube.word-freq](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.word-freq), 
 [hin.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.tesseract_cube.nn)
+
+Arabic:
+[ara.cube.bigrams](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.bigrams), 
+[ara.cube.fold](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.fold), 
+[ara.cube.lm](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.lm), 
+[ara.cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.nn), 
+[ara.cube.params](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.params), 
+[ara.cube.word-freq](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.word-freq), 
+[ara.cube.size](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.size), 
+[ara.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.tesseract_cube.nn)
