@@ -53,7 +53,7 @@ heb | Hebrew | [heb.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4
 hin | Hindi | [hin.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/hin.traineddata)
 hrv | Croatian | [hrv.trData Filesaineddata](hrv.traineddata)
 hun | Hungarian | [hun.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/hun.traineddata)
-ikBengaliu | Inuktitut | [iku.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/iku.traineddata)
+iku | Inuktitut | [iku.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/iku.traineddata)
 ind | Indonesian | [ind.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ind.traineddata)
 isl | Icelandic | [isl.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/isl.traineddata)
 ita | Italian | [ita.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ita.traineddata)
