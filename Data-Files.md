@@ -7,8 +7,8 @@
 
 Lang Code | Description | 4.0/3.04 traineddata
 -------------- | ------------- | ----- | ------
-osd | Orientation and script detection module | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
-equ | Math / equation detection module | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
+osd | Orientation and script detection | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
+equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
 
 ## Data Files for Version 4.00
 
