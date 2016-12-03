@@ -254,5 +254,5 @@ Arabic:
 [ara.cube.size](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.size), 
 [ara.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.tesseract_cube.nn)
 
-## Data Files for Version 3.04
+## Data Files for Version 3.02
 TBD
