@@ -231,4 +231,11 @@ yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 
 ### 3.04 Cube Data Files
 
-TBD
+Hindi:
+[hin.cube.bigrams](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.bigrams), 
+[hin.cube.fold](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.fold), 
+[hin.cube.lm](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.lm), 
+[hin.cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.nn), 
+[hin.cube.params](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.params), 
+[hin.cube.word-freq](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.word-freq), 
+[hin.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.tesseract_cube.nn)
