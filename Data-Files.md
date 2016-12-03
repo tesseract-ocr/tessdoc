@@ -2,6 +2,7 @@
 * [Data Files for Version 4.00](#data-files-for-version-400)
 * [Data Files for Version 3.04](#data-files-for-version-304)
 * [Cube Data Files for Version 3.04](#cube-data-files-for-version-304)
+* [Data Files for Version 3.02](#data-files-for-version-302)
 
 ## Special Data Files
 
@@ -213,7 +214,7 @@ spa | Spanish; Castilian | [spa.traineddata](https://github.com/tesseract-ocr/te
 spa_old | Spanish; Castilian - Old | [spa_old.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/spa_old.traineddata)
 sqi | Albanian | [sqi.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/sqi.traineddata)
 srp | Serbian | [srp.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/srp.traineddata)
-srp_latn | Serbian - Latin | [srp_latn.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/srp_latn.traineddata)
+srp_latn | Serbian - Latin | [srp_latn.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/sr[ara.cube.bigrams](https://github.com/tesseract-ocr/tessp_latn.traineddata)
 swa | Swahili | [swa.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/swa.traineddata)
 swe | Swedish | [swe.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/swe.traineddata)
 syr | Syriac | [syr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/syr.traineddata)
@@ -252,3 +253,6 @@ Arabic:
 [ara.cube.word-freq](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.word-freq), 
 [ara.cube.size](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.size), 
 [ara.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.tesseract_cube.nn)
+
+## Data Files for Version 3.04
+TBD
