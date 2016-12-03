@@ -1,9 +1,15 @@
+
+## Special Data Files
+
+Lang Code | Description | 4.0/3.04 traineddata
+-------------- | ------------- | ----- | ------
+osd | Orientation and script detection module | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
+equ | Math / equation detection module | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
+
 ## 4.00
 
 Lang Code | Language | 4.0 traineddata
 -------------- | ------------- | ----- | ------
-osd | Orientation and script detection module | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/osd.traineddata)
-equ | Math / equation detection module | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/equ.traineddata)
 afr | Afrikaans | [afr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/afr.traineddata)
 amh | Amharic | [amh.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/amh.traineddata)
 ara | Arabic | [ara.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ara.traineddata)
@@ -114,8 +120,6 @@ yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 
 Lang Code | Language | 3.04 traineddata
 -------------- | ------------- | ----- | ------
-osd | Orientation and script detection module | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
-equ | Math / equation detection module | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
 afr | Afrikaans | [afr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/afr.traineddata)
 amh | Amharic | [amh.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/amh.traineddata)
 ara | Arabic | [ara.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.traineddata)
