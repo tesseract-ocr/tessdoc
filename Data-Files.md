@@ -6,7 +6,7 @@ Lang Code | Description | 4.0/3.04 traineddata
 osd | Orientation and script detection module | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
 equ | Math / equation detection module | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
 
-## 4.00
+## Data Files for Version 4.00
 
 Lang Code | Language | 4.0 traineddata
 -------------- | ------------- | ----- | ------
@@ -119,7 +119,7 @@ yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 **Note**: `dan_frak`, `deu_frak`, `slk_frak` and `kur` data files were not updated from 3.04.
 
 
-## 3.04
+## Data Files for Version 3.04
 
 Lang Code | Language | 3.04 traineddata
 -------------- | ------------- | ----- | ------
@@ -229,7 +229,7 @@ uzb_cyrl | Uzbek - Cyrilic | [uzb_cyrl.traineddata](https://github.com/tesseract
 vie | Vietnamese | [vie.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/vie.traineddata)
 yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/yid.traineddata)
 
-### 3.04 Cube Data Files
+### Cube Data Files for Version 3.04
 
 Hindi:
 [hin.cube.bigrams](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.bigrams), 
