@@ -12,6 +12,8 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 ## Data Files for Version 4.00
 
+**Note**: `dan_frak`, `deu_frak`, `slk_frak` and `kur` data files were not updated from 3.04.
+
 Lang Code | Language | 4.0 traineddata
 -------------- | ------------- | ----- | ------
 afr | Afrikaans | [afr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/afr.traineddata)
@@ -119,9 +121,6 @@ uzb | Uzbek | [uzb.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.
 uzb_cyrl | Uzbek - Cyrilic | [uzb_cyrl.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/uzb_cyrl.traineddata)
 vie | Vietnamese | [vie.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/vie.traineddata)
 yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/yid.traineddata)
-
-**Note**: `dan_frak`, `deu_frak`, `slk_frak` and `kur` data files were not updated from 3.04.
-
 
 ## Data Files for Version 3.04
 
