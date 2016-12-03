@@ -1,6 +1,6 @@
 * [Special Data Files](#special-data-files)
 * [Data Files for Version 4.00](#data-files-for-version-400)
-* [Data Files for Version 4.00](#data-files-for-version-304)
+* [Data Files for Version 3.04](#data-files-for-version-304)
 * [Cube Data Files for Version 3.04](#cube-data-files-for-version-304)
 
 ## Special Data Files
