@@ -285,7 +285,7 @@ glg | Galician | [tesseract-ocr-3.02-glg.tar.gz](https://sourceforge.net/project
 grc | Greek, Ancient (-1453) | [tesseract-ocr-3.02-grc.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.grc.tar.gz/download)
 heb | Hebrew | [tesseract-ocr-3.02-heb.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.heb.tar.gz/download)
 hin | Hindi | [tesseract-ocr-3.02-hin.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.hin.tar.gz/download)
-hrv | Croatian | [tesseract-ocr-3.02-hrv.trData Filesaineddata](hrv.tar.gz/download)
+hrv | Croatian | [tesseract-ocr-3.02-hrv.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.hrv.tar.gz/download)
 hun | Hungarian | [tesseract-ocr-3.02-hun.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.hun.tar.gz/download)
 ind | Indonesian | [tesseract-ocr-3.02-ind.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.ind.tar.gz/download)
 isl | Icelandic | [tesseract-ocr-3.02-isl.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.isl.tar.gz/download)
