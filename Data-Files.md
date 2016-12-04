@@ -7,7 +7,7 @@
 ## Special Data Files
 
 Lang Code | Description | 4.0/3.04 traineddata
---------- | ----------- | --------------------
+:-------- | :---------- | :-------------------
 osd | Orientation and script detection | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
 equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
 
@@ -16,7 +16,7 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 **Note**: `dan_frak`, `deu_frak`, `slk_frak` and `kur` data files were not updated from 3.04.
 
 Lang Code | Language | 4.0 traineddata
-----------| -------- | ----------------
+:---------| :------- | :---------------
 afr | Afrikaans | [afr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/afr.traineddata)
 amh | Amharic | [amh.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/amh.traineddata)
 ara | Arabic | [ara.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ara.traineddata)
@@ -126,7 +126,7 @@ yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 ## Data Files for Version 3.04
 
 Lang Code | Language | 3.04 traineddata
---------- | -------- | ----------------
+:-------- | :------- | :---------------
 afr | Afrikaans | [afr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/afr.traineddata)
 amh | Amharic | [amh.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/amh.traineddata)
 ara | Arabic | [ara.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.traineddata)
@@ -257,7 +257,7 @@ Arabic:
 ## Data Files for Version 3.02
 
 Lang Code | Language | 3.02 traineddata
---------- | -------- | -----------------
+:-------- | :------- | :----------------
 afr | Afrikaans | [tesseract-ocr-3.02-afr.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.afr.tar.gz/download)
 ara | Arabic | [tesseract-ocr-3.02-ara.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.ara.tar.gz/download)
 aze | Azerbaijani | [tesseract-ocr-3.02-aze.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.aze.tar.gz/download)
