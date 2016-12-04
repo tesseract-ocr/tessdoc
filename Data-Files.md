@@ -58,7 +58,7 @@ guj | Gujarati | [guj.traineddata](https://github.com/tesseract-ocr/tessdata/raw
 hat | Haitian; Haitian Creole | [hat.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/hat.traineddata)
 heb | Hebrew | [heb.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/heb.traineddata)
 hin | Hindi | [hin.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/hin.traineddata)
-hrv | Croatian | [hrv.traineddata](hrv.traineddata)
+hrv | Croatian | [hrv.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/hrv.traineddata)
 hun | Hungarian | [hun.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/hun.traineddata)
 iku | Inuktitut | [iku.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/iku.traineddata)
 ind | Indonesian | [ind.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ind.traineddata)
