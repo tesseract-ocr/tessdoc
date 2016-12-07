@@ -348,8 +348,8 @@ yellow marks are appearing to indicate that there is some growing output for
 non-null and non-space, and characters are starting to appear in the
 `LSTMForward` window.
 
-The character error rate falls below 50% at about 3600 iterations, and by 5000
-to about 25%.
+The character error rate falls below 50% at about 3200 iterations, and by 5000
+to about 18%.
 
 Note that this engine is trained on the same training data as used by base
 Tesseract, but its accuracy on other fonts is probably very poor. It will stop
@@ -361,7 +361,7 @@ training/lstmeval --model ~/tesstutorial/engoutput/base_checkpoint \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-91% character error rate? Not so good!
+76% character error rate? Not so good!
 
 Now base Tesseract doesn't do very well on 'Impact', but it is included in the
 4500 or so fonts used to train the LSTM version, so if you extract out the
@@ -391,7 +391,6 @@ You can train for another 5000 iterations, and get the error rate on the
 training set a lot lower, but it doesn't help the `Impact` font much:
 
 ```
-mkdir -p ~/tesstutorial/engoutput
 training/lstmtraining -U ~/tesstutorial/engtrain/eng.unicharset \
   --script_dir ../langdata \
   --net_spec '[1,36,0,1 Ct5,5,16 Mp3,3 Lfys64 Lfx128 Lrx128 Lfx256 O1c105]' \
@@ -401,8 +400,8 @@ training/lstmtraining -U ~/tesstutorial/engtrain/eng.unicharset \
   --max_iterations 10000 &>>~/tesstutorial/engoutput/basetrain.log
 ```
 
-Character error rate on `Impact` still 85%, even as the error rate on the
-training set has fallen to 1.1% character / 3.6% word:
+Character error rate on `Impact` still 75%, even as the error rate on the
+training set has fallen to 0.86% character / 3.1% word:
 
 ```
 training/lstmeval --model ~/tesstutorial/engoutput/base_checkpoint \
@@ -446,15 +445,15 @@ training/lstmtraining --model_output ~/tesstutorial/impact_from_small/impact \
   --max_iterations 1200
 ```
 
-This has character/word error at 35.7%/65.7% after 100 iterations and gets down
-to 1.9%/5.8% at 1200. Now a stand-alone test:
+This has character/word error at 27.9%/56.2% after 100 iterations and gets down
+to 1.4%/4.8% at 1200. Now a stand-alone test:
 
 ```
 training/lstmeval --model ~/tesstutorial/impact_from_small/impact_checkpoint \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-That shows a better result of 0.15%/0.63% because the trainer is averaging over
+That shows a better result of 0.18%/0.92% because the trainer is averaging over
 1000 iterations, and it has been improving. This isn't a representative result
 for the `Impact` font though, as we are testing on the training data!
 
@@ -469,15 +468,15 @@ training/lstmtraining --model_output ~/tesstutorial/impact_from_full/impact \
   --max_iterations 1200
 ```
 
-After 100 iterations, it has 1.19%/3.87% char/word error and gets down to
-0.32%/1.22% at 1200. Again, the stand-alone test gives a better result:
+After 100 iterations, it has 1.26%/3.98% char/word error and gets down to
+0.31%/1.18% at 1200. Again, the stand-alone test gives a better result:
 
 ```
 training/lstmeval --model ~/tesstutorial/impact_from_full/impact_checkpoint \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-Char error 0.18%, word 0.70%. What is more interesting though, is the effect on
+Char error 0.20%, word 0.70%. What is more interesting though, is the effect on
 the other fonts, so run a test on the base training set that we have been using:
 
 ```
@@ -485,7 +484,7 @@ training/lstmeval --model ~/tesstutorial/impact_from_full/impact_checkpoint \
   --eval_listfile ~/tesstutorial/engtrain/eng.training_files.txt
 ```
 
-Char error rate=0.042713157, Word error rate=0.22493139
+Char error rate=0.04552459, Word error rate=0.22928254
 
 It seems to have got better at that data set! This is probably because the the
 original model was trained on artificially degraded images to make it learn how
@@ -572,7 +571,7 @@ Since the lower layers are already trained, this learns somewhat faster than
 training from scratch. By 400 iterations, there are already some spaces being
 ouput, by 500, some correct characters are being output, and by 1000 iterations,
 it is already getting most characters correct. By the time it finishes, it
-should be at 3.2% character/10.1% word.
+should be at 2.6% character/8.6% word.
 
 Try the usual tests on the full training set and independent test on the
 'Impact' font:
@@ -584,7 +583,7 @@ training/lstmeval --model ~/tesstutorial/eng_from_chi/base_checkpoint \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-On the full training set, we get 2.68%/8.42% and on `Impact` 26.9%/64.0%, which
+On the full training set, we get 2.24%/7.36% and on `Impact` 23.9%/59.3%, which
 is much better than the from-scratch training, but is still badly over-fitted.
 
 In summary, it is possible to cut off the top layers of an existing network and
