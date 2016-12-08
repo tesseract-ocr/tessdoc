@@ -105,6 +105,9 @@ Platform support depends on used language and experience of user.
   * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
   * http://code.google.com/p/python-tesseract/ is a wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
 
+**R**: [tesseract](https://cran.r-project.org/package=tesseract)
+
+
 **Ruby**:
   * [ruby-tesseract-ocr](https://github.com/meh/ruby-tesseract-ocr/) - wrapper for tesseract 3.0x using the C++ API
   * [rtesseract](https://github.com/dannnylo/rtesseract)
