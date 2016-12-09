@@ -5,3 +5,5 @@ The following are example of 4.0 box tiff pairs created as part of LSTM training
 * [Box File](https://github.com/Shreeshrii/tessdata4alpha/blob/master/eng.Impact_Condensed.exp0.box)
 * [Tif Image](https://github.com/Shreeshrii/tessdata4alpha/blob/master/eng.Impact_Condensed.exp0.tif)
 
+See 
+https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00#creating-training-data for more details.
