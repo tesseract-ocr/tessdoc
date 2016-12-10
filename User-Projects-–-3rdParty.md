@@ -28,6 +28,7 @@
   * [CustomOCR](http://www.customocr.com/index.php?r=site/page&view=demos.tesseract_ocr)
   * [Free OCR](http://www.free-ocr.com/)
   * [i2OCR](http://www.i2ocr.com/)
+  * [Indic-OCR OCR Service](https://indic-ocr.github.io/ocrservice/)  An online OCR service for Indian languages 
 
 ## Mobile
 
@@ -37,7 +38,8 @@
     * [Character Recognition](https://play.google.com/store/apps/details?id=org.atai.TessUI#?t=W251bGwsMSwxLDUwMSwib3JnLmF0YWkuVGVzc1VJIl0.) Android OCR App with source code at [gitorious.org](https://gitorious.org/character-recognition/)
     * [tesseract-android-tools](http://code.google.com/p/tesseract-android-tools/): set of Android APIs
     * [Mobile OCR](http://code.google.com/p/mobileocr/): The goal of Mobile OCR is to create an application for the Android platform that will recognize text from an image taken by the phone's camera. The application will be fully accessible to low vision and blind users
-    * [Across India](https://github.com/indic-ocr/acrossindia): An app which lets users take pictures of sign boards in Indian Languages or English and transliterate it to the the language that they can read.
+    * [Across India](https://indic-ocr.github.io/acrossindia/): An app which lets users take pictures of sign boards in Indian Languages or English and transliterate it to the the language that they can read.
+
   * _iOS_:
     * [Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS) - Tesseract OCR iOS is a Framework for iOS7+, compiled also for armv7s and arm64.
     * [OCR-iOS-Example](https://github.com/robmathews/OCR-iOS-Example) - a simple example of how to do optical character recognition (OCR) on iOS.
@@ -85,6 +87,8 @@
   * [PaRADIIT](https://sites.google.com/site/paradiitproject/home) (Pattern Redundancy Analysis for Document Image Indexation & Transcription) is a project initiated and sponsored by 2 successive Google DH awards. It aims to turn ancient books, especially from the Renaissance, into accessible digital libraries.
   * [The ISRI Analytic Tools](https://github.com/eddieantonio/isri-ocr-evaluation-tools) consist of 17 tools for measuring the performance of and experimenting with OCR output.
   * [pdf2pdfocr](https://github.com/LeoFCardoso/pdf2pdfocr) is a tool to OCR a PDF (or supported images) and add a text layer in the original file making it a searchable PDF. It is a python script that uses tesseract and other open source tools. Linux, macOS and Windows supported.
+  * [Indic Messenger](https://indic-ocr.github.io/indicmessenger) A Facebook chat bot which can OCR images containing Indian/English text and transliterate it to other Indian scripts. 
+  * [LibreOCR](https://indic-ocr.github.io/LibreOCR/) A [LibreOffice](http://www.libreoffice.org) extension which can convert an image to OCT and open in the Writer application. 
 
 ### IMPACT related
 
