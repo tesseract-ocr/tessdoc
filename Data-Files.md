@@ -6,10 +6,13 @@
 
 ## Special Data Files
 
-Lang Code | Description | 4.0/3.04 traineddata
+Lang Code | Description | 4.0/3.0x traineddata
 :-------- | :---------- | :-------------------
 osd | Orientation and script detection | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
 equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
+
+**Note**: These two data files are compatible with older version of Tesseract. `osd` is compatible with version 3.01 and up, and `equ` is compatible with version 3.02 and up.
+
 
 ## Data Files for Version 4.00
 
