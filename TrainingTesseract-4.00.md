@@ -486,7 +486,7 @@ training/lstmeval --model ~/tesstutorial/impact_from_full/impact_checkpoint \
 
 Char error rate=0.04552459, Word error rate=0.22928254
 
-It seems to have got better at that data set! This is probably because the the
+It seems to have got better at that data set! This is probably because the
 original model was trained on artificially degraded images to make it learn how
 to deal with degraded text.
 
