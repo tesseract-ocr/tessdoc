@@ -312,7 +312,7 @@ the y-axis is strength of output.
 ## Training From Scratch
 
 The following example shows the command line for training from scratch. Try it
-with the default training data created with the command-line above.
+with the default training data created with the command-lines above.
 
 ```
 mkdir -p ~/tesstutorial/engoutput
@@ -332,7 +332,7 @@ tail -f ~/tesstutorial/engoutput/basetrain.log
 ```
 
 You should observe that by 500 iterations, the spaces (white) are starting to
-show on the `CTC Outputs,` window and by 800 iterations green lines appear on
+show on the `CTC Outputs` window and by 800 iterations green lines appear on
 the `LSTMForward` window where there are spaces in the image.
 
 By 600 iterations, there are noticeable non-space bumps in the `CTC Outputs.`
