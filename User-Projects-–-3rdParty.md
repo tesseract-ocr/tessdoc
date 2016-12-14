@@ -57,7 +57,7 @@
   * [OpenOCR](https://github.com/tleyden/open-ocr) makes it simple to host your own OCR REST API.
   * https://github.com/guitarmind/tesseract-web-service is An implementation of RESTful web service for tesseract-OCR using tornado
   * [RasterEdge .NET Image SDK - OCR Recognition](http://www.rasteredge.com/dotnet-imaging/addon-ocr-sdk/) is robust, high-performance recognition application of royalty-free distribution for desktop or server applications.
-  * [DevScope OCR SDK](http://www.devscope.net/products/DevScopeOCR) is a Optical Character Recognition toolkit engine based on Tesseract OCR v3 that allows to develop applications using Microsoft .NET framework
+  * [DevScope OCR SDK](http://www.devscope.net/products/DevScopeOCR) is an Optical Character Recognition toolkit engine based on Tesseract OCR v3 that allows to develop applications using Microsoft .NET framework
   * [Paperwork](https://github.com/jflesch/paperwork) - using OCR to grep dead trees the easy way (requires pyocr)
   * [Aletheia](http://www.primaresearch.org/tools.php) - An Advanced Document Layout and Text Ground-Truthing System for Production Environments
   * [gscan2pdf](http://gscan2pdf.sourceforge.net/) a GUI to produce PDFs or DjVus from scanned documents
