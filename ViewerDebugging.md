@@ -26,7 +26,7 @@ All these jar files need to go in a single directory. Tesseract learns the locat
 
 **On Windows:**
 
-The build process for building ScrollView.jar is not defined. It is included in packages tesseract-2.04.exe.tar.gz, tesseract-ocr-3.02-win32-portable.zip and tesseract-ocr-setup-3.02.02.exe. Place piccolo-1.2.jar and piccolox-1.2.jar to the same location (Tesseract-OCR/java). Then set the SCROLLVIEW\_PATH environment variable to point the the java directory.
+The build process for building ScrollView.jar is not defined. It is included in packages tesseract-2.04.exe.tar.gz, tesseract-ocr-3.02-win32-portable.zip and tesseract-ocr-setup-3.02.02.exe. Place piccolo-1.2.jar and piccolox-1.2.jar to the same location (Tesseract-OCR/java). Then set the SCROLLVIEW\_PATH environment variable to point to the java directory.
 
 
 ## Segmenter Debug Mode
