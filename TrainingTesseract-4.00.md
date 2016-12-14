@@ -30,7 +30,7 @@ Neural networks require significantly more training data and train *a lot*
 slower than base Tesseract. For Latin-based languages, the existing model data
 provided has been trained on about 400000 textlines spanning about 4500 fonts.
 For other scripts, not so many fonts are available, but they have still been
-trained on a similar number of textilnes. Instead of taking a few minutes to a
+trained on a similar number of textlines. Instead of taking a few minutes to a
 couple of hours to train, Tesseract 4.00 takes a few *days* to a couple of
 *weeks.* Even with all this new training data, you might find it inadequate for
 your particular problem, and therefore you are here wanting to retrain it.
@@ -86,7 +86,7 @@ sudo apt-get install libcairo2-dev
 
 Beginning with 3.03, if you're compiling Tesseract from source you need to make
 and install the training tools with separate make commands. Once the above
-additional libraries have been installed, run the following from the tesseract
+additional libraries have been installed, run the following from the Tesseract
 source directory:
 
 ```
@@ -151,7 +151,7 @@ textlines to indicate the end-of-line. These instructions only cover the case of
 rendering from fonts.
 
 The setup for running [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) is the
-same as for base Tesseract. Note that it is benefical to have more training text
+same as for base Tesseract. Note that it is beneficial to have more training text
 and make more pages though, as neural nets don't generalize as well and need to
 train on something similar to what they will be running on. If the target domain
 is severely limited, then all the dire warnings about needing a lot of training
@@ -630,4 +630,4 @@ For now, you can make it run using any existing traineddata file and adding your
 new lstm model and (optionally) the lstm dawgs. This is a point for improvement
 in the future. The unicharset used for the lstm has to match the unicharset used
 to generate the `lstm-*-dawg` files, but doesn't have to match the unicharset
-for the inttemp and base tesseract dawg files.
+for the inttemp and base Tesseract dawg files.
