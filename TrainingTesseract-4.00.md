@@ -569,7 +569,7 @@ training/lstmtraining -U ~/tesstutorial/engtrain/eng.unicharset \
 
 Since the lower layers are already trained, this learns somewhat faster than
 training from scratch. By 400 iterations, there are already some spaces being
-ouput, by 500, some correct characters are being output, and by 1000 iterations,
+output, by 500, some correct characters are being output, and by 1000 iterations,
 it is already getting most characters correct. By the time it finishes, it
 should be at 2.6% character/8.6% word.
 
