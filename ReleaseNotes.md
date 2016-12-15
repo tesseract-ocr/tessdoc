@@ -25,7 +25,7 @@ Table of Contents
   * Added LSTM models+lang models to [101 languages](https://github.com/tesseract-ocr/tessdata).
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
-  * Added new C API for detecting orientation and script, remove old one.
+  * Added new C API for detecting orientation and script, removed old one.
   * Removed the 'Cube' engine from the codebase.
   * Use Travis CI and Appveyor Continuous Integration services.
   * Added option to build Tesseract with CMake build system.
