@@ -137,7 +137,7 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
     cd tesseract
     cppan
     mkdir build && cd build
-    cmake .. -DSTATIC=1
+    cmake ..
     ```
 
 5. Build a solution (`tesseract.sln`) in your Visual Studio version.
