@@ -100,9 +100,8 @@ make install
 
 ## Language Data
 
-  1. Download language data file (e.g. 'https://github.com/tesseract-ocr/tessdata/archive/master.zip' for 3.01 version)
-  1. Decompress it
-  1. Move it to installation of `tessdata` (e.g. 'mv tessdata $TESSDATA\_PREFIX' if defined `TESSDATA_PREFIX`)
+  * Download the [data file(s) for the language(s) you interest in](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files).
+  * Move it to the `tessdata` directory (e.g. 'mv tessdata $TESSDATA\_PREFIX' if defined `TESSDATA_PREFIX`)
 
 You can also use:
 ```
