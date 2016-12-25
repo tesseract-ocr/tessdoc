@@ -20,13 +20,14 @@ Table of Contents
 
 
 # IN DEVELOPMENT
-  * Tesseract now requires Leptonica 1.73 or a higher version.
+  * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * Added new neural network system based on LSTMs, with major accuracy gains.
   * Added LSTM models+lang models to [101 languages](https://github.com/tesseract-ocr/tessdata).
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
   * Added new C API for detecting orientation and script, removed old one.
   * Removed the 'Cube' engine from the codebase.
+  * Improved  multi-page TIFF handling.
   * Use Travis CI and Appveyor Continuous Integration services.
   * Added option to build Tesseract with CMake build system.
 
