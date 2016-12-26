@@ -56,13 +56,13 @@ Tesseract uses a standard autotools based build system, so the compilation proce
 git clone https://github.com/tesseract-ocr/tesseract.git
 cd tesseract
 ./autogen.sh
-./configure
-make
+./configure --enable-debug
+LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
 sudo make install
 sudo ldconfig
 ```
 
-Since we have to compile leptonica in ubuntu 14.04, we should use `LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make` instead of make.
+Since we have to compile leptonica to use version 1.74, we should use `LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make` instead of make for tesseract.
 
 On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
 
@@ -75,6 +75,11 @@ sudo make training-install
 
 Build of training tools is not available if you do not have necessary dependencies (pay attention to messages from ./configure script).
 
+For visual debugging, you also have to build ScrollView.jar. In addition, it is necessary to set the environment variable SCROLLVIEW_PATH to the directory with ScrollView.jar. 
+
+```
+make ScrollView.jar
+```
 
 ## Install elsewhere / without root
 
