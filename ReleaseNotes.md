@@ -30,7 +30,6 @@ Table of Contents
   * Added new C API for detecting orientation and script, removed old one.
   * Removed the 'Cube' engine from the codebase.
   * Improved  multi-page TIFF handling.
-  * Use Travis CI and Appveyor Continuous Integration services.
   * Added option to build Tesseract with CMake build system.
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
@@ -40,6 +39,7 @@ Table of Contents
   * Improved PDF output for OS X Preview utility.
   * INCOMPATIBLE fix to hOCR line height information - commit [134ebc3](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
   * Added option to build Tesseract without Cube OCR engine (-DNO_CUBE_BUILD).
+  * The project uses Travis CI and AppVeyor Continuous Integration services.
 
 # Tesseract release notes July 11 2015 - V3.04.00
   * Tesseract development is now done with Git and hosted at github.com 
