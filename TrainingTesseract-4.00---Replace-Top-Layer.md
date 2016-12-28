@@ -9,9 +9,6 @@ Have copies of the 4.0.0 alpha langdata, tessdata and tesseract-ocr repositories
 ./tesseract-ocr/tessdata
 ./tesseract-ocr/tessdata/configs/
 ```
-
-Make a copy of English and Hindi 4.0.0alpha traineddata files from ./tessdata to ./tesseract-ocr/tessdata
-
 Check that lstm.train is available under configs.
 
 Setup appropriate TESSDATA_PREFIX directory.
