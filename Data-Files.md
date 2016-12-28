@@ -17,6 +17,7 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 ## Data Files for Version 4.00
 
 **Note**: `dan_frak`, `deu_frak`, `slk_frak` and `kur` data files were not updated from 3.04.
+They are based on the sources from [paalberti/tesseract-dan-fraktur](https://github.com/paalberti/tesseract-dan-fraktur).
 
 Lang Code | Language | 4.0 traineddata
 :---------| :------- | :---------------
