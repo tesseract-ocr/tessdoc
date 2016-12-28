@@ -46,6 +46,8 @@ training/lstmtraining -U ~/tesstutorial/bihtest/bih.unicharset \
 The above commands extract the existing LSTM model for Hindi from ./tessdata and changes the top layer for it for Bihari using the .lstmf files created earlier, given in the train_listfile. As an alternate to --targer_error_rate <error-rate> one can use --max_iterations <iterations>.
 
 This process can be stopped at any time. Giving the command again restarts the process. The --model_output directory holds the intermittent 'best' language models and the latest checkpoint for the training so far.
+
+Currently this process has a bug and gets aborted.
 ``` 
 lstmtraining --model_output ~/tesstutorial/bihlayer_from_hin/bihlayer.lstm \
   --continue_from ~/tesstutorial/bihlayer_from_hin/bihlayer_checkpoint \
