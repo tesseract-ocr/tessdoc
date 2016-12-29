@@ -298,7 +298,7 @@ ita | Italian | [tesseract-ocr-3.02-ita.tar.gz](https://sourceforge.net/projects
 ita_old | Italian - Old | [tesseract-ocr-3.02-ita_old.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.ita_old.tar.gz/download)
 jpn | Japanese | [tesseract-ocr-3.02-jpn.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.jpn.tar.gz/download)
 kan | Kannada | [tesseract-ocr-3.02-kan.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.kan.tar.gz/download)
-kor ; Korean | [tesseract-ocr-3.02-kor.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.kor.tar.gz/download)
+kor | Korean | [tesseract-ocr-3.02-kor.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.kor.tar.gz/download)
 lav | Latvian | [tesseract-ocr-3.02-lav.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.lav.tar.gz/download)
 lit | Lithuanian | [tesseract-ocr-3.02-lit.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.lit.tar.gz/download)
 mal | Malayalam | [tesseract-ocr-3.02-mal.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.mal.tar.gz/download)
