@@ -18,7 +18,7 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 ## Data Files for Version 4.00
 
-**Note**: The `kur` data file was not updated from 3.04. For Fraktur see the section [Fraktur Data Files](fraktur-data-files). 
+**Note**: The `kur` data file was not updated from 3.04. For Fraktur see the section [Fraktur Data Files](#fraktur-data-files). 
 
 Lang Code | Language | 4.0 traineddata
 :---------| :------- | :---------------
