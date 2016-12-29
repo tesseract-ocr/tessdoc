@@ -2,6 +2,7 @@
 * [Data Files for Version 4.00](#data-files-for-version-400)
 * [Data Files for Version 3.04](#data-files-for-version-304)
 * [Cube Data Files for Version 3.04](#cube-data-files-for-version-304)
+* [Fraktur Data Files](fraktur-data-files). 
 * [Data Files for Version 3.02](#data-files-for-version-302)
 * [Data Files for Version 2.0x](#data-files-for-version-20x)
 
@@ -17,8 +18,7 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 ## Data Files for Version 4.00
 
-**Note**: `dan_frak`, `deu_frak`, `slk_frak` and `kur` data files were not updated from 3.04.
-They are based on the sources from [paalberti/tesseract-dan-fraktur](https://github.com/paalberti/tesseract-dan-fraktur).
+**Note**: The `kur` data file was not updated from 3.04. For Fraktur see the section [Fraktur Data Files](fraktur-data-files). 
 
 Lang Code | Language | 4.0 traineddata
 :---------| :------- | :---------------
@@ -41,9 +41,7 @@ chi_tra | Chinese - Traditional | [chi_tra.traineddata](https://github.com/tesse
 chr | Cherokee | [chr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/chr.traineddata)
 cym | Welsh | [cym.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/cym.traineddata)
 dan | Danish | [dan.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/dan.traineddata)
-dan_frak | Danish - Fraktur | [dan_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/dan_frak.traineddata)
 deu | German | [deu.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/deu.traineddata)
-deu_frak | German - Fraktur | [deu_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/deu_frak.traineddata)
 dzo | Dzongkha | [dzo.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/dzo.traineddata)
 ell | Greek, Modern (1453-) | [ell.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ell.traineddata)
 eng | English | [eng.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/eng.traineddata)
@@ -103,7 +101,6 @@ rus | Russian | [rus.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 san | Sanskrit | [san.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/san.traineddata)
 sin | Sinhala; Sinhalese | [sin.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/sin.traineddata)
 slk | Slovak | [slk.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/slk.traineddata)
-slk_frak | Slovak - Fraktur | [slk_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/slk_frak.traineddata)
 slv | Slovenian | [slv.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/slv.traineddata)
 spa | Spanish; Castilian | [spa.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/spa.traineddata)
 spa_old | Spanish; Castilian - Old | [spa_old.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/spa_old.traineddata)
@@ -151,9 +148,7 @@ chi_tra | Chinese - Traditional | [chi_tra.traineddata](https://github.com/tesse
 chr | Cherokee | [chr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/chr.traineddata)
 cym | Welsh | [cym.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/cym.traineddata)
 dan | Danish | [dan.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/dan.traineddata)
-dan_frak | Danish - Fraktur | [dan_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/dan_frak.traineddata)
 deu | German | [deu.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/deu.traineddata)
-deu_frak | German - Fraktur | [deu_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/deu_frak.traineddata)
 dzo | Dzongkha | [dzo.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/dzo.traineddata)
 ell | Greek, Modern (1453-) | [ell.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ell.traineddata)
 eng | English | [eng.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/eng.traineddata)
@@ -213,7 +208,6 @@ rus | Russian | [rus.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 san | Sanskrit | [san.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/san.traineddata)
 sin | Sinhala; Sinhalese | [sin.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/sin.traineddata)
 slk | Slovak | [slk.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/slk.traineddata)
-slk_frak | Slovak - Fraktur | [slk_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/slk_frak.traineddata)
 slv | Slovenian | [slv.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/slv.traineddata)
 spa | Spanish; Castilian | [spa.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/spa.traineddata)
 spa_old | Spanish; Castilian - Old | [spa_old.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/spa_old.traineddata)
@@ -238,7 +232,7 @@ uzb_cyrl | Uzbek - Cyrilic | [uzb_cyrl.traineddata](https://github.com/tesseract
 vie | Vietnamese | [vie.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/vie.traineddata)
 yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/yid.traineddata)
 
-### Cube Data Files for Version 3.04
+## Cube Data Files for Version 3.04
 
 Hindi:
 [hin.cube.bigrams](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.bigrams), 
@@ -258,6 +252,18 @@ Arabic:
 [ara.cube.word-freq](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.word-freq), 
 [ara.cube.size](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.cube.size), 
 [ara.tesseract_cube.nn](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ara.tesseract_cube.nn)
+
+## Fraktur Data Files
+
+These data files were prepared by @paalberti for some old versions of Tesseract. `dan_frak` and `deu_frak` were prepared for version 3.00,  `slk_frak` was prepared for 3.01. Updates to these files are available at [paalberti/tesseract-dan-fraktur](https://github.com/paalberti/tesseract-dan-fraktur).
+
+
+Lang Code | Language | 3.0x traineddata
+:-------- | :------- | :----------------
+dan_frak | Danish - Fraktur | [dan_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/dan_frak.traineddata)
+deu_frak | German - Fraktur | [deu_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/deu_frak.traineddata)
+slk_frak | Slovak - Fraktur | [slk_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/slk_frak.traineddata)
+
 
 ## Data Files for Version 3.02
 
