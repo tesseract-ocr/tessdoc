@@ -2,7 +2,7 @@
 * [Data Files for Version 4.00](#data-files-for-version-400)
 * [Data Files for Version 3.04](#data-files-for-version-304)
 * [Cube Data Files for Version 3.04](#cube-data-files-for-version-304)
-* [Fraktur Data Files](fraktur-data-files)
+* [Fraktur Data Files](#fraktur-data-files)
 * [Data Files for Version 3.02](#data-files-for-version-302)
 * [Data Files for Version 2.0x](#data-files-for-version-20x)
 
