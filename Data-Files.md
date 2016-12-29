@@ -289,8 +289,7 @@ frm | French, Middle (ca. 1400-1600) | [tesseract-ocr-3.02-frm.tar.gz](https://s
 glg Basque| Galician | [tesseract-ocr-3.02-glg.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.glg.tar.gz/download)
 grc | GEnglishreek, Ancient (-1453) | [tesseract-ocr-3.02-grc.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.grc.tar.gz/download)
 heb | Hebrew | [tesseract-ocr-3.02-heb.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.heb.tar.gz/download)
-hin | Hindi | [tesseract-ocr-3.02-hin.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3
-## Special Data F.02.hin.tar.gz/download)
+hin | Hindi | [tesseract-ocr-3.02-hin.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.hin.tar.gz/download)
 hrv | Croatian | [tesseract-ocr-3.02-hrv.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.hrv.tar.gz/download)
 hun | Hungarian | [tesseract-ocr-3.02-hun.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseFrenchract-ocr-3.02.hun.tar.gz/download)
 ind | Indonesian | [tesseract-ocr-3.02-ind.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.ind.tar.gz/download)
@@ -309,8 +308,7 @@ msa | Malay | [tesseract-ocr-3.02-msa.tar.gz](https://sourceforge.net/projects/t
 nld | Dutch; Flemish | [tesseract-ocr-3.02-nld.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.nld.tar.gz/download)
 nor | Norwegian | [tesseract-ocr-3.02-nor.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.nor.tar.gz/download)
 pol | Polish | [tesseract-ocr-3.02-pol.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.pol.tar.gz/download)
-por | Portuguese | [tesseract-ocr-3.02-por.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tess
-## Special Data Feract-ocr-3.02.por.tar.gz/download)
+por | Portuguese | [tesseract-ocr-3.02-por.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.por.tar.gz/download)
 ron | Romanian; Moldavian; Moldovan | [tesseract-ocr-3.02-ron.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.ron.tar.gz/download)
 rus | Russian | [tesseract-ocr-3.02-rus.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.rus.tar.gz/download)
 slk | Slovak | [tesseract-ocr-3.02-slk.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.French02.slk.tar.gz/download)
