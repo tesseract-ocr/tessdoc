@@ -11,6 +11,7 @@
 If they are not already installed, you need the following libraries (Ubuntu 16.04/14.04):
 ```
 sudo apt-get install autoconf automake libtool
+sudo apt-get install autoconf-archive
 sudo apt-get install pkg-config
 sudo apt-get install libpng12-dev
 sudo apt-get install libjpeg8-dev
@@ -313,6 +314,7 @@ These prerequisites will be needed:
 
 ```
 sudo port install automake autoconf
+sudo port install autoconf-archive
 sudo port install pkgconfig
 sudo port install leptonica
 ```
@@ -361,6 +363,7 @@ sudo make training-install
 
 ```
 brew install automake autoconf
+brew install autoconf-archive
 brew install pkgconfig
 brew install leptonica
 brew install gcc
