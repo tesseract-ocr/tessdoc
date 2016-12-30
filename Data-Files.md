@@ -255,15 +255,14 @@ Arabic:
 
 ## Fraktur Data Files
 
-These data files were prepared by @paalberti for some old versions of Tesseract. `dan_frak` and `deu_frak` were prepared for version 3.00,  `slk_frak` was prepared for 3.01. Updates to these files are available at [paalberti/tesseract-dan-fraktur](https://github.com/paalberti/tesseract-dan-fraktur).
-
+These data files were prepared by @paalberti for some old versions of Tesseract. `dan_frak`, `deu_frak` and `swe_frak` were prepared for version 3.00,  `slk_frak` was prepared for 3.01. Updates to these files are available at [paalberti/tesseract-dan-fraktur](https://github.com/paalberti/tesseract-dan-fraktur).
 
 Lang Code | Language | 3.0x traineddata
 :-------- | :------- | :----------------
 dan_frak | Danish - Fraktur | [dan_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/dan_frak.traineddata)
 deu_frak | German - Fraktur | [deu_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/deu_frak.traineddata)
 slk_frak | Slovak - Fraktur | [slk_frak.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/slk_frak.traineddata)
-
+swe_frak | Swedish - Fraktur | [swe-frak.traineddata](https://sourceforge.net/projects/tesseract-ocr-alt/files/swe-frak.traineddata.gz/download)
 
 ## Data Files for Version 3.02
 
