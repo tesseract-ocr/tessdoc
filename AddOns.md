@@ -1,3 +1,5 @@
+For GUI interface to Tesseract and other 3rd Party projects, please see [User Projects - 3rd Party](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty)
+
 # External tools, wrappers and training projects for Tesseract
 
 ## Tesseract box editors and training tools
