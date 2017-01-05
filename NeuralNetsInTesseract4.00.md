@@ -72,7 +72,7 @@ The initial implementation lacks the following:
 *   There is a C++ implementation if the hardware does not have SSE and/or AVX,
     but the code could benefit from SIMD implementations for other hardware,
     such as ARM. See the new `arch` directory for where to insert the code.
-*   Windows support of SSE and AVX is still untested.
+*   Windows support of SSE and AVX is implemented but untested.
 
 # Basics of the Implementation
 
