@@ -1,4 +1,4 @@
-# VGSL Specs - rapid prototyping of mixed conv/LSTM networks for images.
+# VGSL Specs - rapid prototyping of mixed conv/LSTM networks for images
 
 Variable-size Graph Specification Language (VGSL) enables the specification of a
 neural network, composed of convolutions and LSTMs, that can process
@@ -149,7 +149,7 @@ This network works well for OCR, as long as the input image is carefully
 normalized in the vertical direction, with the baseline and meanline in constant
 places.
 
-### Full Example: A multi-layer LSTM capable of high quality OCR.
+### Full Example: A multi-layer LSTM capable of high quality OCR
 
 `[1,0,0,1 Ct5,5,16 Mp3,3 Lfys64 Lfx128 Lrx128 Lfx256 O1c105]`
 
