@@ -165,7 +165,7 @@ Lfys64: Dimension-summarizing LSTM, summarizing the y-dimension with 64 outputs
 Mp3,3: 3 x 3 Maxpool
 Ct5,5,16: 5 x 5 Convolution with 16 outputs and tanh non-linearity
 1,0,0,1: Input is a batch of 1 image of variable size in greyscale
-[]: The network is alway expressed as a series of layers.
+[]: The network is always expressed as a series of layers.
 ```
 
 The summarizing LSTM makes this network more resilient to vertical variation in
