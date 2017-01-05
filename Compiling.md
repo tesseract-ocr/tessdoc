@@ -62,6 +62,7 @@ LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
 sudo make install
 sudo ldconfig
 ```
+If configure fails with an error like "syntax error near unexpected token `-mavx,'" and/or AX_CHECK_COMPILE_FLAG(...) then double check you have installed autoconf-archive.
 
 Since we have to compile leptonica to use version 1.74, we should use `LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make` instead of make for tesseract.
 
