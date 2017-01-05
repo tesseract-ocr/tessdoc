@@ -130,7 +130,7 @@ S<y>,<x> Rescale 2-D input by shrink factor y,x, rearranging the data by
 Mp<y>,<x> Maxpool the input, reducing each (y,x) rectangle to a single value.
 ```
 
-### Full Example: A 1-D LSTM capable of high quality OCR.
+### Full Example: A 1-D LSTM capable of high quality OCR
 
 `[1,1,0,48 Lbx256 O1c105]`
 
@@ -142,7 +142,7 @@ O1c105: Output layer produces 1-d (sequence) output, trained with CTC,
 Lbx256: Bi-directional LSTM in x with 256 outputs
 1,1,0,48: Input is a batch of 1 image of height 48 pixels in greyscale, treated
   as a 1-dimensional sequence of vertical pixel strips.
-[]: The network is alway expressed as a series of layers.
+[]: The network is always expressed as a series of layers.
 ```
 
 This network works well for OCR, as long as the input image is carefully
