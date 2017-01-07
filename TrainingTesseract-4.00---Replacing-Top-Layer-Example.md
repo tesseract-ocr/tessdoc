@@ -48,7 +48,7 @@ combine_tessdata -e ../tessdata/nor.traineddata \
   --max_iterations 5000
     
 lstmtraining --model_output ~/tesstutorial/nor_layer/norlayer.lstm \
-  --continue_from ~/tesstutorial/nor_layer/norlayer0.853_1615.lstm \
+  --continue_from ~/tesstutorial/nor_layer/norlayer_checkpoint \
   --stop_training
 
 cp ../tessdata/nor.traineddata ./tessdata
