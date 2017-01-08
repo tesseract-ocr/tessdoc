@@ -60,7 +60,7 @@ training/lstmtraining -U ~/tesstutorial/bihtest/bih.unicharset \
   --train_listfile ~/tesstutorial/bihtest/bih.training_files.txt \
   --max_iterations 50000
 ```
-The above commands extract the existing LSTM model for Hindi from ./tessdata and changes the top layer for it for Bihari using the .lstmf files created earlier, given in the train_listfile. 
+The above commands extract the existing LSTM model for Hindi from ./tessdata and changes the top layer for it for Bihari using the .lstmf files created earlier, given in the `--train_listfile`. The `--model_output` directory holds the intermittent 'best' language models and the latest checkpoint.
 
 Use either `--targer_error_rate 0.001` or `--max_iterations 50000`, the values can be changed.
 
@@ -69,9 +69,7 @@ Try it with `--max_iterations 50` to see a sample of debug output.
 
 This training process can be stopped at any time. Giving the command again restarts the process from the last saved checkpoint. 
 
-The --model_output directory holds the intermittent 'best' language models and the latest checkpoint for the training so far.
-
-Currently this process has a bug and gets aborted when --eval_listfile is given as a parameter.
+Currently this process has a bug and gets aborted when `--eval_listfile` is given as a parameter.
 
 Step 3.
 -----
@@ -111,5 +109,7 @@ The above three commands evaluate the LSTM models,
 first with the original Hindi LSTM model copied for Bihari, 
 second with the checkpoint model created by replacing top layer and 
 third with the Bihari model created from the above checkpoint.
-Results of 2 and 3 should be the same and be an improvement over 1.
+
+Results of second and 3third lstmeval should be the same. 
+Hopefully they are an improvement over the original.
 
