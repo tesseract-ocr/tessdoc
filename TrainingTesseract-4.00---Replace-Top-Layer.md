@@ -40,7 +40,9 @@ training/tesstrain.sh --fonts_dir /usr/share/fonts --lang bih  --linedata_only \
   --fontlist "Lohit Devanagari" \
   --output_dir ~/tesstutorial/bihtest
 ```
-This creates the .lstmf files in the output directory using the given training_text. The box/tiff pairs are created in a /tmp/sometmpdir/hin/ directory and are not copied to the output directory. You can modify tesstrain.sh to save these alongwith the .lstmf files, if needed.
+This creates the .lstmf files in the output directory using the given training_text. The box/tiff pairs are created in a /tmp/sometmpdir/hin/ directory and are not copied to the output directory. You can modify [tesstrain_utils.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain_utils.sh) to save these alongwith the .lstmf files, if needed.
+
+Do not use `--fontlist` if you want to train on the list of Devanagari fonts from [language_specific.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/language-specific.sh).
 
 Step 2.
 -----
