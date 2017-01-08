@@ -62,9 +62,10 @@ training/lstmtraining -U ~/tesstutorial/bihtest/bih.unicharset \
 ```
 The above commands extract the existing LSTM model for Hindi from ./tessdata and changes the top layer for it for Bihari using the .lstmf files created earlier, given in the train_listfile. 
 
-As an alternate to `--targer_error_rate 0.001` one can use `--max_iterations 50000`, the values can be changed.
+Use either `--targer_error_rate 0.001` or `--max_iterations 50000`, the values can be changed.
 
-Use `--debug_interval -1` if you want to see verbose output for every iteration. Try it with '--max_iterations 50' to see a sample of debug output.
+Use `--debug_interval -1` if you want to see verbose output for every iteration. 
+Try it with `--max_iterations 50` to see a sample of debug output.
 
 This training process can be stopped at any time. Giving the command again restarts the process from the last saved checkpoint. 
 
