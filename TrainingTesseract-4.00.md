@@ -4,6 +4,7 @@
 *   [Before You Start](#before-you-start)
 *   [Additional Libraries Required](#additional-libraries-required)
 *   [Building the Training Tools](#building-the-training-tools)
+*   [Hardware/Software Requirements](#hardware/software requirements)
 *   [Overview of Training Process](#overview-of-training-process)
 *   [Creating the Training Data](#creating-training-data)
 *   [Tutorial Guide to lstmtraining](#tutorial-guide-to-lstmtraining)
@@ -17,6 +18,7 @@
     *   [Training From Scratch](#training-from-scratch)
     *   [Fine Tuning for Impact](#fine-tuning-for-impact)
     *   [Training Just a Few Layers](#training-just-a-few-layers)
+    *   [Error Messages From Training](#error-messages-from-training)
 *   [Combining the Output Files](#combining-the-output-files)
 
 # Introduction
@@ -95,6 +97,25 @@ make training
 sudo make training-install
 ```
 
+It is also useful, but not required, to build scrollview:
+
+```
+make ScrollView.jar
+export SCROLLVIEW_PATH=$PWD/java
+```
+
+# Hardware/Software Requirements
+
+At time of writing, training only works on Linux, and a little-endian machine
+(eg Intel) is required to do any kind of incremental training. As for running
+Tesseract 4.00, it is useful, but not essential to have a multi-core (4 is good)
+machine, with OpenMP and Intel Intrinsics support for SSE/AVX extensions.
+Basically it will still run on anything with enough memory, but the higher-end
+your processor is, the faster it will go. No GPU is needed. (No support.)
+Memory use can be controlled via the --max_image_MB command-line option, but
+you are likely to need at least 1GB of memory over and above what is taken by
+your OS.
+
 # Overview of Training Process
 
 The overall training process is similar to [training 3.04](TrainingTesseract)
@@ -147,8 +168,23 @@ data from fonts, or labelling some pre-existing images (like ancient manuscripts
 for example). In either case, the required format is still the tiff/box file
 pair, except that the boxes only need to cover a textline instead of individual
 characters. 'Newline' boxes with tab as the character must be inserted between
-textlines to indicate the end-of-line. These instructions only cover the case of
-rendering from fonts.
+textlines to indicate the end-of-line. Multi-word boxes require a different
+box format, as the space would confuse the parser:
+
+```
+WordStr <left> <bottom> <right> <top> <page> #<text for line including spaces>
+```
+
+`'WordStr'` is a literal string that directs the parser to take the actual text
+string from the end of the line after the `'#'` character.
+
+Note that in all cases, even for right-to-left languages, such as Arabic, the
+text transcription for the line, whether expressed as a sequences of boxes or
+as a WordStr string, *should be ordered left-to-right.* In other words the
+network is going to learn from left-to-right regardless of the language, and
+the right-to-left/bidi handling happens at a higher level inside Tesseract.
+
+These instructions only cover the case of rendering from fonts.
 
 The setup for running [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) is the
 same as for base Tesseract. Note that it is beneficial to have more training text
@@ -162,8 +198,8 @@ as follows: Note that your fonts location may vary.
 
 ```
 training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
-  --langdata_dir ../langdata --tessdata_dir ./tessdata \
-  --output_dir ~/tesstutorial/engtrain
+  --noextract_font_properties --langdata_dir ../langdata \
+  --tessdata_dir ./tessdata --output_dir ~/tesstutorial/engtrain
 ```
 
 The above command makes LSTM training data equivalent to the data used to train
@@ -174,7 +210,8 @@ Now try this to make eval data for the 'Impact' font:
 
 ```
 training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
-  --langdata_dir ../langdata --tessdata_dir ./tessdata \
+  --noextract_font_properties --langdata_dir ../langdata \
+  --tessdata_dir ./tessdata \
   --fontlist "Impact Condensed" --output_dir ~/tesstutorial/engeval
 ```
 
@@ -223,7 +260,7 @@ recode each symbol as a short sequence of codes from a small number of classes
 than have a large set of classes. The 64 flag for `--train_mode` turns this
 feature on, and is included in the default. It encodes each Han character as a
 sequence of 3 codes, Hangul using the Jamo encoding, and Indic script syllables
-(Aksharas) as their unicode sequence. For the smaller, alphabetic scripts, like
+(Aksaras) as their unicode sequence. For the smaller, alphabetic scripts, like
 Latin, all this does is fold the different shapes of single quotes to one class
 and double quotes to one different class.
 
@@ -280,6 +317,10 @@ information on the layers of the network. In the special case of
 `--debug_interval 1` it waits for a click in the `LSTMForward` window before
 continuing to the next iteration, but for all others it just continues and draws
 information at the frequency requested.
+
+**NOTE that to use --debug_interval > 0 you must build scrollview as well as
+the other training tools.** See
+[Building the Training Tools](#building-the-training-tools)
 
 The text debug information includes the truth text, the recognized text, the
 iteration number, the training sample id (file and page) and the mean value of
@@ -353,8 +394,9 @@ to about 18%.
 
 Note that this engine is trained on the same training data as used by base
 Tesseract, but its accuracy on other fonts is probably very poor. It will stop
-at 5000 iterations, (in about half an hour) by which time its character error
-rate should be about 25%. Run an independent test on the 'Impact' font:
+at 5000 iterations, (in about half an hour on a current high-end machine) by
+which time its character error rate should be about 25%. Run an independent
+test on the 'Impact' font:
 
 ```
 training/lstmeval --model ~/tesstutorial/engoutput/base_checkpoint \
@@ -391,6 +433,7 @@ You can train for another 5000 iterations, and get the error rate on the
 training set a lot lower, but it doesn't help the `Impact` font much:
 
 ```
+mkdir -p ~/tesstutorial/engoutput
 training/lstmtraining -U ~/tesstutorial/engtrain/eng.unicharset \
   --script_dir ../langdata \
   --net_spec '[1,36,0,1 Ct5,5,16 Mp3,3 Lfys64 Lfx128 Lrx128 Lfx256 O1c105]' \
@@ -418,7 +461,7 @@ tuning...
 ## Fine Tuning for Impact
 
 Fine tuning is the process of training an existing model on new data without
-changing anything else like the character set or any part of the network.
+changing anything else like the unicharset or any part of the network.
 Doesn't need a unicharset, script_dir, or net_spec, as they all come from the
 existing model.
 
@@ -495,8 +538,9 @@ set, without doing a lot of harm to its general accuracy.
 
 ## Training Just a Few Layers
 
-Fine tuning is OK if you don't want to change the character set, but what if you
-want to train for Klingon? You are unlikely to have much training data and it is
+Fine tuning is OK if you don't want to change the unicharset, but what if you
+want add a new character to a language, or you want to train for Klingon?
+You are unlikely to have much training data and it is
 unlike anything else, so what do you do? You can try removing some of the top
 layers of an existing network model, replace some of them with new randomized
 layers, and train with your data. The command-line is mostly the same as
@@ -590,6 +634,58 @@ In summary, it is possible to cut off the top layers of an existing network and
 train, as if from scratch, but a fairly large amount of training data is still
 required to avoid over-fitting.
 
+## Error Messages From Training
+
+There are various error messages that can occur when running the training, some
+of which can be important, and others not so much:
+
+`Encoding of string failed!` results when the text string for a training image
+cannot be encoded using the given unicharset. Possible causes are:
+
+1.  There is an un-represented character in the text, say a British Pound sign
+    that is not in your unicharset.
+1.  A stray unprintable character (like tab or a control character) in the text.
+1.  There is an un-represented Indic grapheme/aksara in the text.
+
+In any case it will result in that training image being ignored by the trainer.
+If the error is infrequent, it is harmless, but it may indicate that your
+unicharset is inadequate for representing the language that you are training.
+
+`Unichar xxx is too long to encode!!` (Most likely Indic only). There is an
+upper limit to the length of unicode characters that can be used in the recoder,
+which simplifies the unicharset for the LSTM engine. It will just continue and
+leave that Aksara out of the recognizable set, but if there are a lot, then you
+are in trouble.
+
+`Bad box coordinates in boxfile string!` The LSTM trainer only needs bounding
+box information for a complete textline, instead of at a character level, but
+if you put spaces in the box string, like this:
+
+```
+<text for line including spaces> <left> <bottom> <right> <top> <page>
+```
+
+the parser will be confused and give you the error message. There
+is a different format required for such boxfile strings:
+
+```
+WordStr <left> <bottom> <right> <top> <page> #<text for line including spaces>
+```
+
+`Deserialize header failed` occurs when a training input is not in LSTM format
+or the file is not readable. Check your filelist file to see if it contains
+valid filenames.
+
+`No block overlapping textline:` occurs when layout analysis fails to correctly
+segment the image that was given as training data. The textline is dropped.
+Not much problem if there aren't many, but if there are a lot, there is
+probably something wrong with the training text or rendering process.
+
+`<Undecodable>` can occur in either the ALIGNED_TRUTH or OCR TEXT output early
+in training. It is a consequence of unicharset compression and CTC training.
+(See Unicharset Compression and train_mode above). This should be harmless and
+can be safely ignored. Its frequency should fall as training progresses.
+
 # Combining the Output Files
 
 The lstmtraining program outputs two kinds of checkpoint files:
@@ -606,7 +702,8 @@ Either of these files can be converted to a recognition model as follows:
 
 ```
 training/lstmtraining --model_output ~/tesstutorial/eng_from_chi/eng.lstm \
-  --continue_from ~/tesstutorial/eng_from_chi/base_checkpoint
+  --continue_from ~/tesstutorial/eng_from_chi/base_checkpoint \
+  --stop_training
 ```
 
 Finally, combine your new model with the language model files into a traineddata
@@ -623,11 +720,12 @@ training/combine_tessdata -o tessdata/eng.traineddata \
 The dawg files are optional. It will work without them, but they do usually
 provide some small improvement in accuracy.
 
-**NOTE** that if you are creating a totally new language, for which there is no
-existing traineddata file, Tesseract will currently refuse to initialize with
-just the lstm model in it, even if you use OEM_LSTM_ONLY as the OCR engine mode.
-For now, you can make it run using any existing traineddata file and adding your
-new lstm model and (optionally) the lstm dawgs. This is a point for improvement
-in the future. The unicharset used for the lstm has to match the unicharset used
-to generate the `lstm-*-dawg` files, but doesn't have to match the unicharset
-for the inttemp and base Tesseract dawg files.
+**NOTE** Tesseract 4.00 will now run happily with a traineddata file that
+contains *just* `lang.lstm.` The `lstm-*-dawgs` are optional, and *none of the
+other files are required or used with OEM_LSTM_ONLY as the OCR engine mode.*
+No bigrams, unichar ambigs or any of the other files are needed or even have
+any effect if present.
+
+If added to an existing Tesseract traineddata file, the LSTM unicharset doesn't
+have to match the Tesseract unicharset, but the same unicharset must be
+used to train the LSTM and build the `lstm-*-dawgs` files.
