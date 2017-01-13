@@ -4,7 +4,7 @@
 *   [Before You Start](#before-you-start)
 *   [Additional Libraries Required](#additional-libraries-required)
 *   [Building the Training Tools](#building-the-training-tools)
-*   [Hardware/Software Requirements](#hardware/software requirements)
+*   [Hardware/Software Requirements](#hardwaresoftware-requirements)
 *   [Overview of Training Process](#overview-of-training-process)
 *   [Creating the Training Data](#creating-training-data)
 *   [Tutorial Guide to lstmtraining](#tutorial-guide-to-lstmtraining)
