@@ -403,6 +403,14 @@ make -j
 sudo make install
 ```
 
+### Errors
+To fix this error
+```
+./configure: line 4237: syntax error near unexpected token `-mavx,'
+./configure: line 4237: `AX_CHECK_COMPILE_FLAG(-mavx, avx=1, avx=0)'
+```
+ensure that autoconf-archive is installed.
+
 # Miscellaneous
 
 * [Standalone Tesseract build bash script](http://pastebin.com/VnGLHfbr)
