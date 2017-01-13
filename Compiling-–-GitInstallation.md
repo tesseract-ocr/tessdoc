@@ -52,4 +52,4 @@ try to run _autoreconf -i_ after _./autogen.sh_
 
 # Windows Visual Studio build
 
-Please follow instructions in [Visual Studio 2008 Developer Notes for Tesseract-OCR](http://tesseract-ocr.googlecode.com/svn/trunk/vs2008/doc/index.html)
+Please follow instructions in https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows
