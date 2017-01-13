@@ -161,6 +161,8 @@ To do this:
 
 5. Build a solution (`tesseract.sln`) in your Visual Studio version.
 
+**For development purposes** of training tools after cloning a repo from previous paragraph, run `cppan --build .`. You'll see a solution link appeared in the root directory of tesseract.
+
 ## 3.04.01
 
 If you have Visual Studio 2015, checkout the repository at [Leptonica 1.73 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/VS2015_Tesseract) and click on build_tesseract.bat. After that you still need to download the language packs.
