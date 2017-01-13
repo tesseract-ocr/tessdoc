@@ -161,7 +161,12 @@ To do this:
 
 5. Build a solution (`tesseract.sln`) in your Visual Studio version.
 
-**For development purposes** of training tools after cloning a repo from previous paragraph, run `cppan --build .`. You'll see a solution link appeared in the root directory of tesseract.
+**For development purposes** of training tools after cloning a repo from previous paragraph, run 
+```
+cppan --build .
+```
+
+You'll see a solution link appeared in the root directory of tesseract.
 
 ## 3.04.01
 
