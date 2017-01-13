@@ -131,7 +131,7 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 #### Build training tools
 
 Today it is possible to build a full set of tess training tools on Windows with Visual Studio.
-The latest versions (Win10, MSVC2015/MSVC2017) are preferable.
+The latest versions (Win10, VS2015/VS2017) are preferable.
 
 To do this:
 
