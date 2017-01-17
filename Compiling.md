@@ -54,7 +54,7 @@ Ensure that the development headers for Leptonica are installed before compiling
 Tesseract uses a standard autotools based build system, so the compilation process should be familiar.
 
 ```
-git clone https://github.com/tesseract-ocr/tesseract.git
+git clone --depth 1 https://github.com/tesseract-ocr/tesseract.git
 cd tesseract
 ./autogen.sh
 ./configure --enable-debug
