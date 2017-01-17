@@ -4,7 +4,7 @@ These are instructions for installing Tesseract from the git repository. You sho
 
 # Installing With Autoconf Tools
 
-In order to do this, you must have aclocal, autoheader, autoconf, automake, libtool and leptonica installed.
+In order to do this, you must have aclocal, autoheader, autoconf, autoconf-archive, automake, libtool and leptonica installed.
 
 On Debian or Ubuntu, you can probably do that with:
 
@@ -16,6 +16,12 @@ Afterwards, the steps for installing the git version of Tesseract, do this:
 
 ```
     git clone https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
+```
+or to make a shallow clone of the repository with history truncated to the latest commit only.
+```
+   git clone --depth 1  https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
+```
+```
     cd tesseract-ocr
     ./autogen.sh
     ./configure
