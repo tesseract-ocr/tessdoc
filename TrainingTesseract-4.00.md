@@ -163,19 +163,25 @@ either set `PATH` to include your local `training` and `api` directories, or use
 
 # Creating Training Data
 
-As with base Tesseract, there is a choice between rendering synthetic training
-data from fonts, or labelling some pre-existing images (like ancient manuscripts
-for example). In either case, the required format is still the tiff/box file
-pair, except that the boxes only need to cover a textline instead of individual
-characters. 'Newline' boxes with tab as the character must be inserted between
-textlines to indicate the end-of-line. Multi-word boxes require a different
-box format, as the space would confuse the parser:
+As with base Tesseract, there is a choice between rendering synthetic training data from fonts, or labelling some pre-existing images (like ancient manuscripts for example). In either case, the training process still require the tiff/box file pair. 
 
-```
-WordStr <left> <bottom> <right> <top> <page> #<text for line including spaces>
-```
+There are two possible ways to format the a box file.
 
-`'WordStr'` is a literal string that directs the parser to take the actual text
+### Box File Fornat - First Option
+
+In this format, each line in the box file matches a 'character (glyph) in the tiff image.
+
+<symbol> <left> <bottom> <right> <top> <page>
+
+In this box file format, a special line must be inserted after a series of lines to mark indicate the a end-of-line.
+
+### Box File Fornat - Second Option
+
+In this format the boxes only need to cover a textline instead of individual characters.
+
+`WordStr <left> <bottom> <right> <top> <page> #<text for line including spaces>`
+
+`'WordStr'` is a literal string that directs the box file parser to take the actual text
 string from the end of the line after the `'#'` character.
 
 Note that in all cases, even for right-to-left languages, such as Arabic, the
