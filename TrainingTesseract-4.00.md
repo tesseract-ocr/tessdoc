@@ -165,15 +165,15 @@ either set `PATH` to include your local `training` and `api` directories, or use
 
 As with base Tesseract, there is a choice between rendering synthetic training data from fonts, or labelling some pre-existing images (like ancient manuscripts for example). In either case, the training process still require the tiff/box file pair. 
 
-There are two possible ways to format the a box file.
+There are two possible ways to format a box file.
 
 ### Box File Fornat - First Option
 
-In this format, each line in the box file matches a 'character (glyph) in the tiff image.
+In this format, each line in the box file matches a 'character' (glyph) in the tiff image.
 
 <symbol> <left> <bottom> <right> <top> <page>
 
-In this box file format, a special line must be inserted after a series of lines to mark indicate the a end-of-line.
+In this box file format, a special line must be inserted after a series of lines to indicate the a end-of-line.
 
 ### Box File Fornat - Second Option
 
