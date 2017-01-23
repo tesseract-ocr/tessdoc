@@ -185,7 +185,7 @@ In this format the boxes only need to cover a textline instead of individual cha
 string from the end of the line after the `'#'` character.
 
 For example, the textline `What a nice sunny day!`, should be written as:  
-`W h a t a n i c e s u n n y d a y !` The original spaces between words are omitted. 
+`#W h a t a n i c e s u n n y d a y !` The original spaces between words are omitted. 
 
 Note that in all cases, even for right-to-left languages, such as Arabic, the
 text transcription for the line, whether expressed as a sequences of boxes or
