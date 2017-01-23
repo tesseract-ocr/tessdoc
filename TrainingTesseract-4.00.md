@@ -167,7 +167,7 @@ As with base Tesseract, there is a choice between rendering synthetic training d
 
 There are two possible ways to format a box file.
 
-### Box File Fornat - First Option
+### Box File Format - First Option
 
 In this format, each line in the box file matches a 'character' (glyph) in the tiff image.
 
@@ -175,7 +175,7 @@ In this format, each line in the box file matches a 'character' (glyph) in the t
 
 In this box file format, a special line must be inserted after a series of lines to indicate an end-of-line.
 
-### Box File Fornat - Second Option
+### Box File Format - Second Option
 
 In this format the boxes only need to cover a textline instead of individual characters.
 
