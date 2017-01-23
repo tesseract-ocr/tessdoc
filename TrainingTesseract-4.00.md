@@ -173,7 +173,7 @@ In this format, each line in the box file matches a 'character' (glyph) in the t
 
 <symbol> <left> <bottom> <right> <top> <page>
 
-In this box file format, a special line must be inserted after a series of lines to indicate an end-of-line.
+A special line must be inserted after a series of lines to indicate an end-of-line.
 
 ### Box File Format - Second Option
 
