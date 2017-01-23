@@ -67,7 +67,7 @@ If configure fails with an error like "syntax error near unexpected token `-mavx
 If configure fails with such error "configure: error: Leptonica 1.74 or higher is required. Try to install libleptonica-dev package." and you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with "pkg-config --variable pc_path pkg-config"). A solution is to set PKG_CONFIG_PATH : example :
 `PKG_CONFIG_PATH=/usr/local/lib/pkgconfig LIBLEPT_HEADERSDIR=/usr/local/include ./configure --with-extra-includes=/usr/local/include --with-extra-libraries=/usr/local/lib`
 
-Since we have to compile leptonica to use version 1.74, we should use `LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make` instead of make for tesseract.
+Since we have to compile leptonica to use version 1.74, we should use `LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make` instead of make for Tesseract.
 
 On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
 
@@ -124,9 +124,9 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 ## master branch, 3.05 and later
 
-#### Using tesseract
+#### Using Tesseract
 
-**!!! IMPORTANT !!!** To use tesseract in your application (to include tess or to link it into your app) see this very simple example https://github.com/tesseract-ocr/tesseract/wiki/User-App-Example.
+**!!! IMPORTANT !!!** To use Tesseract in your application (to include tess or to link it into your app) see this very simple example https://github.com/tesseract-ocr/tesseract/wiki/User-App-Example.
 
 #### Build training tools
 
@@ -138,9 +138,9 @@ To do this:
 1. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`.
 2. Run `cppan --build pvt.cppan.demo.google.tesseract-master`.
 
-#### Develop tesseract
+#### Develop Tesseract
 
-**For development purposes** of tesseract itself do the next steps:
+**For development purposes** of Tesseract itself do the next steps:
 
 1. Download and install Git, CMake and put them in PATH.
 2. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`. CPPAN is a source package distribution system. Add CPPAN client in PATH too. (VS2015 redist is required.)
@@ -168,7 +168,7 @@ If you're using master branch (4.0) run
 cppan --build .
 ```
 
-You'll see a solution link appeared in the root directory of tesseract.
+You'll see a solution link appeared in the root directory of Tesseract.
 
 ## 3.04.01
 
@@ -188,7 +188,7 @@ Download these packages from the [Downloads Archive on SourceForge](https://sour
 
   * `tesseract-3.01.tar.gz` - Tesseract source
   * `tesseract-3.01-win_vs.zip` - Visual studio (2008 & 2010) solution with necessary libraries
-  * `tesseract-ocr-3.01.eng.tar.gz` - English language file for tesseract (or download other language training file)
+  * `tesseract-ocr-3.01.eng.tar.gz` - English language file for Tesseract (or download other language training file)
 
 Unpack them to one directory (e.g. `tesseract-3.01`). Note that `tesseract-ocr-3.01.eng.tar.gz` names the root directory `'tesseract-ocr'` instead of `'tesseract-3.01'`.
 
@@ -211,7 +211,7 @@ The core packages groups you need to install if you wish to build from PKGBUILDs
 
 To build the release package, use PKGBUILD from https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-tesseract-ocr
 
-To build from the github source, create a PKGBUILD with the following commands.
+To build from the GitHub source, create a PKGBUILD with the following commands.
 
 ```
 #
@@ -329,17 +329,12 @@ These prerequisites will be needed:
 * [openjpeg](https://github.com/uclouvain/openjpeg)
 * [leptonica](https://github.com/DanBloomberg/leptonica/)
 
-# OS X with MacPorts
-
-(These instructions are probably outdated.)
+# macOS with MacPorts
 
 ## Install required packages
 
 ```
-sudo port install automake autoconf
-sudo port install autoconf-archive
-sudo port install pkgconfig
-sudo port install leptonica
+sudo port install autoconf autoconf-archive automake leptonica pkgconfig
 ```
 
 ## Compilation
@@ -352,9 +347,9 @@ sudo port install leptonica
   sudo make install
 ```
 
-## To install tesseract with training tools
+## Install Tesseract with training tools
 
-In the above training tools are not installed. You can install not only tesseract but also training tools like below.
+In the above training tools are not installed. You can install not only Tesseract but also training tools like below.
 
 ### Install packages required by training tools
 
