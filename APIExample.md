@@ -209,46 +209,65 @@ print result_text
 
 Example of passing python file object to C-API can be found at [pastebin](http://pastebin.com/yDTkNfNm).
 
-Example of extracting orientation (from [pyocr](https://github.com/jflesch/pyocr/blob/master/src/pyocr/libtesseract/tesseract_raw.py)):
+Example of extracting orientation from Tesseract 4.0:
 ```
-# ... /snip
-class OSResults(Structure):
-    _fields_ = [
-        ('orientations', c_float * 4),
-        ('scripts_na', c_float * 4 * (116 + 1 + 2 + 1)),
-        ('unicharset', c_void_p),
-        ('best_orientation_id', c_int),
-        ('best_script_id', c_int),
-        ('best_sconfidence', c_float),
-        ('best_oconfidence', c_float),
-        ('padding', c_char_p * 512),
-    ]
+# /usr/bin/env python3
+# coding: utf-8
 
-# ... /snip
+PATH_TO_LIBTESS = '/path/to/development/libtesseract.so'
 
-def create_tess_api(prefix=TESSDATA_PREFIX, lang='eng'):
-    # ... /snip
-    tesseract.TessBaseAPIDetectOS.argtypes = [base_api, POINTER(OSResults)]
-    tesseract.TessBaseAPIDetectOS.restype = c_bool
-    # ... /snip
+import cffi  # requires "pip install cffi"
 
-def get_orientation(tesseract, leptonica, api, path, mode=0):
-    tesseract.TessBaseAPISetPageSegMode(api, mode)
-    pix = leptonica.pixRead(path)
-    tesseract.TessBaseAPISetImage2(api, pix)
-    osr = OSResults()
-    it = tesseract.TessBaseAPIDetectOS(api, byref(osr))
+ffi = cffi.FFI()
+ffi.cdef("""
+struct Pix;
+typedef struct Pix PIX;
+PIX * pixRead ( const char *filename );
+char * getLeptonicaVersion (  );
 
-    if it and osr:
-        orientation, direction, line_order = c_int(), c_int(), c_int()
-        skew = c_float()
+typedef struct TessBaseAPI TessBaseAPI;
+typedef int BOOL;
 
-        tesseract.TessPageIteratorOrientation(
-            it, byref(orientation), byref(direction), byref(line_order),
-            byref(skew))
+const char* TessVersion();
 
-        print('%s: %s' % (path, osr.best_orientation_id))
-        print('confidence: %s' % osr.best_oconfidence)
+TessBaseAPI* TessBaseAPICreate();
+int TessBaseAPIInit3(TessBaseAPI* handle, const char* datapath, const char* language);
+
+void TessBaseAPISetImage2(TessBaseAPI* handle, struct Pix* pix);
+
+BOOL   TessBaseAPIDetectOrientationScript(TessBaseAPI* handle, char** best_script_name, 
+                                                            int* best_orientation_deg, float* script_confidence, 
+                                                            float* orientation_confidence);
+""")
+
+libtess = ffi.dlopen(PATH_TO_LIBTESS)
+from ctypes.util import find_library
+liblept = ffi.dlopen(find_library('lept'))
+
+ffi.string(libtess.TessVersion())
+
+ffi.string(liblept.getLeptonicaVersion())
+
+api = libtess.TessBaseAPICreate()
+
+libtess.TessBaseAPIInit3(api, ffi.NULL, ffi.NULL)
+
+pix = liblept.pixRead('mono.png'.encode())
+
+libtess.TessBaseAPISetImage2(api, pix)
+
+script_name = ffi.new('char **')
+orient_deg = ffi.new('int *')
+script_conf = ffi.new('float *')
+orient_conf = ffi.new('float *')
+libtess.TessBaseAPIDetectOrientationScript(api, script_name, orient_deg, script_conf, orient_conf)
+
+ffi.string(script_name[0])
+
+print(orient_deg[0])
+print(script_conf[0])
+print(orient_conf[0])
+
 ```
 
 # Example using the C-API in a C program
