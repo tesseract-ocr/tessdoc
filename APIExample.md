@@ -179,7 +179,7 @@ g++ -o myprogram myprogram.cpp -I/home/nick/local/include/tesseract -L/home/nick
 
 Tesseract-ocr from version 3.02.02 provide C-API. This enable to [use tesseract-ocr shared library in python](https://github.com/tesseract-ocr/tesseract/blob/master/contrib/tesseract-c_api-demo.py) (and other languages that can use C libraries):
 
-```
+```python
 import os
 import ctypes
 
@@ -210,7 +210,8 @@ print result_text
 Example of passing python file object to C-API can be found at [pastebin](http://pastebin.com/yDTkNfNm).
 
 Example of extracting orientation from Tesseract 4.0:
-```
+
+```python
 # /usr/bin/env python3
 # coding: utf-8
 
@@ -274,7 +275,7 @@ print(orient_conf[0])
 
 The C-API can of course also be used by regular C programs, as in this very basic example.
 
-```
+```c
 #include <stdio.h>
 #include <allheaders.h>
 #include <capi.h>
