@@ -383,21 +383,25 @@ sudo make training-install
 brew install automake autoconf
 brew install autoconf-archive
 brew install pkgconfig
+brew install icu4c
 brew install leptonica
 brew install gcc
 ```
 
 ## Compile
 
-As of November 2016, the build is broken with clang (error on use of `-fopenmp`). These instructions use gcc-6.
+As of January 2017, the clang builds but OpenMP will only use a single thread, reducing performance. For best results, use gcc.
 
-```
+The exact values of ``CPPFLAGS`` and ``LDFLAGS`` can be read from ``brew info icu4c``.
+
+```bash
 git clone https://github.com/tesseract-ocr/tesseract/
 cd tesseract
 ./autogen.sh
-./configure CC=gcc-6 CXX=g++-6
+./configure CC=gcc-6 CXX=g++-6 CPPFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib
 make -j
-sudo make install
+sudo make install  # if desired
+make training
 ```
 
 ### Errors
