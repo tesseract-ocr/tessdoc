@@ -108,7 +108,7 @@ make install
 ```
 
 
-## Video representation of the Compiling process for Tesseract 4.0 and Liptonica 1.7.1
+## Video representation of the Compiling process for Tesseract 4.0 and Liptonica 1.7.1 on Ubuntu 16.xx
 
   * Video [Build from Source Leptonica 1.7.4](https://www.youtube.com/watch?v=vOdnt2h1U8U)
   * Video [Build from Source Tesseract-OCR 4.0](https://www.youtube.com/watch?v=WZLJucXZy-g)
