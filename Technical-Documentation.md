@@ -58,5 +58,3 @@ Documentation of tesseract generated from source code by [doxygen](http://www.do
   * [Report on the comparison of Tesseract and ABBYY FineReader OCR engines](http://lib.psnc.pl/dlibra/docmetadata?id=358&from=publication&showContent=true) by Heliński, Kmieciak, and Parkoła
   * [The hOCR Embedded OCR Workflow and Output Format](https://github.com/kba/hocr-spec/) (hOCR specification)
   * [Text Detection on Nokia N900 Using Stroke Width Transform](https://sites.google.com/site/roboticssaurav/strokewidthnokia) (with source code)
-  * Video [Build from Source Leptonica 1.7.4](https://www.youtube.com/watch?v=vOdnt2h1U8U)
-  * Video [Build from Source Tesseract-OCR 4.0](https://www.youtube.com/watch?v=WZLJucXZy-g)
