@@ -68,7 +68,7 @@ that enables the code to still work, however, not on big-endian hardware!
 The initial implementation lacks the following:
 
 *   Big-endian support. The swaps are missing from the (De)Serialize methods of
-    the new neural network code.
+    the new neural network code. See the related [issue](https://github.com/tesseract-ocr/tesseract/issues/518) for more information.
 *   There is a C++ implementation if the hardware does not have SSE and/or AVX,
     but the code could benefit from SIMD implementations for other hardware,
     such as ARM. See the new `arch` directory for where to insert the code.
