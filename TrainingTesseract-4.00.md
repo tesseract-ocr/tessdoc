@@ -30,7 +30,7 @@ complex languages however, it may actually be *faster* than base Tesseract.
 
 Neural networks require significantly more training data and train *a lot*
 slower than base Tesseract. For Latin-based languages, the existing model data
-provided has been trained on about 400000 textlines spanning about 4500 fonts.
+provided has been trained on about [400000 textlines spanning about 4500 fonts](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951).
 For other scripts, not so many fonts are available, but they have still been
 trained on a similar number of textlines. Instead of taking a few minutes to a
 couple of hours to train, Tesseract 4.00 takes a few *days* to a couple of
