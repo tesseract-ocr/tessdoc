@@ -14,6 +14,8 @@ Please add information here.
 
 ## Binaries for Windows
 
+https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows
+
 ### Old Downloads
 
 [Downloads Archive on SourceForge](http://sourceforge.net/projects/tesseract-ocr-alt/files/).
