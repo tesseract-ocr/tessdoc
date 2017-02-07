@@ -134,6 +134,11 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 **!!! IMPORTANT !!!** To use Tesseract in your application (to include tess or to link it into your app) see this very simple example https://github.com/tesseract-ocr/tesseract/wiki/User-App-Example.
 
+#### Build the latest library
+
+1. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`.
+2. Run `cppan --build pvt.cppan.demo.google.tesseract.tesseract-master`.
+
 #### Build training tools
 
 Today it is possible to build a full set of tess training tools on Windows with Visual Studio.
