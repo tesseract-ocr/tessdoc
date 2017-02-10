@@ -28,10 +28,13 @@ Table of Contents
   * Enable AVX / SSE4.1 when the target machine support them.
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
-  * Added new C API for detecting orientation and script, removed old one.
   * Removed the 'Cube' engine from the codebase.
   * Improved  multi-page TIFF handling.
   * Added option to build Tesseract with CMake build system.
+
+## To be released as V3.05 - in Feb 2017 ?
+  * Added new C API for detecting orientation and script, removed old one.
+
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
   * Added OSD renderer for psm 0. Works for single page and multi-page images.
