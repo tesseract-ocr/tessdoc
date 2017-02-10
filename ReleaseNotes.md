@@ -20,6 +20,7 @@ Table of Contents
 
 
 # IN DEVELOPMENT
+## To be release as 4.00 - probably in 2017/Q4
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * Added new neural network system based on LSTMs, with major accuracy gains.
   * Added LSTM models+lang models to [101 languages](https://github.com/tesseract-ocr/tessdata).
