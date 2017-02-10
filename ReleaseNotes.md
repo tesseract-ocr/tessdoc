@@ -39,12 +39,12 @@ Table of Contents
   * text2image tool - Enable all OpenType ligatures available in a font. This feature requires Pango 1.38 or newer.
   * Training tools - Replaced asserts with tprintf() and exit(1).
   * Fixed Cygwin compatibility.
-  * Implement CPPAN support for easy Windows building.
+  * Implemented CPPAN support for easy Windows building.
   * improved multipage tiff processing.
   * Improved the embedded pdf font (pdf.ttf).
-  * Enable selection of OCR engine mode from command.
+  * Enable selection of OCR engine mode from command line.
   * Changed tesseract command line parameter '-psm' to '--psm'.
-  * Added new C API for detecting orientation and script, removed old one.
+  * Added new C API for orientation and script detection, removed the old one.
   * Increased minimum autoconf version to 2.59.
   * Removed dead code.
   * Fixed many compiler warning.
