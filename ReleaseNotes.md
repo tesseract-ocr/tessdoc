@@ -49,7 +49,7 @@ Table of Contents
   * Fixed some issues with the 'Cube' OCR engine. 
   * Fixed some openCL issues.
   * Added option to build Tesseract with CMake build system.
-  * Implemented CPPAN support for easy Windows building.
+  * Implemented [CPPAN](https://github.com/cppan) support for easy Windows building.
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
   * Added OSD renderer for psm 0. Works for single page and multi-page images.
