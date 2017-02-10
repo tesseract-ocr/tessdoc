@@ -18,7 +18,6 @@ Table of Contents
   * [Tesseract release notes Jul 18, 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
   * [Tesseract release notes May 15, 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
 
-
 # IN DEVELOPMENT
 ## To be released as V4.00 - probably in 2017/H2
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
@@ -32,7 +31,7 @@ Table of Contents
   * Improved  multi-page TIFF handling.
 
 ## To be released as V3.05 - in Feb 2017 ?
-  * Made some fine tuning to the HOCR output.
+  * Made some fine tuning to the hOCR output.
   * Added TSV as another optional output format.
   * Fixed ABI break introduced in 3.04.00 with the AnalyseLayout() method.
   * text2image tool - Enable all OpenType ligatures available in a font. This feature requires Pango 1.38 or newer.
