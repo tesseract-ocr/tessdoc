@@ -30,7 +30,6 @@ Table of Contents
   * Fixes to trainingdata rendering.
   * Removed the 'Cube' engine from the codebase.
   * Improved  multi-page TIFF handling.
-  * Added option to build Tesseract with CMake build system.
 
 ## To be released as V3.05 - in Feb 2017 ?
   * Made some fine tuning to the HOCR output.
@@ -39,7 +38,6 @@ Table of Contents
   * text2image tool - Enable all OpenType ligatures available in a font. This feature requires Pango 1.38 or newer.
   * Training tools - Replaced asserts with tprintf() and exit(1).
   * Fixed Cygwin compatibility.
-  * Implemented CPPAN support for easy Windows building.
   * improved multipage tiff processing.
   * Improved the embedded pdf font (pdf.ttf).
   * Enable selection of OCR engine mode from command line.
@@ -51,6 +49,8 @@ Table of Contents
   * Fixed memory and resource leaks.
   * Fixed some issues with the 'Cube' OCR engine. 
   * Fixed some openCL issues.
+  * Added option to build Tesseract with CMake build system.
+  * Implemented CPPAN support for easy Windows building.
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
   * Added OSD renderer for psm 0. Works for single page and multi-page images.
