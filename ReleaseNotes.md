@@ -38,7 +38,7 @@ Table of Contents
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
   * Added OSD renderer for psm 0. Works for single page and multi-page images.
-  * Improve tesstrain.sh script.
+  * Improved tesstrain.sh script.
   * Simplify build and run of ScrollView.
   * Improved PDF output for OS X Preview utility.
   * INCOMPATIBLE fix to hOCR line height information - commit [134ebc3](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
