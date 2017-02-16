@@ -1,7 +1,7 @@
 * [Special Data Files](#special-data-files)
 * [Data Files for Version 4.00](#data-files-for-version-400)
-* [Data Files for Version 3.04](#data-files-for-version-304)
-* [Cube Data Files for Version 3.04](#cube-data-files-for-version-304)
+* [Data Files for Version 3.04/3.05](#data-files-for-version-304305)
+* [Cube Data Files for Version 3.04/3.05](#cube-data-files-for-version-304305)
 * [Fraktur Data Files](#fraktur-data-files)
 * [Data Files for Version 3.02](#data-files-for-version-302)
 * [Data Files for Version 2.0x](#data-files-for-version-20x)
@@ -125,7 +125,7 @@ uzb_cyrl | Uzbek - Cyrilic | [uzb_cyrl.traineddata](https://github.com/tesseract
 vie | Vietnamese | [vie.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/vie.traineddata)
 yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/yid.traineddata)
 
-## Data Files for Version 3.04
+## Data Files for Version 3.04/3.05
 
 Lang Code | Language | 3.04 traineddata
 :-------- | :------- | :---------------
@@ -232,7 +232,7 @@ uzb_cyrl | Uzbek - Cyrilic | [uzb_cyrl.traineddata](https://github.com/tesseract
 vie | Vietnamese | [vie.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/vie.traineddata)
 yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/yid.traineddata)
 
-## Cube Data Files for Version 3.04
+## Cube Data Files for Version 3.04/3.05
 
 Hindi:
 [hin.cube.bigrams](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.bigrams), 
