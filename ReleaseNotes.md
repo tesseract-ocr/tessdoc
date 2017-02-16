@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 
 Table of Contents
 =================
+  * [Tesseract release notes Feb 16 2017 - V3.05.00](#tesseract-release-notes-feb-16-2017---v30500)
   * [Tesseract release notes Feb 16 2016 - V3.04.01](#tesseract-release-notes-feb-16-2016---v30401)
   * [Tesseract release notes July 11 2015 - V3.04.00](#tesseract-release-notes-july-11-2015---v30400)
   * [Tesseract release notes Feb 4 2014 - V3.03(rc1)](#tesseract-release-notes-feb-4-2014---v303rc1)
@@ -30,7 +31,7 @@ Table of Contents
   * Removed the 'Cube' engine from the codebase.
   * Improved  multi-page TIFF handling.
 
-## To be released as V3.05 - in Feb 2017 ?
+# Tesseract release notes Feb 16 2017 - V3.05.00
   * Made some fine tuning to the hOCR output.
   * Added TSV as another optional output format.
   * Fixed ABI break introduced in 3.04.00 with the AnalyseLayout() method.
