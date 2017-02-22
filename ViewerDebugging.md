@@ -17,6 +17,9 @@ The piccolo libraries are available from: http://search.maven.org/#search|ga|1|g
 
 All these jar files need to go in a single directory. Tesseract learns the location either through the environment variable SCROLLVIEW\_PATH or a compiler define of the same name.
 
+Alternative download link by Dmitri Silaev is available from http://www.4shared.com/zip/FnP8RSu0/tess_debug_3_02.html.
+Copy piccolo-1.2.jar, piccolox-1.2.jar and ScrollView.jar from the downloaded package to C:\Tesseract-OCR\java.
+
 **On Linux:**
 
   * Copy piccolo2d-core-3.0.jar and piccolo2d-extras-3.0.jar to tesseract/java.
