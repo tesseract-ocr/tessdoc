@@ -38,6 +38,10 @@
       --list-langs          List available languages for tesseract engine.
       --print-parameters    Print tesseract parameters to stdout.
 
+## OCR only first page of a multi-page tiff
+
+  Use the config variable as part of command `-c tessedit_page_number=0 ` 
+
 ## Simplest Invocation to OCR an image
 
     tesseract imagename outputbase
