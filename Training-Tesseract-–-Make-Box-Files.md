@@ -107,8 +107,8 @@ Tif/Box file pairs are available in the [Downloads Archive on SourceForge](http:
 [Dutch](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.nld.tar.gz/download)
 [English](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.eng.tar.gz/download)
 [French](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.fra.tar.gz/download)
-[Gernan](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.deu.tar.gz/download)
-[Gernan-fraktur](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.deu-f.tar.gz/download)
+[German](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.deu.tar.gz/download)
+[German-fraktur](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.deu-f.tar.gz/download)
 [Italian](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.ita.tar.gz/download)
 [Spanish](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.spa.tar.gz/download)
 
