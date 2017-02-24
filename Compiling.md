@@ -80,7 +80,7 @@ sudo make training-install
 
 Build of training tools is not available if you do not have necessary dependencies (pay attention to messages from ./configure script).
 
-For visual debugging, you also have to build ScrollView.jar. In addition, it is necessary to set the environment variable SCROLLVIEW_PATH to the directory with ScrollView.jar. 
+For visual debugging, you also have to build [ScrollView.jar](ViewerDebugging). In addition, it is necessary to set the environment variable SCROLLVIEW_PATH to the directory with [ScrollView.jar](ViewerDebugging). 
 
 ```
 make ScrollView.jar
