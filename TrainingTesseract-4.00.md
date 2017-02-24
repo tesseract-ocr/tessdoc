@@ -97,7 +97,7 @@ make training
 sudo make training-install
 ```
 
-It is also useful, but not required, to build scrollview:
+It is also useful, but not required, to build [ScrollView.jar](ViewerDebugging):
 
 ```
 make ScrollView.jar
@@ -327,8 +327,8 @@ information on the layers of the network. In the special case of
 continuing to the next iteration, but for all others it just continues and draws
 information at the frequency requested.
 
-**NOTE that to use --debug_interval > 0 you must build scrollview as well as
-the other training tools.** See
+**NOTE that to use --debug_interval > 0 you must build 
+[ScrollView.jar](ViewerDebugging) as well as the other training tools.** See
 [Building the Training Tools](#building-the-training-tools)
 
 The text debug information includes the truth text, the recognized text, the
