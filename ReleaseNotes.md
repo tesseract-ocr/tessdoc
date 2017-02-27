@@ -40,7 +40,7 @@ Table of Contents
   * Fixed Cygwin compatibility.
   * Improved multipage tiff processing.
   * Improved the embedded pdf font (pdf.ttf).
-  * Enable selection of OCR engine mode from command line.
+  * Enable selection of OCR engine mode from the command line.
   * Changed tesseract command line parameter '-psm' to '--psm'.
   * Added new C API for orientation and script detection, removed the old one.
   * Increased minimum autoconf version to 2.59.
