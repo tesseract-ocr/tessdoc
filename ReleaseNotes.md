@@ -20,7 +20,7 @@ Table of Contents
   * [Tesseract release notes May 15, 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
 
 # IN DEVELOPMENT
-## To be released as V4.00 - probably in 2017/H2
+## To be released as V4.00 - hopefully in 2017/H2
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * Added new neural network system based on LSTMs, with major accuracy gains.
   * Added LSTM models+lang models to [101 languages](https://github.com/tesseract-ocr/tessdata).
