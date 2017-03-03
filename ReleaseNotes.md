@@ -26,10 +26,10 @@ Table of Contents
   * Added LSTM models+lang models to [101 languages](https://github.com/tesseract-ocr/tessdata).
   * Enable OpenMP support.
   * Enable AVX / SSE4.1 when the target machine support them.
+  * Improved  multi-page TIFF handling.
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
   * Removed the 'Cube' engine from the codebase.
-  * Improved  multi-page TIFF handling.
 
 # Tesseract release notes Feb 16 2017 - V3.05.00
   * Made some fine tuning to the hOCR output.
