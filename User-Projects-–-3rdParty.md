@@ -29,6 +29,8 @@
   * [Free OCR](http://www.free-ocr.com/)
   * [i2OCR](http://www.i2ocr.com/)
   * [Indic-OCR OCR Service](https://indic-ocr.github.io/ocrservice/)  An online OCR service for Indian languages 
+  * [Obserbot](https://obserbot.com)  Online OCR, dictionary and translation services
+
 
 ## Mobile
 
