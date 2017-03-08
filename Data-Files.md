@@ -337,7 +337,7 @@ vie | Vietnamese | [tesseract-ocr-3.02.vie.tar.gz](https://sourceforge.net/proje
 Lang Code | Language | 2.0x traineddata
 :-------- | :------- | :----------------
 deu | German | [tesseract-2.00.deu.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.00.deu.tar.gz/download)
-deu-f | _German - Fraktur | [tesseract-2.01.deu-f.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.01.deu-f.tar.gz/download)
+deu-f | German - Fraktur | [tesseract-2.01.deu-f.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.01.deu-f.tar.gz/download)
 eng | English | [tesseract-2.00.eng.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.00.eng.tar.gz/download)
 eus | Basque | [tesseract-2.04-eus.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.04.eus.tar.gz/download)
 fra | French | [tesseract-2.00.fra.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.00.fra.tar.gz/download)
