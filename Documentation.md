@@ -1,1 +1,3 @@
-[Technical Documentation](https://github.com/tesseract-ocr/tesseract/wiki/Technical-Documentation)
+* [Technical Documentation](https://github.com/tesseract-ocr/tesseract/wiki/Technical-Documentation)
+
+* [Manual Pages - Source Files](https://github.com/tesseract-ocr/tesseract/tree/master/doc)
