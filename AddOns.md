@@ -78,10 +78,6 @@ Platform support depends on used language and experience of user.
   * **Persian (Farsi)**: https://github.com/reza1615/PersianOcr
   * **7 segments font**: https://github.com/arturaugusto/display_ocr/tree/master/letsgodigital
 
-## Commercial Training Services
-
-  * http://www.tesseract-training.com/
-
 ## Ports
 
   * [Project Naptha](http://projectnaptha.com/)
