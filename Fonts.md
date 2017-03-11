@@ -59,3 +59,4 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 ## Links to other sources of fonts
 
 * https://fontlibrary.org/en (GFS Bodoni)
+* http://www.orbitals.com/self/ligature/ligature.htm (Wyld)
