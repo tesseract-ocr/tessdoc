@@ -57,3 +57,5 @@ the required fonts can be installed like that:
 The installed fonts are shown by the command `fc-list`. See also the [Debian wiki](https://wiki.debian.org/Fonts).
 
 ## Links to other sources of fonts
+
+* https://fontlibrary.org/en (GFS Bodoni)
