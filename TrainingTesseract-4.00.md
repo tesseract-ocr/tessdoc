@@ -193,7 +193,7 @@ as a WordStr string, *should be ordered left-to-right.* In other words the
 network is going to learn from left-to-right regardless of the language, and
 the right-to-left/bidi handling happens at a higher level inside Tesseract.
 
-These instructions only cover the case of rendering from fonts.
+These instructions only cover the case of rendering from fonts, so the [needed fonts](Fonts) must be installed first.
 
 The setup for running [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) is the
 same as for base Tesseract. Note that it is beneficial to have more training text
