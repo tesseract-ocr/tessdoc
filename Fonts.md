@@ -61,5 +61,6 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * https://fontlibrary.org/en (GFS Bodoni)
 * https://fonts.google.com/
 * http://scholarsfonts.net/ (Cardo)
+* http://unifraktur.sourceforge.net/maguntia.html (UnifrakturMaguntia)
 * http://www.ctan.org/tex-archive/fonts (GFS Bodoni)
 * http://www.orbitals.com/self/ligature/ligature.htm (Wyld)
