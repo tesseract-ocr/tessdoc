@@ -54,4 +54,6 @@ the required fonts can be installed like that:
     # VERTICAL_FONTS (todo)
     # VIETNAMESE_FONTS (todo)
 
+The installed fonts are shown by the command `fc-list`. See also the [Debian wiki](https://wiki.debian.org/Fonts).
+
 ## Links to other sources of fonts
