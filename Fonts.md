@@ -38,6 +38,8 @@ the required fonts can be installed like that:
     apt-get install fonts-dejavu gsfonts ttf-mscorefonts-installer
     # MALAYALAM_FONTS
     # NEOLATIN_FONTS
+    apt-get install fonts-ebgaramond fonts-gfs-didot fonts-gfs-didot-classic
+    # Some more fonts are still missing.
     # NORTH_AMERICAN_ABORIGINAL_FONTS
     # OLD_GEORGIAN_FONTS
     # ORIYA_FONTS
