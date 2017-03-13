@@ -56,11 +56,20 @@ the required fonts can be installed like that:
 
 The installed fonts are shown by the command `fc-list`. See also the [Debian wiki](https://wiki.debian.org/Fonts).
 
-## Links to other sources of fonts
+## Links
+
+### Sources of (mostly free) fonts
 
 * https://fontlibrary.org/en (GFS Bodoni)
 * https://fonts.google.com/
 * http://scholarsfonts.net/ (Cardo)
 * http://unifraktur.sourceforge.net/maguntia.html (UnifrakturMaguntia)
 * http://www.ctan.org/tex-archive/fonts (GFS Bodoni)
+* http://www.steffmann.de/wordpress/test-2/
 * http://www.orbitals.com/self/ligature/ligature.htm (Wyld)
+
+### More information on fonts
+
+* https://en.wikipedia.org/wiki/Fraktur
+* http://www.steffmann.de/wordpress/ (German)
+
