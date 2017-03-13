@@ -71,5 +71,5 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 ### More information on fonts
 
 * https://en.wikipedia.org/wiki/Fraktur
+* http://www.orbitals.com/self/ligature/ligature.htm 18th Century Ligatures and Fonts
 * http://www.steffmann.de/wordpress/ (German)
-
