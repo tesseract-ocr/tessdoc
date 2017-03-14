@@ -87,6 +87,7 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * https://fonts.google.com/
 * http://iginomarini.com/fell/the-revival-fonts/
 * http://scholarsfonts.net/ (Cardo)
+* http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=FontDownloads (SIL Fonts)
 * http://www.ctan.org/tex-archive/fonts (GFS Bodoni)
 * http://www.steffmann.de/wordpress/test-2/
 
