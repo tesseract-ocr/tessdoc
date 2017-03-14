@@ -4,6 +4,19 @@ Tesseract training can use images made from text which was rendered with a list 
 
 The required fonts are defined in training/language-specific.sh.
 
+## Find Fonts
+
+To find fonts already installed on your system  which will render a given training text, you can use the following command (change the language code and directory locations to match your setup). fontslist.txt will provide text that can be used in training/language-specific.sh.
+
+```
+text2image --find_fonts \
+--fonts_dir /usr/share/fonts \
+--text ../langdata/hin/hin.training_text \
+--min_coverage .9  \
+--outputbase ../langdata/hin/hin \
+|& grep raw | sed -e 's/ :.*/" \\/g'  | sed -e 's/^/  "/' >../langdata/hin/fontslist.txt
+```
+
 ## Font installation
 
 ### Debian
