@@ -16,6 +16,7 @@ text2image --find_fonts \
 --outputbase ../langdata/hin/hin \
 |& grep raw | sed -e 's/ :.*/" \\/g'  | sed -e 's/^/  "/' >../langdata/hin/fontslist.txt
 ```
+The above will not work for Fraktur fonts, it will identify all Latin fonts also. Review the generated images and choose appropriate fonts.
 
 ## Font installation
 
