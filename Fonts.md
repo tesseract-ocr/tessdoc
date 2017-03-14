@@ -19,7 +19,8 @@ the required fonts can be installed like that:
     # BURMESE_FONTS (todo)
     # CHI_SIM_FONTS (todo)
     # CHI_TRA_FONTS (todo)
-    # DEVANAGARI_FONTS (See links below)
+    # DEVANAGARI_FONTS ( Also see external links below)
+      apt-get install fonts-deva
     # EARLY_LATIN_FONTS (todo)
     # FRAKTUR_FONTS (todo)
     # GEORGIAN_FONTS (todo)
