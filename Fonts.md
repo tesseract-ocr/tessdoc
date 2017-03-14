@@ -33,8 +33,10 @@ the required fonts can be installed like that:
     # BURMESE_FONTS (todo)
     # CHI_SIM_FONTS (todo)
     # CHI_TRA_FONTS (todo)
-    # DEVANAGARI_FONTS ( Also see external links below)
-      apt-get install fonts-deva
+
+    # DEVANAGARI_FONTS (see also external links below)
+    apt-get install fonts-deva
+
     # EARLY_LATIN_FONTS (todo)
     # FRAKTUR_FONTS (todo)
     # GEORGIAN_FONTS (todo)
@@ -48,11 +50,15 @@ the required fonts can be installed like that:
     # KURDISH_FONTS (todo)
     # KYRGYZ_FONTS (todo)
     # LAOTHIAN_FONTS (todo)
+
     # LATIN_FONTS
     apt-get install fonts-dejavu gsfonts ttf-mscorefonts-installer
+
     # MALAYALAM_FONTS (todo)
+
     # NEOLATIN_FONTS (still incomplete)
     apt-get install fonts-ebgaramond fonts-gfs-didot fonts-gfs-didot-classic fonts-junicode
+
     # NORTH_AMERICAN_ABORIGINAL_FONTS (todo)
     # OLD_GEORGIAN_FONTS (todo)
     # ORIYA_FONTS (todo)
@@ -75,22 +81,16 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 
 ### Sources of (mostly free) fonts
 
+#### Latin Fonts
+
 * https://fontlibrary.org/en (GFS Bodoni)
 * https://fonts.google.com/
 * http://iginomarini.com/fell/the-revival-fonts/
 * http://scholarsfonts.net/ (Cardo)
-* http://unifraktur.sourceforge.net/maguntia.html (UnifrakturMaguntia)
 * http://www.ctan.org/tex-archive/fonts (GFS Bodoni)
 * http://www.steffmann.de/wordpress/test-2/
-* http://www.orbitals.com/self/ligature/ligature.htm (Wyld)
 
-### More information on fonts
-
-* https://en.wikipedia.org/wiki/Fraktur
-* http://www.orbitals.com/self/ligature/ligature.htm 18th Century Ligatures and Fonts
-* http://www.steffmann.de/wordpress/ (German)
-
-### Devanagari Fonts
+#### Devanagari Fonts
 
 * [Nakula](http://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
 * [Sahadeva](http://bombay.indology.info/software/fonts/devanagari/sahadeva.ttf)
@@ -106,10 +106,18 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * [AksharayoginiItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiItalic.ttf)
 * [AksharayoginiBoldItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiBoldItalic.ttf)
 
-### Fraktur Fonts
+#### Fraktur Fonts
 
+* http://unifraktur.sourceforge.net/maguntia.html (UnifrakturMaguntia)
+* http://www.orbitals.com/self/ligature/ligature.htm (Wyld)
 * https://www.fontyukle.net/de/1,Walbaum
 * http://de.ffonts.net/Walbaum-Fraktur.font.download
 * http://www.1001fonts.com/fraktur-fonts.html
 * http://www.dafont.com/fette-unz-fraktur.font
 * http://www.1001freefonts.com/fette_fraktur.font
+
+### More information on fonts
+
+* https://en.wikipedia.org/wiki/Fraktur
+* http://www.orbitals.com/self/ligature/ligature.htm 18th Century Ligatures and Fonts
+* http://www.steffmann.de/wordpress/ (German)
