@@ -19,7 +19,7 @@ the required fonts can be installed like that:
     # BURMESE_FONTS (todo)
     # CHI_SIM_FONTS (todo)
     # CHI_TRA_FONTS (todo)
-    # DEVANAGARI_FONTS (todo)
+    # DEVANAGARI_FONTS (See links below)
     # EARLY_LATIN_FONTS (todo)
     # FRAKTUR_FONTS (todo)
     # GEORGIAN_FONTS (todo)
@@ -74,3 +74,19 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * https://en.wikipedia.org/wiki/Fraktur
 * http://www.orbitals.com/self/ligature/ligature.htm 18th Century Ligatures and Fonts
 * http://www.steffmann.de/wordpress/ (German)
+
+### Devanagari Fonts
+
+* [Nakula](http://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
+* [Sahadeva](http://bombay.indology.info/software/fonts/devanagari/sahadeva.ttf)
+* [Chandas](http://www.sanskritweb.net/cakram/chandas.ttf)
+* [Uttara](http://www.sanskritweb.net/cakram/uttara.ttf)
+* [Siddhanta](https://sites.google.com/site/bayaryn/siddhanta-variations.zip?attredirects=0)
+* [Santipur OT](http://www.sanskritweb.net/itrans/santipurot.zip)
+* [Sanskrit2003](http://www.sanskritweb.net/itrans/sanskrit2003.zip)
+* [AnnapurnaSIL](http://software.sil.org/downloads/d/annapurna/AnnapurnaSIL-1.201.zip)
+* [Aksharayogini2](http://aksharyogini.sudhanwa.com/download/Aksharyogini2Normal.ttf)
+* [Aksharayogini](http://aksharyogini.sudhanwa.com/download/AksharyoginiNormal.ttf)
+* [AksharayoginiBold](http://aksharyogini.sudhanwa.com/download/AksharyoginiBold.ttf)
+* [AksharayoginiItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiItalic.ttf)
+* [AksharayoginiBoldItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiBoldItalic.ttf)
