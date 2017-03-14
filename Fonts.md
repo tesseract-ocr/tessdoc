@@ -91,3 +91,11 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * [AksharayoginiBold](http://aksharyogini.sudhanwa.com/download/AksharyoginiBold.ttf)
 * [AksharayoginiItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiItalic.ttf)
 * [AksharayoginiBoldItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiBoldItalic.ttf)
+
+### Fraktur Fonts
+
+* https://www.fontyukle.net/de/1,Walbaum
+* http://de.ffonts.net/Walbaum-Fraktur.font.download
+* http://www.1001fonts.com/fraktur-fonts.html
+* http://www.dafont.com/fette-unz-fraktur.font
+* http://www.1001freefonts.com/fette_fraktur.font
