@@ -181,6 +181,24 @@ cppan --build .
 
 You'll see a solution link appeared in the root directory of Tesseract.
 
+## Building for x64 platform
+
+If you're building with cppan+cmake, run cmake as follows:
+```
+mkdir win64 && cd win64
+cppan ..
+cmake .. -G Visual Studio 14 2015 Win64
+```
+
+If you're building with cppan, edit cppan.yml and uncomment this line:
+```
+#generator: Visual Studio 14 2015 Win64 -> generator: Visual Studio 14 2015 Win64
+```
+
+Then run 'cppan --generate .' - it will create a solution link for you.
+
+(For VS2017, use '15 2017' instead of '14 2015'.)
+
 ## 3.04.01
 
 If you have Visual Studio 2015, checkout the repository at [Leptonica 1.73 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/VS2015_Tesseract) and click on build_tesseract.bat. After that you still need to download the language packs.
