@@ -5,19 +5,19 @@ This page keeps the most up-to-date release notes.
 
 Table of Contents
 =================
-  * [Tesseract release notes Feb 16 2017 - V3.05.00](#tesseract-release-notes-feb-16-2017---v30500)
-  * [Tesseract release notes Feb 16 2016 - V3.04.01](#tesseract-release-notes-feb-16-2016---v30401)
-  * [Tesseract release notes July 11 2015 - V3.04.00](#tesseract-release-notes-july-11-2015---v30400)
-  * [Tesseract release notes Feb 4 2014 - V3.03(rc1)](#tesseract-release-notes-feb-4-2014---v303rc1)
-  * [Tesseract release notes Oct 23 2012 - V3.02.02](#tesseract-release-notes-oct-23-2012---v30202)
-  * [Tesseract release notes Oct 21 2011 - V3.01](#tesseract-release-notes-oct-21-2011---v301)
-  * [Tesseract release notes Sep 30 2010 - V3.00](#tesseract-release-notes-sep-30-2010---v300)
-  * [Tesseract release notes June 30 2009 - V2.04](#tesseract-release-notes-june-30-2009---v204)
-  * [Tesseract release notes April 22 2008 - V2.03](#tesseract-release-notes-april-22-2008---v203)
-  * [Tesseract release notes April 21 2008 - V2.02](#tesseract-release-notes-april-21-2008---v202)
-  * [Tesseract release notes Aug 30, 2007 - V2.01](#tesseract-release-notes-aug-30-2007---v201)
-  * [Tesseract release notes Jul 18, 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
-  * [Tesseract release notes May 15, 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
+  * [Feb 16 2017 - V3.05.00](#tesseract-release-notes-feb-16-2017---v30500)
+  * [Feb 16 2016 - V3.04.01](#tesseract-release-notes-feb-16-2016---v30401)
+  * [July 11 2015 - V3.04.00](#tesseract-release-notes-july-11-2015---v30400)
+  * [Feb 4 2014 - V3.03(rc1)](#tesseract-release-notes-feb-4-2014---v303rc1)
+  * [Oct 23 2012 - V3.02.02](#tesseract-release-notes-oct-23-2012---v30202)
+  * [Oct 21 2011 - V3.01](#tesseract-release-notes-oct-21-2011---v301)
+  * [Sep 30 2010 - V3.00](#tesseract-release-notes-sep-30-2010---v300)
+  * [June 30 2009 - V2.04](#tesseract-release-notes-june-30-2009---v204)
+  * [April 22 2008 - V2.03](#tesseract-release-notes-april-22-2008---v203)
+  * [April 21 2008 - V2.02](#tesseract-release-notes-april-21-2008---v202)
+  * [Aug 30, 2007 - V2.01](#tesseract-release-notes-aug-30-2007---v201)
+  * [Jul 18, 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
+  * [May 15, 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
 
 # IN DEVELOPMENT
 ## To be released as V4.00 - hopefully in 2017/H2
