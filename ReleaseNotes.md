@@ -50,7 +50,7 @@ Table of Contents
   * Fixed many compiler warning.
   * Fixed memory and resource leaks.
   * Fixed some issues with the 'Cube' OCR engine. 
-  * Fixed some openCL issues.
+  * Fixed some OpenCL issues.
   * Added option to build Tesseract with CMake build system.
   * Implemented [CPPAN](https://github.com/cppan) support for easy Windows building.
 
