@@ -195,7 +195,7 @@ If you're building with cppan, edit cppan.yml and uncomment this line:
 #generator: Visual Studio 14 2015 Win64 -> generator: Visual Studio 14 2015 Win64
 ```
 
-Then run 'cppan --generate .' - it will create a solution link for you.
+Then run `cppan --generate .` - it will create a solution link for you.
 
 (For VS2017, use '15 2017' instead of '14 2015'.)
 
