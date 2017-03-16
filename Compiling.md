@@ -199,9 +199,9 @@ Then run `cppan --generate .` - it will create a solution link for you.
 
 (For VS2017, use '15 2017' instead of '14 2015'.)
 
-## 3.04.01
+## 3.05
 
-If you have Visual Studio 2015, checkout the repository at [Leptonica 1.73 for Visual Studio 2015 which has the solution for Tesseract also] (https://github.com/peirick/VS2015_Tesseract) and click on build_tesseract.bat. After that you still need to download the language packs.
+If you have Visual Studio 2015, checkout the https://github.com/peirick/VS2015_Tesseract repository for [Visual Studio 2015 Projects for Tessearct and dependencies.](https://github.com/peirick/VS2015_Tesseract) and click on build_tesseract.bat. After that you still need to download the language packs.
 
 ## 3.03rc-1
 
