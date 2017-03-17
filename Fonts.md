@@ -43,7 +43,10 @@ the required fonts can be installed like that:
     # GREEK_FONTS (todo)
     # GUJARATI_FONTS (todo)
     # HEBREW_FONTS (todo)
+
     # JPN_FONTS (todo)
+    apt-get install fonts-noto-cjk fonts-japanese-mincho.ttf fonts-takao-gothic fonts-vlgothic
+
     # KANNADA_FONTS (todo)
     # KHMER_FONTS (todo)
     # KOREAN_FONTS (todo)
