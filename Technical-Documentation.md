@@ -39,3 +39,4 @@ Spain July 25, 2009. https://dl.acm.org/citation.cfm?id=1577804
   * [Report on the comparison of Tesseract and ABBYY FineReader OCR engines](http://lib.psnc.pl/dlibra/docmetadata?id=358&from=publication&showContent=true) by Heliński, Kmieciak, and Parkoła
   * [The hOCR Embedded OCR Workflow and Output Format](https://github.com/kba/hocr-spec/) (hOCR specification)
   * [Text Detection on Nokia N900 Using Stroke Width Transform](https://sites.google.com/site/roboticssaurav/strokewidthnokia) (with source code)
+* [Generic Text Recognition using Long Short-Term Memory Networks - Ph.D. Thesis](https://kluedo.ub.uni-kl.de/files/4353/PhD_Thesis_Ul-Hasan.pdf)
