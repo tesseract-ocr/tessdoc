@@ -116,12 +116,25 @@ Memory use can be controlled via the --max_image_MB command-line option, but
 you are likely to need at least 1GB of memory over and above what is taken by
 your OS.
 
+# Training Text Requirements
+
+For Latin-based languages, the existing model data
+provided has been trained on about [400000 textlines spanning about 4500 fonts](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951).
+For other scripts, not so many fonts are available, but they have still been
+trained on a similar number of textlines. 
+
+Note that it is beneficial to have more training text
+and make more pages though, as neural nets don't generalize as well and need to
+train on something similar to what they will be running on. If the target domain
+is severely limited, then all the dire warnings about needing a lot of training
+data may not apply, but the network specification may need to be changed.
+
 # Overview of Training Process
 
 The overall training process is similar to [training 3.04](TrainingTesseract)
 Conceptually the same:
 
-1.  Prepare training text.
+1.  [Prepare training text.](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951)
 1.  Render text to image + box file. (Or create hand-made box files for existing
     image data.)
 1.  Make unicharset file.
@@ -196,13 +209,9 @@ the right-to-left/bidi handling happens at a higher level inside Tesseract.
 These instructions only cover the case of rendering from fonts, so the [needed fonts](Fonts) must be installed first.
 
 The setup for running [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) is the
-same as for base Tesseract. Note that it is beneficial to have more training text
-and make more pages though, as neural nets don't generalize as well and need to
-train on something similar to what they will be running on. If the target domain
-is severely limited, then all the dire warnings about needing a lot of training
-data may not apply, but the network specification may need to be changed.
+same as for base Tesseract. Use `--linedata_only` option for LSTM training.
 
-Training data is created using [tesstrain.sh](Training-Tesseract-–-tesstrain.sh)
+Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh)
 as follows: Note that your fonts location may vary.
 
 ```
