@@ -2,6 +2,6 @@
 
 * [Browse source code on insight.io](https://www.insight.io/github.com/tesseract-ocr/tesseract)
 
-* [Manual Pages - Source Files](https://github.com/tesseract-ocr/tesseract/tree/master/doc)
+* [Manual Pages](http://manpages.ubuntu.com/manpages/zesty/man1/tesseract.1.html)
 
 * [Frequently Asked Questions](https://github.com/tesseract-ocr/tesseract/wiki/FAQ)
