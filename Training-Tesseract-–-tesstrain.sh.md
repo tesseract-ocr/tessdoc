@@ -1,6 +1,7 @@
-[tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain_utils.sh) is a script that automatically calls the appropriate programs to create a new training for a language.
+[tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain_utils.sh) is a script that automatically calls the appropriate programs to create a new training for a language. It uses various programs for training, so you need to build them with 'make training' before using it.
 
-It uses various programs for training, so you need to build them with 'make training' before using it.
+This page details the version used for training of 3.0x branch. For 4.0 LSTM training usage, please see https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00
+
 
 # Example usage
 
