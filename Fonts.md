@@ -93,19 +93,32 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 
 #### Devanagari Fonts
 
-* [Nakula](http://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
-* [Sahadeva](http://bombay.indology.info/software/fonts/devanagari/sahadeva.ttf)
-* [Chandas](http://www.sanskritweb.net/cakram/chandas.ttf)
-* [Uttara](http://www.sanskritweb.net/cakram/uttara.ttf)
-* [Siddhanta](https://sites.google.com/site/bayaryn/siddhanta-variations.zip?attredirects=0)
-* [Santipur OT](http://www.sanskritweb.net/itrans/santipurot.zip)
-* [Sanskrit2003](http://www.sanskritweb.net/itrans/sanskrit2003.zip)
-* [AnnapurnaSIL](http://software.sil.org/downloads/d/annapurna/AnnapurnaSIL-1.201.zip)
 * [Aksharayogini2](http://aksharyogini.sudhanwa.com/download/Aksharyogini2Normal.ttf)
-* [Aksharayogini](http://aksharyogini.sudhanwa.com/download/AksharyoginiNormal.ttf)
+* [AksharayoginiBoldItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiBoldItalic.ttf)
 * [AksharayoginiBold](http://aksharyogini.sudhanwa.com/download/AksharyoginiBold.ttf)
 * [AksharayoginiItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiItalic.ttf)
-* [AksharayoginiBoldItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiBoldItalic.ttf)
+* [Aksharayogini](http://aksharyogini.sudhanwa.com/download/AksharyoginiNormal.ttf)
+* [AnnapurnaSIL](http://software.sil.org/downloads/d/annapurna/AnnapurnaSIL-1.201.zip)
+* [CDAC-Surekh Bold](http://biharvidhanparishad.gov.in/Fonts/CDACSRBT.TTF)
+* [CDAC-Surekh Normal](http://biharvidhanparishad.gov.in/Fonts/CDACSRNT.TTF)
+* [CDAC-Yogesh Bold](http://biharvidhanparishad.gov.in/Fonts/CDACOTYGB.TTF)
+* [CDAC-Yogesh Italic](http://biharvidhanparishad.gov.in/Fonts/CDACYGIT.TTF)
+* [CDAC-Yogesh Normal](http://biharvidhanparishad.gov.in/Fonts/CDACOTYGN.TTF)
+* [Chandas](http://www.sanskritweb.net/cakram/chandas.ttf)
+* [Lohit Devanagari](https://releases.pagure.org/lohit/Lohit-Devanagari.ttf)
+* [Nakula](http://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
+* [Sahadeva](http://bombay.indology.info/software/fonts/devanagari/sahadeva.ttf)
+* [Sanskrit2003](http://www.sanskritweb.net/itrans/sanskrit2003.zip)
+* [Santipur OT](http://www.sanskritweb.net/itrans/santipurot.zip)
+* [Shobhika](https://github.com/Sandhi-IITBombay/Shobhika/releases/)
+* [Shree-DV0726-OT](http://biharvidhanparishad.gov.in/Fonts/SHREE-DV0726-OT.TTF)
+* [Siddhanta](https://sites.google.com/site/bayaryn/siddhanta-variations.zip?attredirects=0)
+* [Uttara](http://www.sanskritweb.net/cakram/uttara.ttf)
+* [Yashomudra Fonts](https://github.com/RajyaMarathiVikasSanstha/Yashomudra/tree/master/TTF%20Files)
+
+* [Google Devanagari Fonts](https://fonts.google.com/?subset=devanagari)
+* [Linked from Bihar Vidhan Parishad](http://biharvidhanparishad.gov.in/HindiFonts.htm)
+* [Linked from bih.nic.in](http://industries.bih.nic.in/HindiFonts.htm)
 
 #### Fraktur Fonts
 
