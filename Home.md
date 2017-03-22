@@ -22,7 +22,7 @@ If Tesseract isn't available for your distribution, or you want to use a newer v
 
 You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh).
 
-####MacPorts
+### MacPorts
 To install Tesseract run this command: 
 ```
 sudo port install tesseract
@@ -33,7 +33,7 @@ sudo port install tesseract-<langcode>
 ```
 List of available langcodes can be found on [MacPorts tesseract page](https://www.macports.org/ports.php?by=name&substr=tesseract-).
 
-####Homebrew
+### Homebrew
 To install Tesseract run this command:
 ```
 brew install tesseract
@@ -41,7 +41,7 @@ brew install tesseract
 
 ## Windows
 
-An unofficial installer for windows for Tesseract 3.05-dev is available from [Tesseract at UB Mannheim] (https://github.com/UB-Mannheim/tesseract/wiki). This includes the training tools.
+An unofficial installer for windows for Tesseract 3.05-dev and Tesseract 4.00-dev is available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). This includes the training tools.
 
 An installer for the old version 3.02 is available for Windows from our [download](Downloads) page. This includes the English training data. If you want to use another language, [download the appropriate training data](
 https://github.com/tesseract-ocr/tesseract/wiki/Data-Files), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract OCR\tessdata`.
