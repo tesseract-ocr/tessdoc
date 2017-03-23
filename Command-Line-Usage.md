@@ -1,6 +1,6 @@
 ## [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
 
-This has not been updated for Tesseract 4.0.
+This page has not been updated for Tesseract 4.0. 
 
 ## Tesseract --help
 
