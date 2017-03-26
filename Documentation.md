@@ -19,13 +19,14 @@ There are manual pages for tesseract and related training tools available at fol
 
 plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc) files
 
-## Doxygen
-
-Documentation of tesseract generated from source code by [doxygen](http://www.doxygen.org) can be found on [tesseract-ocr.github.io](https://tesseract-ocr.github.io/index.html)
-
 ## Insight.io
 
 Documentation of tesseract generated from source code by [insight.io](https://www.insight.io/) can be found at https://www.insight.io/github.com/tesseract-ocr/tesseract
+
+## Doxygen (from July 2015)
+
+Documentation of tesseract generated from source code as of July 2015 by [doxygen](http://www.doxygen.org) can be found on [tesseract-ocr.github.io](https://tesseract-ocr.github.io/index.html)
+
 
 ## FAQ
 
