@@ -2,10 +2,11 @@
 
 **Important note**: Before you invest time and efforts on training Tesseract, it is highly recommended to read the [ImproveQuality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) page.
 
-Tesseract 3.04 provides a [script] (https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh) for an easy way to execute the various phases of training Tesseract. More information on using it can be found on the [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) page.
+Tesseract 3.04 provides a [script](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh) for an easy way to execute the various phases of training Tesseract. More information on using it can be found on the [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) page.
 
-For training Tesseract 3.00–3.02 see [Training Tesseract 3.00–3.02](Training-Tesseract-3.00–3.02).  
-For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
+* For training Tesseract 4.00 see [Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00)
+* For training Tesseract 3.00–3.02 see [Training Tesseract 3.00–3.02](Training-Tesseract-3.00–3.02).  
+* For training Tesseract 2.0x see [TrainingTesseract2](TrainingTesseract2).
 
 [Questions about the training process](#questions-about-the-training-process)  
 
