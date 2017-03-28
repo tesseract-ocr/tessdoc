@@ -19,7 +19,11 @@ There are manual pages for tesseract and related training tools available at fol
 
 plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc) files
 
-## Insight.io
+## API/ABI Changes Review
+
+[The review of API/ABI changes for Tesseract since 3.00 version](https://abi-laboratory.pro/tracker/timeline/tesseract/) has been created with the help of open-source [abi-tracker tool](https://github.com/lvc/abi-tracker). The tool checks all API symbols declared in header files (doesn't take docs into account), so there may be some false positives.
+
+## Browse code via Insight.io
 
 Documentation of tesseract generated from source code by [insight.io](https://www.insight.io/) can be found at https://www.insight.io/github.com/tesseract-ocr/tesseract
 
