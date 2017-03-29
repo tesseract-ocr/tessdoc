@@ -26,6 +26,7 @@ Table of Contents
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * Added new neural network system based on LSTMs, with major accuracy gains.
   * Added LSTM models+lang models to [101 languages](https://github.com/tesseract-ocr/tessdata).
+  * Removed official support for VS2010.
   * Enable OpenMP support.
   * Enable AVX / SSE4.1 when the target machine support them.
   * Improved  multi-page TIFF handling.
@@ -67,7 +68,7 @@ Table of Contents
   * Tesseract development is now done with Git and hosted at github.com 
 (Previously we used Subversion as a VCS and code.google.com for hosting).
   * Tesseract now requires Leptonica 1.71 or a higher version.
-  * Removed official support for VS 2008.
+  * Removed official support for VS2008.
   * Major updates to training system as a result of extensive testing on 100 languages.
   * New training data for over [100 languages](https://github.com/tesseract-ocr/tessdata/tree/3.04.00). Added support for 39 additional scripts/languages: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid.
   * Added a backup adaptive classifier to take over from primary when it fills on a large document.
