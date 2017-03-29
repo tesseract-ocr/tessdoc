@@ -32,6 +32,7 @@ Table of Contents
   * Improved  multi-page TIFF handling.
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
+  * Fixed damage to binary images when processing PDFs.
   * Removed the 'Cube' engine from the codebase.
   * Added an option to render only the invisible text layer (without the full 
 input image) for PDF output.
