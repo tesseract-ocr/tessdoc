@@ -33,6 +33,10 @@ Table of Contents
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
   * Removed the 'Cube' engine from the codebase.
+  * Added an option to render only the invisible text layer (without the full 
+input image) for PDF output.
+  * Removed code that is no longer needed due to fact that we now require 
+C++11 support for the compiler and the standard library.
 
 # Tesseract release notes Feb 16 2017 - V3.05.00
   * Made some fine tuning to the hOCR output.
