@@ -62,7 +62,12 @@ LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
 sudo make install
 sudo ldconfig
 ```
-If configure fails with an error like "syntax error near unexpected token `-mavx,'" and/or AX_CHECK_COMPILE_FLAG(...) then double check you have installed autoconf-archive.
+If `configure` fails with errors like these:
+```
+./configure: line 4250: syntax error near unexpected token `-mavx,'
+./configure: line 4250: `AX_CHECK_COMPILE_FLAG(-mavx, avx=true, avx=false)'
+```
+then double check you have installed autoconf-archive and restart Tesseract installation process (`./autogen.sh, `./configure` ...).
 
 If configure fails with such error "configure: error: Leptonica 1.74 or higher is required. Try to install libleptonica-dev package." and you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with "pkg-config --variable pc_path pkg-config"). A solution is to set PKG_CONFIG_PATH : example :
 `PKG_CONFIG_PATH=/usr/local/lib/pkgconfig LIBLEPT_HEADERSDIR=/usr/local/include ./configure --with-extra-includes=/usr/local/include --with-extra-libraries=/usr/local/lib`
