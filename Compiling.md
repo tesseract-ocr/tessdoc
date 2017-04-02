@@ -368,7 +368,7 @@ These prerequisites will be needed:
 ## Install required packages
 
 ```
-sudo port install autoconf autoconf-archive automake leptonica pkgconfig
+sudo port install autoconf autoconf-archive automake libtool leptonica pkgconfig
 ```
 
 ## Compilation
@@ -414,7 +414,7 @@ sudo make training-install
 ## Install dependencies
 
 ```
-brew install automake autoconf
+brew install automake autoconf libtool
 brew install autoconf-archive
 brew install pkgconfig
 brew install icu4c
