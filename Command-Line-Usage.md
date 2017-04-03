@@ -295,7 +295,7 @@ Output
 
 The following examples are using this image with text in Devanagari script and Sanskrit language.
 
-![san002.png] (https://cloud.githubusercontent.com/assets/82178/13678011/81953684-e6ba-11e5-91e8-5c40518e94a6.png)
+![san002.png](https://cloud.githubusercontent.com/assets/82178/13678011/81953684-e6ba-11e5-91e8-5c40518e94a6.png)
 
     tesseract   --tessdata-dir /usr/share testing/san002.png testing/san002-psm6 -l san -psm 6 
 
