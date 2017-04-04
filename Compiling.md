@@ -6,7 +6,13 @@
 
 ## Dependencies
 
-**Autotools** [Leptonica](http://www.leptonica.org/)
+* GNU Autotools: autoconf, automake, libtool
+* autoconf-archive
+* pkg-config
+* [Leptonica](http://www.leptonica.org/)
+* libpng, libjpeg, libtiff
+
+### Ubuntu
 
 If they are not already installed, you need the following libraries (Ubuntu 16.04/14.04):
 ```
