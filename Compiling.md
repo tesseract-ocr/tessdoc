@@ -374,7 +374,10 @@ These prerequisites will be needed:
 ## Install required packages
 
 ```
-sudo port install autoconf autoconf-archive automake libtool leptonica pkgconfig
+sudo port install autoconf automake libtool
+sudo port install autoconf-archive
+sudo port install pkgconfig
+sudo port install leptonica
 ```
 
 ## Compilation
