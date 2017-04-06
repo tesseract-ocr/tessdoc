@@ -6,6 +6,7 @@
 
 ## Dependencies
 
+* A compiler for C and C++: GCC or Clang
 * GNU Autotools: autoconf, automake, libtool
 * autoconf-archive
 * pkg-config
