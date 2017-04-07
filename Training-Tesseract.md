@@ -48,7 +48,7 @@ Tesseract 3.04 provides a [script](https://github.com/tesseract-ocr/tesseract/bl
 
 If you had some problems during the training process and you need help, use [tesseract-ocr](https://groups.google.com/forum/#!forum/tesseract-ocr) mailing-list to ask your question(s).
 
-**PLEASE DO NOT** report your problems and ask questions about training as [issues] (https://github.com/tesseract-ocr/tesseract/issues)!
+**PLEASE DO NOT** report your problems and ask questions about training as [issues](https://github.com/tesseract-ocr/tesseract/issues)!
 
 # Introduction
 
@@ -56,7 +56,7 @@ Tesseract 3.0x is fully trainable. This page describes the training process, pro
 
 Please check the list of [languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) for which traineddata is already available as of release 3.04 before embarking on training.
 
-[3rd Party training tools] (AddOns) are also available for training.
+[3rd Party training tools](AddOns) are also available for training.
 
 # Background and Limitations
 
@@ -66,7 +66,7 @@ Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (r
 
 Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract version 3.01 and up). **Don't try to train Tesseract versions earlier than 4.0 for Arabic (same for Persian, Urdu, etc.). It's hopeless.** For 4.0 only train with the [LSTM method](https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#training-tesseract-lstm-engine).
 
-Traineddata for additional [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) has been provided by Google for the 3.04 release. 
+[Traineddata](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) for additional languages has been provided by Google for the 3.04 release. 
 
 Tesseract is slower with large character set languages (like Chinese), but it seems to work OK.
 
