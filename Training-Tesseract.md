@@ -33,7 +33,7 @@ Tesseract 3.04 provides a [script](https://github.com/tesseract-ocr/tesseract/bl
   * [set_unicharset_properties](#set_unicharset_properties)
 * [The font_properties file](#the-font_properties-file)
 * [Clustering](#clustering)
-  * [shapeclustering](#shapeclustering)https://github.com/tesseract-ocr/tesseract/wiki/Data-Files
+  * [shapeclustering](#shapeclustering)
   * [mftraining](#mftraining)
   * [cntraining](#cntraining)
 * [Dictionary Data (Optional)](#dictionary-data-optional)
