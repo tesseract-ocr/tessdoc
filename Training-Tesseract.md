@@ -54,7 +54,7 @@ If you had some problems during the training process and you need help, use [tes
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
 
-Please check the list of [languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) for which traineddata is already available as of release 3.04 before embarking on training.
+Please check the list of languages for which [traineddata](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) is already available as of release 3.04 before embarking on training.
 
 [3rd Party training tools](AddOns) are also available for training.
 
