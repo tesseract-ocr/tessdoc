@@ -33,7 +33,7 @@ Tesseract 3.04 provides a [script](https://github.com/tesseract-ocr/tesseract/bl
   * [set_unicharset_properties](#set_unicharset_properties)
 * [The font_properties file](#the-font_properties-file)
 * [Clustering](#clustering)
-  * [shapeclustering](#shapeclustering)
+  * [shapeclustering](#shapeclustering)https://github.com/tesseract-ocr/tesseract/wiki/Data-Files
   * [mftraining](#mftraining)
   * [cntraining](#cntraining)
 * [Dictionary Data (Optional)](#dictionary-data-optional)
@@ -54,7 +54,7 @@ If you had some problems during the training process and you need help, use [tes
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
 
-Please check the list of [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages)  for which traineddata is already available as of release 3.04 before embarking on training.
+Please check the list of [languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) for which traineddata is already available as of release 3.04 before embarking on training.
 
 [3rd Party training tools] (AddOns) are also available for training.
 
