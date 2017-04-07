@@ -61,7 +61,7 @@ Tesseract was originally designed to recognize English text only. Efforts have b
 
 Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (right-to-left).
 
-Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract version 3.01 and up). **Don't try to train Tesseract versions earlier than 4.0 for Arabic. It's hopeless.**. For 4.0 only train with the [LSTM method](https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#training-tesseract-lstm-engine).
+Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract version 3.01 and up). **Don't try to train Tesseract versions earlier than 4.0 for Arabic (same for Persian, Urdu, etc.). It's hopeless.** For 4.0 only train with the [LSTM method](https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#training-tesseract-lstm-engine).
 
 Traineddata for additional [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) has been provided by Google for the 3.04 release. 
 
