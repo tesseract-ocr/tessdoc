@@ -380,21 +380,26 @@ These prerequisites will be needed:
 * [leptonica](https://github.com/DanBloomberg/leptonica/)
 
 # macOS
+Typically a package manager like Fink, Homebrew or MacPorts is needed in addition to Apple's Xcode.
+Xcode and the related command line tools provides the compiler (`llvm-gcc`) and linker, but also libraries like `zlib`. The package manager provides free software packages which are not part of Xcode.
+
+## macOS with Fink
+Fink (as of 2017-04) neither provides Leptonica nor the packages needed for the Tesseract training tools,
+so it cannot be recommended for building Tesseract.
 
 ## macOS with MacPorts
 
 ### Install required packages
 
 ```
-sudo port install autoconf automake libtool
-sudo port install autoconf-archive
+sudo port install autoconf autoconf-archive automake libtool
 sudo port install pkgconfig
 sudo port install leptonica
 ```
 
 ### Compilation
 ```
-  git clone git@github.com:tesseract-ocr/tesseract.git
+  git clone https://github.com/tesseract-ocr/tesseract.git
   cd tesseract
   ./autogen.sh
   ./configure --with-extra-libraries=/opt/local/lib
@@ -435,8 +440,7 @@ sudo make training-install
 ### Install dependencies
 
 ```
-brew install automake autoconf libtool
-brew install autoconf-archive
+brew install automake autoconf autoconf-archive libtool
 brew install pkgconfig
 brew install icu4c
 brew install leptonica
