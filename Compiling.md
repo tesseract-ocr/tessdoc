@@ -465,7 +465,7 @@ To fix this error
 ./configure: line 4237: syntax error near unexpected token `-mavx,'
 ./configure: line 4237: `AX_CHECK_COMPILE_FLAG(-mavx, avx=1, avx=0)'
 ```
-ensure that autoconf-archive is installed.
+ensure that `autoconf-archive` is installed. Don't forget to run `./autogen.sh` after the installation of `autoconf-archive`.
 
 # Miscellaneous
 
