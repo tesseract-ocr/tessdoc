@@ -2,7 +2,16 @@
 
 **Note:** This wiki expects you to be familiar with compiling software on your operation system.
 
-# Linux / Other Unices
+# Table of contents
+* [Linux](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#linux)
+* [Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows)
+* [macOS](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#macos)
+* [Common Errors](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#common-errors)
+* [Miscellaneous](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#miscellaneous)
+
+# Linux
+
+The build instructions for Linux also apply to other UNIX like operating systems.
 
 ## Dependencies
 
@@ -370,9 +379,11 @@ These prerequisites will be needed:
 * [openjpeg](https://github.com/uclouvain/openjpeg)
 * [leptonica](https://github.com/DanBloomberg/leptonica/)
 
-# macOS with MacPorts
+# macOS
 
-## Install required packages
+## macOS with MacPorts
+
+### Install required packages
 
 ```
 sudo port install autoconf automake libtool
@@ -381,7 +392,7 @@ sudo port install pkgconfig
 sudo port install leptonica
 ```
 
-## Compilation
+### Compilation
 ```
   git clone git@github.com:tesseract-ocr/tesseract.git
   cd tesseract
@@ -391,18 +402,18 @@ sudo port install leptonica
   sudo make install
 ```
 
-## Install Tesseract with training tools
+### Install Tesseract with training tools
 
 In the above training tools are not installed. You can install not only Tesseract but also training tools like below.
 
-### Install packages required by training tools
+#### Install packages required by training tools
 
 ```
 sudo port install cairo pango 
 sudo port install icu +devel
 ```
 
-### Build and Install
+#### Build and Install
 ```
 git clone https://github.com/tesseract-ocr/tesseract/
 cd tesseract
@@ -419,9 +430,9 @@ make training
 sudo make training-install
 ```
 
-# macOS with Homebrew
+## macOS with Homebrew
 
-## Install dependencies
+### Install dependencies
 
 ```
 brew install automake autoconf libtool
@@ -432,7 +443,7 @@ brew install leptonica
 brew install gcc
 ```
 
-## Compile
+### Compile
 
 As of January 2017, the clang builds but OpenMP will only use a single thread, reducing performance. For best results, use gcc.
 
@@ -448,7 +459,7 @@ sudo make install  # if desired
 make training
 ```
 
-### Errors
+# Common Errors
 To fix this error
 ```
 ./configure: line 4237: syntax error near unexpected token `-mavx,'
