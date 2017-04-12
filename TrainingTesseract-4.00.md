@@ -1,5 +1,10 @@
 # How to use the tools provided to train Tesseract 4.00
 
+**Have questions about the training process?**  
+If you had some problems during the training process and you need help, use [tesseract-ocr](https://groups.google.com/forum/#!forum/tesseract-ocr) mailing-list to ask your question(s).  
+**PLEASE DO NOT** report your problems and ask questions about training as [issues](https://github.com/tesseract-ocr/tesseract/issues)!
+
+
 *   [Introduction](#introduction)
 *   [Before You Start](#before-you-start)
 *   [Additional Libraries Required](#additional-libraries-required)
