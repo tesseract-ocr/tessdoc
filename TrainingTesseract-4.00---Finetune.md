@@ -1,28 +1,32 @@
 Please read [TrainingTesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00) before trying the following.
 
-Have copies of the 4.0.0 alpha langdata, tessdata and tesseract-ocr repositories in the following directory structure.
+Clone the langdata, tessdata and tesseract repositories so that you have the following directory structure.
 
 ```
 ./langdata
+./langdata/eng
+./langdata/ara
 ./tessdata
-./tesseract-ocr
-./tesseract-ocr/tessdata
-./tesseract-ocr/tessdata/configs/
+./tesseract
+./tesseract/tessdata
+./tesseract/tessdata/configs/
+./tesseract/training
+etc
+
 ```
-
-Make a copy of English and Arabic 4.0.0alpha traineddata files in ./tesseract-ocr/tessdata
-
-Check that lstm.train is available under configs.
+Check that lstm.train is available under ./tesseract/tessdata/configs/
 
 Setup appropriate TESSDATA_PREFIX directory.
+
+Make a copy of English and Arabic 4.0.0alpha traineddata files in ./tesseract/tessdata
 ```
-cp ./tessdata/eng.traineddata ./tesseract-ocr/tessdata
-cp ./tessdata/ara.traineddata ./tesseract-ocr/tessdata
+cp ./tessdata/eng.traineddata ./tesseract/tessdata
+cp ./tessdata/ara.traineddata ./tesseract/tessdata
 ```
 
-Change to the tesseract-ocr directory
+Change to the tesseract directory
 ```
-cd ./tesseract-ocr
+cd ./tesseract
 ```
  and then follow the given commands.
 
