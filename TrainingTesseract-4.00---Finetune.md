@@ -20,15 +20,23 @@ cp ./tessdata/eng.traineddata ./tesseract-ocr/tessdata
 cp ./tessdata/ara.traineddata ./tesseract-ocr/tessdata
 ```
 
-Change to the tesseract-ocr directory and then follow the given commands.
-
+Change to the tesseract-ocr directory
 ```
 cd ./tesseract-ocr
+```
+ and then follow the given commands.
 
-training/tesstrain.sh --fonts_dir /usr/share/fonts --lang ara  --linedata_only \
-  --training_text ../langdata/ara/arabic1.txt \
-  --langdata_dir ../langdata --tessdata_dir ./tessdata \
-  --fontlist "Times New Roman," \
+```
+training/tesstrain.sh \
+  --fonts_dir /usr/share/fonts \
+  --training_text ../langdata/ara/ara.training_text \
+  --langdata_dir ../langdata \
+  --tessdata_dir ./tessdata \
+  --lang ara  \
+  --linedata_only \
+  --noextract_font_properties \
+  --exposures "0"    \
+  --fontlist "Arial" \
   --output_dir ~/tesstutorial/aratest
 ```
 This creates the .lstmf files in the output directory using the given training_text. The box/tiff pairs are created in a /tmp/<tmpdir>/ara/ directory and are not copied to the output directory.
