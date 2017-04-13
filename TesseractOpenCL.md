@@ -31,3 +31,24 @@ or if you want to specified opencl include (`/opt/AMDAPP/include/`)  and library
 export LIBRARY_PATH=/opt/AMDAPP/lib/x86_64/:$LIBRARY_PATH
 CPPFLAGS+=-I/opt/AMDAPP/include/ ./configure --enable-opencl 
 ```
+
+# Using Tesseract with OpenCL
+Normally Tesseract works with *OpenCL Installable Client Drivers* (ICD).
+It tests for available OpenCL drivers at runtime, so a Tesseract binary can work with different GPU hardware on different computers. All you have to do is installing the OpenCL driver for your GPU hardware. There also exists a generic OpenCL driver which uses the CPU instead of a GPU. When Tesseract with OpenCL support is started the first time, it looks for the available OpenCL drivers and runs benchmarks for each of them. In addition, the same benchmarks are run using the native CPU (without OpenCL). The benchmark results and the generated GPU code are saved in a file `tesseract_opencl_profile_devices.dat` in the current directory for future runs. Tesseract calculates a weighted performance index from all benchmark results and choses the fastest method for its calculations. Delete the file to force a rebuild.
+
+## Installable Client Drivers for OpenCL (ICD)
+These Debian packages provide such drivers:
+* amd-opencl-icd – AMD Radeon GPU
+* beignet-opencl-icd – Intel GPU
+* mesa-opencl-icd – AMD GPU
+* nvidia-egl-icd – NVIDIA GPU
+* nvidia-legacy-304xx-opencl-icd – NVIDIA GPU
+* nvidia-legacy-340xx-opencl-icd – NVIDIA GPU
+* nvidia-opencl-icd – NVIDIA GPU
+* pocl-opencl-icd – native CPU
+
+## Performance
+Only some parts of the OCR process are handled by OpenCL, so using OpenCL does not necessarily result in much faster OCR. More precise measurements have to be done.
+
+## Known problems
+OpenCL is still experimental, so expect possible crashes, wrong OCR results or bad instead of improved performance.
