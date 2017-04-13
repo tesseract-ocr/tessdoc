@@ -45,7 +45,9 @@ These Debian packages provide such drivers:
 * nvidia-legacy-304xx-opencl-icd – NVIDIA GPU
 * nvidia-legacy-340xx-opencl-icd – NVIDIA GPU
 * nvidia-opencl-icd – NVIDIA GPU
-* pocl-opencl-icd – native CPU
+* [pocl-opencl-icd](http://portablecl.org/) – native CPU
+
+It is possible to enable debug messages for some drivers by setting environment variables ([example](http://portablecl.org/docs/html/).
 
 ## Performance
 Only some parts of the OCR process are handled by OpenCL, so using OpenCL does not necessarily result in much faster OCR. More precise measurements have to be done.
