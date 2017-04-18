@@ -2,10 +2,13 @@
 
 [Technical Papers and Presentations](https://github.com/tesseract-ocr/tesseract/wiki/Technical-Documentation)
 
+## Tesseract 4.0 with LSTM
 
-## Manual Pages
+   For information about the new LSTM based tesseract engine, please see [these wiki pages](https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM). 
 
-There are manual pages for tesseract and related training tools available at following links:
+## Manual Pages (3.0x)
+
+The manual pages for tesseract and related training tools (mainly for 3.0x version) are available at following links:
 
   * [tesseract](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
   * [ambiguous\_words](https://github.com/tesseract-ocr/tesseract/blob/master/doc/ambiguous_words.1.asc)
@@ -19,9 +22,10 @@ There are manual pages for tesseract and related training tools available at fol
 
 plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc) files
 
-## Release Notes
+## Changes to Tesseract
 
-https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes
+   * [Release Notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes)
+   * [Change Log](https://github.com/tesseract-ocr/tesseract/blob/master/ChangeLog)
 
 ## API/ABI Changes Review
 
