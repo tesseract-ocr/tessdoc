@@ -193,7 +193,7 @@ In this format, each line in the box file matches a 'character' (glyph) in the t
 
 A special line must be inserted after a series of lines to indicate an end-of-line.
 
-### Box File Format - Second Option
+### Box File Format - Second Option (NOT YET IMPLEMENTED)
 
 In this format the boxes only need to cover a textline instead of individual characters.
 
