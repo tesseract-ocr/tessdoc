@@ -137,7 +137,7 @@ aze | Azerbaijani | [aze.traineddata](https://github.com/tesseract-ocr/tessdata/
 aze_cyrl | Azerbaijani - Cyrilic | [aze_cyrl.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/aze_cyrl.traineddata)
 bel | Belarusian | [bel.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/bel.traineddata)
 ben | Bengali | [ben.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ben.traineddata)
-bod | Tibetan | [bod.traineddata](https://github.com/tesseract-ocr/tessdata/Data Filesraw/4.00/bod.traineddata)
+bod | Tibetan | [bod.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/bod.traineddata)
 bos | Bosnian | [bos.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/bos.traineddata)
 bul | Bulgarian | [bul.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/bul.traineddata)
 cat | Catalan; Valencian | [cat.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/cat.traineddata)
