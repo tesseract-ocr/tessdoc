@@ -40,6 +40,7 @@ input image) for PDF output.
 C++11 support for the compiler and the standard library.
 
 # Tesseract release notes Feb 16 2017 - V3.05.00
+  * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * Made some fine tuning to the hOCR output.
   * Added TSV as another optional output format.
   * Fixed ABI break introduced in 3.04.00 with the AnalyseLayout() method.
