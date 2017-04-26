@@ -26,6 +26,7 @@ The build instructions for Linux also apply to other UNIX like operating systems
 
 If they are not already installed, you need the following libraries (Ubuntu 16.04/14.04):
 ```
+sudo apt-get install g++ # or clang++ (presumably)
 sudo apt-get install autoconf automake libtool
 sudo apt-get install autoconf-archive
 sudo apt-get install pkg-config
