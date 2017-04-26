@@ -61,15 +61,16 @@ These Debian packages provide such drivers:
 
 It is possible to enable debug messages for some drivers by setting environment variables ([example](http://portablecl.org/docs/html/)).
 
-## OpenCL devices
+## OpenCL devices (examples)
 
 ### Linux (x86)
-
 * Intel(R) HD Graphics IvyBridge M GT2
 * pthread-Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
 
 ### macOS
+
 ### Windows
+* pthread-Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
 
 ## Performance
 Only some parts of the OCR process are handled by OpenCL, so using OpenCL does not necessarily result in much faster OCR. More precise measurements have to be done.
