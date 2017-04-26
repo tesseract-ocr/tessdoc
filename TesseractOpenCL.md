@@ -1,3 +1,11 @@
+# Tesseract and OpenCL
+
+OpenCL is an API which allows portable usage of GPU computing resources.
+It is support for Linux, macOS and Windows.
+
+Modern graphic cards can do some computations which are needed for Tesseract very fast.
+By using that compute power, Tesseract ideally can be made faster.
+
 # How to build Tesseract with OpenCL
 
 **Important note**: OpenCL support in Tesseract is still considered experimental. There are some major bugs associated with it.
@@ -34,7 +42,11 @@ CPPFLAGS+=-I/opt/AMDAPP/include/ ./configure --enable-opencl
 
 # Using Tesseract with OpenCL
 Normally Tesseract works with *OpenCL Installable Client Drivers* (ICD).
-It tests for available OpenCL drivers at runtime, so a Tesseract binary can work with different GPU hardware on different computers. All you have to do is installing the OpenCL driver for your GPU hardware. There also exists a generic OpenCL driver which uses the CPU instead of a GPU. When Tesseract with OpenCL support is started the first time, it looks for the available OpenCL drivers and runs benchmarks for each of them. In addition, the same benchmarks are run using the native CPU (without OpenCL). The benchmark results and the generated GPU code are saved in a file `tesseract_opencl_profile_devices.dat` in the current directory for future runs. Tesseract calculates a weighted performance index from all benchmark results and choses the fastest method for its calculations. Delete the file to force a rebuild.
+It tests for available OpenCL drivers at runtime, so a Tesseract binary can work with different GPU hardware on different computers. All you have to do is installing the OpenCL driver for your GPU hardware. There also exists a generic OpenCL driver which uses the CPU instead of a GPU. More than one OpenCL driver can be enabled for a computer system.
+
+When Tesseract with OpenCL support is started the first time, it looks for the available OpenCL drivers and runs benchmarks for each of them. In addition, the same benchmarks are run using the native CPU (without OpenCL). The benchmark results are saved in a file `tesseract_opencl_profile_devices.dat` in the current directory for future runs. Tesseract calculates a weighted performance index from all benchmark results and choses the fastest method for its calculations. Delete the file to force a rebuild. The generated GPU code for each OpenCL driver is also saved in individual files named `kernel-` plus the name of the driver plus `.bin`, for example `kernel-Intel(R)_HD_Graphics_IvyBridge_M_GT2.bin`. Delete those files after an update of your OpenCL software to force a rebuild.
+
+It is possible to override the automatic choice by setting the environment variable `TESSERACT_OPENCL_DEVICE`, for example `TESSERACT_OPENCL_DEVICE=1` selects the first OpenCL device. As the native CPU has also a device number (always the highest number) in Tesseract, use of OpenCL can be disabled by setting that number.
 
 ## Installable Client Drivers for OpenCL (ICD)
 These Debian packages provide such drivers:
@@ -48,6 +60,16 @@ These Debian packages provide such drivers:
 * [pocl-opencl-icd](http://portablecl.org/) – native CPU
 
 It is possible to enable debug messages for some drivers by setting environment variables ([example](http://portablecl.org/docs/html/)).
+
+## OpenCL devices
+
+### Linux (x86)
+
+* Intel(R) HD Graphics IvyBridge M GT2
+* pthread-Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
+
+### macOS
+### Windows
 
 ## Performance
 Only some parts of the OCR process are handled by OpenCL, so using OpenCL does not necessarily result in much faster OCR. More precise measurements have to be done.
