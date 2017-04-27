@@ -80,6 +80,8 @@ the required fonts can be installed like that:
 
 The installed fonts are shown by the command `fc-list`. See also the [Debian wiki](https://wiki.debian.org/Fonts).
 
+`text2image --fonts_dir /usr/share/fonts --list_available_fonts` will also show all fonts.
+
 ## Links
 
 ### Sources of (mostly free) fonts
