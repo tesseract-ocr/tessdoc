@@ -66,6 +66,7 @@ It is possible to enable debug messages for some drivers by setting environment 
 ### Linux (x86)
 * Intel(R) HD Graphics IvyBridge M GT2
 * pthread-Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
+* pthread-Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
 
 ### macOS
 
