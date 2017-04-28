@@ -2,7 +2,7 @@
 
 Tesseract training can use images made from text which was rendered with a list of fonts. Those fonts must be available on the host where the training process is running.
 
-The required fonts are defined in [training/language-specific.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/language-specific.sh). Many more fonts are listed in [langdata/font_properties](https://github.com/tesseract-ocr/langdata/blob/master/font_properties).
+The required fonts are defined in [training/language-specific.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/language-specific.sh). Many more fonts are listed in [langdata/font_properties](https://github.com/tesseract-ocr/langdata/blob/master/font_properties). If you add fonts to the first file (or specify them explicitly via command line parameter), you must add them to the second as well.
 
 ## Find Fonts
 
