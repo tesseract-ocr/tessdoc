@@ -138,6 +138,11 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 #### Hebrew Fonts
 * [A list of Hebrew fonts from the Open Siddur Project](http://opensiddur.org/tools/fonts/)
 
+#### Collections of fonts
+
+* http://www.abstractfonts.com/
+* http://www.schriftarten-fonts.de/ (German)
+
 ### More information on fonts
 
 * https://en.wikipedia.org/wiki/Fraktur
