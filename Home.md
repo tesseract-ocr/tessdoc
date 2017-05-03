@@ -48,20 +48,6 @@ https://github.com/tesseract-ocr/tesseract/wiki/Data-Files), unpack it using [7-
 
 ## MSYS2
 
-Install and update MSYS2. 
- Follow instructions at
-```
- http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/ 
-```
-
-Open an MSYS2 command prompt (or the 32-bit or 64-bit command prompts if you plan on building 32-bit or 64-bit things) from the start menu entries. 
-
-Install {32-bit,64-bit} MinGW-w64 GCC:
-
-```
- pacman -S mingw-w64-{i686,x86_64}-gcc
-```
-
 Install tesseract-OCR:
 
 ```
@@ -73,10 +59,6 @@ and the data files:
 ```
  pacman -S mingw-w64-tesseract-ocr-osd mingw-w64-{i686,x86_64}-tesseract-ocr-eng
 ```
-
-And you're done. 
-
-(These instructions were copied from post by rubenvb at http://stackoverflow.com/questions/29960825/error-during-making-xz-5-2-1-with-mingw-msys )
 
 ## Cygwin
 
