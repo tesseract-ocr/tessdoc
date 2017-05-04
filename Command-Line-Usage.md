@@ -1,6 +1,6 @@
 ## [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
 
-This page has not been updated for Tesseract 4.0. 
+This page has not been (fully) updated for Tesseract 4.0. 
 
 ## Tesseract --help
 
@@ -43,6 +43,12 @@ This page has not been updated for Tesseract 4.0.
 ## OCR only first page of a multi-page tiff
 
   Use the config variable as part of command `-c tessedit_page_number=0 ` 
+
+## Integrate original image file and detected text into searchable PDF
+   
+   Use the config variable `-c textonly_pdf=1` and Merge your image-only and text-only PDF.
+
+   see https://github.com/tesseract-ocr/tesseract/issues/660#issuecomment-274213632 for details
 
 ## Simplest Invocation to OCR an image
 
