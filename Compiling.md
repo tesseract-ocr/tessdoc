@@ -252,8 +252,7 @@ For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with M
 
 ## Msys2 
 
-Download and install Msys2 as given at [MSYS2 installation](https://sourceforge.net/p/msys2/wiki/MSYS2%20installation/)
-Also read instructions at [Contributing to MSYS2](https://sourceforge.net/p/msys2/wiki/Contributing%20to%20MSYS2/)
+Download and install MSYS2 Installer from https://msys2.github.io/
 
 The core packages groups you need to install if you wish to build from PKGBUILDs are:
 - base-devel for any building
@@ -261,9 +260,9 @@ The core packages groups you need to install if you wish to build from PKGBUILDs
 - mingw-w64-i686-toolchain for building mingw32 packages
 - mingw-w64-x86_64-toolchain for building mingw64 packages
 
-To build the release package, use PKGBUILD from https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-tesseract-ocr
+To build the tesseract-ocr release package, use PKGBUILD from https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-tesseract-ocr
 
-To build from the GitHub source, create a PKGBUILD with the following commands.
+To build tesseract-ocr from the GitHub source, create a PKGBUILD with the following commands.
 
 ```
 #
