@@ -97,10 +97,10 @@ If `configure` fails with errors like these:
 ```
 then double check you have installed autoconf-archive and restart Tesseract installation process (`./autogen.sh, `./configure` ...).
 
-If configure fails with such error "configure: error: Leptonica 1.74 or higher is required. Try to install libleptonica-dev package." and you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with "pkg-config --variable pc_path pkg-config"). A solution is to set PKG_CONFIG_PATH : example :
-`PKG_CONFIG_PATH=/usr/local/lib/pkgconfig LIBLEPT_HEADERSDIR=/usr/local/include ./configure --with-extra-includes=/usr/local/include --with-extra-libraries=/usr/local/lib`
+If configure fails with such error "configure: error: Leptonica 1.74 or higher is required. Try to install libleptonica-dev package." and you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with "pkg-config --variable pc_path pkg-config"). 
 
-Since we have to compile leptonica to use version 1.74, we should use `LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make` instead of make for Tesseract.
+A solution is to set PKG_CONFIG_PATH : example :
+`PKG_CONFIG_PATH=/usr/local/lib/pkgconfig LIBLEPT_HEADERSDIR=/usr/local/include ./configure --with-extra-includes=/usr/local/include --with-extra-libraries=/usr/local/lib`
 
 On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
 
