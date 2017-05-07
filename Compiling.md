@@ -80,6 +80,14 @@ LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
 sudo make install
 sudo ldconfig
 ```
+If you want the training tools (3.03+), you will also need to run the following commands:
+```
+make training
+sudo make training-install
+```
+
+Build of training tools is not available if you do not have necessary dependencies (pay attention to messages from ./configure script).
+
 `--enable-debug` `--disable-graphics` can be used as options with configure. Please note that with `--enable-debug` option Tesseract will be compiled with -O0 and will be VERY slow.
 
 If `configure` fails with errors like these:
@@ -95,15 +103,6 @@ If configure fails with such error "configure: error: Leptonica 1.74 or higher i
 Since we have to compile leptonica to use version 1.74, we should use `LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make` instead of make for Tesseract.
 
 On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
-
-If you want the training tools (3.03), you will also need to run the following commands:
-
-```
-make training
-sudo make training-install
-```
-
-Build of training tools is not available if you do not have necessary dependencies (pay attention to messages from ./configure script).
 
 For visual debugging, you also have to build [ScrollView.jar](ViewerDebugging). In addition, it is necessary to set the environment variable SCROLLVIEW_PATH to the directory with [ScrollView.jar](ViewerDebugging). 
 
