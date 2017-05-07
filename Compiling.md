@@ -72,14 +72,16 @@ Ensure that the development headers for Leptonica are installed before compiling
 Tesseract uses a standard autotools based build system, so the compilation process should be familiar.
 
 ```
-git clone --depth 1 https://github.com/tesseract-ocr/tesseract.git
+git clone https://github.com/tesseract-ocr/tesseract.git
 cd tesseract
 ./autogen.sh
-./configure --enable-debug
+./configure
 LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
 sudo make install
 sudo ldconfig
 ```
+`--enable-debug` `--disable-graphics` can be used as options with configure. Please note that with `--enable-debug` option Tesseract will be compiled with -O0 and will be VERY slow.
+
 If `configure` fails with errors like these:
 ```
 ./configure: line 4250: syntax error near unexpected token `-mavx,'
