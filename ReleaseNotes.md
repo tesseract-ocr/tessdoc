@@ -45,7 +45,7 @@ input image) for PDF output.
   * Fixed --disable-graphics build.
   * Fixed --enable-visibility build (including training tools).
   * Fixed reading config files with '\r\n' as line break.
-  * OpenCL - Fixed some issues. Remove large part of the code.  
+  * OpenCL - Fixed some issues. Removed large part of the code.  
   * Removed dead code.
 
 # Tesseract release notes Feb 16 2017 - V3.05.00
