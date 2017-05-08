@@ -47,8 +47,8 @@ C++11 support for the compiler and the standard library.
   * text2image tool - Enable all OpenType ligatures available in a font. This feature requires Pango 1.38 or newer.
   * Training tools - Replaced asserts with tprintf() and exit(1).
   * Fixed Cygwin compatibility.
-  * Improved multipage tiff processing.
-  * Improved the embedded pdf font (pdf.ttf).
+  * Improved multipage TIFF processing.
+  * Improved embedded PDF font (pdf.ttf).
   * Enable selection of OCR engine mode from the command line.
   * Changed tesseract command line parameter '-psm' to '--psm'.
   * Added new C API for orientation and script detection, removed the old one.
