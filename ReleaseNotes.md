@@ -39,13 +39,13 @@ input image) for PDF output.
   * Removed code that is no longer needed due to the fact that we now require 
 C++11 support for the compiler and the standard library.
 
-**To be released as V3.05.1 - hopefully in 2017/Q2**
+**To be released as V3.05.01 - hopefully in 2017/Q2**
   * Added an option to render only the invisible text layer (without the full 
 input image) for PDF output.
-  * Fixed --disable-graphics build 
-  * Fixed --enable-visibility build (including training tools) 
+  * Fixed --disable-graphics build.
+  * Fixed --enable-visibility build (including training tools).
   * Fixed reading config files with '\r\n' as line break.
-  * OpenCL - Fixed some issues. Remove large part of the code.   
+  * OpenCL - Fixed some issues. Remove large part of the code.  
   * Removed dead code.
 
 # Tesseract release notes Feb 16 2017 - V3.05.00
