@@ -211,7 +211,7 @@ If you're building with cppan+cmake, run cmake as follows:
 ```
 mkdir win64 && cd win64
 cppan ..
-cmake .. -G Visual Studio 14 2015 Win64
+cmake .. -G "Visual Studio 14 2015 Win64"
 ```
 
 If you're building with cppan, edit cppan.yml and uncomment this line:
