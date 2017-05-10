@@ -18,7 +18,7 @@ Tesseract is available directly from many Linux distributions. The package is ge
 
 If Tesseract isn't available for your distribution, or you want to use a newer version than they offer, you can [compile your own](Compiling). Note that older versions of Tesseract only supported processing .tiff files.
 
-## Mac OS X
+## macOS
 
 You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh).
 
