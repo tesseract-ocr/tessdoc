@@ -8,7 +8,7 @@ Source code of Tesseract's [Releases](https://github.com/tesseract-ocr/tesseract
 
 Tesseract is included in most Linux distributions.
 
-## Binaries for Mac OS
+## Binaries for macOS
 
 Please add information here.
 
