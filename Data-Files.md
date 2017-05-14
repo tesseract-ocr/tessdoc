@@ -5,6 +5,7 @@
 * [Fraktur Data Files](#fraktur-data-files)
 * [Data Files for Version 3.02](#data-files-for-version-302)
 * [Data Files for Version 2.0x](#data-files-for-version-20x)
+* [Format of traineddata files](#format-of-traineddata-files)
 
 ## Special Data Files
 
@@ -346,3 +347,29 @@ nld | Dutch; Flemish | [tesseract-2.00.nld.tar.gz](https://sourceforge.net/proje
 por | Portuguese | [tesseract-2.01.por.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.01.por.tar.gz/download)
 spa | Spanish; Castilian | [tesseract-2.00.spa.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.00.spa.tar.gz/download)
 vie | Vietnamese | [tesseract-2.01.vie.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-2.01.vie.tar.gz/download)
+
+## Format of traineddata files
+
+The `traineddata` file for each language is an archive file in a Tesseract specific format. It contains several uncompressed component files which are needed by the Tesseract OCR process. The program `combine_tessdata` is used to create a `tessdata` file from the component files and can also extract them again like in this example:
+
+    combine_tessdata -u test/tessdata/eng.traineddata eng.
+    Extracting tessdata components from test/tessdata/eng.traineddata
+    Wrote eng.unicharset
+    Wrote eng.unicharambigs
+    Wrote eng.inttemp
+    Wrote eng.pffmtable
+    Wrote eng.normproto
+    Wrote eng.punc-dawg
+    Wrote eng.word-dawg
+    Wrote eng.number-dawg
+    Wrote eng.freq-dawg
+    Wrote eng.cube-unicharset
+    Wrote eng.cube-word-dawg
+    Wrote eng.shapetable
+    Wrote eng.bigram-dawg
+    Wrote eng.lstm
+    Wrote eng.lstm-punc-dawg
+    Wrote eng.lstm-word-dawg
+    Wrote eng.lstm-number-dawg
+
+There are some proposals to replace the Tesseract archive format by a standard archive format which could also support compression. A [discussion on the tesseract-dev forum](https://groups.google.com/forum/?hl=en#!searchin/tesseract-dev/zip|sort:date/tesseract-dev/U5HSugUeeeI) proposed the ZIP format already in 2014. In 2017 an [experimental implementation](https://github.com/tesseract-ocr/tesseract/pull/911) was provided as a pull request.
