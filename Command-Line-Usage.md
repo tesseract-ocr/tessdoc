@@ -42,6 +42,12 @@ This page has not been (fully) updated for Tesseract 4.0.
 
 --------------------------------------------
 
+## Using LSTM Engine with Tesseract 4.0alpha
+
+   Use --oem 1 for LSTM, --oem 0 for Legacy Tesseract
+
+   `tesseract input.tiff output --oem 1 -l eng`
+
 ## Add page break in output
 
   Use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPRATOR]"` 
