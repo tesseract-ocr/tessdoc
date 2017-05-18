@@ -40,15 +40,42 @@ This page has not been (fully) updated for Tesseract 4.0.
       --list-langs          List available languages for tesseract engine.
       --print-parameters    Print tesseract parameters to stdout.
 
-## OCR only first page of a multi-page tiff
+--------------------------------------------
+
+## Add page break in output
+
+  Use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPRATOR]"` 
+
+  Default page separator is  the form feed control character.
+  
+  `tesseract -c include_page_breaks=1 input.tiff output`
+
+## OCR multiple images with one run of tesseract
+
+   Prepare a text file that has the path to each image:
+
+   ```
+   path/to/1.png
+   path/to/2.png
+   path/to/3.tiff
+   ```
+
+   Save it, and then give its name as input file to Tesseract.
+
+   `tesseract savedlist output`
+
+
+## OCR single page of a multi-page tiff
 
   Use the config variable as part of command `-c tessedit_page_number=0 ` 
 
-## Integrate original image file and detected text into searchable PDF
+## Integrate original image file and detected text into PDF
    
    Use the config variable `-c textonly_pdf=1` and Merge your image-only and text-only PDF.
 
    see https://github.com/tesseract-ocr/tesseract/issues/660#issuecomment-274213632 for details
+
+---------------------------------------------
 
 ## Simplest Invocation to OCR an image
 
