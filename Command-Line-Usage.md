@@ -192,7 +192,7 @@ Use 'hocr' config file by adding hocr at the end of the command to get the HOCR 
 
     tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng hocr
 
-Output
+Partial Output
 
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -223,7 +223,7 @@ Use 'tsv' config file by adding tsv at the end of the command to get the TSV out
 
     tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng tsv
 
-Output
+Partial Output
 
     level	page_num	block_num	par_num	line_num	word_num	left	top	width	height	conf	text
     1	1	0	0	0	0	0	0	1024	800	-1	
