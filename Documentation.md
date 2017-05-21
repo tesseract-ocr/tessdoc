@@ -31,11 +31,15 @@ plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/b
 
 [The review of API/ABI changes for Tesseract since 3.00 version](https://abi-laboratory.pro/tracker/timeline/tesseract/) has been created with the help of open-source [abi-tracker tool](https://github.com/lvc/abi-tracker). The tool checks all API symbols declared in header files (doesn't take docs into account), so there may be some false positives.
 
-## Browse code via Insight.io
+## Browse code via Insight.io (master branch)
 
 Documentation of tesseract generated from source code by [insight.io](https://www.insight.io/) can be found at https://www.insight.io/github.com/tesseract-ocr/tesseract
 
-## Doxygen (from July 2015)
+## Doxygen (4.00.00dev)
+
+Documentation of tesseract generated on Sat May 20, 2017 from master branch (4.0) by [doxygen](http://www.doxygen.org) can be found at [https://ub-mannheim.github.io/tesseract/](https://ub-mannheim.github.io/tesseract/)
+
+## Doxygen (3.04 from July 2015)
 
 Documentation of tesseract generated from source code as of July 2015 by [doxygen](http://www.doxygen.org) can be found on [tesseract-ocr.github.io](https://tesseract-ocr.github.io/index.html)
 
