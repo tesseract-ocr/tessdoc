@@ -12,6 +12,10 @@ On Debian or Ubuntu, you can probably install all required packages like this:
     apt-get install autoconf-archive automake g++ libtool libleptonica-dev pkg-config
 ```
 
+If you want to build the Tesseract training tools, too, some more packages are required:
+
+    apt-get install libpango1.0-dev
+
 Afterwards, the steps for installing the git version of Tesseract, do this:
 
 ```
