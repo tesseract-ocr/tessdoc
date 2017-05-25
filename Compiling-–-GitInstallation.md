@@ -4,12 +4,12 @@ These are instructions for installing Tesseract from the git repository. You sho
 
 # Installing With Autoconf Tools
 
-In order to do this, you must have aclocal, autoheader, autoconf, autoconf-archive, automake, libtool and leptonica installed.
+In order to do this, you must have aclocal, autoheader, autoconf, autoconf-archive, automake, libtool and leptonica installed. In addition, you need a C++ compiler.
 
-On Debian or Ubuntu, you can probably do that with:
+On Debian or Ubuntu, you can probably install all required packages like this:
 
 ```
-    apt-get install autoconf automake libtool libleptonica-dev
+    apt-get install autoconf-archive automake g++ libtool libleptonica-dev
 ```
 
 Afterwards, the steps for installing the git version of Tesseract, do this:
