@@ -69,7 +69,7 @@ Try it with `--max_iterations 50` to see a sample of debug output.
 
 This training process can be stopped at any time. Giving the command again restarts the process from the last saved checkpoint. 
 
-Currently this process has a bug and gets aborted when `--eval_listfile` is given as a parameter. While this is OK for the tutorial, it may impact accuracy of training.
+Currently this process has a bug and gets aborted when `--eval_listfile` is given as a parameter. While not using  `--eval_listfile` is OK for the tutorial, it may impact accuracy of training.
 
 Step 3.
 -----
