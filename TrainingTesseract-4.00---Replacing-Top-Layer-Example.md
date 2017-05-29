@@ -33,6 +33,12 @@ training/tesstrain.sh --fonts_dir /usr/share/fonts --lang nor \
    --linedata_only --noextract_font_properties \
    --langdata_dir ../langdata --tessdata_dir ./tessdata \
    --output_dir ~/tesstutorial/nor
+
+training/tesstrain.sh --fonts_dir /usr/share/fonts --lang nor \
+   --linedata_only --noextract_font_properties \
+   --langdata_dir ../langdata --tessdata_dir ./tessdata \
+   --fontlist "Arial" \
+   --output_dir ~/tesstutorial/noreval
  
 mkdir -p ~/tesstutorial/nor_layer 
  
@@ -45,6 +51,7 @@ combine_tessdata -e ../tessdata/nor.traineddata \
   --append_index 5 --net_spec '[Lfx256 O1c105]' \
   --model_output ~/tesstutorial/nor_layer/norlayer \
   --train_listfile ~/tesstutorial/nor/nor.training_files.txt \
+  --eval_listfile ~/tesstutorial/noreval/nor.training_files.txt \
   --max_iterations 5000
     
 lstmtraining --model_output ~/tesstutorial/nor_layer/norlayer.lstm \
