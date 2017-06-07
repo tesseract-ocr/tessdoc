@@ -177,7 +177,7 @@ the main training process, with command-lines that have been tested for real. On
 Linux at least, you should be able to just copy-paste the command lines into
 your terminal. To make the `tesstrain.sh` script work, it will be necessary to
 either set `PATH` to include your local `training` and `api` directories, or use
-`make install.`
+`make install`.
 
 # Creating Training Data
 
@@ -297,7 +297,7 @@ end. This is entirely contrary to the way base Tesseract is trained!
 If using the rendering code, (via `tesstrain.sh`) then it will shuffle the
 sample text lines within each file, but you will get a set of files, each
 containing training samples from a single font. To add a more even mix at least,
-you should use the `16` flag value for `train_mode,` *even if you don't want the
+you should use the `16` flag value for `train_mode`, *even if you don't want the
 unicharset compressed.*
 
 ### Model output
@@ -329,13 +329,13 @@ that many imperfect ones seen since the last perfect sample.
 
 ### Debug Interval and Visual Debugging
 
-With zero (default) `--debug_interval,` the trainer outputs a progress report
+With zero (default) `--debug_interval`, the trainer outputs a progress report
 every 100 iterations.
 
-With `--debug_interval -1,` the trainer outputs verbose text debug for every
+With `--debug_interval -1`, the trainer outputs verbose text debug for every
 training iteration.
 
-With `--debug_interval > 0,` the trainer displays several windows of debug
+With `--debug_interval > 0`, the trainer displays several windows of debug
 information on the layers of the network. In the special case of
 `--debug_interval 1` it waits for a click in the `LSTMForward` window before
 continuing to the next iteration, but for all others it just continues and draws
@@ -367,7 +367,7 @@ expect from the bottom layer.
 lines are drawn to show the peak output for each character, and the character
 itself is drawn to the right of the line.
 
-The other two windows worth looking at are `CTC Outputs` and `CTC Targets.`
+The other two windows worth looking at are `CTC Outputs` and `CTC Targets`.
 These show the current output of the network and the targets as a line graph of
 strength of output against image x-coordinate. Instead of a heatmap, like the
 `Output` window, a different colored line is drawn for each character class and
@@ -399,8 +399,8 @@ You should observe that by 500 iterations, the spaces (white) are starting to
 show on the `CTC Outputs` window and by 800 iterations green lines appear on
 the `LSTMForward` window where there are spaces in the image.
 
-By 600 iterations, there are noticeable non-space bumps in the `CTC Outputs.`
-Note that the `CTC Targets,` which started at all the same height are now varied
+By 600 iterations, there are noticeable non-space bumps in the `CTC Outputs`.
+Note that the `CTC Targets`, which started at all the same height are now varied
 in height because of the definite output for spaces. At the same time, the
 characters and positioning of the green lines in the `LSTMTraining` window are
 not as accurate as they once were, because the partial output from the network
@@ -569,7 +569,7 @@ layers of an existing network model, replace some of them with new randomized
 layers, and train with your data. The command-line is mostly the same as
 [Training from scratch](#training-from-scratch), as you have to supply a
 unicharset and net_spec, and you also have to provide a model to
-`--continue_from` and `--append_index.`
+`--continue_from` and `--append_index`.
 
 The `--append_index` argument tells it to remove all layers **above** the layer
 with the given index, (starting from zero, in the outermost series) and then
@@ -744,7 +744,7 @@ The dawg files are optional. It will work without them, but they do usually
 provide some small improvement in accuracy.
 
 **NOTE** Tesseract 4.00 will now run happily with a traineddata file that
-contains *just* `lang.lstm.` The `lstm-*-dawgs` are optional, and *none of the
+contains *just* `lang.lstm`. The `lstm-*-dawgs` are optional, and *none of the
 other files are required or used with OEM_LSTM_ONLY as the OCR engine mode.*
 No bigrams, unichar ambigs or any of the other files are needed or even have
 any effect if present.
