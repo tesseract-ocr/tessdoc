@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes#in-development)
+* [June 1 2017 - V3.05.01](#tesseract-release-notes-june-1-2017---v30501)
 * [Feb 16 2017 - V3.05.00](#tesseract-release-notes-feb-16-2017---v30500)
 * [Feb 16 2016 - V3.04.01](#tesseract-release-notes-feb-16-2016---v30401)
 * [July 11 2015 - V3.04.00](#tesseract-release-notes-july-11-2015---v30400)
@@ -39,7 +40,7 @@ input image) for PDF output.
   * Removed code that is no longer needed due to the fact that we now require 
 C++11 support for the compiler and the standard library.
 
-**To be released as V3.05.01 - hopefully in 2017/Q2**
+# Tesseract release notes June 1 2017 - V3.05.01
   * Added an option to render only the invisible text layer (without the full 
 input image) for PDF output.
   * Made some optimizations to GenericVector.
