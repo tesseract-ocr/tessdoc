@@ -56,7 +56,7 @@ Tesseract versions and the minimum version of Leptonica required:
 
 **Tesseract** | **Leptonica** | **Ubuntu**
 :-------------------: | :---------------------------------------: | :---------
-4.00 | 1.74.0 | Must build from source 
+4.00 | 1.74.2 | Must build from source 
 3.05 | 1.74.0 | Must build from source 
 3.04 | 1.71 | [Ubuntu 16.04](http://packages.ubuntu.com/xenial/libtesseract3)
 3.03 | 1.70 | [Ubuntu 14.04](http://packages.ubuntu.com/trusty/libtesseract3)
