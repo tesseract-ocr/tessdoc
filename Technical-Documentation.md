@@ -40,4 +40,4 @@ Spain July 25, 2009. https://dl.acm.org/citation.cfm?id=1577804
   * [The hOCR Embedded OCR Workflow and Output Format](https://github.com/kba/hocr-spec/) (hOCR specification)
   * [Text Detection on Nokia N900 Using Stroke Width Transform](https://sites.google.com/site/roboticssaurav/strokewidthnokia) (with source code)
 * [Generic Text Recognition using Long Short-Term Memory Networks - Ph.D. Thesis](https://kluedo.ub.uni-kl.de/files/4353/PhD_Thesis_Ul-Hasan.pdf)
-* [Creating a Modern OCR Pipeline Using Computer Vision and Deep LearningCreating a Modern OCR Pipeline Using Computer Vision and Deep Learning](https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/)
+* [Creating a Modern OCR Pipeline Using Computer Vision and Deep Learning](https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/)
