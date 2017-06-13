@@ -53,6 +53,7 @@ combine_tessdata -e ../tessdata/ara.traineddata \
 lstmtraining --model_output ~/tesstutorial/aratuned_from_ara/aratuned \
   --continue_from ~/tesstutorial/aratuned_from_ara/ara.lstm \
   --train_listfile ~/tesstutorial/aratest/ara.training_files.txt \
+  --eval_listfile ~/tesstutorial/aratest/ara.training_files.txt \
   --target_error_rate 0.01 
 ```
 
