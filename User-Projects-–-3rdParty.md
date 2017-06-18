@@ -20,6 +20,7 @@
 | [TessOCR(KISI)](http://djvu.life.coocan.jp/TessOCR/doc/tessOCR_eng.html) |           | X       |             | Apache 2.0  | A free OCR tool |
 | [pmOCR](http://github.com/deajan/pmocr/) | X         |          |          | BSD | Batch OCR tool, also file monitor event OCR with tesseract |
 | [tesseract4java](http://github.com/tesseract4java/tesseract4java) | X         | X        | X        | GPLv3 | A cross-platform GUI for training and running Tesseract with advanced features like batch recognition and accuracy evaluation |
+| [Linux-Intelligent-OCR-Solution(lios)](https://github.com/Nalin-x-Linux/lios-3.git) | X         |         |          | GPLv3 | A GUI for scanning, running and training Tesseract with total accessibility for visually impaired and advanced features like  Scanner Brightness optimizer, Text-Cleaner, etc |
 
 ## Online OCR services
 
