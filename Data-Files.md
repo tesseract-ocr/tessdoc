@@ -38,7 +38,7 @@ cat | Catalan; Valencian | [cat.traineddata](https://github.com/tesseract-ocr/te
 ceb | Cebuano | [ceb.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ceb.traineddata)
 ces | Czech | [ces.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/ces.traineddata)
 chi_sim | Chinese - Simplified | [chi_sim.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/chi_sim.traineddata)
-chi_tra | Chinese - Traditional | [chi_tra.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.0/chi_tra.traineddata)
+chi_tra | Chinese - Traditional | [chi_tra.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/chi_tra.traineddata)
 chr | Cherokee | [chr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/chr.traineddata)
 cym | Welsh | [cym.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/cym.traineddata)
 dan | Danish | [dan.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/dan.traineddata)
