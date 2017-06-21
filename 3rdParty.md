@@ -1,2 +1,0 @@
-rytrytr ryrty 
-trtyr rtyrt
