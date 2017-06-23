@@ -69,7 +69,9 @@ Ensure that the development headers for Leptonica are installed before compiling
 
 ## Installing Tesseract from Git
 
-Please follow instructions in [https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation)
+Please follow instructions in [https://github.com/tesseract-ocr/tesseract/wiki/Compiling--GitInstallation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation)
+
+Also read [Install Instructions](https://github.com/tesseract-ocr/tesseract/blob/master/INSTALL.GIT.md)
 
 ## Install elsewhere / without root
 
@@ -427,12 +429,24 @@ make training
 ```
 
 # Common Errors
-To fix this error
+
+* To fix this error
 ```
 ./configure: line 4237: syntax error near unexpected token `-mavx,'
 ./configure: line 4237: `AX_CHECK_COMPILE_FLAG(-mavx, avx=1, avx=0)'
 ```
 ensure that `autoconf-archive` is installed. Don't forget to run `./autogen.sh` after the installation of `autoconf-archive`.
+
+* If configure fails with such error "configure: error: Leptonica 1.74 or higher is required." Try to install libleptonica-dev package.
+
+* If you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with `pkg-config --variable pc_path pkg-config`). 
+
+A solution is to set PKG_CONFIG_PATH : example :`PKG_CONFIG_PATH=/usr/local/lib/pkgconfig`
+
+* On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). 
+
+In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
+
 
 # Miscellaneous
 
