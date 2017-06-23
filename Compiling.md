@@ -67,48 +67,9 @@ The sources are at http://www.leptonica.org/. The instructions at [Leptonica REA
 
 Ensure that the development headers for Leptonica are installed before compiling Tesseract. Note that if building Leptonica from source, you may need to ensure that /usr/local/lib is in your library path. This is a standard Linux bug, and the information at [Stackoverflow](http://stackoverflow.com/questions/4743233/is-usr-local-lib-searched-for-shared-libraries) is very helpful.
 
-## Compilation
+## Installing Tesseract from Git
 
-Tesseract uses a standard autotools based build system, so the compilation process should be familiar.
-
-```
-git clone https://github.com/tesseract-ocr/tesseract.git
-cd tesseract
-./autogen.sh
-./configure
-LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
-sudo make install
-sudo ldconfig
-```
-If you want the training tools (3.03+), you will also need to run the following commands:
-```
-make training
-sudo make training-install
-```
-
-Build of training tools is not available if you do not have necessary dependencies (pay attention to messages from ./configure script).
-
-`--enable-debug` `--disable-graphics` can be used as options with configure. Please note that with `--enable-debug` option Tesseract will be compiled with -O0 and will be VERY slow.
-
-If `configure` fails with errors like these:
-```
-./configure: line 4250: syntax error near unexpected token `-mavx,'
-./configure: line 4250: `AX_CHECK_COMPILE_FLAG(-mavx, avx=true, avx=false)'
-```
-then double check you have installed autoconf-archive and restart Tesseract installation process (`./autogen.sh, `./configure` ...).
-
-If configure fails with such error "configure: error: Leptonica 1.74 or higher is required. Try to install libleptonica-dev package." and you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with "pkg-config --variable pc_path pkg-config"). 
-
-A solution is to set PKG_CONFIG_PATH : example :
-`PKG_CONFIG_PATH=/usr/local/lib/pkgconfig LIBLEPT_HEADERSDIR=/usr/local/include ./configure --with-extra-includes=/usr/local/include --with-extra-libraries=/usr/local/lib`
-
-On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
-
-For visual debugging, you also have to build [ScrollView.jar](ViewerDebugging). In addition, it is necessary to set the environment variable SCROLLVIEW_PATH to the directory with [ScrollView.jar](ViewerDebugging). 
-
-```
-make ScrollView.jar
-```
+Please follow instructions in [https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation)
 
 ## Install elsewhere / without root
 
