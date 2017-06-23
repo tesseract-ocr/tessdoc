@@ -2,18 +2,18 @@
 
 **Note:** This wiki expects you to be familiar with compiling software on your operation system.
 
-# Table of contents
+## Table of contents
 * [Linux](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#linux)
 * [Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows)
 * [macOS](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#macos)
 * [Common Errors](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#common-errors)
 * [Miscellaneous](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#miscellaneous)
 
-# Linux
+## Linux
 
 The build instructions for Linux also apply to other UNIX like operating systems.
 
-## Dependencies
+### Dependencies
 
 * A compiler for C and C++: GCC or Clang
 * GNU Autotools: autoconf, automake, libtool
@@ -42,15 +42,9 @@ sudo apt-get install libpango1.0-dev
 sudo apt-get install libcairo2-dev
 ```
 
-You also need to install [Leptonica](http://www.leptonica.org/).
+### Leptonica
 
-One option is to install the distro's Leptonica package: 
-
-```
-sudo apt-get install libleptonica-dev
-```
-
-**but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
+You also need to install [Leptonica](http://www.leptonica.org/). Ensure that the development headers for Leptonica are installed before compiling Tesseract.
 
 Tesseract versions and the minimum version of Leptonica required:
 
@@ -63,9 +57,17 @@ Tesseract versions and the minimum version of Leptonica required:
 3.02 | 1.69 | [Ubuntu 12.04](http://packages.ubuntu.com/precise/libtesseract3)
 3.01 | 1.67 |
 
-The sources are at http://www.leptonica.org/. The instructions at [Leptonica README](http://www.leptonica.org/source/README.html) are clear, but basically it is as described in [Compilation](#Compilation) below.
+One option is to install the distro's Leptonica package: 
 
-Ensure that the development headers for Leptonica are installed before compiling Tesseract. Note that if building Leptonica from source, you may need to ensure that /usr/local/lib is in your library path. This is a standard Linux bug, and the information at [Stackoverflow](http://stackoverflow.com/questions/4743233/is-usr-local-lib-searched-for-shared-libraries) is very helpful.
+```
+sudo apt-get install libleptonica-dev
+```
+
+**but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
+
+The sources are at https://github.com/DanBloomberg/leptonica . The instructions for bbuilding are given in [Leptonica README](http://www.leptonica.org/source/README.html).
+
+Note that if building Leptonica from source, you may need to ensure that /usr/local/lib is in your library path. This is a standard Linux bug, and the information at [Stackoverflow](http://stackoverflow.com/questions/4743233/is-usr-local-lib-searched-for-shared-libraries) is very helpful.
 
 ## Installing Tesseract from Git
 
