@@ -65,7 +65,7 @@ sudo apt-get install libleptonica-dev
 
 **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
 
-The sources are at https://github.com/DanBloomberg/leptonica . The instructions for bbuilding are given in [Leptonica README](http://www.leptonica.org/source/README.html).
+The sources are at https://github.com/DanBloomberg/leptonica . The instructions for building are given in [Leptonica README](http://www.leptonica.org/source/README.html).
 
 Note that if building Leptonica from source, you may need to ensure that /usr/local/lib is in your library path. This is a standard Linux bug, and the information at [Stackoverflow](http://stackoverflow.com/questions/4743233/is-usr-local-lib-searched-for-shared-libraries) is very helpful.
 
@@ -228,89 +228,11 @@ The core packages groups you need to install if you wish to build from PKGBUILDs
 
 To build the tesseract-ocr release package, use PKGBUILD from https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-tesseract-ocr
 
-To build tesseract-ocr from the GitHub source, create a PKGBUILD with the following commands.
-
-```
-#
-_realname=tesseract-ocr
-pkgbase=mingw-w64-${_realname}-git
-pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-provides=("${MINGW_PACKAGE_PREFIX}-${_realname}")
-replaces=("${MINGW_PACKAGE_PREFIX}-${_realname}")
-pkgver=1310.60176fc
-pkgrel=1
-pkgdesc="Tesseract OCR (mingw-w64)"
-arch=('any')
-url="https://github.com/tesseract-ocr/tesseract"
-license=("Apache License 2.0")
-makedepends=("${MINGW_PACKAGE_PREFIX}-gcc" "${MINGW_PACKAGE_PREFIX}-pkg-config")
-depends=(${MINGW_PACKAGE_PREFIX}-cairo
-	 ${MINGW_PACKAGE_PREFIX}-cairomm
-	 ${MINGW_PACKAGE_PREFIX}-fontconfig
-         ${MINGW_PACKAGE_PREFIX}-gcc-libs
-         ${MINGW_PACKAGE_PREFIX}-icu
-	 icu-devel
-	 git
-         ${MINGW_PACKAGE_PREFIX}-leptonica
-         ${MINGW_PACKAGE_PREFIX}-pango
-	 ${MINGW_PACKAGE_PREFIX}-pangomm
-	 ${MINGW_PACKAGE_PREFIX}-tesseract-data-eng
-         ${MINGW_PACKAGE_PREFIX}-zlib)
-options=('!libtool' '!emptydirs' '!strip' 'debug')
-source=("tesseract"::"git+https://github.com/tesseract-ocr/tesseract.git#branch=master"
-        https://github.com/tesseract-ocr/tessdata/raw/master/osd.traineddata)
-sha256sums=('SKIP'
-            '9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff')
-pkgver() {
-  cd "${srcdir}/tesseract"
-  printf "%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-}
-prepare() {
-  cd "${srcdir}/tesseract"
-  ./autogen.sh
-}
-build() {
-  [[ -d "${srcdir}/build-${MINGW_CHOST}" ]] && rm -rf "${srcdir}/build-${MINGW_CHOST}"
-  mkdir "${srcdir}/build-${MINGW_CHOST}"
-  cd "${srcdir}/build-${MINGW_CHOST}"
-  local -a extra_config
-  if check_option "debug" "y"; then
-    extra_config+=( --enable-debug )
-  fi
-  "${srcdir}/tesseract"/configure \
-    --build=${MINGW_CHOST} \
-    --host=${MINGW_CHOST} \
-    --target=${MINGW_CHOST} \
-    --prefix=${MINGW_PREFIX} \
-    LIBLEPT_HEADERSDIR=${MINGW_PREFIX}/include \
-    "${extra_config[@]}"
-  make
-}
-package() {
-  cd "${srcdir}/build-${MINGW_CHOST}"
-  make DESTDIR="${pkgdir}" install
-  make training
-  make DESTDIR="${pkgdir}" training-install
-  mkdir -p ${pkgdir}${MINGW_PREFIX}/share/tessdata
-  install -Dm0644 ${srcdir}/osd.traineddata ${pkgdir}${MINGW_PREFIX}/share/tessdata/osd.traineddata
-}
-
-```
-build and install as follows:
-
-```
-cd MINGW-packages/mingw-w64-tesseract-ocr
-makepkg-mingw -sLf
-pacman -U mingw-w64-*-tesseract-ocr-*-any.pkg.tar.xz
-```
-
 ## Cygwin
 
-For Cygwin have a look at blog [How to build Tesseract on Cygwin](http://vorba.ch/2014/tesseract-cygwin.html).
-Simon Eigeldinger has provided binaries [tesseract compiled by cygwin](http://domasofan.spdns.eu/tesseract/).
+To build on Cygwin have a look at blog [How to build Tesseract on Cygwin](http://vorba.ch/2014/tesseract-cygwin.html).
 
-On cygwin Marco Atzeri has packaged Tesseract as well as the training utilities for 3.04.00 along with some training data. Instruction for cygwin installation is here:
-https://cygwin.com/cygwin-ug-net/setup-net.html
+Tesseract as well as the training utilities for 3.04.00 onwards are available as Cygwin packages.
 
 ```
 Tesseract specific packages to be installed:
