@@ -235,6 +235,8 @@ yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 
 ## Cube Data Files for Version 3.04/3.05
 
+In Tesseract 3.0x Arabic and hindi use the Cube OCR engine. You need to download the cube files and move them to the same folder where the <ara/hin>.traineddata file is located.
+
 Hindi:
 [hin.cube.bigrams](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.bigrams), 
 [hin.cube.fold](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.fold), 
