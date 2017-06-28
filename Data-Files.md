@@ -128,6 +128,8 @@ yid | Yiddish | [yid.traineddata](https://github.com/tesseract-ocr/tessdata/raw/
 
 ## Data Files for Version 3.04/3.05
 
+**Note**: For Arabic and Hindi you need both the traineddata file and the [cube data files](#cube-data-files-for-version-304305). 
+
 Lang Code | Language | 3.04 traineddata
 :-------- | :------- | :---------------
 afr | Afrikaans | [afr.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/afr.traineddata)
