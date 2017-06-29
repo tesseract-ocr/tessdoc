@@ -4,10 +4,10 @@
 
 | **Name** | **Linux** | **Mac** | **Windows** | **License** | **Description** |
 |:---------|:----------|:--------|:------------|:------------|:----------------|
-| [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GNU AGPL v3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and OCR'ing PDF files |
-| [YAGF](http://sourceforge.net/projects/yagf-ocr/) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
 | [gImageReader](https://github.com/manisandro/gImageReader) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
+| [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GNU AGPL v3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and OCR'ing PDF files |
+| [YAGF](http://sourceforge.net/projects/yagf-ocr/) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
 | [OCRFeeder](https://wiki.gnome.org/action/show/Apps/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
 | [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
