@@ -4,14 +4,11 @@
 
 | **Name** | **Linux** | **Mac** | **Windows** | **License** | **Description** |
 |:---------|:----------|:--------|:------------|:------------|:----------------|
-| [TaxWorkFlow](https://thetaxworkflow.com)|          |         | X           | Proprietary | TaxWorkFlow is an accounting practice management application that includes GUI frontend for Tesseract OCR engine. The app supports AVX and allows to create OCR'ed PDF files of selected resolution and compression from PDF files and 100+ image file formats. |
 | [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GNU AGPL v3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and OCR'ing PDF files |
 | [YAGF](http://sourceforge.net/projects/yagf-ocr/) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
 | [gImageReader](https://github.com/manisandro/gImageReader) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
-| [SunnyPage OCR](http://www.sunnypage.ge/en/) |           |         | X           | Proprietary | A GUI frontend for Tesseract OCR engine with automatic adjustment of image brightness, image processing and PDF support.|
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
 | [OCRFeeder](https://wiki.gnome.org/action/show/Apps/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
-| [PDF OCR X](http://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
 | [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
 | [Lime OCR](http://code.google.com/p/lime-ocr/) |           |         | X           | GPL v3      | A simple, free OCR software for Windows using tesseract-ocr engine |
@@ -22,6 +19,9 @@
 | [pmOCR](http://github.com/deajan/pmocr/) | X         |          |          | BSD | Batch OCR tool, also file monitor event OCR with tesseract |
 | [tesseract4java](http://github.com/tesseract4java/tesseract4java) | X         | X        | X        | GPLv3 | A cross-platform GUI for training and running Tesseract with advanced features like batch recognition and accuracy evaluation |
 | [Linux-Intelligent-OCR-Solution(lios)](https://github.com/Nalin-x-Linux/lios-3.git) | X         |         |          | GPLv3 | A GUI for scanning, running and training Tesseract with total accessibility for visually impaired and advanced features like  Scanner Brightness optimizer, Text-Cleaner, etc |
+[SunnyPage OCR](http://www.sunnypage.ge/en/) |           |         | X           | Proprietary | A GUI frontend for Tesseract OCR engine with automatic adjustment of image brightness, image processing and PDF support.|
+| [PDF OCR X](http://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
+| [TaxWorkFlow](https://thetaxworkflow.com)|          |         | X           | Proprietary | TaxWorkFlow is an accounting practice management application that includes GUI frontend for Tesseract OCR engine. The app supports AVX and allows to create OCR'ed PDF files of selected resolution and compression from PDF files and 100+ image file formats. |
 
 ## Online OCR services
 
