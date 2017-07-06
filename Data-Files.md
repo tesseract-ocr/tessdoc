@@ -284,7 +284,7 @@ bul | Bulgarian | [tesseract-ocr-3.02.bul.tar.gz](https://sourceforge.net/projec
 cat | Catalan; Valencian | [tesseract-ocr-3.02.cat.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.cat.tar.gz/download)
 ces | Czech | [tesseract-ocr-3.02.ces.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.ces.tar.gz/download)
 chi_sim | Chinese - Simplified | [tesseract-ocr-3.02.chi_sim.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.chi_sim.tar.gz/download)
-chi_tra | Chinese - Traditional | [tesseract-ocr-3.02.chi_tra.tar.gz](https://github.com/tesseract-ocr/tessdata/raw/4.0/chi_tra.tar.gz/download)
+chi_tra | Chinese - Traditional | [tesseract-ocr-3.02.chi_tra.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.chi_tra.tar.gz/download)
 chr | Cherokee | [tesseract-ocr-3.02.chr.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.chr.tar.gz/download)
 dan | Danish | [tesseract-ocr-3.02.dan.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.dan.tar.gz/download)
 deu | German | [tesseract-ocr-3.02.deu.tar.gz](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-3.02.deu.tar.gz/download)
