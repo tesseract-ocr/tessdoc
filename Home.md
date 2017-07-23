@@ -44,7 +44,9 @@ brew install tesseract
 An unofficial installer for windows for Tesseract 3.05-dev and Tesseract 4.00-dev is available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). This includes the training tools.
 
 An installer for the old version 3.02 is available for Windows from our [download](Downloads) page. This includes the English training data. If you want to use another language, [download the appropriate training data](
-https://github.com/tesseract-ocr/tesseract/wiki/Data-Files), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract OCR\tessdata`.
+https://github.com/tesseract-ocr/tesseract/wiki/Data-Files), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
+
+To access tesseract-OCR from any location you may have to add the directory where the tesseract-OCR binaries are located to the Path variables, probably `C:\Program Files\Tesseract-OCR`.
 
 ## MSYS2
 
