@@ -112,6 +112,8 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * [Chandas](http://www.sanskritweb.net/cakram/chandas.ttf)
 * [Lohit Devanagari](https://releases.pagure.org/lohit/Lohit-Devanagari.ttf)
 * [Nakula](http://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
+* [Murty Hindi](http://www.murtylibrary.com/mcli-fonts.php)
+* [Murty Sanskrit](http://www.murtylibrary.com/mcli-fonts.php)
 * [Sahadeva](http://bombay.indology.info/software/fonts/devanagari/sahadeva.ttf)
 * [Sanskrit2003](http://www.sanskritweb.net/itrans/sanskrit2003.zip)
 * [Santipur OT](http://www.sanskritweb.net/itrans/santipurot.zip)
