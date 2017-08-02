@@ -31,24 +31,20 @@ line recognizer. It can be used with the existing layout analysis to recognize
 text within a large document, or it can be used in conjunction with an external
 text detector to recognize text from an image of a single textline.
 
-The neural network engine is selected by specifying `OEM_LSTM_ONLY` as the
-`OcrEngineMode` to `TessBaseAPI::Init`. (It will probably be made the default by
-release of 4.00.) From an API perspective, *that is all that is required to use
-it.* To recognize text from an image of a single text line, use
-`SetPageSegMode(PSM_RAW_LINE)`. This can be used from the command-line with
-`-psm 13`
+The neural network engine is the default for 4.00. To recognize text from an
+image of a single text line, use `SetPageSegMode(PSM_RAW_LINE)`. This can be
+used from the command-line with `-psm 13`
 
-The neural network engine has not yet been integrated to enable the multi-
-language mode that worked with Tesseract 3.04, but this will be improved in a
-future release. Vertical text is also not yet supported, so support for
-Japanese and Traditional Chinese for example are limited to horizontally
-rendered text.
+The neural network engine has been integrated to enable the multi- language mode
+that worked with Tesseract 3.04, but this will be improved in a future release.
+Vertical text is now supported for Chinese, Japanese and Korean, and should be
+detected automatically.
 
 # Hardware and CPU Requirements
 
 The Tesseract 4.00 neural network subsystem is heavily compute-intensive, using
 the order of ten times the CPU resources of the base Tesseract, but the impact
-is mitigated, if your platform supports it as follows:
+is mitigated, if your platform supports it, as follows:
 
 *   Open MP allows use of four cores in parallel if your machine has them.
 *   Intel/AMD processors that support SSE and/or AVX benefit from SIMD
@@ -60,19 +56,16 @@ takes more CPU than base Tesseract, but actually runs faster in terms of real
 time.
 
 If the above components are missing, there is a slower plain C++ implementation
-that enables the code to still work, however, not on big-endian hardware!
-(Most mobile devices).
+that enables the code to still work. Little-endian and big-endian systems are
+both supported.
 
 # For Open Source Contributors
 
 The initial implementation lacks the following:
 
-*   Big-endian support. The swaps are missing from the (De)Serialize methods of
-    the new neural network code. See the related [issue](https://github.com/tesseract-ocr/tesseract/issues/518) for more information.
 *   There is a C++ implementation if the hardware does not have SSE and/or AVX,
     but the code could benefit from SIMD implementations for other hardware,
     such as ARM. See the new `arch` directory for where to insert the code.
-*   Windows support of SSE and AVX is implemented but untested.
 
 # Basics of the Implementation
 

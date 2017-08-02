@@ -1,27 +1,35 @@
 # How to use the tools provided to train Tesseract 4.00
 
-**Have questions about the training process?**  
-If you had some problems during the training process and you need help, use [tesseract-ocr](https://groups.google.com/forum/#!forum/tesseract-ocr) mailing-list to ask your question(s).  
-**PLEASE DO NOT** report your problems and ask questions about training as [issues](https://github.com/tesseract-ocr/tesseract/issues)!
-
+**Have questions about the training process?** If you had some problems during
+the training process and you need help, use
+[tesseract-ocr](https://groups.google.com/forum/#!forum/tesseract-ocr)
+mailing-list to ask your question(s). **PLEASE DO NOT** report your problems and
+ask questions about training as
+[issues](https://github.com/tesseract-ocr/tesseract/issues)!
 
 *   [Introduction](#introduction)
 *   [Before You Start](#before-you-start)
 *   [Additional Libraries Required](#additional-libraries-required)
 *   [Building the Training Tools](#building-the-training-tools)
-*   [Hardware/Software Requirements](#hardwaresoftware-requirements)
+*   [Hardware-Software Requirements](#hardware-software-requirements)
 *   [Overview of Training Process](#overview-of-training-process)
+*   [Understanding the Various Files Used During
+    Training](#understanding-the-various-files-used-during-training)
 *   [Creating the Training Data](#creating-training-data)
 *   [Tutorial Guide to lstmtraining](#tutorial-guide-to-lstmtraining)
+    *   [Creating the starter traineddata](#creating-starter-traineddata)
     *   [LSTMTraining Command Line](#lstmtraining-command-line)
-        *   [Unicharset Compression](#unicharset-compression-and-train_mode)
-        *   [Randomized Training Data](#randomized-training-data-and-train_mode)
+        *   [Unicharset Compression+Recoding](#unicharset-compression-recoding)
+        *   [Randomized Training
+            Data](#randomized-training-data-and-sequential-training)
         *   [Model Output](#model-output)
         *   [Net Mode and Optimization](#net-mode-and-optimization)
         *   [Perfect Sample Delay](#perfect-sample-delay)
         *   [Debug Interval](#debug-interval-and-visual-debugging)
     *   [Training From Scratch](#training-from-scratch)
-    *   [Fine Tuning for Impact](#fine-tuning-for-impact)
+    *   [Fine Tuning for Impact(new-font-style)](#fine-tuning-for-impact)
+    *   [Fine Tuning for ± a few
+        characters](#fine-tuning-for-±-a-few-characters)
     *   [Training Just a Few Layers](#training-just-a-few-layers)
     *   [Error Messages From Training](#error-messages-from-training)
 *   [Combining the Output Files](#combining-the-output-files)
@@ -35,7 +43,8 @@ complex languages however, it may actually be *faster* than base Tesseract.
 
 Neural networks require significantly more training data and train *a lot*
 slower than base Tesseract. For Latin-based languages, the existing model data
-provided has been trained on about [400000 textlines spanning about 4500 fonts](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951).
+provided has been trained on about [400000 textlines spanning about 4500
+fonts](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951).
 For other scripts, not so many fonts are available, but they have still been
 trained on a similar number of textlines. Instead of taking a few minutes to a
 couple of hours to train, Tesseract 4.00 takes a few *days* to a couple of
@@ -109,41 +118,42 @@ make ScrollView.jar
 export SCROLLVIEW_PATH=$PWD/java
 ```
 
-# Hardware/Software Requirements
+# Hardware-Software Requirements
 
-At time of writing, training only works on Linux, and a little-endian machine
-(eg Intel) is required to do any kind of incremental training. As for running
+At time of writing, training only works on Linux? Windows yet? As for running
 Tesseract 4.00, it is useful, but not essential to have a multi-core (4 is good)
 machine, with OpenMP and Intel Intrinsics support for SSE/AVX extensions.
 Basically it will still run on anything with enough memory, but the higher-end
-your processor is, the faster it will go. No GPU is needed. (No support.)
-Memory use can be controlled via the --max_image_MB command-line option, but
-you are likely to need at least 1GB of memory over and above what is taken by
-your OS.
+your processor is, the faster it will go. No GPU is needed. (No support.) Memory
+use can be controlled via the --max_image_MB command-line option, but you are
+likely to need at least 1GB of memory over and above what is taken by your OS.
 
 # Training Text Requirements
 
-For Latin-based languages, the existing model data
-provided has been trained on about [400000 textlines spanning about 4500 fonts](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951).
+For Latin-based languages, the existing model data provided has been trained on
+about [400000 textlines spanning about 4500
+fonts](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951).
 For other scripts, not so many fonts are available, but they have still been
-trained on a similar number of textlines. 
+trained on a similar number of textlines.
 
-Note that it is beneficial to have more training text
-and make more pages though, as neural nets don't generalize as well and need to
-train on something similar to what they will be running on. If the target domain
-is severely limited, then all the dire warnings about needing a lot of training
-data may not apply, but the network specification may need to be changed.
+Note that it is beneficial to have more training text and make more pages
+though, as neural nets don't generalize as well and need to train on something
+similar to what they will be running on. If the target domain is severely
+limited, then all the dire warnings about needing a lot of training data may not
+apply, but the network specification may need to be changed.
 
 # Overview of Training Process
 
 The overall training process is similar to [training 3.04](TrainingTesseract)
 Conceptually the same:
 
-1.  [Prepare training text.](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951)
+1.  [Prepare training
+    text.](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951)
 1.  Render text to image + box file. (Or create hand-made box files for existing
     image data.)
-1.  Make unicharset file.
-1.  Optionally make dictionary data.
+1.  Make unicharset file. (Can be partially specified, ie created manually).
+1.  [Make a starter traineddata from the unicharset and optional dictionary
+     data.](#creating-starter-traineddata)
 1.  Run tesseract to process image + box file to make training data set.
 1.  Run training on training data set.
 1.  Combine data files.
@@ -166,9 +176,8 @@ reasons:
 *   There are multiple options for how to train the network (see above).
 *   The language models and unicharset are allowed to be different from those
     used by base Tesseract, but don't have to be.
-*   In theory it isn't necessary to have a base Tesseract of the same language
-    as the neural net Tesseract, but currently it won't load without something
-    there.
+*   It isn't necessary to have a base Tesseract of the same language as the
+    neural net Tesseract.
 
 The process of [Creating the training data](#creating-training-data) is
 documented below, followed by a [Tutorial guide to
@@ -179,9 +188,60 @@ your terminal. To make the `tesstrain.sh` script work, it will be necessary to
 either set `PATH` to include your local `training` and `api` directories, or use
 `make install`.
 
+# Understanding the Various Files Used During Training
+
+As with base Tesseract, the completed LSTM model and everything else it needs is
+collected in the `traineddata` file. Unlike base Tesseract, a starter
+`traineddata` file is given during training, and has to be setup in advance. It
+can contain:
+
+*   Config file providing control parameters.
+*   **Unicharset** defining the character set.
+*   **Unicharcomress,** aka the recoder, which maps the unicharset further to
+    the codes actually used by the neural network recognizer.
+*   Punctuation pattern dawg, with patterns of punctuation allowed around words.
+*   Word dawg. The system word-list language model.
+*   Number dawg, with patterns of numbers that are allowed.
+
+Bold elements **must** be provided. Others are optional, but if any of the dawgs
+are provided, the punctuation dawg must also be provided. A new tool:
+`combine_lang_data` is provided to make a starter `traineddata` from a
+`unicharset` and optional wordlists.
+
+During training, the trainer writes checkpoint files, which is a standard
+behavior for neural network trainers. This allows training to be stopped and
+continued again later if desired. Any checkpoint can be converted to a full
+`traineddata` for recognition by using the `--stop_training` command-line flag.
+
+The trainer also periodically writes checkpoint files at new bests achieved
+during training.
+
+It is possible to modify the network and retrain just part of it, or fine tune
+for specific training data (even with a modified unicharset!) by telling the
+trainer to `--continue_from` either an existing checkpoint file, or from a naked
+LSTM model file that has been extracted from an existing `traineddata` file
+using `combine_tessdata` _provided it has not been converted to integer._
+
+If the unicharset is changed in the `--traineddata` flag, compared to the one
+that was used in the model provided via `--continue_from`, then the
+`--old_traineddata` flag must be provided with the corresponding `trainddata`
+file that holds the `unicharset` and `recoder.` This enables the trainer to
+compute the mapping between the character sets.
+
+The training data is provided via `.lstmf` files, which are serialized
+`DocumentData` They contain an image and the corresponding UTF8 text
+transcription, and can be generated from tif/box file pairs using Tesseract in a
+similar manner to the way `.tr` files were created for the old engine.
+
 # Creating Training Data
 
-As with base Tesseract, there is a choice between rendering synthetic training data from fonts, or labelling some pre-existing images (like ancient manuscripts for example). In either case, the training process still require the tiff/box file pair. 
+As with base Tesseract, there is a choice between rendering synthetic training
+data from fonts, or labelling some pre-existing images (like ancient manuscripts
+for example). In either case, the required format is still the tiff/box file
+pair, except that the boxes only need to cover a textline instead of individual
+characters. 'Newline' boxes with tab as the character must be inserted between
+textlines to indicate the end-of-line. Multi-word boxes require a different box
+format, as the space would confuse the parser:
 
 There are two possible ways to format a box file.
 
@@ -206,15 +266,21 @@ For example, the textline `What a nice sunny day!`, should be written as:
 `#W h a t a n i c e s u n n y d a y !` The original spaces between words are omitted. 
 
 Note that in all cases, even for right-to-left languages, such as Arabic, the
-text transcription for the line, whether expressed as a sequences of boxes or
-as a WordStr string, *should be ordered left-to-right.* In other words the
-network is going to learn from left-to-right regardless of the language, and
-the right-to-left/bidi handling happens at a higher level inside Tesseract.
+text transcription for the line, whether expressed as a sequences of boxes or as
+a WordStr string, *should be ordered left-to-right.* In other words the network
+is going to learn from left-to-right regardless of the language, and the
+right-to-left/bidi handling happens at a higher level inside Tesseract.
 
 These instructions only cover the case of rendering from fonts, so the [needed fonts](Fonts) must be installed first.
 
 The setup for running [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) is the
 same as for base Tesseract. Use `--linedata_only` option for LSTM training.
+Note that it is beneficial to have more training
+text and make more pages though, as neural nets don't generalize as well and
+need to train on something similar to what they will be running on. If the
+target domain is severely limited, then all the dire warnings about needing a
+lot of training data may not apply, but the network specification may need to be
+changed.
 
 Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh)
 as follows: Note that your fonts location may vary.
@@ -242,63 +308,176 @@ We will use that data later to demonstrate tuning.
 
 # Tutorial Guide to lstmtraining
 
+## Creating Starter Traineddata
+
+NOTE: This is a new step!
+
+Instead of a `unicharset` and `script_dir,` `lstmtraining` now takes a
+`traineddata` file on its command-line, to obtain all the information it needs
+on the language to be learned. The `traineddata` *must* contain at least an
+`lstm-unicharset` and `lstm-recoder` component, and may also contain the three
+dawg files: `lstm-punc-dawg lstm-word-dawg lstm-number-dawg` A `config` file is
+also optional. The other components, if present, will be ignored and unused.
+
+There is no tool to create the `lstm-recoder` directly. Instead there is a new
+tool, `combine_lang_model` which takes as input an `input_unicharset` and
+`script_dir` (`script_dir` points to the `langdata` directory) and optional word
+list files. It creates the `lstm-recoder` from the `input_unicharset` and
+creates all the dawgs, if wordlists are provided, putting everything together
+into a `traineddata` file.
+
 ## LSTMTraining Command Line
 
 The lstmtraining program is a multi-purpose tool for training neural networks.
 The following table describes its command-line options:
 
-| **Flag** | **Type** | **Default** | **Explanation** |
-| :-------------------- | :------: | :---------: | :----------------- |
-| `U` | `string` | none | Path to the unicharset for the character set. |
-| `script_dir` | `string` | none | Path to the langdata directory used to get script unicharsets and the radical-stroke table. |
-| `net_spec` | `string` | none | Specifies the topology of the network. |
-| `model_output` | `string` | none | Base path of output model files/checkpoints. |
-| `max_image_MB` | `int` | `6000` | Maximum amount of memory to use for caching images. |
-| `learning_rate` | `double` | `1e-4` | Initial learning rate for SGD algorithm. |
-| `train_mode` | `int` | `80` | Flags from `TrainingFlags` in `lstmrecognizer.h` Possible values= `64` for Compress unicharset, `16` for round-robin training. |
-| `net_mode` | `int` | `192` | Flags from `NetworkFlags` in `network.h` Possible values= `128` for Adam optimization instead of momentum `64` to allow different layers to have their own learning rates, discovered automatically. |
-| `perfect_sample_delay` | `int` | `4` | When the network gets good, only backprop a perfect sample after this many imperfect samples have been seen since the last perfect sample was allowed through.|
-| `debug_interval` | `int` | `0` | If non-zero show visual debugging every this many iterations. |
-| `weight_range` | `double` | `0.1` | Range of random values to initialize weights. |
-| `momentum` | `double` | `0.9` | Momentum for alpha smoothing gradients. |
-| `max_iterations` | `int` | `0` | Stop training after this many iterations. |
-| `target_error_rate` | `double` | `0.01` | Stop training if the mean percent error rate gets below this value. |
-| `continue_from` | `string` | none | Path to previous checkpoint from which to continue training or fine tune. |
-| `stop_training` | `bool` | `false` | Convert the training checkpoint in `--continue_from` to a recognition model. |
-| `append_index` | `int` | `-1` | Cut the head off the network at the given index and append `--net_spec` network in place of the cut off part. |
-| `train_listfile` | `string` | none | Filename of a file listing training data files. |
-| `eval_listfile` | `string` | none | Filename of a file listing evaluation data files to be used in evaluating the model independently of the training data. |
+| **Flag**               | **Type** | **Default** | **Explanation**    |
+| :--------------------- | :------: | :---------: | :----------------- |
+| `traineddata`          | `string` | none        | Path to the        |
+:                        :          :             : starter            :
+:                        :          :             : traineddata file   :
+:                        :          :             : that contains the  :
+:                        :          :             : unicharset,        :
+:                        :          :             : recoder and        :
+:                        :          :             : optional language  :
+:                        :          :             : model.             :
+| `net_spec`             | `string` | none        | Specifies the      |
+:                        :          :             : topology of the    :
+:                        :          :             : network.           :
+| `model_output`         | `string` | none        | Base path of       |
+:                        :          :             : output model       :
+:                        :          :             : files/checkpoints. :
+| `max_image_MB`         | `int`    | `6000`      | Maximum amount of  |
+:                        :          :             : memory to use for  :
+:                        :          :             : caching images.    :
+| `learning_rate`        | `double` | `10e-4`     | Initial learning   |
+:                        :          :             : rate for SGD       :
+:                        :          :             : algorithm.         :
+| `sequential_training`  | `bool`   | `false`     | Set to true for    |
+:                        :          :             : sequential         :
+:                        :          :             : training. Default  :
+:                        :          :             : is to process all  :
+:                        :          :             : training data in   :
+:                        :          :             : round-robin        :
+:                        :          :             : fashion.           :
+| `net_mode`             | `int`    | `192`       | Flags from         |
+:                        :          :             : `NetworkFlags` in  :
+:                        :          :             : `network.h`        :
+:                        :          :             : Possible values=   :
+:                        :          :             : `128` for Adam     :
+:                        :          :             : optimization       :
+:                        :          :             : instead of         :
+:                        :          :             : momentum `64` to   :
+:                        :          :             : allow different    :
+:                        :          :             : layers to have     :
+:                        :          :             : their own learning :
+:                        :          :             : rates, discovered  :
+:                        :          :             : automatically.     :
+| `perfect_sample_delay` | `int`    | `0`         | When the network   |
+:                        :          :             : gets good, only    :
+:                        :          :             : backprop a perfect :
+:                        :          :             : sample after this  :
+:                        :          :             : many imperfect     :
+:                        :          :             : samples have been  :
+:                        :          :             : seen since the     :
+:                        :          :             : last perfect       :
+:                        :          :             : sample was allowed :
+:                        :          :             : through.           :
+| `debug_interval`       | `int`    | `0`         | If non-zero show   |
+:                        :          :             : visual debugging   :
+:                        :          :             : every this many    :
+:                        :          :             : iterations.        :
+| `weight_range`         | `double` | `0.1`       | Range of random    |
+:                        :          :             : values to          :
+:                        :          :             : initialize         :
+:                        :          :             : weights.           :
+| `momentum`             | `double` | `0.5`       | Momentum for alpha |
+:                        :          :             : smoothing          :
+:                        :          :             : gradients.         :
+| `adam_beta`            | `double` | `0.999`     | Smoothing factor   |
+:                        :          :             : squared gradients  :
+:                        :          :             : in ADAM algorithm  :
+| `max_iterations`       | `int`    | `0`         | Stop training      |
+:                        :          :             : after this many    :
+:                        :          :             : iterations.        :
+| `target_error_rate`    | `double` | `0.01`      | Stop training if   |
+:                        :          :             : the mean percent   :
+:                        :          :             : error rate gets    :
+:                        :          :             : below this value.  :
+| `continue_from`        | `string` | none        | Path to previous   |
+:                        :          :             : checkpoint from    :
+:                        :          :             : which to continue  :
+:                        :          :             : training or fine   :
+:                        :          :             : tune.              :
+| `stop_training`        | `bool`   | `false`     | Convert the        |
+:                        :          :             : training           :
+:                        :          :             : checkpoint in      :
+:                        :          :             : `--continue_from`  :
+:                        :          :             : to a recognition   :
+:                        :          :             : model.             :
+| `convert_to_int`       | `bool`   | `false`     | With stop_training |
+:                        :          :             : convert to 8-bit   :
+:                        :          :             : integer for greater:
+:                        :          :             : speed, with        :
+:                        :          :             : slightly less      :
+:                        :          :             : accuracy.          :
+| `append_index`         | `int`    | `-1`        | Cut the head off   |
+:                        :          :             : the network at the :
+:                        :          :             : given index and    :
+:                        :          :             : append             :
+:                        :          :             : `--net_spec`       :
+:                        :          :             : network in place   :
+:                        :          :             : of the cut off     :
+:                        :          :             : part.              :
+| `train_listfile`       | `string` | none        | Filename of a file |
+:                        :          :             : listing training   :
+:                        :          :             : data files.        :
+| `eval_listfile`        | `string` | none        | Filename of a file |
+:                        :          :             : listing evaluation :
+:                        :          :             : data files to be   :
+:                        :          :             : used in evaluating :
+:                        :          :             : the model          :
+:                        :          :             : independently of   :
+:                        :          :             : the training data. :
 
 Most of the flags work with defaults, and several are only required for
 particular operations listed below, but first some detailed comments on the more
 complex flags:
 
-### Unicharset Compression and train_mode
+### Unicharset Compression-recoding
 
 LSTMs are great at learning sequences, but slow down *a lot* when the number of
 states is too large. There are empirical results that suggest it is better to
 ask an LSTM to learn a long sequence than a short sequence of many classes, so
 for the complex scripts, (Han, Hangul, and the Indic scripts) it is better to
 recode each symbol as a short sequence of codes from a small number of classes
-than have a large set of classes. The 64 flag for `--train_mode` turns this
-feature on, and is included in the default. It encodes each Han character as a
-sequence of 3 codes, Hangul using the Jamo encoding, and Indic script syllables
-(Aksaras) as their unicode sequence. For the smaller, alphabetic scripts, like
-Latin, all this does is fold the different shapes of single quotes to one class
-and double quotes to one different class.
+than have a large set of classes. The `combine_lang_model` command has this
+feature on by default. It encodes each Han character as a variable-length
+sequence of 1-5 codes, Hangul using the Jamo encoding as a sequence of 3 codes,
+and other scripts as a sequence of their unicode components. For the scripts
+that use a _virama_ character to generate conjunct consonants, (All the Indic
+scripts plus Myanmar and Khmer) the function `NormalizeCleanAndSegmentUTF8`
+pairs the virama with an appropriate neighbor to generate a more glyph-oriented
+encoding in the unicharset. To make full use of this improvement, the
+`--pass_through_recoder` flag should be set for `combine_lang_model` for these
+scripts.
 
-### Randomized Training Data and train_mode
+### Randomized Training Data and sequential_training
 
 For Stochastic Gradient Descent to work properly, the training data is supposed
 to be randomly shuffled across all the sample files, so the trainer can read its
 way through each file in turn and go back to the first one when it reaches the
-end. This is entirely contrary to the way base Tesseract is trained!
+end. This is entirely contrary to the way base Tesseract was trained!
 
 If using the rendering code, (via `tesstrain.sh`) then it will shuffle the
 sample text lines within each file, but you will get a set of files, each
-containing training samples from a single font. To add a more even mix at least,
-you should use the `16` flag value for `train_mode`, *even if you don't want the
-unicharset compressed.*
+containing training samples from a single font. To add a more even mix, the
+default is to process one sample from each file in turn aka 'round robin' style.
+If you have generated training data some other way, or it is all from the same
+style (a handwritten manuscript book for instance) then you can use the
+`--sequential_training` flag for `lstmtraining.` This is more memory efficient
+since it will load data from only two files at a time, and process them in
+sequence. (The second file is read-ahead so it is ready when needed.)
 
 ### Model output
 
@@ -310,14 +489,15 @@ the same command line, and it will continue. To force a restart, use a different
 ### Net Mode and Optimization
 
 The `128` flag turns on Adam optimization, which seems to work a lot better than
-plain momentum. The code calls it Adagrad, but it isn't, as momentum is still on
-and Adagrad doesn't use momentum. Plain Adagrad without momentum doesn't work
-very well at all.
+plain momentum.
 
 The `64` flag enables automatic layer-specific learning rate. When progress
 stalls, the trainer investigates which layer(s) should have their learning rate
 reduced independently, and may lower one or more learning rates to continue
 learning.
+
+The default value of `net_mode` of `192` enables both Adam and layer-specific
+learning rates.
 
 ### Perfect Sample Delay
 
@@ -325,7 +505,10 @@ Training on "easy" samples isn't necessarily a good idea, as it is a waste of
 time, but the network shouldn't be allowed to forget how to handle them, so it
 is possible to discard some easy samples if they are coming up too often. The
 `--perfect_sample_delay` argument discards perfect samples if there haven't been
-that many imperfect ones seen since the last perfect sample.
+that many imperfect ones seen since the last perfect sample. The current default
+value of zero uses all samples. In practice the value doesn't seem to have a
+huge effect, and if training is allowed to run long enough, zero produces the
+best results.
 
 ### Debug Interval and Visual Debugging
 
@@ -341,7 +524,7 @@ information on the layers of the network. In the special case of
 continuing to the next iteration, but for all others it just continues and draws
 information at the frequency requested.
 
-**NOTE that to use --debug_interval > 0 you must build 
+**NOTE that to use --debug_interval > 0 you must build
 [ScrollView.jar](ViewerDebugging) as well as the other training tools.** See
 [Building the Training Tools](#building-the-training-tools)
 
@@ -380,10 +563,10 @@ with the default training data created with the command-lines above.
 
 ```
 mkdir -p ~/tesstutorial/engoutput
-training/lstmtraining -U ~/tesstutorial/engtrain/eng.unicharset \
-  --script_dir ../langdata --debug_interval 100 \
-  --net_spec '[1,36,0,1 Ct5,5,16 Mp3,3 Lfys64 Lfx128 Lrx128 Lfx256 O1c105]' \
-  --model_output ~/tesstutorial/engoutput/base \
+training/lstmtraining --debug_interval 100 \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
+  --net_spec '[1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c111]' \
+  --model_output ~/tesstutorial/engoutput/base --learning_rate 20e-4 \
   --train_listfile ~/tesstutorial/engtrain/eng.training_files.txt \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt \
   --max_iterations 5000 &>~/tesstutorial/engoutput/basetrain.log
@@ -395,86 +578,95 @@ In a separate window monitor the log file:
 tail -f ~/tesstutorial/engoutput/basetrain.log
 ```
 
-You should observe that by 500 iterations, the spaces (white) are starting to
-show on the `CTC Outputs` window and by 800 iterations green lines appear on
+(If you tried this tutorial before, you might notice that the numbers have
+changed. This is a result of a slightly smaller network, and the addition of the
+ADAM optimizer, which enables a higher learning rate.)
+
+You should observe that by 600 iterations, the spaces (white) are starting to
+show on the `CTC Outputs` window and by 1300 iterations green lines appear on
 the `LSTMForward` window where there are spaces in the image.
 
-By 600 iterations, there are noticeable non-space bumps in the `CTC Outputs`.
-Note that the `CTC Targets`, which started at all the same height are now varied
-in height because of the definite output for spaces. At the same time, the
-characters and positioning of the green lines in the `LSTMTraining` window are
-not as accurate as they once were, because the partial output from the network
-confuses the CTC algorithm. (CTC assumes statistical independence between the
-different x-coordinates, but they are clearly not independent.)
+By 1300 iterations, there are noticeable non-space bumps in the `CTC Outputs.`
+Note that the `CTC Targets,` which started at all the same height are now varied
+in height because of the definite output for spaces and some and the tentative
+outputs for other characters. At the same time, the characters and positioning
+of the green lines in the `LSTMTraining` window are not as accurate as they were
+initially, because the partial output from the network confuses the CTC
+algorithm. (CTC assumes statistical independence between the different
+x-coordinates, but they are clearly not independent.)
 
 By 2000 iterations, it should be clear on the `Output` window that some faint
 yellow marks are appearing to indicate that there is some growing output for
 non-null and non-space, and characters are starting to appear in the
 `LSTMForward` window.
 
-The character error rate falls below 50% at about 3200 iterations, and by 5000
-to about 18%.
+The character error rate falls below 50% just after 3700 iterations, and by 5000
+to about 13%, where it will terminate. (In about 20 minutes on a current
+high-end machine with AVX.)
 
-Note that this engine is trained on the same training data as used by base
-Tesseract, but its accuracy on other fonts is probably very poor. It will stop
-at 5000 iterations, (in about half an hour on a current high-end machine) by
-which time its character error rate should be about 25%. Run an independent
-test on the 'Impact' font:
+Note that this engine is trained on the same amount of training data as used by
+the legacy Tesseract engine, but its accuracy on other fonts is probably very
+poor. Run an independent test on the 'Impact' font:
 
 ```
 training/lstmeval --model ~/tesstutorial/engoutput/base_checkpoint \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-76% character error rate? Not so good!
+85% character error rate? Not so good!
 
 Now base Tesseract doesn't do very well on 'Impact', but it is included in the
-4500 or so fonts used to train the LSTM version, so if you extract out the
-eng.lstm file from eng.traineddata, you can run on that for a comparison:
+4500 or so fonts used to train the new LSTM version, so if you can run on that
+for a comparison:
 
 ```
-mkdir -p ~/tesstutorial/impact_from_full
-training/combine_tessdata -e tessdata/eng.traineddata \
-  ~/tesstutorial/impact_from_full/eng.lstm
-training/lstmeval --model ~/tesstutorial/impact_from_full/eng.lstm \
+training/lstmeval --model tessdata/best/eng.traineddata \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-1.7% character error rate? Much better!
+2.45% character error rate? Much better!
 
 For reference in the next section, also run a test of the full model on the
 training set that we have been using:
 
 ```
-training/lstmeval --model ~/tesstutorial/impact_from_full/eng.lstm \
+training/lstmeval --model tessdata/best/eng.traineddata \
   --eval_listfile ~/tesstutorial/engtrain/eng.training_files.txt
 ```
 
-Char error rate=0.047221785, Word error rate=0.24679659.
+Char error rate=0.25047642, Word error rate=0.63389585
+
+(If you ran this before, and notice that the error rates are a lot higher than
+the previous alpha version, this is due to a change in the use of shaped quotes.
+It didn't count errors in quote shape before, but now it does.)
 
 You can train for another 5000 iterations, and get the error rate on the
 training set a lot lower, but it doesn't help the `Impact` font much:
 
 ```
 mkdir -p ~/tesstutorial/engoutput
-training/lstmtraining -U ~/tesstutorial/engtrain/eng.unicharset \
-  --script_dir ../langdata \
-  --net_spec '[1,36,0,1 Ct5,5,16 Mp3,3 Lfys64 Lfx128 Lrx128 Lfx256 O1c105]' \
-  --model_output ~/tesstutorial/engoutput/base \
+training/lstmtraining \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
+  --net_spec '[1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c111]' \
+  --model_output ~/tesstutorial/engoutput/base --learning_rate 20e-4 \
   --train_listfile ~/tesstutorial/engtrain/eng.training_files.txt \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt \
   --max_iterations 10000 &>>~/tesstutorial/engoutput/basetrain.log
 ```
 
-Character error rate on `Impact` still 75%, even as the error rate on the
-training set has fallen to 0.86% character / 3.1% word:
+Character error rate on `Impact` now >100%, even as the error rate on the
+training set has fallen to 2.68% character / 10.01% word:
 
 ```
 training/lstmeval --model ~/tesstutorial/engoutput/base_checkpoint \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
-training/lstmeval --model ~/tesstutorial/engoutput/base_checkpoint \
-  --eval_listfile ~/tesstutorial/engtrain/eng.training_files.txt
 ```
+
+This shows that the model has completely over-fitted to the supplied training
+set! It is an excellent illustration of what happens when the training set
+doesn't cover the desired variation in the target data.
 
 In summary, training from scratch needs either a very constrained problem, a lot
 of training data, or you need to shrink the network by reducing some of the
@@ -484,91 +676,211 @@ tuning...
 ## Fine Tuning for Impact
 
 Fine tuning is the process of training an existing model on new data without
-changing anything else like the unicharset or any part of the network.
-Doesn't need a unicharset, script_dir, or net_spec, as they all come from the
-existing model.
+changing any part of the network, although you **can** now add
+characters to the character set. (See [Fine Tuning for ± a few
+        characters](#fine-tuning-for-±-a-few-characters)).
 
 ```
 training/lstmtraining --model_output /path/to/output [--max_image_MB 6000] \
   --continue_from /path/to/existing/model \
-  [--perfect_sample_delay 4] [--debug_interval 0] \
+  --traineddata /path/to/original/traineddata \
+  [--perfect_sample_delay 0] [--debug_interval 0] \
   [--max_iterations 0] [--target_error_rate 0.01] \
   --train_listfile /path/to/list/of/filenames.txt
 ```
 
 **Note** that the `--continue_from` arg can point to a training checkpoint
 **or** a recognition model, *even though the file formats are different.*
-Training checkpoints are the files that begin with `--model_output` and may end
-in checkpoint or lstm. A recognition model can be extracted from an existing
-traineddata file, as we did above. Let's start by fine tuning the model we built
-earlier, and see if we can make it work for 'Impact':
+Training checkpoints are the files that begin with `--model_output` and end
+in `checkpoint`. A recognition model can be extracted from an existing
+traineddata file, using `combine_tessdata.` Note that it is also necessary to
+supply the original traineddata file as well, as that contains the unicharset
+and recoder. Let's start by fine tuning the model we built earlier, and see if
+we can make it work for 'Impact':
 
 ```
 mkdir -p ~/tesstutorial/impact_from_small
 training/lstmtraining --model_output ~/tesstutorial/impact_from_small/impact \
   --continue_from ~/tesstutorial/engoutput/base_checkpoint \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
   --train_listfile ~/tesstutorial/engeval/eng.training_files.txt \
   --max_iterations 1200
 ```
 
-This has character/word error at 27.9%/56.2% after 100 iterations and gets down
-to 1.4%/4.8% at 1200. Now a stand-alone test:
+This has character/word error at 22.36%/50.0% after 100 iterations and gets down
+to 0.3%/1.2% at 1200. Now a stand-alone test:
 
 ```
 training/lstmeval --model ~/tesstutorial/impact_from_small/impact_checkpoint \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-That shows a better result of 0.18%/0.92% because the trainer is averaging over
-1000 iterations, and it has been improving. This isn't a representative result
-for the `Impact` font though, as we are testing on the training data!
+That shows a better result of 0.0086%/0.057% because the trainer is averaging
+over 1000 iterations, and it has been improving. This isn't a representative
+result for the `Impact` font though, as we are testing on the training data!
 
 That was a bit of a toy example. The idea of fine tuning is really to apply it
 to one of the fully-trained existing models:
 
 ```
 mkdir -p ~/tesstutorial/impact_from_full
+training/combine_tessdata -e tessdata/best/eng.traineddata \
+  ~/tesstutorial/impact_from_full/eng.lstm
 training/lstmtraining --model_output ~/tesstutorial/impact_from_full/impact \
   --continue_from ~/tesstutorial/impact_from_full/eng.lstm \
+  --traineddata tessdata/best/eng.traineddata \
   --train_listfile ~/tesstutorial/engeval/eng.training_files.txt \
-  --max_iterations 1200
+  --max_iterations 400
 ```
 
-After 100 iterations, it has 1.26%/3.98% char/word error and gets down to
-0.31%/1.18% at 1200. Again, the stand-alone test gives a better result:
+After 100 iterations, it has 1.35%/4.56% char/word error and gets down to
+0.533%/1.633% at 400. Again, the stand-alone test gives a better result:
 
 ```
 training/lstmeval --model ~/tesstutorial/impact_from_full/impact_checkpoint \
+  --traineddata tessdata/best/eng.traineddata \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-Char error 0.20%, word 0.70%. What is more interesting though, is the effect on
+Char error 0.017%, word 0.120% What is more interesting though, is the effect on
 the other fonts, so run a test on the base training set that we have been using:
 
 ```
 training/lstmeval --model ~/tesstutorial/impact_from_full/impact_checkpoint \
+  --traineddata tessdata/best/eng.traineddata \
   --eval_listfile ~/tesstutorial/engtrain/eng.training_files.txt
 ```
 
-Char error rate=0.04552459, Word error rate=0.22928254
+Char error rate=0.25548592, Word error rate=0.82523491
 
-It seems to have got better at that data set! This is probably because the
-original model was trained on artificially degraded images to make it learn how
-to deal with degraded text.
+It is only slightly worse, despite having reached close to zero error on the
+training set, and achieved it in only 400 iterations. **Note that further
+training beyond 400 iterations makes the error on the base set higher.**
 
 In summary, the pre-trained model can be fine-tuned or adapted to a small data
-set, without doing a lot of harm to its general accuracy.
+set, **without doing a lot of harm to its general accuracy.** It is still very
+important however, to avoid over-fitting.
+
+## Fine Tuning for ± a few characters
+
+**New feature** It is possible to add a few new characters to the character set
+and train for them by fine tuning, without a large amount of training data.
+
+The training requires a new unicharset/recoder, optional language models, and
+the old traineddata file containing the old unicharset/recoder.
+
+```
+training/lstmtraining --model_output /path/to/output [--max_image_MB 6000] \
+  --continue_from /path/to/existing/model \
+  --traineddata /path/to/traineddata/with/new/unicharset \
+  --old_traineddata /path/to/existing/traineddata \
+  [--perfect_sample_delay 0] [--debug_interval 0] \
+  [--max_iterations 0] [--target_error_rate 0.01] \
+  --train_listfile /path/to/list/of/filenames.txt
+```
+
+Let's try adding the plus-minus sign (±) to the existing English model. Modify
+`langdata/eng/eng.training_text` to include some samples of ±. I inserted 14 of
+them, as shown below:
+
+```
+grep ± ../langdata/eng/eng.training_text
+alkoxy of LEAVES ±1.84% by Buying curved RESISTANCE MARKED Your (Vol. SPANIEL
+TRAVELED ±85¢ , reliable Events THOUSANDS TRADITIONS. ANTI-US Bedroom Leadership
+Inc. with DESIGNS self; ball changed. MANHATTAN Harvey's ±1.31 POPSET Os—C(11)
+VOLVO abdomen, ±65°C, AEROMEXICO SUMMONER = (1961) About WASHING Missouri
+PATENTSCOPE® # © HOME SECOND HAI Business most COLETTI, ±14¢ Flujo Gilbert
+Dresdner Yesterday's Dilated SYSTEMS Your FOUR ±90° Gogol PARTIALLY BOARDS ﬁrm
+Email ACTUAL QUEENSLAND Carl's Unruly ±8.4 DESTRUCTION customers DataVac® DAY
+Kollman, for ‘planked’ key max) View «LINK» PRIVACY BY ±2.96% Ask! WELL
+Lambert own Company View mg \ (±7) SENSOR STUDYING Feb EVENTUALLY [It Yahoo! Tv
+United by #DEFINE Rebel PERFORMED ±500Gb Oliver Forums Many | ©2003-2008 Used OF
+Avoidance Moosejaw pm* ±18 note: PROBE Jailbroken RAISE Fountains Write Goods (±6)
+Oberﬂachen source.” CULTURED CUTTING Home 06-13-2008, § ±44.01189673355 €
+netting Bookmark of WE MORE) STRENGTH IDENTICAL ±2? activity PROPERTY MAINTAINED
+```
+
+Now generate new training and eval data:
+
+```
+training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+  --noextract_font_properties --langdata_dir ../langdata \
+  --tessdata_dir ./tessdata --output_dir ~/tesstutorial/trainplusminus
+training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+  --noextract_font_properties --langdata_dir ../langdata \
+  --tessdata_dir ./tessdata \
+  --fontlist "Impact Condensed" --output_dir ~/tesstutorial/evalplusminus
+```
+
+Run fine tuning on the new training data. This requires more iterations, as it
+only has a few samples of the new target character to go on:
+
+```
+training/combine_tessdata -e tessdata/best/eng.traineddata \
+  ~/tesstutorial/trainplusminus/eng.lstm
+training/lstmtraining --model_output ~/tesstutorial/trainplusminus/plusminus \
+  --continue_from ~/tesstutorial/trainplusminus/eng.lstm \
+  --traineddata ~/tesstutorial/trainplusminus/eng/eng.traineddata \
+  --old_traineddata tessdata/best/eng.traineddata \
+  --train_listfile ~/tesstutorial/trainplusminus/eng.training_files.txt \
+  --max_iterations 3600
+```
+
+After 100 iterations, it has 1.26%/3.98% char/word error and gets down to
+0.041%/0.185% at 3600. Again, the stand-alone test gives a better result:
+
+```
+training/lstmeval --model ~/tesstutorial/trainplusminus/plusminus_checkpoint \
+  --traineddata ~/tesstutorial/trainplusminus/eng/eng.traineddata \
+  --eval_listfile ~/tesstutorial/trainplusminus/eng.training_files.txt
+```
+
+Char error 0.0326%, word 0.128%. What is more interesting though, is whether the
+new character can be recognized in the 'Impact' font, so run a test on the
+impact eval set:
+
+```
+training/lstmeval --model ~/tesstutorial/trainplusminus/plusminus_checkpoint \
+  --traineddata ~/tesstutorial/trainplusminus/eng/eng.traineddata \
+  --eval_listfile ~/tesstutorial/evalplusminus/eng.training_files.txt
+```
+
+Char error rate=2.3767074, Word error rate=8.3829474
+
+This compares very well against the original test of the original model on the
+impact data set. Furthermore, if you check the errors:
+
+```
+training/lstmeval --model ~/tesstutorial/trainplusminus/plusminus_checkpoint \
+  --traineddata ~/tesstutorial/trainplusminus/eng/eng.traineddata \
+  --eval_listfile ~/tesstutorial/evalplusminus/eng.training_files.txt 2>&1 |
+  grep ±
+```
+
+...you should see that it gets all the ± signs correct! (Every truth line that
+contains a ± also contains a ± on the corresponding OCR line, and there are no
+truth lines that don't have a matching OCR line in the grep output.)
+
+This is excellent news! It means that one or more new characters can be added
+without impacting existing accuracy, **and** the ability to recognize the new
+character will, to some extent at least, generalize to other fonts!
+
+NOTE: When fine tuning, it is important to experiment with the number of
+iterations, since excessive training on a small data set will cause
+over-fitting. ADAM, is great for finding the feature combinations necessary to
+get that rare class correct, but it does seem to overfit more than simpler
+optimizers.
 
 ## Training Just a Few Layers
 
-Fine tuning is OK if you don't want to change the unicharset, but what if you
-want add a new character to a language, or you want to train for Klingon?
-You are unlikely to have much training data and it is
-unlike anything else, so what do you do? You can try removing some of the top
-layers of an existing network model, replace some of them with new randomized
-layers, and train with your data. The command-line is mostly the same as
-[Training from scratch](#training-from-scratch), as you have to supply a
-unicharset and net_spec, and you also have to provide a model to
+Fine tuning is OK if you only want to add a new font style or need a couple of
+new characters, but what if you want to train for Klingon? You are unlikely to
+have much training data and it is unlike anything else, so what do you do? You
+can try removing some of the top layers of an existing network model, replace
+some of them with new randomized layers, and train with your data. The
+command-line is mostly the same as [Training from
+scratch](#training-from-scratch), but in addition you have to provide a model to
 `--continue_from` and `--append_index`.
 
 The `--append_index` argument tells it to remove all layers **above** the layer
@@ -579,38 +891,50 @@ of the greatly simplified network specification language. The builder will
 output a string corresponding to the network it has generated, making it
 reasonably easy to check that the index referred to the intended layer.
 
-For reference, as of 4.00 alpha, chi_sim, chi_tra, guj, hin, jpn, mal, mar, pan,
-tel, tha were trained with this:
+A new feature of 4.00 alpha is that combine_tessdata can list the content of a
+traineddata file and its version string. In most cases, the version string
+includes the net_spec that was used to train:
 
 ```
---learning_rate 10e-5
---net_spec '[1,0,0,1 Ct5,5,16 Mp3,3 Lfys64 Lfx128 Lrx128 Lfx384 O1c1]'
---net_mode 192
---perfect_sample_delay 19
+training/combine_tessdata -d tessdata/best/heb.traineddata
+Version string:4.00.00alpha:heb:synth20170629:[1,36,0,1Ct3,3,16Mp3,3Lfys48Lfx96Lrx96Lfx192O1c1]
+17:lstm:size=3022651, offset=192
+18:lstm-punc-dawg:size=3022651, offset=3022843
+19:lstm-word-dawg:size=673826, offset=3024221
+20:lstm-number-dawg:size=625, offset=3698047
+21:lstm-unicharset:size=1673826, offset=3703368
+22:lstm-recoder:size=4023, offset=3703368
+23:version:size=80, offset=3703993
 ```
 
-and the rest were trained with this:
+and for chi_sim:
 
 ```
---learning_rate 10e-5
---net_spec '[1,0,0,1 Ct5,5,16 Mp3,3 Lfys64 Lfx128 Lrx128 Lfx256 O1c1]'
---net_mode 192
---perfect_sample_delay 19
+training/combine_tessdata -d tessdata/best/chi_sim.traineddata
+Version string:4.00.00alpha:chi_sim:synth20170629:[1,48,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1]
+0:config:size=1966, offset=192
+17:lstm:size=12152851, offset=2158
+18:lstm-punc-dawg:size=282, offset=12155009
+19:lstm-word-dawg:size=590634, offset=12155291
+20:lstm-number-dawg:size=82, offset=12745925
+21:lstm-unicharset:size=258834, offset=12746007
+22:lstm-recoder:size=72494, offset=13004841
+23:version:size=84, offset=13077335
 ```
 
-The only difference between them is the size of the last LSTM layer. Therefore
+Note that the number of layers is the same, but only the sizes differ. Therefore
 in these models, the following values of `--append_index` will keep the
 associated last layer, and append above:
 
 **Index** | **Layer**
 :-------: | :-----------
 `0`       | Input
-`1`       | `Ct5,5,16`
+`1`       | `Ct3,3,16`
 `2`       | `Mp3,3`
-`3`       | `Lfys64`
-`4`       | `Lfx128`
-`5`       | `Lrx128`
-`6`       | `Lfx256/384`
+`3`       | `Lfys48/64`
+`4`       | `Lfx96`
+`5`       | `Lrx96`
+`6`       | `Lfx192/512`
 
 The weights in the remaining part of the existing model are unchanged initially,
 but allowed to be modified by the new training data.
@@ -622,36 +946,42 @@ new softmax:
 
 ```
 mkdir -p ~/tesstutorial/eng_from_chi
-training/combine_tessdata -e tessdata/chi_sim.traineddata \
+training/combine_tessdata -e tessdata/best/chi_sim.traineddata \
   ~/tesstutorial/eng_from_chi/eng.lstm
-training/lstmtraining -U ~/tesstutorial/engtrain/eng.unicharset \
-  --script_dir ../langdata --debug_interval 100 \
+training/lstmtraining --debug_interval 100 \
   --continue_from ~/tesstutorial/eng_from_chi/eng.lstm \
-  --append_index 5 --net_spec '[Lfx256 O1c105]' \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
+  --append_index 5 --net_spec '[Lfx256 O1c111]' \
   --model_output ~/tesstutorial/eng_from_chi/base \
   --train_listfile ~/tesstutorial/engtrain/eng.training_files.txt \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt \
-  --max_iterations 5000 &>~/tesstutorial/eng_from_chi/basetrain.log
+  --max_iterations 3000 &>~/tesstutorial/eng_from_chi/basetrain.log
 ```
 
 Since the lower layers are already trained, this learns somewhat faster than
-training from scratch. By 400 iterations, there are already some spaces being
-output, by 500, some correct characters are being output, and by 1000 iterations,
-it is already getting most characters correct. By the time it finishes, it
-should be at 2.6% character/8.6% word.
+training from scratch. At 600 iterations, it suddenly starts producing output
+and by 800, it is already getting most characters correct. By the time it stops
+at 3000 iterations, it should be at 6.00% character/22.42% word.
 
-Try the usual tests on the full training set and independent test on the
-'Impact' font:
+Try the usual tests on the full training set:
 
 ```
 training/lstmeval --model ~/tesstutorial/eng_from_chi/base_checkpoint \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
   --eval_listfile ~/tesstutorial/engtrain/eng.training_files.txt
+```
+
+and independent test on the `Impact` font:
+
+```
 training/lstmeval --model ~/tesstutorial/eng_from_chi/base_checkpoint \
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt
 ```
 
-On the full training set, we get 2.24%/7.36% and on `Impact` 23.9%/59.3%, which
-is much better than the from-scratch training, but is still badly over-fitted.
+On the full training set, we get 5.557%/20.43% and on `Impact` 36.67%/83.23%,
+which is much better than the from-scratch training, but is still badly
+over-fitted.
 
 In summary, it is possible to cut off the top layers of an existing network and
 train, as if from scratch, but a fairly large amount of training data is still
@@ -681,15 +1011,15 @@ leave that Aksara out of the recognizable set, but if there are a lot, then you
 are in trouble.
 
 `Bad box coordinates in boxfile string!` The LSTM trainer only needs bounding
-box information for a complete textline, instead of at a character level, but
-if you put spaces in the box string, like this:
+box information for a complete textline, instead of at a character level, but if
+you put spaces in the box string, like this:
 
 ```
 <text for line including spaces> <left> <bottom> <right> <top> <page>
 ```
 
-the parser will be confused and give you the error message. There
-is a different format required for such boxfile strings:
+the parser will be confused and give you the error message. There is a different
+format required for such boxfile strings:
 
 ```
 WordStr <left> <bottom> <right> <top> <page> #<text for line including spaces>
@@ -700,9 +1030,9 @@ or the file is not readable. Check your filelist file to see if it contains
 valid filenames.
 
 `No block overlapping textline:` occurs when layout analysis fails to correctly
-segment the image that was given as training data. The textline is dropped.
-Not much problem if there aren't many, but if there are a lot, there is
-probably something wrong with the training text or rendering process.
+segment the image that was given as training data. The textline is dropped. Not
+much problem if there aren't many, but if there are a lot, there is probably
+something wrong with the training text or rendering process.
 
 `<Undecodable>` can occur in either the ALIGNED_TRUTH or OCR TEXT output early
 in training. It is a consequence of unicharset compression and CTC training.
@@ -714,41 +1044,33 @@ can be safely ignored. Its frequency should fall as training progresses.
 The lstmtraining program outputs two kinds of checkpoint files:
 
 *   `<model_base>_checkpoint` is the latest model file.
-*   `<model_base><char_error>_<iteration>.lstm` is periodically written as the
-    model with the best training error. The lstm extension is misleading as this
-    file is **not** in the same format as the recognition model file with the
-    same extension name! It is a training dump just like the checkpoint, but is
-    smaller because it doesn't have a backup model to be used if the training
-    runs into divergence.
+*   `<model_base><char_error>_<iteration>.checkpoint` is periodically written as
+    the model with the best training error. It is a training dump just like the
+    checkpoint, but is smaller because it doesn't have a backup model to be used
+    if the training runs into divergence.
 
-Either of these files can be converted to a recognition model as follows:
+Either of these files can be converted to a standard traineddata file as
+follows:
 
 ```
-training/lstmtraining --model_output ~/tesstutorial/eng_from_chi/eng.lstm \
+training/lstmtraining --stop_training \
   --continue_from ~/tesstutorial/eng_from_chi/base_checkpoint \
-  --stop_training
+  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
+  --model_output ~/tesstutorial/eng_from_chi/eng.traineddata
 ```
 
-Finally, combine your new model with the language model files into a traineddata
-file:
-
-```
-training/combine_tessdata -o tessdata/eng.traineddata \
-  ~/tesstutorial/eng_from_chi/eng.lstm \
-  ~/tesstutorial/engtrain/eng.lstm-number-dawg \
-  ~/tesstutorial/engtrain/eng.lstm-punc-dawg \
-  ~/tesstutorial/engtrain/eng.lstm-word-dawg
-```
-
-The dawg files are optional. It will work without them, but they do usually
-provide some small improvement in accuracy.
+This will extract the recognition model from the training dump, and insert it
+into the --traineddata argument, along with the unicharset, recoder, and any
+dawgs that were provided during training.
 
 **NOTE** Tesseract 4.00 will now run happily with a traineddata file that
-contains *just* `lang.lstm`. The `lstm-*-dawgs` are optional, and *none of the
-other files are required or used with OEM_LSTM_ONLY as the OCR engine mode.*
-No bigrams, unichar ambigs or any of the other files are needed or even have
-any effect if present.
+contains *just* `lang.lstm`, `lang.lstm-unicharset` and `lang.lstm-recoder`. The
+`lstm-*-dawgs` are optional, and *none of the other components are required or
+used with OEM_LSTM_ONLY as the OCR engine mode.* No bigrams, unichar ambigs or
+any of the other components are needed or even have any effect if present. The
+only other component that does anything is the `lang.config`, which can affect
+layout analysis, and sub-languages.
 
-If added to an existing Tesseract traineddata file, the LSTM unicharset doesn't
-have to match the Tesseract unicharset, but the same unicharset must be
-used to train the LSTM and build the `lstm-*-dawgs` files.
+If added to an existing Tesseract traineddata file, the `lstm-unicharset`
+doesn't have to match the Tesseract `unicharset`, but the same unicharset must
+be used to train the LSTM and build the `lstm-*-dawgs` files.
