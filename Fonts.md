@@ -103,6 +103,7 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * [AksharayoginiBold](http://aksharyogini.sudhanwa.com/download/AksharyoginiBold.ttf)
 * [AksharayoginiItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiItalic.ttf)
 * [Aksharayogini](http://aksharyogini.sudhanwa.com/download/AksharyoginiNormal.ttf)
+* [Ananda Akchyar Devanagari](http://www.deviantart.com/download/528435924/ananda_akchyar_devanagari_unicode_by_lalitkala-d8qm7ro.zip?token=93007db762db7368ba4846c0de5b4e5f3dfdadd8&ts=1501873924)
 * [AnnapurnaSIL](http://software.sil.org/downloads/d/annapurna/AnnapurnaSIL-1.201.zip)
 * [CDAC-Surekh Bold](http://biharvidhanparishad.gov.in/Fonts/CDACSRBT.TTF)
 * [CDAC-Surekh Normal](http://biharvidhanparishad.gov.in/Fonts/CDACSRNT.TTF)
@@ -128,6 +129,7 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * [Uttara](http://www.sanskritweb.net/cakram/uttara.ttf)
 * [Yashomudra Fonts](https://github.com/RajyaMarathiVikasSanstha/Yashomudra/tree/master/TTF%20Files)
 * [Google Devanagari Fonts](https://fonts.google.com/?subset=devanagari)
+* [fonts from TDIL Hindi CD](http://ildc.in/Hindi/GIST/hindi_cd_2/windows/index.htm)
 * [Linked from Bihar Vidhan Parishad](http://biharvidhanparishad.gov.in/HindiFonts.htm)
 * [Linked from bih.nic.in](http://industries.bih.nic.in/HindiFonts.htm)
 
