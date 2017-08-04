@@ -444,7 +444,7 @@ You can, but it won't work very well, as Tesseract is designed for printed text.
 No. Tesseract is for text recognition.
 
 ## Issues with older versions of tesseract
-_(informations from issue tracker with Status: Look-here-for-help.)_
+_(information from issue tracker with Status: Look-here-for-help.)_
 
 ### How to port Tesseract engine into vb6 project?
 
