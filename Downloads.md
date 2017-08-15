@@ -34,4 +34,3 @@ Currently, there is no **official** Windows installer for newer versions.
     Leptonica is built with all libs except for libjp2k.
 
   * https://github.com/UB-Mannheim/tesseract/wiki (installers available for version 3 and 4)
-  * http://domasofan.spdns.eu/tesseract/ (site down?)
