@@ -33,5 +33,5 @@ Currently, there is no **official** Windows installer for newer versions.
     You have to install VC2015 x86 redist from microsoft.com in order to run them.
     Leptonica is built with all libs except for libjp2k.
 
-  * https://github.com/UB-Mannheim/tesseract/wiki
+  * https://github.com/UB-Mannheim/tesseract/wiki (installers available for version 3 and 4)
   * http://domasofan.spdns.eu/tesseract/ (site down?)
