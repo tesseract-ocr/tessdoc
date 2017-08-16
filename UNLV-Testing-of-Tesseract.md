@@ -22,7 +22,7 @@ The current scripts only cover tests of the 3B test sets (ie 300 dpi bitonal). T
 
 # Downloading the tools from UNLV
 
-Download the ISRI toolkit from http://isri-ocr-evaluation-tools.googlecode.com/files/ftk-1.0.tar.gz
+Download the ISRI toolkit ftk-1.0.tar.gz, also available from https://code.google.com/archive/p/isri-ocr-evaluation-tools/downloads
 
 If they work for you, use the binaries directly from the bin
 directory and put them in tesseract-ocr/testing/unlv
