@@ -25,7 +25,7 @@ https://github.com/tesseract-ocr/tessdata/tree/master/best
 
 ## Data Files for Version 4.00
 
-**Note**: The `kur` data file was not updated from 3.04. For Fraktur, see the section [Fraktur Data Files](#fraktur-data-files). 
+**Note**: The `kur` data file was not updated from 3.04. For Fraktur, see the section [Fraktur Data Files](#fraktur-data-files), or use the new [Fraktur.traineddata](https://github.com/tesseract-ocr/tessdata/blob/master/best/Fraktur.traineddata).
 
 Lang Code | Language | 4.0 traineddata
 :---------| :------- | :---------------
