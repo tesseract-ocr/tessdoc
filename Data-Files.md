@@ -1,6 +1,6 @@
 * [Special Data Files](#special-data-files)
 * [Updated Data Files for Version 4.00](#updated-data-files-for-version-400)
-* [Data Files for Version 4.00](#data-files-for-version-400)
+* [Data Files foldor Version 4.00](#data-files-for-version-400)
 * [Data Files for Version 3.04/3.05](#data-files-for-version-304305)
 * [Cube Data Files for Version 3.04/3.05](#cube-data-files-for-version-304305)
 * [Fraktur Data Files](#fraktur-data-files)
@@ -19,7 +19,7 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 ## Updated Data Files for Version 4.00
 
-**Note**: When using the new models in the 'best' directory, only the new LSTM-based OCR engine is supported. 
+**Note**: When using the new models in the 'best' directory, only the new LSTM-based OCR engine is supported. The legacy engine is not supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
 https://github.com/tesseract-ocr/tessdata/tree/master/best
 
