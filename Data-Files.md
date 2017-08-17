@@ -19,6 +19,8 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 ## Updated Data Files for Version 4.00
 
+**Note**: When using the new models in the 'best' directory, only the new LSTM-based OCR engine is supported. 
+
 https://github.com/tesseract-ocr/tessdata/tree/master/best
 
 ## Data Files for Version 4.00
