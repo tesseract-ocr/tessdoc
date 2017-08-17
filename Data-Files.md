@@ -1,4 +1,5 @@
 * [Special Data Files](#special-data-files)
+* [Updated Data Files for Version 4.00](#updated-data-files-for-version-400)
 * [Data Files for Version 4.00](#data-files-for-version-400)
 * [Data Files for Version 3.04/3.05](#data-files-for-version-304305)
 * [Cube Data Files for Version 3.04/3.05](#cube-data-files-for-version-304305)
@@ -16,6 +17,9 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 **Note**: These two data files are compatible with older versions of Tesseract. `osd` is compatible with version 3.01 and up, and `equ` is compatible with version 3.02 and up.
 
+## Updated Data Files for Version 4.00
+
+https://github.com/tesseract-ocr/tessdata/tree/master/best
 
 ## Data Files for Version 4.00
 
