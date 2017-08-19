@@ -197,7 +197,7 @@ can contain:
 
 *   Config file providing control parameters.
 *   **Unicharset** defining the character set.
-*   **Unicharcomress,** aka the recoder, which maps the unicharset further to
+*   **Unicharcompress,** aka the recoder, which maps the unicharset further to
     the codes actually used by the neural network recognizer.
 *   Punctuation pattern dawg, with patterns of punctuation allowed around words.
 *   Word dawg. The system word-list language model.
