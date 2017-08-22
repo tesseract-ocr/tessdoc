@@ -249,13 +249,13 @@ This tool, together with a set of data files, allow the addition of extra proper
 training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
 ```
 
-After running `unicharset_extractor` and `set_unicharset_propertie`, you should get a `unicharset` file with all the fields set to the right values, like in this [example](#an-example-of-the-unicharset-file).
+After running `unicharset_extractor` and `set_unicharset_properties`, you should get a `unicharset` file with all the fields set to the right values, like in this [example](#an-example-of-the-unicharset-file).
 
 ## The font\_properties file
 
 Now you need to create a `font_properties` text file. The purpose of this file is to provide font style information that will appear in the output when the font is recognized.
 
-Each line of the `font_properties` file is formatted as follows:  
+Each line of the `font_properties` file is formatted as follows:
 `fontname` `italic` `bold` `fixed` `serif` `fraktur`  
 where `fontname` is a string naming the font (no spaces allowed!), and `italic`, `bold`, `fixed`, `serif` and `fraktur` are all simple `0` or `1` flags indicating whether the font has the named property.
 
@@ -411,7 +411,7 @@ tesseract image.tif output -l lang
 
 More options of `combine_tessdata` can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/master/training/combine_tessdata.cpp#L23).
 
-You can inspect some of the internals of traineddata files  in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
+You can inspect some of the internals of traineddata files in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
 
 # Appendices
 
