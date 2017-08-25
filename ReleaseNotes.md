@@ -24,9 +24,9 @@ Table of Contents
 
 **To be released as V4.00 - hopefully in 2017/H2**
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
+  * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers. 
   * Added new neural network system based on LSTMs, with major accuracy gains.
   * Added LSTM models+lang models to [123 languages](https://github.com/tesseract-ocr/tessdata).
-  * Removed official support for VS2010.
   * Enable OpenMP support.
   * Enable AVX / SSE4.1 when the target machine supports them.
   * Improved  multi-page TIFF handling.
