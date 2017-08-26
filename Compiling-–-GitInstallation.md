@@ -29,9 +29,9 @@ or to make a shallow clone of the repository with history truncated to the lates
     cd tesseract-ocr
     ./autogen.sh
     ./configure
-    make
-    sudo make install
-    sudo make install-langs
+    make -j
+    sudo make install -j
+    sudo make install-langs -j
     sudo ldconfig
 ```
 
@@ -58,7 +58,7 @@ make[1]: *** [all-recursive] Error 1
 make: *** [all] Error 2
 ```
 
-try to run _autoreconf -i_ after _./autogen.sh_
+try to run `autoreconf -i` after `./autogen.sh`
 
 # Windows Visual Studio build
 
