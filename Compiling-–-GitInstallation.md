@@ -31,7 +31,6 @@ or to make a shallow clone of the repository with history truncated to the lates
     ./configure
     make
     sudo make install
-    sudo make install-langs
     sudo ldconfig
 ```
 
