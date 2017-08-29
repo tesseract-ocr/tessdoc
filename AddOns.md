@@ -115,6 +115,9 @@ Platform support depends on used language and experience of user.
 
 **Java**: [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
 
+**Node.js**
+  * [penteract](https://github.com/kaelzhang/node-penteract) - The native node.js bindings to the Tesseract OCR project.
+
 **PHP**:
   * [tesseract-ocr-for-php](https://github.com/thiagoalessio/tesseract-ocr-for-php)
   * https://code.google.com/p/php-tesseract/
