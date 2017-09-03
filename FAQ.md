@@ -12,6 +12,8 @@ Table of Contents
   * [How to interpret hOCR baseline output?](#how-to-interpret-hocr-baseline-output)
   * [libtesseract.so.3: cannot open shared object file](#libtesseractso3-cannot-open-shared-object-file)
   * [Tesseract does not work](#tesseract-does-not-work)
+  * [How do I uninstall Tesseract](#how-do-i-uninstall-tesseract)
+  * [How do I run multiple versions of Tesseract on same machine](#how-do-i-compare-different-versions-of-tesseract)
   * [Error in pixReadStream:](#error-in-pixreadstream)
   * [Can't open eng.unicharset?](#cant-open-engunicharset)
   * [leptonica library missing](#leptonica-library-missing)
@@ -119,7 +121,7 @@ bbox is the bounding box of the line in image coordinates (blue). The two number
 In general, the baseline is described by a polynomial of order `n` with the coefficients `pn … p0` with n = 1 for a linear (i.e. straight) line (see [hOCR spec](https://github.com/kba/hocr-spec/blob/master/hocr-spec.md#3-terminology-and-representation)).
 ![hOCR baseline](https://cloud.githubusercontent.com/assets/19879328/16414153/6a52a9d4-3d36-11e6-8b0f-ff6faf05fddd.png)
 
-## libtesseract.so.3: cannot open shared object file (or so.4)
+## libtesseract.so.3: cannot open shared object file
 
 Run 'sudo ldconfig' after 'sudo make install'. See [issue 621](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=621).
 
