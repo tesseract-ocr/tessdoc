@@ -97,6 +97,12 @@ Tesseract is a command line program, so you need to run it from the [command lin
 
 ## What output formats can Tesseract produce?
 
+* txt
+* pdf
+* hocr
+* tsv
+* pdf with text layer only
+
 Tesseract can produce plain text, PDF, and HTML output. Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
 
 With the configfile 'hocr' tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
@@ -113,13 +119,31 @@ bbox is the bounding box of the line in image coordinates (blue). The two number
 In general, the baseline is described by a polynomial of order `n` with the coefficients `pn … p0` with n = 1 for a linear (i.e. straight) line (see [hOCR spec](https://github.com/kba/hocr-spec/blob/master/hocr-spec.md#3-terminology-and-representation)).
 ![hOCR baseline](https://cloud.githubusercontent.com/assets/19879328/16414153/6a52a9d4-3d36-11e6-8b0f-ff6faf05fddd.png)
 
-## libtesseract.so.3: cannot open shared object file
+## libtesseract.so.3: cannot open shared object file (or so.4)
 
 Run 'sudo ldconfig' after 'sudo make install'. See [issue 621](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=621).
 
 ## Tesseract does not work
 
 Please ensure there is only one installation of tesseract e.g. there are reported problems (in case of shared build) if tesseract 3.01 and 3.02 are installed on the same computer. See e.g. [issue 793](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=793)
+
+## How do I uninstall Tesseract
+
+```
+sudo make uninstall 
+sudo make training-uninstall
+```
+
+## How do I compare different versions of Tesseract
+
+If you want to have several version of tesseract (e.g. you want to compare OCR result) I would suggest you to compile them from source (e.g. in /usr/src) and not install them. If you want to test particular version you can run it this way:
+
+```
+/usr/src/tesseract-3.03/api/tesseract eurotext.tif eurotext
+/usr/src/tesseract-ocr.3.02/api/tesseract eurotext.tif eurotext
+```
+
+/usr/src/tesseract-3.03/api/tesseract is shell wrapper script, and it will take care that correct shared library is used (without installation...).
 
 ## Error in pixReadStream:
 
