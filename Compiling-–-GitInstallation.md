@@ -43,11 +43,6 @@ Finally, run these:
     sudo ldconfig
 ```
 
-On some systems, autotools may not create m4 directory automatically (you get the error "`configure: error: cannot find macro directory 'm4'`"). In this case, you must create the _m4_ directory by yourself before running `./configure`:
-```
-mkdir -p m4
-```
-
 If you get this error:
 ```
 make  all-recursive
