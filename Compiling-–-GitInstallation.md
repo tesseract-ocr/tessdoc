@@ -1,30 +1,39 @@
 # Installing Tesseract from Git
-
 These are instructions for installing Tesseract from the git repository. You should be ready to face unexpected problems.
 
-# Installing With Autoconf Tools
-
-In order to do this, you must have aclocal, autoheader, autoconf, autoconf-archive, automake, libtool, leptonica and pkg-config installed. In addition, you need a C++ compiler.
+## Installing With Autoconf Tools
+In order to do this; you must have aclocal, autoheader, autoconf, autoconf-archive, automake, libtool, leptonica, and pkg-config installed. In addition, you need a C++ compiler.
 
 On Debian or Ubuntu, you can probably install all required packages like this:
-
 ```
-    apt-get install autoconf-archive automake g++ libtool libleptonica-dev pkg-config
+apt-get install autoconf-archive automake g++ libtool libleptonica-dev pkg-config
 ```
 
 If you want to build the Tesseract training tools, too, some more packages are required:
+```
+apt-get install libpango1.0-dev
+```
 
-    apt-get install libpango1.0-dev
+---
 
-Afterwards, the steps for installing the git version of Tesseract, do this:
+Afterwards, to clone the repository to your computer, do this:
+```
+git clone https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
+```
 
+or to make a shallow clone of the repository with commit history truncated to the latest commit only:
 ```
-    git clone https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
+git clone --depth 1  https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
 ```
-or to make a shallow clone of the repository with history truncated to the latest commit only.
+
+or to clone a specific branch/version:
 ```
-   git clone --depth 1  https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
+git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> --single-branch tesseract-ocr
 ```
+
+---
+
+Finally, run these:
 ```
     cd tesseract-ocr
     ./autogen.sh
@@ -34,13 +43,12 @@ or to make a shallow clone of the repository with history truncated to the lates
     sudo ldconfig
 ```
 
-On some systems autotools did not create m4 directory  automatically (you got error: "`configure: error: cannot find macro directory 'm4'`"). In this case you must create m4 dicrectory by yourself before running `./configure`:
+On some systems, autotools may not create m4 directory automatically (you get the error "`configure: error: cannot find macro directory 'm4'`"). In this case, you must create the _m4_ directory by yourself before running `./configure`:
 ```
 mkdir -p m4
 ```
 
-If you get error:
-
+If you get this error:
 ```
 make  all-recursive
 Making all in ccstruct
@@ -57,8 +65,7 @@ make[1]: *** [all-recursive] Error 1
 make: *** [all] Error 2
 ```
 
-try to run _autoreconf -i_ after _./autogen.sh_
+try to run `autoreconf -i` after `./autogen.sh`
 
-# Windows Visual Studio build
-
+## Windows Visual Studio build
 Please follow instructions in https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows
