@@ -131,8 +131,13 @@ Please ensure there is only one installation of tesseract e.g. there are reporte
 
 ## How do I uninstall Tesseract
 
+In the `tesseract-ocr` directory, run:
 ```
 sudo make uninstall 
+```
+
+If you installed training tools, also run:
+```
 sudo make training-uninstall
 ```
 
