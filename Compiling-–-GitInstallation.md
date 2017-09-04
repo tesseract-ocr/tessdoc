@@ -1,5 +1,5 @@
 # Installing Tesseract from Git
-These are instructions for installing Tesseract from the git repository. You should be ready to face unexpected problems.
+These are the instructions for installing Tesseract from the git repository. You should be ready to face unexpected problems.
 
 ## Installing With Autoconf Tools
 In order to do this; you must have aclocal, autoheader, autoconf, autoconf-archive, automake, libtool, leptonica, and pkg-config installed. In addition, you need a C++ compiler.
@@ -9,24 +9,24 @@ On Debian or Ubuntu, you can probably install all required packages like this:
 apt-get install autoconf-archive automake g++ libtool libleptonica-dev pkg-config
 ```
 
-If you want to build the Tesseract training tools, too, some more packages are required:
+If you want to build the Tesseract training tools as well, you'll also require Pango:
 ```
 apt-get install libpango1.0-dev
 ```
 
 ---
 
-Afterwards, to clone the repository to your computer, do this:
+Afterwards, to clone the master branch to your computer, do this:
 ```
 git clone https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
 ```
 
-or to make a shallow clone of the repository with commit history truncated to the latest commit only:
+or to make a shallow clone with commit history truncated to the latest commit only:
 ```
 git clone --depth 1  https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
 ```
 
-or to clone a specific branch/version:
+or to clone a diffrent branch/version:
 ```
 git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> --single-branch tesseract-ocr
 ```
@@ -65,7 +65,10 @@ make[1]: *** [all-recursive] Error 1
 make: *** [all] Error 2
 ```
 
-try to run `autoreconf -i` after `./autogen.sh`
+Try to run `autoreconf -i` after running `./autogen.sh`.
 
-## Windows Visual Studio build
-Please follow instructions in https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows
+## Training Tools
+See [Building the training tools](https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract#building-the-training-tools).
+
+## Building using Windows Visual Studio
+See [Compiling for Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows).
