@@ -52,5 +52,3 @@ Note that the default value may change; check the source code if you need to be 
 
 
 If you find a parameter that you consider useful, please add a comment to this page, and we will copy it into the page as we find it.
-
-**Comment**: [Another wiki page](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality#dictionaries-word-lists-and-patterns) links here, suggesting that parameter `tessedit_char_whitelist` will be listed and explained but it is not found.
