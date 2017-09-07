@@ -31,7 +31,7 @@
   * [i2OCR](http://www.i2ocr.com/)
   * [Indic-OCR OCR Service](https://indic-ocr.github.io/ocrservice/)  An online OCR service for Indian languages 
  
-## Mobile
+### Mobile
 
   * _Android_:
     * [tess-two](https://github.com/rmtheis/tess-two) - A fork of Tesseract Tools for Android [tesseract-android-tools](http://code.google.com/p/tesseract-android-tools/) that adds some additional functions.
