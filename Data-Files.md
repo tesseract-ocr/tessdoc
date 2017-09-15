@@ -1,6 +1,6 @@
 * [Special Data Files](#special-data-files)
-* [Updated Data Files for Version 4.00](#updated-data-files-for-version-400)
-* [Data Files folder Version 4.00](#data-files-for-version-400)
+* [Updated LSTM Data Files for Version 4.00](#updated-data-files-for-version-400-september-15-2017)
+* [Data Files for Version 4.00](#data-files-for-version-400-november-29-2016)
 * [Data Files for Version 3.04/3.05](#data-files-for-version-304305)
 * [Cube Data Files for Version 3.04/3.05](#cube-data-files-for-version-304305)
 * [Fraktur Data Files](#fraktur-data-files)
@@ -23,7 +23,7 @@ We have three sets of .traineddata files on GitHub in three separate repositorie
 will want `tessdata_fast` and that is what will be shipped as part of Linux distributions. 
 `tessdata_best` is for people willing to trade a lot of speed for slightly better accuracy. It is also
 better for certain retraining scenarios for advanced users.
-The third set is for the legacy recognizer.
+The third set (original 4.00 files from November 2016) is for the legacy recognizer.
 
 **Note**: When using the new models in the 'tessdata_best' and 'tessdata_fast' repositories, only the new LSTM-based OCR engine is supported. The legacy engine is not supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
