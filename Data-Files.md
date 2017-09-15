@@ -371,26 +371,74 @@ vie | Vietnamese | [tesseract-2.01.vie.tar.gz](https://sourceforge.net/projects/
 
 ## Format of traineddata files
 
-The `traineddata` file for each language is an archive file in a Tesseract specific format. It contains several uncompressed component files which are needed by the Tesseract OCR process. The program `combine_tessdata` is used to create a `tessdata` file from the component files and can also extract them again like in this example:
+The `traineddata` file for each language is an archive file in a Tesseract specific format. It contains several uncompressed component files which are needed by the Tesseract OCR process. The program `combine_tessdata` is used to create a `tessdata` file from the component files and can also extract them again like in the following examples:
 
-    combine_tessdata -u test/tessdata/eng.traineddata eng.
-    Extracting tessdata components from test/tessdata/eng.traineddata
-    Wrote eng.unicharset
-    Wrote eng.unicharambigs
-    Wrote eng.inttemp
-    Wrote eng.pffmtable
-    Wrote eng.normproto
-    Wrote eng.punc-dawg
-    Wrote eng.word-dawg
-    Wrote eng.number-dawg
-    Wrote eng.freq-dawg
-    Wrote eng.cube-unicharset
-    Wrote eng.cube-word-dawg
-    Wrote eng.shapetable
-    Wrote eng.bigram-dawg
-    Wrote eng.lstm
-    Wrote eng.lstm-punc-dawg
-    Wrote eng.lstm-word-dawg
-    Wrote eng.lstm-number-dawg
+### Pre 4.0.0 format from Nov 2016 (with both LSTM and Legacy models)
+
+```
+combine_tessdata -u eng.traineddata eng.
+Extracting tessdata components from eng.traineddata
+Wrote eng.unicharset
+Wrote eng.unicharambigs
+Wrote eng.inttemp
+Wrote eng.pffmtable
+Wrote eng.normproto
+Wrote eng.punc-dawg
+Wrote eng.word-dawg
+Wrote eng.number-dawg
+Wrote eng.freq-dawg
+Wrote eng.cube-unicharset
+Wrote eng.cube-word-dawg
+Wrote eng.shapetable
+Wrote eng.bigram-dawg
+Wrote eng.lstm
+Wrote eng.lstm-punc-dawg
+Wrote eng.lstm-word-dawg
+Wrote eng.lstm-number-dawg
+Wrote eng.version
+Version string:Pre-4.0.0
+1:unicharset:size=7477, offset=192
+2:unicharambigs:size=1047, offset=7669
+3:inttemp:size=976552, offset=8716
+4:pffmtable:size=844, offset=985268
+5:normproto:size=13408, offset=986112
+6:punc-dawg:size=4322, offset=999520
+7:word-dawg:size=1082890, offset=1003842
+8:number-dawg:size=6426, offset=2086732
+9:freq-dawg:size=1410, offset=2093158
+11:cube-unicharset:size=1511, offset=2094568
+12:cube-word-dawg:size=1062106, offset=2096079
+13:shapetable:size=63346, offset=3158185
+14:bigram-dawg:size=16109842, offset=3221531
+17:lstm:size=5390718, offset=19331373
+18:lstm-punc-dawg:size=4322, offset=24722091
+19:lstm-word-dawg:size=7143578, offset=24726413
+20:lstm-number-dawg:size=3530, offset=31869991
+23:version:size=9, offset=31873521
+```
+
+### 4.00.00alpha LSTM only format
+
+```
+combine_tessdata -u eng.traineddata eng.
+Extracting tessdata components from eng.traineddata
+Wrote eng.lstm
+Wrote eng.lstm-punc-dawg
+Wrote eng.lstm-word-dawg
+Wrote eng.lstm-number-dawg
+Wrote eng.lstm-unicharset
+Wrote eng.lstm-recoder
+Wrote eng.version
+Version string:4.00.00alpha:eng:synth20170629:[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1]
+17:lstm:size=11689099, offset=192
+18:lstm-punc-dawg:size=4322, offset=11689291
+19:lstm-word-dawg:size=3694794, offset=11693613
+20:lstm-number-dawg:size=4738, offset=15388407
+21:lstm-unicharset:size=6360, offset=15393145
+22:lstm-recoder:size=1012, offset=15399505
+23:version:size=80, offset=15400517
+```
+
+### Proposal for compressed traineddata files
 
 There are some proposals to replace the Tesseract archive format by a standard archive format which could also support compression. A [discussion on the tesseract-dev forum](https://groups.google.com/forum/?hl=en#!searchin/tesseract-dev/zip|sort:date/tesseract-dev/U5HSugUeeeI) proposed the ZIP format already in 2014. In 2017 an [experimental implementation](https://github.com/tesseract-ocr/tesseract/pull/911) was provided as a pull request.
