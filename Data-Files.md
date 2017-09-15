@@ -1,6 +1,6 @@
 * [Special Data Files](#special-data-files)
 * [Updated Data Files for Version 4.00](#updated-data-files-for-version-400)
-* [Data Files foldor Version 4.00](#data-files-for-version-400)
+* [Data Files folder Version 4.00](#data-files-for-version-400)
 * [Data Files for Version 3.04/3.05](#data-files-for-version-304305)
 * [Cube Data Files for Version 3.04/3.05](#cube-data-files-for-version-304305)
 * [Fraktur Data Files](#fraktur-data-files)
@@ -17,13 +17,22 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 **Note**: These two data files are compatible with older versions of Tesseract. `osd` is compatible with version 3.01 and up, and `equ` is compatible with version 3.02 and up.
 
-## Updated Data Files for Version 4.00
+## Updated Data Files for Version 4.00 (September 15, 2017)
 
-**Note**: When using the new models in the 'best' directory, only the new LSTM-based OCR engine is supported. The legacy engine is not supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
+We have three sets of .traineddata files on GitHub in three separate repositories. Most users
+will want `tessdata_fast` and that is what will be shipped as part of Linux distributions. 
+`tessdata_best` is for people willing to trade a lot of speed for slightly better accuracy. It is also
+better for certain retraining scenarios for advanced users.
+The third set is for the legacy recognizer.
 
-https://github.com/tesseract-ocr/tessdata/tree/master/best
+**Note**: When using the new models in the 'tessdata_best' and 'tessdata_fast' repositories, only the new LSTM-based OCR engine is supported. The legacy engine is not supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
-## Data Files for Version 4.00
+https://github.com/tesseract-ocr/tessdata_best
+https://github.com/tesseract-ocr/tessdata_fast
+
+## Data Files for Version 4.00 (November 29, 2016)
+
+This set of traineddata files has support for the legacy recognizer, with --oem 0.
 
 **Note**: The `kur` data file was not updated from 3.04. For Fraktur, see the section [Fraktur Data Files](#fraktur-data-files), or use the new [Fraktur.traineddata](https://github.com/tesseract-ocr/tessdata/blob/master/best/Fraktur.traineddata).
 
