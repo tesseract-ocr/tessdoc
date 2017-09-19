@@ -74,7 +74,6 @@ Platform support depends on used language and experience of user.
   * **Irish uncial**: https://github.com/jimregan/tesseract-gle-uncial
   * **Polish**: http://code.google.com/p/tesseract-polish/
   * **Fraktur** (dan, deu, swe):  https://github.com/paalberti/tesseract-dan-fraktur
-  * **Hebrew**: http://roidayan.com/wordpress/?p=26, http://code.google.com/p/tesseract-ocr/issues/detail?id=432
   * **Myanmar**: http://code.google.com/p/myaocr/
   * **Persian (Farsi)**: https://github.com/reza1615/PersianOcr
   * **7 segments font**: https://github.com/arturaugusto/display_ocr/tree/master/letsgodigital
@@ -94,7 +93,7 @@ Platform support depends on used language and experience of user.
   * for 3.00 (and 3.01?) see http://code.google.com/p/ocrivist/source/browse/#svn%2Ftessintf where is C wrapper with Freepascal bindings
 
 **.Net**:
-  * [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
+  *tesseract- [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
   * http://code.google.com/p/tesseractdotnet/
 
 **Python**:
