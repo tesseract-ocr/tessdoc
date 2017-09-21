@@ -144,7 +144,8 @@ apply, but the network specification may need to be changed.
 
 # Overview of Training Process
 
-The overall training process is similar to [training 3.04](TrainingTesseract)
+The overall training process is similar to [training 3.04](TrainingTesseract).
+
 Conceptually the same:
 
 1.  [Prepare training
