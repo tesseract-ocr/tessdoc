@@ -142,6 +142,7 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * http://www.1001fonts.com/fraktur-fonts.html
 * http://www.dafont.com/fette-unz-fraktur.font
 * http://www.1001freefonts.com/fette_fraktur.font
+* http://www.ligafaktur.de/Schriften.html
 
 #### Hebrew Fonts
 * [A list of Hebrew fonts from the Open Siddur Project](http://opensiddur.org/tools/fonts/)
