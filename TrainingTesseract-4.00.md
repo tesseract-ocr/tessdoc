@@ -29,7 +29,7 @@ ask questions about training as
     *   [Training From Scratch](#training-from-scratch)
     *   [Fine Tuning for Impact(new-font-style)](#fine-tuning-for-impact)
     *   [Fine Tuning for ± a few
-        characters](#fine-tuning-for-±-a-few-characters)
+        characters](#fine-tuning-for--a-few-characters)
     *   [Training Just a Few Layers](#training-just-a-few-layers)
     *   [Error Messages From Training](#error-messages-from-training)
 *   [Combining the Output Files](#combining-the-output-files)
