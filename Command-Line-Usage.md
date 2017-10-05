@@ -62,7 +62,7 @@ Single options:
 
 ## Add page break in output
 
-  Use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPRATOR]"` 
+  Use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPARATOR]"` 
 
   Default page separator is  the form feed control character.
   
