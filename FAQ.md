@@ -95,7 +95,7 @@ or similar.
 
 ## Windows: tesseract closes automatically right after launching
 
-Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [[3rdParty]] page.
+Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [3rdParty](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty) page.
 
 ## What output formats can Tesseract produce?
 
