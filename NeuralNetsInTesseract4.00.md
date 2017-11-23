@@ -46,7 +46,7 @@ The Tesseract 4.00 neural network subsystem is heavily compute-intensive, using
 the order of ten times the CPU resources of the base Tesseract, but the impact
 is mitigated, if your platform supports it, as follows:
 
-*   Open MP allows use of four cores in parallel if your machine has them.
+*   OpenMP allows use of four cores in parallel if your machine has them.
 *   Intel/AMD processors that support SSE and/or AVX benefit from SIMD
     parallelization of the core matrix multiplications.
 
