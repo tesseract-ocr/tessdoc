@@ -56,8 +56,9 @@ takes more CPU than base Tesseract, but actually runs faster in terms of real
 time.
 
 If the above components are missing, there is a slower plain C++ implementation
-that enables the code to still work. Little-endian and big-endian systems are
-both supported.
+that enables the code to still work.
+
+Little-endian and big-endian systems are both supported.
 
 # For Open Source Contributors
 
