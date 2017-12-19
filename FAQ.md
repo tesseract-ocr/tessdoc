@@ -92,6 +92,7 @@ parallel "tesseract {} {} -l eng hocr; hocr2pdf -i {} -n -o {}.pdf < {}.html" ::
 Note that this example is a little obsolete. You will get better results having Tesseract 
 produce one page PDF files in parallel, then splicing them together at the end using QPDF
 or similar. 
+If you are running Tesseract 4, you can use the "fast" models.
 
 ## Windows: tesseract closes automatically right after launching
 
