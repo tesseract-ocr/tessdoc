@@ -17,7 +17,7 @@ Tesseract is included in most Linux distributions.
 ## Binaries for Windows
 
 - 4.0.0: https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows
-- 3.5.1: https://github.com/parrot-office/tesseract/releases
+- 3.5.1: https://github.com/parrot-office/tesseract/releases/tag/3.5.1
 
 ### Old Downloads
 
