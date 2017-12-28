@@ -274,6 +274,8 @@ right-to-left/bidi handling happens at a higher level inside Tesseract.
 
 These instructions only cover the case of rendering from fonts, so the [needed fonts](Fonts) must be installed first.
 
+### Using tesstrain
+
 The setup for running [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) is the
 same as for base Tesseract. Use `--linedata_only` option for LSTM training.
 Note that it is beneficial to have more training
