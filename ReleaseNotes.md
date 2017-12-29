@@ -34,7 +34,6 @@ Table of Contents
   * Fixes to trainingdata rendering.
   * Fixed damage to binary images when processing PDFs.
   * Removed the 'Cube' engine from the codebase.
-  * Added an option that allows incremental training from a recognition model.
   * Added an option to render only the invisible text layer (without the full 
 input image) for PDF output.
   * Removed code that is no longer needed due to the fact that we now require 
