@@ -29,7 +29,7 @@ Table of Contents
   * Added LSTM models+lang models to [123 languages](https://github.com/tesseract-ocr/tessdata).
   * Added optional accelerated code paths:
     * Using OpenMP
-    * Using SIMD: AVX2 / AVX / SSE4.1
+    * Using SIMD: AVX512(F,BW) / AVX2 / AVX / SSE4.1
   * Improved  multi-page TIFF handling.
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
