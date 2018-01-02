@@ -37,7 +37,7 @@ The third set in **`tessdata`** is for the legacy recognizer. The 4.00 files fro
 
 This set of traineddata files has support for the legacy recognizer with --oem 0 and for LSTM models with --oem 1.
 
-**Note**: The `kur` data file was not updated from 3.04. For Fraktur, see the section [Fraktur Data Files](#fraktur-data-files), or use the new [Fraktur.traineddata](https://github.com/tesseract-ocr/tessdata/blob/master/best/Fraktur.traineddata).
+**Note**: The `kur` data file was not updated from 3.04. For Fraktur, see the section [Fraktur Data Files](#fraktur-data-files), or use the newer data files from the tessdata_fast or tessdata_best repositories.
 
 Lang Code | Language | 4.0 traineddata
 :---------| :------- | :---------------
