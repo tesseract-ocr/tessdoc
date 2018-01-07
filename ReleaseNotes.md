@@ -14,7 +14,8 @@ Table of Contents
 * [October 21 2011 - V3.01](#tesseract-release-notes-oct-21-2011---v301)
 * [September 30 2010 - V3.00](#tesseract-release-notes-sep-30-2010---v300)
 * [June 30 2009 - V2.04](#tesseract-release-notes-june-30-2009---v204)
-* [April 22 2008 - V2.03](#tesseract-release-notes-april-22-2008---v203)
+* [April 22 2008  * Added new neural network system based on LSTMs, with major accuracy gains.
+  * Added [trained data]() that includes LSTM mod - V2.03](#tesseract-release-notes-april-22-2008---v203)
 * [April 21 2008 - V2.02](#tesseract-release-notes-april-21-2008---v202)
 * [August 30 2007 - V2.01](#tesseract-release-notes-aug-30-2007---v201)
 * [July 18 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
@@ -30,7 +31,7 @@ Table of Contents
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers. 
   * Added new neural network system based on LSTMs, with major accuracy gains.
-  * Added LSTM models+lang models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
+  * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
   * Added optional accelerated code paths:
     * Using OpenMP
     * Using SIMD: AVX512(F,BW) / AVX2 / AVX / SSE4.1
