@@ -349,9 +349,27 @@ windows executables. This will probably get fixed in the next release with
 the multi-language capability, since that will also bloat the distribution.
 
 # Tesseract release notes February 03, 2007 - V1.03
+  * Added mftraining and cntraining.
+  * Added baseapi with adaptive thresholding for grey and color.
+  * Fixed many memory leaks.
+  * Fixed several bugs including lack of use of adaptive classifier.
+  * Added ifdefs to eliminate graphics code and add embedded platform support.
+  * Incorporated several patches, including 64-bit builds, Mac builds.
+  * Minor accuracy improvements.
 
 # Tesseract release notes October 04, 2006 - V1.02
+  * Removed dependency on Aspirin.
+  * Fixed a few missing Apache license headers.
+  * Removed $log.
+
 
 # Tesseract release notes September 07, 2006 - V1.01
+  * Added mfcpch.cpp and getopt.cpp for VC++.
+  * Fixed problem with greyscale images and no libtiff.
+  * Stopped debug window from being used for the usage output.
+  * Fixed load of inttemp for big-endian architectures.
+  * Fixed some Mac compilation issues.
 
 # Tesseract release notes June 17, 2006 - V1.00
+First open source version of Tesseract!  
+Hosted at https://sourceforge.net/projects/tesseract-ocr/.
