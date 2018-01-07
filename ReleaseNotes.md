@@ -371,5 +371,6 @@ the multi-language capability, since that will also bloat the distribution.
   * Fixed some Mac compilation issues.
 
 # Tesseract release notes June 17, 2006 - V1.00
-First open source version of Tesseract!  
+First **open source** version of Tesseract!  
+
 Hosted at https://sourceforge.net/projects/tesseract-ocr/.
