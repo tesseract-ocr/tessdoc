@@ -19,6 +19,10 @@ Table of Contents
 * [Aug 30, 2007 - V2.01](#tesseract-release-notes-aug-30-2007---v201)
 * [Jul 18, 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
 * [May 15, 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
+* [February 03, 2007 - V1.03](#tesseract-release-notes-february-03-2007---v103)
+* [October 04, 2006 - V1.02](#tesseract-release-notes-october-04-2006---v102)
+* [September 07, 2006 - V1.01](#tesseract-release-notes-september-07-2006---v101)
+* [June 17, 2006 - V1.00](#tesseract-release-notes-june-17-2006---v100)
 
 # IN DEVELOPMENT
 
@@ -343,3 +347,11 @@ NOTE: This is likely to be the last English-only release!
 Apologies in advance to non-windows users for bloating the distribution with
 windows executables. This will probably get fixed in the next release with
 the multi-language capability, since that will also bloat the distribution.
+
+# Tesseract release notes February 03, 2007 - V1.03
+
+# Tesseract release notes October 04, 2006 - V1.02
+
+# Tesseract release notes September 07, 2006 - V1.01
+
+# Tesseract release notes June 17, 2006 - V1.00
