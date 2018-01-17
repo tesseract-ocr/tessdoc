@@ -34,7 +34,7 @@ Table of Contents
   * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
   * Added optional accelerated code paths:
     * Using OpenMP
-    * Using SIMD: AVX512(F,BW) / AVX2 / AVX / SSE4.1
+    * Using SIMD: AVX2 / AVX / SSE4.1
   * Improved  multi-page TIFF handling.
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
