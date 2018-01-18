@@ -10,7 +10,7 @@
 # Introduction
 
 Tesseract 4.00 includes a new neural network subsystem configured as a textline
-recognizer. It has its origins in OCRopus' Python-based LSTM implementation, but
+recognizer. It has its origins in OCRopus' [Python-based LSTM implementation](https://github.com/tmbdev/ocropy), but
 has been totally redesigned for Tesseract in C++. The neural network system in
 Tesseract pre-dates Tensor Flow, but is compatible with it, as there is a
 network description language called [Variable Graph Specification
