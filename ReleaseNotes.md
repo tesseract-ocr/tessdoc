@@ -70,7 +70,7 @@ input image) for PDF output.
   * Added new C API for orientation and script detection, removed the old one.
   * Increased minimum autoconf version to 2.59.
   * Removed dead code.
-  * Fixed many compiler warning.
+  * Fixed many compiler warnings.
   * Fixed memory and resource leaks.
   * Fixed some issues with the 'Cube' OCR engine. 
   * Fixed some OpenCL issues.
