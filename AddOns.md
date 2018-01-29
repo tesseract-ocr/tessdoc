@@ -92,7 +92,7 @@ Platform support depends on used language and experience of user.
   * Tesseract versions 3.02 and up include [C API](https://github.com/tesseract-ocr/tesseract/blob/master/api/capi.h)
 
 **.Net**:
-  * tesseract- [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
+  * [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
   * http://code.google.com/p/tesseractdotnet/
 
 **Python**:
@@ -125,7 +125,8 @@ Platform support depends on used language and experience of user.
   * [Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS) 
   * [tesseract-ios](https://github.com/ldiqual/tesseract-ios)
 
-**Clojure**: [clj-tesseract](https://github.com/antoniogarrote/clj-tesseract)
+**Clojure**:
+  * [clj-tesseract](https://github.com/antoniogarrote/clj-tesseract)
 
 ### Tesseract 2.0x
 
