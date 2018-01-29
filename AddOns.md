@@ -88,14 +88,14 @@ Platform support depends on used language and experience of user.
 
 ### Tesseract 3.0x
 
-**C wrapper**:
+**C**
   * Tesseract versions 3.02 and up include [C API](https://github.com/tesseract-ocr/tesseract/blob/master/api/capi.h)
 
-**.Net**:
+**.Net**
   * [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
   * http://code.google.com/p/tesseractdotnet/
 
-**Python**:
+**Python**
   * [tesserocr](https://github.com/sirfz/tesserocr) - A Python wrapper (Pillow-friendly) for the tesseract-ocr API
   * [pyocr](https://github.com/jflesch/pyocr) - A python wrapper for Tesseract and Cuneiform
   * [tesserwrap](https://github.com/gregjurman/tesserwrap) - Python bindings to the Tesseract API
@@ -103,34 +103,34 @@ Platform support depends on used language and experience of user.
   * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
   * http://code.google.com/p/python-tesseract/ is a wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
 
-**R**: 
+**R** 
   * [tesseract](https://cran.r-project.org/package=tesseract) Bindings to the C++ API for the R programming language
 
 
-**Ruby**:
+**Ruby**
   * [ruby-tesseract-ocr](https://github.com/meh/ruby-tesseract-ocr/) - wrapper for tesseract 3.0x using the C++ API
   * [rtesseract](https://github.com/dannnylo/rtesseract)
 
-**Java**:
+**Java**
   * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
 
 **Node.js**
   * [penteract](https://github.com/kaelzhang/node-penteract) - The native node.js bindings to the Tesseract OCR project.
 
-**PHP**:
+**PHP**
   * [tesseract-ocr-for-php](https://github.com/thiagoalessio/tesseract-ocr-for-php)
   * https://code.google.com/p/php-tesseract/
 
-**Objective-C**:
+**Objective-C**
   * [Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS) 
   * [tesseract-ios](https://github.com/ldiqual/tesseract-ios)
 
-**Clojure**:
+**Clojure**
   * [clj-tesseract](https://github.com/antoniogarrote/clj-tesseract)
 
 ### Tesseract 2.0x
 
-**Python**:
+**Python**
   * https://github.com/hoffstaetter/python-tesseract/wiki
   * http://code.google.com/p/pytesser/
   * http://code.google.com/p/tesseract-python (pytesser clone)
@@ -138,8 +138,8 @@ Platform support depends on used language and experience of user.
   * http://pokerai.org/pf3/viewtopic.php?f=3&t=2677&start=0&st=0&sk=t&sd=a
   * [patches of SWIG wrapper](http://code.google.com/p/tesseract-ocr/issues/detail?id=77) for python
 
-**.NET**:
+**.NET**
   * http://www.pixel-technology.com/freeware/tessnet2/
 
-**Java**:
+**Java**
   * [tess4j (0.4)](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
