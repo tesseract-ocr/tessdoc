@@ -90,10 +90,9 @@ Platform support depends on used language and experience of user.
 
 **C wrapper**:
   * Tesseract versions 3.02 and up include [C API](https://github.com/tesseract-ocr/tesseract/blob/master/api/capi.h)
-  * for 3.00 (and 3.01?) see http://code.google.com/p/ocrivist/source/browse/#svn%2Ftessintf where is C wrapper with Freepascal bindings
 
 **.Net**:
-  *tesseract- [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
+  * tesseract- [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
   * http://code.google.com/p/tesseractdotnet/
 
 **Python**:
@@ -112,7 +111,8 @@ Platform support depends on used language and experience of user.
   * [ruby-tesseract-ocr](https://github.com/meh/ruby-tesseract-ocr/) - wrapper for tesseract 3.0x using the C++ API
   * [rtesseract](https://github.com/dannnylo/rtesseract)
 
-**Java**: [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
+**Java**:
+  * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
 
 **Node.js**
   * [penteract](https://github.com/kaelzhang/node-penteract) - The native node.js bindings to the Tesseract OCR project.
@@ -137,6 +137,8 @@ Platform support depends on used language and experience of user.
   * http://pokerai.org/pf3/viewtopic.php?f=3&t=2677&start=0&st=0&sk=t&sd=a
   * [patches of SWIG wrapper](http://code.google.com/p/tesseract-ocr/issues/detail?id=77) for python
 
-**.NET**: http://www.pixel-technology.com/freeware/tessnet2/
+**.NET**:
+  * http://www.pixel-technology.com/freeware/tessnet2/
 
-**Java**: [tess4j (0.4)](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
+**Java**:
+  * [tess4j (0.4)](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
