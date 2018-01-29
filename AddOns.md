@@ -29,14 +29,14 @@ Platform support depends on used language and experience of user.
 
 | **Name** | **Last update** | **Language** |
 |:---------|:----------------|:-------------|
-| [Tesseract-OCR boxfile AJAX editor](http://pp19dd.com/tesseract-ocr-chopper/) | March 2012      | online tool  |
-| [owlboxer](http://code.google.com/p/owlboxer/) | Jul 2010        | C++, Qt4     |
-| [Tessboxer](http://sites.google.com/site/spilkaondrej) | Jun 2009        | .NET         |
-| [boxfilereader.php](http://tesseract-ocr.googlecode.com/files/boxfilereader.php) | Mar 2009        |  php         |
-| [tessboxes](http://www.lbreyer.com/tessboxes.html) | Nov 2008        | C            |
-| [JTesseract](http://code.google.com/p/jtesseract/) |  Oct 2008       | C#           |
-| [wx-tetra](http://code.google.com/p/wx-tetra/) | Sep 2008        | perl, wx     |
-| [bbtesseract](http://code.google.com/p/bbtesseract/) | Jul 2008        | VB.NET 2008  |
+| [Tesseract-OCR boxfile AJAX editor](http://pp19dd.com/tesseract-ocr-chopper/) | 2012      | online tool  |
+| [owlboxer](http://code.google.com/p/owlboxer/) | 2010        | C++, Qt4     |
+| [Tessboxer](http://sites.google.com/site/spilkaondrej) | 2009        | .NET         |
+| [boxfilereader.php](http://tesseract-ocr.googlecode.com/files/boxfilereader.php) | 2009        |  php         |
+| [tessboxes](http://www.lbreyer.com/tessboxes.html) | 2008        | C            |
+| [JTesseract](http://code.google.com/p/jtesseract/) |  2008       | C#           |
+| [wx-tetra](http://code.google.com/p/wx-tetra/) | 2008        | perl, wx     |
+| [bbtesseract](http://code.google.com/p/bbtesseract/) | 2008        | VB.NET 2008  |
 
 
 ## Other Training Tools
