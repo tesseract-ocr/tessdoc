@@ -94,6 +94,8 @@ produce one page PDF files in parallel, then splicing them together at the end u
 or similar. 
 If you are running Tesseract 4, you can use the "fast" models.
 
+Tesseract 4 also uses up to four CPU threads while processing a page, so it will be faster than Tesseract 3 for a single page. If your computer has only two CPU cores, then running four threads will slow down things significantly and it would be better to use a single thread or maybe a maximum of two threads! Using a single thread eliminates the computation overhead of multithreading and is also the best solution for processing lots of images by running one Tesseract process per CPU core. Set the maximum number of threads using the environment variable `OMP_THREAD_LIMIT`. To disable multithreading, use `OMP_THREAD_LIMIT=1`.
+
 ## Windows: tesseract closes automatically right after launching
 
 Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [3rdParty](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty) page.
