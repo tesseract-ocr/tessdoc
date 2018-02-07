@@ -84,6 +84,7 @@ To install it in $HOME/local:
 ```
 ./autogen.sh
 ./configure --prefix=$HOME/local/
+make
 make install
 ```
 
@@ -93,6 +94,7 @@ To install it in $HOME/local using Leptonica libraries also installed in $HOME/l
 ./autogen.sh
 LIBLEPT_HEADERSDIR=$HOME/local/include ./configure \
   --prefix=$HOME/local/ --with-extra-libraries=$HOME/local/lib
+make
 make install
 ```
 
