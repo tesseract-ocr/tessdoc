@@ -14,7 +14,7 @@ There are two parts to install, the engine itself, and the training data for a l
 
 ## Linux
 
-Tesseract is available directly from many Linux distributions. The package is generally called 'tesseract' or 'tesseract-ocr' - search your distribution's repositories to find it. Packages are also generally available for language training data (search the repositories,) but if not you will need to download the appropriate training data ([=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) or [the latest from github.com](https://github.com/tesseract-ocr/tessdata)), unpack it, and copy the .traineddata file into the 'tessdata' directory, probably `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata`.
+Tesseract is available directly from many Linux distributions. The package is generally called 'tesseract' or 'tesseract-ocr' - search your distribution's repositories to find it. Packages are also generally available for language training data (search the repositories) but if not you will need to download the appropriate training data ([=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) or [the latest from github.com](https://github.com/tesseract-ocr/tessdata)), unpack it, and copy the .traineddata file into the 'tessdata' directory, probably `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata`.
 
 If Tesseract is not available for your distribution, or you want to use a newer version than they offer, you can [compile your own](Compiling). Note that older versions of Tesseract only supported processing .tiff files.
 
