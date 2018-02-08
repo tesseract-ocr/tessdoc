@@ -16,7 +16,7 @@ There are two parts to install, the engine itself, and the training data for a l
 
 Tesseract is available directly from many Linux distributions. The package is generally called 'tesseract' or 'tesseract-ocr' - search your distribution's repositories to find it. Packages for specific languages, such as English, French, Chinese, etc. are also available directly from the Linux distribution.
 
-If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. This is for expert users only. Various types of training data can be found on [github](https://github.com/tesseract-ocr/). Unpack and copy the .traineddata file into the 'tessdata' directory, probably `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata`. Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
+If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. This is for expert users only. Various types of training data can be found on [github](https://github.com/tesseract-ocr/). Unpack and copy the .traineddata file into the 'tessdata' directory, probably `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
 
 If Tesseract is not available for your distribution, or you want to use a newer version than they offer, you can [compile your own](Compiling).
 
