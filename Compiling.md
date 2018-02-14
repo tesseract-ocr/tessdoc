@@ -361,7 +361,7 @@ make training
 ./configure: line 4237: syntax error near unexpected token `-mavx,'
 ./configure: line 4237: `AX_CHECK_COMPILE_FLAG(-mavx, avx=1, avx=0)'
 ```
-ensure that `autoconf-archive` is installed. Don't forget to run `./autogen.sh` after the installation of `autoconf-archive`.
+ensure that `autoconf-archive` is installed. Don't forget to run `./autogen.sh` after the installation of `autoconf-archive`. Note this error happens often under CentOS, where `autoconf-archive` is missing and no package is available. [Some projects](https://github.com/ic/autoconf-archive-rpmbuilder) help with installing.
 
 * If configure fails with such error "configure: error: Leptonica 1.74 or higher is required." Try to install libleptonica-dev package.
 
