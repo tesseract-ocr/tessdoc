@@ -1,16 +1,18 @@
-## Data Files for Version 4.00 
+## Traineddata Files for Version 4.00 
 
 We have three sets of .traineddata files for tesseract on GitHub in three separate repositories. 
 
-* https://github.com/tesseract-ocr/tessdata_fast (September 15, 2017)
-* https://github.com/tesseract-ocr/tessdata_best (September 15, 2017)
-* https://github.com/tesseract-ocr/tessdata (November 2016)
+* https://github.com/tesseract-ocr/tessdata_fast (September 15, 2017, use for OCR)
+* https://github.com/tesseract-ocr/tessdata_best (September 15, 2017, use for finetune training)
+* https://github.com/tesseract-ocr/tessdata (November 2016, supports legacy tesseract engine also)
 
 When using the models in the **`tessdata_best`** and **`tessdata_fast`** repositories, only the new LSTM-based OCR engine is supported. The legacy tesseract engine is NOT supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
 ## Information specific to tessdata_fast
 
-Most users will use **`tessdata_fast`** as that is what will be shipped as part of Linux distributions. 
+### Usage
+
+Most users will use **`tessdata_fast`** for OCR as that is what will be shipped as part of Linux distributions and will provide accurate and fast recognition. 
 
 ### Version string : 4.00.00alpha : [Network specification]
 
@@ -30,7 +32,7 @@ bod		: synth20170629
 bos		: synth20170629
 bre		: synth20170629
 bul		: synth20170629	: [1,36,0,1Ct3,3,16Mp3,3Lfys48Lfx96Lrx96Lfx128O1c1]
-Canadian_Aboriginal	: synth20170629
+Canadian_Aboriginal: synth20170629
 cat		: synth20170629	: [1,36,0,1Ct3,3,16Mp3,3Lfys48Lfx96Lrx96Lfx192O1c1]
 ceb		: synth20170629
 ces		: synth20170629	: [1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx192O1c1]
