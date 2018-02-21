@@ -62,11 +62,13 @@ Single options:
 
 ## Add page break in output
 
-  Use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPARATOR]"` 
+  In older Tesseract (before September 2017) use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPARATOR]"` 
 
   Default page separator is  the form feed control character.
   
   `tesseract -c include_page_breaks=1 input.tiff output`
+
+  In newer Tesseract (after September 2017) the `include_page_breaks` config variable has been removed.  The default is now to separate pages with the form feed control character.  Use `-c page_separator="[PAGE SEPARATOR]"` to use a different separator, and `-c page_separator=''` to disable page breaks entirely.
 
 ## OCR multiple images with one run of tesseract
 
