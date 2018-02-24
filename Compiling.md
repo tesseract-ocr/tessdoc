@@ -50,11 +50,11 @@ Tesseract versions and the minimum version of Leptonica required:
 
 **Tesseract** | **Leptonica** | **Ubuntu**
 :-------------------: | :---------------------------------------: | :---------
-4.00 | 1.74.2 | Must build from source 
+4.00 | 1.74.2 | [Ubuntu 16.04](https://packages.ubuntu.com/bionic/tesseract-ocr)
 3.05 | 1.74.0 | Must build from source 
-3.04 | 1.71 | [Ubuntu 16.04](http://packages.ubuntu.com/xenial/libtesseract3)
-3.03 | 1.70 | [Ubuntu 14.04](http://packages.ubuntu.com/trusty/libtesseract3)
-3.02 | 1.69 | [Ubuntu 12.04](http://packages.ubuntu.com/precise/libtesseract3)
+3.04 | 1.71 | [Ubuntu 16.04](http://packages.ubuntu.com/xenial/tesseract-ocr)
+3.03 | 1.70 | [Ubuntu 14.04](http://packages.ubuntu.com/trusty/tesseract-ocr)
+3.02 | 1.69 | Ubuntu 12.04
 3.01 | 1.67 |
 
 One option is to install the distro's Leptonica package: 
