@@ -178,3 +178,14 @@ vie		: synth20170629	: [1,36,0,1Ct3,3,16Mp3,3Lfys48Lfx96Lrx96Lfx192O1c1]
 yid		: synth20170629	: [1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx128O1c1]
 yor		: synth20170629
 ```
+
+### quantized 'fast' models and the lang_map that was used to select them.
+
+```
+afr l36-64-96-512
+ara l48-64-96-192
+bel l36-48-96-128
+ben l36-64-96-192
+bul l36-48-96-128
+...
+```
