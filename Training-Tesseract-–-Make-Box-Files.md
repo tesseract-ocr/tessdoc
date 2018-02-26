@@ -1,3 +1,9 @@
+------------------------------------
+### For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00)
+-------------------------------------
+
+**NOTE:** The instructions below are for **older** 3.0x versions of Tesseract. 
+
 * [Make Box Files](#make-box-files)
   * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
   * [Tif/Box pairs provided!](#tifbox-pairs-provided)
