@@ -276,11 +276,27 @@ Xcode and the related command line tools provides the compiler (`llvm-gcc`) and 
 
 The Xcode Command Line Tools can be installed by running `xcode-select --install`.
 
+Note that Tesseract 4 can be built with OpenMP support, but that requires additional installations.
+
 ## macOS with Fink
 Fink (as of 2017-04) neither provides Leptonica nor the packages needed for the Tesseract training tools,
 so it cannot be recommended for building Tesseract.
 
 ## macOS with MacPorts
+
+### Prepare support for OpenMP (optional)
+
+```
+# Install cmake if it is not available.
+sudo install cmake
+git clone https://github.com/llvm-mirror/openmp.git
+cd openmp
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
 
 ### Install required packages
 
