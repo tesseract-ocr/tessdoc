@@ -295,7 +295,7 @@ sudo port install leptonica
   git clone https://github.com/tesseract-ocr/tesseract.git
   cd tesseract
   ./autogen.sh
-  ./configure --with-extra-libraries=/opt/local/lib
+  ./configure
   make
   sudo make install
 ```
@@ -316,16 +316,9 @@ sudo port install icu +devel
 git clone https://github.com/tesseract-ocr/tesseract/
 cd tesseract
 ./autogen.sh
-./configure \
-    --with-extra-libraries=/opt/local/lib \
-    --with-extra-includes=/opt/local/include \
-    LDFLAGS=-L/opt/local/lib \
-    CPPFLAGS=-I/opt/local/include
-make
-sudo make install
-
+./configure
 make training
-sudo make training-install
+sudo make install training-install
 ```
 
 ## macOS with Homebrew
