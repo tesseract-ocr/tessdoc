@@ -1,6 +1,10 @@
-*How to use the tools provided to train Tesseract 3.00–3.02 for a new language.*
+------------------------------------
+## For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00)
+-------------------------------------
 
-**NOTE:** These instructions are for older versions of Tesseract. Training instructions for the more recent versions (3.03–3.05) are [[here|Training-Tesseract]].
+## How to use the tools provided to train Tesseract 3.00–3.02 for a new language?
+
+**NOTE:** These instructions are for older versions of Tesseract. Training instructions for the more recent versions are [[here|Training-Tesseract]].
 
   * [Introduction](#introduction)
   * [Background and Limitations](#background-and-limitations)
