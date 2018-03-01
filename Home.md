@@ -23,10 +23,10 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 ### Tesseract (4.00alpha) packages with LSTM engine and related traineddata.
 
 * [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
-* [Ubuntu Artful 17.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=artful)
-* [Ubuntu Zesty 17.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=zesty)
-* [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
-* [Ubuntu Trusty 14.04 ](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
+* [Ubuntu Artful 17.10 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=artful)
+* [Ubuntu Zesty 17.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=zesty)
+* [Ubuntu Xenial 16.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
+* [Ubuntu Trusty 14.04 -PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
 * [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
 
 
