@@ -14,9 +14,27 @@ There are two parts to install, the engine itself, and the training data for a l
 
 ## Linux
 
-Tesseract is available directly from many Linux distributions. The package is generally called 'tesseract' or 'tesseract-ocr' - search your distribution's repositories to find it. Packages for specific languages, such as English, French, Chinese, etc. are also available directly from the Linux distribution.
+Tesseract is available directly from many Linux distributions. The package is generally called 'tesseract' or 'tesseract-ocr' - search your distribution's repositories to find it. 
 
-FOR EXPERTS ONLY. If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. Various types of training data can be found on [github](https://github.com/tesseract-ocr/). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribtion. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
+Packages for over 130 languages and over 35 scripts are also available directly from the Linux distributions. The language packages are called 'tesseract-ocr-langcode' and 'tesseract-ocr-script-scriptcode', where langcode is three letter language code and scriptcode is four letter script code. Examples: tesseract-ocr-eng (English), tesseract-ocr-ara (Arabic), tesseract-ocr-chi-sim (Simplified Chinese), tesseract-ocr-script-latn (Latin Script),  tesseract-ocr-script-deva (Devanagari script), etc.
+
+### Tesseract (4.00alpha) packages with LSTM engine and related traineddata.
+
+* [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
+* [Ubuntu Artful 17.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=artful)
+* [Ubuntu Zesty 17.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=zesty)
+* [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
+* [Ubuntu Trusty 14.04 ](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
+* [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
+
+
+### FOR EXPERTS ONLY. 
+
+If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. 
+
+Various types of training data can be found on [github](https://github.com/tesseract-ocr/). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribtion. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. 
+
+Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
 
 If Tesseract is not available for your distribution, or you want to use a newer version than they offer, you can [compile your own](Compiling).
 
