@@ -14,9 +14,11 @@ There are two parts to install, the engine itself, and the training data for a l
 
 ## Linux
 
-Tesseract is available directly from many Linux distributions. The package is generally called 'tesseract' or 'tesseract-ocr' - search your distribution's repositories to find it. 
+Tesseract is available directly from many Linux distributions. The package is generally called **'tesseract'** or **'tesseract-ocr'** - search your distribution's repositories to find it. 
 
-Packages for over 130 languages and over 35 scripts are also available directly from the Linux distributions. The language packages are called 'tesseract-ocr-langcode' and 'tesseract-ocr-script-scriptcode', where langcode is three letter language code and scriptcode is four letter script code. Examples: tesseract-ocr-eng (English), tesseract-ocr-ara (Arabic), tesseract-ocr-chi-sim (Simplified Chinese), tesseract-ocr-script-latn (Latin Script),  tesseract-ocr-script-deva (Devanagari script), etc.
+Packages for over 130 languages and over 35 scripts are also available directly from the Linux distributions. The language packages are called **'tesseract-ocr-langcode'** and **'tesseract-ocr-script-scriptcode'**, where langcode is three letter language code and scriptcode is four letter script code. 
+
+**Examples:** tesseract-ocr-eng (**English**), tesseract-ocr-ara (**Arabic**), tesseract-ocr-chi-sim (**Simplified Chinese**), tesseract-ocr-script-latn (**Latin Script**),  tesseract-ocr-script-deva (**Devanagari script**), etc.
 
 ### Tesseract (4.00alpha) packages with LSTM engine and related traineddata.
 
