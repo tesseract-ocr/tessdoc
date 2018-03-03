@@ -27,7 +27,10 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 * [Ubuntu Zesty 17.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=zesty)
 * [Ubuntu Xenial 16.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04 -PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
+
+
 * [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
+* [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
 
 
 ### FOR EXPERTS ONLY. 
