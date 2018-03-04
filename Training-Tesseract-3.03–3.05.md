@@ -241,11 +241,13 @@ unicharset_extractor lang.fontname.exp0.box lang.fontname.exp1.box ...
 
 *New in 3.03*
 
-This tool, together with a set of data files, allow the addition of extra properties in the unicharset, mostly sizes obtained from fonts.
+This tool, together with a set of data files, allow the addition of extra properties in the unicharset, mostly sizes obtained from fonts. 
 
 ```
 training/set_unicharset_properties -U input_unicharset -O output_unicharset --script_dir=training/langdata
 ```
+
+`--script-dir` should point to a directory containing the relevant .unicharset file(s) for your training character set. These can be downloaded from [https://github.com/tesseract-ocr/langdata](https://github.com/tesseract-ocr/langdata)).
 
 After running `unicharset_extractor` and `set_unicharset_properties`, you should get a `unicharset` file with all the fields set to the right values, like in this [example](#an-example-of-the-unicharset-file).
 
