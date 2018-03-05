@@ -130,6 +130,11 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 1. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`.
 2. Run `cppan --build pvt.cppan.demo.google.tesseract.tesseract-master`.
 
+#### For visual studio project using tesseract
+
+1. Setup [Vcpkg](https://github.com/Microsoft/vcpkg/blob/master/README.md) the Visual C++ Package Manager.
+2. Run `vcpkg install tesseract:x64-windows`for 64bit version. Using --head for master branch.
+
 #### Build training tools
 
 Today it is possible to build a full set of tess training tools on Windows with Visual Studio.
