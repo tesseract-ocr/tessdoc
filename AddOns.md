@@ -125,6 +125,9 @@ Platform support depends on used language and experience of user.
   * [Tesseract-OCR-iOS](https://github.com/gali8/Tesseract-OCR-iOS) 
   * [tesseract-ios](https://github.com/ldiqual/tesseract-ios)
 
+**Go**
+  * [gosseract](https://github.com/otiai10/gosseract) 
+
 **Clojure**
   * [clj-tesseract](https://github.com/antoniogarrote/clj-tesseract)
 
