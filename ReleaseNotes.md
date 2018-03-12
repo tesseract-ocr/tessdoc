@@ -45,6 +45,7 @@ input image) for PDF output.
   * Removed code that is no longer needed due to the fact that we now require 
 C++11 support for the compiler and the standard library.
 * Fixed many issues reported by Coverity Scan.
+* Added faster version of log2(). 
 
 # Tesseract release notes June 1 2017 - V3.05.01
   * Added an option to render only the invisible text layer (without the full 
