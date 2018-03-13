@@ -74,6 +74,7 @@ input image) for PDF output.
   * Fixed memory and resource leaks.
   * Fixed some issues with the 'Cube' OCR engine. 
   * Fixed some OpenCL issues.
+  * Added option to build Tesseract with CMake build system.
   * Implemented [CPPAN](https://github.com/cppan) support for easy Windows building.
 
 # Tesseract release notes Feb 16 2016 - V3.04.01
@@ -83,7 +84,6 @@ input image) for PDF output.
   * Improved PDF output for OS X Preview utility.
   * INCOMPATIBLE fix to hOCR line height information - commit [134ebc3](https://github.com/tesseract-ocr/tesseract/commit/134ebc3df39cc2e144eb11575149354bf347def9).
   * Added option to build Tesseract without Cube OCR engine (-DNO_CUBE_BUILD).
-  * Added option to build Tesseract with CMake build system.
   * The project uses Travis CI and AppVeyor Continuous Integration services.
 
 # Tesseract release notes July 11 2015 - V3.04.00
