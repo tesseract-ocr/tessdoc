@@ -41,8 +41,6 @@ Table of Contents
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
   * Fixed damage to binary images when processing PDFs.
-  * Added an option to render only the invisible text layer (without the full 
-input image) for PDF output.
   * Removed obsolete code.
   * Fixed many issues reported by Coverity Scan.
   * Added faster version of log2(). 
