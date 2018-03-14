@@ -11,10 +11,10 @@ To find fonts already installed on your system  which will render a given traini
 ```
 text2image --find_fonts \
 --fonts_dir /usr/share/fonts \
---text ../langdata/hin/hin.training_text \
+--text ./langdata/eng/eng.training_text \
 --min_coverage .9  \
---outputbase ../langdata/hin/hin \
-|& grep raw | sed -e 's/ :.*/" \\/g'  | sed -e 's/^/  "/' >../langdata/hin/fontslist.txt
+--outputbase ./langdata/eng/eng \
+|& grep raw | sed -e 's/ :.*/" \\/g'  | sed -e 's/^/  "/' >./langdata/eng/fontslist.txt
 ```
 The above will not work for Fraktur fonts, it will identify all Latin fonts also. Review the generated images and choose appropriate fonts.
 
