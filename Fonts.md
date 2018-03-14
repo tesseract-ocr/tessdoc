@@ -14,7 +14,10 @@ text2image --find_fonts \
 --text ./langdata/eng/eng.training_text \
 --min_coverage .9  \
 --outputbase ./langdata/eng/eng \
-|& grep raw | sed -e 's/ :.*/" \\/g'  | sed -e 's/^/  "/' >./langdata/eng/fontslist.txt
+|& grep raw \
+ | sed -e 's/ :.*/@ \\/g' \
+ | sed -e "s/^/  '/" \
+ | sed -e "s/@/'/g" >./langdata/eng/fontslist.txt
 ```
 The above will not work for Fraktur fonts, it will identify all Latin fonts also. Review the generated images and choose appropriate fonts.
 
