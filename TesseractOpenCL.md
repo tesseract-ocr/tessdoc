@@ -8,7 +8,7 @@ By using that compute power, Tesseract ideally can be made faster.
 
 # How to build Tesseract with OpenCL
 
-**Important note**: OpenCL support in Tesseract is still considered experimental. There are some major bugs associated with it (see issue [837](https://github.com/tesseract-ocr/tesseract/issues/837)).
+**Important note**: OpenCL support in Tesseract is still considered experimental. There are some major bugs associated with it (see issue [837](https://github.com/tesseract-ocr/tesseract/issues/837)). Building Tesseract with OpenCL support is not recommended (for any version of Tesseract), unless you are a developer and want to improve the OpenCL code.
 
 ## Building Tesseract on VS 2010 with OpenCL
 
