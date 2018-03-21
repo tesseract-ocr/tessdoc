@@ -2,17 +2,20 @@
 
 We have three sets of .traineddata files for tesseract on GitHub in three separate repositories. 
 
-* https://github.com/tesseract-ocr/tessdata_fast (September 15, 2017, use for OCR)
-* https://github.com/tesseract-ocr/tessdata_best (September 15, 2017, use for finetune training)
-* https://github.com/tesseract-ocr/tessdata (November 2016, supports legacy tesseract engine also)
+* [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) (Sep 2017) best "value for money" in speed vs accuracy, Integer models
+* [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) (Sep 2017) best results on the eval data, slower, Float models, can be used as base for finetune training
+* [tessdata](https://github.com/tesseract-ocr/tessdata) (Nov 2016) supports legacy tesseract engine also
 
 When using the models in the **`tessdata_best`** and **`tessdata_fast`** repositories, only the new LSTM-based OCR engine is supported. The legacy tesseract engine is NOT supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
 ## Information specific to tessdata_fast
 
+First, fast is trained with a spec that produces a smaller net than best. As a result of smaller model, the prediction will be faster.
+Then, the float->int conversion is done, which further reduces the size of the model and makes it even faster if your CPU supports AVX2.
+
 ### Usage
 
-Most users will use **`tessdata_fast`** for OCR as that is what will be shipped as part of Linux distributions and will provide accurate and fast recognition. 
+Most users will use **`tessdata_fast`** for OCR as that is what will be shipped as part of Debian and Ubuntu distributions and will provide accurate and fast recognition. 
 
 ### Version string : 4.00.00alpha : [Network specification]
 
