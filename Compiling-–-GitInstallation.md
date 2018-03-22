@@ -26,7 +26,7 @@ or to make a shallow clone with commit history truncated to the latest commit on
 git clone --depth 1  https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
 ```
 
-or to clone a diffrent branch/version:
+or to clone a different branch/version:
 ```
 git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> --single-branch tesseract-ocr
 ```
