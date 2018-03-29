@@ -169,7 +169,7 @@ If you're using master branch (4.0) run
     ```
 
 5. Build a solution (`tesseract.sln`) in your Visual Studio version.
-If you want to build and install from command like (e.g. Release build) you can use this command:
+If you want to build and install from command line (e.g. Release build) you can use this command:
 ```
 cmake --build . --config Release --target install
 ```
