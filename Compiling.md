@@ -169,6 +169,14 @@ If you're using master branch (4.0) run
     ```
 
 5. Build a solution (`tesseract.sln`) in your Visual Studio version.
+If you want to build and install from command like (e.g. Release build) you can use this command:
+```
+cmake --build . --config Release --target install
+```
+If you want to install to other directory that C:\Program Files (you will need admin right for this), you need to specify install path during configuration:
+```
+cmake .. -G "Visual Studio 15 2017 Win64" -DCMAKE_INSTALL_PREFIX=inst
+```
 
 **For development purposes** of training tools after cloning a repo from previous paragraph, run 
 ```
