@@ -76,7 +76,7 @@ If you need an example how to improve image quality programmatically, have a loo
 
 ## Page segmentation method
 
-By default Tesseract expects a page of text when it segments an image. If you're just seeking to OCR a small region try a different segmentation mode, using the `-psm` argument. Note that adding a white border to text which is too tightly cropped may also help, see [issue 398](https://web.archive.org/web/20151209085049/https://code.google.com/p/tesseract-ocr/issues/detail?id=398).
+By default Tesseract expects a page of text when it segments an image. If you're just seeking to OCR a small region try a different segmentation mode, using the `--psm` argument. Note that adding a white border to text which is too tightly cropped may also help, see [issue 398](https://web.archive.org/web/20151209085049/https://code.google.com/p/tesseract-ocr/issues/detail?id=398).
 
 To see a complete list of supported page segmentation modes, use `tesseract -h`. Here's the list as of 3.21:
 
