@@ -92,6 +92,7 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 #### Latin Fonts
 
 * https://fontlibrary.org/en (GFS Bodoni)
+* https://fonts.google.com/
 * http://iginomarini.com/fell/the-revival-fonts/
 * http://scholarsfonts.net/ (Cardo)
 * http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=FontDownloads (SIL Fonts)
@@ -151,7 +152,6 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 
 #### Collections of fonts
 
-* https://fonts.google.com/, https://github.com/google/fonts
 * http://www.abstractfonts.com/
 * http://www.schriftarten-fonts.de/ (German)
 
