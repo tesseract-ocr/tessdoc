@@ -276,7 +276,7 @@ These instructions only cover the case of rendering from fonts, so the [needed f
 
 ### Using tesstrain
 
-The setup for running [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) is the
+The setup for running tesstrain.sh is the
 same as for base Tesseract. Use `--linedata_only` option for LSTM training.
 Note that it is beneficial to have more training
 text and make more pages though, as neural nets don't generalize as well and
