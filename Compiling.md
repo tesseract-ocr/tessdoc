@@ -10,8 +10,17 @@
 * [Miscellaneous](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#miscellaneous)
 
 ## Linux
+To install **Tesseract 4.x** you can simply run the following command on your **Ubuntu 18.xx bionic**:
+```
+sudo apt install tesseract-ocr
+```
+If you wish to install the **Developer Tools** which can be used for training, run the following command:
+```
+sudo apt install libtesseract-dev 
+```
 
-The build instructions for Linux also apply to other UNIX like operating systems.
+
+The following instructions are for building on Linux, which also can be applied to other UNIX like operating systems.
 
 ### Dependencies
 
