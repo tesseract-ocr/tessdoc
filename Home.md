@@ -14,7 +14,12 @@ There are two parts to install, the engine itself, and the training data for a l
 
 ## Linux
 
-Tesseract is available directly from many Linux distributions. The package is generally called **'tesseract'** or **'tesseract-ocr'** - search your distribution's repositories to find it. 
+Tesseract is available directly from many Linux distributions. The package is generally called **'tesseract'** or **'tesseract-ocr'** - search your distribution's repositories to find it.
+Thus you can install Tesseract 4.x and it's developer tools on Ubuntu 18.x bionic by simply running:
+```
+sudo apt install tesseract-ocr
+sudo apt install libtesseract-dev
+```
 
 Packages for over 130 languages and over 35 scripts are also available directly from the Linux distributions. The language packages are called **'tesseract-ocr-langcode'** and **'tesseract-ocr-script-scriptcode'**, where langcode is three letter language code and scriptcode is four letter script code. 
 
