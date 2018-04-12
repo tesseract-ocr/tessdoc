@@ -29,6 +29,16 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 * #### Rename kur_ara traineddata files
   These traineddata files are for Kurdish written in Latin script not Arabic. See [naming suggestion](https://github.com/tesseract-ocr/langdata/issues/124#issuecomment-380770665).
 
+### Regression of Features from 3.0x
+
+* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751))
+
+* #### User Words (See [comment](https://github.com/tesseract-ocr/tesseract/issues/403#issuecomment-265579471))
+
+* #### User Patterns (See [issue](https://github.com/tesseract-ocr/tesseract/issues/960))
+
+* #### HOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444))
+
 ### To be discussed
 
 Depending on available resources and opinions, these suggestions will either be added to the planning for the next or a future release or abandoned.
