@@ -77,3 +77,5 @@ Here we collect important issues and features for the release(s) following 4.0.0
 * #### New LSTM-based OSD detector (see [comment](https://github.com/tesseract-ocr/tesseract/issues/707#issuecomment-374465989)).
 
 * #### Remove Legacy Tesseract Engine (see [issue](https://github.com/tesseract-ocr/tesseract/issues/707))
+
+* #### Better Multi-language implementation for training (See [comment](https://github.com/tesseract-ocr/langdata/issues/83#issuecomment-375027879))
