@@ -21,6 +21,8 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 ### Features wanted for this release
 
+* #### Add --version parameter for all command line commands. **[done](https://github.com/tesseract-ocr/tesseract/commit/69c8292d81cbb71d6d422f79c97ef50d2a1da352)**
+
 * #### Script for installing only selected languages from github (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1440))
 
 * #### Update langdata 
@@ -42,8 +44,6 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 ### To be discussed
 
 Depending on available resources and opinions, these suggestions will either be added to the planning for the next or a future release or abandoned.
-
-* #### Add --version parameter for all command line commands
 
 * #### Adding a compile option NO_LEGACY_OCR_ENGINE would be nice
 
