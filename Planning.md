@@ -69,6 +69,8 @@ A possible implementation using libarchive is [available](https://github.com/stw
 
 * #### "Training light" - Learning by doing (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1442))
 
+* #### Modify text2image to use PrepareDistortedPix() [#1052](https://github.com/tesseract-ocr/tesseract/issues/1052)
+
 * #### Schedule date
 
 ## Future release
