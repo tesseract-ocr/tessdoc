@@ -371,6 +371,14 @@ brew install leptonica
 brew install gcc
 ```
 
+### Install Tesseract with training tools
+
+In the above, training tool dependencies are not installed. You can install them like below.
+
+```
+brew install pango
+```
+
 ### Compile
 
 As of January 2017, the clang builds but OpenMP will only use a single thread, reducing performance. For best results, use gcc.
@@ -384,7 +392,7 @@ cd tesseract
 ./configure CC=gcc-6 CXX=g++-6 CPPFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib
 make -j
 sudo make install  # if desired
-make training
+make training # if installed with training dependencies
 ```
 
 # Common Errors
