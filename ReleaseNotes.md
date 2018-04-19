@@ -43,7 +43,9 @@ Table of Contents
   * Fixed damage to binary images when processing PDFs.
   * Removed obsolete code.
   * Fixed many issues reported by Coverity Scan.
-  * Added faster version of log2(). 
+  * Added faster version of log2().
+  * Update minimum required autoconf version to 2.63.
+  * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
 
 # Tesseract release notes June 1 2017 - V3.05.01
   * Added an option to render only the invisible text layer (without the full 
