@@ -10,11 +10,13 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 ### Open issues which should be fixed
 
-* #### Tesseract creates output for missing input (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1023))
+* #### “no best words!!” on mixed language (fra+ara) items (see [issue 235](https://github.com/tesseract-ocr/tesseract/issues/235))
 
-* #### mgr_.Init(traineddata_path.c_str()):Error:Assert failed: #1075 (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1075))
+* #### Tesseract creates output for missing input (see [issue 1023](https://github.com/tesseract-ocr/tesseract/issues/1023))
 
-* #### Some images translated to text using Tesseract 4 throw an error ... (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1205))
+* #### mgr_.Init(traineddata_path.c_str()):Error:Assert failed: #1075 (see [issue 1075](https://github.com/tesseract-ocr/tesseract/issues/1075))
+
+* #### Some images translated to text using Tesseract 4 throw an error ... (see [issue 1205](https://github.com/tesseract-ocr/tesseract/issues/1205))
 
 * #### Remove deprecated code 
   This does not include OpenCL or the old Tesseract engine. Some recent commits already removed such code.
