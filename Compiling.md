@@ -338,6 +338,12 @@ sudo port install leptonica
   sudo make install
 ```
 
+If compilation fails at the `make` command, with `libtool` erring on missing instructions, you may be building with MacPort's `g++` compiler, with [known issues](https://github.com/tesseract-ocr/tesseract/pull/1474). A workaround is to re-configure the build:
+
+    ./configure CXXFLAGS=-Wa,-q
+
+And then proceed with `make`.
+
 ### Install Tesseract with training tools
 
 In the above training tools are not installed. You can install not only Tesseract but also training tools like below.
