@@ -89,9 +89,14 @@ Install tesseract-OCR:
 and the data files:
 
 ```
- pacman -S mingw-w64-tesseract-ocr-osd mingw-w64-{i686,x86_64}-tesseract-ocr-eng
+ pacman -S mingw-w64-{i686,x86_64}-tesseract-data-eng
 ```
 
+In the above command, "eng" may be replaced with the [ISO 639 3-letter language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) for supported languages. For a list of available language packages use:
+
+```
+  pacman -Ss tesseract-data
+```
 ## Cygwin
 
 Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) 64bit [Cygwin](https://www.cygwin.com/)
