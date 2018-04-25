@@ -25,7 +25,9 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 
 **Examples:** tesseract-ocr-eng (**English**), tesseract-ocr-ara (**Arabic**), tesseract-ocr-chi-sim (**Simplified Chinese**), tesseract-ocr-script-latn (**Latin Script**),  tesseract-ocr-script-deva (**Devanagari script**), etc.
 
-### Tesseract (4.00alpha) packages with LSTM engine and related traineddata.
+### Tesseract 4.0.0-beta-1 packages with LSTM engine and related traineddata.
+
+#### Ubuntu
 
 * [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
 * [Ubuntu Artful 17.10 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=artful)
@@ -33,10 +35,14 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 * [Ubuntu Xenial 16.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04 -PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
 
+#### Debian
 
 * [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
 
+#### CentOS, Fedora, ScientificLinux, OpenSuse
+
+* [rpm package with tesseract-ocr](https://build.opensuse.org/project/show/home:Alexander_Pozdnyakov)
 
 ### FOR EXPERTS ONLY. 
 
