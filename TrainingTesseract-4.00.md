@@ -285,7 +285,7 @@ target domain is severely limited, then all the dire warnings about needing a
 lot of training data may not apply, but the network specification may need to be
 changed.
 
-Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/training/tesstrain.sh)
+Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/src/training/tesstrain.sh)
 as follows: Note that your fonts location may vary.
 
 ```
