@@ -37,6 +37,7 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 
 #### Debian
 
+* [Debian Jessie and Stretch](https://notesalexp.org/tesseract-ocr/)
 * [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
 
