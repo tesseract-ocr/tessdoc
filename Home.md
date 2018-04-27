@@ -45,6 +45,15 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 
 * [rpm package with tesseract-ocr](https://build.opensuse.org/project/show/home:Alexander_Pozdnyakov)
 
+For example, to install `tesseract` and language pack for `deu` on CentOS, do the following:
+
+```
+yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/CentOS_7/
+yum update
+yum install tesseract 
+yum install tesseract-langpack-deu
+```
+
 ### FOR EXPERTS ONLY. 
 
 If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. 
