@@ -1,3 +1,5 @@
+# Frequently Asked Questions
+
 A collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4.0.0**.
 
 For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha, please see [FAQ Old](FAQ-Old).
@@ -10,30 +12,22 @@ If you think you found a bug in Tesseract, please search existing [issues](https
 
 Read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/master/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
 
-Table of Contents
-=================
+***
+
 (Please note, this page is currently being updated for 4.0.0).
+## Q&A
 
-* [How do I get tesseract 4.0.0?](#how-do-i-get-tesseract400)
-* [Which language models are available for Tesseract 4.0.0?](#which-language-models-are-available-for-tesseract-400)
-* [How do I improve OCR results?](#how-do-i-improve-ocr-results)
-* [How do I train Tesseract 4.0.0 LSTM Engine?](#how-do-i-train-tesseract-400-lstm-engine)
-
-* [My question isn't in here!](my-question-isnt-in-here)
-
-# Frequently Asked Questions
-
-## How do I get Tesseract 4.0.0?
+### How do I get Tesseract 4.0.0?
 
 See [Tesseract Wiki Home](https://github.com/tesseract-ocr/tesseract/wiki) page for details.
 
-## Which language models are available for Tesseract 4.0.0?
+### Which language models are available for Tesseract 4.0.0?
 
 See Tesseract man page for the list of [languages](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) and [scripts](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#scripts) supported by Tesseract4.0.0.
 
 See the [Tesseract Wiki Data Files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017) page for information regarding the language models available for Tesseract 4.0.0.
 
-## What output formats can Tesseract produce?
+### What output formats can Tesseract produce?
 
 * txt
 * pdf
@@ -47,11 +41,21 @@ With the configfile 'hocr' tesseract will produce XHTML output compliant with th
 
 With the configfile 'pdf' tesseract will produce searchable PDF containing pages images with a hidden, searchable text layer.
 
-## How do I improve OCR results?
+### How do I run Tesseract 4.0.0 from the command line?
+
+See [Tesseract Wiki Command Line Usage](https://github.com/tesseract-ocr/tesseract/wiki/Command-Line-Usage) page for information on how to run Tesseract from the command line.
+
+`tesseract --help` will provide the most recent help information for the installed version.
+
+### How do I use Tesseract 4.0.0 using the API?
+
+See [Tesseract Wiki API examples](https://github.com/tesseract-ocr/tesseract/wiki/APIExample) page for sample programs for using the API.
+
+### How do I improve OCR results?
 
 You should note that in many cases, in order to get better OCR results, you'll need to [improve the quality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) of the input image you are giving Tesseract.
 
-## Can I increase speed of OCR?
+### Can I increase speed of OCR?
 
 If you are running Tesseract 4, you can use the "fast" integer models.
 
@@ -63,13 +67,13 @@ Set the maximum number of threads using the environment variable `OMP_THREAD_LIM
 
 To disable multithreading, use `OMP_THREAD_LIMIT=1`.
 
-## How do I train Tesseract 4.0.0 LSTM Engine?
+### How do I train Tesseract 4.0.0 LSTM Engine?
 
 Tesseract can be trained to recognize other languages or finetune existing language models. See [Tesseract Wiki Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00) page for information on training the LSTM engine. 
 
 Please note that currently LSTM training is only supported using synthetic images created using a UTF-8 training text and unicode fonts to render the text.
 
-## There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images
+### There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images
 
 Try to clear the adaptive data with `ClearAdaptiveClassifier()` or turn off the adaptive classifier with config variables:
 ```
@@ -79,7 +83,7 @@ classify_enable_adaptive_matcher 0
 
 See also the discussion on the [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ)
 
-## How can I make the error messages go to tesseract.log instead of stderr?
+### How can I make the error messages go to tesseract.log instead of stderr?
 
 To restore the old behaviour of writing to tesseract.log instead of writing to the console window, you need a text file that contains this:
 
@@ -88,7 +92,7 @@ debug\_file tesseract.log
 call the file 'logfile' and put it in tessdata/configs/
 Then add logfile to the end of your command line.
 
-## How can I suppress tesseract info line?
+### How can I suppress tesseract info line?
 
 See [issue 579](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On linux you can redirect stderr and stdout output to /dev/null. E.g.:
 ```
@@ -101,7 +105,7 @@ tesseract phototest.tif phototest quiet
 
 **Warning:** Both options will cause you to not see the error message if there is one.
 
-## How do I produce searchable PDF output?
+### How do I produce searchable PDF output?
 
 Searchable PDF output is a standard feature as of Tesseract version 3.03. Use the `pdf` config file like this:
 
@@ -109,27 +113,27 @@ Searchable PDF output is a standard feature as of Tesseract version 3.03. Use th
 tesseract phototest.tif phototest pdf
 ```
 
-## The searchable PDF seems to contain only spaces or spaces between the letters of words
+### The searchable PDF seems to contain only spaces or spaces between the letters of words
 
 There may be nothing wrong with the PDF itself, but its hidden, searchable text layer may be not understood by your PDF reader. For example, Preview.app in Mac OS X is well known for having problems like this, and might "see" only spaces and no text. Try using Adobe Acrobat Reader instead.
 
-## Can I use Tesseract for handwriting recognition?
+### Can I use Tesseract for handwriting recognition?
 
 You can, but it won't work very well, as Tesseract is designed for printed text. Take a look at the [Lipi Toolkit](http://lipitk.sourceforge.net/) project instead.
 
-## Can I use tesseract for barcode recognition?
+### Can I use tesseract for barcode recognition?
 
 No. Tesseract is for text recognition.
 
-## Where is the documentation?
+### Where is the documentation?
 
 You're looking at it. If things aren't clear, search on the [Tesseract Google Group](http://groups.google.com/group/tesseract-ocr/) or ask us there. If you want to help us write more, please do, and post it to the group!
 
-## How can I try the next version?
+### How can I try the next version?
 
 Periodically stable versions go to the downloads page. Between releases, and in particular, just before a new release, the latest code is available from git. You can find the source here: https://github.com/tesseract-ocr/tesseract.git where you can check it out either by command line, or by following the link to the howto on using various client programs and plugins.
 
-## How do I compare different versions of Tesseract
+### How do I compare different versions of Tesseract
 
 If you want to have several version of tesseract (e.g. you want to compare OCR result) I would suggest you to compile them from source (e.g. in /usr/src) and not install them. If you want to test particular version you can run it this way:
 
@@ -140,6 +144,6 @@ If you want to have several version of tesseract (e.g. you want to compare OCR r
 
 /usr/src/tesseract-3.03/api/tesseract is shell wrapper script, and it will take care that correct shared library is used (without installation...).
 
-## My question isn't in here!
+### My question isn't in here!
 
 Try searching the forum: http://groups.google.com/group/tesseract-ocr as well as open and closed issues on GitHub: https://github.com/tesseract-ocr/tesseract/issues, as your question may have come up before even if it is not listed here.
