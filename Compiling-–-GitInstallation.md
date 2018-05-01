@@ -9,6 +9,11 @@ On Debian or Ubuntu, you can probably install all required packages like this:
 apt-get install autoconf-archive automake g++ libtool libleptonica-dev make pkg-config
 ```
 
+The optional manpages are built with asciidoc:
+```
+apt-get install asciidoc
+```
+
 If you want to build the Tesseract training tools as well, you'll also require Pango:
 ```
 apt-get install libpango1.0-dev
