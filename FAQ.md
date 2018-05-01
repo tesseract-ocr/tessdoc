@@ -143,6 +143,18 @@ tesseract phototest.tif phototest pdf
 
 There may be nothing wrong with the PDF itself, but its hidden, searchable text layer may be not understood by your PDF reader. For example, Preview.app in Mac OS X is well known for having problems like this, and might "see" only spaces and no text. Try using Adobe Acrobat Reader instead.
 
+
+## How to do streaming of images to pdf using Tesseract?
+
+Let's say you have an amazing but slow multipage scanning device. It would be 
+nice to OCR during scanning. In this example, the scanning program is sending 
+image filenames to Tesseract as they are produced. Tesseract streams a 
+searchable PDF to stdout. 
+
+```
+scanimage --batch --batch-print | tesseract -c stream_filelist=true - - pdf > output.pdf
+```
+
 ### Can I use Tesseract for handwriting recognition?
 
 You can, but it won't work very well, as Tesseract is designed for printed text. Take a look at the [Lipi Toolkit](http://lipitk.sourceforge.net/) project instead.
