@@ -67,6 +67,7 @@ If Tesseract is not available for your distribution, or you want to use a newer 
 ## macOS
 
 You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh).
+A macOS wrapper for the Tesseract API is available at [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS)
 
 ### MacPorts
 To install Tesseract run this command: 
