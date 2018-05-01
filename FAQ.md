@@ -1,26 +1,27 @@
-# Frequently Asked Questions
-
 A collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4.0.0**.
 
 For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha, please see [FAQ Old](FAQ-Old).
 
 ***
 
-Read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/master/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
+If you have a question which is not answered by the FAQ, Wiki pages and Issues, please search in the [users mailing-list/forum](https://groups.google.com/d/forum/tesseract-ocr) before posting it there.
 
 If you think you found a bug in Tesseract, please search existing [issues](https://github.com/tesseract-ocr/tesseract/issues). If you find an existing similar issue, please add to it, otherwise create a [new issue](https://github.com/tesseract-ocr/tesseract/issues/new).
 
-If you have a question which is not answered by the FAQ, Wiki pages and Issues, please search in the [users mailing-list/forum](https://groups.google.com/d/forum/tesseract-ocr) before posting it there.
+Read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/master/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
 
 Table of Contents
 =================
 (Please note, this page is currently being updated for 4.0.0).
 
 * [How do I get tesseract 4.0.0?](#how-do-i-get-tesseract400)
-* [Which language models are available for Tesseract 4.0.0?]()
-* [How do I improve OCR results?]()
-* [How do I train Tesseract 4.0.0 LSTM Engine?]()
-* []()
+* [Which language models are available for Tesseract 4.0.0?](which-language-models-are-available-for-tesseract-400)
+* [How do I improve OCR results?](how-do-i-improve-ocr-results)
+* [How do I train Tesseract 4.0.0 LSTM Engine?](how-do-i-train-tesseract-400-lstm-engine)
+
+* [My question isn't in here!](my-question-isnt-in-here)
+
+# Frequently Asked Questions
 
 ## How do I get Tesseract 4.0.0?
 
