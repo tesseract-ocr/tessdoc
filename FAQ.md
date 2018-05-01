@@ -15,9 +15,9 @@ Table of Contents
 (Please note, this page is currently being updated for 4.0.0).
 
 * [How do I get tesseract 4.0.0?](#how-do-i-get-tesseract400)
-* [Which language models are available for Tesseract 4.0.0?](which-language-models-are-available-for-tesseract-400)
-* [How do I improve OCR results?](how-do-i-improve-ocr-results)
-* [How do I train Tesseract 4.0.0 LSTM Engine?](how-do-i-train-tesseract-400-lstm-engine)
+* [Which language models are available for Tesseract 4.0.0?](#which-language-models-are-available-for-tesseract-400)
+* [How do I improve OCR results?](#how-do-i-improve-ocr-results)
+* [How do I train Tesseract 4.0.0 LSTM Engine?](#how-do-i-train-tesseract-400-lstm-engine)
 
 * [My question isn't in here!](my-question-isnt-in-here)
 
