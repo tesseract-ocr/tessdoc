@@ -1,5 +1,6 @@
-This page archives the [FAQ](FAQ) page as of May 1, 2018. 
-The [FAQ](FAQ) will be updated to only contain information pertaining to tesseract 4.0.0.
+This page archives the [FAQ](FAQ) page pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha as of May 1, 2018. 
+
+The main [FAQ](FAQ) page will be updated to only contain information pertaining to Tesseract 4.0.0.
 
 ***
 
