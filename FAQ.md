@@ -33,15 +33,112 @@ See Tesseract man page for the list of [languages](https://github.com/tesseract-
 
 See the [Tesseract Wiki Data Files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017) page for information regarding the language models available for Tesseract 4.0.0.
 
+## What output formats can Tesseract produce?
+
+* txt
+* pdf
+* hocr
+* tsv
+* pdf with text layer only
+
+Tesseract can produce plain text, PDF, and HTML output. Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
+
+With the configfile 'hocr' tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
+
+With the configfile 'pdf' tesseract will produce searchable PDF containing pages images with a hidden, searchable text layer.
+
 ## How do I improve OCR results?
 
 You should note that in many cases, in order to get better OCR results, you'll need to [improve the quality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) of the input image you are giving Tesseract.
+
+## Can I increase speed of OCR?
+
+If you are running Tesseract 4, you can use the "fast" integer models.
+
+Tesseract 4 also uses up to four CPU threads while processing a page, so it will be faster than Tesseract 3 for a single page. 
+
+If your computer has only two CPU cores, then running four threads will slow down things significantly and it would be better to use a single thread or maybe a maximum of two threads! Using a single thread eliminates the computation overhead of multithreading and is also the best solution for processing lots of images by running one Tesseract process per CPU core. 
+
+Set the maximum number of threads using the environment variable `OMP_THREAD_LIMIT`. 
+
+To disable multithreading, use `OMP_THREAD_LIMIT=1`.
 
 ## How do I train Tesseract 4.0.0 LSTM Engine?
 
 Tesseract can be trained to recognize other languages or finetune existing language models. See [Tesseract Wiki Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00) page for information on training the LSTM engine. 
 
 Please note that currently LSTM training is only supported using synthetic images created using a UTF-8 training text and unicode fonts to render the text.
+
+## There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images
+
+Try to clear the adaptive data with `ClearAdaptiveClassifier()` or turn off the adaptive classifier with config variables:
+```
+classify_enable_learning 0
+classify_enable_adaptive_matcher 0
+```
+
+See also the discussion on the [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ)
+
+## How can I make the error messages go to tesseract.log instead of stderr?
+
+To restore the old behaviour of writing to tesseract.log instead of writing to the console window, you need a text file that contains this:
+
+debug\_file tesseract.log
+
+call the file 'logfile' and put it in tessdata/configs/
+Then add logfile to the end of your command line.
+
+## How can I suppress tesseract info line?
+
+See [issue 579](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On linux you can redirect stderr and stdout output to /dev/null. E.g.:
+```
+tesseract phototest.tif phototest 1>/dev/null 2>&1
+```
+With tesseract 3.02 you can use config "quiet". E.g.:
+```
+tesseract phototest.tif phototest quiet
+```
+
+**Warning:** Both options will cause you to not see the error message if there is one.
+
+## How do I produce searchable PDF output?
+
+Searchable PDF output is a standard feature as of Tesseract version 3.03. Use the `pdf` config file like this:
+
+```
+tesseract phototest.tif phototest pdf
+```
+
+## The searchable PDF seems to contain only spaces or spaces between the letters of words
+
+There may be nothing wrong with the PDF itself, but its hidden, searchable text layer may be not understood by your PDF reader. For example, Preview.app in Mac OS X is well known for having problems like this, and might "see" only spaces and no text. Try using Adobe Acrobat Reader instead.
+
+## Can I use Tesseract for handwriting recognition?
+
+You can, but it won't work very well, as Tesseract is designed for printed text. Take a look at the [Lipi Toolkit](http://lipitk.sourceforge.net/) project instead.
+
+## Can I use tesseract for barcode recognition?
+
+No. Tesseract is for text recognition.
+
+## Where is the documentation?
+
+You're looking at it. If things aren't clear, search on the [Tesseract Google Group](http://groups.google.com/group/tesseract-ocr/) or ask us there. If you want to help us write more, please do, and post it to the group!
+
+## How can I try the next version?
+
+Periodically stable versions go to the downloads page. Between releases, and in particular, just before a new release, the latest code is available from git. You can find the source here: https://github.com/tesseract-ocr/tesseract.git where you can check it out either by command line, or by following the link to the howto on using various client programs and plugins.
+
+## How do I compare different versions of Tesseract
+
+If you want to have several version of tesseract (e.g. you want to compare OCR result) I would suggest you to compile them from source (e.g. in /usr/src) and not install them. If you want to test particular version you can run it this way:
+
+```
+/usr/src/tesseract-3.03/api/tesseract eurotext.tif eurotext
+/usr/src/tesseract-ocr.3.02/api/tesseract eurotext.tif eurotext
+```
+
+/usr/src/tesseract-3.03/api/tesseract is shell wrapper script, and it will take care that correct shared library is used (without installation...).
 
 ## My question isn't in here!
 
