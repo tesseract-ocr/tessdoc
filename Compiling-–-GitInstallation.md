@@ -6,7 +6,7 @@ In order to do this; you must have aclocal, autoheader, autoconf, autoconf-archi
 
 On Debian or Ubuntu, you can probably install all required packages like this:
 ```
-apt-get install autoconf-archive automake g++ libtool libleptonica-dev pkg-config
+apt-get install autoconf-archive automake g++ libtool libleptonica-dev make pkg-config
 ```
 
 If you want to build the Tesseract training tools as well, you'll also require Pango:
