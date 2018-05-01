@@ -35,17 +35,43 @@ See the [Tesseract Wiki Data Files](https://github.com/tesseract-ocr/tesseract/w
 * tsv
 * pdf with text layer only
 
-Tesseract can produce plain text, PDF, and HTML output. Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
+Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)) and 'FF' as a form feed character after each page.
+
+With the configfile 'pdf' tesseract will produce searchable PDF containing pages images with a hidden, searchable text layer.
 
 With the configfile 'hocr' tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
 
-With the configfile 'pdf' tesseract will produce searchable PDF containing pages images with a hidden, searchable text layer.
+With the configfile 'tsv' tesseract will produce [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) file.
+
+`tesseract -c textonly_pdf=1` will produce a text-only PDF which can be merged with an images-only PDF. See [issue 660](https://github.com/tesseract-ocr/tesseract/issues/660#issuecomment-385669193) for related discussion and utility for merging the PDFs.
 
 ### How do I run Tesseract 4.0.0 from the command line?
 
 See [Tesseract Wiki Command Line Usage](https://github.com/tesseract-ocr/tesseract/wiki/Command-Line-Usage) page for information on how to run Tesseract from the command line.
 
 `tesseract --help` will provide the most recent help information for the installed version.
+
+### How to process multiple images in a single run?
+
+Prepare a text file that has the path to each image:
+
+```
+path/to/1.png
+path/to/2.png
+path/to/3.tiff
+```
+
+Save it, and then give its name as input file to Tesseract.
+
+`tesseract savedlist output`
+
+### What page separators are used in txt output by Tesseract 4.0.0?
+
+Each page will be terminated by the FF character by default for text output. 
+
+Setting `page_separator` to the LF character would restore the old behaviour of adding an empty line at the end of each page.
+
+Setting `page_separator` to an empty string would omit page separators.
 
 ### How do I use Tesseract 4.0.0 using the API?
 
