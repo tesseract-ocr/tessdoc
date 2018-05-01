@@ -1,15 +1,44 @@
 ## [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
 
-This page has not been (fully) updated for Tesseract 4.0. 
+Information updated for Tesseract-4.0.0-beta-1
 
-## Tesseract --help
+## tesseract --version
+
+```
+tesseract 4.0.0-beta.1-207-g984a
+ leptonica-1.76.0
+  libjpeg 8d (libjpeg-turbo 1.3.0) : libpng 1.2.50 : libtiff 4.0.3 : zlib 1.2.8 : libopenjp2 2.3.0
+ Found AVX
+ Found SSE
+```
+
+## tesseract --help
 
 ```
 Usage:
-  tesseract --help | --help-psm | --help-oem | --version
+  tesseract --help | --help-extra | --version
+  tesseract --list-langs
+  tesseract imagename outputbase [options...] [configfile...]
+
+OCR options:
+  -l LANG[+LANG]        Specify language(s) used for OCR.
+NOTE: These options must occur before any configfile.
+
+Single options:
+  --help                Show this help message.
+  --help-extra          Show extra help for advanced users.
+  --version             Show version information.
+  --list-langs          List available languages for tesseract engine.
+```
+
+## tesseract --help-extra
+
+```
+Usage:
+  tesseract --help | --help-extra | --help-psm | --help-oem | --version
   tesseract --list-langs [--tessdata-dir PATH]
   tesseract --print-parameters [options...] [configfile...]
-  tesseract imagename|stdin outputbase|stdout [options...] [configfile...]
+  tesseract imagename|imagelist|stdin outputbase|stdout [options...] [configfile...]
 
 OCR options:
   --tessdata-dir PATH   Specify the location of tessdata path.
@@ -37,15 +66,17 @@ Page segmentation modes:
  11    Sparse text. Find as much text as possible in no particular order.
  12    Sparse text with OSD.
  13    Raw line. Treat the image as a single text line,
-                        bypassing hacks that are Tesseract-specific.
+       bypassing hacks that are Tesseract-specific.
+
 OCR Engine modes:
-  0    Original Tesseract only.
-  1    Neural nets LSTM only.
-  2    Tesseract + LSTM.
+  0    Legacy engine only.
+  1    Neural nets LSTM engine only.
+  2    Legacy + LSTM engines.
   3    Default, based on what is available.
 
 Single options:
-  -h, --help            Show this help message.
+  -h, --help            Show minimal help message.
+  --help-extra          Show extra help for advanced users.
   --help-psm            Show page segmentation modes.
   --help-oem            Show OCR Engine modes.
   -v, --version         Show version information.
