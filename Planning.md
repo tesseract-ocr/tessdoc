@@ -10,6 +10,11 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 ### Open issues which should be fixed
 
+* #### The endianness issue (see [issue 518](https://github.com/tesseract-ocr/tesseract/issues/518), [issue 1525](https://github.com/tesseract-ocr/tesseract/issues/1525)). 
+  For Linux distributions, the current status (big endian Tesseract 4.0 crashes) is not acceptable.
+
+* #### Report a warning when the Tesseract initialisation code detects an unsupported locale setting. (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1010#issuecomment-379208967))
+
 * #### “no best words!!” on mixed language (fra+ara) items (see [issue 235](https://github.com/tesseract-ocr/tesseract/issues/235))
 
 * ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
@@ -33,22 +38,18 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 * #### Update langdata 
   See [discussion](https://github.com/tesseract-ocr/tesseract/issues/1423#issuecomment-380139227).
 
-* #### Rename kur_ara traineddata files
+* #### Rename kur_ara traineddata files (**done**)
   These traineddata files are for Kurdish written in Latin script not Arabic. See [naming suggestion](https://github.com/tesseract-ocr/langdata/issues/124#issuecomment-380770665).
-
-### Regression of Features from 3.0x
-
-* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751))
-
-* #### User Words (See [comment](https://github.com/tesseract-ocr/tesseract/issues/403#issuecomment-265579471))
-
-* #### User Patterns (See [issue](https://github.com/tesseract-ocr/tesseract/issues/960))
-
-* #### HOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444))
 
 ### To be discussed
 
 Depending on available resources and opinions, these suggestions will either be added to the planning for the next or a future release or abandoned.
+
+* #### Segfault on using -psm 0 when using fast eng.traineddata [Issue 1167](https://github.com/tesseract-ocr/tesseract/issues/1167)
+
+* #### combine_lang_model does not print correct usage help [Issue 1375](https://github.com/tesseract-ocr/tesseract/issues/1375)
+
+* #### Insufficient error message when output file cannot be created [Issue 1424](https://github.com/tesseract-ocr/tesseract/issues/1424)
 
 * #### Adding a compile option NO_LEGACY_OCR_ENGINE would be nice
 
@@ -80,6 +81,15 @@ A possible implementation using libarchive is [available](https://github.com/stw
 
 * #### Schedule date
 
+### Regression of Features from 3.0x
+
+* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751))
+
+* #### User Words (See [comment](https://github.com/tesseract-ocr/tesseract/issues/403#issuecomment-265579471))
+
+* #### User Patterns (See [issue](https://github.com/tesseract-ocr/tesseract/issues/960))
+
+* #### HOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444))
 ## Future release
 Here we collect important issues and features for the release(s) following 4.0.0.
 
