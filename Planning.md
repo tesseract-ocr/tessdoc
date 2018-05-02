@@ -15,6 +15,12 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 * #### Report a warning when the Tesseract initialisation code detects an unsupported locale setting. (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1010#issuecomment-379208967))
 
+* #### Segfault on using -psm 0 when using fast eng.traineddata [Issue 1167](https://github.com/tesseract-ocr/tesseract/issues/1167)
+
+* #### combine_lang_model does not print correct usage help [Issue 1375](https://github.com/tesseract-ocr/tesseract/issues/1375)
+
+* #### Insufficient error message when output file cannot be created [Issue 1424](https://github.com/tesseract-ocr/tesseract/issues/1424)
+
 * #### “no best words!!” on mixed language (fra+ara) items (see [issue 235](https://github.com/tesseract-ocr/tesseract/issues/235))
 
 * ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
@@ -44,12 +50,6 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 ### To be discussed
 
 Depending on available resources and opinions, these suggestions will either be added to the planning for the next or a future release or abandoned.
-
-* #### Segfault on using -psm 0 when using fast eng.traineddata [Issue 1167](https://github.com/tesseract-ocr/tesseract/issues/1167)
-
-* #### combine_lang_model does not print correct usage help [Issue 1375](https://github.com/tesseract-ocr/tesseract/issues/1375)
-
-* #### Insufficient error message when output file cannot be created [Issue 1424](https://github.com/tesseract-ocr/tesseract/issues/1424)
 
 * #### Adding a compile option NO_LEGACY_OCR_ENGINE would be nice
 
