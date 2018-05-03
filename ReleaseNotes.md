@@ -46,6 +46,7 @@ Table of Contents
   * Added faster version of log2().
   * Update minimum required autoconf version to 2.63.
   * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
+  * Reorganized Tesseract's source tree.
 
 # Tesseract release notes June 1 2017 - V3.05.01
   * Added an option to render only the invisible text layer (without the full 
