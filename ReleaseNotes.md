@@ -42,6 +42,7 @@ Table of Contents
   * Fixes to trainingdata rendering.
   * Fixed damage to binary images when processing PDFs.
   * Removed obsolete code.
+  * Fixed many issues that triggered compiler warnings. 
   * Fixed many issues reported by Coverity Scan.
   * Added faster version of log2().
   * Update minimum required autoconf version to 2.63.
