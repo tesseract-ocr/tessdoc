@@ -101,11 +101,8 @@ Please note that currently LSTM training is only supported using synthetic image
 
 ## There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images
 
-Try to clear the adaptive data with `ClearAdaptiveClassifier()` or turn off the adaptive classifier with config variables:
-```
-classify_enable_learning 0
-classify_enable_adaptive_matcher 0
-```
+Try to turn off the adaptive classifier by setting the config variable `classify_enable_learning` 
+to 0`, or to clear the adaptive data with the method `ClearAdaptiveClassifier()`.
 
 See also the discussion on the [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ)
 
