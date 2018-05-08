@@ -1,10 +1,10 @@
 # API examples
 
-This wiki provide simple example how to use tesseract-ocr API (v3.02.02) in C++.
+This wiki provides simple examples on how to use the tesseract-ocr API (v3.02.02) in C++.
 It is expected that tesseract-ocr is correctly installed including all dependecies.
-It is expected that user is familiar with C++, compiling and linking program on their platform, [though basic compilation examples are included for beginners with Linux](#compiling-c-api-programs-on-linux).
+It is expected the user is familiar with C++, compiling and linking program on their platform, [though basic compilation examples are included for beginners with Linux](#compiling-c-api-programs-on-linux).
 
-More details about tesseract-ocr API can found at [baseapi.h](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h)
+More details about tesseract-ocr API can be found at [baseapi.h](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h)
 
 
 
@@ -43,7 +43,7 @@ int main()
 }
 ```
 
-Program must be linked to tesseract-ocr library and leptonica library.
+The program must be linked to the tesseract-ocr and leptonica libraries.
 
 If you want to restrict recognition to a sub-rectangle of the image - call _SetRectangle(left, top, width, height)_ after SetImage. Each SetRectangle clears the recogntion results so multiple rectangles can be recognized with the same image. E.g.
 ```c++
@@ -72,7 +72,7 @@ If you want to restrict recognition to a sub-rectangle of the image - call _SetR
 
 # Result iterator example
 
-There is possibility to get confidence value and BoundingBox per word from ResultIterator:
+It is possible to get confidence value and BoundingBox per word from a ResultIterator:
 
 ```c++
   Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
@@ -95,7 +95,7 @@ There is possibility to get confidence value and BoundingBox per word from Resul
   }
 ```
 
-Of course there is possibility to use other [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/master/ccstruct/publictypes.h#L204).
+It is also possible to use other iterators, such as [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/master/ccstruct/publictypes.h#L204).
 
 
 
