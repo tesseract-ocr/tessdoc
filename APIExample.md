@@ -95,7 +95,7 @@ It is possible to get confidence value and BoundingBox per word from a ResultIte
   }
 ```
 
-It is also possible to use other iterators, such as [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/master/ccstruct/publictypes.h#L204).
+It is also possible to use other iterator levels (block, line, word, etc.), see [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/master/src/ccstruct/publictypes.h#L219).
 
 
 
@@ -122,7 +122,7 @@ It is also possible to use other iterators, such as [PageiteratorLevel](https://
          orientation, direction, order, deskew_angle);
 ```
 
-Explanation for result codes are in [publictypes.h](https://github.com/tesseract-ocr/tesseract/blob/master/ccstruct/publictypes.h#L86)
+Explanation for result codes are in [publictypes.h](https://github.com/tesseract-ocr/tesseract/blob/master/src/ccstruct/publictypes.h#L120)
 
 
 # Example of iterator over the classifier choices for a single symbol
