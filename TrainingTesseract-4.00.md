@@ -921,12 +921,7 @@ you put spaces in the box string, like this:
 <text for line including spaces> <left> <bottom> <right> <top> <page>
 ```
 
-the parser will be confused and give you the error message. There is a different
-format required for such boxfile strings:
-
-```
-WordStr <left> <bottom> <right> <top> <page> #<text for line including spaces>
-```
+the parser will be confused and give you the error message.
 
 `Deserialize header failed` occurs when a training input is not in LSTM format
 or the file is not readable. Check your filelist file to see if it contains
