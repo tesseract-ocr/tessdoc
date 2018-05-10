@@ -236,7 +236,7 @@ similar manner to the way `.tr` files were created for the old engine.
 
 # Creating Training Data
 
-### Making a Box File
+### Making Box Files
 
 As with base Tesseract, there is a choice between rendering synthetic training
 data from fonts, or labeling some pre-existing images (like ancient manuscripts
