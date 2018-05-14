@@ -26,7 +26,7 @@ Table of Contents
 
 # IN DEVELOPMENT
 
-**To be released as V4.0.0 - hopefully in H1 2018.**  
+**To be released as V4.0.0**  
 **Currently at beta 1 stage.**
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers. 
