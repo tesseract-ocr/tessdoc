@@ -107,3 +107,6 @@ Here we collect important issues and features for the release(s) following 4.0.0
 * #### Better Multi-language implementation for training (See [comment](https://github.com/tesseract-ocr/langdata/issues/83#issuecomment-375027879))
 
 * #### ARM SIMD support for dot product [#519](https://github.com/tesseract-ocr/tesseract/issues/519)
+
+* ### Using OpenMP for dot product [#983](https://github.com/tesseract-ocr/tesseract/issues/983)
+
