@@ -581,7 +581,7 @@ tuning...
 Fine tuning is the process of training an existing model on new data without
 changing any part of the network, although you **can** now add
 characters to the character set. (See [Fine Tuning for ± a few
-        characters](#fine-tuning-for-±-a-few-characters)).
+        characters](#fine-tuning-for--a-few-characters)).
 
 ```
 training/lstmtraining --model_output /path/to/output [--max_image_MB 6000] \
