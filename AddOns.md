@@ -89,7 +89,7 @@ Platform support depends on used language and experience of user.
 ### Tesseract 3.0x
 
 **C**
-  * Tesseract versions 3.02 and up include [C API](https://github.com/tesseract-ocr/tesseract/blob/master/api/capi.h)
+  * Tesseract versions 3.02 and up include [C API](https://github.com/tesseract-ocr/tesseract/blob/e95ff1159e652d9b8ae6bc4aafdb196981942e6a/src/api/capi.h)
 
 **.Net**
   * [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
