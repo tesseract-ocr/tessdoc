@@ -48,13 +48,60 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 
 * [rpm package with tesseract-ocr](https://build.opensuse.org/project/show/home:Alexander_Pozdnyakov)
 
-For example, to install `tesseract` and language pack for `deu` on CentOS, do the following:
+For example to install Tesseract with German language traineddata:
 
+**For CentOS 7 run the following as root:**
 ```
 yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/CentOS_7/
 yum update
 yum install tesseract 
 yum install tesseract-langpack-deu
+```
+**For Scientific Linux 7 run the following as root:**
+```
+yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/ScientificLinux_7/
+yum update
+yum install tesseract 
+yum install tesseract-langpack-deu
+```
+**For Fedora 27 run the following as root:**
+```
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_27/home:Alexander_Pozdnyakov.repo
+dnf install tesseract
+dnf install tesseract-langpack-deu
+```
+**For Fedora 26 run the following as root:**
+```
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_26/home:Alexander_Pozdnyakov.repo
+dnf install tesseract
+dnf install tesseract-langpack-deu
+```
+**For Fedora 25 run the following as root:**
+```
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_25/home:Alexander_Pozdnyakov.repo
+dnf install tesseract
+dnf install tesseract-langpack-deu
+```
+**For openSUSE Tumbleweed run the following as root:**
+```
+zypper addrepo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/openSUSE_Tumbleweed/home:Alexander_Pozdnyakov.repo
+zypper refresh
+zypper install tesseract-ocr
+zypper install tesseract-ocr-traineddata-german
+```
+**For openSUSE Leap 42.3 run the following as root:**
+```
+zypper addrepo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/openSUSE_Leap_42.3/home:Alexander_Pozdnyakov.repo
+zypper refresh
+zypper install tesseract-ocr
+zypper install tesseract-ocr-traineddata-german
+```
+**For openSUSE Leap 15.0 run the following as root:**
+```
+zypper addrepo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/openSUSE_Leap_15.0/home:Alexander_Pozdnyakov.repo
+zypper refresh
+zypper install tesseract-ocr
+zypper install tesseract-ocr-traineddata-german
 ```
 
 ### FOR EXPERTS ONLY. 
