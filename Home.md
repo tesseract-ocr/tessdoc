@@ -37,18 +37,18 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 * [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
 
-#### Ubuntu - PPA by Alexander Pozdnyakov
-
+#### Ubuntu - PPA 
+* [Ubuntu Bionic 18.04 - PPA ](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
 * [Ubuntu Artful 17.10 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=artful)
 * [Ubuntu Xenial 16.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
 
-#### Debian GNU/Linux packages from notesalexp.org by Alexander Pozdnyakov
+#### Debian GNU/Linux packages from notesalexp.org 
 
 * [Debian Jessie, Stretch, Buster, Sid](https://notesalexp.org/tesseract-ocr/)
 * [Ubuntu Trusty, Xenial, Zesty, Artful, Bionic](https://notesalexp.org/tesseract-ocr/)
 
-#### CentOS, Fedora, ScientificLinux, OpenSuse packages by Alexander Pozdnyakov
+#### CentOS, Fedora, ScientificLinux, OpenSuse packages
 
 * [rpm package with tesseract-ocr](https://build.opensuse.org/project/show/home:Alexander_Pozdnyakov)
 
