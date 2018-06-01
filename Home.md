@@ -96,12 +96,18 @@ brew install tesseract
 
 ## Windows
 
-An unofficial installer for windows for Tesseract 3.05-dev and Tesseract 4.00-dev is available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). This includes the training tools.
+Installer for Windows for Tesseract 3.05-01 and Tesseract 4.00-beta are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
 
-An installer for the old version 3.02 is available for Windows from our [download](Downloads) page. This includes the English training data. If you want to use another language, [download the appropriate training data](
+An installer for the **OLD version 3.02** is available for Windows from our [download](Downloads) page. This includes the English training data. If you want to use another language, [download the appropriate training data](
 https://github.com/tesseract-ocr/tesseract/wiki/Data-Files), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
 
 To access tesseract-OCR from any location you may have to add the directory where the tesseract-OCR binaries are located to the Path variables, probably `C:\Program Files\Tesseract-OCR`.
+
+## Cygwin
+
+Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) 64bit [Cygwin](https://www.cygwin.com/)
+
+The latest version available seems to be 3.05.01. Please see [announcement](https://cygwin.com/ml/cygwin-announce/2017-06/msg00009.html).
 
 ## MSYS2
 
@@ -121,22 +127,6 @@ In the above command, "eng" may be replaced with the [ISO 639 3-letter language 
 
 ```
   pacman -Ss tesseract-data
-```
-## Cygwin
-
-Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) 64bit [Cygwin](https://www.cygwin.com/)
-
-Instruction for cygwin installation is here:
-https://cygwin.com/cygwin-ug-net/setup-net.html
-
-```
-Tesseract specific packages to be installed:
-
-tesseract-ocr                           3.04.01-1
-tesseract-ocr-eng                       3.04-1
-tesseract-training-core                 3.04-1
-tesseract-training-eng                  3.04-1
-tesseract-training-util                 3.04.01-1
 ```
 
 ## Other Platforms
