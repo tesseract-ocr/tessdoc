@@ -4,8 +4,8 @@ Such tessdata contributions should ideally document everything needed to reprodu
 
 ***
 
-|Language Code|Language|Data File|Contributor|Description|
+|Language Code|Language|Data File|Contributor|Info|
 |--|--|--|--|--|
-|khmLimon|Khmer|[best](https://github.com/OpenInstituteCambodia/tessdata_best/blob/master/khmLimon.traineddata)|OpenInstituteCambodia|[PR in tessdata_best](https://github.com/tesseract-ocr/tessdata_best/pull/27#issuecomment-394643981)|
+|khmLimon|Khmer|[best](https://github.com/OpenInstituteCambodia/tessdata_best/blob/master/khmLimon.traineddata)|[OpenInstituteCambodia](https://github.com/OpenInstituteCambodia)/[phyrumsk](https://github.com/phyrumsk)|[PR in tessdata_best](https://github.com/tesseract-ocr/tessdata_best/pull/27#issuecomment-394643981)|
 
 
