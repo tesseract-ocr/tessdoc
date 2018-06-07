@@ -106,7 +106,7 @@ vc6     Total   58610   -       -8.11%  15994   -       0.16%   12586   -       
 
 Future work may be directed at making these discrepancies smaller, if not eliminating them completely, on the grounds that where there is variation, there is room for improvement...
 
-### Results for more recent versions of Tesseract 
+### Results for more recent versions of Tesseract [by Tom Morris](https://groups.google.com/forum/#!searchin/tesseract-dev/bus.3B%7Csort:date/tesseract-dev/LErriuT-sck/B5PR0QaCGwAJ)
 
 All compiled with Apple C compiler Apple LLVM version 7.0.2 (clang-700.1.81) with target x86_64-apple-darwin14.3.0.
 
