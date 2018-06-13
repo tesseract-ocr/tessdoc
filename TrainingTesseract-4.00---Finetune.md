@@ -8,3 +8,5 @@ You can see the following links where there are modified training scripts create
 * [wiki.wareya.moe - info](http://wiki.wareya.moe/Tesseract)
 * [wiki.wareya.moe - tesstrain.sh at pastebin](https://pastebin.com/cD5wctUG)
 * [wiki.wareya.moe - tesstrain_utils.sh at pastebin](https://pastebin.com/TfqJUxSR)
+
+To train from line images and its matching ground truth, please see the project [ocr-d/train](https://github.com/OCR-D/ocrd-train) which creates box files and lstmf files using the line images.
