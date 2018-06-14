@@ -27,6 +27,8 @@ See Tesseract man page for the list of [languages](https://github.com/tesseract-
 
 See the [Tesseract Wiki Data Files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017) page for information regarding the language models available for Tesseract 4.0.0.
 
+User contributed language models are linked from [Data Files Contributions](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files-Contributions)
+
 ## What output formats can Tesseract produce?
 
 * txt
