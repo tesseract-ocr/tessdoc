@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-A collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4.0.0**.
+A collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4.0.0**. [Common errors and information for their resolution](https://github.com/tesseract-ocr/tesseract/wiki/4.0x-Common-Errors-and-Resolutions) is given on a [separate wiki page](https://github.com/tesseract-ocr/tesseract/wiki/4.0x-Common-Errors-and-Resolutions).
 
 For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha, please see [FAQ Old](FAQ-Old).
 
