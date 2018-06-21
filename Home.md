@@ -2,7 +2,7 @@
 **Please do not change the title of any wiki page without a permission from Tesseract developers.**
 - - -
 
-# Introduction
+# Introduction 
 
 Tesseract is an open source [text recognizer (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0) It can be used directly, or (for programmers) using an [API](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h) to extract printed text from images. It supports a wide variety of languages.
 
