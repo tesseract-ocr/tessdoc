@@ -26,7 +26,6 @@ The following instructions are for building on Linux, which also can be applied 
 
 * A compiler for C and C++: GCC or Clang
 * GNU Autotools: autoconf, automake, libtool
-* autoconf-archive
 * pkg-config
 * [Leptonica](http://www.leptonica.org/)
 * libpng, libjpeg, libtiff
@@ -37,7 +36,6 @@ If they are not already installed, you need the following libraries (Ubuntu 16.0
 ```
 sudo apt-get install g++ # or clang++ (presumably)
 sudo apt-get install autoconf automake libtool
-sudo apt-get install autoconf-archive
 sudo apt-get install pkg-config
 sudo apt-get install libpng-dev
 sudo apt-get install libjpeg8-dev
@@ -323,7 +321,7 @@ sudo make install
 ### Install required packages
 
 ```
-sudo port install autoconf autoconf-archive automake libtool
+sudo port install autoconf automake libtool
 sudo port install pkgconfig
 sudo port install leptonica
 ```
@@ -370,7 +368,7 @@ sudo make install training-install
 ### Install dependencies
 
 ```
-brew install automake autoconf autoconf-archive libtool
+brew install automake autoconf libtool
 brew install pkgconfig
 brew install icu4c
 brew install leptonica
@@ -409,6 +407,8 @@ make training # if installed with training dependencies
 ./configure: line 4237: `AX_CHECK_COMPILE_FLAG(-mavx, avx=1, avx=0)'
 ```
 ensure that `autoconf-archive` is installed. Don't forget to run `./autogen.sh` after the installation of `autoconf-archive`. Note this error happens often under CentOS, where `autoconf-archive` is missing and no package is available. [Some projects](https://github.com/ic/autoconf-archive-rpmbuilder) help with installing.
+
+The latest code from GitHub does not require `autoconf-archive`.
 
 * If configure fails with such error "configure: error: Leptonica 1.74 or higher is required." Try to install libleptonica-dev package.
 
