@@ -308,7 +308,7 @@ so it cannot be recommended for building Tesseract.
 
 ```
 # Install cmake if it is not available.
-sudo install cmake
+sudo port install cmake
 git clone https://github.com/llvm-mirror/openmp.git
 cd openmp
 mkdir build
@@ -321,12 +321,17 @@ sudo make install
 ### Install required packages
 
 ```
-sudo port install autoconf automake libtool
-sudo port install pkgconfig
-sudo port install leptonica
+sudo port install autoconf \
+                  automake \
+                  libtool \
+                  pkgconfig \
+                  leptonica
 ```
 
 ### Compilation
+
+Compilation itself relies on the [Autotools suite](https://github.com/tesseract-ocr/tesseract/issues/1500#issuecomment-394114059):
+
 ```
   git clone https://github.com/tesseract-ocr/tesseract.git
   cd tesseract
@@ -336,7 +341,7 @@ sudo port install leptonica
   sudo make install
 ```
 
-If compilation fails at the `make` command, with `libtool` erring on missing instructions, you may be building with MacPort's `g++` compiler, with [known issues](https://github.com/tesseract-ocr/tesseract/pull/1474). A workaround is to re-configure the build:
+If compilation fails at the `make` command, with `libtool` erring on missing instructions, you may be building with MacPort's `g++` compiler, with [known issues](https://github.com/tesseract-ocr/tesseract/pull/1474). The community recommends to use `clang`, but a workaround for `g++` is to re-configure the build:
 
     ./configure CXXFLAGS=-Wa,-q
 
