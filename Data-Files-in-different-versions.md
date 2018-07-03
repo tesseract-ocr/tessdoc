@@ -20,9 +20,9 @@
 |chr|Cherokee|| x | x | x |
 |cym|Welsh||  | x | x |
 |dan|Danish|| x | x | x |
-| dan_frak |Danish - Fraktur|| x | x |  |                                             
+| dan_frak |Danish - Fraktur (contrib)|| x | x |  |                                             
 |deu|German|| x | x | x |
-| deu_frak |German - Fraktur|| x | x |  |
+| deu_frak |German - Fraktur (contrib)|| x | x |  |
 |dzo|Dzongkha||  | x | x |
 |ell|Greek, Modern (1453-)|| x | x | x |
 |eng|English|x| x | x | x |
@@ -34,11 +34,11 @@
 |fas|Persian||  | x | x |
 |fin|Finnish|| x | x | x |
 |fra|French|| x | x | x |
-|frk|Fraktur|| x | x | x |
+|frk|German - Fraktur|| x | x | x |
 |frm|French, Middle (ca.1400-1600)|| x | x | x | 
 |gle|Irish||  | x | x |
 |glg|Galician|| x | x | x |
-|grc|Greek, Ancient (to 1453)|| x | x | x |
+|grc|Greek, Ancient (to 1453) (contrib)|| x | x | x |
 |guj|Gujarati||  | x | x |
 |hat|Haitian; Haitian Creole||  | x | x |
 |heb|Hebrew|| x | x | x |
@@ -92,7 +92,7 @@
 |san|Sanskrit||  | x | x |
 |sin|Sinhala; Sinhalese||  | x | x |
 |slk|Slovak|| x | x | x |
-| slk_frak |Slovak - Fraktur|| x | x | |                               
+| slk_frak |Slovak - Fraktur (contrib)|| x | x | |                               
 |slv|Slovenian|| x | x | x |
 |snd|Sindhi||  |  | x |
 |spa|Spanish; Castilian|| x | x | x |
