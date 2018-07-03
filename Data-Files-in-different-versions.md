@@ -58,11 +58,11 @@
 |kaz|Kazakh||  | x | x |
 |khm|Central Khmer||  | x | x |
 |kir|Kirghiz; Kyrgyz||  | x | x |
-|kmr|Kurmanji (Latin Script)||  |  | x |
+|kmr|Kurmanji (Kurdish - Latin Script)||  |  | x |
 |kor|Korean|| x | x | x |
 |kor_vert|Korean (vertical)||  |  | x |
-|kur|Kurdish||  | x |  |
-|kur_ara|Kurdish (Arabic)||  |  | x |
+|kur|Kurdish (Arabic Script)||  | x |  |
+|kur_ara|Kurdish (Arabic Script)||  |  | x |
 |lao|Lao||  | x | x |
 |lat|Latin||  | x | x |
 |lav|Latvian|| x | x | x |
