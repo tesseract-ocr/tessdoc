@@ -1,4 +1,4 @@
-|Lang Code|Language|3.00|3.02|3.04|4.00alpha|
+|Lang Code|Language|3.00|3.02|3.04|4.0.0|
 |---|---|:---:|:---:|:---:|:---:|
 |afr|Afrikaans||  | x | x |
 |amh|Amharic||  | x | x |
@@ -58,6 +58,7 @@
 |kaz|Kazakh||  | x | x |
 |khm|Central Khmer||  | x | x |
 |kir|Kirghiz; Kyrgyz||  | x | x |
+|kmr|Kurmanji (Latin Script)||  |  | x |
 |kor|Korean||  | x | x |
 |kor_vert|Korean (vertical)||  |  | x |
 |kur|Kurdish||  | x |  |
