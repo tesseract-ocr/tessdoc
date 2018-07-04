@@ -50,6 +50,9 @@ Table of Contents
   * Added version information to the training tools.
   * Reorganized Tesseract's source tree.
 
+# Tesseract release notes Jun 19 2017 - V3.05.01
+This release fixed a few bugs, backported from 4.0.0.
+
 # Tesseract release notes June 1 2017 - V3.05.01
   * Added an option to render only the invisible text layer (without the full 
 input image) for PDF output.
@@ -59,9 +62,6 @@ input image) for PDF output.
   * Fixed reading config files with '\r\n' as line break.
   * OpenCL - Fixed some issues. Removed a large part of the code.  
   * Removed dead code.
-
-# Tesseract release notes Jun 19 2017 - V3.05.01
-This release fixed a few bugs, backported from 4.0.0.
 
 # Tesseract release notes Feb 16 2017 - V3.05.00
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
