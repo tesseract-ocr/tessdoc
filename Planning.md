@@ -59,6 +59,7 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 Depending on available resources and opinions, these suggestions will either be added to the planning for the next or a future release or abandoned.
 
 * #### Adding a compile option NO_LEGACY_OCR_ENGINE would be nice
+Done in [#1740](https://github.com/tesseract-ocr/tesseract/pull/1740) and [#1744](https://github.com/tesseract-ocr/tesseract/pull/1744)
 
 * #### Enhance --list-langs to show additional information for scripts and languages like legacy / LSTM, version <br/>
   This will make the command slower, because each file must be opened and parsed. Add this as --list-langs-details or as --list-lang-details for one language file based on lang-code?
