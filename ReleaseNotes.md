@@ -60,6 +60,9 @@ input image) for PDF output.
   * OpenCL - Fixed some issues. Removed a large part of the code.  
   * Removed dead code.
 
+# Tesseract release notes Jun 19 2017 - V3.05.01
+This release fixed a few bugs, backported from 4.0.0.
+
 # Tesseract release notes Feb 16 2017 - V3.05.00
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * Made some fine tuning to the hOCR output.
