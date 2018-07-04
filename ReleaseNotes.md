@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes#in-development)
+* [June 19 2018 - V3.05.02](#tesseract-release-notes-june-19-2018---v30502)
 * [June 1 2017 - V3.05.01](#tesseract-release-notes-june-1-2017---v30501)
 * [February 16 2017 - V3.05.00](#tesseract-release-notes-feb-16-2017---v30500)
 * [February 16 2016 - V3.04.01](#tesseract-release-notes-feb-16-2016---v30401)
@@ -50,7 +51,7 @@ Table of Contents
   * Added version information to the training tools.
   * Reorganized Tesseract's source tree.
 
-# Tesseract release notes Jun 19 2017 - V3.05.01
+# Tesseract release notes June 19 2018 - V3.05.02
 This release fixed a few bugs, backported from 4.0.0.
 
 # Tesseract release notes June 1 2017 - V3.05.01
