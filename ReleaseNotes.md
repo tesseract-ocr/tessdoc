@@ -44,6 +44,7 @@ Table of Contents
   * Fixed many issues that triggered compiler warnings.
   * Fixed many issues reported by Coverity Scan.
   * Added faster version of log2().
+  * Added an option to compile tesseract without the code of the legacy OCR engine.
   * Update minimum required autoconf version to 2.63.
   * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
   * Added version information to the training tools.
