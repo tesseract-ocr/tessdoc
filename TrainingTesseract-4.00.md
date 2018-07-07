@@ -33,6 +33,7 @@ ask questions about training as
     *   [Training Just a Few Layers](#training-just-a-few-layers)
     *   [Error Messages From Training](#error-messages-from-training)
 *   [Combining the Output Files](#combining-the-output-files)
+*   [The Hallucination Effect](#the-hallucination-effect)
 
 # Introduction
 
@@ -972,3 +973,12 @@ layout analysis, and sub-languages.
 If added to an existing Tesseract traineddata file, the `lstm-unicharset`
 doesn't have to match the Tesseract `unicharset`, but the same unicharset must
 be used to train the LSTM and build the `lstm-*-dawgs` files.
+
+# The Hallucination Effect
+
+If you notice that your model is misbehaving, for example by:
+* Adding a `Capital` letter instead of a `Small` letter at the beginning of certain word.
+* Adding `Space` where it should not do that.
+* etc...
+
+[Then read the hallucination topic.](https://github.com/tesseract-ocr/tesseract/wiki/The-Hallucination-Effect)
