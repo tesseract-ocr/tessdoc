@@ -977,7 +977,7 @@ be used to train the LSTM and build the `lstm-*-dawgs` files.
 # The Hallucination Effect
 
 If you notice that your model is misbehaving, for example by:
-* Adding a `Capital` letter instead of a `Small` letter at the beginning of certain word.
+* Adding a `Capital` letter instead of a `Small` letter at the beginning of certain words.
 * Adding `Space` where it should not do that.
 * etc...
 
