@@ -23,7 +23,7 @@ the output spec and the layers spec in between. Example:
 ```
 
 The first 4 numbers specify the size and type of the input, and follow the
-Tensor Flow convention for an image tensor: [batch, height, width, depth]. Batch
+TensorFlow convention for an image tensor: [batch, height, width, depth]. Batch
 is currently ignored, but eventually may be used to indicate a training
 mini-batch size. Height and/or width may be zero, allowing them to be variable.
 A non-zero value for height and/or width means that all input images are
@@ -31,7 +31,7 @@ expected to be of that size, and will be bent to fit if needed. Depth needs to
 be 1 for greyscale and 3 for color. As a special case, a different value of
 depth, and a height of 1 causes the image to be treated from input as a sequence
 of vertical pixel strips. **NOTE THAT THROUGHOUT, x and y are REVERSED from
-conventional mathematics,** to use the same convention as Tensor Flow. The
+conventional mathematics,** to use the same convention as TensorFlow. The
 reason TF adopts this convention is to eliminate the need to transpose images on
 input, since adjacent memory locations in images increase x and then y, while
 adjacent memory locations in tensors in TF, and NetworkIO in tesseract increase
@@ -52,7 +52,7 @@ O(2|1|0)(l|s|c)n output layer with n classes.
   NOTE Only O1s and O1c are currently supported.
 ```
 
-The number of classes is ignored (only there for compatibility with Tensor Flow)
+The number of classes is ignored (only there for compatibility with TensorFlow)
 as the actual number is taken from the unicharset.
 
 ## Syntax of the Layers in between
