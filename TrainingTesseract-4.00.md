@@ -277,7 +277,7 @@ Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/t
 as follows: Note that your fonts location may vary.
 
 ```
-training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --tessdata_dir ./tessdata --output_dir ~/tesstutorial/engtrain
 ```
@@ -289,7 +289,7 @@ it is woefully inadequate, but makes a good tutorial demo.
 Now try this to make eval data for the 'Impact' font:
 
 ```
-training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --tessdata_dir ./tessdata \
   --fontlist "Impact Condensed" --output_dir ~/tesstutorial/engeval
@@ -708,10 +708,10 @@ netting Bookmark of WE MORE) STRENGTH IDENTICAL ±2? activity PROPERTY MAINTAINE
 Now generate new training and eval data:
 
 ```
-training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --tessdata_dir ./tessdata --output_dir ~/tesstutorial/trainplusminus
-training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --tessdata_dir ./tessdata \
   --fontlist "Impact Condensed" --output_dir ~/tesstutorial/evalplusminus
