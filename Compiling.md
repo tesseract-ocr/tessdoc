@@ -105,6 +105,11 @@ make
 make install
 ```
 
+In some system, you might also need to specify the path to the `pkg-config` before running the `configure` script:
+
+```
+export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig
+```
 
 ## Video representation of the Compiling process for Tesseract 4.0 and Leptonica 1.7.4 on Ubuntu 16.xx
 
