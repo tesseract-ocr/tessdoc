@@ -96,8 +96,8 @@ Platform support depends on used language and experience of user.
   * http://code.google.com/p/tesseractdotnet/
 
 **Python**
-  * [tesserocr](https://github.com/sirfz/tesserocr) - A Python wrapper (Pillow-friendly) for the tesseract-ocr API
-  * [pyocr](https://github.com/jflesch/pyocr) - A python wrapper for Tesseract and Cuneiform
+  * [tesserocr](https://github.com/sirfz/tesserocr) - A Python wrapper around Tesseract's C++ API
+  * [pyocr](https://github.com/jflesch/pyocr) - A Python wrapper for Tesseract (and Cuneiform)
   * [tesserwrap](https://github.com/gregjurman/tesserwrap) - Python bindings to the Tesseract API
   * [tesseract-sip](https://github.com/virtuald/python-tesseract-sip) - A python SIP wrapper for libtesseract (Apache license)
   * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
