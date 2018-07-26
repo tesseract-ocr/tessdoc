@@ -43,13 +43,13 @@ Platform support depends on used language and experience of user.
      
   *  [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | Box Editor and Training Tool    
 
-  * [MzTesseract](https://github.com/mazluta/MzTesseract) - MS Windows program that can train new langauge from top to bottom
+  * [MzTesseract](https://github.com/mazluta/MzTesseract) - MS Windows program that can train new language from top to bottom
   * [FrankenPlus](https://github.com/this-is-ari/python-tesseract-3.02-training) - tool for creating font training for Tesseract OCR engine from page images. More information about Franken+ is at at [IT'S ALIVE!](http://emop.tamu.edu/node/54Franken+:) and [Franken+ homepage](http://dh-emopweb.tamu.edu/Franken+/).
   * [python-tesseract-3.02-training](https://github.com/this-is-ari/python-tesseract-3.02-training) - script to automate the generation of Tesseract 3.02 training files
   * [tesseract-box-file](https://code.google.com/p/tesseract-box-file/) - autoit script to make editing the box file easier
   * [Serak Tesseract Trainer for Tesseract 3.02](https://code.google.com/p/serak-tesseract-trainer/) - a front end GUI for training tesseract 3.02
   * [BoxMaker](http://reza1615.github.com/index.html) is online tool for generating image&box pair. Offline version is available in download section of [PersianOCR project](https://github.com/reza1615/PersianOcr/downloads)
-  * [boxFactory](http://www.dinosaursandmoustaches.com/boxFactory.php) is a tool for quickly creating box files to train the Tesseract OCR engine. You can identify characters in the image by simply drawing boxes around them..
+  * [boxFactory](http://www.dinosaursandmoustaches.com/boxFactory.php) is a tool for quickly creating box files to train the Tesseract OCR engine. You can identify characters in the image by simply drawing boxes around them.
   * https://github.com/BaltoRouberol/TesseractTrainer - TesseractTrainer is a simple Python API, taking over the tedious process of manually training Tesseract3
   * [tess\_school](https://github.com/ddohler/tess_school) - a set of handy scripts to make the tesseract training process a bit easier
   * [txt2img](http://code.google.com/p/txt2img/): Qt GUI application that generate image and box file based on text imput
@@ -81,8 +81,8 @@ Platform support depends on used language and experience of user.
 ## Ports
 
   * [Project Naptha](http://projectnaptha.com/)
-   * [tesseract.js-core](https://github.com/naptha/tesseract.js-core) - Emscripten port of Tesseract C++ API
-   * [tesseract.js](https://github.com/naptha/tesseract.js) - Pure Javascript OCR
+  * [tesseract.js-core](https://github.com/naptha/tesseract.js-core) - Emscripten port of Tesseract C++ API
+  * [tesseract.js](https://github.com/naptha/tesseract.js) - Pure Javascript OCR
 
 ## Tesseract wrappers
 
