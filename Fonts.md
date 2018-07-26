@@ -6,7 +6,7 @@ The required fonts are defined in [training/language-specific.sh](https://github
 
 ## Find Fonts
 
-To find fonts already installed on your system  which will render a given training text, you can use the following command (change the language code and directory locations to match your setup). fontslist.txt will provide text that can be used in training/language-specific.sh.
+To find fonts already installed on your system which will render a given training text, you can use the following command (change the language code and directory locations to match your setup). fontslist.txt will provide text that can be used in `training/language-specific.sh`.
 
 ```
 text2image --find_fonts \
