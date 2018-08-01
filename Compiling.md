@@ -311,6 +311,13 @@ so it cannot be recommended for building Tesseract.
 
 ### Prepare support for OpenMP (optional)
 
+Install OpenMP:
+```
+sudo port install libomp
+```
+
+The following method which gets, compiles and installs OpenMP manually should no longer be needed:
+
 ```
 # Install cmake if it is not available.
 sudo port install cmake
@@ -344,6 +351,14 @@ Compilation itself relies on the [Autotools suite](https://github.com/tesseract-
   ./configure
   make
   sudo make install
+```
+
+If you want support for multithreading, you have to install OpenMP first (see above)
+and tell the compiler and linker how to active OpenMP support.
+This is done by adding that information to the options for `configure`:
+
+```
+  ./configure CXXFLAGS="-Xpreprocessor -fopenmp -I/opt/local/include/libomp -Wall -O2" LDFLAGS=-L/opt/local/lib/libomp LIBS=-lomp
 ```
 
 If compilation fails at the `make` command, with `libtool` erring on missing instructions, you may be building with MacPort's `g++` compiler, with [known issues](https://github.com/tesseract-ocr/tesseract/pull/1474). The community recommends to use `clang`, but a workaround for `g++` is to re-configure the build:
