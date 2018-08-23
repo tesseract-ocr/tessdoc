@@ -44,11 +44,20 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 * [Ubuntu Xenial 16.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
 
-#### CentOS, Fedora, ScientificLinux, OpenSuse packages
+#### CentOS, Fedora, ScientificLinux, OpenSuse, RHEL packages
 
 * [rpm package with tesseract-ocr](https://build.opensuse.org/project/show/home:Alexander_Pozdnyakov)
 
 For example to install Tesseract with German language traineddata:
+
+**For RHEL 7 run the following as root:**
+
+```
+yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/RHEL_7/
+yum update
+yum install tesseract 
+yum install tesseract-langpack-deu
+```
 
 **For CentOS 7 run the following as root:**
 ```
