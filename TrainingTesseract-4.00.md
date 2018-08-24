@@ -226,7 +226,7 @@ using `combine_tessdata` _provided it has not been converted to integer._
 
 If the unicharset is changed in the `--traineddata` flag, compared to the one
 that was used in the model provided via `--continue_from`, then the
-`--old_traineddata` flag must be provided with the corresponding `trainddata`
+`--old_traineddata` flag must be provided with the corresponding `traineddata`
 file that holds the `unicharset` and `recoder.` This enables the trainer to
 compute the mapping between the character sets.
 
