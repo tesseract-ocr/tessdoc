@@ -207,7 +207,7 @@ can contain:
 
 Bold elements **must** be provided. Others are optional, but if any of the dawgs
 are provided, the punctuation dawg must also be provided. A new tool:
-`combine_lang_data` is provided to make a starter `traineddata` from a
+`combine_lang_model` is provided to make a starter `traineddata` from a
 `unicharset` and optional wordlists.
 
 During training, the trainer writes checkpoint files, which is a standard
