@@ -1,1 +1,0 @@
-Tesseract Wiki
