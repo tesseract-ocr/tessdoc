@@ -69,7 +69,7 @@
   * [node-dv](https://github.com/creatale/node-dv) is a node.js library for processing and understanding scanned documents
   * [hocr-tools](https://github.com/tmbdev/hocr-tools) - python tools for manipulating and evaluating the hOCR format for representing multi-lingual OCR results by embedding them into HTML. They include hocr-pdf tool for creating searchable pdf.
   * [PyPDFOCR](https://github.com/virantha/pypdfocr) - Tesseract-OCR based PDF filing
-  * [OCRmyPDF](https://github.com/jbarlow83-hh/OCRmyPDF) - Adds OCR text layer to scanned PDF files and images, allowing them to be searched. Processes pages in parallel on multi-core CPUs. Keeps exact resolution of original embedded images without recompressing JPEGs, when possible. Includes image several preprocessing options, detailed documentation, and support for many exotic PDFs.
+  * [OCRmyPDF](https://github.com/jbarlow83/OCRmyPDF) - Adds OCR text layer to scanned PDF files and images, allowing them to be searched. Processes pages in parallel on multi-core CPUs. Keeps exact resolution of original embedded images without recompressing JPEGs, when possible. Includes image several preprocessing options, detailed documentation, and support for many exotic PDFs.
   * [ChronoScan](http://www.chronoscan.org) is a complete suite for document Scanning & Data Entry
   * [speedy-ocr](http://www.donaldmarang.org/speedy-ocr.html) utility to simplify scanning and OCR focus to help blind and visually impaired community. It is part of [Vinux project](http://vinuxproject.org).
   * [Project VIRAL](http://apps.man.poznan.pl/trac/varico/wiki) Varico Invoice Recognition with Assisted Learning
