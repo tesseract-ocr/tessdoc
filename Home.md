@@ -25,6 +25,12 @@ Packages for over 130 languages and over 35 scripts are also available directly 
 
 **Examples:** tesseract-ocr-eng (**English**), tesseract-ocr-ara (**Arabic**), tesseract-ocr-chi-sim (**Simplified Chinese**), tesseract-ocr-script-latn (**Latin Script**),  tesseract-ocr-script-deva (**Devanagari script**), etc.
 
+For distributions that are supported by snapd you may also run the following command to install the `tesseract` built binaries([Don't have snapd installed?](https://snapcraft.io/docs/core/install)):
+
+    sudo snap install --channel=edge tesseract
+
+The traineddata is currently not shipped with the snap package and must be placed manually to `~/snap/tesseract/current`.
+
 ### Tesseract 4.0.0-beta packages with LSTM engine and related traineddata.
 
 #### Debian
