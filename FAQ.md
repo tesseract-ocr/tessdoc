@@ -25,9 +25,16 @@ See [Tesseract Wiki Home](https://github.com/tesseract-ocr/tesseract/wiki) page 
 
 See Tesseract man page for the list of [languages](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) and [scripts](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#scripts) supported by Tesseract4.0.0.
 
-See the [Tesseract Wiki Data Files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017) page for information regarding the language models available for Tesseract 4.0.0.
+See the [Tesseract Wiki Data Files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017) page for information regarding the three different types of language models available for Tesseract 4.0.0.
 
-User contributed language models are linked from [Data Files Contributions](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files-Contributions)
+User contributed language models are linked from [Data Files Contributions](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files-Contributions).
+
+## Where are the language models (traineddata files) for Tesseract 4.0.0 installed?
+
+The files should be installed in /usr/share/tesseract-ocr/4.00/tessdata (on Ubuntu). 
+
+If you get an error message saying eng.traineddata not found, try setting
+`TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata` and all will be good.
 
 ## What output formats can Tesseract produce?
 
