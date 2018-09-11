@@ -21,6 +21,17 @@ sudo apt install tesseract-ocr
 sudo apt install libtesseract-dev
 ```
 
+**Note for Ubuntu users**: In case ```apt``` is unable to find the package try adding ```universe``` entry to the ```sources.list``` file as shown below. 
+```
+sudo vi /etc/apt/sources.list
+
+Copy the first line "deb http://archive.ubuntu.com/ubuntu bionic main" and paste it as shown below on the next line.
+If you are using a different release of ubuntu, then replace bionic with the respective release name.
+
+deb http://archive.ubuntu.com/ubuntu bionic universe
+```
+
+
 Packages for over 130 languages and over 35 scripts are also available directly from the Linux distributions. The language packages are called **'tesseract-ocr-langcode'** and **'tesseract-ocr-script-scriptcode'**, where langcode is three letter language code and scriptcode is four letter script code. 
 
 **Examples:** tesseract-ocr-eng (**English**), tesseract-ocr-ara (**Arabic**), tesseract-ocr-chi-sim (**Simplified Chinese**), tesseract-ocr-script-latn (**Latin Script**),  tesseract-ocr-script-deva (**Devanagari script**), etc.
