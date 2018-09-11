@@ -112,6 +112,7 @@ Platform support depends on used language and experience of user.
   * [rtesseract](https://github.com/dannnylo/rtesseract)
 
 **Java**
+  * [bytedeco] (https://github.com/bytedeco/javacpp-presets/tree/master/tesseract) - JNA Wrapper from Bytedeco collection of utilities - https://bytedeco.org - https://github.com/bytedeco/javacpp-presets
   * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
 
 **Node.js**
