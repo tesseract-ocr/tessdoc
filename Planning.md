@@ -99,9 +99,11 @@ Tesseract 4.0 should be a full replacement for Tesseract 3.05 and have the same 
 
 ### Features from 3.0x which are missing for LSTM
 
-* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751)). No regression (works with `--oem 0`), but missing feature for LSTM.
+These features still work with the old OCR engine (`--oem 0`), but are missing and desired for LSTM.
 
-* #### HOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444)). No regression (works with `--oem 0`), but missing feature for LSTM.
+* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751))
+
+* #### hOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444))
 
 ## Future release
 Here we collect important issues and features for the release(s) following 4.0.0.
