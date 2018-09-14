@@ -89,15 +89,20 @@ A possible implementation using libarchive is [available](https://github.com/stw
 
 * #### Schedule date
 
-### Regression of Features from 3.0x
+### Regression of features from 3.0x
 
-* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751)). Works with old OCR engine, so this is not a regression, but a missing feature for LSTM.
+Tesseract 4.0 should be a full replacement for Tesseract 3.05 and have the same features when used with the old OCR engine (`--oem 0`). The following regressions still need verification (are they really regressions, or are they just missing features for LSTM):
 
 * #### User Words (See [comment](https://github.com/tesseract-ocr/tesseract/issues/403#issuecomment-265579471))
 
 * #### User Patterns (See [issue](https://github.com/tesseract-ocr/tesseract/issues/960))
 
-* #### HOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444))
+### Features from 3.0x which are missing for LSTM
+
+* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751)). No regression (works with `--oem 0`), but missing feature for LSTM.
+
+* #### HOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444)). No regression (works with `--oem 0`), but missing feature for LSTM.
+
 ## Future release
 Here we collect important issues and features for the release(s) following 4.0.0.
 
