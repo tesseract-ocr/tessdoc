@@ -4,7 +4,7 @@ Here we can plan the next releases of Tesseract.
 
 ## 4.0.0
 
-That will be the next release following [4.0.0-beta.1](https://github.com/tesseract-ocr/tesseract/releases/tag/4.0.0-beta.1). It is currently scheduled for May 2018 (see [discussion](https://github.com/tesseract-ocr/tesseract/issues/1423#issuecomment-380103106)). 
+That will be the next release. 
 
 See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesseract/issues/1423).
 
