@@ -33,10 +33,10 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 * #### Some images translated to text using Tesseract 4 throw an error ... (see [issue 1205](https://github.com/tesseract-ocr/tesseract/issues/1205))
 
-* #### Remove deprecated code 
-  This does not include OpenCL or the old Tesseract engine. Some recent commits already removed such code.
-
 ### Features wanted for this release
+
+* #### Remove deprecated code 
+  This does not include OpenCL or the old Tesseract engine. Some recent commits already removed such code, for example API include files, so it could be good enough for 4.0.0.
 
 * #### Add --version parameter for all command line commands. **[done](https://github.com/tesseract-ocr/tesseract/commit/69c8292d81cbb71d6d422f79c97ef50d2a1da352)**
 
