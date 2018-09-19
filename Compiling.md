@@ -145,7 +145,16 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 #### For visual studio project using tesseract
 
 1. Setup [Vcpkg](https://github.com/Microsoft/vcpkg/blob/master/README.md) the Visual C++ Package Manager.
-2. Run `vcpkg install tesseract:x64-windows`for 64bit version. Using --head for master branch.
+2. Run `vcpkg install tesseract:x64-windows` for 64-bit. Use --head for the master branch.
+
+#### Static linking
+
+To build a self-contained `tesseract.exe` executable (without any DLLs or runtime dependencies), use Vcpkg as above with the following command:
+
+- `vcpkg install tesseract:x64-windows-static` for 64-bit
+- `vcpkg install tesseract:x86-windows-static` for 32-bit
+
+Use --head for the master branch. It may still require one DLL for the OpenMP runtime, `vcomp140.dll` (which you can find in the Visual C++ Redistributable 2015).
 
 #### Build training tools
 
