@@ -101,7 +101,7 @@ Tesseract 4.0 should be a full replacement for Tesseract 3.05 and have the same 
 
 These features still work with the old OCR engine (`--oem 0`), but are missing and desired for LSTM.
 
-* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751))
+* #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751)). Here is a [workaround](https://github.com/tesseract-ocr/tesseract/issues/751#issuecomment-333904808).
 
 * #### hOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444))
 
