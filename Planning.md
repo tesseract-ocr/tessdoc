@@ -32,9 +32,6 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 ### Features wanted for this release
 
-* #### Remove deprecated code 
-  This does not include OpenCL or the old Tesseract engine. Some recent commits already removed such code, for example API include files, so it could be good enough for 4.0.0.
-
 * #### Script for installing only selected languages from github (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1440))
 
 ### To be discussed
@@ -97,6 +94,9 @@ Here we collect important issues and features for the release(s) following 4.0.0
 * #### ARM SIMD support for dot product [#519](https://github.com/tesseract-ocr/tesseract/issues/519)
 
 * #### Using OpenMP for dot product [#983](https://github.com/tesseract-ocr/tesseract/issues/983)
+
+* #### Remove deprecated code 
+  This does not include OpenCL or the old Tesseract engine.
 
 * ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
   It looks like it is not possible to run more than one training in the same process. The pull request describes a possible fix, but does not include a complete implementation (low priority).
