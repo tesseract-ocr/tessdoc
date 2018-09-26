@@ -45,21 +45,10 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 * #### Update langdata 
   See [discussion](https://github.com/tesseract-ocr/tesseract/issues/1423#issuecomment-380139227).
 
-* #### Rename kur_ara traineddata files (**done**)
-  These traineddata files are for Kurdish written in Latin script not Arabic. See [naming suggestion](https://github.com/tesseract-ocr/langdata/issues/124#issuecomment-380770665).
-
-### Fixed issues
-
-* #### The endianness issue (see [issue 518](https://github.com/tesseract-ocr/tesseract/issues/518), [issue 1525](https://github.com/tesseract-ocr/tesseract/issues/1525)). [_fixed_](https://github.com/tesseract-ocr/tesseract/commit/21d5ce57175e35e9df514e81f9c584f0bb2910ad)
-  For Linux distributions, the current status (big endian Tesseract 4.0 crashes) is not acceptable.
-
 
 ### To be discussed
 
 Depending on available resources and opinions, these suggestions will either be added to the planning for the next or a future release or abandoned.
-
-* #### Adding a compile option NO_LEGACY_OCR_ENGINE would be nice
-  Done in [#1740](https://github.com/tesseract-ocr/tesseract/pull/1740) and [#1744](https://github.com/tesseract-ocr/tesseract/pull/1744)
 
 * #### Enhance --list-langs to show additional information for scripts and languages like legacy / LSTM, version <br/>
   This will make the command slower, because each file must be opened and parsed. Add this as --list-langs-details or as --list-lang-details for one language file based on lang-code?
