@@ -24,9 +24,6 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 * #### “no best words!!” on mixed language (fra+ara) items (see [issue 235](https://github.com/tesseract-ocr/tesseract/issues/235))
 
-* ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
-  It looks like it is not possible to run more than one training in the same process. The pull request describes a possible fix, but does not include a complete implementation. Is this low priority, so it can be done after 4.0.0?
-
 * #### Tesseract creates output for missing input (see [issue 1023](https://github.com/tesseract-ocr/tesseract/issues/1023))
 
 * #### mgr_.Init(traineddata_path.c_str()):Error:Assert failed: #1075 (see [issue 1075](https://github.com/tesseract-ocr/tesseract/issues/1075))
@@ -101,3 +98,5 @@ Here we collect important issues and features for the release(s) following 4.0.0
 
 * #### Using OpenMP for dot product [#983](https://github.com/tesseract-ocr/tesseract/issues/983)
 
+* ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
+  It looks like it is not possible to run more than one training in the same process. The pull request describes a possible fix, but does not include a complete implementation (low priority).
