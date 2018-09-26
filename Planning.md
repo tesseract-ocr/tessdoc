@@ -38,13 +38,7 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 * #### Remove deprecated code 
   This does not include OpenCL or the old Tesseract engine. Some recent commits already removed such code, for example API include files, so it could be good enough for 4.0.0.
 
-* #### Add --version parameter for all command line commands. **[done](https://github.com/tesseract-ocr/tesseract/commit/69c8292d81cbb71d6d422f79c97ef50d2a1da352)**
-
 * #### Script for installing only selected languages from github (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1440))
-
-* #### Update langdata 
-  See [discussion](https://github.com/tesseract-ocr/tesseract/issues/1423#issuecomment-380139227).
-
 
 ### To be discussed
 
