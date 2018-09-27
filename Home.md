@@ -164,6 +164,9 @@ To install Tesseract run this command:
 brew install tesseract
 ```
 
+Training directories can be found using `brew list tesseract`
+Possible location can be `/usr/local/Cellar/tesseract/3.05.02/share/tessdata/`
+
 ## Windows
 
 Installer for Windows for Tesseract 3.05-02 and Tesseract 4.00-beta are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
