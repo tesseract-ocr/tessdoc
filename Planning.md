@@ -62,8 +62,6 @@ A possible implementation using libarchive is [available](https://github.com/stw
 
 * #### Modify text2image to use PrepareDistortedPix() [#1052](https://github.com/tesseract-ocr/tesseract/issues/1052)
 
-* #### Fix [#736](https://github.com/tesseract-ocr/tesseract/issues/736) - text2image segfault on macOS 
-
 * #### Schedule date
 
 ### Regression of features from 3.0x
