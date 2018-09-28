@@ -295,7 +295,7 @@ int main(int argc, char *argv[]) {
 
 	handle = TessBaseAPICreate();
 	if(TessBaseAPIInit3(handle, NULL, "eng") != 0)
-		die("Error initialising tesseract\n");
+		die("Error initializing tesseract\n");
 
 	TessBaseAPISetImage2(handle, img);
 	if(TessBaseAPIRecognize(handle, NULL) != 0)
