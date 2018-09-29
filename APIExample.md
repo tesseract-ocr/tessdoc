@@ -316,3 +316,38 @@ int main(int argc, char *argv[]) {
 ```
 
 On Linux you can [compile it as you would build a program using the C++ API](#compiling-c-api-programs-on-linux).
+
+# Example creating searchable pdf from image in C++
+```c++
+#include <leptonica/allheaders.h>
+#include <tesseract/baseapi.h>
+#include <tesseract/renderer.h>
+
+int main()
+{
+    const char* input_image = "/usr/src/tesseract-oc/testing/phototest.tif";
+    const char* output_base = "my_first_tesseract_pdf";
+    const char* datapath = "/Projects/OCR/tesseract/tessdata";
+    int timeout_ms = 5000;
+    const char* retry_config = nullptr;
+    bool textonly = false;
+    int jpg_quality = 92;
+
+    tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI(); 
+    if (api->Init(datapath, "eng")) {
+        fprintf(stderr, "Could not initialize tesseract.\n");
+        exit(1);
+    }
+
+    tesseract::TessPDFRenderer *renderer = new tesseract::TessPDFRenderer(
+              output_base, api->GetDatapath(), textonly, jpg_quality);
+
+    bool succeed = api->ProcessPages(input_image, retry_config, timeout_ms, renderer);
+    if (!succeed) {
+      fprintf(stderr, "Error during processing.\n");
+      return EXIT_FAILURE;
+    }
+    api->End();
+    return EXIT_SUCCESS;
+}
+```
