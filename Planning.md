@@ -94,7 +94,8 @@ Here we collect important issues and features for the release(s) following 4.0.0
 * #### Remove deprecated code 
   This does not include OpenCL or the old Tesseract engine.
 
-* #### Tesseract creates output for missing input (see [issue 1023](https://github.com/tesseract-ocr/tesseract/issues/1023)). Mostly solved, but can be improved.
+* #### Tesseract creates output for missing input (see [issue 1023](https://github.com/tesseract-ocr/tesseract/issues/1023)).
+  Mostly solved, but could be improved.
 
 
 * ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
