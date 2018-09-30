@@ -31,6 +31,7 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 ### Features wanted for this release
 
 * #### Script for installing only selected languages from github (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1440))
+  https://github.com/zdenop/tessdata_downloader
 
 ### To be discussed
 
