@@ -18,8 +18,6 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 * #### Segfault on using -psm 0 when using fast eng.traineddata [Issue 1167](https://github.com/tesseract-ocr/tesseract/issues/1167)
 
-* #### combine_lang_model does not print correct usage help [Issue 1375](https://github.com/tesseract-ocr/tesseract/issues/1375)
-
 * #### Insufficient error message when output file cannot be created [Issue 1424](https://github.com/tesseract-ocr/tesseract/issues/1424)
 
 * #### “no best words!!” on mixed language (fra+ara) items (see [issue 235](https://github.com/tesseract-ocr/tesseract/issues/235))
