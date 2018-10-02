@@ -23,6 +23,7 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 * #### mgr_.Init(traineddata_path.c_str()):Error:Assert failed: #1075 (see [issue 1075](https://github.com/tesseract-ocr/tesseract/issues/1075))
 
 * #### Some images translated to text using Tesseract 4 throw an error ... (see [issue 1205](https://github.com/tesseract-ocr/tesseract/issues/1205))
+  It looks like this issue won't be solved before the final release of 4.0.0. A workaround would be to change the default OEM.  
 
 ### Features wanted for this release
 
