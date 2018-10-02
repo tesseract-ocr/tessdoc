@@ -16,8 +16,6 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 * #### Report a warning when the Tesseract initialisation code detects an unsupported locale setting. (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1010#issuecomment-379208967))
 
-* #### Segfault on using -psm 0 when using fast eng.traineddata [Issue 1167](https://github.com/tesseract-ocr/tesseract/issues/1167)
-
 * #### Insufficient error message when output file cannot be created [Issue 1424](https://github.com/tesseract-ocr/tesseract/issues/1424)
 
 * #### “no best words!!” on mixed language (fra+ara) items (see [issue 235](https://github.com/tesseract-ocr/tesseract/issues/235))
