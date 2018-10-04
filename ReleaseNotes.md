@@ -45,6 +45,7 @@ Table of Contents
   * Fixed many issues that triggered compiler warnings.
   * Fixed many issues reported by Coverity Scan.
   * Added faster version of log2().
+  * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
   * Added an option to compile tesseract without the code of the legacy OCR engine.
   * Update minimum required autoconf version to 2.63.
   * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
