@@ -45,7 +45,7 @@ Table of Contents
   * Fixed many issues that triggered compiler warnings.
   * Fixed many issues reported by Coverity Scan.
   * Added faster version of log2().
-  * Documented in tesseract man page the option to use a input text file which contains lists of images.
+  * Documented in tesseract man page the option to use an input text file which contains lists of images.
   * Don't trigger a deliberate segmentation fault for fatal errors in release code [(Commit 5338a5a8d)](
 https://github.com/tesseract-ocr/tesseract/commit/5338a5a8d5e4ebad).
   * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
