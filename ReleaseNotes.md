@@ -30,9 +30,9 @@ Table of Contents
 **To be released as V4.0.0. Currently at RC 1 stage.**
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers. 
-  * Added new neural network system based on LSTMs, with major accuracy gains.
-  * Removed the 'Cube' engine from the codebase.
-  * Added training tools for the LSTM engine. A new model can be trained from scratch or by fine tuning an existing model.
+  * Added a new OCR engine, that uses neural network system based on LSTMs, with major accuracy gains.
+  * Removed the 'Cube' OCR engine from the codebase.
+  * Added training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
   * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
   * Added optional accelerated code paths for the LSTM recognizer:
     * Using OpenMP
