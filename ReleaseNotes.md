@@ -44,6 +44,7 @@ Table of Contents
   * Removed obsolete code.
   * Fixed many issues that triggered compiler warnings.
   * Fixed many issues reported by Coverity Scan.
+  * Added a few unit tests to the main repo.
   * Added faster version of log2().
   * Documented in tesseract man page the option to use an input text file which contains lists of images.
   * Don't trigger a deliberate segmentation fault for fatal errors in release code [(Commit 5338a5a8d)](
