@@ -47,7 +47,7 @@ Table of Contents
   * Added faster version of log2().
   * Documented in tesseract man page the option to use a input text file which contains lists of images.
   * Don't trigger a deliberate segmentation fault for fatal errors in release code [(Commit 5338a5a8d)](
-https://github.com/tesseract-ocr/tesseract/commit/5338a5a8d5e4ebad].
+https://github.com/tesseract-ocr/tesseract/commit/5338a5a8d5e4ebad).
   * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
   * Removed `tessedit_pageseg_mode 1`
 from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` if it's desired [(Commit ecfee53ba)](https://github.com/tesseract-ocr/tesseract/commit/ecfee53bac59e546).
