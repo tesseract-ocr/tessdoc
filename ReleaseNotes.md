@@ -46,6 +46,8 @@ Table of Contents
   * Fixed many issues reported by Coverity Scan.
   * Added faster version of log2().
   * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
+  * Removed `tessedit_pageseg_mode 1`
+from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` if it's desired [(Commit ecfee53ba)](https://github.com/tesseract-ocr/tesseract/commit/ecfee53bac59e546).
   * Added an option to compile tesseract without the code of the legacy OCR engine.
   * Update minimum required autoconf version to 2.63.
   * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
