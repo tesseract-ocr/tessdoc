@@ -14,7 +14,7 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 * #### Noise characters recognized with bbox as the entire page [#1192](https://github.com/tesseract-ocr/tesseract/issues/1192)
 
-* #### Segmentation fault when training from .lstm extracted from tessdata/eng.traineddata [Issue 1573](https://github.com/tesseract-ocr/tesseract/issues/1573)
+* #### Segmentation fault when using integer models for LSTM training [#1573](https://github.com/tesseract-ocr/tesseract/issues/1573)
 
 * #### Report a warning when the Tesseract initialisation code detects an unsupported locale setting. (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1010#issuecomment-379208967))
 
