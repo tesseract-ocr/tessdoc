@@ -58,7 +58,6 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
   * Update minimum required autoconf version to 2.63.
   * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
   * Reorganized Tesseract's source tree.
-  * API change: TessPDFRendererCreate takes an additional parameter for the JPEG quality.
 
 # Tesseract release notes June 19 2018 - V3.05.02
 This release fixed a few bugs, backported from 4.0.0.
