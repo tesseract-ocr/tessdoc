@@ -363,7 +363,7 @@ Compilation itself relies on the [Autotools suite](https://github.com/tesseract-
 ```
 
 If you want support for multithreading, you have to install OpenMP first (see above)
-and tell the compiler and linker how to active OpenMP support.
+and tell the compiler and linker how to activate OpenMP support.
 This is done by adding that information to the options for `configure`:
 
 ```
