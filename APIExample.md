@@ -351,3 +351,55 @@ int main()
     return EXIT_SUCCESS;
 }
 ```
+
+# Example of monitoring OCR progress in C++
+```c++
+#include <tesseract/baseapi.h>
+#include <tesseract/ocrclass.h>
+#include <leptonica/allheaders.h>
+#include <thread>
+
+void monitorProgress(ETEXT_DESC *monitor, int page);
+void ocrProcess(tesseract::TessBaseAPI *api, ETEXT_DESC *monitor);
+
+void monitorProgress(ETEXT_DESC *monitor, int page) {
+    while (1) {
+        printf( "\r%3d%%", monitor[page].progress);
+        fflush (stdout);
+        if (monitor[page].progress==100)
+            break;
+    }
+}
+
+void ocrProcess(tesseract::TessBaseAPI *api, ETEXT_DESC *monitor) {
+    api->Recognize(monitor);
+}
+
+int main() {
+    tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
+    ETEXT_DESC *monitor = new ETEXT_DESC();
+    if (api->Init("/tesseract/tessdata_best", "eng")) {
+        fprintf(stderr, "Could not initialize tesseract.\n");
+        return 1;
+    }
+    api->SetPageSegMode(tesseract::PSM_AUTO);
+    Pix *image = pixRead("/tesseract-ocr/test/testing/phototest.tif");
+    if (!image) {
+       fprintf(stderr, "Leptonica can't process input file!\n");
+       return 2;
+     }
+    api->SetImage(image);
+    int page = 0;
+    std::thread t1(ocrProcess, api, monitor);
+    std::thread t2(monitorProgress, monitor, page);
+    t1.join();
+    t2.join();
+    pixDestroy(&image);
+    char *outText = api->GetUTF8Text();
+    printf("\n%s", outText);
+    if (outText)
+       delete [] outText;
+    api->End();
+    return 0;
+}
+```
