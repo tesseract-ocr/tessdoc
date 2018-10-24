@@ -60,7 +60,7 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
   * Reorganized Tesseract's source tree.
   * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
   * The list of available languages and scripts is now sorted alphabetically.
-  * Parameter unlv_tilde_crunching` changed to `false`, because of default values cause issues (#948, #1449) in cases of unlv output in tesseract 4
+  * Parameter `unlv_tilde_crunching` changed to `false`, because of default values cause issues (#948, #1449) in cases of unlv output in tesseract 4
 
 # Tesseract release notes June 19 2018 - V3.05.02
 This release fixed a few bugs, backported from 4.0.0.
