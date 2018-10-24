@@ -8,7 +8,7 @@ There are a variety of reasons you might not get good quality output from Tesser
   * [Binarisation](#binarisation)
   * [Noise Removal](#noise-removal)
   * [Rotation / Deskewing](#rotation--deskewing)
-  * [Border Removal](#border-removal)
+  * [Borders](#Borders)
   * [Tools / Libraries](#tools--libraries)
   * [Examples](#examples)
 * [Page segmentation method](#page-segmentation-method)
@@ -47,11 +47,19 @@ Noise is random variation of brightness or colour in an image, that can make the
 A skewed image is when a page has been scanned when not straight. The quality of Tesseract's line segmentation reduces significantly if a page is too skewed, which severely impacts the quality of the OCR. To address this rotating the page image so that the text lines are horizontal.
 
 
-### Border Removal
+### Borders
 
+#### Scanning border Removal
 ![borders.png](https://github.com/tesseract-ocr/tesseract/wiki/borders.png)
 
 Scanned pages often have dark borders around them. These can be erroneously picked up as extra characters, especially if they vary in shape and gradation.
+
+#### Missing borders
+
+If you are OCR just text area without any border, tesseract could have problems with it. See for some details in [tesseract user forum](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/v26a-RYPSOE/2Sppq61GBwAJ)[#427](https://github.com/tesseract-ocr/tesseract/issues/427) . You can easy add small border (e.g. 10 pt) with [ImageMagick®](http://imagemagick.org/script/index.php):
+```
+convert  427-1.jpg  -bordercolor White -border 10x10 427-1b.jpg
+```
 
 ### Tools / Libraries
 
