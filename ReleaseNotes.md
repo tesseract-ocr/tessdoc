@@ -26,41 +26,43 @@ Table of Contents
 * [June 17 2006 - V1.00](#tesseract-release-notes-june-17-2006---v100)
 
 # IN DEVELOPMENT
-
-**To be released as V4.0.0. Currently at RC 4 stage.**
-  * Tesseract now requires Leptonica 1.74.0 or a higher version.
-  * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers. 
-  * Added a new OCR engine, that uses neural network system based on LSTMs, with major accuracy gains.
+# Tesseract release notes development version - V4.0.0-rc4+
+  * Added a new OCR engine that uses neural network system based on LSTMs, with major accuracy gains.
+    * This includes new training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
+    * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
+    * Added optional accelerated code paths for the LSTM recognizer:
+      * Using OpenMP
+      * Using SIMD: AVX2 / AVX / SSE4.1
+      * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
+      * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
   * Removed the 'Cube' OCR engine from the codebase.
-  * Added training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
-  * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
-  * Added optional accelerated code paths for the LSTM recognizer:
-    * Using OpenMP
-    * Using SIMD: AVX2 / AVX / SSE4.1
+  * Updated build system.
+    * Tesseract now uses [semantic versioning](https://semver.org/).
+    * Tesseract now requires Leptonica 1.74.0 or a higher version.
+    * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers. 
+    * Added unit tests to the main repo. The unit tests require Git submodules and the code for training.
+    * Added an option to compile Tesseract without the code of the legacy OCR engine.
+    * Update minimum required autoconf version to 2.63.
+    * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
+    * Reorganized Tesseract's source tree. Most sources are now below the `src` directory.
   * Improved  multi-page TIFF handling.
   * Improvements to PDF rendering.
   * Fixes to trainingdata rendering.
   * Fixed damage to binary images when processing PDFs.
   * Removed obsolete code.
   * Fixed many issues that triggered compiler warnings.
-  * Fixed many issues reported by Coverity Scan.
-  * Added a few unit tests to the main repo.
-  * Added version information to the training tools.
+  * Fixed many issues reported by [Coverity Scan](https://scan.coverity.com/projects/tesseract-ocr) or [LGTM](https://lgtm.com/projects/g/tesseract-ocr/tesseract/).
+  * Added version information and improved help texts to the training tools.
   * Added faster version of log2().
-  * Documented in tesseract man page the option to use an input text file which contains lists of images.
+  * Documented in `tesseract` man page the option to use an input text file which contains lists of images.
   * Don't trigger a deliberate segmentation fault for fatal errors in release code [(Commit 5338a5a8d)](
 https://github.com/tesseract-ocr/tesseract/commit/5338a5a8d5e4ebad).
   * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
   * Removed `tessedit_pageseg_mode 1`
-from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` if it's desired [(Commit ecfee53ba)](https://github.com/tesseract-ocr/tesseract/commit/ecfee53bac59e546).
-  * Fixed some issues in OpenCL code. 
-  * Added an option to compile tesseract without the code of the legacy OCR engine.
-  * Update minimum required autoconf version to 2.63.
-  * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
-  * Reorganized Tesseract's source tree.
-  * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
+from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` if that is desired [(Commit ecfee53ba)](https://github.com/tesseract-ocr/tesseract/commit/ecfee53bac59e546).
+  * Fixed some issues in OpenCL code. OpenCL now works for the legacy Tesseract OCR engine, but does not improve the performance. It is not implemented for the LSTM OCR engine.
   * The list of available languages and scripts is now sorted alphabetically.
-  * Parameter `unlv_tilde_crunching` changed to `false`, because of default values cause issues (#948, #1449) in cases of unlv output in tesseract 4
+  * Parameter `unlv_tilde_crunching` changed to `false`, because of default values cause issues (#948, #1449) in cases of unlv output in Tesseract 4.
 
 # Tesseract release notes June 19 2018 - V3.05.02
 This release fixed a few bugs, backported from 4.0.0.
