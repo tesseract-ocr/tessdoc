@@ -80,6 +80,9 @@ If you need an example how to improve image quality programmatically, have a loo
   * [rotation\_spacing.py](https://gist.github.com/endolith/334196bac1cac45a4893#) - python script for automatic detection of rotation and line spacing of an image of text
   * [crop\_morphology.py](https://github.com/danvk/oldnyc/blob/master/ocr/tess/crop_morphology.py) - [Finding blocks of text in an image using Python, OpenCV and numpy](http://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html)
   * [Credit card OCR with OpenCV and Python](https://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python)
+  * [noteshrink](https://github.com/mzucker/noteshrink) - python example how to clean up scans. Details in blog [Compressing and enhancing hand-written notes](https://mzucker.github.io/2016/09/20/noteshrink.html).
+  * [uproject text](https://github.com/mzucker/unproject_text) - python example how to recover perspective of image. Details in blog [Unprojecting text with ellipses](https://mzucker.github.io/2016/10/11/unprojecting-text-with-ellipses.html).
+  * [page_dewarp](https://github.com/mzucker/page_dewarp) - python example for Text page dewarping using a "cubic sheet" model. Details in blog [Page dewarping](https://mzucker.github.io/2016/08/15/page-dewarping.html).
 
 
 ## Page segmentation method
