@@ -27,7 +27,7 @@ Table of Contents
 
 # IN DEVELOPMENT
 
-**To be released as V4.0.0. Currently at RC 3 stage.**
+**To be released as V4.0.0. Currently at RC 4 stage.**
   * Tesseract now requires Leptonica 1.74.0 or a higher version.
   * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers. 
   * Added a new OCR engine, that uses neural network system based on LSTMs, with major accuracy gains.
@@ -60,6 +60,7 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
   * Reorganized Tesseract's source tree.
   * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
   * The list of available languages and scripts is now sorted alphabetically.
+  * Parameter unlv_tilde_crunching` changed to `false`, because of default values cause issues (#948, #1449) in cases of unlv output in tesseract 4
 
 # Tesseract release notes June 19 2018 - V3.05.02
 This release fixed a few bugs, backported from 4.0.0.
