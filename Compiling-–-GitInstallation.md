@@ -37,6 +37,7 @@ git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> -
 ```
 
 ---
+**Note:** Leptonica v1.74 needs to be manually compiled from source available at [danbloomberg/leptonica](https://github.com/DanBloomberg/leptonica).
 
 Finally, run these:
 ```
