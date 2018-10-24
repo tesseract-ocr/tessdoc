@@ -33,8 +33,8 @@ Table of Contents
     * Added optional accelerated code paths for the LSTM recognizer:
       * Using OpenMP
       * Using SIMD: AVX2 / AVX / SSE4.1
-      * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
-      * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
+    * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
+    * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
   * Removed the 'Cube' OCR engine from the codebase.
   * Updated build system.
     * Tesseract now uses [semantic versioning](https://semver.org/).
