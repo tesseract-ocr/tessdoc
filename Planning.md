@@ -10,6 +10,16 @@ Here are some ideas for future Tesseract releases.
 
 * Replace more Tesseract data types by C++ standard types (`GenericVector`, ...), especially for the API.
 
+* Add json/xml output format. Will be use for full ocr and for psm 2 - layout info only.
+
+* Add option to use alternative binarization method from leptonica.
+
+* Add an option to output separate files for multipage input (out1.hocr, out2.hocr ...) 
+
+* Add multi- threading option to the command line (openmp will be disabled at runtime in this mode).
+
+* Use llvm's tools: clang-format, clang-tidy, sanitizers.
+
 ## 4.0.0
 
 That will be the next release. See also the [release notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes).
