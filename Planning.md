@@ -12,7 +12,7 @@ Here are some ideas for future Tesseract releases.
 
 * Replace more Tesseract data types by C++ standard types (`GenericVector`, ...), especially for the API.
 
-* Add json/xml output format. Will be use for full ocr and for psm 2 - layout info only.
+* Add json (or xml) output format. It will be used for full ocr and for psm 2 - layout info only.
 
 * Add option to use alternative binarization methods from leptonica.
 
