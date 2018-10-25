@@ -14,7 +14,7 @@ Here are some ideas for future Tesseract releases.
 
 * Add json/xml output format. Will be use for full ocr and for psm 2 - layout info only.
 
-* Add option to use alternative binarization methodS from leptonica.
+* Add option to use alternative binarization methods from leptonica.
 
 * Add an option to output separate files for multipage input (out1.hocr, out2.hocr ...).
 
