@@ -22,6 +22,8 @@ Here are some ideas for future Tesseract releases.
 
 * Explore the option to use Protocol Buffers or FlatBuffers for the traineddata.
 
+* Improve error handling and don't ignore return values from functions (see [discussion](https://github.com/tesseract-ocr/tesseract/issues/99)).
+
 ## 4.0.0
 
 That will be the next release. See also the [release notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes).
