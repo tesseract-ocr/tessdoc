@@ -8,7 +8,7 @@ Here are some ideas for future Tesseract releases.
 
 * Modernize the code using C++11 (see discussions [here](https://github.com/tesseract-ocr/tesseract/pull/2000#issuecomment-431023531) and [here](https://github.com/tesseract-ocr/tesseract/commit/69a2e94bc52b57ba26081fb43051dacf2fdc56a0)).
 
-* Use llvm's tools: clang-format, clang-tidy, sanitizers.
+* Use llvm's tools: clang-format, clang-tidy, scan-build, sanitizers.
 
 * Replace more Tesseract data types by C++ standard types (`GenericVector`, ...), especially for the API.
 
