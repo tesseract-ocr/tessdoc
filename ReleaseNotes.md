@@ -5,7 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes#in-development)
-* [June 19 2018 - V4.0.0](#tesseract-release-notes-oct-29-2018---v400)
+* [Oct 29 2018 - V4.0.0](#tesseract-release-notes-oct-29-2018---v400)
 * [June 19 2018 - V3.05.02](#tesseract-release-notes-june-19-2018---v30502)
 * [June 1 2017 - V3.05.01](#tesseract-release-notes-june-1-2017---v30501)
 * [February 16 2017 - V3.05.00](#tesseract-release-notes-feb-16-2017---v30500)
@@ -27,7 +27,8 @@ Table of Contents
 * [June 17 2006 - V1.00](#tesseract-release-notes-june-17-2006---v100)
 
 # IN DEVELOPMENT
-# Tesseract release notes development version - V4.0.0
+
+# Tesseract release notes Oct 29 2018 - V4.0.0
   * Added a new OCR engine that uses neural network system based on LSTMs, with major accuracy gains.
     * This includes new training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
     * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
