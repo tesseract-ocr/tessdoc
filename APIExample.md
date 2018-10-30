@@ -1,6 +1,6 @@
 # API examples
 
-This wiki provides simple examples on how to use the tesseract-ocr API (v3.02.02) in C++.
+This wiki provides simple examples on how to use the tesseract-ocr API (v3.02.02-4.0.0) in C++.
 It is expected that tesseract-ocr is correctly installed including all dependecies.
 It is expected the user is familiar with C++, compiling and linking program on their platform, [though basic compilation examples are included for beginners with Linux](#compiling-c-api-programs-on-linux).
 
@@ -403,3 +403,5 @@ int main() {
     return 0;
 }
 ```
+
+More complex example (e.g. cancelling OCR process) can be found in source code of [TesseractGui](https://github.com/sashoalm/TesseractGui/blob/master/thread.cpp) or [gimagereader](https://fossies.org/linux/gimagereader/qt/src/Recognizer.cc).
