@@ -28,6 +28,9 @@ Table of Contents
 
 # IN DEVELOPMENT
 
+# [API/ABI changes review for Tesseract](https://abi-laboratory.pro/?view=timeline&l=tesseract)
+
+
 # Tesseract release notes Oct 29 2018 - V4.0.0
   * Added a new OCR engine that uses neural network system based on LSTMs, with major accuracy gains.
     * This includes new training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
