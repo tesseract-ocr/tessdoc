@@ -28,7 +28,10 @@ Table of Contents
 
 # IN DEVELOPMENT
 
-# [API/ABI changes review for Tesseract](https://abi-laboratory.pro/?view=timeline&l=tesseract)
+## [API/ABI changes review for Tesseract](https://abi-laboratory.pro/?view=timeline&l=tesseract)
+
+![API/ABI changes graph](https://abi-laboratory.pro/tracker/graph/tesseract/graph.svg?v=1.1)
+
 
 
 # Tesseract release notes Oct 29 2018 - V4.0.0
