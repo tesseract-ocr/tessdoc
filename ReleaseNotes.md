@@ -34,7 +34,7 @@ Table of Contents
 
 ![api_abi_changes.png](https://github.com/tesseract-ocr/tesseract/wiki/api_abi_changes.png)
 
-* [Binary compatibility report for Tesseract: 4.0.0-beta.1 vs current](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=4.0.0-beta.1&v2=current&obj=97d7f&kind=abi)
+* [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=3.05.02&v2=4.0.0&obj=a88e1&kind=abi)
 
 
 # Tesseract release notes Oct 29 2018 - V4.0.0
