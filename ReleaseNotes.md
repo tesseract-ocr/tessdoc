@@ -31,6 +31,9 @@ Table of Contents
 ## [API/ABI changes review for Tesseract](https://abi-laboratory.pro/?view=timeline&l=tesseract)
 
 ![API/ABI changes graph](https://abi-laboratory.pro/tracker/graph/tesseract/graph.svg?v=1.1)
+
+![abi_changes_20181027.png](https://github.com/tesseract-ocr/tesseract/wiki/abi_changes_20181027.png)
+
 * [Binary compatibility report for Tesseract: 4.0.0-beta.1 vs current](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=4.0.0-beta.1&v2=current&obj=97d7f&kind=abi)
 
 
