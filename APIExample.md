@@ -404,4 +404,4 @@ int main() {
 }
 ```
 
-More complex example (e.g. cancelling OCR process) can be found in source code of [TesseractGui](https://github.com/sashoalm/TesseractGui/blob/master/thread.cpp) or [gimagereader](https://fossies.org/linux/gimagereader/qt/src/Recognizer.cc).
+More complex example (e.g. cancelling OCR process) can be found in source code of [TesseractGui](https://github.com/sashoalm/TesseractGui/blob/master/thread.cpp), [gimagereader](https://fossies.org/linux/gimagereader/qt/src/Recognizer.cc) or android [textfairy](https://github.com/renard314/textfairy/search?p=2&q=monitor&type=&utf8=%E2%9C%93) [app](https://www.youtube.com/watch?v=vUmZnwyLH6I).
