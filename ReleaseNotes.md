@@ -38,16 +38,18 @@ Table of Contents
 
 
 # Tesseract release notes Oct 29 2018 - V4.0.0
+* **New OCR engine**
   * Added a new OCR engine that uses neural network system based on LSTMs, with major accuracy gains.
-    * This includes new training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
-    * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
-    * Added optional accelerated code paths for the LSTM recognizer:
-      * Using OpenMP
-      * Using SIMD: AVX2 / AVX / SSE4.1
-    * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
-    * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
-  * Removed the 'Cube' OCR engine from the codebase.
+  * This includes new training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
+  * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
+  * Added optional accelerated code paths for the LSTM recognizer:
+    * Using OpenMP
+    * Using SIMD: AVX2 / AVX / SSE4.1
+  * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
+  * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
+* **Other OCR engines**
   * The pattern matching OCR engine that was the primary OCR engine in previous versions is still available in this version.
+  * Removed the 'Cube' OCR engine from the codebase.
   * Updated build system.
     * Tesseract now uses [semantic versioning](https://semver.org/).
     * Tesseract now requires Leptonica 1.74.0 or a higher version.
