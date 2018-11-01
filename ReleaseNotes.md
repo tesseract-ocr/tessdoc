@@ -49,7 +49,7 @@ Table of Contents
     * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
   * **Other OCR engines**
     * The pattern matching OCR engine that was the primary OCR engine in previous versions is still available in this version.
-    * Removed the 'Cube' OCR engine from the codebase.
+    * Removed the 'Cube' OCR engine from the codebase. It was used for hindi and for Arabic. The New LSTM engine performs much better, thus the  Cube engine was no longer needed.
   * **Updated build system**
     * Tesseract now uses [semantic versioning](https://semver.org/).
     * Tesseract now requires Leptonica 1.74.0 or a higher version.
