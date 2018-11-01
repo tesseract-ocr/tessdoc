@@ -60,24 +60,24 @@ Table of Contents
     * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
     * Reorganized Tesseract's source tree. Most sources are now below the `src` directory.
     * Removed obsolete code.
+  * **Bug fixes and enhancements**
     * Fixed many issues that triggered compiler warnings.
     * Fixed many issues reported by [Coverity Scan](https://scan.coverity.com/projects/tesseract-ocr) or [LGTM](https://lgtm.com/projects/g/tesseract-ocr/tesseract/).
-  * Bug fixes.
     * Fixes to trainingdata rendering.
     * Fixed damage to binary images when processing PDFs.
     * Don't trigger a deliberate segmentation fault for fatal errors in release code [(Commit 5338a5a8d)](
 https://github.com/tesseract-ocr/tesseract/commit/5338a5a8d5e4ebad).
     * Fixed some issues in OpenCL code. OpenCL now works for the legacy Tesseract OCR engine, but does not improve the performance. It is not implemented for the LSTM OCR engine.
-  * Improved  multi-page TIFF handling.
-  * Improvements to PDF rendering.
-  * Added version information and improved help texts to the training tools.
-  * Added faster version of log2().
-  * Documented in `tesseract` man page the option to use an input text file which contains lists of images.
-  * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
-  * Removed `tessedit_pageseg_mode 1`
+    * Improved  multi-page TIFF handling.
+    * Improvements to PDF rendering.
+    * Added version information and improved help texts to the training tools.
+    * Added faster version of log2().
+    * Documented in `tesseract` man page the option to use an input text file which contains lists of images.
+    * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
+    * Removed `tessedit_pageseg_mode 1`
 from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` if that is desired [(Commit ecfee53ba)](https://github.com/tesseract-ocr/tesseract/commit/ecfee53bac59e546).
-  * The list of available languages and scripts is now sorted alphabetically.
-  * Parameter `unlv_tilde_crunching` changed to `false`, because of default values cause issues (#948, #1449) in cases of unlv output in Tesseract 4.
+    * The list of available languages and scripts is now sorted alphabetically.
+    * Parameter `unlv_tilde_crunching` changed to `false`, because of default values cause issues (#948, #1449) in cases of unlv output in Tesseract 4.
 
 # Tesseract release notes June 19 2018 - V3.05.02
 This release fixed a few bugs, backported from 4.0.0.
