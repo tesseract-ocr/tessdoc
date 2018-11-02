@@ -30,7 +30,7 @@ Table of Contents
 
 ## [API/ABI changes review for Tesseract](https://abi-laboratory.pro/?view=timeline&l=tesseract)
 
-![API/ABI changes graph](https://abi-laboratory.pro/tracker/graph/tesseract/graph.svg?v=1.1)
+![API/ABI changes graph](https://abi-laboratory.pro/tracker/graph/tesseract/graph.svg?v=1.10)
 
 ![api_abi_changes.png](https://github.com/tesseract-ocr/tesseract/wiki/api_abi_changes.png)
 
