@@ -412,3 +412,4 @@ the multi-language capability, since that will also bloat the distribution.
 First **open source** version of Tesseract!  
 
 Hosted at sourceforge.net.
+CVS is used for version control.
