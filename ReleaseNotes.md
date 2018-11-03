@@ -333,6 +333,8 @@ List of changes in this release:
 
 # Tesseract release notes May 15, 2007 - V1.04
 
+Tesseract development is now done with Subversion and hosted at code.google.com (Previously we used CVS as a VCS and sourceforge.net for hosting).
+
 **Windows users only**
 
 Added a dll interface for windows. Thanks to Glen at Jetsoft for contributing
