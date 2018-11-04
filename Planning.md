@@ -26,7 +26,7 @@ Here are some ideas for future Tesseract releases.
 
 ## 4.0.0
 
-That will be the next release. See also the [release notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes).
+See the [release notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes).
 
 See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesseract/issues/1423).
 
