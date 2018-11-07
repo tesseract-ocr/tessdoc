@@ -46,13 +46,15 @@ The traineddata is currently not shipped with the snap package and must be place
 
 #### Debian
 
-* [Debian Jessie and Stretch (notesalex.org)](https://notesalexp.org/tesseract-ocr/)
+* [Debian Jessie (notesalex.org)](https://notesalexp.org/tesseract-ocr/)
+* [Debian Stretch (backports)](https://packages.debian.org/stretch-backports/tesseract-ocr)
 * [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
 
 #### Ubuntu
 
 * [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
+* [Ubuntu Cosmic 18.10](https://packages.ubuntu.com/cosmic/tesseract-ocr-all) 
 
 #### Ubuntu - PPA / packages from notesalexp.org 
 * [Ubuntu Bionic 18.04 - PPA ](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
