@@ -5,6 +5,7 @@
 | **Name** | **Linux** | **Mac** | **Windows** | **License** | **Description** |
 |:---------|:----------|:--------|:------------|:------------|:----------------|
 | [gImageReader](https://github.com/manisandro/gImageReader) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
+| [TesseractStudio.Net](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | A graphical interface to tesseract 4.0 |
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
 | [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GNU AGPL v3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and scanned PDF files |
 | [YAGF](http://sourceforge.net/projects/yagf-ocr/) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
