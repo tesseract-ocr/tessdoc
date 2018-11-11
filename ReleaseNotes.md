@@ -46,7 +46,6 @@ Table of Contents
       * Using OpenMP
       * Using SIMD: AVX2 / AVX / SSE4.1
     * Added a new parameter `lstm_choice_mode` that allows to include alternative symbol choices in the hOCR output.
-    * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
   * **Other OCR engines**
     * The pattern matching OCR engine that was the primary OCR engine in previous versions is still available in this version.
     * Removed the 'Cube' OCR engine from the codebase. It was used for Hindi and for Arabic. The New LSTM engine performs much better, thus the  Cube engine was no longer needed.
@@ -82,6 +81,7 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
     * Added unit tests to the main repo. The unit tests require Git submodules and the code for training.
     * Removed obsolete code.
   * **Important notes**
+    * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
     * Tesseract now requires the so called "C" locale. This has mainly implications when Tesseract is used as a library from programming languages like Java or Python. The _locale_ stands for several settings which depend on a language (or language variant) or country. Some of those setting determine the classification of symbols (for example "Is this character a blank (space) character?") or the way how numbers are printed (for example "3.141" or "3,141"). The current Tesseract code implicitly expects some fixed settings, otherwise it fails. Therefore the code fails right at the beginning with an assertion if it cannot be sure that the settings work. This is not a problem with C or C++ programs which by default get a "C" locale with the right settings. All other use cases must currently make sure that they switch to the "C" locale before running Tesseract code. The Tesseract code will be modified in a next release to work with any locale, so the current restriction will hopefully be removed soon.
 
 # Tesseract release notes June 19 2018 - V3.05.02
