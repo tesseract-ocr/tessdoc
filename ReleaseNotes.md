@@ -52,10 +52,9 @@ Table of Contents
     * Removed the 'Cube' OCR engine from the codebase. It was used for Hindi and for Arabic. The New LSTM engine performs much better, thus the  Cube engine was no longer needed.
   * **Updated build system**
     * Tesseract now uses [semantic versioning](https://semver.org/).
-
     * Added unit tests to the main repo. The unit tests require Git submodules and the code for training.
     * Added an option to compile Tesseract without the code of the legacy OCR engine.
-  * ** Updated requirements **
+  * **Updated requirements**
     * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers.
     * Tesseract now requires Leptonica 1.74.0 or a higher version.
     * Update minimum required autoconf version to 2.63.
