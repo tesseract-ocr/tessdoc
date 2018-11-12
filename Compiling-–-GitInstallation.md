@@ -68,6 +68,20 @@ make: *** [all] Error 2
 
 Try to run `autoreconf -i` after running `./autogen.sh`.
 
+### Debug Builds
+Such builds produce Tesseract binaries which run very slowly. They are not useful for production, but good to find or analyze software problems. This is a proven build sequence:
+
+    cd tesseract-ocr
+    ./autogen.sh
+    mkdir -p bin/debug
+    cd bin/debug
+    ../../configure --enable-debug --disable-shared 'CXXFLAGS=-g -O0 -Wall -Wextra -Wpedantic -fsanitize=address -fsanitize=leak -fsanitize=undefined -fstack-protector-strong -ftrapv'
+    make training
+    cd ../..
+
+This activates debug code, does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation), disables compiler optimizations (allows better debugging with `gdb`), enables lots of compiler warnings and enables several run time checks.
+
+
 ## Training Tools
 See [Building the training tools](https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract#building-the-training-tools).
 
