@@ -11,7 +11,7 @@ apt-get install autoconf automake g++ libtool libleptonica-dev make pkg-config
 
 The optional manpages are built with asciidoc:
 ```
-apt-get install asciidoc
+apt-get install --no-install-recommends asciidoc
 ```
 
 If you want to build the Tesseract training tools as well, you'll also require Pango:
