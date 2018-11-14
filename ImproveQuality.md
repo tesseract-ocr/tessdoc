@@ -9,6 +9,7 @@ There are a variety of reasons you might not get good quality output from Tesser
   * [Noise Removal](#noise-removal)
   * [Rotation / Deskewing](#rotation--deskewing)
   * [Borders](#Borders)
+  * [Transparency / Alpha channel](#transparency--alpha-channel)
   * [Tools / Libraries](#tools--libraries)
   * [Examples](#examples)
 * [Page segmentation method](#page-segmentation-method)
@@ -60,6 +61,17 @@ If you OCR just text area without any border, tesseract could have problems with
 ```
 convert  427-1.jpg  -bordercolor White -border 10x10 427-1b.jpg
 ```
+
+### Transparency / Alpha channel
+
+Some image format (e.g. png) can have [alpha-channel](https://www.techopedia.com/definition/1945/alpha-channel) for providing transparency feature.
+
+Tesseract 3.0x expect that you remove alpha channel from image before using image in tesseract. You can do e.g. with ImageMagick command:
+```
+convert input.png -alpha off output.png
+```
+
+Tesseract 4.00 remove alpha channel with leptonica function [pixRemoveAlpha()](https://github.com/DanBloomberg/leptonica/blob/648a3be52b6a004df14671de7004416f9a3ce489/src/pixconv.c#L133): it removes alpha component by blending with white background. In some case (e.g. OCR of [movie subtitles](https://github.com/tesseract-ocr/tesseract/issues/2048#issuecomment-438015376)) this can lead to problems, so users would need to remove alpha channel (or pre-process image by inverting image colors) by themself.
 
 ### Tools / Libraries
 
