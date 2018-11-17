@@ -121,8 +121,11 @@ export SCROLLVIEW_PATH=$PWD/java
 
 # Hardware-Software Requirements
 
-At time of writing, training only works on Linux? Windows yet? As for running
-Tesseract 4.00, it is useful, but not essential to have a multi-core (4 is good)
+At time of writing, training only works on Linux. (macOS almost works; it requires
+minor hacks to the shell scripts to account for the older version of `bash` it
+provides and differences in `mktemp`.) Windows is unknown, but would need msys or Cygwin.
+
+As for running Tesseract 4.0.0, it is useful, but not essential to have a multi-core (4 is good)
 machine, with OpenMP and Intel Intrinsics support for SSE/AVX extensions.
 Basically it will still run on anything with enough memory, but the higher-end
 your processor is, the faster it will go. No GPU is needed. (No support.) Memory
