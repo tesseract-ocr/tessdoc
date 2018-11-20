@@ -411,8 +411,7 @@ brew install gcc
 
 ### Install Tesseract with training tools
 
-In the above, training tool dependencies are not installed. You can install them like below.
-
+In the above, training tool dependencies are not installed. You can install them like below. 
 ```
 brew install pango
 ```
@@ -421,7 +420,7 @@ brew install pango
 
 As of January 2017, the clang builds but OpenMP will only use a single thread, reducing performance. For best results, use gcc.
 
-The exact values of ``CPPFLAGS`` and ``LDFLAGS`` can be read from ``brew info icu4c``.
+The exact values of ``CPPFLAGS`` and ``LDFLAGS`` can be read from ``brew info icu4c``. If you want to build training module, you should also link ``pango`` libraries as `-L/usr/local/Cellar/pango/1.42.4/lib`.
 
 ```bash
 git clone https://github.com/tesseract-ocr/tesseract/
