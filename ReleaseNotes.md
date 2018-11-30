@@ -36,6 +36,9 @@ Table of Contents
 
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=3.05.02&v2=4.0.0&obj=a88e1&kind=abi)
 
+## Changes made since last release
+
+  * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract in.png out alto`.
 
 # Tesseract release notes Oct 29 2018 - V4.0.0
   * **New OCR engine**
