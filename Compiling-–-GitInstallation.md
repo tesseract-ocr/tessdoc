@@ -103,6 +103,25 @@ The profiling code creates a file named `gmon.out` in the current directory when
 GNU gprof is used to show the profiling information from that file.
 
 
+### Release Builds for Mass Production
+The default build creates a Tesseract executable which is fine for processing of single images. Tesseract then uses 4 CPU cores to get an OCR result as fast as possible.
+
+For mass production with hundreds or thousands of images that default is bad because the multi threaded execution has a very large overhead. It is better to run single threaded instances of Tesseract, so that every available CPU core will process a different image.
+
+This is a proven build sequence:
+
+    cd tesseract-ocr
+    ./autogen.sh
+    mkdir -p bin/release
+    cd bin/release
+    ../../configure --disable-openmp --disable-shared 'CXXFLAGS=-g -O2 -fno-math-errno -Wall -Wextra -Wpedantic'
+    make training
+    cd ../..
+
+This disabled OpenMP (multi threading), does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation), enables compiler optimizations,
+disables setting of `errno` for mathematical functions (faster execution!) and enables lots of compiler warnings.
+
+
 ## Training Tools
 See [Building the training tools](https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract#building-the-training-tools).
 
