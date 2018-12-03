@@ -93,7 +93,9 @@ Such builds can be used to investigate performance problems. Tesseract will run 
     make training
     cd ../..
 
-This does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation), enables compiler optimizations and enables lots of compiler warnings.
+This does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation),
+enables profiling code,
+enables compiler optimizations and enables lots of compiler warnings.
 
 Optionally this can also be used with debug code by adding `--enable-debug` and replacing `-O2` by `-O0`.
 
