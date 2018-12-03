@@ -99,7 +99,7 @@ enables compiler optimizations and enables lots of compiler warnings.
 
 Optionally this can also be used with debug code by adding `--enable-debug` and replacing `-O2` by `-O0`.
 
-The profiling code create a file named `gmon.out` in the current directory when Tesseract terminates.
+The profiling code creates a file named `gmon.out` in the current directory when Tesseract terminates.
 GNU gprof is used to show the profiling information from that file.
 
 
