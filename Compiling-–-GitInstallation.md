@@ -82,6 +82,25 @@ Such builds produce Tesseract binaries which run very slowly. They are not usefu
 This activates debug code, does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation), disables compiler optimizations (allows better debugging with `gdb`), enables lots of compiler warnings and enables several run time checks.
 
 
+### Profiling Builds
+Such builds can be used to investigate performance problems. Tesseract will run slower than without profiling, but with acceptable speed. This is a proven build sequence:
+
+    cd tesseract-ocr
+    ./autogen.sh
+    mkdir -p bin/profiling
+    cd bin/profiling
+    ../../configure --disable-shared 'CXXFLAGS=-g -p -O2 -Wall -Wextra -Wpedantic'
+    make training
+    cd ../..
+
+This does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation), enables compiler optimizations and enables lots of compiler warnings.
+
+Optionally this can also be used with debug code by adding `--enable-debug` and replacing `-O2` by `-O0`.
+
+The profiling code create a file named `gmon.out` in the current directory when Tesseract terminates.
+GNU gprof is used to show the profiling information from that file.
+
+
 ## Training Tools
 See [Building the training tools](https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract#building-the-training-tools).
 
