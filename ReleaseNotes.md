@@ -38,7 +38,7 @@ Table of Contents
 
 ## Changes made since last release
 
-  * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract in.png out alto`. This output is **experimental** and might be changed a bit before the next release.
+  * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
 
 # Tesseract release notes Oct 29 2018 - V4.0.0
   * **New OCR engine**
