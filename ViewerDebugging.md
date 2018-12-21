@@ -13,7 +13,7 @@ The following components are required to run the viewer:
   * [jaxb-api-2.3.1.jar](http://search.maven.org/remotecontent?filepath=javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar)
   * `ScrollView.jar`, built from the source in tesseract/java
 
-`make ScrollView.jar` will donwload them automatically to `tesseract/java` if `curl `is present in your path.
+`make ScrollView.jar` will download them automatically to `tesseract/java` if `curl `is present in your path.
 
 All these jar files need to go in a single directory. Tesseract learns the location either through the environment variable SCROLLVIEW\_PATH or a compiler define of the same name.
 
