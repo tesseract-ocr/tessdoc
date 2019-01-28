@@ -14,7 +14,7 @@ recognizer. It has its origins in OCRopus' [Python-based LSTM implementation](ht
 has been totally redesigned for Tesseract in C++. The neural network system in
 Tesseract pre-dates Tensor Flow, but is compatible with it, as there is a
 network description language called [Variable Graph Specification
-Language](VGSLSpecs) (VGSL), that is also available for TensorFlow. See
+Language](VGSLSpecs) (VGSL), that is also available for Tensor Flow. See
 https://github.com/tensorflow/models/tree/master/research/street
 
 The idea of VGSL is that it is possible to build a neural network and train it
