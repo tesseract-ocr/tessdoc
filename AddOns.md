@@ -107,6 +107,7 @@ Platform support depends on used language and experience of user.
   * [tesseract-sip](https://github.com/virtuald/python-tesseract-sip) - A python SIP wrapper for libtesseract (Apache license)
   * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
   * http://code.google.com/p/python-tesseract/ is a wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
+  * https://github.com/madmaze/pytesseract is a wrapper class for Tesseract OCR
 
 **R** 
   * [tesseract](https://cran.r-project.org/package=tesseract) Bindings to the C++ API for the R programming language
