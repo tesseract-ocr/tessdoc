@@ -105,9 +105,9 @@ Platform support depends on used language and experience of user.
   * [pyocr](https://gitlab.gnome.org/World/OpenPaperwork/pyocr) - A Python wrapper for Tesseract (and Cuneiform)
   * [tesserwrap](https://github.com/gregjurman/tesserwrap) - Python bindings to the Tesseract API
   * [tesseract-sip](https://github.com/virtuald/python-tesseract-sip) - A python SIP wrapper for libtesseract (Apache license)
+  * [pytesseract](https://github.com/madmaze/pytesseract) - a wrapper class for Tesseract OCR
+  * [python-tesseract](https://github.com/3togo/python-tesseract) [Alternative link](http://code.google.com/p/python-tesseract/) - A wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
   * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
-  * http://code.google.com/p/python-tesseract/ is a wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
-  * https://github.com/madmaze/pytesseract is a wrapper class for Tesseract OCR
 
 **R** 
   * [tesseract](https://cran.r-project.org/package=tesseract) Bindings to the C++ API for the R programming language
