@@ -19,6 +19,10 @@ Most users will use **`tessdata_fast`** for OCR as that is what will be shipped 
 
 ### Version string : 4.00.00alpha : [Network specification] for tessdata_fast
 
+The flags are TrainingFlags from lstmrecognizer.h. 
+0x40 is compress unicharset and 1 is integer mode.
+The one from fast: flags 41 = compress + integer mode.
+
 ```
 
 Version string:4.00.00alpha:afr:synth20170629:[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1]
@@ -680,9 +684,13 @@ bul l36-48-96-128
 
 ### Version string : 4.00.00alpha : [Network specification] for tessdata_best
 
-```
 tessdata_best models - incomplete list, till Kannada
 
+The flags are TrainingFlags from lstmrecognizer.h. 
+0x40 is compress unicharset and 1 is integer mode.
+The one from best has flags 40 = compress + not integer mode.
+
+```
 afr
 Version string:4.00.00alpha:afr:synth20170629:[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1]
 LSTM training info:Network str:[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], 
