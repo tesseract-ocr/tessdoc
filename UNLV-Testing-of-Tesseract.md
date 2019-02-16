@@ -2,7 +2,7 @@
 
 # Introduction
 
-Tesseract 2.0+ provides scripts that make it possible to run some of the UNLV tests published in the Fourth Annual Test of OCR Accuracy.
+Tesseract 2.0+ provided scripts that make it possible to run some of the UNLV tests published in the Fourth Annual Test of OCR Accuracy.
 See [AT-1995.pdf](https://github.com/tesseract-ocr/docs/blob/master/AT-1995.pdf) (originally available at http://www.isri.unlv.edu/). The main purpose of providing these test scripts is to enable Tesseract users to verify that their installation is correct, and that no architecture-specific problems are causing bad recognition accuracy. It also serves as a benchmark to demonstrate accuracy improvements of each version. Developers working on Tesseract may find the benchmarking tools useful for measuring experimental new modules.
 
 Note that **some** architecture-specific variation is bound to occur. Most of these should be caused by varying treatment and optimization of floating-point arithmetic between compilers. It is also possible of course that there are memory initialization errors that show up as differences between architectures, but we claim to have found most of these already in the unicodeization process.
@@ -13,31 +13,13 @@ The UNLV images are G4 compressed, so you must build Tesseract with TIFF support
 
 Windows users also have to have some unix shell script capability, perhaps via cygwin or equivalent.
 
-# Downloading the images
+# Images
 
 The current scripts only cover tests of the 3B test sets (ie 300 dpi bitonal). The adaptive thresholding in the open-source Tesseract is not the same as in the original as the original adaptive thresholding was not included in the open source release, so the 8 bit grey image tests would not compare correctly, and the other resolutions, while interesting, do not really serve a useful regression testing purpose.
 
-  1. Goto https://code.google.com/archive/p/isri-ocr-evaluation-tools/downloads and get: [bus.3B.tar.gz](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/isri-ocr-evaluation-tools/bus.3B.tar.gz), doe3.3B.tar.gz, mag.3B.tar.gz, news.3B.tar.gz. There are also additional sets available which aren't currently used: legal.3B.tar.gz, rep.3B.tar.gz spn.3B.tar.gz (Spanish)
-  1. Extract the files into the `tesseract/testing/unlv` subdirectory
+# Running the tests
 
-# Downloading the tools from UNLV
-
-Download the ISRI toolkit ftk-1.0.tar.gz, also available from https://code.google.com/archive/p/isri-ocr-evaluation-tools/downloads
-
-If they work for you, use the binaries directly from the bin
-directory and put them in tesseract-ocr/testing/unlv
-otherwise build the tools for yourself and put them there.
-
-# Running tests
-
-  1. cd to your main tesseract-ocr dir and Build tesseract.
-  1. Run `testing/runalltests.sh` with the root data dir and testname:
-```
-testing/runalltests.sh /users/me/ISRI-OCRtk tess2.0
-```
-and go to the gym, have lunch etc.
-
-When complete, there should be a file `testing/reports/tess2.0.summary` that contains the final summarized accuracy report and comparison with the 1995 results.
+See [README file for UNLV tests](https://github.com/tesseract-ocr/test/blob/master/unlvtests/README.md) for the current instructions on how to run the tests for Tesseract 4.
 
 # Example Results
 
