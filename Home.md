@@ -46,7 +46,7 @@ The traineddata is currently not shipped with the snap package and must be place
 
 #### Debian
 
-* [Debian Jessie (notesalex.org)](https://notesalexp.org/tesseract-ocr/)
+* [Debian Jessie (notesalexp.org)](https://notesalexp.org/tesseract-ocr/)
 * [Debian Stretch (backports)](https://packages.debian.org/stretch-backports/tesseract-ocr)
 * [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
@@ -59,9 +59,13 @@ The traineddata is currently not shipped with the snap package and must be place
 #### Ubuntu - PPA / packages from notesalexp.org 
 * [Ubuntu Bionic 18.04 - PPA ](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
 * [Ubuntu Artful 17.10 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=artful)
-* [Ubuntu Zesty 17.04 - notesalex.org](https://notesalexp.org/tesseract-ocr/)
+* [Ubuntu Zesty 17.04 - notesalexp.org](https://notesalexp.org/tesseract-ocr/)
 * [Ubuntu Xenial 16.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04 - PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
+
+#### Raspbian
+* [Raspbian Stretch(notesalexp.org)](https://notesalexp.org/tesseract-ocr/)
+* [Raspbian Buster (testing)](http://raspbian.org/RaspbianRepository)
 
 #### CentOS, Fedora, ScientificLinux, OpenSuse, RHEL packages
 
