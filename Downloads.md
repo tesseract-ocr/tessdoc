@@ -8,16 +8,9 @@ Source code of Tesseract's [Releases](https://github.com/tesseract-ocr/tesseract
 
 Tesseract is included in most Linux distributions.
 
-- 3.5.1: https://github.com/FlorianKoerner/compiled-tesseract/releases/download/3.5.1/tesseract-linux.tar.gz (3rd party)
-
-## Binaries for macOS
-
-- 3.5.1: https://github.com/FlorianKoerner/compiled-tesseract/releases/download/3.5.1/tesseract-osx.tar.gz . (3rd party)
-
 ## Binaries for Windows
 
-- 4.0.0: https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows
-- 3.5.1: https://github.com/FlorianKoerner/compiled-tesseract/releases/tag/3.5.1 (3rd party)
+https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows
 
 ### Old Downloads
 
