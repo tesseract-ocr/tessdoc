@@ -7,33 +7,36 @@ mailing-list to ask your question(s). **PLEASE DO NOT** report your problems and
 ask questions about training as
 [issues](https://github.com/tesseract-ocr/tesseract/issues)!
 
-*   [Introduction](#introduction)
-*   [Before You Start](#before-you-start)
-*   [Additional Libraries Required](#additional-libraries-required)
-*   [Building the Training Tools](#building-the-training-tools)
-*   [Hardware-Software Requirements](#hardware-software-requirements)
-*   [Overview of Training Process](#overview-of-training-process)
-*   [Understanding the Various Files Used During
-    Training](#understanding-the-various-files-used-during-training)
-*   [Creating the Training Data](#creating-training-data)
-*   [Tutorial Guide to lstmtraining](#tutorial-guide-to-lstmtraining)
-    *   [Creating the starter traineddata](#creating-starter-traineddata)
-    *   [LSTMTraining Command Line](#lstmtraining-command-line)
-        *   [Unicharset Compression+Recoding](#unicharset-compression-recoding)
-        *   [Randomized Training
-            Data](#randomized-training-data-and-sequential-training)
-        *   [Model Output](#model-output)
-        *   [Net Mode and Optimization](#net-mode-and-optimization)
-        *   [Perfect Sample Delay](#perfect-sample-delay)
-        *   [Debug Interval](#debug-interval-and-visual-debugging)
-    *   [Training From Scratch](#training-from-scratch)
-    *   [Fine Tuning for Impact(new-font-style)](#fine-tuning-for-impact)
-    *   [Fine Tuning for ± a few
-        characters](#fine-tuning-for--a-few-characters)
-    *   [Training Just a Few Layers](#training-just-a-few-layers)
-    *   [Error Messages From Training](#error-messages-from-training)
-*   [Combining the Output Files](#combining-the-output-files)
-*   [The Hallucination Effect](#the-hallucination-effect)
+   * [Introduction](TrainingTesseract-4.00.md#introduction)
+   * [Before You Start](TrainingTesseract-4.00.md#before-you-start)
+   * [Additional Libraries Required](TrainingTesseract-4.00.md#additional-libraries-required)
+   * [Building the Training Tools](TrainingTesseract-4.00.md#building-the-training-tools)
+   * [Hardware-Software Requirements](TrainingTesseract-4.00.md#hardware-software-requirements)
+   * [Training Text Requirements](TrainingTesseract-4.00.md#training-text-requirements)
+   * [Overview of Training Process](TrainingTesseract-4.00.md#overview-of-training-process)
+   * [Understanding the Various Files Used During Training](TrainingTesseract-4.00.md#understanding-the-various-files-used-during-training)
+   * [LSTMTraining Command Line](TrainingTesseract-4.00.md#lstmtraining-command-line)
+      * [Unicharset Compression-recoding](TrainingTesseract-4.00.md#unicharset-compression-recoding)
+      * [Randomized Training Data and sequential_training](TrainingTesseract-4.00.md#randomized-training-data-and-sequential_training)
+      * [Model output](TrainingTesseract-4.00.md#model-output)
+      * [Net Mode and Optimization](TrainingTesseract-4.00.md#net-mode-and-optimization)
+      * [Perfect Sample Delay](TrainingTesseract-4.00.md#perfect-sample-delay)
+      * [Debug Interval and Visual Debugging](TrainingTesseract-4.00.md#debug-interval-and-visual-debugging)
+   * [TessTutorial](TrainingTesseract-4.00.md#tesstutorial)
+      * [One-time Setup for TessTutorial](TrainingTesseract-4.00.md#one-time-setup-for-tesstutorial)
+      * [Creating Training Data](TrainingTesseract-4.00.md#creating-training-data)
+         * [Making Box Files](TrainingTesseract-4.00.md#making-box-files)
+         * [Using tesstrain.sh](TrainingTesseract-4.00.md#using-tesstrainsh)
+      * [Tutorial guide to lstmtraining](TrainingTesseract-4.00.md#tutorial-guide-to-lstmtraining)
+         * [Creating Starter Traineddata](TrainingTesseract-4.00.md#creating-starter-traineddata)
+         * [Training From Scratch](TrainingTesseract-4.00.md#training-from-scratch)
+         * [Fine Tuning for Impact](TrainingTesseract-4.00.md#fine-tuning-for-impact)
+         * [Fine Tuning for ± a few characters](TrainingTesseract-4.00.md#fine-tuning-for--a-few-characters)
+         * [Training Just a Few Layers](TrainingTesseract-4.00.md#training-just-a-few-layers)
+      * [Error Messages From Training](TrainingTesseract-4.00.md#error-messages-from-training)
+   * [Combining the Output Files](TrainingTesseract-4.00.md#combining-the-output-files)
+   * [The Hallucination Effect](TrainingTesseract-4.00.md#the-hallucination-effect)
+
 
 # Introduction
 
@@ -184,20 +187,11 @@ reasons:
 *   It isn't necessary to have a base Tesseract of the same language as the
     neural net Tesseract.
 
-The process of [Creating the training data](#creating-training-data) is
-documented below, followed by a [Tutorial guide to
-lstmtraining](#tutorial-guide-to-lstmtraining) which gives an introduction to
-the main training process, with command-lines that have been tested for real. On
-Linux at least, you should be able to just copy-paste the command lines into
-your terminal. To make the `tesstrain.sh` script work, it will be necessary to
-either set `PATH` to include your local `training` and `api` directories, or use
-`make install`.
-
 # Understanding the Various Files Used During Training
 
 As with base Tesseract, the completed LSTM model and everything else it needs is
-collected in the `traineddata` file. Unlike base Tesseract, a starter
-`traineddata` file is given during training, and has to be setup in advance. It
+collected in the `traineddata` file. Unlike base Tesseract, a `starter
+traineddata` file is given during training, and has to be setup in advance. It
 can contain:
 
 *   Config file providing control parameters.
@@ -210,7 +204,7 @@ can contain:
 
 Bold elements **must** be provided. Others are optional, but if any of the dawgs
 are provided, the punctuation dawg must also be provided. A new tool:
-`combine_lang_model` is provided to make a starter `traineddata` from a
+`combine_lang_model` is provided to make a `starter traineddata` from a
 `unicharset` and optional wordlists.
 
 During training, the trainer writes checkpoint files, which is a standard
@@ -238,89 +232,7 @@ The training data is provided via `.lstmf` files, which are serialized
 transcription, and can be generated from tif/box file pairs using Tesseract in a
 similar manner to the way `.tr` files were created for the old engine.
 
-# Creating Training Data
-
-### Making Box Files
-
-As with base Tesseract, there is a choice between rendering synthetic training
-data from fonts, or labeling some pre-existing images (like ancient manuscripts
-for example).
-  
-In either case, the required format is still the tiff/box file
-pair, except that the boxes only need to cover a textline instead of individual
-characters.
-
-Each line in the box file matches a 'character' (glyph) in the tiff image.
-
-`<symbol> <left> <bottom> <right> <top> <page>`
-
-To mark an end-of-textline, a special line must be inserted after a series of lines.
-
-`<tab> <left> <bottom> <right> <top> <page>`
-
-Note that in all cases, even for right-to-left languages, such as Arabic, the
-text transcription for the line, *should be ordered left-to-right.* In other words, the network
-is going to learn from left-to-right regardless of the language, and the
-right-to-left/bidi handling happens at a higher level inside Tesseract.
-
-These instructions only cover the case of rendering from fonts, so the [needed fonts](Fonts) must be installed first.
-
-### Using tesstrain
-
-The setup for running tesstrain.sh is the
-same as for base Tesseract. Use `--linedata_only` option for LSTM training.
-Note that it is beneficial to have more training
-text and make more pages though, as neural nets don't generalize as well and
-need to train on something similar to what they will be running on. If the
-target domain is severely limited, then all the dire warnings about needing a
-lot of training data may not apply, but the network specification may need to be
-changed.
-
-Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/src/training/tesstrain.sh)
-as follows: Note that your fonts location may vary.
-
-```
-src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
-  --noextract_font_properties --langdata_dir ../langdata \
-  --tessdata_dir ./tessdata --output_dir ~/tesstutorial/engtrain
-```
-
-The above command makes LSTM training data equivalent to the data used to train
-base Tesseract for English. For making a general-purpose LSTM-based OCR engine,
-it is woefully inadequate, but makes a good tutorial demo.
-
-Now try this to make eval data for the 'Impact' font:
-
-```
-src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
-  --noextract_font_properties --langdata_dir ../langdata \
-  --tessdata_dir ./tessdata \
-  --fontlist "Impact Condensed" --output_dir ~/tesstutorial/engeval
-```
-
-We will use that data later to demonstrate tuning.
-
-# Tutorial Guide to lstmtraining
-
-## Creating Starter Traineddata
-
-NOTE: This is a new step!
-
-Instead of a `unicharset` and `script_dir,` `lstmtraining` now takes a
-`traineddata` file on its command-line, to obtain all the information it needs
-on the language to be learned. The `traineddata` *must* contain at least an
-`lstm-unicharset` and `lstm-recoder` component, and may also contain the three
-dawg files: `lstm-punc-dawg lstm-word-dawg lstm-number-dawg` A `config` file is
-also optional. The other components, if present, will be ignored and unused.
-
-There is no tool to create the `lstm-recoder` directly. Instead there is a new
-tool, `combine_lang_model` which takes as input an `input_unicharset` and
-`script_dir` (`script_dir` points to the `langdata` directory) and `lang` (`lang` is the 
-language being used) and optional word list files. It creates the `lstm-recoder` 
-from the `input_unicharset` and creates all the dawgs, if wordlists are provided, 
-putting everything together into a `traineddata` file.
-
-## LSTMTraining Command Line
+# LSTMTraining Command Line
 
 The lstmtraining program is a multi-purpose tool for training neural networks.
 The following table describes its command-line options:
@@ -351,7 +263,7 @@ Most of the flags work with defaults, and several are only required for
 particular operations listed below, but first some detailed comments on the more
 complex flags:
 
-### Unicharset Compression-recoding
+## Unicharset Compression-recoding
 
 LSTMs are great at learning sequences, but slow down *a lot* when the number of
 states is too large. There are empirical results that suggest it is better to
@@ -369,7 +281,7 @@ encoding in the unicharset. To make full use of this improvement, the
 `--pass_through_recoder` flag should be set for `combine_lang_model` for these
 scripts.
 
-### Randomized Training Data and sequential_training
+## Randomized Training Data and sequential_training
 
 For Stochastic Gradient Descent to work properly, the training data is supposed
 to be randomly shuffled across all the sample files, so the trainer can read its
@@ -386,14 +298,14 @@ style (a handwritten manuscript book for instance) then you can use the
 since it will load data from only two files at a time, and process them in
 sequence. (The second file is read-ahead so it is ready when needed.)
 
-### Model output
+## Model output
 
 The trainer saves checkpoints periodically using `--model_output` as a basename.
 It is therefore possible to stop training at any point, and restart it, using
 the same command line, and it will continue. To force a restart, use a different
 `--model_output` or delete all the files.
 
-### Net Mode and Optimization
+## Net Mode and Optimization
 
 The `128` flag turns on Adam optimization, which seems to work a lot better than
 plain momentum.
@@ -406,7 +318,7 @@ learning.
 The default value of `net_mode` of `192` enables both Adam and layer-specific
 learning rates.
 
-### Perfect Sample Delay
+## Perfect Sample Delay
 
 Training on "easy" samples isn't necessarily a good idea, as it is a waste of
 time, but the network shouldn't be allowed to forget how to handle them, so it
@@ -417,7 +329,7 @@ value of zero uses all samples. In practice the value doesn't seem to have a
 huge effect, and if training is allowed to run long enough, zero produces the
 best results.
 
-### Debug Interval and Visual Debugging
+## Debug Interval and Visual Debugging
 
 With zero (default) `--debug_interval`, the trainer outputs a progress report
 every 100 iterations.
@@ -463,7 +375,149 @@ strength of output against image x-coordinate. Instead of a heatmap, like the
 `Output` window, a different colored line is drawn for each character class and
 the y-axis is strength of output.
 
-## Training From Scratch
+# TessTutorial
+
+The process of [Creating the training data](#creating-training-data) is
+documented below, followed by a [Tutorial guide to
+lstmtraining](#tutorial-guide-to-lstmtraining) which gives an introduction to
+the main training process, with command-lines that have been tested for real. On
+Linux at least, you should be able to just copy-paste the command lines into
+your terminal. 
+
+To make the `tesstrain.sh` script work, it will be necessary to
+either set `PATH` to include your local `training` and `api` directories, or use
+`make install`.
+
+## One-time Setup for TessTutorial
+
+In order to successfully run the TessTutorial, you need to have a working 
+installation of tesseract and training tools and have the training scripts and 
+required traineddata files in certain directories. 
+These instructions only cover the case of rendering from fonts, 
+so the [needed fonts](Fonts) must be installed first.
+Note that your fonts location may vary.
+
+```
+sudo apt update
+sudo apt install ttf-mscorefonts-installer
+sudo apt install fonts-dejavu
+fc-cache -vf
+```
+
+Follow the instructions below
+to do the first time setup for TessTutorial.
+
+```
+mkdir ~/tesstutorial
+cd ~/tesstutorial
+
+mkdir langdata
+cd langdata
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/radical-stroke.txt
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/common.punc
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/font_properties
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/Latin.unicharset
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/Latin.xheights
+mkdir eng
+cd eng
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.training_text
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.punc
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.numbers
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.wordlist
+
+cd ~/tesstutorial
+git clone --depth 1 https://github.com/tesseract-ocr/tesseract.git
+cd tesseract/tessdata
+mkdir best
+cd best
+wget https://github.com/tesseract-ocr/tessdata_best/raw/master/eng.traineddata
+wget https://github.com/tesseract-ocr/tessdata_best/raw/master/heb.traineddata
+wget https://github.com/tesseract-ocr/tessdata_best/raw/master/chi_sim.traineddata
+
+```
+
+## Creating Training Data
+
+As with base Tesseract, there is a choice between rendering synthetic training
+data from fonts, or labeling some pre-existing images (like ancient manuscripts
+for example).
+  
+In either case, the required format is still the tiff/box file
+pair, except that the boxes only need to cover a textline instead of individual
+characters.
+
+### Making Box Files
+
+Each line in the box file matches a 'character' (glyph) in the tiff image.
+
+`<symbol> <left> <bottom> <right> <top> <page>`
+
+To mark an end-of-textline, a special line must be inserted after a series of lines.
+
+`<tab> <left> <bottom> <right> <top> <page>`
+
+Note that in all cases, even for right-to-left languages, such as Arabic, the
+text transcription for the line, *should be ordered left-to-right.* In other words, the network
+is going to learn from left-to-right regardless of the language, and the
+right-to-left/bidi handling happens at a higher level inside Tesseract.
+
+### Using tesstrain.sh
+
+The setup for running tesstrain.sh is the
+same as for base Tesseract. Use `--linedata_only` option for LSTM training.
+Note that it is beneficial to have more training
+text and make more pages though, as neural nets don't generalize as well and
+need to train on something similar to what they will be running on. If the
+target domain is severely limited, then all the dire warnings about needing a
+lot of training data may not apply, but the network specification may need to be
+changed.
+
+Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/src/training/tesstrain.sh)
+as follows: 
+
+```
+src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+  --noextract_font_properties --langdata_dir ../langdata \
+  --tessdata_dir ./tessdata --output_dir ~/tesstutorial/engtrain
+```
+
+The above command makes LSTM training data equivalent to the data used to train
+base Tesseract for English. For making a general-purpose LSTM-based OCR engine,
+it is woefully inadequate, but makes a good tutorial demo.
+
+Now try this to make eval data for the 'Impact' font:
+
+```
+src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+  --noextract_font_properties --langdata_dir ../langdata \
+  --tessdata_dir ./tessdata \
+  --fontlist "Impact Condensed" --output_dir ~/tesstutorial/engeval
+```
+We will use that data later to demonstrate tuning.
+
+## Tutorial guide to lstmtraining
+
+### Creating Starter Traineddata
+
+NOTE: This is a new step!
+
+Instead of a `unicharset` and `script_dir,` `lstmtraining` now takes a
+`traineddata` file on its command-line, to obtain all the information it needs
+on the language to be learned. The `traineddata` *must* contain at least an
+`lstm-unicharset` and `lstm-recoder` component, and may also contain the three
+dawg files: `lstm-punc-dawg lstm-word-dawg lstm-number-dawg` A `config` file is
+also optional. The other components, if present, will be ignored and unused.
+
+There is no tool to create the `lstm-recoder` directly. Instead there is a new
+tool, `combine_lang_model` which takes as input an `input_unicharset` and
+`script_dir` (`script_dir` points to the `langdata` directory) and `lang` (`lang` is the 
+language being used) and optional word list files. It creates the `lstm-recoder` 
+from the `input_unicharset` and creates all the dawgs, if wordlists are provided, 
+putting everything together into a `traineddata` file.
+
+
+
+### Training From Scratch
 
 The following example shows the command line for training from scratch. Try it
 with the default training data created with the command-lines above.
@@ -580,7 +634,7 @@ of training data, or you need to shrink the network by reducing some of the
 sizes of the layers in the `--net_spec` above. Alternatively, you could try fine
 tuning...
 
-## Fine Tuning for Impact
+### Fine Tuning for Impact
 
 Fine tuning is the process of training an existing model on new data without
 changing any part of the network, although you **can** now add
@@ -669,7 +723,7 @@ In summary, the pre-trained model can be fine-tuned or adapted to a small data
 set, **without doing a lot of harm to its general accuracy.** It is still very
 important however, to avoid over-fitting.
 
-## Fine Tuning for ± a few characters
+### Fine Tuning for ± a few characters
 
 **New feature** It is possible to add a few new characters to the character set
 and train for them by fine tuning, without a large amount of training data.
@@ -779,7 +833,7 @@ over-fitting. ADAM, is great for finding the feature combinations necessary to
 get that rare class correct, but it does seem to overfit more than simpler
 optimizers.
 
-## Training Just a Few Layers
+### Training Just a Few Layers
 
 Fine tuning is OK if you only want to add a new font style or need a couple of
 new characters, but what if you want to train for Klingon? You are unlikely to
