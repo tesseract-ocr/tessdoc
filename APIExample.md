@@ -263,8 +263,7 @@ script_conf = ffi.new('float *')
 orient_conf = ffi.new('float *')
 libtess.TessBaseAPIDetectOrientationScript(api, script_name, orient_deg, script_conf, orient_conf)
 
-ffi.string(script_name[0])
-
+print(ffi.string(script_name).decode('utf-8'))
 print(orient_deg[0])
 print(script_conf[0])
 print(orient_conf[0])
