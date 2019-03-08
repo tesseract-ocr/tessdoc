@@ -23,25 +23,25 @@ apt-get install libpango1.0-dev
 
 Afterwards, to clone the master branch to your computer, do this:
 ```
-git clone https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
+git clone https://github.com/tesseract-ocr/tesseract.git
 ```
 
 or to make a shallow clone with commit history truncated to the latest commit only:
 ```
-git clone --depth 1  https://github.com/tesseract-ocr/tesseract.git tesseract-ocr
+git clone --depth 1  https://github.com/tesseract-ocr/tesseract.git
 ```
 
 or to clone a different branch/version:
 ```
-git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> --single-branch tesseract-ocr
+git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> --single-branch
 ```
 
 ---
-**Note:** Leptonica v1.74 needs to be manually compiled from source available at [DanBloomberg/leptonica](https://github.com/DanBloomberg/leptonica).
+**Note:** Tesseract requires Leptonica v1.74 or newer. If your system has only older versions of Leptonica, you must compile it manually from source available at [DanBloomberg/leptonica](https://github.com/DanBloomberg/leptonica).
 
 Finally, run these:
 ```
-    cd tesseract-ocr
+    cd tesseract
     ./autogen.sh
     ./configure
     make
@@ -71,11 +71,12 @@ Try to run `autoreconf -i` after running `./autogen.sh`.
 ### Debug Builds
 Such builds produce Tesseract binaries which run very slowly. They are not useful for production, but good to find or analyze software problems. This is a proven build sequence:
 
-    cd tesseract-ocr
+    cd tesseract
     ./autogen.sh
     mkdir -p bin/debug
     cd bin/debug
     ../../configure --enable-debug --disable-shared 'CXXFLAGS=-g -O0 -Wall -Wextra -Wpedantic -fsanitize=address -fsanitize=leak -fsanitize=undefined -fstack-protector-strong -ftrapv'
+    # Build tesseract and training tools. Run `make` if you don't need the training tools.
     make training
     cd ../..
 
@@ -85,11 +86,12 @@ This activates debug code, does not use a shared Tesseract library (that makes i
 ### Profiling Builds
 Such builds can be used to investigate performance problems. Tesseract will run slower than without profiling, but with acceptable speed. This is a proven build sequence:
 
-    cd tesseract-ocr
+    cd tesseract
     ./autogen.sh
     mkdir -p bin/profiling
     cd bin/profiling
     ../../configure --disable-shared 'CXXFLAGS=-g -p -O2 -Wall -Wextra -Wpedantic'
+    # Build tesseract and training tools. Run `make` if you don't need the training tools.
     make training
     cd ../..
 
@@ -110,11 +112,12 @@ For mass production with hundreds or thousands of images that default is bad bec
 
 This is a proven build sequence:
 
-    cd tesseract-ocr
+    cd tesseract
     ./autogen.sh
     mkdir -p bin/release
     cd bin/release
     ../../configure --disable-openmp --disable-shared 'CXXFLAGS=-g -O2 -fno-math-errno -Wall -Wextra -Wpedantic'
+    # Build tesseract and training tools. Run `make` if you don't need the training tools.
     make training
     cd ../..
 
@@ -123,7 +126,7 @@ disables setting of `errno` for mathematical functions (faster execution!) and e
 
 
 ## Running unit tests
-The Tesseract code includes unit tests which have additional requirements. They need model files (`*.traineddata`) and several Git submodules:
+The Tesseract code includes unit tests which have additional requirements. They need the training tools (see requirements above), model files (`*.traineddata`) and several Git submodules:
 
     # Close the Tesseract source tree.
     git clone https://github.com/tesseract-ocr/tesseract.git
@@ -148,9 +151,6 @@ The unit tests can also be run individually, for example
 
     bin/unittest/unittest/stringrenderer_test
 
-
-## Training Tools
-See [Building the training tools](https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract#building-the-training-tools).
 
 ## Building using Windows Visual Studio
 See [Compiling for Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows).
