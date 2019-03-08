@@ -125,12 +125,14 @@ disables setting of `errno` for mathematical functions (faster execution!) and e
 ## Running unit tests
 The Tesseract code includes unit tests which have additional requirements. They need model files (`*.traineddata`) and several Git submodules:
 
+    # Close the Tesseract source tree.
+    git clone https://github.com/tesseract-ocr/tesseract.git
     # Clone repositories with model files (on the same level as the `tesseract` clone).
     git clone https://github.com/tesseract-ocr/tessdata.git
     git clone https://github.com/tesseract-ocr/tessdata_best.git
     git clone https://github.com/tesseract-ocr/tessdata_fast.git
     # Change to the Tesseract source tree and get all submodules.
-    cd tesseract-ocr
+    cd tesseract
     git submodule update --init
     # Build the training tools (see above). Here we use a release build with sanitizers.
     cd tesseract-ocr
@@ -142,6 +144,10 @@ The Tesseract code includes unit tests which have additional requirements. They 
     # Run the unit tests.
     make check
     cd ../..
+
+The unit tests can also be run individually, for example
+
+    bin/unittest/unittest/stringrenderer_test
 
 
 ## Training Tools
