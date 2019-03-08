@@ -134,7 +134,7 @@ The Tesseract code includes unit tests which have additional requirements. They 
     # Change to the Tesseract source tree and get all submodules.
     cd tesseract
     git submodule update --init
-    # Build the training tools (see above). Here we use a release build with sanitizers.
+    # Build the training tools (see above). Here we use a release built with sanitizers.
     cd tesseract-ocr
     ./autogen.sh
     mkdir -p bin/unittest
