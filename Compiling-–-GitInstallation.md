@@ -132,10 +132,16 @@ The Tesseract code includes unit tests which have additional requirements. They 
     # Change to the Tesseract source tree and get all submodules.
     cd tesseract-ocr
     git submodule update --init
-    # Build the training tools (see above).
-    # ...
+    # Build the training tools (see above). Here we use a release build with sanitizers.
+    cd tesseract-ocr
+    ./autogen.sh
+    mkdir -p bin/unittest
+    cd bin/unittest
+    ../../configure --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic -fsanitize=address -fsanitize=leak -fsanitize=undefined -fstack-protector-strong -ftrapv'
+    make training
     # Run the unit tests.
     make check
+    cd ../..
 
 
 ## Training Tools
