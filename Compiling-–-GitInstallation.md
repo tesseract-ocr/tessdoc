@@ -122,6 +122,22 @@ This disabled OpenMP (multi threading), does not use a shared Tesseract library 
 disables setting of `errno` for mathematical functions (faster execution!) and enables lots of compiler warnings.
 
 
+## Running unit tests
+The Tesseract code includes unit tests which have additional requirements. They need model files (`*.traineddata`) and several Git submodules:
+
+    # Clone repositories with model files (on the same level as the `tesseract` clone).
+    git clone https://github.com/tesseract-ocr/tessdata.git
+    git clone https://github.com/tesseract-ocr/tessdata_best.git
+    git clone https://github.com/tesseract-ocr/tessdata_fast.git
+    # Change to the Tesseract source tree and get all submodules.
+    cd tesseract-ocr
+    git submodule update --init
+    # Build the training tools (see above).
+    # ...
+    # Run the unit tests.
+    make check
+
+
 ## Training Tools
 See [Building the training tools](https://github.com/tesseract-ocr/tesseract/wiki/Training-Tesseract#building-the-training-tools).
 
