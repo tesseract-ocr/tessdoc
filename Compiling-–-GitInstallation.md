@@ -95,6 +95,8 @@ This will create log files for all unit tests, both individual and accumulated, 
 
     bin/unittest/unittest/stringrenderer_test
 
+Failed tests will show prominently as segfaults or SIGILL handlers (depending on the platform).
+
 
 ### Debug Builds
 Such builds produce Tesseract binaries which run very slowly. They are not useful for production, but good to find or analyze software problems. This is a proven build sequence:
