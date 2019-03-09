@@ -68,6 +68,34 @@ make: *** [all] Error 2
 
 Try to run `autoreconf -i` after running `./autogen.sh`.
 
+### Unit test builds
+Such builds can be used to run the automated regression tests, which have additional requirements. This includes the additional dependencies for the training tools (as mentioned above), and downloading all git submodules, as well as the model repositories (`*.traineddata`):
+
+    # Clone the Tesseract source tree:
+    git clone https://github.com/tesseract-ocr/tesseract.git
+    # Clone repositories with model files (from the same directory):
+    git clone https://github.com/tesseract-ocr/tessdata.git
+    git clone https://github.com/tesseract-ocr/tessdata_best.git
+    git clone https://github.com/tesseract-ocr/tessdata_fast.git
+    git clone https://github.com/tesseract-ocr/langdata_lstm.git
+    # Change to the Tesseract source tree and get all submodules:
+    cd tesseract
+    git submodule update --init
+    # Build the training tools (see above). Here we use a release built with sanitizers:
+    ./autogen.sh
+    mkdir -p bin/unittest
+    cd bin/unittest
+    ../../configure --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic -fsanitize=address -fsanitize=leak -fsanitize=undefined -fstack-protector-strong -ftrapv'
+    make training
+    # Run the unit tests:
+    make check
+    cd ../..
+
+This will create log files for all unit tests, both individual and accumulated, under `bin/unittest/unittest`. They can also be run standalone, for example
+
+    bin/unittest/unittest/stringrenderer_test
+
+
 ### Debug Builds
 Such builds produce Tesseract binaries which run very slowly. They are not useful for production, but good to find or analyze software problems. This is a proven build sequence:
 
@@ -124,33 +152,5 @@ This is a proven build sequence:
 This disabled OpenMP (multi threading), does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation), enables compiler optimizations,
 disables setting of `errno` for mathematical functions (faster execution!) and enables lots of compiler warnings.
 
-
-## Running unit tests
-The Tesseract code includes unit tests which have additional requirements. They need the training tools (see requirements above), model files (`*.traineddata`) and several Git submodules:
-
-    # Close the Tesseract source tree.
-    git clone https://github.com/tesseract-ocr/tesseract.git
-    # Clone repositories with model files (on the same level as the `tesseract` clone).
-    git clone https://github.com/tesseract-ocr/tessdata.git
-    git clone https://github.com/tesseract-ocr/tessdata_best.git
-    git clone https://github.com/tesseract-ocr/tessdata_fast.git
-    # Change to the Tesseract source tree and get all submodules.
-    cd tesseract
-    git submodule update --init
-    # Build the training tools (see above). Here we use a release built with sanitizers.
-    ./autogen.sh
-    mkdir -p bin/unittest
-    cd bin/unittest
-    ../../configure --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic -fsanitize=address -fsanitize=leak -fsanitize=undefined -fstack-protector-strong -ftrapv'
-    make training
-    # Run the unit tests.
-    make check
-    cd ../..
-
-The unit tests can also be run individually, for example
-
-    bin/unittest/unittest/stringrenderer_test
-
-
-## Building using Windows Visual Studio
+### Building using Windows Visual Studio
 See [Compiling for Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows).
