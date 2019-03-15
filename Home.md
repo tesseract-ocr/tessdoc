@@ -184,13 +184,13 @@ To access tesseract-OCR from any location you may have to add the directory wher
 
 Experts can also get binaries build with Visual Studio from the build artifacts of the [Appveyor Continuous Integration](https://ci.appveyor.com/project/zdenop/tesseract/history).
 
-## Cygwin
+### Cygwin
 
 Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) [Cygwin](https://www.cygwin.com/)
 
 The latest version available is 4.00. Please see [announcement](https://www.cygwin.com/ml/cygwin-announce/2018-10/msg00020.html).
 
-## MSYS2
+### MSYS2
 
 Install tesseract-OCR:
 
