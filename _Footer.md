@@ -1,1 +1,0 @@
-_**### Tesseract Wiki**_
