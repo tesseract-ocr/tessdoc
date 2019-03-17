@@ -17,6 +17,7 @@
 | [Ocrivist](http://www.ocrivist.com/) | X         |         |             | GPL v3      | Ocrivist is a utility which makes it possible to scan and OCR books and other printed documents to PDF or Djvu format |
 | [Tesseract-GUI](http://tesseract-gui.sourceforge.net) | X         |         |             | GPL v2      | Tessract-GUI is not a front-end for tesseract-ocr, it is just a graphical way to use it  with simple image manipulation through ImageMagick |
 | [QTesseract](http://code.google.com/p/qtesseract/) | X         |         |             | LGPL v3     | QT GUI for the Tesseract OCR |
+| [dpScreenOCR](https://danpla.github.io/dpscreenocr/) | X         |          |          | zlib | Program to recognize text on screen |
 | [pmOCR](http://github.com/deajan/pmocr/) | X         |          |          | BSD | Batch OCR tool, also file monitor event OCR with tesseract |
 | [tesseract4java](http://github.com/tesseract4java/tesseract4java) | X         | X        | X        | GPLv3 | A cross-platform GUI for training and running Tesseract with advanced features like batch recognition and accuracy evaluation |
 | [Linux-Intelligent-OCR-Solution(lios)](https://github.com/Nalin-x-Linux/lios-3.git) | X         |         |          | GPLv3 | A GUI for scanning, running and training Tesseract with total accessibility for visually impaired and advanced features like  Scanner Brightness optimizer, Text-Cleaner, etc |
