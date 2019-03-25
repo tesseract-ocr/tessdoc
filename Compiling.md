@@ -2,6 +2,8 @@
 
 **Note:** This wiki expects you to be familiar with compiling software on your operation system.
 
+*Use the same tools for building tesseract as you used for [building leptonica](https://github.com/DanBloomberg/leptonica/issues/410).*
+
 ## Table of contents
 * [Linux](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#linux)
 * [Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows)
