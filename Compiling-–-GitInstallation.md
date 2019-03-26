@@ -1,4 +1,13 @@
 # Installing Tesseract from Git
+##### Table of Contents  
+* [Installing With Autoconf Tools](#installing-with-autoconf-tools)
+  * [Unit test builds](#unit-test-builds)
+  * [Debug builds](#debug-builds)
+  * [Profiling builds](#profiling-builds)
+  * [Release Builds for Mass Production](#release-builds-for-mass-production)
+  * [Builds for fuzzing](#builds-for-fuzzing)
+* [Building using Windows Visual Studio](#building-using-windows-visual-studio)
+
 These are the instructions for installing Tesseract from the git repository. You should be ready to face unexpected problems.
 
 ## Installing With Autoconf Tools
@@ -183,5 +192,5 @@ Example (Run the fuzzer with a know test case):
 
     nice bin/fuzzer/fuzzer-api -jobs=16 -workers=16
 
-### Building using Windows Visual Studio
+## Building using Windows Visual Studio
 See [Compiling for Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows).
