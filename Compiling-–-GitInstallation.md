@@ -154,5 +154,34 @@ This is a proven build sequence:
 This disabled OpenMP (multi threading), does not use a shared Tesseract library (that makes it possible to run `tesseract` without installation), enables compiler optimizations,
 disables setting of `errno` for mathematical functions (faster execution!) and enables lots of compiler warnings.
 
+### Builds for fuzzing
+Fuzzing is used to test the Tesseract API for bugs. Tesseract uses [OSS-Fuzz](https://oss-fuzz.com/),
+but fuzzing can also run locally. A newer Clang++ compiler is required.
+
+Build example (fix the value of CXX for the available clang++):
+
+    cd tesseract
+    ./autogen.sh
+    mkdir -p bin/fuzzer
+    cd bin/fuzzer
+    ../../configure --disable-openmp --disable-shared CXX=clang++-7 CXXFLAGS='-g -O2 -Wall -Wextra -Wpedantic -D_GLIBCXX_DEBUG -fsanitize=fuzzer-no-link,address,undefined'
+    # Build the fuzzer executable.
+    make fuzzer-api
+    cd ../..
+
+Example (Show help information):
+
+    bin/fuzzer/fuzzer-api -help=1
+
+Example (Run the fuzzer with a know test case):
+
+    bin/fuzzer/fuzzer-api clusterfuzz-testcase-minimized-fuzzer-api-5670045835853824
+
+Example (Run the fuzzer to find new bugs):
+
+Example (Run the fuzzer with a know test case):
+
+    nice bin/fuzzer/fuzzer-api -jobs=16 -workers=16
+
 ### Building using Windows Visual Studio
 See [Compiling for Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows).
