@@ -448,9 +448,15 @@ characters.
 
 ### Making Box Files
 
+Multiple formats of box files are accepted by Tesseract 4 for LSTM training, 
+though they are different from the one used by Tesseract 3 
+([details](https://github.com/tesseract-ocr/tesseract/issues/2357)).
+
 Each line in the box file matches a 'character' (glyph) in the tiff image.
 
-`<symbol> <left> <bottom> <right> <top> <page>`
+`<symbol> <left> <bottom> <right> <top> <page>`  
+Where `<left> <bottom> <right> <top> <page>` could be bounding-box coordinates 
+of a single glyph or of a whole textline ([see examples](https://github.com/tesseract-ocr/tesseract/issues/2357#issuecomment-477239316)).
 
 To mark an end-of-textline, a special line must be inserted after a series of lines.
 
@@ -460,6 +466,8 @@ Note that in all cases, even for right-to-left languages, such as Arabic, the
 text transcription for the line, *should be ordered left-to-right.* In other words, the network
 is going to learn from left-to-right regardless of the language, and the
 right-to-left/bidi handling happens at a higher level inside Tesseract.
+
+
 
 ### Using tesstrain.sh
 
