@@ -42,7 +42,7 @@ For distributions that are supported by snapd you may also run the following com
 
 The traineddata is currently not shipped with the snap package and must be placed manually to `~/snap/tesseract/current`.
 
-### Tesseract 4.0.0-beta packages with LSTM engine and related traineddata.
+### Tesseract 4 packages with LSTM engine and related traineddata.
 
 #### Debian
 
@@ -175,7 +175,7 @@ Possible location can be `/usr/local/Cellar/tesseract/3.05.02/share/tessdata/`
 
 ## Windows
 
-Installer for Windows for Tesseract 3.05-02 and Tesseract 4.00-beta are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
+Installer for Windows for Tesseract 3.05 and Tesseract 4 are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
 
 An installer for the **OLD version 3.02** is available for Windows from our [download](Downloads) page. This includes the English training data. If you want to use another language, [download the appropriate training data](
 https://github.com/tesseract-ocr/tesseract/wiki/Data-Files), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
