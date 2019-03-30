@@ -11,6 +11,12 @@ See the [man](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tessera
 
    `tesseract input.tiff output --oem 1 -l eng`
 
+------------------------------------------
+
+## Basic Command Line Usage
+
+See [Running Tesseract](https://github.com/tesseract-ocr/tesseract/wiki#running-tesseract) for basic command line usage.
+
 ## Add page break in output
 
   In older Tesseract (before September 2017) use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPARATOR]"` 
