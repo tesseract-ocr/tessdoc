@@ -1,6 +1,6 @@
 # Improving the quality of the output
 
-There are a variety of reasons you might not get good quality output from Tesseract. It's important to note that unless you're using a very unusual font or a new language retraining Tesseract is unlikely to help.
+There are a variety of reasons you might not get good quality output from Tesseract. It's important to note that, unless you're using a very unusual font or a new language, retraining Tesseract is unlikely to help.
 
 
 * [Image processing](#image-processing)
