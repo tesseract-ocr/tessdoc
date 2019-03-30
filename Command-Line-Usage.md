@@ -8,6 +8,10 @@ See the [man](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tessera
 
 See [Running Tesseract](https://github.com/tesseract-ocr/tesseract/wiki#running-tesseract) for basic command line usage.
 
+## FAQ
+
+See [FAQ](https://github.com/tesseract-ocr/tesseract/wiki/FAQ#running-tesseract) for more examples and tips.
+
 --------------------------------------------
 
 ## Available OCR Engines in Tesseract 4
@@ -15,43 +19,6 @@ See [Running Tesseract](https://github.com/tesseract-ocr/tesseract/wiki#running-
    Use `--oem 1` for LSTM, `--oem 0` for Legacy Tesseract. Please note that Legacy Tesseract models are only included in traineddata files from [tessdata](https://github.com/tesseract-ocr/tessdata) repo.
 
    `tesseract input.tiff output --oem 1 -l eng`
-
-------------------------------------------
-
-## Add page break in output
-
-  In older Tesseract (before September 2017) use the config variable as part of command `-c include_page_breaks=1 -c page_separator="[PAGE SEPARATOR]"` 
-
-  Default page separator is  the form feed control character.
-  
-  `tesseract -c include_page_breaks=1 input.tiff output`
-
-  In newer Tesseract (after September 2017) the `include_page_breaks` config variable has been removed.  The default is now to separate pages with the form feed control character.  Use `-c page_separator="[PAGE SEPARATOR]"` to use a different separator, and `-c page_separator=''` to disable page breaks entirely.
-
-## OCR multiple images with one run of tesseract
-
-   Prepare a text file that has the path to each image:
-
-   ```
-   path/to/1.png
-   path/to/2.png
-   path/to/3.tiff
-   ```
-
-   Save it, and then give its name as input file to Tesseract.
-
-   `tesseract savedlist output`
-
-
-## OCR single page of a multi-page tiff
-
-  Use the config variable as part of command `-c tessedit_page_number=0 ` 
-
-## Integrate original image file and detected text into PDF
-   
-   Use the config variable `-c textonly_pdf=1` and Merge your image-only and text-only PDF.
-
-   see https://github.com/tesseract-ocr/tesseract/issues/660#issuecomment-274213632 for details
 
 ---------------------------------------------
 
