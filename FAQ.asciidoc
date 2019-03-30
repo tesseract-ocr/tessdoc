@@ -145,7 +145,7 @@ Save it, and then give its name as input file to Tesseract.
 
 == How to OCR single page of a multi-page tiff?
 
-Use the `tessedit_page_number` config variable as part of command eg. `-c tessedit_page_number=0 ` 
+Use the `tessedit_page_number` config variable as part of command eg. `tesseract myscan.png out -c tessedit_page_number=0` 
 
 == How to OCR streaming images to pdf using Tesseract?
 
