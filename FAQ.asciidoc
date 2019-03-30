@@ -115,6 +115,8 @@ behaviour of adding an empty line at the end of each page.
 
 Setting `page_separator` to an empty string would omit page separators.
 
+In newer Tesseract (after September 2017) the `include_page_breaks` config variable has been removed.  The default is now to separate pages with the form feed control character.  Use `-c page_separator="[PAGE SEPARATOR]"` to use a different separator, and `-c page_separator=''` to disable page breaks entirely.
+
 = Running Tesseract
 
 == How do I run Tesseract 4.0.0 from the command line?
@@ -140,6 +142,10 @@ path/to/3.tiff
 Save it, and then give its name as input file to Tesseract.
 
 `tesseract savedlist output`
+
+== How to OCR single page of a multi-page tiff?
+
+Use the `tessedit_page_number` config variable as part of command eg. `-c tessedit_page_number=0 ` 
 
 == How to OCR streaming images to pdf using Tesseract?
 
@@ -281,6 +287,12 @@ searchable text layer may be not understood by your PDF reader. For
 example, Preview.app in Mac OS X is well known for having problems like
 this, and might "see" only spaces and no text. Try using Adobe Acrobat
 Reader instead.
+
+== How do I integrate original image file and detected text into PDF?
+   
+Use the config variable `-c textonly_pdf=1` and Merge your image-only and text-only PDF.
+
+See https://github.com/tesseract-ocr/tesseract/issues/660#issuecomment-274213632 for details.
 
 = Miscellaneous
 
