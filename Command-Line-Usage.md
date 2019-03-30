@@ -2,20 +2,21 @@
 
 See the [man](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) page for command line syntax and other details.
 
+--------------------------------------------
+
+## Basic Command Line Usage
+
+See [Running Tesseract](https://github.com/tesseract-ocr/tesseract/wiki#running-tesseract) for basic command line usage.
 
 --------------------------------------------
 
-## Using LSTM Engine with Tesseract 4
+## Available OCR Engines in Tesseract 4
 
    Use `--oem 1` for LSTM, `--oem 0` for Legacy Tesseract. Please note that Legacy Tesseract models are only included in traineddata files from [tessdata](https://github.com/tesseract-ocr/tessdata) repo.
 
    `tesseract input.tiff output --oem 1 -l eng`
 
 ------------------------------------------
-
-## Basic Command Line Usage
-
-See [Running Tesseract](https://github.com/tesseract-ocr/tesseract/wiki#running-tesseract) for basic command line usage.
 
 ## Add page break in output
 
