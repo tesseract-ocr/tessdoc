@@ -94,7 +94,7 @@ Such builds can be used to run the automated regression tests, which have additi
     ./autogen.sh
     mkdir -p bin/unittest
     cd bin/unittest
-    ../../configure --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic -fsanitize=address -fsanitize=leak -fsanitize=undefined -fstack-protector-strong -ftrapv'
+    ../../configure --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic -fsanitize=address,undefined -fstack-protector-strong -ftrapv'
     make training
     # Run the unit tests:
     make check
@@ -114,7 +114,7 @@ Such builds produce Tesseract binaries which run very slowly. They are not usefu
     ./autogen.sh
     mkdir -p bin/debug
     cd bin/debug
-    ../../configure --enable-debug --disable-shared 'CXXFLAGS=-g -O0 -Wall -Wextra -Wpedantic -fsanitize=address -fsanitize=leak -fsanitize=undefined -fstack-protector-strong -ftrapv'
+    ../../configure --enable-debug --disable-shared 'CXXFLAGS=-g -O0 -Wall -Wextra -Wpedantic -fsanitize=address,undefined -fstack-protector-strong -ftrapv'
     # Build tesseract and training tools. Run `make` if you don't need the training tools.
     make training
     cd ../..
