@@ -1,6 +1,7 @@
 # Installing Tesseract from Git
 ##### Table of Contents  
 * [Installing With Autoconf Tools](#installing-with-autoconf-tools)
+  * [Build with Training Tools](#build-with-training-tools)
   * [Unit test builds](#unit-test-builds)
   * [Debug builds](#debug-builds)
   * [Profiling builds](#profiling-builds)
@@ -76,6 +77,33 @@ make: *** [all] Error 2
 ```
 
 Try to run `autoreconf -i` after running `./autogen.sh`.
+
+### Build with Training Tools
+
+The above does not build the Tesseract training tools.
+If you plan to install the training tools, you also need the following libraries:
+
+```
+sudo apt-get install libicu-dev
+sudo apt-get install libpango1.0-dev
+sudo apt-get install libcairo2-dev
+```
+
+To build Tesseract with training tools, run the following:
+
+```
+    cd tesseract
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+    sudo ldconfig
+    make training
+    sudo make training-install
+```
+You can specify extra options for configure, as needed. eg.
+`../configure  --enable-openmp --disable-debug --disable-opencl --disable-graphics --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic'`
+
 
 ### Unit test builds
 Such builds can be used to run the automated regression tests, which have additional requirements. This includes the additional dependencies for the training tools (as mentioned above), and downloading all git submodules, as well as the model repositories (`*.traineddata`):
