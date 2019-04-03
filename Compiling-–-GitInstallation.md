@@ -102,7 +102,8 @@ To build Tesseract with training tools, run the following:
     sudo make training-install
 ```
 You can specify extra options for configure, as needed. eg.
-`../configure  --enable-openmp --disable-debug --disable-opencl --disable-graphics --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic'`
+
+`./configure  --enable-openmp --disable-debug --disable-opencl --disable-graphics --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic'`
 
 
 ### Unit test builds
