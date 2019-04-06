@@ -31,7 +31,7 @@ ask questions about training as
          * [Creating Starter Traineddata](TrainingTesseract-4.00.md#creating-starter-traineddata)
          * [Training From Scratch](TrainingTesseract-4.00.md#training-from-scratch)
          * [Fine Tuning for Impact](TrainingTesseract-4.00.md#fine-tuning-for-impact)
-         * [Fine Tuning for ± a few characters](TrainingTesseract-4.00.md#fine-tuning-for--a-few-characters)
+         * [Fine Tuning for ± a few characters](TrainingTesseract-4.00.md#fine-tuning-for-a-few-characters)
          * [Training Just a Few Layers](TrainingTesseract-4.00.md#training-just-a-few-layers)
       * [Error Messages From Training](TrainingTesseract-4.00.md#error-messages-from-training)
    * [Combining the Output Files](TrainingTesseract-4.00.md#combining-the-output-files)
@@ -332,10 +332,44 @@ best results.
 ## Debug Interval and Visual Debugging
 
 With zero (default) `--debug_interval`, the trainer outputs a progress report
-every 100 iterations.
+every 100 iterations, similar to the following example.
+
+```
+At iteration 61239/65000/65015, Mean rms=1.62%, delta=8.587%, char train=16.786%, word train=36.633%, skip ratio=0.1%,  wrote checkpoint.
+
+At iteration 61332/65100/65115, Mean rms=1.601%, delta=8.347%, char train=16.497%, word train=36.24%, skip ratio=0.1%,  wrote checkpoint.
+
+2 Percent improvement time=44606, best error was 17.77 @ 16817
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+At iteration 61423/65200/65215, Mean rms=1.559%, delta=7.841%, char train=15.7%, word train=35.68%, skip ratio=0.1%,  New best char error = 15.7At iteration 45481, stage 0, Eval Char error rate=6.9447893, Word error rate=27.039255 wrote best model:./SANLAYER/LAYER15.7_61423.checkpoint wrote checkpoint.
+
+```
 
 With `--debug_interval -1`, the trainer outputs verbose text debug for every
-training iteration.
+training iteration. `GROUND TRUTH` for the line is displayed in all cases.
+`ALIGNED TRUTH` and `BEST OCR TEXT` are displayed only when different from
+the `GROUND TRUTH`.
+
+```
+Iteration 455038: GROUND  TRUTH : उप॑ त्वाग्ने दि॒वेदि॑वे॒ दोषा॑वस्तर्धि॒या व॒यम् ।
+File /tmp/san-2019-03-28.jsY/san.Mangal.exp0.lstmf line 451 (Perfect):
+Mean rms=1.267%, delta=4.155%, train=11.308%(32.421%), skip ratio=0%
+Iteration 455039: GROUND  TRUTH : मे अपराध और बैठे दुकानों नाम सकते अधिवक्ता, दोबारा साधन विषैले लगाने पर प्रयोगकर्ताओं भागे
+File /tmp/san-2019-04-04.H4m/san.FreeSerif.exp0.lstmf line 28 (Perfect):
+Mean rms=1.267%, delta=4.153%, train=11.3%(32.396%), skip ratio=0%
+```
+
+```
+Iteration 1526: GROUND  TRUTH : 𒃻 𒀸 𒆳𒆳 𒅘𒊏𒀀𒋾
+Iteration 1526: ALIGNED TRUTH : 𒃻 𒀸 𒆳𒆳 𒅘𒊏𒊏𒀀𒋾
+Iteration 1526: BEST OCR TEXT :    𒀀𒋾
+File /tmp/eng-2019-04-06.Ieb/eng.CuneiformComposite.exp0.lstmf line 19587 :
+Mean rms=0.941%, delta=12.319%, train=56.134%(99.965%), skip ratio=0.6%
+Iteration 1527: GROUND  TRUTH : 𒀭𒌋𒐊
+Iteration 1527: BEST OCR TEXT : 𒀭𒌋
+File /tmp/eng-2019-04-06.Ieb/eng.CuneiformOB.exp0.lstmf line 7771 :
+Mean rms=0.941%, delta=12.329%, train=56.116%(99.965%), skip ratio=0.6%
+```
 
 With `--debug_interval > 0`, the trainer displays several windows of debug
 information on the layers of the network. In the special case of
