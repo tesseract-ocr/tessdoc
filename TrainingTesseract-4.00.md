@@ -345,8 +345,10 @@ At iteration 61423/65200/65215, Mean rms=1.559%, delta=7.841%, char train=15.7%,
 
 ```
 
-With `--debug_interval -1`, the trainer outputs verbose text debug for every
-training iteration. `GROUND TRUTH` for the line is displayed in all cases.
+With `--debug_interval -1`, the trainer outputs verbose debug text for every
+training iteration. The text debug information includes the truth text, the recognized text, the
+iteration number, the training sample id (lstmf file and line) and the mean value of
+several error metrics. `GROUND TRUTH` for the line is displayed in all cases.
 `ALIGNED TRUTH` and `BEST OCR TEXT` are displayed only when different from
 the `GROUND TRUTH`.
 
@@ -380,10 +382,6 @@ information at the frequency requested.
 **NOTE that to use --debug_interval > 0 you must build
 [ScrollView.jar](ViewerDebugging) as well as the other training tools.** See
 [Building the Training Tools](#building-the-training-tools)
-
-The text debug information includes the truth text, the recognized text, the
-iteration number, the training sample id (file and page) and the mean value of
-several error metrics.
 
 The visual debug information includes:
 
