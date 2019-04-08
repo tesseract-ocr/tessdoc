@@ -25,10 +25,11 @@ We have three sets of .traineddata files on GitHub in three separate repositorie
 * https://github.com/tesseract-ocr/tessdata
 
 Most users will want **`tessdata_fast`** and that is what will be shipped as part of Linux distributions. 
-**`tessdata_best`** is for people willing to trade a lot of speed for slightly better accuracy. It is also
-better for certain retraining scenarios for advanced users.
 
-The third set in **`tessdata`** is for the legacy recognizer. The 4.00 files from November 2016 have both LSTM and legacy models.
+**`tessdata_best`** is for people willing to trade a lot of speed for slightly better accuracy. It is also
+the only set of files which can be used for certain retraining scenarios for advanced users.
+
+The third set in **`tessdata`** is the only one that supports the legacy recognizer. The 4.00 files from November 2016 have both legacy and older LSTM models. The current set of files in **`tessdata`** have the legacy models and newer LSTM  models (integer versions of 4.00.00 alpha models in tessdata_best).
 
 **Note**: When using the new models in the **`tessdata_best`** and **`tessdata_fast`** repositories, only the new LSTM-based OCR engine is supported. The legacy engine is not supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
