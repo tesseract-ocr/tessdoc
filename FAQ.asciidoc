@@ -85,10 +85,10 @@ Tesseract's standard output is a plain txt file (utf-8 encoded, with ''
 as http://en.wikipedia.org/wiki/Newline[end-of-line marker]) and 'FF' as
 a form feed character after each page.
 
-With the configfile 'pdf' tesseract will produce searchable PDF
-containing pages images with a hidden, searchable text layer.
+With the configfile option set to 'pdf', tesseract will produce searchable PDF
+pages containing images with a hidden, searchable text layer.
 
-With the configfile 'hocr' tesseract will produce XHTML output compliant
+With the configfile option set to 'hocr', tesseract will produce XHTML output compliant
 with the
 https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1[hOCR
 specification] (the input image name must be ASCII if the operating
@@ -96,7 +96,7 @@ system use something other than utf-8 encoding for filenames - see
 https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809[issue
 809] for some details).
 
-With the configfile 'tsv' tesseract will produce
+With the configfile option set to 'tsv', tesseract will produce
 https://en.wikipedia.org/wiki/Tab-separated_values[tab-separated values]
 file.
 
