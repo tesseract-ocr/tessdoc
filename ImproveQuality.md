@@ -25,7 +25,7 @@ You can see how Tesseract has processed the image by using the [configuration va
 
 ### Rescaling
 
-Tesseract works best on images which have a DPI of at least 300 dpi, so it may be beneficial to resize images. For more information see [the FAQ](FAQ#is-there-a-minimum-text-size-it-wont-read-screen-text).
+Tesseract works best on images which have a DPI of at least 300 dpi, so it may be beneficial to resize images. For more information see [the FAQ](FAQ-Old#is-there-a-minimum-text-size-it-wont-read-screen-text).
 
 ### Binarisation
 
@@ -131,7 +131,7 @@ Disabling the dictionaries Tesseract uses should increase recognition if most of
 
 It is also possible to add words to the word list Tesseract uses to help recognition, or to add common character patterns, which can further help to improve accuracy if you have a good idea of the sort of input you expect. This is explained in more detail in the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
-If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](ControlParams). See the [FAQ for an example](FAQ#how-do-i-recognize-only-digits).
+If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](ControlParams). See the [FAQ for an example](FAQ-Old#how-do-i-recognize-only-digits). Note this feature is not supported in Tesseract 4. See [here](issues/751#issuecomment-333904808) for a workaround.
 
 
 ## Still having problems?
