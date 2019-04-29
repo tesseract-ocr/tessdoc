@@ -127,7 +127,7 @@ To see a complete list of supported page segmentation modes, use `tesseract -h`.
 
 By default Tesseract is optimized to recognize sentences of words. If you're trying to recognize something else, like receipts, price lists, or codes, there are a few things you can do to improve the accuracy of your results, as well as double-checking that the appropriate [segmentation method](#page-segmentation-method) is selected.
 
-Disabling the dictionaries Tesseract uses should increase recognition if most of your text isn't dictionary words. They can be disabled by setting the both of the [configuration variables](ControlParams) `load_system_dawg` and `load_freq_dawg` to `false`.
+Disabling the dictionaries Tesseract uses should increase recognition if most of your text isn't dictionary words. They can be disabled by setting both of the [configuration variables](ControlParams) `load_system_dawg` and `load_freq_dawg` to `false`.
 
 It is also possible to add words to the word list Tesseract uses to help recognition, or to add common character patterns, which can further help to improve accuracy if you have a good idea of the sort of input you expect. This is explained in more detail in the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
