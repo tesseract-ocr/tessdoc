@@ -79,11 +79,12 @@ Tesseract 4.00 removes alpha channel with leptonica function [pixRemoveAlpha()](
 
 * [Leptonica](http://leptonica.com)
 * [OpenCV](http://opencv.org/)
-* [Scan Tailor](http://scantailor.sourceforge.net/)
+* [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced#-scantailor-advanced)
 * [ImageMagick](http://www.imagemagick.org)
 * [unpaper](https://www.flameeyes.eu/projects/unpaper)
 * [ImageJ](http://rsb.info.nih.gov/ij/)
 * [Gimp](http://www.gimp.org)
+* [PRLib](https://github.com/leha-bot/PRLib) - Pre-Recognize Library with algorithms for improving OCR quality
 
 ### Examples
 
