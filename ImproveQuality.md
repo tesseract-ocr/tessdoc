@@ -53,7 +53,7 @@ Noise is random variation of brightness or colour in an image, that can make the
 
 ![skew-linedetection.png](https://github.com/tesseract-ocr/tesseract/wiki/skew-linedetection.png)
 
-A skewed image is when a page has been scanned when not straight. The quality of Tesseract's line segmentation reduces significantly if a page is too skewed, which severely impacts the quality of the OCR. To address this rotating the page image so that the text lines are horizontal.
+A skewed image is when a page has been scanned when not straight. The quality of Tesseract's line segmentation reduces significantly if a page is too skewed, which severely impacts the quality of the OCR. To address this rotate the page image so that the text lines are horizontal.
 
 
 ### Borders
