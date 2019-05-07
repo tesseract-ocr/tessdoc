@@ -96,7 +96,7 @@ is highly recommended to read the [ImproveQuality](ImproveQuality) page.
 Beginning with 3.03, additional libraries are required to build the training
 tools.
 
-```
+```bash
 sudo apt-get install libicu-dev
 sudo apt-get install libpango1.0-dev
 sudo apt-get install libcairo2-dev
@@ -109,7 +109,36 @@ and install the training tools with separate make commands. Once the above
 additional libraries have been installed, run the following from the Tesseract
 source directory:
 
+```bash
+./configure
 ```
+
+By default Tesseract configuration will proceed if dependencies required only 
+for training are missing, but for training, you will have to ensure all those
+optional dependencies are installed and that Tesseract's build environment
+can locate them. Look for these lines in the output of `./configure`:
+
+```
+checking for pkg-config... [some valid path]
+checking for lept >= 1.74... yes
+checking for libarchive... yes
+checking for icu-uc >= 52.1... yes
+checking for icu-i18n >= 52.1... yes
+checking for pango >= 1.22.0... yes
+checking for cairo... yes
+[...]
+Training tools can be built and installed with:
+```
+
+(The version numbers may change over time, of course. What we are looking for is
+"yes", all of the optional dependencies are available.)
+
+If configure does not say the training tools can be built, you still need to add
+libraries or ensure that `pkg-config` can find them.
+
+After configuring, you can attempt to build the training tools:
+
+```bash
 make
 make training
 sudo make training-install
@@ -117,10 +146,27 @@ sudo make training-install
 
 It is also useful, but not required, to build [ScrollView.jar](ViewerDebugging):
 
-```
+```bash
 make ScrollView.jar
 export SCROLLVIEW_PATH=$PWD/java
 ```
+
+## On macOS Mojave with Homebrew
+
+Homebrew has an unusual way of setting up `pkgconfig` so you must opt-in to certain files.
+In general run `brew info package` and ensure that you append the mentioned PKG_CONFIG_PATH
+to this environment variable.
+
+```bash
+brew install cairo pango icu4c autoconf libffi libarchive
+export PKG_CONFIG_PATH=\
+$(brew --prefix)/lib/pkgconfig:\
+$(brew --prefix)/opt/libarchive/lib/pkgconfig:\
+$(brew --prefix)/opt/icu4c/lib/pkgconfig:\
+$(brew --prefix)/opt/libffi/lib/pkgconfig
+./configure
+```
+
 
 # Hardware-Software Requirements
 
