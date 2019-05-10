@@ -1,6 +1,6 @@
-## [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
+## [Tesseract 'main' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
 
-See the [man](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) page for command line syntax and other details.
+See the [main](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) page for command line syntax and other details.
 
 --------------------------------------------
 
