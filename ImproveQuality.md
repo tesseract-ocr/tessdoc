@@ -39,7 +39,7 @@ Tesseract works best on images which have a DPI of at least 300 dpi, so it may b
 
 This is converting an image to black and white. Tesseract does this internally (Otsu algorithm), but the result can be suboptimal, particularly if the page background is of uneven darkness.
 
-If you are not able to fix by better input image, you can try different algorithm. See [ImageJ Auto Threshold](https://imagej.net/Auto_Threshold) (java) or [OpenCV Image Thresholding](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html) (python) or [scikit-image Thresholding](https://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html) documentation (python).
+If you are not able to fix by better input image, you can try different algorithm. See [ImageJ Auto Threshold](https://imagej.net/Auto_Threshold) (java) or [OpenCV Image Thresholding](https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding.html) (python) or [scikit-image Thresholding](https://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html) documentation (python).
 
 
 ### Noise Removal
