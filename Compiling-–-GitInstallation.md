@@ -106,6 +106,23 @@ You can specify extra options for configure, as needed. eg.
 `./configure  --disable-openmp --disable-debug --disable-opencl --disable-graphics --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic'`
 
 
+### Build with TensorFlow
+Building with TensorFlow requires additional packages for Protocol Buffers and TensorFlow.
+On Debian or Ubuntu, you can probably install them like this:
+
+    apt-get install libprotoc-dev libtensorflow-dev
+
+All builds will automatically build Tesseract and the training tools with TensorFlow if the necessary development files are found. This can be overridden:
+
+    # Enforce build with TensorFlow (will fail if requirements are not met).
+    ./configure --with-tensorflow [...]
+
+    # Don't build with TensorFlow.
+    ./configure --without-tensorflow [...]
+
+Build support with TensorFlow is a new feature in Git master. The resulting code is still untested.
+
+
 ### Unit test builds
 Such builds can be used to run the automated regression tests, which have additional requirements. This includes the additional dependencies for the training tools (as mentioned above), and downloading all git submodules, as well as the model repositories (`*.traineddata`):
 
