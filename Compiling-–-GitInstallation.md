@@ -2,6 +2,7 @@
 ##### Table of Contents  
 * [Installing With Autoconf Tools](#installing-with-autoconf-tools)
   * [Build with Training Tools](#build-with-training-tools)
+  * [Build with TensorFlow](#build-with-tensorflow)
   * [Unit test builds](#unit-test-builds)
   * [Debug builds](#debug-builds)
   * [Profiling builds](#profiling-builds)
