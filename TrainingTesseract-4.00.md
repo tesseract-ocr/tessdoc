@@ -585,17 +585,15 @@ We will use that data later to demonstrate tuning.
 
 ### Creating Starter Traineddata
 
-NOTE: This is a new step!
-
-Instead of a `unicharset` and `script_dir,` `lstmtraining` now takes a
+`lstmtraining` takes a
 `traineddata` file on its command-line, to obtain all the information it needs
 on the language to be learned. The `traineddata` *must* contain at least an
 `lstm-unicharset` and `lstm-recoder` component, and may also contain the three
 dawg files: `lstm-punc-dawg lstm-word-dawg lstm-number-dawg` A `config` file is
 also optional. The other components, if present, will be ignored and unused.
 
-There is no tool to create the `lstm-recoder` directly. Instead there is a new
-tool, `combine_lang_model` which takes as input an `input_unicharset` and
+There is no tool to create the `lstm-recoder` directly. Instead there is a 
+tool, `combine_lang_model`, which takes as input an `input_unicharset` and
 `script_dir` (`script_dir` points to the `langdata` directory) and `lang` (`lang` is the 
 language being used) and optional word list files. It creates the `lstm-recoder` 
 from the `input_unicharset` and creates all the dawgs, if wordlists are provided, 
