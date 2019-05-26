@@ -52,7 +52,7 @@ Platform support depends on used language and experience of user.
   * [boxFactory](http://www.dinosaursandmoustaches.com/boxFactory.php) is a tool for quickly creating box files to train the Tesseract OCR engine. You can identify characters in the image by simply drawing boxes around them.
   * https://github.com/BaltoRouberol/TesseractTrainer - TesseractTrainer is a simple Python API, taking over the tedious process of manually training Tesseract3
   * [tess\_school](https://github.com/ddohler/tess_school) - a set of handy scripts to make the tesseract training process a bit easier
-  * [txt2img](http://code.google.com/p/txt2img/): Qt GUI application that generate image and box file based on text imput
+  * [txt2img](http://code.google.com/p/txt2img/): Qt GUI application that generates image and box file based on text input
   * [DangAmbigs Generator](http://www.cs.toronto.edu/~mreimer/tesseract.html): Creates a DangAmbigs file automatically given a set of OCR text output and correct text. _Requirements:_ Python
   * [train.ps1](http://sourceforge.net/p/vietocr/code/HEAD/tree/jTessBoxEditor/trunk/tools/): Windows powershell script for Automate Tesseract 3.01 language data pack generation process.
   * [Update unicharambigs.exe](http://code.google.com/p/tesseract-ocr/issues/detail?id=544): A small (windows) C# program for editing "lang.unicharambigs" file

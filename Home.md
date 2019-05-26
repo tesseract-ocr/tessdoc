@@ -141,7 +141,7 @@ zypper install tesseract-ocr-traineddata-german
 
 If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. 
 
-Various types of training data can be found on [GitHub](https://github.com/tesseract-ocr/). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribtion. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. 
+Various types of training data can be found on [GitHub](https://github.com/tesseract-ocr/). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribution. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. 
 
 Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
 

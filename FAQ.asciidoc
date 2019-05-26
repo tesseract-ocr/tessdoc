@@ -299,7 +299,7 @@ See https://github.com/tesseract-ocr/tesseract/issues/660#issuecomment-274213632
 == Can I use Tesseract for handwriting recognition?
 
 You can, but it won't work very well, as Tesseract is designed for
-printed text. Look for projects focussed on handwriting recognition.
+printed text. Look for projects focused on handwriting recognition.
 
 == Can I use tesseract for barcode recognition?
 
