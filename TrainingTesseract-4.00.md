@@ -623,10 +623,6 @@ In a separate window monitor the log file:
 tail -f ~/tesstutorial/engoutput/basetrain.log
 ```
 
-(If you tried this tutorial before, you might notice that the numbers have
-changed. This is a result of a slightly smaller network, and the addition of the
-ADAM optimizer, which enables a higher learning rate.)
-
 You should observe that by 600 iterations, the spaces (white) are starting to
 show on the `CTC Outputs` window and by 1300 iterations green lines appear on
 the `LSTMForward` window where there are spaces in the image.
