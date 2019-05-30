@@ -11,6 +11,10 @@ Such tessdata contributions should ideally document everything needed to reprodu
 |jpn_vert|Japanese Vertical|[best](https://github.com/zodiac3539/jpn_vert)|[zodiac3539/jpn_vert](https://github.com/zodiac3539/jpn_vert)|[tesseract-ocr forum post](https://groups.google.com/forum/#!searchin/tesseract-ocr/comic%7Csort:date/tesseract-ocr/FwjSZzoVgeg/u-zyFYQiBgAJ)|
 |ocrb_plus|MRZ|[best](https://github.com/Shreeshrii/tessdata_ocrb/blob/master/ocrb_plus.traineddata)|[shreeshrii/tessdata_ocrb](https://github.com/Shreeshrii/tessdata_ocrb)|[tesseract-ocr forum post]( https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/zi79vNsiSkg/UT3JwsNeBQAJ)|
 |jav_java|Aksara Jawa|[best](https://github.com/Shreeshrii/tessdata_jav_java/blob/master/tessdata_best/jav1.traineddata)|[Shreeshrii/tessdata_jav_java](https://github.com/Shreeshrii/tessdata_jav_java)|[tesseract-ocr forum post](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/8r8YOQgTBT4/xHpCTp9DAwAJ)|
+|mrz|MRZ|[best](https://github.com/DoubangoTelecom/tesseractMRZ/tree/master/tessdata_best)|[DoubangoTelecom/tesseractMRZ](https://github.com/DoubangoTelecom/tesseractMRZ)|[tesseract-ocr forum post](https://groups.google.com/d/msgid/tesseract-ocr/a92ec47e-5055-4ffe-a174-f437d3c7ccf2%40googlegroups.com)|
+
+-------------------------
+Use the template below for adding new files.
 
 |Lang_Code|Language|[best](best_URL)|[User_Repo](Contributor_URL)|[tesseract-ocr forum post](InfoURL)|
 |--|--|--|--|--|
