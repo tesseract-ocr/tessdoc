@@ -17,7 +17,7 @@ In order to do this; you must have automake, libtool, leptonica, make and pkg-co
 
 On Debian or Ubuntu, you can probably install all required packages like this:
 ```
-apt-get install automake g++ git libtool libleptonica-dev make pkg-config
+apt-get install automake ca-certificates g++ git libtool libleptonica-dev make pkg-config
 ```
 
 The optional manpages are built with asciidoc:
