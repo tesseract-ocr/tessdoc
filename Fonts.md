@@ -93,6 +93,10 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 
 ### Sources of (mostly free) fonts
 
+#### Fonts which cover many scripts
+
+* https://savannah.gnu.org/projects/unifont/
+
 #### Latin Fonts
 
 * https://fontlibrary.org/en (GFS Bodoni)
