@@ -678,10 +678,6 @@ training/lstmeval --model tessdata/best/eng.traineddata \
 
 Char error rate=0.25047642, Word error rate=0.63389585
 
-(If you ran this before, and notice that the error rates are a lot higher than
-the previous alpha version, this is due to a change in the use of shaped quotes.
-It didn't count errors in quote shape before, but now it does.)
-
 You can train for another 5000 iterations, and get the error rate on the
 training set a lot lower, but it doesn't help the `Impact` font much:
 
