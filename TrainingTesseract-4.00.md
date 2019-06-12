@@ -332,7 +332,7 @@ scripts.
 For Stochastic Gradient Descent to work properly, the training data is supposed
 to be randomly shuffled across all the sample files, so the trainer can read its
 way through each file in turn and go back to the first one when it reaches the
-end. This is entirely contrary to the way base Tesseract was trained!
+end.
 
 If using the rendering code, (via `tesstrain.sh`) then it will shuffle the
 sample text lines within each file, but you will get a set of files, each
