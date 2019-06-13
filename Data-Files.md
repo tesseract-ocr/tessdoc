@@ -72,7 +72,7 @@ eus | Basque | [eus.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4
 fas | Persian | [fas.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/fas.traineddata)
 fin | Finnish | [fin.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/fin.traineddata)
 fra | French | [fra.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/fra.traineddata)
-frk | Frankish | [frk.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/frk.traineddata)
+frk | German Fraktur | [frk.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/frk.traineddata)
 frm | French, Middle (ca. 1400-1600) | [frm.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/frm.traineddata)
 gle | Irish | [gle.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/gle.traineddata)
 glg | Galician | [glg.traineddata](https://github.com/tesseract-ocr/tessdata/raw/4.00/glg.traineddata)
