@@ -139,7 +139,12 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 **!!! IMPORTANT !!!** To use Tesseract in your application (to include tess or to link it into your app) see this very simple example https://github.com/tesseract-ocr/tesseract/wiki/User-App-Example.
 
-#### Build the latest library
+#### Build the latest library (using SW)
+
+1. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`.
+2. Run `sw build org.sw.demo.google.tesseract.tesseract-master`.
+
+#### Build the latest library (using CPPAN, deprecated)
 
 1. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`.
 2. Run `cppan --build pvt.cppan.demo.google.tesseract.tesseract-master`.
