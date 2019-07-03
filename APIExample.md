@@ -8,7 +8,7 @@ More details about tesseract-ocr API can be found at [baseapi.h](https://github.
 
 
 
-# Basic example
+## Basic example
 
 Code:
 
@@ -51,7 +51,7 @@ If you want to restrict recognition to a sub-rectangle of the image - call _SetR
 ```
 
 
-# GetComponentImages example
+## GetComponentImages example
 
 ```c++
   Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
@@ -70,7 +70,7 @@ If you want to restrict recognition to a sub-rectangle of the image - call _SetR
   }
 ```
 
-# Result iterator example
+## Result iterator example
 
 It is possible to get confidence value and BoundingBox per word from a ResultIterator:
 
@@ -99,7 +99,7 @@ It is also possible to use other iterator levels (block, line, word, etc.), see 
 
 
 
-# Orientation and script detection (OSD) example
+## Orientation and script detection (OSD) example
 
 ```c++
   const char* inputfile = "/usr/src/tesseract/testing/eurotext.tif";
@@ -125,7 +125,7 @@ It is also possible to use other iterator levels (block, line, word, etc.), see 
 Explanation for result codes are in [publictypes.h](https://github.com/tesseract-ocr/tesseract/blob/master/src/ccstruct/publictypes.h#L120)
 
 
-# Example of iterator over the classifier choices for a single symbol
+## Example of iterator over the classifier choices for a single symbol
 
 ```c++
 
@@ -160,6 +160,50 @@ Explanation for result codes are in [publictypes.h](https://github.com/tesseract
       } while((ri->Next(level)));
   }
 ```
+
+## *NEW* Example to get HOCR ouput with alternative symbol choices  per character
+
+This is similar to running tesseract from commandline with `-c lstm_choice_mode=2 hocr`.
+
+```
+#include <tesseract/baseapi.h>
+#include <leptonica/allheaders.h>
+
+int main()
+{
+    char *outText;
+
+    tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
+    // Initialize tesseract-ocr with English, without specifying tessdata path
+    if (api->Init(NULL, "eng")) {
+        fprintf(stderr, "Could not initialize tesseract.\n");
+        exit(1);
+    }
+
+    // Open input image with leptonica library
+    Pix *image = pixRead("/home/ubuntu/tesseract/test/testing/trainingital.tif");
+    api->SetImage(image);
+    api->SetVariable("lstm_choice_mode", "2");
+    // Get HOCR result
+    outText = api->GetHOCRText(0);
+    printf("HOCR alternative symbol choices  per character :\n%s", outText);
+
+    // Destroy used object and release memory
+    api->End();
+    delete [] outText;
+    pixDestroy(&image);
+
+    return 0;
+}
+```
+
+Notice the different confidence values for:
+
+```
+       <span class='ocrx_cinfo' id='lstm_choices_1_4_4'><span class='ocr_glyph' id='choice_1_4_7' title='x_confs 83'>m</span><span class='ocr_glyph' id='choice_1_4_8' title='x_confs 16'>n</span></span>
+       <span class='ocrx_cinfo' id='lstm_choices_1_4_5'><span class='ocr_glyph' id='choice_1_4_9' title='x_confs 54'>n</span><span class='ocr_glyph' id='choice_1_4_10' title='x_confs 17'>i</span><span class='ocr_glyph' id='choice_1_4_11' title='x_confs 15'>m</span><span class='ocr_glyph' id='choice_1_4_12' title='x_confs 6'>a</span><span class='ocr_glyph' id='choice_1_4_13' title='x_confs 4'>u</span><span class='ocr_glyph' id='choice_1_4_14' title='x_confs 1'>r</span><span class='ocr_glyph' id='choice_1_4_15' title='x_confs 1'>e</span></span>
+``` 
+
 
 # Compiling C++ API programs on Linux
 
