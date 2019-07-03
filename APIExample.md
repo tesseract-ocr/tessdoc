@@ -161,7 +161,7 @@ Explanation for result codes are in [publictypes.h](https://github.com/tesseract
   }
 ```
 
-## *NEW* Example to get HOCR ouput with alternative symbol choices  per character
+## *NEW* Example to get HOCR output with alternative symbol choices  per character
 
 This is similar to running tesseract from commandline with `-c lstm_choice_mode=2 hocr`.
 
@@ -181,7 +181,7 @@ int main()
     }
 
     // Open input image with leptonica library
-    Pix *image = pixRead("/home/ubuntu/tesseract/test/testing/trainingital.tif");
+    Pix *image = pixRead("/tesseract/test/testing/trainingital.tif");
     api->SetImage(image);
     api->SetVariable("lstm_choice_mode", "2");
     // Get HOCR result
