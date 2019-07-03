@@ -200,8 +200,19 @@ int main()
 Notice the different confidence values for:
 
 ```
-       <span class='ocrx_cinfo' id='lstm_choices_1_4_4'><span class='ocr_glyph' id='choice_1_4_7' title='x_confs 83'>m</span><span class='ocr_glyph' id='choice_1_4_8' title='x_confs 16'>n</span></span>
-       <span class='ocrx_cinfo' id='lstm_choices_1_4_5'><span class='ocr_glyph' id='choice_1_4_9' title='x_confs 54'>n</span><span class='ocr_glyph' id='choice_1_4_10' title='x_confs 17'>i</span><span class='ocr_glyph' id='choice_1_4_11' title='x_confs 15'>m</span><span class='ocr_glyph' id='choice_1_4_12' title='x_confs 6'>a</span><span class='ocr_glyph' id='choice_1_4_13' title='x_confs 4'>u</span><span class='ocr_glyph' id='choice_1_4_14' title='x_confs 1'>r</span><span class='ocr_glyph' id='choice_1_4_15' title='x_confs 1'>e</span></span>
+<span class='ocrx_cinfo' id='lstm_choices_1_4_4'>
+<span class='ocr_glyph' id='choice_1_4_7' title='x_confs 83'>m</span>
+<span class='ocr_glyph' id='choice_1_4_8' title='x_confs 16'>n</span>
+</span>
+<span class='ocrx_cinfo' id='lstm_choices_1_4_5'>
+<span class='ocr_glyph' id='choice_1_4_9' title='x_confs 54'>n</span>
+<span class='ocr_glyph' id='choice_1_4_10' title='x_confs 17'>i</span>
+<span class='ocr_glyph' id='choice_1_4_11' title='x_confs 15'>m</span>
+<span class='ocr_glyph' id='choice_1_4_12' title='x_confs 6'>a</span>
+<span class='ocr_glyph' id='choice_1_4_13' title='x_confs 4'>u</span>
+<span class='ocr_glyph' id='choice_1_4_14' title='x_confs 1'>r</span>
+<span class='ocr_glyph' id='choice_1_4_15' title='x_confs 1'>e</span>
+</span>
 ``` 
 
 
