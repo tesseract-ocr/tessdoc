@@ -161,7 +161,7 @@ Explanation for result codes are in [publictypes.h](https://github.com/tesseract
   }
 ```
 
-## *NEW* Example to get confidence for alternative symbol choices per character
+## Example to get confidence for alternative symbol choices per character for LSTM
 
 ```c++
 #include <tesseract/baseapi.h>
@@ -216,7 +216,7 @@ int main()
 
 ```
 
-## *NEW* Example to get HOCR output with alternative symbol choices per character
+## Example to get HOCR output with alternative symbol choices per character (LSTM)
 
 This is similar to running tesseract from commandline with `-c lstm_choice_mode=2 hocr`.
 
