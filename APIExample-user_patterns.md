@@ -5,6 +5,8 @@ It is expected the user is familiar with C++, compiling and linking program on t
 
 This is based on [an example provided in tesseract-ocr forum](https://groups.google.com/forum/#!msg/tesseract-ocr/y052O_DwYic/gsJN1NHBfqkJ) and updated for the [recent implementation of the feature for tesseract 4.x](https://github.com/tesseract-ocr/tesseract/pull/2328).
 
+Please note that while this example gets 100% accuracy after user_patterns are applied, that may not be the case always. [Pre-processing the image](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) usually improves the quality of recognition and is recommended.
+
 ## Requirements
 
 In order to apply `user_patterns` for improving recognition, the following are required.
