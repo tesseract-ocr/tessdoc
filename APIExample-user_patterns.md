@@ -46,7 +46,9 @@ lstm_use_matrix 1
 
 ## API Example
 
-The following example uses the above `user_patterns_file` and `config_file` with this image.
+The following example uses the above `user_patterns_file` and `config_file` with this image (Arial.png).
+
+ <img src="https://user-images.githubusercontent.com/5095331/60698052-34c08680-9f0b-11e9-8c9a-7c1aaa9b1e02.png" height=400>
 
 ```
 #include <tesseract/baseapi.h>
@@ -91,4 +93,41 @@ export TESSDATA_PREFIX=~/tessdata_best
 
 diff -u  Arial-patterns.txt  Arial-gt.txt
 
+```
+
+With the user_patterns_file for this image, the recognition is 100% correct. Without it, there are a number of errors.
+
+```
+--- Arial-patterns-no.txt       2019-07-05 04:21:04.367188492 +0000
++++ Arial-gt.txt        2019-07-05 04:05:11.000000000 +0000
+@@ -1,20 +1,20 @@
+ DQ2679M
+ LO6217I
+ QK2101G
+-JBO363H
++JB0363H
+ KN2873M
+-Z2B0929J
++ZB0929J
+ JF3829W
+-YNO0584J
+-SVv8400Q
++YN0584J
++SV8400Q
+ FY4523X
+ KS0016J
+ OB3016R
+ VA4335P
+-QHO205V
+-UH20932
++QH0205V
++UH2093Z
+ GW3760Y
+-S02306T
++SO2306T
+ XT8204F
+-MR6804|
+-0OX5866M
++MR6804I
++OX5866M
 ```
