@@ -29,12 +29,12 @@ Make a text file named `path/to/my.patterns` and put the pattern in it, e.g.
 From command line user_patterns can be invoked as follows:
 
 ```
-tesseract input.tif output --user-patterns user_patterns_file -c lstm_use_matrix=1
+tesseract input.tif output --user-patterns path/to/my.patterns -c lstm_use_matrix=1
 ```
 
 For the API this information about `user_patterns_file` and config variable `lstm_use_matrix` needs to be specified using a `config_file`. 
 
-#### Example of a config_file(use UNIX line endings and blank line at end)
+#### Example of a config_file (use UNIX line endings and blank line at end)
 
 Make a text file named `path/to/my.patterns.config` and put the following in it, e.g.
 
@@ -58,9 +58,9 @@ int main()
 {
     Pix *image;
     char *outText; 
-    char *configs[]={"my.patterns.config"};
+    char *configs[]={"path/to/my.patterns.config"};
     int configs_size = 1;
-	tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
+    tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
     if (api->Init(NULL, "eng", tesseract::OEM_LSTM_ONLY, configs, configs_size, NULL, NULL, false)) {
       fprintf(stderr, "Could not initialize tesseract.\n");
       exit(1);
