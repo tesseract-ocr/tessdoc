@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes#in-development)
+* [Jul 07 2019 - V4.1.0](#tesseract-release-notes-jul-07-2019---v410
 * [Oct 29 2018 - V4.0.0](#tesseract-release-notes-oct-29-2018---v400)
 * [June 19 2018 - V3.05.02](#tesseract-release-notes-june-19-2018---v30502)
 * [June 1 2017 - V3.05.01](#tesseract-release-notes-june-1-2017---v30501)
