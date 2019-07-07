@@ -34,11 +34,26 @@ Table of Contents
 
 ![api_abi_changes.png](https://github.com/tesseract-ocr/tesseract/wiki/api_abi_changes.png)
 
+* [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=4.0.0&v2=current&obj=ff668&kind=abi) (maybe not updated for the latest code)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=3.05.02&v2=4.0.0&obj=a88e1&kind=abi)
 
 ## Changes made since last release
+  * master is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
 
+
+# Tesseract release notes Jul 07 2019 - V4.1.0
+  * Backward compatible release with 4.0.0
   * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
+  * Added new renders LSTMBox, WordStrBox to simplify training
+  * Added character boxes in hOCR output.
+  * Added python training scripts (experimental) as alternative shell scripts.
+  * Better support AVX / AVX2 / SSE.
+  * Disable OpenMP support by default (see e.g. #1171, #1081).
+  * Fix for bounding box problem.
+  * Implemented support for whitelist/blacklist in LSTM engine.
+  * Improved cmake configuration.
+  * Code modernization and improvements.
+  * A lot of bug fixes...
 
 # Tesseract release notes Oct 29 2018 - V4.0.0
   * **New OCR engine**
