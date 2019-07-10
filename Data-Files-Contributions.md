@@ -12,7 +12,7 @@ Such tessdata contributions should ideally document everything needed to reprodu
 |ocrb_plus|MRZ|[best](https://github.com/Shreeshrii/tessdata_ocrb/blob/master/ocrb_plus.traineddata)|[shreeshrii/tessdata_ocrb](https://github.com/Shreeshrii/tessdata_ocrb)|[tesseract-ocr forum post]( https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/zi79vNsiSkg/UT3JwsNeBQAJ)|
 |jav_java|Aksara Jawa|[best](https://github.com/Shreeshrii/tessdata_jav_java/blob/master/tessdata_best/jav1.traineddata)|[Shreeshrii/tessdata_jav_java](https://github.com/Shreeshrii/tessdata_jav_java)|[tesseract-ocr forum post](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/8r8YOQgTBT4/xHpCTp9DAwAJ)|
 |mrz|MRZ|[best](https://github.com/DoubangoTelecom/tesseractMRZ/tree/master/tessdata_best)|[DoubangoTelecom/tesseractMRZ](https://github.com/DoubangoTelecom/tesseractMRZ)|[tesseract-ocr forum post](https://groups.google.com/d/msgid/tesseract-ocr/a92ec47e-5055-4ffe-a174-f437d3c7ccf2%40googlegroups.com)|
-
+|dot_matrix|MRZ|[best](https://github.com/ameera3/OCR_Expiration_Date/tree/master/OCR_Ensemble)|[ameera3/OCR_Expiration_Date](https://github.com/ameera3/OCR_Expiration_Date)|[tesseract-ocr forum post](https://groups.google.com/forum/#!topic/tesseract-ocr/BimLa0-z9ME)|
 -------------------------
 Use the template below for adding new files.
 
