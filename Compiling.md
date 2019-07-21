@@ -8,6 +8,7 @@
 * [Linux](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#linux)
 * [Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows)
 * [macOS](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#macos)
+* [Android](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#android)
 * [Common Errors](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#common-errors)
 * [Miscellaneous](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#miscellaneous)
 
@@ -437,6 +438,14 @@ cd tesseract
 make -j
 sudo make install  # if desired
 make training # if installed with training dependencies
+```
+# Android
+
+Tesseract can be built for Android as a static command-line executable `tesseract`, or you can use [Java binding](https://github.com/rmtheis/tess-two) to work with **libtess** from your Android app.
+
+Currently, the easiest build method can be found in a [tess-two fork](https://github.com/alexcohn/tess-two). This fork contains both tesseract and leptonica sources, so that it is enough to download the repository. To build the command-line executable, you don't need Android SDK or Android Studio, only install Android NDK (r.20 has been tested) and run the `ndk-build` command, e.g.:
+```
+ndk-build -C tess-two-git/tess-two tesseract APP_ABI=arm64-v8a
 ```
 
 # Common Errors
