@@ -22,6 +22,7 @@ ask questions about training as
       * [Net Mode and Optimization](#net-mode-and-optimization)
       * [Perfect Sample Delay](#perfect-sample-delay)
       * [Debug Interval and Visual Debugging](#debug-interval-and-visual-debugging)
+      * [Iterations and Checkpoints](#iterations-and-checkpoints)
    * [TessTutorial](#tesstutorial)
       * [One-time Setup for TessTutorial](#one-time-setup-for-tesstutorial)
       * [Creating Training Data](#creating-training-data)
@@ -452,6 +453,33 @@ These show the current output of the network and the targets as a line graph of
 strength of output against image x-coordinate. Instead of a heatmap, like the
 `Output` window, a different colored line is drawn for each character class and
 the y-axis is strength of output.
+
+## Iterations and Checkpoints
+
+During the training we see this kind of information :
+
+```
+At iteration 100/100/100, Mean rms=4.514%, delta=19.089%, char train=96.314%, word train=100%, skip ratio=0%,  New best char error = 96.314 wrote checkpoint.
+...
+At iteration 14615/695400/698614, Mean rms=0.158%, delta=0.295%, char train=1.882%, word train=2.285%, skip ratio=0.4%,  wrote checkpoint.
+```
+
+In the above example,
+```
+14615 : learning_iteration
+695400 : training_iteration
+698614 : sample_iteration
+```
+
+**sample_iteration :** "Index into training sample set. (sample_iteration >= training_iteration)." It is how many times a training file has been passed into the learning process.
+
+**training_iteration :** "Number of actual backward training steps used." It is how many times a training file has been SUCCESSFULLY passed into the learning process. So every time you get an error : "Image too large to learn!!" - "Encoding of string failed!" - "Deserialize header failed", the sample_iteration increments but not the training_iteration. Actually you have 1 - (695400 / 698614) = 0.4% which is the **skip ratio :** proportion of files that have been skipped because of an error
+
+**learning_iteration :** "Number of iterations that yielded a non-zero delta error and thus provided significant learning. (learning_iteration <= training_iteration). learning_iteration_ is used to measure rate of learning progress."
+So it uses the delta value to assess it the iteration has been useful.
+
+What is good to know is that when you specify a maximum number of iterations to the training process it uses the middle iteration number **(training_iteration)** to know when to stop. But when it writes a checkpoint, the checkpoint name uses the smallest iteration number **(learning_iteration)**, along with the char train rate. So a checkpoint name is the concatenation of **model_name & char_train & learning_iteration** eg. layer0.475_30993.checkpoint.
+
 
 # TessTutorial
 
