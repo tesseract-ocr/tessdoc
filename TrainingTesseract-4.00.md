@@ -488,8 +488,9 @@ The lstmtraining program outputs two kinds of checkpoint files:
     checkpoint, but is smaller because it doesn't have a backup model to be used
     if the training runs into divergence.
 
-Either kind of these checkpoint files can be converted to a standard (best/float) traineddata file or 
-fast/integertraineddata file by using the `stop_training` and `convert_to_int` flags with lstmtraining.
+Either kind of these checkpoint files can be converted to a standard (best/float) traineddata file or
+slightly less accurate (fast/integer) traineddata file by using the `stop_training` and `convert_to_int`
+flags with lstmtraining.
 
 
 # TessTutorial
