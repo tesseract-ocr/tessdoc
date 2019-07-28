@@ -447,6 +447,20 @@ Currently, the easiest build method can be found in a [tess-two fork](https://gi
 ```
 ndk-build -C tess-two-git/tess-two tesseract APP_ABI=arm64-v8a
 ```
+The [4.1 branch](https://github.com/alexcohn/tess-two/tree/4.1) is available, too. Note that performance may be significantly different:
+```
+> adb shell time tess3 --tessdata-dir tessdata3 eurotext.png txt3
+Tesseract Open Source OCR Engine v3.05.00 with Leptonica
+    0m05.95s real     0m05.77s user     0m00.17s system
+
+> adb shell time tess4 --tessdata-dir tessdata4 eurotext.png txt4
+Tesseract Open Source OCR Engine v4.1.0 with Leptonica
+    0m59.07s real     0m58.56s user     0m00.45s system
+
+> adb shell time tess4 --tessdata-dir tessdata3 eurotext.png txt42
+Tesseract Open Source OCR Engine v4.1.0 with Leptonica
+    0m05.61s real     0m05.37s user     0m00.23s system
+```
 
 # Common Errors
 
