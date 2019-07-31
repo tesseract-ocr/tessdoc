@@ -580,6 +580,8 @@ To mark an end-of-textline, a special line must be inserted after a series of li
 
 `<tab> <left> <bottom> <right> <top> <page>`
 
+Box files can be generated using Tesseract 4.0 using the `lstmbox` config from image data using `tesseract <image name including extension> <box file name> lstmbox`. For example, `tesseract image.png image lstmbox` will generate a box file with name `image.box` for the image in the current directory. 
+
 Note that in all cases, even for right-to-left languages, such as Arabic, the
 text transcription for the line, *should be ordered left-to-right.* In other words, the network
 is going to learn from left-to-right regardless of the language, and the
