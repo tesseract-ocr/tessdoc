@@ -462,6 +462,18 @@ Tesseract Open Source OCR Engine v4.1.0 with Leptonica
     0m05.61s real     0m05.37s user     0m00.23s system
 ```
 
+## Alternative
+
+Another method of compiling is using the project [Building for Android with Docker](https://github.com/rhardih/bad), which at the time of writing can produce shared libraries for the following versions and architectures:
+
+| Arch \ Version | 3.02.02 | 3.05.02 | 4.0.0 | 4.1.0 |
+|----------------|---------|---------|-------|-------|
+| armv7-a | ✔ | ✔ | ✔ | ✔ |
+| arm64-v8a | ✖ | ✔ | ✔ | ✔ |
+| x86 | ✔ | ✔ | ✔ | ✔ |
+
+Compilation of dependent libraries, **leptonica** and **tiff**, are included and handled as well.
+
 # Common Errors
 
 * To fix this error
