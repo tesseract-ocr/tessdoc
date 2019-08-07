@@ -1,17 +1,17 @@
-## Traineddata Files for Version 4.00 
+## Traineddata Files for Version 4.00 +
 
-We have three sets of .traineddata files for tesseract on GitHub in three separate repositories. 
+We have three sets of .traineddata files for `tesseract` versions 4.00 and above on GitHub in three separate repositories. 
 
 * [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) (Sep 2017) best "value for money" in speed vs accuracy, Integer models
-* [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) (Sep 2017) best results on the eval data, slower, Float models, can be used as base for finetune training
-* [tessdata](https://github.com/tesseract-ocr/tessdata) (Nov 2016) supports legacy tesseract engine also
+* [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) (Sep 2017) best results on Google's eval data, slower, Float models. These are the only models that can be used as base for finetune training
+* [tessdata](https://github.com/tesseract-ocr/tessdata) (Nov 2016 and Sep 2017) These have legacy tesseract models from 2016. The LSTM models have been updated with Integer version of tessdata_best LSTM models. (Cube based legacy tesseract models for Hindi, Arabic etc. have been deleted).
 
-When using the models in the **`tessdata_best`** and **`tessdata_fast`** repositories, only the new LSTM-based OCR engine is supported. The legacy tesseract engine is NOT supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
+When using the traineddata files from the **`tessdata_best`** and **`tessdata_fast`** repositories, only the new LSTM-based OCR engine is supported. The legacy tesseract engine is NOT supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
 ## Information specific to tessdata_fast
 
-First, fast is trained with a spec that produces a smaller net than best. As a result of smaller model, the prediction will be faster.
-Then, the float->int conversion is done, which further reduces the size of the model and makes it even faster if your CPU supports AVX2.
+First, `fast` is trained with a spec that produces a smaller net than `best`. As a result of smaller model, the prediction will be faster.
+Then, the `float->int conversion` is done, which further reduces the size of the model and makes it even faster if your CPU supports AVX2.
 
 ### Usage
 
