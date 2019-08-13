@@ -15,7 +15,7 @@ There are two parts to install, the engine itself, and the training data for a l
 ## Linux
 
 Tesseract is available directly from many Linux distributions. The package is generally called **'tesseract'** or **'tesseract-ocr'** - search your distribution's repositories to find it.
-Thus you can install Tesseract 4.x and it's developer tools on Ubuntu 18.x bionic by simply running:
+Thus you can install Tesseract 4.x and its developer tools on Ubuntu 18.x bionic by simply running:
 ```
 sudo apt install tesseract-ocr
 sudo apt install libtesseract-dev
@@ -265,7 +265,7 @@ It can also be trained to support other languages and scripts; for more details 
 
 Tesseract can also be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty) page for a sample of what has been done with it. Note that as yet there are very few  3rdParty Tesseract OCR projects [being developed for Mac](https://machow2.com/ocr-for-mac-best-software/#Tesseract_Freesoftware/) (with the only one being [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS)), although there are several online OCR services that can be used on Mac that may use Tesseract as their OCR engine. 
 
-Also, it's free software, so if you want to pitch in and help, please do!
+Also, it is free software, so if you want to pitch in and help, please do!
 If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues)
 
 # Support

@@ -86,7 +86,7 @@
   * [HocrToPdf.java](http://www.acoveo.com/acoveo/files/HocrToPdf.java): java source for very basic hOCR to PDF converter. Compiled version can be found at project [modi2hocr](http://code.google.com/p/modi2hocr/source/browse/trunk/). _Requirements:_ java, jericho, iText2
   * [hOcr2Pdf.NET](http://hocrtopdf.codeplex.com/): is a .NET library to convert .hocr html produced by Tesseract or Cuneiform into searchable pdfs using HtmlAgilityPack and iTextSharp. _Requirements:_ C#.
   * [Tally-Ho](http://code.google.com/p/tallyho/): Tally-Ho is a screen reader intended for sites like google books
-  * [Mayan EDMS](http://rosarior.github.com/mayan/): Document management system with tesseract as it's base
+  * [Mayan EDMS](http://rosarior.github.com/mayan/): Document management system with tesseract as its base
   * [Olena](http://git.lrde.epita.fr/?p=olena.git;a=summary): a generic and efficient image processing platform (tesseract is used in its part called [scribo](http://git.lrde.epita.fr/?p=olena.git;a=tree))
   * [ocrodjvu](http://jwilk.net/software/ocrodjvu) is a wrapper for OCR systems, that allows you to perform OCR on DjVu files
   * [PaRADIIT](https://sites.google.com/site/paradiitproject/home) (Pattern Redundancy Analysis for Document Image Indexation & Transcription) is a project initiated and sponsored by 2 successive Google DH awards. It aims to turn ancient books, especially from the Renaissance, into accessible digital libraries.
