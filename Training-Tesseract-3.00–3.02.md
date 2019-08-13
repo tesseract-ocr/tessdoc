@@ -438,7 +438,7 @@ Type indicator [could have](https://github.com/tesseract-ocr/tesseract/blob/mast
 
 Each separate character must be included in the unicharset. That is, all of the characters used must be part of the language that is being trained.
 
-The rules are not bidirectional, so if you want 'rn' to be considered when 'm' is detected and vise versa you need a rule for each.
+The rules are not bidirectional, so if you want 'rn' to be considered when 'm' is detected and vice versa you need a rule for each.
 
 Like most other files used in training, the `unicharambigs` file must be encoded as UTF-8, and must end with a newline character.
 
