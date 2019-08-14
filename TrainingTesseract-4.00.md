@@ -98,9 +98,7 @@ Beginning with 3.03, additional libraries are required to build the training
 tools.
 
 ```bash
-sudo apt-get install libicu-dev
-sudo apt-get install libpango1.0-dev
-sudo apt-get install libcairo2-dev
+sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev
 ```
 
 # Building the Training Tools
