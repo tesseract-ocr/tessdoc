@@ -47,12 +47,12 @@ Table of Contents
   * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
   * Added new renders LSTMBox, WordStrBox to simplify training
   * Added character boxes in hOCR output.
-  * Added python training scripts (experimental) as alternative shell scripts.
+  * Added Python training scripts (experimental) as alternative shell scripts.
   * Better support AVX / AVX2 / SSE.
   * Disable OpenMP support by default (see e.g. #1171, #1081).
   * Fix for bounding box problem.
   * Implemented support for whitelist/blacklist in LSTM engine.
-  * Improved cmake configuration.
+  * Improved CMake configuration.
   * Code modernization and improvements.
   * A lot of bug fixes...
 
