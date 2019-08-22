@@ -104,6 +104,7 @@ If you need an example how to improve image quality programmatically, have a loo
   * [noteshrink](https://github.com/mzucker/noteshrink) - python example how to clean up scans. Details in blog [Compressing and enhancing hand-written notes](https://mzucker.github.io/2016/09/20/noteshrink.html).
   * [uproject text](https://github.com/mzucker/unproject_text) - python example how to recover perspective of image. Details in blog [Unprojecting text with ellipses](https://mzucker.github.io/2016/10/11/unprojecting-text-with-ellipses.html).
   * [page_dewarp](https://github.com/mzucker/page_dewarp) - python example for Text page dewarping using a "cubic sheet" model. Details in blog [Page dewarping](https://mzucker.github.io/2016/08/15/page-dewarping.html).
+* [How to remove shadow from scanned images using OpenCV](https://stackoverflow.com/questions/44752240/how-to-remove-shadow-from-scanned-images-using-opencv)
 
 
 ## Page segmentation method
