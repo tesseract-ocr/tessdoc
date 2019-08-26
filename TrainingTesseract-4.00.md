@@ -564,6 +564,9 @@ In either case, the required format is still the tiff/box file
 pair, except that the boxes only need to cover a textline instead of individual
 characters.
 
+If you use tesstrain.sh then required `synthetic` training data (box/tiff pairs and
+lstmf files) is created from the training text and given list of fonts.
+
 ### Making Box Files
 
 Multiple formats of box files are accepted by Tesseract 4 for LSTM training, 
@@ -641,6 +644,9 @@ language being used) and optional word list files. It creates the `lstm-recoder`
 from the `input_unicharset` and creates all the dawgs, if wordlists are provided, 
 putting everything together into a `traineddata` file.
 
+If you use tesstrain.sh then the starter traineddata is also created along with
+`synthetic` training data (box/tiff pairs and lstmf files)
+from the training text and given list of fonts.
 
 
 ### Training From Scratch
@@ -754,7 +760,7 @@ tuning...
 
 ### Fine Tuning for Impact
 
-Please note that Fine Tuning can be done ONLY by using `float` models as the base to
+Please note that Fine Tuning for Impact can be done ONLY by using `float` models as the base to
 continue from i.e. use the traineddata files from [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) repo
 not from [tessdata](https://github.com/tesseract-ocr/tessdata) or [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast).
 
@@ -846,6 +852,10 @@ set, **without doing a lot of harm to its general accuracy.** It is still very
 important however, to avoid over-fitting.
 
 ### Fine Tuning for ± a few characters
+
+Please note that Fine Tuning for ± a few characters can be done ONLY by using `float` models as the base to
+continue from i.e. use the traineddata files from [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) repo
+not from [tessdata](https://github.com/tesseract-ocr/tessdata) or [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast).
 
 **New feature** It is possible to add a few new characters to the character set
 and train for them by fine tuning, without a large amount of training data.
@@ -956,6 +966,10 @@ get that rare class correct, but it does seem to overfit more than simpler
 optimizers.
 
 ### Training Just a Few Layers
+
+Please note that Training Just a Few Layers can be done ONLY by using `float` models as the base to
+continue from i.e. use the traineddata files from [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) repo
+not from [tessdata](https://github.com/tesseract-ocr/tessdata) or [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast).
 
 Fine tuning is OK if you only want to add a new font style or need a couple of
 new characters, but what if you want to train for Klingon? You are unlikely to
