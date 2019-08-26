@@ -754,6 +754,10 @@ tuning...
 
 ### Fine Tuning for Impact
 
+Please note that Fine Tuning can be done ONLY by using `float` models as the base to
+continue from i.e. use the traineddata files from [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) repo
+not from [tessdata](https://github.com/tesseract-ocr/tessdata) or [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast).
+
 Fine tuning is the process of training an existing model on new data without
 changing any part of the network, although you **can** now add
 characters to the character set. (See [Fine Tuning for ± a few
