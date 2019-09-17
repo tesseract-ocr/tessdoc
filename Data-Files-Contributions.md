@@ -14,6 +14,7 @@ Such tessdata contributions should ideally document everything needed to reprodu
 |mrz|MRZ|[best](https://github.com/DoubangoTelecom/tesseractMRZ/tree/master/tessdata_best)|[DoubangoTelecom/tesseractMRZ](https://github.com/DoubangoTelecom/tesseractMRZ)|[tesseract-ocr forum post](https://groups.google.com/d/msgid/tesseract-ocr/a92ec47e-5055-4ffe-a174-f437d3c7ccf2%40googlegroups.com)|
 |dot_matrix|MRZ|[best](https://github.com/ameera3/OCR_Expiration_Date/tree/master/OCR_Ensemble)|[ameera3/OCR_Expiration_Date](https://github.com/ameera3/OCR_Expiration_Date)|[tesseract-ocr forum post](https://groups.google.com/forum/#!topic/tesseract-ocr/BimLa0-z9ME)|
 |e13b|E13B (or MICR)|[best](https://github.com/ElMagoElGato/tess_e13b_training)|[ElMagoElGato/tess_e13b_training](https://github.com/ElMagoElGato/tess_e13b_training)|[tesseract-ocr forum post](https://groups.google.com/d/topic/tesseract-ocr/q8IRrufVRJo/discussion)|
+|e13b|E13B (or MICR)|[best](https://github.com/DoubangoTelecom/tesseractMICR/blob/master/tessdata_best/e13b.traineddata)|[DoubangoTelecom/tesseractMICR](https://github.com/DoubangoTelecom/tesseractMICR)|[tesseract-ocr forum post](https://groups.google.com/forum/#!topic/tesseract-ocr/FdwDjt1edX8)|
 -------------------------
 Use the template below for adding new files.
 
