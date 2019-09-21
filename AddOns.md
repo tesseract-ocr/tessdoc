@@ -91,6 +91,9 @@ Platform support depends on used language and experience of user.
 **Java**
   * [bytedeco](https://github.com/bytedeco/javacpp-presets/tree/master/tesseract) - Java configuration and interface classes for Tesseract based on 'JavaCPP-Presets' library from https://bytedeco.org - https://github.com/bytedeco/javacpp-presets
 
+**Python**
+  * [tesserocr](https://github.com/sirfz/tesserocr) - A Python wrapper around Tesseract's C++ API
+
 ### Tesseract 3.0x
 
 **C**
