@@ -42,7 +42,7 @@ Following examples use this image which has text in multiple languages.
 
 Add '-l LANG' to the command where LANG is three character language code from the list of supported languages. If this is not given then English language is assumed by default.
 
-    tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng
+    tesseract testing/eurotext.png testing/eurotext-eng -l eng
 
 Output 
 
@@ -63,7 +63,7 @@ Output
 
 Add '-l LANG[+LANG]' to the command line to use multiple languages together for recognition 
 
-    tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-engdeu -l eng+deu
+    tesseract testing/eurotext.png testing/eurotext-engdeu -l eng+deu
 
 Output
 
@@ -90,7 +90,7 @@ Following examples use a greyscale version of this image which has text in multi
 
 Using English as primary language and then Hindi
 
-     tesseract  --tessdata-dir ./ ./testing/bilingual.jpg ./testing/bilingual-enghin -l eng+hin
+     tesseract testing/bilingual.jpg testing/bilingual-enghin -l eng+hin
 
 Output
 
@@ -102,7 +102,7 @@ Output
 
 Using Hindi as primary language and then English
 
-     tesseract  --tessdata-dir ./ ./testing/bilingual.jpg ./testing/bilingual-hineng -l hin+eng
+     tesseract testing/bilingual.jpg testing/bilingual-hineng -l hin+eng
 
 Output
 
@@ -114,11 +114,11 @@ Output
           
 ## Searchable pdf output
 
-    tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng pdf
+    tesseract testing/eurotext.png testing/eurotext-eng -l eng pdf
 
 This creates a pdf with the image and a separate searchable text layer with the recognized text.
 
-    tesseract  c:\temp\test_ara.jpg  -l ara  -psm 3  c:\temp\test_ara pdf
+    tesseract c:\temp\test_ara.jpg -l ara -psm 3 c:\temp\test_ara pdf
 
 Files are attached (source JPG and output PDF)
 
@@ -129,7 +129,7 @@ Files are attached (source JPG and output PDF)
 
 Use 'hocr' config file by adding hocr at the end of the command to get the HOCR output.
 
-    tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng hocr
+    tesseract testing/eurotext.png testing/eurotext-eng -l eng hocr
 
 Partial Output
 
@@ -160,7 +160,7 @@ Partial Output
 
 Use 'tsv' config file by adding tsv at the end of the command to get the TSV output.
 
-    tesseract  --tessdata-dir ./ ./testing/eurotext.png ./testing/eurotext-eng -l eng tsv
+    tesseract testing/eurotext.png testing/eurotext-eng -l eng tsv
 
 Partial Output
 
@@ -189,7 +189,7 @@ The following examples are using this image with text in Devanagari script and S
 
 ![san002.png](https://cloud.githubusercontent.com/assets/82178/13678011/81953684-e6ba-11e5-91e8-5c40518e94a6.png)
 
-    tesseract   --tessdata-dir /usr/share testing/san002.png testing/san002-psm6 -l san -psm 6 
+    tesseract  testing/san002.png testing/san002-psm6 -l san -psm 6 
 
 Output
 
@@ -214,7 +214,7 @@ Output
     'शिवगङ्गासद्दृस्रनत्माव'ळि 517
     गम्पत्रीसह्स्रनत्मक्तोत्रम्- नाम।व'ळिऽ (१) 531
 
-    tesseract   --tessdata-dir /usr/share testing/san002.png testing/san002-psm3 -l san -psm 3
+    tesseract testing/san002.png testing/san002-psm3 -l san -psm 3
 
 Output
 
