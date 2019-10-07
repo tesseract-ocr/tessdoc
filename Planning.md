@@ -24,6 +24,27 @@ Here are some ideas for future Tesseract releases.
 
 * Improve error handling and don't ignore return values from functions (see [discussion](https://github.com/tesseract-ocr/tesseract/issues/99)).
 
+* Replace tprintf etc. by advanced logging API with log levels.
+
+## 5.0.0
+
+### Advanced logging
+
+Requirements (see also [discussion](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!topic/tesseract-dev/T5esnseEIOM)):
+
+Log levels:
+
+* trace
+* debug
+* info
+* warning
+* error
+* fatal
+
+Useful links:
+
+* [List of Open Source C++ logging libraries](https://en.cppreference.com/w/cpp/links/libs)
+
 ## 4.0.0
 
 See the [release notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes).
