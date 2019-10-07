@@ -63,7 +63,7 @@ The traineddata is currently not shipped with the snap package and must be place
 
 #### Raspbian
 * [Raspbian Stretch(notesalexp.org)](https://notesalexp.org/tesseract-ocr/)
-* [Raspbian Buster (testing)](http://raspbian.org/RaspbianRepository)
+* [Raspbian Buster](http://raspbian.org/RaspbianRepository)
 
 #### RHEL/CentOS/Scientific Linux, Fedora, openSUSE packages
 
