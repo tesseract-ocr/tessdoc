@@ -185,7 +185,7 @@ Experts can also get binaries build with Visual Studio from the build artifacts 
 
 Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) [Cygwin](https://www.cygwin.com/)
 
-The latest version available is 4.00. Please see [announcement](https://www.cygwin.com/ml/cygwin-announce/2018-10/msg00020.html).
+The latest version available is 4.1.0. Please see [announcement](https://www.cygwin.com/ml/cygwin-announce/2019-07/msg00009.html).
 
 ### MSYS2
 
