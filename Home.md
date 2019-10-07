@@ -46,9 +46,10 @@ The traineddata is currently not shipped with the snap package and must be place
 
 #### Debian
 
-* [Debian Jessie (notesalexp.org)](https://notesalexp.org/tesseract-ocr/)
-* [Debian Stretch (backports)](https://packages.debian.org/stretch-backports/tesseract-ocr)
-* [Debian Buster (testing)](https://packages.debian.org/buster/tesseract-ocr)
+* [Debian 10 Buster (stable)](https://packages.debian.org/buster/tesseract-ocr)
+* [Debian 9 Stretch backports (oldstable)](https://packages.debian.org/stretch-backports/tesseract-ocr)
+* [Debian 8 Jessie (oldoldstable) - notesalexp.org](https://notesalexp.org/tesseract-ocr/)
+* [Debian testing](https://packages.debian.org/testing/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
 
 #### Ubuntu
