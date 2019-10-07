@@ -55,7 +55,6 @@ The traineddata is currently not shipped with the snap package and must be place
 #### Ubuntu
 
 * [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
-* [Ubuntu Cosmic 18.10](https://packages.ubuntu.com/cosmic/tesseract-ocr-all) 
 
 #### Ubuntu PPA 
 * [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
