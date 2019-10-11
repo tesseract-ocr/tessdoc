@@ -71,6 +71,15 @@ The traineddata is currently not shipped with the snap package and must be place
 
 For example to install Tesseract with German language traineddata:
 
+
+**For CentOS 8 run the following as root:**
+```
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/CentOS_8/
+rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/public_key
+dnf install tesseract
+dnf install tesseract-langpack-deu
+```
+
 **For RHEL 7 run the following as root:**
 
 ```
