@@ -43,11 +43,12 @@ Table of Contents
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
 
 # Tesseract release notes Jul 07 2019 - V4.1.0
-  * Backward compatible release with 4.0.0
+  * Backward compatible release with 4.0.0  
   * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
   * Added new renders LSTMBox, WordStrBox to simplify training
   * Added character boxes in hOCR output.
   * Added Python training scripts (experimental) as alternative shell scripts.
+  * Fixed locale handling issue. libtesseract now work with any locale.
   * Better support AVX / AVX2 / SSE.
   * Disable OpenMP support by default (see e.g. #1171, #1081).
   * Fix for bounding box problem.
@@ -101,7 +102,7 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
     * Removed obsolete code.
   * **Important notes**
     * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
-    * Tesseract now requires the so called "C" locale. This has mainly implications when Tesseract is used as a library from programming languages like Java or Python. The _locale_ stands for several settings which depend on a language (or language variant) or country. Some of those setting determine the classification of symbols (for example "Is this character a blank (space) character?") or the way how numbers are printed (for example "3.141" or "3,141"). The current Tesseract code implicitly expects some fixed settings, otherwise it fails. Therefore the code fails right at the beginning with an assertion if it cannot be sure that the settings work. This is not a problem with C or C++ programs which by default get a "C" locale with the right settings. All other use cases must currently make sure that they switch to the "C" locale before running Tesseract code. The Tesseract code will be modified in a next release to work with any locale, so the current restriction will hopefully be removed soon. [**Fixed**](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79) in version 4.1.
+    * Tesseract now requires the so called "C" locale. This has mainly implications when Tesseract is used as a library from programming languages like Java or Python. The _locale_ stands for several settings which depend on a language (or language variant) or country. Some of those setting determine the classification of symbols (for example "Is this character a blank (space) character?") or the way how numbers are printed (for example "3.141" or "3,141"). The current Tesseract code implicitly expects some fixed settings, otherwise it fails. Therefore the code fails right at the beginning with an assertion if it cannot be sure that the settings work. This is not a problem with C or C++ programs which by default get a "C" locale with the right settings. All other use cases must currently make sure that they switch to the "C" locale before running Tesseract code. [**Fixed**](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79) in version 4.1.
 
 # Tesseract release notes June 19 2018 - V3.05.02
 This release fixed a few bugs, backported from 4.0.0.
