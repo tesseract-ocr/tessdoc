@@ -42,8 +42,6 @@ Table of Contents
   * master is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
 * Addded the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
 
-… line images 
-
 # Tesseract release notes Jul 07 2019 - V4.1.0
   * Backward compatible release with 4.0.0
   * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
