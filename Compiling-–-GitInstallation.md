@@ -22,7 +22,7 @@ apt-get install automake ca-certificates g++ git libtool libleptonica-dev make p
 
 The optional manpages are built with asciidoc:
 ```
-apt-get install --no-install-recommends asciidoc
+apt-get install --no-install-recommends asciidoc docbook-xsl xsltproc
 ```
 
 If you want to build the Tesseract training tools as well, you'll also require Pango:
