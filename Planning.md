@@ -41,6 +41,10 @@ Log levels:
 * error
 * fatal
 
+Related issues:
+
+* https://github.com/tesseract-ocr/tesseract/issues/1338
+
 Useful links:
 
 * [List of Open Source C++ logging libraries](https://en.cppreference.com/w/cpp/links/libs)
