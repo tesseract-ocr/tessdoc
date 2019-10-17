@@ -98,7 +98,7 @@ Platform support depends on used language and experience of user.
   * [swiftytesseract](https://github.com/SwiftyTesseract/SwiftyTesseract) Swift wrapper
 
 **Flutter**
-  * [tesseract_ocr] (https://pub.dev/packages/tesseract_ocr) Flutter plugin
+  * [tesseract_ocr](https://pub.dev/packages/tesseract_ocr) Flutter plugin
 
 ### Tesseract 3.0x
 
