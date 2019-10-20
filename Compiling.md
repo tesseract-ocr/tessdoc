@@ -439,6 +439,14 @@ make -j
 sudo make install  # if desired
 make training # if installed with training dependencies
 ```
+## macOS: building for arm-apple-darwin64
+
+For cross-compiling see discussion in [issue 2334](https://github.com/tesseract-ocr/tesseract/issues/2334#issuecomment-477218027). You need to specify target this way:
+
+```bash
+./configure CC="gcc --target=arm-apple-darwin64" CXX="g++ --target=arm-apple-darwin64"
+```
+
 # Android
 
 Tesseract can be built for Android as a static command-line executable `tesseract`, or you can use [Java binding](https://github.com/rmtheis/tess-two) to work with **libtess** from your Android app.
