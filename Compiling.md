@@ -434,7 +434,7 @@ The exact values of ``CPPFLAGS`` and ``LDFLAGS`` can be read from ``brew info ic
 git clone https://github.com/tesseract-ocr/tesseract/
 cd tesseract
 ./autogen.sh
-./configure CC=gcc-8 CXX=g++-8 CPPFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib
+./configure CXX=g++-8 CPPFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib
 make -j
 sudo make install  # if desired
 make training # if installed with training dependencies
@@ -444,7 +444,7 @@ make training # if installed with training dependencies
 For cross-compiling see discussion in [issue 2334](https://github.com/tesseract-ocr/tesseract/issues/2334#issuecomment-477218027). You need to specify target this way:
 
 ```bash
-./configure CC="gcc --target=arm-apple-darwin64" CXX="g++ --target=arm-apple-darwin64"
+./configure CXX="g++ --target=arm-apple-darwin64"
 ```
 
 # Android
