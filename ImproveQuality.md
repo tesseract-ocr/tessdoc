@@ -72,14 +72,14 @@ convert  427-1.jpg  -bordercolor White -border 10x10 427-1b.jpg
 
 ### Transparency / Alpha channel
 
-Some image formats (e.g. png) can have [alpha-channel](https://www.techopedia.com/definition/1945/alpha-channel) for providing transparency feature.
+Some image formats (e.g. png) can have an [alpha-channel](https://www.techopedia.com/definition/1945/alpha-channel) for providing a transparency feature.
 
-Tesseract 3.0x expects that users remove alpha channel from image before using image in tesseract. This can done e.g. with ImageMagick command:
+Tesseract 3.0x expects that users remove the alpha channel from the image before using the image in tesseract. This can be done e.g. with ImageMagick command:
 ```
 convert input.png -alpha off output.png
 ```
 
-Tesseract 4.00 removes alpha channel with leptonica function [pixRemoveAlpha()](https://github.com/DanBloomberg/leptonica/blob/648a3be52b6a004df14671de7004416f9a3ce489/src/pixconv.c#L133): it removes alpha component by blending with white background. In some case (e.g. OCR of [movie subtitles](https://github.com/tesseract-ocr/tesseract/issues/2048#issuecomment-438015376)) this can lead to problems, so users would need to remove alpha channel (or pre-process image by inverting image colors) by themself.
+Tesseract 4.00 removes the alpha channel with leptonica function [pixRemoveAlpha()](https://github.com/DanBloomberg/leptonica/blob/648a3be52b6a004df14671de7004416f9a3ce489/src/pixconv.c#L133): it removes the alpha component by blending it with a white background. In some case (e.g. OCR of [movie subtitles](https://github.com/tesseract-ocr/tesseract/issues/2048#issuecomment-438015376)) this can lead to problems, so users would need to remove the alpha channel (or pre-process the image by inverting image colors) by themself.
 
 ### Tools / Libraries
 
@@ -109,7 +109,7 @@ If you need an example how to improve image quality programmatically, have a loo
 
 ## Page segmentation method
 
-By default Tesseract expects a page of text when it segments an image. If you're just seeking to OCR a small region try a different segmentation mode, using the `--psm` argument. Note that adding a white border to text which is too tightly cropped may also help, see [issue 398](https://web.archive.org/web/20151209085049/https://code.google.com/p/tesseract-ocr/issues/detail?id=398).
+By default Tesseract expects a page of text when it segments an image. If you're just seeking to OCR a small region, try a different segmentation mode, using the `--psm` argument. Note that adding a white border to text which is too tightly cropped may also help, see [issue 398](https://web.archive.org/web/20151209085049/https://code.google.com/p/tesseract-ocr/issues/detail?id=398).
 
 To see a complete list of supported page segmentation modes, use `tesseract -h`. Here's the list as of 3.21:
 
