@@ -41,6 +41,8 @@ Table of Contents
 ## Changes made since last release
   * master is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
+* Reorganized Tesseract's source tree. All public headers are now placed in the the `include/tesseract` directory.
+
 
 # Tesseract release notes Jul 07 2019 - V4.1.0
   * Backward compatible release with 4.0.0  
