@@ -268,7 +268,7 @@ If you're building with sw run `sw generate`, it will create a solution link for
 
 
 
-#### cppan
+#### cppan (until 5.0)
 
 If you're building with cppan+cmake, run cmake as follows:
 ```
