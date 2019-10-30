@@ -179,6 +179,46 @@ To do this:
 **For development purposes** of Tesseract itself do the next steps:
 
 1. Download and install Git, CMake and put them in PATH.
+1. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`. SW is a source package distribution system.
+1. Add SW client to PATH.
+1. If you have a release archive, unpack it to `tesseract` dir. 
+
+If you're using master branch (4.0) run
+
+   ```
+   git clone https://github.com/tesseract-ocr/tesseract tesseract
+   ```
+
+4. Run
+
+    ```
+    cd tesseract
+    mkdir build && cd build
+    cmake ..
+    ```
+
+5. Build a solution (`tesseract.sln`) in your Visual Studio version.
+If you want to build and install from command line (e.g. Release build) you can use this command:
+```
+cmake --build . --config Release --target install
+```
+If you want to install to other directory that C:\Program Files (you will need admin right for this), you need to specify install path during configuration:
+```
+cmake .. -G "Visual Studio 15 2017 Win64" -DCMAKE_INSTALL_PREFIX=inst
+```
+
+**For development purposes** of training tools after cloning a repo from previous paragraph, run 
+```
+sw build
+```
+
+You'll see a solution link appeared in the root directory of Tesseract.
+
+#### Develop Tesseract (with CPPAN, until tess 5.0)
+
+**For development purposes** of Tesseract itself do the next steps:
+
+1. Download and install Git, CMake and put them in PATH.
 2. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`. CPPAN is a source package distribution system. Add CPPAN client in PATH too. (VS2015 redist is required.)
 3. If you have a release archive, unpack it to `tesseract` dir. 
 
