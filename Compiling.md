@@ -256,6 +256,20 @@ You'll see a solution link appeared in the root directory of Tesseract.
 
 ## Building for x64 platform
 
+#### sw
+
+If you're building with sw+cmake, run cmake as follows:
+```
+mkdir win64 && cd win64
+cmake .. -G "Visual Studio 14 2015 Win64"
+```
+
+If you're building with sw run `sw generate`, it will create a solution link for you (not yet implemented!).
+
+
+
+#### cppan
+
 If you're building with cppan+cmake, run cmake as follows:
 ```
 mkdir win64 && cd win64
