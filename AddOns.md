@@ -89,6 +89,7 @@ Platform support depends on used language and experience of user.
 ### Tesseract 4.0x
 
 **Java**
+  * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
   * [bytedeco](https://github.com/bytedeco/javacpp-presets/tree/master/tesseract) - Java configuration and interface classes for Tesseract based on 'JavaCPP-Presets' library from https://bytedeco.org - https://github.com/bytedeco/javacpp-presets
 
 **Python**
@@ -99,6 +100,13 @@ Platform support depends on used language and experience of user.
 
 **Flutter**
   * [tesseract_ocr](https://pub.dev/packages/tesseract_ocr) Flutter plugin
+
+**R** 
+  * [tesseract](https://cran.r-project.org/package=tesseract) Bindings to the C++ API for the R programming language
+
+**Ruby**
+  * [rtesseract](https://github.com/dannnylo/rtesseract)
+
 
 ### Tesseract 3.0x
 
@@ -120,7 +128,6 @@ Platform support depends on used language and experience of user.
 
 **R** 
   * [tesseract](https://cran.r-project.org/package=tesseract) Bindings to the C++ API for the R programming language
-
 
 **Ruby**
   * [ruby-tesseract-ocr](https://github.com/meh/ruby-tesseract-ocr/) - wrapper for tesseract 3.0x using the C++ API
