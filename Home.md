@@ -106,23 +106,9 @@ yum install tesseract
 yum install tesseract-langpack-deu
 ```
 
-**For Fedora 27 run the following as root:**
+**For Fedora 29 run the following as root:**
 ```
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_27/home:Alexander_Pozdnyakov.repo
-dnf install tesseract
-dnf install tesseract-langpack-deu
-```
-
-**For Fedora 26 run the following as root:**
-```
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_26/home:Alexander_Pozdnyakov.repo
-dnf install tesseract
-dnf install tesseract-langpack-deu
-```
-
-**For Fedora 25 run the following as root:**
-```
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_25/home:Alexander_Pozdnyakov.repo
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_29/home:Alexander_Pozdnyakov.repo
 dnf install tesseract
 dnf install tesseract-langpack-deu
 ```
