@@ -158,12 +158,8 @@ Platform support depends on used language and experience of user.
 ### Tesseract 2.0x
 
 **Python**
-  * https://github.com/hoffstaetter/python-tesseract/wiki
   * http://code.google.com/p/pytesser/
   * http://code.google.com/p/tesseract-python (pytesser clone)
-  * https://github.com/hoffstaetter/python-tesseract/wiki
-  * http://pokerai.org/pf3/viewtopic.php?f=3&t=2677&start=0&st=0&sk=t&sd=a
-  * [patches of SWIG wrapper](http://code.google.com/p/tesseract-ocr/issues/detail?id=77) for python
 
 **.NET**
   * http://www.pixel-technology.com/freeware/tessnet2/
