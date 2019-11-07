@@ -464,34 +464,37 @@ sudo make install training-install
 ### Install dependencies
 
 ```
+# Packages which are always needed.
 brew install automake autoconf libtool
 brew install pkgconfig
 brew install icu4c
 brew install leptonica
-brew install gcc
-```
-
-### Install Tesseract with training tools
-
-In the above, training tool dependencies are not installed. You can install them like below. 
-```
+# Packages required for training tools.
 brew install pango
+# Optional packages for extra features.
+brew install libarchive
+# Optional package for builds using g++.
+brew install gcc
 ```
 
 ### Compile
 
-As of January 2017, the clang builds but OpenMP will only use a single thread, reducing performance. For best results, use gcc.
-
-The exact values of ``CPPFLAGS`` and ``LDFLAGS`` can be read from ``brew info icu4c``. If you want to build training module, you should also link ``pango`` libraries as `-L/usr/local/Cellar/pango/1.42.4/lib`.
+As of January 2017, the clang builds but OpenMP will only use a single thread, potentially reducing performance. If you really need OpenMP, install and use gcc.
 
 ```bash
 git clone https://github.com/tesseract-ocr/tesseract/
 cd tesseract
 ./autogen.sh
-./configure CXX=g++-8 CPPFLAGS=-I/usr/local/opt/icu4c/include LDFLAGS=-L/usr/local/opt/icu4c/lib
+mkdir build
+cd build
+# Optionally add CXX=g++-8 to the configure command if you really want to use a different compiler.
+../configure PKG_CONFIG_PATH=/usr/local/opt/icu4c/lib/pkgconfig:/usr/local/opt/libarchive/lib/pkgconfig:/usr/local/opt/libffi/lib/pkgconfig
 make -j
-sudo make install  # if desired
-make training # if installed with training dependencies
+# Optionally install Tesseract.
+sudo make install
+# Optionally build and install training tools.
+make training
+sudo make training-install
 ```
 ## macOS: building for arm-apple-darwin64
 
