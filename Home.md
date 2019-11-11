@@ -263,3 +263,6 @@ If you find a bug and fix it yourself, the best thing to do is to attach the pat
 # Support
 
 First read the [Wiki](https://github.com/tesseract-ocr/tesseract/wiki), particularly the [FAQ](FAQ) to see if your problem is addressed there. If not, search the [Tesseract user forum](http://groups.google.com/group/tesseract-ocr) or the [Tesseract developer forum](http://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.
+
+# 3rd-Party tools & sample usage:
+1. [PDF2SearchablePDF](https://github.com/ElectricRCAircraftGuy/PDF2SearchablePDF): `pdf2searchablepdf mypdf.pdf`--produces **mypdf_searchable.pdf** as an output.
