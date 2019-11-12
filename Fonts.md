@@ -107,6 +107,9 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * http://www.ctan.org/tex-archive/fonts (GFS Bodoni)
 * http://www.steffmann.de/wordpress/test-2/
 
+#### Arabic Fonts
+* https://fonts.google.com/?subset=arabic
+
 #### Devanagari Fonts
 
 * [Aksharayogini2](http://aksharyogini.sudhanwa.com/download/Aksharyogini2Normal.ttf)
