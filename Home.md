@@ -42,6 +42,18 @@ For distributions that are supported by snapd you may also run the following com
 
 The traineddata is currently not shipped with the snap package and must be placed manually to `~/snap/tesseract/current`.
 
+### Tesseract Development Version with LSTM engine and related traineddata.
+
+_**5.00 Alpha**_
+
+#### Ubuntu PPA
+
+* [Ubuntu Eoan 19.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=eoan)
+* [Ubuntu Disco 19.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=disco)
+* [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=bionic)
+* [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=xenial)
+* [Ubuntu Trusty 14.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=trusty)
+
 ### Tesseract 4 packages with LSTM engine and related traineddata.
 
 #### Debian
@@ -57,6 +69,8 @@ The traineddata is currently not shipped with the snap package and must be place
 * [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
 
 #### Ubuntu PPA 
+* [Ubuntu Eoan 19.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=eoan)
+* [Ubuntu Disco 19.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=disco)
 * [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
 * [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
