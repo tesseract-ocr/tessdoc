@@ -62,7 +62,7 @@ Finally, run these:
     sudo ldconfig
 ```
 
-Then, set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory, and also place file `eng.traineddata` into it (or whatever other language(s) you need) from here: https://github.com/tesseract-ocr/tessdata. See section "Post-Install Instructions" below.
+Then, set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory, and also place file `eng.traineddata` into it (or whatever other language(s) you need) from here: https://github.com/tesseract-ocr/tessdata. See section **"Post-Install Instructions"** below.
 
 If you get this error:
 ```
