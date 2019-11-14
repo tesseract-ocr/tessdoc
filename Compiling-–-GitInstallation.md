@@ -47,6 +47,8 @@ or to clone a different branch/version:
 git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> --single-branch
 ```
 
+**Note:** You may have problems with building the latest version on git. If this is the case, download one of the latest *released* versions instead, from here: https://github.com/tesseract-ocr/tesseract/releases.
+
 ---
 **Note:** Tesseract requires Leptonica v1.74 or newer. If your system has only older versions of Leptonica, you must compile it manually from source available at [DanBloomberg/leptonica](https://github.com/DanBloomberg/leptonica).
 
@@ -59,6 +61,8 @@ Finally, run these:
     sudo make install
     sudo ldconfig
 ```
+
+Then, set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory, and also place file `eng.traineddata` into it (or whatever other language(s) you need) from here: https://github.com/tesseract-ocr/tessdata. See section "Post-Install Instructions" below.
 
 If you get this error:
 ```
@@ -78,6 +82,21 @@ make: *** [all] Error 2
 ```
 
 Try to run `autoreconf -i` after running `./autogen.sh`.
+
+### Post-Install Instructions
+
+Once installation is complete, **don't forget to do the following!**:
+
+1. Set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory. 
+    1. Ex: on Linux Ubuntu, modify your `~/.bashrc` file by adding the following to the bottom of it. Modify the path according to your situation: 
+
+           export TESSDATA_PREFIX="/home/$USER/Downloads/tesseract/tesseract-4.1.0/tessdata" 
+
+    1. Then, close and re-open your terminal for it to take effect, or just call `. ~/.bashrc` or `export ~/.bashrc` (same thing) for it to take effect immediately in your current terminal.
+
+1. Place any language training data you need into this `tessdata` folder as well. For example, the English one is called `eng.traineddata`. Download it [from the tessdata repository here](https://github.com/tesseract-ocr/tessdata), and move it to your `tessdata` directory you just specified in your `TESSDATA_PREFIX` variable above. 
+
+1. Now you are ready to use `tesseract`! 
 
 ### Build with Training Tools
 
