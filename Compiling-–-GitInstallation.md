@@ -47,7 +47,7 @@ or to clone a different branch/version:
 git clone https://github.com/tesseract-ocr/tesseract.git --branch <branchName> --single-branch
 ```
 
-**Note:** You may have problems with building the latest version on git. If this is the case, download one of the latest *released* versions instead, from here: https://github.com/tesseract-ocr/tesseract/releases.
+**Note:** You may have problems with building the latest version on GitHub. If this is the case, download one of the latest *released* versions instead, from here: https://github.com/tesseract-ocr/tesseract/releases.
 
 ---
 **Note:** Tesseract requires Leptonica v1.74 or newer. If your system has only older versions of Leptonica, you must compile it manually from source available at [DanBloomberg/leptonica](https://github.com/DanBloomberg/leptonica).
