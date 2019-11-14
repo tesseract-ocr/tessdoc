@@ -95,6 +95,7 @@ Once installation is complete, **don't forget to do the following!**:
     1. Then, close and re-open your terminal for it to take effect, or just call `. ~/.bashrc` or `export ~/.bashrc` (same thing) for it to take effect immediately in your current terminal.
 
 1. Place any language training data you need into this `tessdata` folder as well. For example, the English one is called `eng.traineddata`. Download it [from the tessdata repository here](https://github.com/tesseract-ocr/tessdata), and move it to your `tessdata` directory you just specified in your `TESSDATA_PREFIX` variable above. 
+    1. Here is the direct download link for [eng.traineddata](https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata).
 
 1. Now you are ready to use `tesseract`! 
 
