@@ -281,3 +281,5 @@ First read the [Wiki](https://github.com/tesseract-ocr/tesseract/wiki), particul
 # 3rd-Party tools & sample usage:
 1. [PDF2SearchablePDF](https://github.com/ElectricRCAircraftGuy/PDF2SearchablePDF): this is a lightweight bash-script wrapper around tesseract.
     1. Sample usage: `pdf2searchablepdf mypdf.pdf`--produces **mypdf_searchable.pdf** as an output.
+2. [OCRmyPDF] (https://github.com/jbarlow83/OCRmyPDF): tool written in Python and uses Tesseract to OCR PDFs and create searchable documents with accurate text location, while keeping documents lightweight.
+    1. Sample usage: `ocrmypdf -l eng pdf_to_ocr.pdf new_searchable_pdf_with_ocr.pdf`
