@@ -229,6 +229,8 @@ Set the maximum number of threads using the environment variable
 
 To disable multithreading, use `OMP_THREAD_LIMIT=1`.
 
+UPDATE 2019-10-06: Recent tesseract code allows to use option `-c tessedit_do_invert=0` which brings extra speed.
+
 == How can I try the next version?
 
 Periodically stable versions go to the downloads page. Between releases,
