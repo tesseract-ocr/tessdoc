@@ -476,14 +476,15 @@ In the above example,
 **learning_iteration :** "Number of iterations that yielded a non-zero delta error and thus provided significant learning. (learning_iteration <= training_iteration). learning_iteration_ is used to measure rate of learning progress."
 So it uses the delta value to assess it the iteration has been useful.
 
-What is good to know is that when you specify a maximum number of iterations to the training process it uses the middle iteration number **(training_iteration)** to know when to stop. But when it writes a checkpoint, the checkpoint name uses the smallest iteration number **(learning_iteration)**, along with the char train rate. So a checkpoint name is the concatenation of **model_name & char_train & learning_iteration** eg. layer0.475_30993.checkpoint.
+What is good to know is that when you specify a maximum number of iterations to the training process it uses the middle iteration number **(training_iteration)** to know when to stop. But when it writes a checkpoint, the checkpoint name also uses the best iteration number **(learning_iteration)**, along with the char train rate. So a checkpoint name is the concatenation of **model_name & char_train & learning_iteration  & training_iteration** eg. sanLayer_1.754_347705_659600.checkpoint.
 
 The lstmtraining program outputs two kinds of checkpoint files:
 
-*   `<model_base>_checkpoint` is the latest model file.
-*   `<model_base><char_error>_<iteration>.checkpoint` is periodically written as
-    the model with the best training error. It is a training dump just like the
-    checkpoint, but is smaller because it doesn't have a backup model to be used
+*   `<model_base>_checkpoint` is the latest model file along with backup models to be used
+    if the training runs into divergence.
+*   `<model_base>_<char_error>_<learning_iteration>_<training_iteration>.checkpoint` is periodically written as
+    the model with the best training error at that point in training. It is a training dump just like the
+    `<model_base>_checkpoint`, but is smaller because it doesn't have a backup model to be used
     if the training runs into divergence.
 
 Either kind of these checkpoint files can be converted to a standard (best/float) traineddata file or
