@@ -24,7 +24,7 @@
 [SunnyPage OCR](http://www.sunnypage.ge/en/) |           |         | X           | Proprietary | A GUI frontend for Tesseract OCR engine with automatic adjustment of image brightness, image processing and PDF support.|
 | [PDF OCR X](http://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
 | [TaxWorkFlow](https://thetaxworkflow.com)|          |         | X           | Proprietary | TaxWorkFlow is an accounting practice management application that includes GUI frontend for Tesseract OCR engine. The app supports AVX and allows to create OCR'ed PDF files of selected resolution and compression from PDF files and 100+ image file formats. |
-
+| [AmhOCR](https://github.com/KumnegerH/AmhOCR) |           |         | X           |  GPLv3     | Tesseract Powered Windows Desktop OCR Application With Multiple Pre/Post Processing GUI |
 ## Online OCR services
 
   * [OCR.net](http://ocr.net): Powered by PDF OCR X in back-end.  Converts PDFs and Images to Text or searchable PDF.
