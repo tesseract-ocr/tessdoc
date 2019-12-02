@@ -122,7 +122,7 @@ export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig
 
 ## Language Data
 
-  * Download the [data file(s) for the language(s) you interest in](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files).
+  * Download the [data file(s) for the language(s) you are interested in](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files).
   * Move it to the `tessdata` directory (e.g. 'mv tessdata $TESSDATA\_PREFIX' if defined `TESSDATA_PREFIX`)
 
 You can also use:
