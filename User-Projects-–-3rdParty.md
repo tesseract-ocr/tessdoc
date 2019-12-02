@@ -10,6 +10,7 @@
 | [NeOCR](https://sourceforge.net/projects/ne-ocr/) |          |        | X           | Freeware  | A GUI frontend for Tesseract 4.0 OCR engine. |
 | [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GNU AGPL v3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and scanned PDF files |
 | [YAGF](http://sourceforge.net/projects/yagf-ocr/) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
+| [OCR2Text](https://github.com/writecrow/ocr2text) | X         | X        | X           | MIT      | CLI tool for batch-processing PDF to TXT |
 | [OCRFeeder](https://wiki.gnome.org/action/show/Apps/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
 | [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
