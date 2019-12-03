@@ -363,6 +363,29 @@ learning.
 The default value of `net_mode` of `192` enables both Adam and layer-specific
 learning rates.
 
+Here is a sample of messages seen in case of divergence, when learning rate is being reduced.
+
+```
+
+Iteration 8999: GROUND  TRUTH : . هريغ )9(فرعي ال ؛ ميملا رسكب » رخنم « و » رخنم « اولاق
+Iteration 8999: BEST OCR TEXT : . هريغ )6(فرعي ال ؛ ميملا رسكب » رخنم « و » رخنم « اولاق
+File /home/ubuntu/OCR_GS_Data/ara/AWN/book_IbnQutayba.Adab_7_final_200_000742.lstmf line 0 :
+Mean rms=1.696%, delta=3.16%, train=113.332%(18.851%), skip ratio=0.1%
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+At iteration 7794/9000/9011, Mean rms=1.696%, delta=3.16%, char train=113.332%, word train=18.851%, skip ratio=0.1%,  New worst char error = 113.332At iteration 7507, stage 0, Eval Char error rate=5.4443537, Word error rate=16.233627
+Divergence! Reverted to iteration 5870/6400/6408
+Reduced learning rate to :0.00025000001
+ wrote checkpoint.
+
+Iteration 6400: GROUND  TRUTH : بيرق ناك اذإ »)1(ددعقو ددعق لجر « و ، هتصاخ : يأ » هللخدو نالف للخد«
+File /home/ubuntu/OCR_GS_Data/ara/AWN/book_IbnQutayba.Adab_7_final_b_200_000438.lstmf line 0 (Perfect):
+Mean rms=1.759%, delta=2.898%, train=62.442%(21.232%), skip ratio=0.2%
+Iteration 6401: GROUND  TRUTH : . )1(هجيه ام ردق ىلع
+Iteration 6401: ALIGNED TRUTH : . )1(هجيه ام ردق ىىلع
+Iteration 6401: BEST OCR TEXT : . )1(هجيمه ام ردق مع
+
+```
+
 ## Perfect Sample Delay
 
 Training on "easy" samples isn't necessarily a good idea, as it is a waste of
