@@ -249,13 +249,11 @@ Example (Show help information):
 
     bin/fuzzer/fuzzer-api -help=1
 
-Example (Run the fuzzer with a know test case):
+Example (Run the fuzzer with a known test case):
 
     bin/fuzzer/fuzzer-api clusterfuzz-testcase-minimized-fuzzer-api-5670045835853824
 
 Example (Run the fuzzer to find new bugs):
-
-Example (Run the fuzzer with a know test case):
 
     nice bin/fuzzer/fuzzer-api -jobs=16 -workers=16
 
