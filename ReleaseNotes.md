@@ -42,6 +42,7 @@ Table of Contents
   * master is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
 * Fixed more locale handling issues found since 4.1.0.
+* Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
 * Reorganized Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
 * Refactor the Autotools build. It now uses non-recursive (auto)make.
 
