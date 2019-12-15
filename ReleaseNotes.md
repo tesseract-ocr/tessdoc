@@ -52,7 +52,7 @@ Table of Contents
   * Added new renders LSTMBox, WordStrBox to simplify training
   * Added character boxes in hOCR output.
   * Added Python training scripts (experimental) as alternative shell scripts.
-  * Fixed locale handling issue. libtesseract now works with any locale.
+  * [Fixed locale handling issue](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79). libtesseract now works with any locale.
   * Better support AVX / AVX2 / SSE.
   * Disable OpenMP support by default (see e.g. #1171, #1081).
   * Fix for bounding box problem.
