@@ -277,9 +277,3 @@ If you find a bug and fix it yourself, the best thing to do is to attach the pat
 # Support
 
 First read the [Wiki](https://github.com/tesseract-ocr/tesseract/wiki), particularly the [FAQ](FAQ) to see if your problem is addressed there. If not, search the [Tesseract user forum](http://groups.google.com/group/tesseract-ocr) or the [Tesseract developer forum](http://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.
-
-# 3rd-Party tools & sample usage:
-1. [PDF2SearchablePDF](https://github.com/ElectricRCAircraftGuy/PDF2SearchablePDF): this is a lightweight bash-script wrapper around tesseract.
-    1. Sample usage: `pdf2searchablepdf mypdf.pdf`--produces **mypdf_searchable.pdf** as an output.
-2. [OCRmyPDF](https://github.com/jbarlow83/OCRmyPDF): tool written in Python that uses Tesseract to OCR PDFs and create searchable documents with accurate text location, while keeping documents lightweight.
-    1. Sample usage: `ocrmypdf -l eng pdf_to_ocr.pdf new_searchable_pdf_with_ocr.pdf`
