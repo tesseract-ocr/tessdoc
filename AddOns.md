@@ -141,7 +141,6 @@ Platform support depends on used language and experience of user.
 
 **PHP**
   * [tesseract-ocr-for-php](https://github.com/thiagoalessio/tesseract-ocr-for-php)
-  * https://code.google.com/p/php-tesseract/
 
 **Objective-C**
   * [Tesseract-macOS](https://github.com/scott0123/Tesseract-macOS)
