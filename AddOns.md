@@ -115,7 +115,6 @@ Platform support depends on used language and experience of user.
 
 **.Net**
   * [charlesw/tesseract](https://github.com/charlesw/tesseract) - project offers also [tesseract-ocr 64bit Windows library](https://github.com/charlesw/tesseract/tree/master/src/lib/TesseractOcr/x64)
-  * http://code.google.com/p/tesseractdotnet/
 
 **Python**
   * [tesserocr](https://github.com/sirfz/tesserocr) - A Python wrapper around Tesseract's C++ API
