@@ -57,7 +57,7 @@ Table of Contents
   * Disable OpenMP support by default (see e.g. #1171, #1081).
   * Fix for bounding box problem.
   * Implemented support for whitelist/blacklist in LSTM engine.
-  * Made user-words and user-patterns files work with lstm. [#2328](https://github.com/tesseract-ocr/tesseract/pull/2328)
+  * Made user-words and user-patterns files work with the LSTM engine. [#2328](https://github.com/tesseract-ocr/tesseract/pull/2328)
   * Improved CMake configuration.
   * Code modernization and improvements.
   * A lot of bug fixes...
