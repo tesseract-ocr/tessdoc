@@ -134,15 +134,6 @@ dnf install tesseract
 dnf install tesseract-langpack-deu
 ```
 
-
-
-**For Fedora 29 run the following as root:**
-```
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_29/home:Alexander_Pozdnyakov.repo
-dnf install tesseract
-dnf install tesseract-langpack-deu
-```
-
 **For openSUSE Tumbleweed run the following as root:**
 ```
 zypper addrepo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/openSUSE_Tumbleweed/home:Alexander_Pozdnyakov.repo
