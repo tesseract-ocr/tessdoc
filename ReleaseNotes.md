@@ -44,7 +44,7 @@ Table of Contents
 * Fixed more locale handling issues found since 4.1.0.
 * Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
 * Reorganized Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
-* Refactor the Autotools build. It now uses non-recursive (auto)make.
+* Refactored the Autotools build. It now uses non-recursive (auto)make.
 
 # Tesseract release notes Jul 07 2019 - V4.1.0
   * Backward compatible release with 4.0.0  
