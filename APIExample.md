@@ -67,6 +67,7 @@ If you want to restrict recognition to a sub-rectangle of the image - call _SetR
     int conf = api->MeanTextConf();
     fprintf(stdout, "Box[%d]: x=%d, y=%d, w=%d, h=%d, confidence: %d, text: %s",
                     i, box->x, box->y, box->w, box->h, conf, ocrResult);
+    destroyBox(&box);
   }
 ```
 
