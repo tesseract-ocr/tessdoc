@@ -20,9 +20,12 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 ## Updated Data Files for Version 4.00 (September 15, 2017)
 
 We have three sets of .traineddata files on GitHub in three separate repositories. 
-* https://github.com/tesseract-ocr/tessdata_best
-* https://github.com/tesseract-ocr/tessdata_fast
-* https://github.com/tesseract-ocr/tessdata
+
+|               | Trained models                                           | Speed                     | Accuracy                                  | Supports legacy | Retrainable |
+|---------------|----------------------------------------------------------|---------------------------|-------------------------------------------|-----------------|-------------|
+| [tessdata](https://github.com/tesseract-ocr/tessdata)      | Legacy + LSTM (integerized tessdata-best)                | Faster than tessdata-best | Slightly less accurate than tessdata-best | Yes             | No          |
+| [tessdata-best](https://github.com/tesseract-ocr/tessdata_best) | LSTM only (based on [langdata](https://github.com/tesseract-ocr/langdata))                            | Slowest                   | Most accurate                             | No              | Yes         |
+| [tessdata-fast](https://github.com/tesseract-ocr/tessdata_fast) | Integerized LSTM of a smaller network than tessdata-best | Fastest                   | Least accurate                            | No              | No          |
 
 Most users will want **`tessdata_fast`** and that is what will be shipped as part of Linux distributions. 
 
