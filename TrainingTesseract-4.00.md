@@ -111,6 +111,10 @@ source directory:
 ```bash
 ./configure
 ```
+or if you plan to run in docker (or do not require graphics):
+```bash
+./configure --disable-graphics
+```
 
 By default Tesseract configuration will proceed if dependencies required only 
 for training are missing, but for training, you will have to ensure all those
@@ -634,6 +638,11 @@ as follows:
 src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --tessdata_dir ./tessdata --output_dir ~/tesstutorial/engtrain
+```
+And the following is printed out after a successful run:
+```
+Created starter traineddata for LSTM training of language 'eng'
+Run 'lstmtraining' command to continue LSTM training for language 'eng'
 ```
 
 The above command makes LSTM training data equivalent to the data used to train
