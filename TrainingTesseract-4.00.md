@@ -697,6 +697,7 @@ training/lstmtraining --debug_interval 100 \
   --eval_listfile ~/tesstutorial/engeval/eng.training_files.txt \
   --max_iterations 5000 &>~/tesstutorial/engoutput/basetrain.log
 ```
+(Note that "O1c111" in the net spec means 111 output classes; this should match the number of entries in the unicharset file.)
 
 In a separate window monitor the log file:
 
