@@ -72,6 +72,7 @@ https://notesalexp.org/tesseract-ocr/
 
 #### Ubuntu
 
+* [Ubuntu Bionic 20.04](https://packages.ubuntu.com/focal/tesseract-ocr-all)
 * [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
 
 #### Ubuntu PPA 
