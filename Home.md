@@ -58,7 +58,7 @@ _**5.00 Alpha**_
 
 https://notesalexp.org/tesseract-ocr/
 
-### Tesseract 4 packages with LSTM engine and related traineddata.
+### Tesseract 4 packages with LSTM engine and related traineddata
 
 #### Debian
 
