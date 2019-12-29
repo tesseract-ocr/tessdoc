@@ -58,11 +58,17 @@ _**5.00 Alpha**_
 
 #### Debian
 
-* [Debian 10 Buster (stable)](https://packages.debian.org/buster/tesseract-ocr)
-* [Debian 9 Stretch backports (oldstable)](https://packages.debian.org/stretch-backports/tesseract-ocr)
-* [Debian 8 Jessie (oldoldstable) - notesalexp.org](https://notesalexp.org/tesseract-ocr/)
+##### 4.1.x / 5.0.x
+
 * [Debian testing](https://packages.debian.org/testing/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
+ 
+https://notesalexp.org/tesseract-ocr/
+
+##### 4.0.x
+
+* [Debian 10 Buster (stable)](https://packages.debian.org/buster/tesseract-ocr)
+* [Debian 9 Stretch backports (oldstable)](https://packages.debian.org/stretch-backports/tesseract-ocr)
 
 #### Ubuntu
 
