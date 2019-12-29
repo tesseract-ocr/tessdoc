@@ -42,7 +42,7 @@ For distributions that are supported by snapd you may also run the following com
 
 The traineddata is currently not shipped with the snap package and must be placed manually to `~/snap/tesseract/current`.
 
-### Tesseract Development Version with LSTM engine and related traineddata.
+### Tesseract Development Version with LSTM engine and related traineddata
 
 _**5.00 Alpha**_
 
@@ -54,11 +54,15 @@ _**5.00 Alpha**_
 * [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=trusty)
 
+#### Debian
+
+https://notesalexp.org/tesseract-ocr/
+
 ### Tesseract 4 packages with LSTM engine and related traineddata.
 
 #### Debian
 
-##### 4.1.x / 5.0.x
+##### 4.1.x
 
 * [Debian testing](https://packages.debian.org/testing/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
