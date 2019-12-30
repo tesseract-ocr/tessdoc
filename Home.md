@@ -67,7 +67,7 @@ https://notesalexp.org/tesseract-ocr/
 * [Debian testing](https://packages.debian.org/testing/tesseract-ocr)
 * [Debian Sid (unstable)](https://packages.debian.org/sid/tesseract-ocr)
  
-https://notesalexp.org/tesseract-ocr/
+There are also 4.1.x packages for other versions of Debian, check it here [https://notesalexp.org/tesseract-ocr/](https://notesalexp.org/tesseract-ocr/)
 
 ##### 4.0.x
 
