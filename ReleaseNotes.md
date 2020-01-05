@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes#in-development)
+* [Dec 26 2019 - V4.1.1](#tesseract-release-notes-dec-26-2019---v411)
 * [Jul 07 2019 - V4.1.0](#tesseract-release-notes-jul-07-2019---v410)
 * [Oct 29 2018 - V4.0.0](#tesseract-release-notes-oct-29-2018---v400)
 * [June 19 2018 - V3.05.02](#tesseract-release-notes-june-19-2018---v30502)
@@ -40,11 +41,14 @@ Table of Contents
 
 ## Changes made since last release
   * master is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
+* Reorganized Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
+* Refactored the Autotools build. It now uses non-recursive (auto)make.
+
+# Tesseract release notes Dec 26 2019 - V4.1.1
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
 * Fixed more locale handling issues found since 4.1.0.
 * Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
-* Reorganized Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
-* Refactored the Autotools build. It now uses non-recursive (auto)make.
+
 
 # Tesseract release notes Jul 07 2019 - V4.1.0
   * Backward compatible release with 4.0.0  
