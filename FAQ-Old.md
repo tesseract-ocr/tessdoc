@@ -37,7 +37,7 @@ Table of Contents
   * [How do I produce searchable PDF output?](#how-do-i-produce-searchable-pdf-output)
   * [The produced searchable PDF seems to only contain spaces](#the-produced-searchable-pdf-seems-to-only-contain-spaces)
   * [How to do streaming](#how-to-do-streaming)
-  * [Is there a Minimum / Maximum Text Size? (It won't read screen text!)](#is-there-a-minimum-text-size-it-wont-read-screen-text)
+  * [Is there a Minimum / Maximum Text Size? (It won't read screen text!)](#is-there-a-minimum--maximum-text-size-it-wont-read-screen-text)
   * [Why is the output empty or of poor quality?](#why-is-the-output-empty-or-of-poor-quality)
   * [How do I generate the language data files?](#how-do-i-generate-the-language-data-files)
   * [How do I unpack or alter existing language data files?](#how-do-i-unpack-or-alter-existing-language-data-files)
