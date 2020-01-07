@@ -34,7 +34,7 @@
   * [Free OCR](http://www.free-ocr.com/)
   * [i2OCR](http://www.i2ocr.com/)
   * [Indic-OCR OCR Service](https://indic-ocr.github.io/ocrservice/)  An online OCR service for Indian languages 
-  * [mailocr](https://github.com/ruanchaves/mailocr): an open source OCR service that converts PDFs and images to searchable PDFs.
+
  
 ### Mobile
 
