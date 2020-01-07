@@ -37,7 +37,7 @@ Table of Contents
   * [How do I produce searchable PDF output?](#how-do-i-produce-searchable-pdf-output)
   * [The produced searchable PDF seems to only contain spaces](#the-produced-searchable-pdf-seems-to-only-contain-spaces)
   * [How to do streaming](#how-to-do-streaming)
-  * [Is there a Minimum Text Size? (It won't read screen text!)](#is-there-a-minimum-text-size-it-wont-read-screen-text)
+  * [Is there a Minimum / Maximum Text Size? (It won't read screen text!)](#is-there-a-minimum-text-size-it-wont-read-screen-text)
   * [Why is the output empty or of poor quality?](#why-is-the-output-empty-or-of-poor-quality)
   * [How do I generate the language data files?](#how-do-i-generate-the-language-data-files)
   * [How do I unpack or alter existing language data files?](#how-do-i-unpack-or-alter-existing-language-data-files)
@@ -318,9 +318,11 @@ scanimage --batch --batch-print | tesseract -c stream_filelist=true - - pdf > ou
 ```
 
 
-## Is there a Minimum Text Size? (It won't read screen text!)
+## Is there a Minimum / Maximum Text Size? (It won't read screen text!)
 
 There is a minimum text size for reasonable accuracy. You have to consider resolution as well as point size. Accuracy drops off below 10pt x 300dpi, rapidly below 8pt x 300dpi. A quick check is to count the pixels of the x-height of your characters. (X-height is the height of the lower case x.) At 10pt x 300dpi x-heights are typically about 20 pixels, although this can vary dramatically from font to font. Below an x-height of 10 pixels, you have very little chance of accurate results, and below about 8 pixels, most of the text will be "noise removed".
+
+Using LSTM there seems also to be a maximum x-height somewhere around 30 px. Above that, Tesseract doesn't produce accurate results. The legacy engine seems to be less prone to this (see https://groups.google.com/forum/#!msg/tesseract-ocr/Wdh_JJwnw94/24JHDYQbBQAJ).
 
 ## Why is the output empty or of poor quality?
 
