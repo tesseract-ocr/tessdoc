@@ -36,6 +36,7 @@ int main()
 
     // Destroy used object and release memory
     api->End();
+    delete api;
     delete [] outText;
     pixDestroy(&image);
 
