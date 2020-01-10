@@ -4,7 +4,7 @@ This wiki provides simple examples on how to use the tesseract-ocr API (v3.02.02
 It is expected that tesseract-ocr is correctly installed including all dependencies.
 It is expected the user is familiar with C++, compiling and linking program on their platform, [though basic compilation examples are included for beginners with Linux](#compiling-c-api-programs-on-linux).
 
-More details about tesseract-ocr API can be found at [baseapi.h](https://github.com/tesseract-ocr/tesseract/blob/master/src/api/baseapi.h).
+More details about tesseract-ocr API can be found at [baseapi.h](https://github.com/tesseract-ocr/tesseract/blob/master/include/tesseract/baseapi.h).
 
 
 
