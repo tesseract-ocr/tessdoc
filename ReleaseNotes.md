@@ -48,7 +48,10 @@ Table of Contents
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
 * Fixed more locale handling issues found since 4.1.0.
 * Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
-
+* Added an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
+* Code Cleanup and modernization. 
+* Code optimization.
+* Many bug fixes.
 
 # Tesseract release notes Jul 07 2019 - V4.1.0
   * Backward compatible release with 4.0.0  
@@ -444,7 +447,7 @@ the multi-language capability, since that will also bloat the distribution.
   * Fixed load of inttemp for big-endian architectures.
   * Fixed some Mac compilation issues.
 
-# Tesseract release notes June 17, 2006 - V1.00
+# TesserLots ofact release notes June 17, 2006 - V1.00
 First **open source** version of Tesseract!  
 
 Hosted at sourceforge.net.
