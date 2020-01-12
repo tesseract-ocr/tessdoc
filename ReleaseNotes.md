@@ -45,7 +45,8 @@ Table of Contents
 * Refactored the Autotools build. It now uses non-recursive (auto)make.
 
 # Tesseract release notes Dec 26 2019 - V4.1.1
-* Added support for image or image list by URL. This feature is implemented using libcurl. Usage: tesseract http://IMAGE_URL OUTPUT ...
+* Added support for image or image list by URL. This feature is implemented using libcurl. Usage: `tesseract http://IMAGE_URL OUTPUT ...`
+* Added A new parameter `document_title` to set the title in OCR output files (hOCR, PDF, ALTO).
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
 * Fixed more locale handling issues found since 4.1.0.
 * Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
