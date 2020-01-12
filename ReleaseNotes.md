@@ -54,6 +54,7 @@ Table of Contents
 * Fixed more locale handling issues found since 4.1.0.
 * Fixed memory leak in text2image
 * Fixed potential bugs discovered by running UndefinedBehaviorSanitizer. 
+* Fixed many issues reported by Coverity Scan.
 * Code Cleanup and modernization. 
 * Code optimization.
 * Many bug fixes.
