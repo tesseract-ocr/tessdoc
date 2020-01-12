@@ -48,8 +48,8 @@ Table of Contents
 * Added support for image or image list by URL. This feature is implemented using libcurl. Usage: `tesseract http://IMAGE_URL OUTPUT ...`
 * Added A new parameter `document_title` to set the title in OCR output files (hOCR, PDF, ALTO).
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `true`.
+* Added the parameter `pageseg_apply_music_mask` to allow disabling the music mask.
 * Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
-* Added `pageseg_apply_music_mask` parameter to allow disabling the music mask.
 * Added an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
 * Fixed more locale handling issues found since 4.1.0.
 * Fixed memory leak in text2image
