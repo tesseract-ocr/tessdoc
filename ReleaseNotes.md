@@ -71,7 +71,7 @@ Table of Contents
   * Made user-words and user-patterns files work with the LSTM engine. [#2328](https://github.com/tesseract-ocr/tesseract/pull/2328)
   * Improved CMake configuration.
   * Code modernization and improvements.
-  * A lot of bug fixes...
+  * A lot of bug fixes.
 
 # Tesseract release notes Oct 29 2018 - V4.0.0
   * **New OCR engine**
