@@ -40,7 +40,7 @@ Table of Contents
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=3.05.02&v2=4.0.0&obj=a88e1&kind=abi)
 
 ## Changes made since last release
-  * master is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
+  * The master branch is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
 * Reorganized Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
 * Refactored the Autotools build. It now uses non-recursive (auto)make.
 
