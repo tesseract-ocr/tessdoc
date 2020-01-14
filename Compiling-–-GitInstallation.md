@@ -113,20 +113,26 @@ You can specify extra options for configure, as needed. eg.
 
 ### Post-Install Instructions
 
-There are two parts to install for Tesseract, the engine itself, and the training data for a language.
-The above commands install the tesseract engine and training tools. They also install the config files needed for output such as `pdf, tsv, hocr, alto`, etc. 
+There are two parts to install for Tesseract, the **engine** itself, and the **traineddata for a language**.
 
-In addition to these, **traineddata **for a language is needed to recognize the text in images. Three types of traineddata files ([tessdata](https://github.com/tesseract-ocr/tessdata), [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) and [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast)) for over 130 languages and over 35 scripts are available in tesseract-ocr GitHub repos.
+The above installation commands install the Tesseract engine and training tools. They also install the config files eg. those needed for output such as `pdf, tsv, hocr, alto`, or those for creating box files such as `lstmbox, wordstrbox`. 
+In addition to these, **traineddata** for a language is needed to recognize the text in images. 
 
-When building from source on Linux, the tessdata configs will be installed in `/usr/local/share/tessdata` unless you used `./configure --prefix=/usr`.
+Three types of **traineddata** files ([tessdata](https://github.com/tesseract-ocr/tessdata), [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) and [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast)) for over 130 languages and over 35 scripts are available in tesseract-ocr GitHub repos.
 
-Once installation of tesseract is complete, **don't forget to** download the laanguage traineddata files required by you. eg. Here is the direct download link for [eng.traineddata from tessdata repo which supports both the legacy and LSTM engines of tesseract](https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata). 
+When building from source on Linux, the tessdata configs will be installed in `/usr/local/share/tessdata` unless you used `./configure --prefix=/usr`. Once installation of tesseract is complete, **don't forget to** download the language traineddata files required by you and place them in this tessdata directory (`/usr/local/share/tessdata`). 
+
+If you want support for both the legacy (--oem 0) and LSTM (--oem 1) engine, download the traineddata files from [tessdata](https://github.com/tesseract-ocr/tessdata).
+
+Use traineddata files from [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) or [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) if you only want support for LSTM engine (--oem 1).
+
+Please make sure to use the download link or wget the `raw` file. eg. Here is the direct download link for [eng.traineddata from tessdata repo which supports both the legacy and LSTM engines of tesseract](https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata). 
 
 Now you are ready to use `tesseract`! 
 
 A python3 script for downloading traineddata files is available from https://github.com/zdenop/tessdata_downloader
 
-If you want to put the traineddata in a different directory than the directory that was defined during installation ie. `/usr/local/share/tessdata` then you need to set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory. 
+If you want to put the traineddata files in a different directory than the directory that was defined during installation i.e. `/usr/local/share/tessdata` then you need to set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory. 
 
 1. Ex: on Linux Ubuntu, modify your `~/.bashrc` file by adding the following to the bottom of it. Modify the path according to your situation: 
 
