@@ -8,6 +8,7 @@
   * [Profiling builds](#profiling-builds)
   * [Release Builds for Mass Production](#release-builds-for-mass-production)
   * [Builds for fuzzing](#builds-for-fuzzing)
+  * [Post Install Instructions for Language Traineddata](#post-install-instructions)
 * [Building using Windows Visual Studio](#building-using-windows-visual-studio)
 
 These are the instructions for installing Tesseract from the git repository. You should be ready to face unexpected problems.
@@ -62,7 +63,7 @@ Finally, run these:
     sudo ldconfig
 ```
 
-Then, set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory, and also place file `eng.traineddata` into it (or whatever other language(s) you need) from here: https://github.com/tesseract-ocr/tessdata. See section **"Post-Install Instructions"** below.
+IMPORTANT: See section **"Post-Install Instructions"** below.
 
 If you get this error:
 ```
