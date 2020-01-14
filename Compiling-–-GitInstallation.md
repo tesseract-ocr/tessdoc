@@ -63,7 +63,7 @@ Finally, run these:
     sudo ldconfig
 ```
 
-IMPORTANT: See section **"Post-Install Instructions"** below.
+IMPORTANT: See section **"[Post-Install Instructions](#post-install-instructions)"** below.
 
 If you get this error:
 ```
@@ -83,22 +83,6 @@ make: *** [all] Error 2
 ```
 
 Try to run `autoreconf -i` after running `./autogen.sh`.
-
-### Post-Install Instructions
-
-Once installation is complete, **don't forget to do the following!**:
-
-1. Set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory. 
-    1. Ex: on Linux Ubuntu, modify your `~/.bashrc` file by adding the following to the bottom of it. Modify the path according to your situation: 
-
-           export TESSDATA_PREFIX="/home/$USER/Downloads/tesseract/tesseract-4.1.0/tessdata" 
-
-    1. Then, close and re-open your terminal for it to take effect, or just call `. ~/.bashrc` or `export ~/.bashrc` (same thing) for it to take effect immediately in your current terminal.
-
-1. Place any language training data you need into this `tessdata` folder as well. For example, the English one is called `eng.traineddata`. Download it [from the tessdata repository here](https://github.com/tesseract-ocr/tessdata), and move it to your `tessdata` directory you just specified in your `TESSDATA_PREFIX` variable above. 
-    1. Here is the direct download link for [eng.traineddata](https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata).
-
-1. Now you are ready to use `tesseract`! 
 
 ### Build with Training Tools
 
@@ -126,6 +110,23 @@ To build Tesseract with training tools, run the following:
 You can specify extra options for configure, as needed. eg.
 
 `./configure  --disable-openmp --disable-debug --disable-opencl --disable-graphics --disable-shared 'CXXFLAGS=-g -O2 -Wall -Wextra -Wpedantic'`
+
+### Post-Install Instructions
+
+Once installation is complete, **don't forget to do the following!**:
+
+1. Set a local variable called `TESSDATA_PREFIX` to point to the tesseract `tessdata` directory. 
+    1. Ex: on Linux Ubuntu, modify your `~/.bashrc` file by adding the following to the bottom of it. Modify the path according to your situation: 
+
+           export TESSDATA_PREFIX="/home/$USER/Downloads/tesseract/tesseract-4.1.0/tessdata" 
+
+    1. Then, close and re-open your terminal for it to take effect, or just call `. ~/.bashrc` or `export ~/.bashrc` (same thing) for it to take effect immediately in your current terminal.
+
+1. Place any language training data you need into this `tessdata` folder as well. For example, the English one is called `eng.traineddata`. Download it [from the tessdata repository here](https://github.com/tesseract-ocr/tessdata), and move it to your `tessdata` directory you just specified in your `TESSDATA_PREFIX` variable above. 
+    1. Here is the direct download link for [eng.traineddata](https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata).
+
+1. Now you are ready to use `tesseract`! 
+
 
 
 ### Build with TensorFlow
