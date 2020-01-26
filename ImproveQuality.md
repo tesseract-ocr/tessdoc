@@ -7,6 +7,7 @@ There are a variety of reasons you might not get good quality output from Tesser
   * [Rescaling](#rescaling)
   * [Binarisation](#binarisation)
   * [Noise Removal](#noise-removal)
+  * [Dilation / Erosion](#dilation-and-erosion)
   * [Rotation / Deskewing](#rotation--deskewing)
   * [Borders](#Borders)
   * [Transparency / Alpha channel](#transparency--alpha-channel)
@@ -50,7 +51,7 @@ Noise is random variation of brightness or colour in an image, that can make the
 
 ### Dilation and Erosion
 
-Bold characters or Thin characters (especially those with [Serifs](https://en.wikipedia.org/wiki/Serif)) may impact the recognition of details and reduce recognition accuracy.  Many image processing programs allow Propagation either negative or positive values to allow [Dialation and Erosion](http://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Morpholo.html#Heading96) of edges of characters against a common background.
+Bold characters or Thin characters (especially those with [Serifs](https://en.wikipedia.org/wiki/Serif)) may impact the recognition of details and reduce recognition accuracy.  Many image processing programs allow Propagation either negative or positive values to allow [Dilation and Erosion](http://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Morpholo.html#Heading96) of edges of characters against a common background.
 
 Heavy ink bleeding from historical documents can be compensated for by using an Erosion technique.
 
