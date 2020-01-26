@@ -54,7 +54,7 @@ Bold characters or Thin characters (especially those with [Serifs](https://en.wi
 
 Heavy ink bleeding from historical documents can be compensated for by using an Erosion technique.
 
-For example, GIMP's Value Propagate filter can create Erosion of extra bold historical fonts by reducing the Lower threshold value)
+For example, GIMP's Value Propagate filter can create Erosion of extra bold historical fonts by reducing the Lower threshold value.
 
 Original: (Erosion_original.jpg)
 
