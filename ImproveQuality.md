@@ -48,6 +48,19 @@ If you are not able to fix this by providing a better input image, you can try a
 
 Noise is random variation of brightness or colour in an image, that can make the text of the image more difficult to read. Certain types of noise cannot be removed by Tesseract in the binarisation step, which can cause accuracy rates to drop.
 
+### Dilation and Erosion
+
+Bold characters or Thin characters (especially those with [Serifs](https://en.wikipedia.org/wiki/Serif)) may impact the recognition of details and reduce recognition accuracy.  Many image processing programs allow Propagation either negative or positive values to allow [Dialation and Erosion](http://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Morpholo.html#Heading96) of edges of characters against a common background.
+
+Heavy ink bleeding from historical documents can be compensated for by using an Erosion technique.
+
+For example, GIMP's Value Propagate filter can create Erosion of extra bold historical fonts by reducing the Lower threshold value)
+
+Original: (Erosion_original.jpg)
+
+
+Erosion applied: (Erosion_applied.jpg)
+
 
 ### Rotation / Deskewing
 
