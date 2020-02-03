@@ -21,7 +21,7 @@ For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00a
     + [How can I try the next version?](#how-can-i-try-the-next-version-)
     + [How do I compare different versions of Tesseract](#how-do-i-compare-different-versions-of-tesseract)
   * [Training](#training)
-    + [How do I train Tesseract 4.0.0 LSTM Engine?](#how-do-i-train-tesseract-400-lstm-engine-)
+    + [How do I train Tesseract LSTM Engine?](#how-do-i-train-tesseract-lstm-engine-)
   * [pdf](#pdf)
     + [How do I produce searchable PDF output?](#how-do-i-produce-searchable-pdf-output-)
     + [The searchable PDF seems to contain only spaces or spaces between the letters of words.](#the-searchable-pdf-seems-to-contain-only-spaces-or-spaces-between-the-letters-of-words)
@@ -143,11 +143,11 @@ Try to turn off the adaptive classifier by setting the config variable `classify
 
 See also the discussion on the [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ)
 
-How do I improve OCR results?
+### How do I improve OCR results?
 
 You should note that in many cases, in order to get better OCR results, you’ll need to [improve the quality](ImproveQuality.md) of the input image you are giving Tesseract.
 
-Can I increase speed of OCR?
+### Can I increase speed of OCR?
 
 If you are running Tesseract 4, you can use the "fast" integer models.
 
@@ -177,11 +177,11 @@ If you want to have several versions of tesseract (e.g. you want to compare OCR 
 
 ## Training
 
-### How do I train Tesseract 4.0.0 LSTM Engine?
+### How do I train Tesseract LSTM Engine?
 
 Tesseract can be trained to recognize other languages or finetune existing language models. See [Tesseract Wiki Training Tesseract 4.00](TrainingTesseract-4.00.md) page for information on training the LSTM engine.
 
-Please note that currently LSTM training is only supported using synthetic images created using a UTF-8 training text and unicode fonts to render the text.
+Please note that `tesstrain.sh` and `tesstrain.py` only support training using synthetic images created using a UTF-8 training text and Unicode fonts to render the text. Training from scanned images and transcription is supported via [tesstrain makefile](https://github.com/tesseract-ocr/tesstrain).
 
 ## pdf
 
