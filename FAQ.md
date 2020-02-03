@@ -1,7 +1,7 @@
 ***
-This is a collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4**. [Common errors and information for their resolution](https://github.com/tesseract-ocr/tesseract/wiki/4.0x-Common-Errors-and-Resolutions) is given on a [separate wiki page](https://github.com/tesseract-ocr/tesseract/wiki/4.0x-Common-Errors-and-Resolutions).
+This is a collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4**. Also see [Common errors and information for their resolution](4.0x-Common-Errors-and-Resolutions.md).
 
-For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha, please see [FAQ Old](FAQ-Old).
+For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha, please see [FAQ Old](FAQ-Old.md).
 ***
 - [Tesseract 4.0.0](#tesseract-400)
   * [How do I get Tesseract?](#how-do-i-get-tesseract-)
@@ -36,15 +36,15 @@ For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00a
 
 ## How do I get Tesseract?
 
-See [Tesseract Wiki Home](https://github.com/tesseract-ocr/tesseract/wiki) page for details.
+See [Tesseract Wiki Home](Home.md) page for details.
 
 ### Which language models are available for Tesseract?
 
 See Tesseract man page for the list of [languages](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) and [scripts](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#scripts) supported by Tesseract4.0.0.
 
-See the [Tesseract Wiki Data Files](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017) page for information regarding the three different types of language models available for Tesseract 4.0.0.
+See the [Tesseract Wiki Data Files](Data-Files.md#updated-data-files-for-version-400-september-15-2017) page for information regarding the three different types of language models available for Tesseract 4.0.0.
 
-User contributed language models are linked from [Data Files Contributions](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files-Contributions).
+User contributed language models are linked from [Data Files Contributions](Data-Files-Contributions.md).
 
 ### Where are the language models (traineddata files) for Tesseract installed?
 
@@ -85,7 +85,7 @@ In newer Tesseract (after September 2017) the `include_page_breaks` config varia
 
 ### How do I run Tesseract 4.0.0 from the command line?
 
-See [Tesseract Wiki Command Line Usage](https://github.com/tesseract-ocr/tesseract/wiki/Command-Line-Usage) page for information on how to run Tesseract from the command line.
+See [Tesseract Wiki Command Line Usage](Command-Line-Usage.md) page for information on how to run Tesseract from the command line.
 
 `tesseract --help` will provide the most recent help information for the installed version.
 
@@ -135,7 +135,7 @@ With tesseract 3.02 you can use config "quiet". E.g.:
 
 ### How do I use Tesseract 4.0.0 using the API?
 
-See [Tesseract Wiki API examples](https://github.com/tesseract-ocr/tesseract/wiki/APIExample) page for sample programs for using the API.
+See [Tesseract Wiki API examples](APIExample.md) page for sample programs for using the API.
 
 ### There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images.
 
@@ -145,7 +145,7 @@ See also the discussion on the [tesseract forum](https://groups.google.com/d/top
 
 How do I improve OCR results?
 
-You should note that in many cases, in order to get better OCR results, you’ll need to [improve the quality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) of the input image you are giving Tesseract.
+You should note that in many cases, in order to get better OCR results, you’ll need to [improve the quality](ImproveQuality.md) of the input image you are giving Tesseract.
 
 Can I increase speed of OCR?
 
@@ -179,7 +179,7 @@ If you want to have several versions of tesseract (e.g. you want to compare OCR 
 
 ### How do I train Tesseract 4.0.0 LSTM Engine?
 
-Tesseract can be trained to recognize other languages or finetune existing language models. See [Tesseract Wiki Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00) page for information on training the LSTM engine.
+Tesseract can be trained to recognize other languages or finetune existing language models. See [Tesseract Wiki Training Tesseract 4.00](TrainingTesseract-4.00.md) page for information on training the LSTM engine.
 
 Please note that currently LSTM training is only supported using synthetic images created using a UTF-8 training text and unicode fonts to render the text.
 
