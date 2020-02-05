@@ -178,6 +178,7 @@ You can install Tesseract using either [MacPorts](https://www.macports.org/) or 
 A macOS wrapper for the Tesseract API is also available at [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS).
 
 ### MacPorts
+
 To install Tesseract run this command: 
 ```
 sudo port install tesseract
@@ -189,13 +190,14 @@ sudo port install tesseract-<langcode>
 List of available langcodes can be found on [MacPorts tesseract page](https://www.macports.org/ports.php?by=name&substr=tesseract-).
 
 ### Homebrew
+
 To install Tesseract run this command:
 ```
 brew install tesseract
 ```
 
-Training directories can be found using `brew list tesseract`
-Possible location can be `/usr/local/Cellar/tesseract/3.05.02/share/tessdata/`
+The tesseract directory can then be found using `brew info tesseract`,
+e.g. `/usr/local/Cellar/tesseract/3.05.02/share/tessdata/`.
 
 ## Windows
 
