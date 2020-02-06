@@ -1,5 +1,5 @@
 ------------------------------------
-### For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00)
+### For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](TrainingTesseract-4.00.md)
 -------------------------------------
 
 ### How to use the tools provided to train Tesseract 3.00–3.02 for a new language?
@@ -29,17 +29,17 @@
 
 # Introduction
 
-Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
+Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results.
 
-[3rd Party training tools](https://github.com/tesseract-ocr/tesseract/wiki/AddOns) are also available for training.
+[3rd Party training tools](AddOns.md) are also available for training.
 
-Please check the list of languages for which [traineddata](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) is already available as of release 3.04 before embarking on training.
+Please check the list of languages for which [traineddata](Data-Files.md) is already available as of release 3.04 before embarking on training.
 
 # Background and Limitations
 
 Tesseract was originally designed to recognize English text only. Efforts have been made to modify the engine and its training system to make them able to deal with other languages and UTF-8 characters. Tesseract 3.0 can handle any Unicode characters (coded with UTF-8), but there are limits as to the range of languages that it will be successful with, so please take this section into account before building up your hopes that it will work well on your particular language!
 
-Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (right-to-left). Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract 3.0+). Traineddata for additional [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) has been provided by Google for the 3.04 release. 
+Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (right-to-left). Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract 3.0+). Traineddata for additional [languages] (https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) has been provided by Google for the 3.04 release.
 
 Tesseract is slower with large character set languages (like Chinese), but it seems to work OK.
 
@@ -196,7 +196,8 @@ If you didn't successfully space out the characters on the training image, some 
 
 The last number on each line is the page number (0-based) of that character in the multi-page tiff file.
 
-There are several visual tools for editing box file - please check [AddOns wiki](AddOns#Tesseract_box_editors_and_traning_tools).
+There are several visual tools for editing box file.
+Please check the [AddOns](AddOns.md#tesseract-box-editors-and-training-tools) documentation.
 
 ### Bootstrapping a new character set
 
@@ -244,7 +245,7 @@ tesseract [lang].[fontname].exp[num].tif [lang].[fontname].exp[num] box.train.st
 
 **NOTE** that although tesseract requires language data to be present for this step, the language data is not used, so English will do, whatever language you are training.
 
-The first form sends all the errors to a file named tesseract.log. The second form sends all errors to stderr. 
+The first form sends all the errors to a file named tesseract.log. The second form sends all errors to stderr.
 
 Note that the box filename must match the tif filename, including the path, or Tesseract won't find it. The output of this step is `fontfile.tr` which contains the features of each character of the training page. `[lang].[fontname].exp[num].txt` will also be written with a single newline and no text.
 
@@ -267,10 +268,10 @@ ypos length x2ndmoment y2ndmoment
 ```
 
 The `mf` features are polygon segments of the outline normalized to the
-1st and 2nd moments.  
-x= x position [-0.5,0.5]  
-y = y position [-0.25,0.75]  
-length is the length of the polygon segment [0,1.0]  
+1st and 2nd moments.
+x= x position [-0.5,0.5]
+y = y position [-0.25,0.75]
+length is the length of the polygon segment [0,1.0]
 dir is the direction of the segment [0,1.0]
 
 The `cn` feature is to correct for the moment normalization to
@@ -331,7 +332,7 @@ timesitalic 1 0 0 1 0
 
 ```
 shapeclustering -F font_properties -U unicharset eng.timesitalic.exp0.tr
-mftraining -F font_properties -U unicharset -O eng.unicharset eng.timesitalic.exp0.tr 
+mftraining -F font_properties -U unicharset -O eng.unicharset eng.timesitalic.exp0.tr
 ```
 
 **Note** that in 3.03, there is a default `font_properties` file, that covers 3000 fonts (not necessarily accurately) located in this repo: [https://github.com/tesseract-ocr/langdata](https://raw.githubusercontent.com/tesseract-ocr/langdata/master/font_properties).

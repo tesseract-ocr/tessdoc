@@ -10,12 +10,12 @@ Tesseract is included in most Linux distributions.
 
 ## Binaries for Windows
 
-https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows
+https://tesseract-ocr.github.io/tessdoc/4.0-with-LSTM.html#400-alpha-for-windows
 
 ### Old Downloads
 
 [Downloads Archive on SourceForge](http://sourceforge.net/projects/tesseract-ocr-alt/files/).
-There you can find, among other files, Windows installer for the **old** version 3.02. 
+There you can find, among other files, Windows installer for the **old** version 3.02.
 
 Currently, there is no **official** Windows installer for newer versions.
 

@@ -11,7 +11,7 @@ The following components are required to run the viewer:
   * [piccolo2d-core-3.0.jar](http://search.maven.org/remotecontent?filepath=org/piccolo2d/piccolo2d-core/3.0/piccolo2d-core-3.0.jar)
   * [piccolo2d-extras-3.0.jar](http://search.maven.org/remotecontent?filepath=org/piccolo2d/piccolo2d-extras/3.0/piccolo2d-extras-3.0.jar)
   * [jaxb-api-2.3.1.jar](http://search.maven.org/remotecontent?filepath=javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar)
-  * `ScrollView.jar`, built from the source in tesseract/java or download from wiki [ScrollView.jar](https://github.com/tesseract-ocr/tesseract/wiki/ScrollView.jar) (build on 64bit Linux with jaxb-api-2.3.1.jar, piccolo2d-core-3.0.jar, piccolo2d-extras-3.0.jar and javac 1.8.0_181)
+  * `ScrollView.jar`, built from the source in tesseract/java or download [ScrollView.jar](ScrollView.jar) (build on 64bit Linux with jaxb-api-2.3.1.jar, piccolo2d-core-3.0.jar, piccolo2d-extras-3.0.jar and javac 1.8.0_181.md)
 
 `make ScrollView.jar` will download them automatically to `tesseract/java` if `curl `is present in your path.
 
@@ -42,7 +42,7 @@ tesseract phototest.tif test1 segdemo inter
 
 You should see something like this:
 
-![tesseract_debug](https://github.com/tesseract-ocr/tesseract/wiki/tesseract_debug.png)
+![tesseract_debug](tesseract_debug.png)
 
 The words found in the image are represented as blue rectangles. There are 3 menus:
 

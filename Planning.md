@@ -51,7 +51,7 @@ Useful links:
 
 ## 4.0.0
 
-See the [release notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes).
+See the [release notes](ReleaseNotes.md).
 
 See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesseract/issues/1423).
 

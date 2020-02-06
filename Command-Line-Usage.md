@@ -10,7 +10,7 @@ See [Running Tesseract](https://github.com/tesseract-ocr/tesseract/wiki#running-
 
 ## FAQ
 
-See [FAQ](https://github.com/tesseract-ocr/tesseract/wiki/FAQ#running-tesseract) for more examples and tips.
+See [FAQ](FAQ.md#running-tesseract) for more examples and tips.
 
 --------------------------------------------
 
@@ -260,5 +260,3 @@ Output
     517
     
     531
-    
-            

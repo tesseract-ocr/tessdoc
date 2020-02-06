@@ -1,16 +1,16 @@
 # Compilation guide for various platforms
 
-**Note:** This wiki expects you to be familiar with compiling software on your operation system.
+**Note:** This documentation expects you to be familiar with compiling software on your operation system.
 
 *Use the same tools for building tesseract as you used for [building leptonica](https://github.com/DanBloomberg/leptonica/issues/410).*
 
 ## Table of contents
-* [Linux](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#linux)
-* [Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows)
-* [macOS](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#macos)
-* [Android](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#android)
-* [Common Errors](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#common-errors)
-* [Miscellaneous](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#miscellaneous)
+* [Linux](Compiling.md#linux)
+* [Windows](Compiling.md#windows)
+* [macOS](Compiling.md#macos)
+* [Android](Compiling.md#android)
+* [Common Errors](Compiling.md#common-errors)
+* [Miscellaneous](Compiling.md#miscellaneous)
 
 ## Linux
 To install **Tesseract 4.x** you can simply run the following command on your **Ubuntu 18.xx bionic**:
@@ -81,7 +81,7 @@ Note that if building Leptonica from source, you may need to ensure that /usr/lo
 
 ## Installing Tesseract from Git
 
-Please follow instructions in [https://github.com/tesseract-ocr/tesseract/wiki/Compiling--GitInstallation](https://github.com/tesseract-ocr/tesseract/wiki/Compiling-%E2%80%93-GitInstallation)
+Please follow instructions in [Compiling--GitInstallation](Compiling-%E2%80%93-GitInstallation.md)
 
 Also read [Install Instructions](https://github.com/tesseract-ocr/tesseract/blob/master/INSTALL.GIT.md)
 
@@ -122,7 +122,7 @@ export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig
 
 ## Language Data
 
-  * Download the [data file(s) for the language(s) you are interested in](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files).
+  * Download the [data file(s) for the language(s) you are interested in](Data-Files.md).
   * Move it to the `tessdata` directory (e.g. 'mv tessdata $TESSDATA\_PREFIX' if defined `TESSDATA_PREFIX`)
 
 You can also use:
@@ -138,7 +138,7 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 #### Using Tesseract
 
-**!!! IMPORTANT !!!** To use Tesseract in your application (to include tess or to link it into your app) see this very simple example https://github.com/tesseract-ocr/tesseract/wiki/User-App-Example.
+**!!! IMPORTANT !!!** To use Tesseract in your application (to include tess or to link it into your app) see this very simple [example](User-App-Example.md).
 
 #### Build the latest library (using SW)
 

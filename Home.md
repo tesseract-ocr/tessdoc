@@ -1,12 +1,8 @@
-- - - 
-**Please do not change the title of any wiki page without permission from Tesseract developers.**
-- - -
-
 # Introduction 
 
 Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0) It can be used directly, or (for programmers) using an [API](https://github.com/tesseract-ocr/tesseract/blob/master/include/tesseract/baseapi.h) to extract printed text from images. It supports a wide variety of languages.
 
-Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty) page.
+Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-%E2%80%93-3rdParty.md) page.
 
 # Installation
 
@@ -165,7 +161,7 @@ zypper install tesseract-ocr-traineddata-german
 
 If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. 
 
-[Various types of training data](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) can be found on [GitHub](https://github.com/tesseract-ocr/). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribution. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. 
+[Various types of training data](Data-Files) can be found on [GitHub](https://github.com/tesseract-ocr/.md). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribution. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. 
 
 Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
 
@@ -203,8 +199,10 @@ e.g. `/usr/local/Cellar/tesseract/3.05.02/share/tessdata/`.
 
 Installer for Windows for Tesseract 3.05, Tesseract 4 and development version 5.00 Alpha are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
 
-An installer for the **OLD version 3.02** is available for Windows from our [download](Downloads) page. This includes the English training data. If you want to use another language, [download the appropriate training data](
-https://github.com/tesseract-ocr/tesseract/wiki/Data-Files), unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
+An installer for the **OLD version 3.02** is available for Windows from our [download](Downloads.md) page.
+This includes the English training data.
+If you want to use another language, [download the appropriate training data](Data-Files.md),
+unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
 
 To access tesseract-OCR from any location you may have to add the directory where the tesseract-OCR binaries are located to the Path variables, probably `C:\Program Files\Tesseract-OCR`.
 
@@ -238,7 +236,7 @@ In the above command, "eng" may be replaced with the [ISO 639 3-letter language 
 
 ## Other Platforms
 
-Tesseract may work on more exotic platforms too. You can either try [compiling it yourself](Compiling), or take a look at the list of [other projects using Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty).
+Tesseract may work on more exotic platforms too. You can either try [compiling it yourself](Compiling), or take a look at the list of [other projects using Tesseract](User-Projects-%E2%80%93-3rdParty.md).
 
 
 # Running Tesseract
@@ -289,11 +287,13 @@ It can also be trained to support other languages and scripts; for more details 
 
 # Development
 
-Tesseract can also be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty) page for a sample of what has been done with it. Note that as yet there are very few  3rdParty Tesseract OCR projects [being developed for Mac](https://machow2.com/ocr-for-mac-best-software/#Tesseract_Freesoftware/) (with the only one being [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS)), although there are several online OCR services that can be used on Mac that may use Tesseract as their OCR engine. 
+Tesseract can also be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](User-Projects-%E2%80%93-3rdParty) page for a sample of what has been done with it. Note that as yet there are very few  3rdParty Tesseract OCR projects [being developed for Mac](https://machow2.com/ocr-for-mac-best-software/#Tesseract_Freesoftware/) (with the only one being [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS).md), although there are several online OCR services that can be used on Mac that may use Tesseract as their OCR engine. 
 
 Also, it is free software, so if you want to pitch in and help, please do!
 If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues)
 
 # Support
 
-First read the [Wiki](https://github.com/tesseract-ocr/tesseract/wiki), particularly the [FAQ](FAQ) to see if your problem is addressed there. If not, search the [Tesseract user forum](http://groups.google.com/group/tesseract-ocr) or the [Tesseract developer forum](http://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.
+First read the [documentation](https://tesseract-ocr.github.io/), particularly the [FAQ](FAQ.md) to see if your problem is addressed there.
+If not, search the [Tesseract user forum](http://groups.google.com/group/tesseract-ocr) or the
+[Tesseract developer forum](http://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.

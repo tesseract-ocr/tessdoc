@@ -4,7 +4,7 @@ This page keeps the most up-to-date release notes.
 
 Table of Contents
 =================
-* [IN DEVELOPMENT](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes#in-development)
+* [IN DEVELOPMENT](ReleaseNotes.md#in-development)
 * [Dec 26 2019 - V4.1.1](#tesseract-release-notes-dec-26-2019---v411)
 * [Jul 07 2019 - V4.1.0](#tesseract-release-notes-jul-07-2019---v410)
 * [Oct 29 2018 - V4.0.0](#tesseract-release-notes-oct-29-2018---v400)
@@ -34,7 +34,7 @@ Table of Contents
 
 ![API/ABI changes graph](https://abi-laboratory.pro/tracker/graph/tesseract/graph.svg?v=1.10)
 
-![api_abi_changes.png](https://github.com/tesseract-ocr/tesseract/wiki/api_abi_changes.png)
+![api_abi_changes.png](api_abi_changes.png)
 
 * [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=4.0.0&v2=current&obj=ff668&kind=abi) (maybe not updated for the latest code)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=3.05.02&v2=4.0.0&obj=a88e1&kind=abi)
@@ -79,7 +79,7 @@ Table of Contents
   * **New OCR engine**
     * Added a new OCR engine that uses neural network system based on LSTMs, with major accuracy gains.
     * This includes new training tools for the LSTM OCR engine. A new model can be trained from scratch or by fine tuning an existing model.
-    * Added trained data that includes LSTM models to [123 languages](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files#updated-data-files-for-version-400-september-15-2017).
+    * Added trained data that includes LSTM models to [123 languages](Data-Files.md#updated-data-files-for-version-400-september-15-2017).
     * Added optional accelerated code paths for the LSTM recognizer:
       * Using OpenMP
       * Using SIMD: AVX2 / AVX / SSE4.1
@@ -119,7 +119,7 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
     * Added unit tests to the main repo. The unit tests require Git submodules and the code for training.
     * Removed obsolete code.
   * **Important notes**
-    * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](https://github.com/tesseract-ocr/tesseract/wiki/Planning#features-from-30x-which-are-missing-for-lstm)).
+    * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](Planning.md#features-from-30x-which-are-missing-for-lstm)).
     * Tesseract now requires the so called "C" locale. This has mainly implications when Tesseract is used as a library from programming languages like Java or Python. The _locale_ stands for several settings which depend on a language (or language variant) or country. Some of those setting determine the classification of symbols (for example "Is this character a blank (space) character?") or the way how numbers are printed (for example "3.141" or "3,141"). The current Tesseract code implicitly expects some fixed settings, otherwise it fails. Therefore the code fails right at the beginning with an assertion if it cannot be sure that the settings work. This is not a problem with C or C++ programs which by default get a "C" locale with the right settings. All other use cases must currently make sure that they switch to the "C" locale before running Tesseract code. [**Fixed**](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79) in version 4.1.0.
 
 # Tesseract release notes June 19 2018 - V3.05.02
@@ -357,7 +357,7 @@ To recognize another language:
 tesseract inputimage outputbase -l langcode
 ```
 
-To train on a new language, see [TrainingTesseract2](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract2).
+To train on a new language, see [TrainingTesseract2](TrainingTesseract2.md).
 More languages will be appearing over time.
 
 List of changes in this release:

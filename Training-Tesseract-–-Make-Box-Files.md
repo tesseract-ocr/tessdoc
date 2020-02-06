@@ -1,8 +1,8 @@
 ------------------------------------
-### For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00)
+### For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](TrainingTesseract-4.00.md)
 -------------------------------------
 
-**NOTE:** The instructions below are for **older** 3.0x versions of Tesseract. 
+**NOTE:** The instructions below are for **older** 3.0x versions of Tesseract.
 
 * [Make Box Files](#make-box-files)
   * [Bootstrapping a new character set](#bootstrapping-a-new-character-set)
@@ -11,7 +11,8 @@
 
 ## Make Box Files
 
-For the [Run Tesseract for Training](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract#run-tesseract-for-training) step, Tesseract needs a 'box' file to go with each training image. The box file is a text file that lists the characters in the training image, in order, one per line, with the coordinates of the bounding box around the image. Tesseract 3.0 has a mode in which it will output a text file of the required format, but if the character set is different to its current training, it will naturally have the text incorrect. So the key process here is to manually edit the file to put the correct characters in it.
+For the [Run Tesseract for Training](TrainingTesseract.md#run-tesseract-for-training) step, Tesseract needs a 'box' file to go with each training image.
+The box file is a text file that lists the characters in the training image, in order, one per line, with the coordinates of the bounding box around the image. Tesseract 3.0 has a mode in which it will output a text file of the required format, but if the character set is different to its current training, it will naturally have the text incorrect. So the key process here is to manually edit the file to put the correct characters in it.
 
 Run Tesseract on each of your training images using this command line:
 ```
@@ -97,7 +98,8 @@ If you didn't successfully space out the characters on the training image, some 
 
 The last number on each line is the page number (0-based) of that character in the multi-page tiff file.
 
-There are several visual tools for editing box file - please check [AddOns wiki](AddOns#Tesseract_box_editors_and_traning_tools).
+There are several visual tools for editing box file.
+Please check the [AddOns](AddOns.md#tesseract-box-editors-and-training-tools) documentation.
 
 ### Bootstrapping a new character set
 
@@ -109,7 +111,7 @@ This should make the 2nd box file easier to make, as there is a good chance that
 
 ### Tif/Box pairs provided!
 
-Tif/Box file pairs are available in the [Downloads Archive on SourceForge](http://sourceforge.net/projects/tesseract-ocr-alt/files/) for these languages:  
+Tif/Box file pairs are available in the [Downloads Archive on SourceForge](http://sourceforge.net/projects/tesseract-ocr-alt/files/) for these languages:
 [Dutch](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.nld.tar.gz/download)
 [English](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.eng.tar.gz/download)
 [French](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.fra.tar.gz/download)

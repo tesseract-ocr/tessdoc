@@ -1,4 +1,4 @@
-This page archives the [FAQ](FAQ) page pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha as of May 1, 2018. 
+This page archives the [FAQ](FAQ) page pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha as of May 1, 2018.
 
 The main [FAQ](FAQ) page will be updated to only contain information pertaining to Tesseract 4.0.0.
 
@@ -83,10 +83,10 @@ You **must** read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/
 If you are processing several images, you can run tesseract in parallel with [GNU Parallel](http://www.gnu.org/software/parallel/).
 E.g. instead of:
 ```
-find . -maxdepth 1 -name "*.tif" -print0 | while IFS= read -r -d '' n; do 
+find . -maxdepth 1 -name "*.tif" -print0 | while IFS= read -r -d '' n; do
     tesseract "$n" "$n" -l eng hocr
     hocr2pdf -i "$n" -n -o "$n.pdf" < "$n.html"
-done 
+done
 ```
 
 you can run:
@@ -95,16 +95,16 @@ you can run:
 parallel "tesseract {} {} -l eng hocr; hocr2pdf -i {} -n -o {}.pdf < {}.html" ::: *.tif
 ```
 
-Note that this example is a little obsolete. You will get better results having Tesseract 
+Note that this example is a little obsolete. You will get better results having Tesseract
 produce one page PDF files in parallel, then splicing them together at the end using QPDF
-or similar. 
+or similar.
 If you are running Tesseract 4, you can use the "fast" models.
 
 Tesseract 4 also uses up to four CPU threads while processing a page, so it will be faster than Tesseract 3 for a single page. If your computer has only two CPU cores, then running four threads will slow down things significantly and it would be better to use a single thread or maybe a maximum of two threads! Using a single thread eliminates the computation overhead of multithreading and is also the best solution for processing lots of images by running one Tesseract process per CPU core. Set the maximum number of threads using the environment variable `OMP_THREAD_LIMIT`. To disable multithreading, use `OMP_THREAD_LIMIT=1`.
 
 ## Windows: tesseract closes automatically right after launching
 
-Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [3rdParty](https://github.com/tesseract-ocr/tesseract/wiki/User-Projects-%E2%80%93-3rdParty) page.
+Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [3rdParty](User-Projects-%E2%80%93-3rdParty.md) page.
 
 ## What output formats can Tesseract produce?
 
@@ -116,7 +116,7 @@ Tesseract is a command line program, so you need to run it from the [command lin
 
 Tesseract can produce plain text, PDF, and HTML output. Tesseract's standard output is a plain txt file (utf-8 encoded, with '\n' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)).
 
-With the configfile 'hocr' tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details). 
+With the configfile 'hocr' tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
 
 With the configfile 'pdf' tesseract will produce searchable PDF containing pages images with a hidden, searchable text layer.
 
@@ -142,7 +142,7 @@ Please ensure there is only one installation of tesseract e.g. there are reporte
 
 In the `tesseract-ocr` directory, run:
 ```
-sudo make uninstall 
+sudo make uninstall
 ```
 
 If you installed training tools, also run:
@@ -169,7 +169,8 @@ If you see this error, than you have a problem with your leptonica installation 
 
 ## Can't open eng.unicharset?
 
-You don't have language training data installed. Read the [ReadMe](https://github.com/tesseract-ocr/tesseract/blob/master/README.md) wiki page.
+You don't have language training data installed.
+Read the [README](https://github.com/tesseract-ocr/tesseract/blob/master/README.md).
 
 ## leptonica library missing
 
@@ -256,7 +257,8 @@ sudo dpkg -i *.deb
 
 ## How do I Edit Box files used in training?
 
-There are a variety of programs to help with this, see [the AddOns page](AddOns#Tesseract_box_editors_and_traning_tools).
+There are a variety of programs to help with this,
+see [the AddOns page](AddOns.md#tesseract-box-editors-and-training-tools).
 
 ## Utf8 buffer too big, size=xx (Error during training)
 
@@ -291,7 +293,8 @@ tesseract image.tif outputbase nobatch digits
 
 ## How do I add just one character or one font to my favourite language, without having to retrain from scratch?
 
-It is not possible to add just one character or font. You need to retrain from scratch. See the TrainingTesseract wiki.
+It is not possible to add just one character or font. You need to retrain from scratch.
+See the Training Tesseract documentation.
 
 ## How do I produce searchable PDF output?
 
@@ -308,9 +311,9 @@ There may be nothing wrong with the PDF itself, but its hidden, searchable text 
 
 ## How to do streaming
 
-Let's say you have an amazing but slow multipage scanning device. It would be 
-nice to OCR during scanning. In this example, the scanning program is sending 
-image filenames to Tesseract as they are produced. Tesseract streams a 
+Let's say you have an amazing but slow multipage scanning device. It would be
+nice to OCR during scanning. In this example, the scanning program is sending
+image filenames to Tesseract as they are produced. Tesseract streams a
 searchable PDF to stdout. You will need Tesseract v3.04 or later for this feature.
 
 ```
@@ -326,11 +329,11 @@ Using LSTM there seems also to be a maximum x-height somewhere around 30 px. Abo
 
 ## Why is the output empty or of poor quality?
 
-Read the [ImproveQuality](ImproveQuality) wiki page.
+Read the [ImproveQuality](ImproveQuality) documentation.
 
 ## How do I generate the language data files?
 
-Read the [TrainingTesseract](TrainingTesseract) wiki page.
+Read the [Training Tesseract](TrainingTesseract.md) documentation.
 
 ## How do I unpack or alter existing language data files?
 
@@ -342,13 +345,15 @@ Use the combine\_tessdata command. See the [combine\_tessdata manual page](https
 
 To add an extra word list, create a .user-words file as explained in [tesseract(1)](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
-If you want to replace the whole dictionary, you will need to unpack the .traineddata file, create a new word-dawg file, and then pack the files back into a .traineddata file. See [TrainingTesseract](TrainingTesseract) for more details.
+If you want to replace the whole dictionary, you will need to unpack the .traineddata file, create a new word-dawg file, and then pack the files back into a .traineddata file. See [TrainingTesseract](TrainingTesseract.md) for more details.
 
 ### Tesseract 2
 
 Easy: Replace `tessdata/eng.user-words` with your own word list, in the same format - UTF8 text, one word per line.
 
-More difficult, but better for a large dictionary: Replace `tessdata/eng.word-dawg` with one created from your own word list, using wordlist2dawg. See the [TrainingTesseract](TrainingTesseract) wiki page for details.
+More difficult, but better for a large dictionary:
+Replace `tessdata/eng.word-dawg` with one created from your own word list, using wordlist2dawg.
+See the [Training Tesseract](TrainingTesseract.md) documentation for details.
 
 ## wordlist2dawg doesn't work!
 
@@ -494,7 +499,7 @@ See the suggestions in [issue 42](https://web.archive.org/web/*/http://code.goog
 
 ### Delphi wrapper for tessdll.dll
 
-Have a look  at [Addon Wiki](AddOns) or see the comments in [issue 88](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
+Have a look  at [Addon documentation](AddOns) or see the comments in [issue 88](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=88).
 
 ### Incomplete OCR result
 
@@ -518,7 +523,7 @@ See suggestions on how to improve the input image in [issue 488](https://web.arc
 
 ### error message: Font id = -1/0, class id = 1/105 on sample 0
 
-This means that the font name is not in font\_properties or font\_properties does not meet [requirements](TrainingTesseract#Requirements_for_text_input_files)
+This means that the font name is not in font\_properties or font\_properties does not meet [requirements](TrainingTesseract.md#Requirements_for_text_input_files)
 
 # My question isn't in here!
 

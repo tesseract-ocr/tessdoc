@@ -2,7 +2,7 @@
 
 This page details the version used for training of 3.0x branch. Not all files are required for LSTM training.
 
-For 4.0 LSTM training usage, please see https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00
+For 4.0 LSTM training usage, please see [TrainingTesseract-4.00](TrainingTesseract-4.00.md).
 
 
 # Example usage
@@ -23,7 +23,7 @@ filled out, because many of the directory locations are standardized. The docume
 The modification saves some typing.  This is an example of training for Japanese.
 
 ```
-git clone https://github.com/tesseract-ocr/langdata.git 
+git clone https://github.com/tesseract-ocr/langdata.git
 apt-get install fonts-noto-cjk fonts-japanese-mincho.ttf fonts-takao-gothic fonts-vlgothic
 tesstrain.sh --lang jpn --langdata_dir langdata
 ```
@@ -71,7 +71,7 @@ To see how it's used for the Greek training, do:
 
 ```
 $ make langdata/Greek.xheights
-``` 
+```
 
 
 # Langdata files
