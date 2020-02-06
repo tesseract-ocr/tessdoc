@@ -5,7 +5,7 @@ Such tessdata contributions should ideally document everything needed to reprodu
 ***
 
 |Language Code|Language|Data File|Contributor|Info|
-|--|--|--|--|--|
+|-------------|--------|---------|-----------|----|
 |khmLimon|Khmer|[best](https://github.com/OpenInstituteCambodia/tessdata_best/raw/master/khmLimon.traineddata)|[OpenInstituteCambodia](https://github.com/OpenInstituteCambodia)/[phyrumsk](https://github.com/phyrumsk)|[PR in tessdata_best](https://github.com/tesseract-ocr/tessdata_best/pull/27#issuecomment-394643981)|
 |cop|Coptic|[best](https://github.com/Shreeshrii/tessdata_coptic/raw/master/cop.traineddata)|[shreeshrii/tessdata_coptic](https://github.com/Shreeshrii/tessdata_coptic/)|[tesseract-ocr forum post](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!topic/tesseract-ocr/LXIxi4KxmNQ)|
 |jpn_vert|Japanese Vertical|[best](https://github.com/zodiac3539/jpn_vert)|[zodiac3539/jpn_vert](https://github.com/zodiac3539/jpn_vert)|[tesseract-ocr forum post](https://groups.google.com/forum/#!searchin/tesseract-ocr/comic%7Csort:date/tesseract-ocr/FwjSZzoVgeg/u-zyFYQiBgAJ)|
@@ -15,8 +15,11 @@ Such tessdata contributions should ideally document everything needed to reprodu
 |dot_matrix|MRZ|[best](https://github.com/ameera3/OCR_Expiration_Date/tree/master/OCR_Ensemble)|[ameera3/OCR_Expiration_Date](https://github.com/ameera3/OCR_Expiration_Date)|[tesseract-ocr forum post](https://groups.google.com/forum/#!topic/tesseract-ocr/BimLa0-z9ME)|
 |e13b|E13B (or MICR)|[best](https://github.com/ElMagoElGato/tess_e13b_training)|[ElMagoElGato/tess_e13b_training](https://github.com/ElMagoElGato/tess_e13b_training)|[tesseract-ocr forum post](https://groups.google.com/d/topic/tesseract-ocr/q8IRrufVRJo/discussion)|
 |e13b|E13B (or MICR)|[best](https://github.com/DoubangoTelecom/tesseractMICR/blob/master/tessdata_best/e13b.traineddata)|[DoubangoTelecom/tesseractMICR](https://github.com/DoubangoTelecom/tesseractMICR)|[tesseract-ocr forum post](https://groups.google.com/forum/#!topic/tesseract-ocr/FdwDjt1edX8)|
+
+<!--
 -------------------------
 Use the template below for adding new files.
 
 |Lang_Code|Language|[best](best_URL)|[User_Repo](Contributor_URL)|[tesseract-ocr forum post](InfoURL)|
-|--|--|--|--|--|
+|---|---|---|---|---|
+-->
