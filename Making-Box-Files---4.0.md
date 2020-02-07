@@ -1,2 +1,2 @@
-See 
-https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00#creating-training-data for more details.
+See
+https://tesseract-ocr.github.io/tessdoc/TrainingTesseract-4.00#creating-training-data for more details.

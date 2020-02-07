@@ -116,7 +116,7 @@ or if you plan to run in docker (or do not require graphics):
 ./configure --disable-graphics
 ```
 
-By default Tesseract configuration will proceed if dependencies required only 
+By default Tesseract configuration will proceed if dependencies required only
 for training are missing, but for training, you will have to ensure all those
 optional dependencies are installed and that Tesseract's build environment
 can locate them. Look for these lines in the output of `./configure`:
@@ -526,7 +526,7 @@ documented below, followed by a [Tutorial guide to
 lstmtraining](#tutorial-guide-to-lstmtraining) which gives an introduction to
 the main training process, with command-lines that have been tested for real. On
 Linux at least, you should be able to just copy-paste the command lines into
-your terminal. 
+your terminal.
 
 To make the `tesstrain.sh` script work, it will be necessary to
 either set `PATH` to include your local `training` and `api` directories, or use
@@ -534,10 +534,10 @@ either set `PATH` to include your local `training` and `api` directories, or use
 
 ## One-time Setup for TessTutorial
 
-In order to successfully run the TessTutorial, you need to have a working 
-installation of tesseract and training tools and have the training scripts and 
-required traineddata files in certain directories. 
-These instructions only cover the case of rendering from fonts, 
+In order to successfully run the TessTutorial, you need to have a working
+installation of tesseract and training tools and have the training scripts and
+required traineddata files in certain directories.
+These instructions only cover the case of rendering from fonts,
 so the [needed fonts](Fonts) must be installed first.
 Note that your fonts location may vary.
 
@@ -587,7 +587,7 @@ wget https://github.com/tesseract-ocr/tessdata_best/raw/master/chi_sim.trainedda
 As with base Tesseract, there is a choice between rendering synthetic training
 data from fonts, or labeling some pre-existing images (like ancient manuscripts
 for example).
-  
+
 In either case, the required format is still the tiff/box file
 pair, except that the boxes only need to cover a textline instead of individual
 characters.
@@ -597,21 +597,21 @@ lstmf files) is created from the training text and given list of fonts.
 
 ### Making Box Files
 
-Multiple formats of box files are accepted by Tesseract 4 for LSTM training, 
-though they are different from the one used by Tesseract 3 
+Multiple formats of box files are accepted by Tesseract 4 for LSTM training,
+though they are different from the one used by Tesseract 3
 ([details](https://github.com/tesseract-ocr/tesseract/issues/2357)).
 
 Each line in the box file matches a 'character' (glyph) in the tiff image.
 
-`<symbol> <left> <bottom> <right> <top> <page>`  
-Where `<left> <bottom> <right> <top> <page>` could be bounding-box coordinates 
+`<symbol> <left> <bottom> <right> <top> <page>`
+Where `<left> <bottom> <right> <top> <page>` could be bounding-box coordinates
 of a single glyph or of a whole textline ([see examples](https://github.com/tesseract-ocr/tesseract/issues/2357#issuecomment-477239316)).
 
 To mark an end-of-textline, a special line must be inserted after a series of lines.
 
 `<tab> <left> <bottom> <right> <top> <page>`
 
-Box files can be generated using Tesseract 4.0 using the `lstmbox` config from image data using `tesseract <image name including extension> <box file name> lstmbox`. For example, `tesseract image.png image lstmbox` will generate a box file with name `image.box` for the image in the current directory. 
+Box files can be generated using Tesseract 4.0 using the `lstmbox` config from image data using `tesseract <image name including extension> <box file name> lstmbox`. For example, `tesseract image.png image lstmbox` will generate a box file with name `image.box` for the image in the current directory.
 
 Note that in all cases, even for right-to-left languages, such as Arabic, the
 text transcription for the line, *should be ordered left-to-right.* In other words, the network
@@ -632,7 +632,7 @@ lot of training data may not apply, but the network specification may need to be
 changed.
 
 Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/src/training/tesstrain.sh)
-as follows: 
+as follows:
 
 ```
 src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
@@ -670,11 +670,11 @@ on the language to be learned. The `traineddata` *must* contain at least an
 dawg files: `lstm-punc-dawg lstm-word-dawg lstm-number-dawg` A `config` file is
 also optional. The other components, if present, will be ignored and unused.
 
-There is no tool to create the `lstm-recoder` directly. Instead there is a 
+There is no tool to create the `lstm-recoder` directly. Instead there is a
 tool, `combine_lang_model`, which takes as input an `input_unicharset` and
-`script_dir` (`script_dir` points to the `langdata` directory) and `lang` (`lang` is the 
-language being used) and optional word list files. It creates the `lstm-recoder` 
-from the `input_unicharset` and creates all the dawgs, if wordlists are provided, 
+`script_dir` (`script_dir` points to the `langdata` directory) and `lang` (`lang` is the
+language being used) and optional word list files. It creates the `lstm-recoder`
+from the `input_unicharset` and creates all the dawgs, if wordlists are provided,
 putting everything together into a `traineddata` file.
 
 If you use tesstrain.sh then the starter traineddata is also created along with
@@ -1208,4 +1208,4 @@ If you notice that your model is misbehaving, for example by:
 * Adding `Space` where it should not do that.
 * etc...
 
-[Then read the hallucination topic.](https://github.com/tesseract-ocr/tesseract/wiki/The-Hallucination-Effect)
+[Then read the hallucination topic.](The-Hallucination-Effect.md)

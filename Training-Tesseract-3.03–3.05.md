@@ -1,10 +1,10 @@
 ------------------------------------
-## For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00)
+## For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](TrainingTesseract-4.00.md)
 -------------------------------------
 
 ## *How to use the tools provided to train Tesseract 3.03–3.05 for a new language.*
 
-**Important note**: Before you invest time and efforts on training Tesseract, it is highly recommended to read the [ImproveQuality](https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality) page.
+**Important note**: Before you invest time and efforts on training Tesseract, it is highly recommended to read the [ImproveQuality](ImproveQuality.md) page.
 
 Tesseract 3.04 and 3.05 provide a [script](https://github.com/tesseract-ocr/tesseract/blob/3.05/training/tesstrain.sh) for an easy way to execute the various phases of training Tesseract. More information on using it can be found on the [tesstrain.sh](Training-Tesseract-–-tesstrain.sh) page.
 
@@ -52,7 +52,7 @@ If you had some problems during the training process and you need help, use [tes
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results. 
 
-Please check the list of languages for which [traineddata](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) is already available as of release 3.04 before embarking on training.
+Please check the list of languages for which [traineddata](Data-Files.md) is already available as of release 3.04 before embarking on training.
 
 [3rd Party training tools](AddOns) are also available for training.
 
@@ -62,9 +62,9 @@ Tesseract was originally designed to recognize English text only. Efforts have b
 
 Tesseract 3.01 added top-to-bottom languages, and Tesseract 3.02 added Hebrew (right-to-left).
 
-Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract version 3.01 and up). **Don't try to train Tesseract versions earlier than 4.0 for Arabic (same for Persian, Urdu, etc.). It's hopeless.** For 4.0 only train with the [LSTM method](https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#training-tesseract-lstm-engine).
+Tesseract currently handles scripts like Arabic and Hindi with an auxiliary engine called cube (included in Tesseract version 3.01 and up). **Don't try to train Tesseract versions earlier than 4.0 for Arabic (same for Persian, Urdu, etc.). It's hopeless.** For 4.0 only train with the [LSTM method](4.0-with-LSTM.md#training-tesseract-lstm-engine).
 
-[Traineddata](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files) for additional languages has been provided by Google for the 3.04 release. 
+[Traineddata](Data-Files.md) for additional languages has been provided by Google for the 3.04 release. 
 
 Tesseract is slower with large character set languages (like Chinese), but it seems to work OK.
 
@@ -190,7 +190,7 @@ The 64 images limit is for the number of **FONTS.** Each font should be put in a
 
 #### Make Box Files
 
-See the separate [Make Box Files](https://github.com/tesseract-ocr/tesseract/wiki/Make-Box-Files) page.
+See the separate [Make Box Files](Make-Box-Files.md) page.
 
 ## Run Tesseract for Training
 

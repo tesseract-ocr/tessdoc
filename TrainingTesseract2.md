@@ -1,9 +1,9 @@
 ------------------------------------
-## For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](https://github.com/tesseract-ocr/tesseract/wiki/TrainingTesseract-4.00)
+## For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](TrainingTesseract-4.00.md)
 -------------------------------------
 ## How to use the tools provided to train Tesseract 2.x for a new language?
 
-**NOTE:** These instructions are for an older version of Tesseract. Training instructions for more recent versions are [[here|TrainingTesseract]].
+**NOTE:** These instructions are for an older version of Tesseract. Training instructions for more recent versions are [here](TrainingTesseract.md).
 
   * [Introduction](#introduction)
   * [Background and Limitations](#background-and-limitations)
@@ -62,7 +62,7 @@ Some of the procedure is inevitably manual. As much automated help as possible i
 The first step is to determine the full character set to be used, and prepare a text or word processor file containing a set of examples. The most important points to bear in mind when creating a training file are:
   * Make sure there are a minimum number of samples of each character. 10 is good, but 5 is OK for rare characters.
   * There should be more samples of the more frequent characters - at least 20.
-  * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.[.md](.md){}<>/?** is terrible. Much better is **The (quick) [brown](brown.md) {fox} jumps! over the $3,456.78 `<lazy>` #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
+  * Don't make the mistake of grouping all the non-letters together. Make the text more realistic. For example, **The quick brown fox jumps over the lazy dog. 0123456789 !@#$%^&(),.[]{}<>/?** is terrible. Much better is **The (quick) [brown] {fox} jumps! over the $3,456.78 `<lazy>` #90 dog & duck/goose, as 12.5% of E-mail from aspammer@website.com is spam?** This gives the textline finding code a much better chance of getting sensible baseline metrics for the special characters.
   * It is **ABSOLUTELY VITAL** to space out the text a bit when printing, so up the inter-character and inter-line spacing in your word processor. Not spacing text out sufficiently will cause "FAILURE! box overlaps no blobs or blobs in multiple rows" errors during tr file generation, which leads to FATALITY - 0 labeled samples of "x", which leads to "Error: X classes in inttemp while unicharset contains Y unichars" and you can't use your nice new data files.
   * The training data currently needs to fit in a single tiff image, but it may be multi-page tiff (if you have libtiff installed).
   * There is no need to train with multiple sizes. 10 point will do. (An exception to this is very small text. If you want to recognize text with an x-height smaller than about 15 pixels, you should either train it specifically or scale your images before trying to recognize them.)
@@ -161,7 +161,7 @@ If you didn't successfully space out the characters on the training image, some 
 
 If you have an editor that understands UTF-8, this process will be a lot easier than if it doesn't, as each UTF-8 character has up to 4 bytes to code it, and dumb editors will show you all the bytes separately.
 
-There are several visual tools for editing box file - please check [AddOns wiki](AddOns#For_Tesseract-OCR_2.0x).
+There are several visual tools for editing box file - please check [AddOns](AddOns.md#For_Tesseract-OCR_2.0x).
 
 ### Bootstrapping a new character set
 

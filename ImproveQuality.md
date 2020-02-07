@@ -36,7 +36,7 @@ Tesseract works best on images which have a DPI of at least 300 dpi, so it may b
 
 ### Binarisation
 
-![binarisation.png](https://github.com/tesseract-ocr/tesseract/wiki/binarisation.png)
+![binarisation.png](binarisation.png)
 
 This is converting an image to black and white. Tesseract does this internally (Otsu algorithm), but the result can be suboptimal, particularly if the page background is of uneven darkness.
 
@@ -45,7 +45,7 @@ If you are not able to fix this by providing a better input image, you can try a
 
 ### Noise Removal
 
-![noise.png](https://github.com/tesseract-ocr/tesseract/wiki/noise.png)
+![noise.png](noise.png)
 
 Noise is random variation of brightness or colour in an image, that can make the text of the image more difficult to read. Certain types of noise cannot be removed by Tesseract in the binarisation step, which can cause accuracy rates to drop.
 
@@ -65,7 +65,7 @@ Erosion applied: (Erosion_applied.jpg)
 
 ### Rotation / Deskewing
 
-![skew-linedetection.png](https://github.com/tesseract-ocr/tesseract/wiki/skew-linedetection.png)
+![skew-linedetection.png](skew-linedetection.png)
 
 A skewed image is when a page has been scanned when not straight. The quality of Tesseract's line segmentation reduces significantly if a page is too skewed, which severely impacts the quality of the OCR. To address this rotate the page image so that the text lines are horizontal.
 
@@ -73,7 +73,7 @@ A skewed image is when a page has been scanned when not straight. The quality of
 ### Borders
 
 #### Scanning border Removal
-![borders.png](https://github.com/tesseract-ocr/tesseract/wiki/borders.png)
+![borders.png](borders.png)
 
 Scanned pages often have dark borders around them. These can be erroneously picked up as extra characters, especially if they vary in shape and gradation.
 

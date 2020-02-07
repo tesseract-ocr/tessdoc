@@ -273,4 +273,4 @@ Example (Run the fuzzer to find new bugs):
     nice bin/fuzzer/fuzzer-api -jobs=16 -workers=16
 
 ## Building using Windows Visual Studio
-See [Compiling for Windows](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#windows).
+See [Compiling for Windows](Compiling.md#windows).

@@ -1,10 +1,10 @@
 ## Technical Documentation
 
-[Technical Papers and Presentations](https://github.com/tesseract-ocr/tesseract/wiki/Technical-Documentation)
+[Technical Papers and Presentations](Technical-Documentation.md)
 
 ## Tesseract 4.0 with LSTM
 
-   For information about the new LSTM based tesseract engine, please see [these wiki pages](https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM). 
+   For information about the new LSTM based tesseract engine, please see the [documentation](4.0-with-LSTM.md).
 
 ## Manual Pages (3.0x)
 
@@ -24,7 +24,7 @@ plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/b
 
 ## Changes to Tesseract
 
-   * [Release Notes](https://github.com/tesseract-ocr/tesseract/wiki/ReleaseNotes)
+   * [Release Notes](ReleaseNotes.md)
    * [Change Log](https://github.com/tesseract-ocr/tesseract/blob/master/ChangeLog)
 
 ## API/ABI Changes Review
@@ -46,4 +46,4 @@ Documentation of tesseract generated from source code as of July 2015 by [doxyge
 
 ## FAQ
 
-[Frequently Asked Questions](https://github.com/tesseract-ocr/tesseract/wiki/FAQ)
+[Frequently Asked Questions](FAQ.md)

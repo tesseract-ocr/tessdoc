@@ -1,6 +1,6 @@
 # API examples
 
-This wiki provides simple examples on how to use the tesseract-ocr API (v3.02.02-4.0.0) in C++.
+This documentation provides simple examples on how to use the tesseract-ocr API (v3.02.02-4.0.0) in C++.
 It is expected that tesseract-ocr is correctly installed including all dependencies.
 It is expected the user is familiar with C++, compiling and linking program on their platform, [though basic compilation examples are included for beginners with Linux](#compiling-c-api-programs-on-linux).
 
@@ -184,7 +184,7 @@ int main()
   api->Recognize(0);
   tesseract::PageIteratorLevel level = tesseract::RIL_WORD;
   tesseract::ResultIterator* res_it = api->GetIterator();
-// Get confidence level for alternative symbol choices. Code is based on 
+// Get confidence level for alternative symbol choices. Code is based on
 // https://github.com/tesseract-ocr/tesseract/blob/master/src/api/hocrrenderer.cpp#L325-L344
   std::vector<std::vector<std::pair<const char*, float>>>* choiceMap = nullptr;
   if (res_it != 0) {
@@ -270,7 +270,7 @@ Notice the different confidence values for:
 <span class='ocr_glyph' id='choice_1_4_14' title='x_confs 1'>r</span>
 <span class='ocr_glyph' id='choice_1_4_15' title='x_confs 1'>e</span>
 </span>
-``` 
+```
 
 
 # Compiling C++ API programs on Linux
@@ -348,8 +348,8 @@ int TessBaseAPIInit3(TessBaseAPI* handle, const char* datapath, const char* lang
 
 void TessBaseAPISetImage2(TessBaseAPI* handle, struct Pix* pix);
 
-BOOL   TessBaseAPIDetectOrientationScript(TessBaseAPI* handle, char** best_script_name, 
-                                                            int* best_orientation_deg, float* script_confidence, 
+BOOL   TessBaseAPIDetectOrientationScript(TessBaseAPI* handle, char** best_script_name,
+                                                            int* best_orientation_deg, float* script_confidence,
                                                             float* orientation_confidence);
 """)
 
@@ -444,7 +444,7 @@ int main()
     bool textonly = false;
     int jpg_quality = 92;
 
-    tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI(); 
+    tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
     if (api->Init(datapath, "eng")) {
         fprintf(stderr, "Could not initialize tesseract.\n");
         exit(1);

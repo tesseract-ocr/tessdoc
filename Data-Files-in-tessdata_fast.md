@@ -11,7 +11,7 @@ When using the traineddata files from the **`tessdata_best`** and **`tessdata_fa
 Community contributed traineddata files can be found at:
 
 * [tessdata_contrib](https://github.com/tesseract-ocr/tessdata_contrib) repo
-* [Wiki page with links to externals repos](https://github.com/tesseract-ocr/tesseract/wiki/Data-Files-Contributions)
+* [Wiki page with links to externals repos](Data-Files-Contributions.md)
 
 ## Information specific to tessdata_fast
 
