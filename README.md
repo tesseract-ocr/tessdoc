@@ -68,7 +68,7 @@
 - [Data-Files-in-tessdata_fast](Data-Files-in-tessdata_fast.md)
 - [Data-Files-Contributions](Data-Files-Contributions.md)
 
-### Teseract 4 LSTM Training
+### Tesseract 4 LSTM Training
 
 - [TrainingTesseract-4.00](TrainingTesseract-4.00.md)
 - [TrainingTesseract-4.00---Finetune](TrainingTesseract-4.00---Finetune.md)
