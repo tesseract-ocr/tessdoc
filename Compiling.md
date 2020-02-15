@@ -140,10 +140,11 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 **!!! IMPORTANT !!!** To use Tesseract in your application (to include tess or to link it into your app) see this very simple [example](User-App-Example.md).
 
-#### Build the latest library (using SW)
+#### Build the latest library (using Software Network client)
 
 1. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`.
-2. Run `sw build org.sw.demo.google.tesseract.tesseract-master`.
+2. Run `sw setup` (may require administrator access)
+3. Run `sw build org.sw.demo.google.tesseract.tesseract-master`.
 
 #### Build the latest library (using CPPAN, deprecated, until tess5.0)
 
@@ -179,9 +180,10 @@ To do this:
 **For development purposes** of Tesseract itself do the next steps:
 
 1. Download and install Git, CMake and put them in PATH.
-1. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`. SW is a source package distribution system.
-1. Add SW client to PATH.
-1. If you have a release archive, unpack it to `tesseract` dir. 
+2. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`. SW is a source package distribution system.
+3. Add SW client to PATH.
+4. Run `sw setup` (may require administrator access)
+5. If you have a release archive, unpack it to `tesseract` dir. 
 
 If you're using master branch (4.0) run
 
@@ -189,7 +191,7 @@ If you're using master branch (4.0) run
    git clone https://github.com/tesseract-ocr/tesseract tesseract
    ```
 
-4. Run
+6. Run
 
     ```
     cd tesseract
@@ -197,7 +199,7 @@ If you're using master branch (4.0) run
     cmake ..
     ```
 
-5. Build a solution (`tesseract.sln`) in your Visual Studio version.
+7. Build a solution (`tesseract.sln`) in your Visual Studio version.
 If you want to build and install from command line (e.g. Release build) you can use this command:
 ```
 cmake --build . --config Release --target install
