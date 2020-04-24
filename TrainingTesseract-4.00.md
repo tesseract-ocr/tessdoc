@@ -643,10 +643,6 @@ src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_onl
 ```
 And the following is printed out after a successful run, `Created starter traineddata for LSTM training of language 'eng'`, file `~/tesstutorial/engeval/*.lstmf` have been created, you can the jump to section "Training From Scratch" below.
 
-```
-./lstmtraining
-```
-
 The above command makes LSTM training data equivalent to the data used to train
 base Tesseract for English. For making a general-purpose LSTM-based OCR engine,
 it is woefully inadequate, but makes a good tutorial demo.
@@ -693,7 +689,7 @@ with the default training data created with the command-lines above.
 mkdir ~/tesstutorial/engtrain/
 find ~/tesstutorial/engeval -name "*.lstmf" > ~/tesstutorial/engtrain/eng.training_files.txt
 mkdir -p ~/tesstutorial/engoutput
-training/lstmtraining \
+src/training/lstmtraining \
   --traineddata tessdata/eng.traineddata \
   --net_spec '[1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c111]' \
   --model_output ~/tesstutorial/engoutput/base --learning_rate 20e-4 \
