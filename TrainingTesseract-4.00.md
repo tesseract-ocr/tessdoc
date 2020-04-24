@@ -98,7 +98,7 @@ Beginning with 3.03, additional libraries are required to build the training
 tools.
 
 ```bash
-sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev
+sudo apt-get install autoconf automake libtool shtool libicu-dev libpango1.0-dev libcairo2-dev libleptonica-dev
 ```
 
 # Building the Training Tools
@@ -109,6 +109,9 @@ additional libraries have been installed, run the following from the Tesseract
 source directory:
 
 ```bash
+git clone https://github.com/tesseract-ocr/tesseract/
+cd tesseract/
+./autogen.sh
 ./configure
 ```
 or if you plan to run in docker (or do not require graphics):
