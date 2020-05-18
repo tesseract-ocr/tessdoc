@@ -22,6 +22,28 @@ See [FAQ](FAQ.md#running-tesseract) for more examples and tips.
 
 ---------------------------------------------
 
+## Install the language
+
+   Ubuntu: `/usr/share/tesseract-ocr`
+   
+   Windows: `C:\Program Files\Tesseract-OCR`
+   
+   macOS: `/usr/local/Cellar/tesseract`
+   
+   In Linux copy [language](https://tesseract-ocr.github.io/tessdoc/Data-Files.html) to folder from bash:
+
+   `sudo cp -R ukr.traineddata /usr/share/tesseract-ocr/4.00/tessdata/`
+   
+   Or automatic download:
+   
+      # Display a list of all Tesseract language packs
+      `apt-cache search tesseract-ocr`
+
+      # Install Ukrainian Simplified language pack
+      `apt-get install tesseract-ocr-ukr`
+
+---------------------------------------------
+
 ## Simplest Invocation to OCR an image
 
     tesseract imagename outputbase
