@@ -44,8 +44,8 @@ _**5.00 Alpha**_
 
 #### Ubuntu PPA
 
+* [Ubuntu Focal 20.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=focal)
 * [Ubuntu Eoan 19.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=eoan)
-* [Ubuntu Disco 19.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=disco)
 * [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=bionic)
 * [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=trusty)
@@ -55,6 +55,23 @@ _**5.00 Alpha**_
 https://notesalexp.org/tesseract-ocr/
 
 ### Tesseract 4 packages with LSTM engine and related traineddata
+
+#### Ubuntu
+
+##### 4.1.x
+
+* [Ubuntu Focal 20.04](https://packages.ubuntu.com/focal/tesseract-ocr-all)
+
+##### 4.0.x
+
+* [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all)
+
+#### Ubuntu PPA 
+* [Ubuntu Focal 20.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=focal)
+* [Ubuntu Eoan 19.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=eoan)
+* [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
+* [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
+* [Ubuntu Trusty 14.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
 
 #### Debian
 
@@ -69,18 +86,6 @@ There are also 4.1.x packages for other versions of Debian, check it here [https
 
 * [Debian 10 Buster (stable)](https://packages.debian.org/buster/tesseract-ocr)
 * [Debian 9 Stretch backports (oldstable)](https://packages.debian.org/stretch-backports/tesseract-ocr)
-
-#### Ubuntu
-
-* [Ubuntu Bionic 20.04](https://packages.ubuntu.com/focal/tesseract-ocr-all)
-* [Ubuntu Bionic 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr-all) 
-
-#### Ubuntu PPA 
-* [Ubuntu Eoan 19.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=eoan)
-* [Ubuntu Disco 19.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=disco)
-* [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
-* [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
-* [Ubuntu Trusty 14.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
 
 #### Raspbian
 * [Raspbian Stretch(notesalexp.org)](https://notesalexp.org/tesseract-ocr/)
@@ -127,16 +132,16 @@ yum install tesseract
 yum install tesseract-langpack-deu
 ```
 
-**For Fedora 31 run the following as root:**
+**For Fedora 32 run the following as root:**
 ```
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_31/home:Alexander_Pozdnyakov.repo
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_32/home:Alexander_Pozdnyakov.repo
 dnf install tesseract
 dnf install tesseract-langpack-deu
 ```
 
-**For Fedora 30 run the following as root:**
+**For Fedora 31 run the following as root:**
 ```
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_30/home:Alexander_Pozdnyakov.repo
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov/Fedora_31/home:Alexander_Pozdnyakov.repo
 dnf install tesseract
 dnf install tesseract-langpack-deu
 ```
