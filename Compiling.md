@@ -123,7 +123,7 @@ export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig
 ## Language Data
 
   * Download the [data file(s) for the language(s) you are interested in](Data-Files.md).
-  * Move it to the `tessdata` directory (e.g. 'mv tessdata $TESSDATA\_PREFIX' if defined `TESSDATA_PREFIX`)
+  * Move it to the `tessdata` directory (e.g. `mv tessdata $TESSDATA\_PREFIX` if defined `TESSDATA_PREFIX`)
 
 You can also use:
 ```
