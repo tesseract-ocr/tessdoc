@@ -57,10 +57,13 @@ Heavy ink bleeding from historical documents can be compensated for by using an 
 
 For example, GIMP's Value Propagate filter can create Erosion of extra bold historical fonts by reducing the Lower threshold value.
 
-Original: (Erosion_original.jpg)
+Original:
 
+![Erosion_original.png](Erosion_original.png)
 
-Erosion applied: (Erosion_applied.jpg)
+Erosion applied:
+
+![Erosion_applied.png](Erosion_applied.png)
 
 
 ### Rotation / Deskewing
