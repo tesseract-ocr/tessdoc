@@ -12,7 +12,7 @@
 | [YAGF](http://sourceforge.net/projects/yagf-ocr/) | X         |         |             |  GPL v3     | A graphical front-end for cuneiform and tesseract |
 | [OCR2Text](https://github.com/writecrow/ocr2text) | X         | X        | X           | MIT      | CLI tool for batch-processing PDF to TXT |
 | [OCRFeeder](https://wiki.gnome.org/action/show/Apps/OCRFeeder) | X         |         |             | GPL v3      | OCRFeeder is a document layout analysis and optical character recognition system |
-| [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and tessaract OCR |
+| [Lector](https://github.com/zdenop/lector) | X         |         | X           | GPL v2      | A graphical ocr solution for GNU/Linux based on Python, Qt4 and Tesseract OCR |
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
 | [Lime OCR](http://code.google.com/p/lime-ocr/) |           |         | X           | GPL v3      | A simple, free OCR software for Windows using tesseract-ocr engine |
 | [Ocrivist](http://www.ocrivist.com/) | X         |         |             | GPL v3      | Ocrivist is a utility which makes it possible to scan and OCR books and other printed documents to PDF or Djvu format |
