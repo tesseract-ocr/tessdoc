@@ -61,7 +61,7 @@ Table of Contents
 
 # Tesseract release notes Jul 07 2019 - V4.1.0
   * Backward compatible release with 4.0.0  
-  * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tessaract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
+  * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tesseract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
   * Added new renders LSTMBox, WordStrBox to simplify training
   * Added character boxes in hOCR output.
   * Added Python training scripts (experimental) as alternative shell scripts.
