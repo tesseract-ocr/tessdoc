@@ -13,6 +13,7 @@ There are a variety of reasons you might not get good quality output from Tesser
   * [Transparency / Alpha channel](#transparency--alpha-channel)
   * [Tools / Libraries](#tools--libraries)
   * [Examples](#examples)
+  * [Tables recognitions](#tables-recognitions)
 * [Page segmentation method](#page-segmentation-method)
 * [Dictionaries, word lists, and patterns](#dictionaries-word-lists-and-patterns)
 * [Still having problems?](#still-having-problems)
@@ -158,6 +159,9 @@ It is also possible to add words to the word list Tesseract uses to help recogni
 
 If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](ControlParams). See the [FAQ for an example](FAQ-Old#how-do-i-recognize-only-digits).
 
+## Tables recognitions
+
+It is known tesseract has problem to recognize text/data from tables (see [issues tracker](https://github.com/tesseract-ocr/tesseract/issues)) without custom segmenation/layout analyze. You can try to use/test [Sintun proposal](https://github.com/tesseract-ocr/tesseract/issues/1714#issuecomment-588183356) or get idea for [Text Extraction from a Table Image, using PyTesseract and OpenCV](https://levelup.gitconnected.com/text-extraction-from-a-table-image-using-pytesseract-and-opencv-3342870691ae)/[code for Text-Extraction-Table-Image](https://github.com/fazlurnu/Text-Extraction-Table-Image)
 
 ## Still having problems?
 
