@@ -161,7 +161,7 @@ If you know you will only encounter a subset of the characters available in the 
 
 ## Tables recognitions
 
-It is known tesseract has problem to recognize text/data from tables (see [issues tracker](https://github.com/tesseract-ocr/tesseract/issues)) without custom segmenation/layout analyze. You can try to use/test [Sintun proposal](https://github.com/tesseract-ocr/tesseract/issues/1714#issuecomment-588183356) or get idea for [Text Extraction from a Table Image, using PyTesseract and OpenCV](https://levelup.gitconnected.com/text-extraction-from-a-table-image-using-pytesseract-and-opencv-3342870691ae)/[code for Text-Extraction-Table-Image](https://github.com/fazlurnu/Text-Extraction-Table-Image)
+It is known tesseract has problem to recognize text/data from tables (see [issues tracker](https://github.com/tesseract-ocr/tesseract/issues)) without custom segmenation/layout analyze. You can try to use/test [Sintun proposal](https://github.com/tesseract-ocr/tesseract/issues/1714#issuecomment-588183356) or get idea for [Text Extraction from a Table Image, using PyTesseract and OpenCV](https://fazlurnu.com/2020/06/23/text-extraction-from-a-table-image-using-pytesseract-and-opencv)/[code for Text-Extraction-Table-Image](https://github.com/fazlurnu/Text-Extraction-Table-Image)
 
 ## Still having problems?
 
