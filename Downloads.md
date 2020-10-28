@@ -10,7 +10,7 @@ Tesseract is included in most Linux distributions.
 
 ## Binaries for Windows
 
-https://tesseract-ocr.github.io/tessdoc/4.0-with-LSTM.html#400-alpha-for-windows
+[https://tesseract-ocr.github.io/tessdoc/4.0-with-LSTM.html#400-alpha-for-windows](https://tesseract-ocr.github.io/tessdoc/4.0-with-LSTM.html#400-alpha-for-windows)
 
 ### Old Downloads
 
