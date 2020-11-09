@@ -42,7 +42,7 @@ tesseract phototest.tif test1 segdemo inter
 
 You should see something like this:
 
-![tesseract_debug](tesseract_debug.png)
+![tesseract_debug](images/tesseract_debug.png)
 
 The words found in the image are represented as blue rectangles. There are 3 menus:
 

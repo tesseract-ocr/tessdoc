@@ -34,7 +34,7 @@ Table of Contents
 
 ![API/ABI changes graph](https://abi-laboratory.pro/tracker/graph/tesseract/graph.svg?v=1.10)
 
-![api_abi_changes.png](api_abi_changes.png)
+![api_abi_changes.png](images/api_abi_changes.png)
 
 * [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=4.0.0&v2=current&obj=ff668&kind=abi) (maybe not updated for the latest code)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=3.05.02&v2=4.0.0&obj=a88e1&kind=abi)
