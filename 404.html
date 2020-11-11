@@ -1,15 +1,4 @@
----
-layout: page
-title: "404 - File Not Found"
-permalink: /404.html
-comments: false
-sharing: false
-footer: true
----
-
-<h1>Whoops! Could not find that page.</h1>
-<p>
-Please 
-<a href="https://github.com/tesseract-ocr/tessdoc/issues/new">log an issue</a> 
-with the URL you were trying to reach. Thanks!
-</p>
+<script>
+  sessionStorage.redirect = location.href;
+</script>
+<meta http-equiv="refresh" content="0;URL='/tessdoc'">
