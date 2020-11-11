@@ -1,6 +1,6 @@
 ## Tesseract 3
 
-### Manual pages for legacy Tesseract engine
+### Manual pages for legacy Tesseract engine and training tools
 
   * [tesseract](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
   * [ambiguous\_words](https://github.com/tesseract-ocr/tesseract/blob/master/doc/ambiguous_words.1.asc)
@@ -12,6 +12,7 @@
   * [text2image](https://github.com/tesseract-ocr/tesseract/blob/master/doc/text2image.1.asc)
   * [unicharset\_extractor](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset_extractor.1.asc)
   * [wordlist2dawg](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
+  * [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc)
 
 ### Other documentation for legacy Tesseract engine
 
