@@ -18,6 +18,7 @@
 
 ### Other documentation for legacy Tesseract engine
 
+- [FAQ - Old version](FAQ-Old.md)
 - [Technical Documentation](Technical-Documentation.md)
 - [API/ABI changes for Tesseract since 3.00 version](https://abi-laboratory.pro/tracker/timeline/tesseract/)
 - [Slides from Tutorial on Tesseract presented at DAS2014](https://drive.google.com/file/d/0B7l10Bj_LprhbUlIUFlCdGtDYkE/edit?usp=sharing)
