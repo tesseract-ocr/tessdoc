@@ -1,3 +1,5 @@
+# Documentation for old versions of Tesseract
+
 ## Tesseract 3
 
 ### Manual pages for legacy Tesseract engine and training tools
@@ -17,9 +19,10 @@
 ### Other documentation for legacy Tesseract engine
 
 - [Technical Documentation](Technical-Documentation.md)
+- [API/ABI changes for Tesseract since 3.00 version](https://abi-laboratory.pro/tracker/timeline/tesseract/)
 - [Slides from Tutorial on Tesseract presented at DAS2014](https://drive.google.com/file/d/0B7l10Bj_LprhbUlIUFlCdGtDYkE/edit?usp=sharing)
 - [Source Code Documentation by Doxygen - 3.x](https://tesseract-ocr.github.io/tessapi/3.x/)
-- [Source Code Documentation by Doxygen - 3.05.02/](https://tesseract-ocr.github.io/tessapi/3.05.02/)
+- [Source Code Documentation by Doxygen - 3.05.02](https://tesseract-ocr.github.io/tessapi/3.05.02/)
 - [A list of useful control parameters and config files](tess3/ControlParams.md)
 - [Training Tesseract - tesstrain.sh](tess3/Training-Tesseract-–-tesstrain.sh.md)
 - [Training Tesseract - Make-Box-Files](tess3/Training-Tesseract-–-Make-Box-Files.md)
@@ -30,3 +33,9 @@
 ## Tesseract 2
 
 - [TrainingTesseract2](tess3/TrainingTesseract2.md)
+
+## Old Downloads
+
+- [Tesseract 3.02 to 1.01 Downloads Archive on SourceForge ](https://sourceforge.net/projects/tesseract-ocr-alt/files/)
+- [Windows installer for 3.05.02 from UB Mannheim](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-setup-3.05.02-20180621.exe)
+- [Official Windows installer for the old version 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-setup-3.02.02.exe)

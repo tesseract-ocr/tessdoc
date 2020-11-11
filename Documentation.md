@@ -22,17 +22,6 @@ The manual pages for tesseract and related training tools are available at follo
   * [unicharset\_extractor](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset_extractor.1.asc)
   * [wordlist2dawg](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
 
-## Manual Pages (3.0x)
-
-The manual pages which apply mainly for legacy tesseract engine are available at following links:
-
-  * [ambiguous\_words](https://github.com/tesseract-ocr/tesseract/blob/master/doc/ambiguous_words.1.asc)
-  * [cntraining](https://github.com/tesseract-ocr/tesseract/blob/master/doc/cntraining.1.asc)
-  * [mftraining](https://github.com/tesseract-ocr/tesseract/blob/master/doc/mftraining.1.asc)
-  * [shapeclustering](https://github.com/tesseract-ocr/tesseract/blob/master/doc/shapeclustering.1.asc)
-
-plus description of [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc) files
-
 ## Changes to Tesseract
 
    * [Release Notes](ReleaseNotes.md)
