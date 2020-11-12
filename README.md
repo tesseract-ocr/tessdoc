@@ -35,7 +35,8 @@ Tesseract **4.0x+** added a new OCR engine based on LSTM neural networks. It ini
 
 ## 5.0.0.Alpha
 
-Tesseract **5.0.0.Alpha** source code is available in the 'master' branch of the [repository](https://github.com/tesseract-ocr/tesseract).
+Tesseract **5.0.0.Alpha** source code is available in the 'master' branch of the [repository](https://github.com/tesseract-ocr/tesseract). The master branch is using 5.0.0 versioning because
+code modernization caused API compatibility issues with 4.x release.
 
 ### Compiling and Installation
 - [Compiling](Compiling.md)

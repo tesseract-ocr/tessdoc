@@ -1,5 +1,6 @@
-See [Change log](https://github.com/tesseract-ocr/tesseract/blob/master/ChangeLog) 
-for more details. Table has not been updated for 3.0 and earlier versions.
+## Languages supported in different versions of Tesseract
+
+This does not include script traineddata files added later.
 
 |Lang Code|Language|3.00|3.02|3.04|4.0.0|
 |---|---|:---:|:---:|:---:|:---:|

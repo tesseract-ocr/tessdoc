@@ -10,8 +10,6 @@ Tesseract is included in most Linux distributions.
 
 ## Binaries for Windows
 
-[https://tesseract-ocr.github.io/tessdoc/4.0-with-LSTM.html#400-alpha-for-windows](https://tesseract-ocr.github.io/tessdoc/4.0-with-LSTM.html#400-alpha-for-windows)
-
 ### Old Downloads
 
 [Downloads Archive on SourceForge](http://sourceforge.net/projects/tesseract-ocr-alt/files/).
@@ -23,10 +21,6 @@ Currently, there is no **official** Windows installer for newer versions.
 
   * Cygwin includes [packages for Tesseract](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=tesseract&arch=x86_64).
 
-  * binaries compiled by @egorpugin (ref issue # 209)
-    https://www.dropbox.com/s/8t54mz39i58qslh/tesseract-3.05.00dev-win32-vc19.zip?dl=1
+  * [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki) has installers available for version 3, 4 and current 5.0.0.Alpha.
 
-    You have to install VC2015 x86 redist from microsoft.com in order to run them.
-    Leptonica is built with all libs except for libjp2k.
-
-  * https://github.com/UB-Mannheim/tesseract/wiki (installers available for version 3 and 4)
+  * [Unofficial Binaries](Installation.md#windows)
