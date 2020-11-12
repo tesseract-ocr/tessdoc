@@ -18,9 +18,9 @@
 
 ### Other pages for legacy Tesseract engine
 
-- [Traineddata files](tess3/Data-Files.md)
-- [FAQ - Old version](FAQ-Old.md)
-- [Technical Documentation](Technical-Documentation.md)
+- [Traineddata files for Tesseract 3.0x](tess3/Data-Files.md)
+- [FAQ - Old version](tess3/FAQ-Old.md)
+- [Technical Documentation](tess3/Technical-Documentation.md)
 - [API/ABI changes for Tesseract since 3.00 version](https://abi-laboratory.pro/tracker/timeline/tesseract/)
 - [Slides from Tutorial on Tesseract presented at DAS2014](https://drive.google.com/file/d/0B7l10Bj_LprhbUlIUFlCdGtDYkE/edit?usp=sharing)
 - [Source Code Documentation by Doxygen - 3.x](https://tesseract-ocr.github.io/tessapi/3.x/)
@@ -30,7 +30,6 @@
 - [Training Tesseract - Make-Box-Files](tess3/Training-Tesseract-–-Make-Box-Files.md)
 - [Training Tesseract - 3.03–3.05](tess3/Training-Tesseract-3.03–3.05.md)
 - [Training Tesseract - 3.00–3.02](tess3/Training-Tesseract-3.00–3.02.md)
-
 
 ## Tesseract 2
 

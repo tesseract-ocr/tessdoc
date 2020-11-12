@@ -1,6 +1,4 @@
-Please read [TrainingTesseract 4.00](TrainingTesseract-4.00.md)
-
-There have been many changes made to LSTM training process.
+## Community Contributions for Finetune Training
 
 You can see the following links where there are modified training scripts created by Tesseract users:
 
@@ -9,4 +7,4 @@ You can see the following links where there are modified training scripts create
 * [wiki.wareya.moe - tesstrain.sh at pastebin](https://pastebin.com/cD5wctUG)
 * [wiki.wareya.moe - tesstrain_utils.sh at pastebin](https://pastebin.com/TfqJUxSR)
 
-To train from line images and its matching ground truth, please see the project [ocr-d/train](https://github.com/OCR-D/ocrd-train) which creates box files and lstmf files using the line images.
+Kristóf Horváth keeps a [LSTM (community) training guide](https://docs.google.com/document/d/1qDqbnlptcCPVIvMOHwfNws-CQat-llZLOTHC6S94Vec).
