@@ -1,5 +1,5 @@
 * [Special Data Files](#special-data-files)
-* [Updated LSTM Data Files for Version 4.00](#updated-data-files-for-version-400-september-15-2017)
+* [Latest Data Files](#latest-data-files-september-15-2017)
 * [Data Files for Version 4.00](#data-files-for-version-400-november-29-2016)
 * [Format of traineddata files](#format-of-traineddata-files)
 
@@ -12,7 +12,7 @@ equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract
 
 **Note**: These two data files are compatible with older versions of Tesseract. `osd` is compatible with version 3.01 and up, and `equ` is compatible with version 3.02 and up.
 
-## Updated Data Files for Version 4.0x (September 15, 2017)
+## Updated Data Files (September 15, 2017)
 
 We have three sets of .traineddata files on GitHub in three separate repositories. These are compatible with Tesseract 4.0x**+** and 5.0.0.Alpha.
 

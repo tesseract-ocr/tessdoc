@@ -16,8 +16,9 @@
   * [wordlist2dawg](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
   * [unicharambigs](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset.5.asc)
 
-### Other documentation for legacy Tesseract engine
+### Other pages for legacy Tesseract engine
 
+- [Traineddata files](tess3/Data-Files.md)
 - [FAQ - Old version](FAQ-Old.md)
 - [Technical Documentation](Technical-Documentation.md)
 - [API/ABI changes for Tesseract since 3.00 version](https://abi-laboratory.pro/tracker/timeline/tesseract/)
