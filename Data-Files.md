@@ -1,11 +1,21 @@
+## Traineddata Files for Version 4.00 +
+
+We have three sets of official .traineddata files trained at Google, for `tesseract` versions 4.00 and above. These are made available in three separate repositories. 
+
+* [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) (Sep 2017) best "value for money" in speed vs accuracy, `Integer` models.
+* [tessdata_best](https://github.com/tesseract-ocr/tessdata_best) (Sep 2017) best results on Google's eval data, slower, `Float` models. These are the only models that can be used as base for finetune training.
+* [tessdata](https://github.com/tesseract-ocr/tessdata) (Nov 2016 and Sep 2017) These have legacy tesseract models from 2016. The LSTM models have been updated with Integer version of tessdata_best LSTM models. (Cube based legacy tesseract models for Hindi, Arabic etc. have been deleted).
+
+When using the traineddata files from the **`tessdata_best`** and **`tessdata_fast`** repositories, only the new LSTM-based OCR engine (--oem 1) is supported. The legacy tesseract engine (--oem 0) is NOT supported with these files, so Tesseract's `oem modes` '0' and '2' won't work with them. 
+
 * [Special Data Files](#special-data-files)
-* [Latest Data Files](#latest-data-files-september-15-2017)
-* [Data Files for Version 4.00](#data-files-for-version-400-november-29-2016)
+* [Latest Data Files - Sept. 2017](#latest-data-files-september-15-2017)
+* [Data Files for Version 4.00 - Nov. 2016](#data-files-for-version-400-november-29-2016)
 * [Format of traineddata files](#format-of-traineddata-files)
 
 ## Special Data Files
 
-Lang Code | Description | 4.0x/3.0x traineddata
+Lang Code | Description | 4.x/3.0x traineddata
 :-------- | :---------- | :-------------------
 osd | Orientation and script detection | [osd.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata)
 equ | Math / equation detection | [equ.traineddata](https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata)
@@ -31,10 +41,11 @@ The third set in **`tessdata`** is the only one that supports the legacy recogni
 
 **Note**: When using the new models in the **`tessdata_best`** and **`tessdata_fast`** repositories, only the new LSTM-based OCR engine is supported. The legacy engine is not supported with these files, so Tesseract's oem modes '0' and '2' won't work with them. 
 
-
 ## Data Files for Version 4.00 (November 29, 2016)
 
-This set of traineddata files has support for the legacy recognizer with --oem 0 and for LSTM models with --oem 1.
+[tessdata tagged 4.0.0](https://github.com/tesseract-ocr/tessdata/releases/tag/4.0.0) has the models from Sept 2017 that have been updated with `Integer` versions of `tessdata_best` LSTM models. This set of traineddata files has support for the legacy recognizer with --oem 0 and for LSTM models with --oem 1.
+
+[tessdata tagged 4.00](https://github.com/tesseract-ocr/tessdata/releases/tag/4.00) has the models from 2016. The individual language files are linked in the table below.
 
 **Note**: The `kur` data file was not updated from 3.04. For Fraktur, use the newer data files from the tessdata_fast or tessdata_best repositories.
 

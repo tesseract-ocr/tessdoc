@@ -17,7 +17,7 @@ If you have a question, first read the [documentation](https://tesseract-ocr.git
 Also, it is free software, so if you want to pitch in and help, please do!
 If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues).
 
-This user manual is for Tesseract versions 4.x.x and 5.0.0.Alpha. For versions 3.05.02 and older, see the [documentation for old versions](OldVersionDocs.md).
+This user manual is for Tesseract versions `4.x.x` and `5.0.0.Alpha`. For versions `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
 
 ## Releases and Changelog
 
@@ -39,15 +39,15 @@ Tesseract **5.0.0.Alpha** source code is available in the 'master' branch of the
 code modernization caused API compatibility issues with 4.x release.
 
 ### Compiling and Installation
+- [Compiling and Installation from GitHub](Compiling-–-GitInstallation.md)
 - [Compiling](Compiling.md)
 - [Installation](Installation.md)
 - [Docker Containers](4.0-Docker-Containers.md)
-- [Compiling and Installation from GitHub](Compiling-–-GitInstallation.md)
 
 ### Language Traineddata Files
 - [Data-Files](Data-Files.md)
-- [Data-Files-in-tessdata_fast](Data-Files-in-tessdata_fast.md)
-- [Community Contributions](Data-Files-Contributions.md)
+- [Community Contribution Links](Data-Files-Contributions.md)
+- [tessdata_contrib](https://github.com/tesseract-ocr/tessdata_contrib) repo
 
 ### Usage
 - [Tips to Improve Recognition](ImproveQuality.md)
@@ -67,6 +67,8 @@ code modernization caused API compatibility issues with 4.x release.
 - [NeuralNetsInTesseract4.00](NeuralNetsInTesseract4.00.md)
 - [VGSLSpecs](VGSLSpecs.md)
 - [VGSLSpecs info from Tensorflow](https://github.com/mldbai/tensorflow-models/blob/master/street/g3doc/vgslspecs.md)
+- [Network spec for tessdata_fast models](Data-Files-in-tessdata_fast.md)
+- [Network spec for tessdata_best models](Data-Files-in-tessdata_best.md)
 - [DAS 2016 tutorial slides](https://github.com/tesseract-ocr/docs/tree/master/das_tutorial2016)
 Slides
 [#2](https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/2ArchitectureAndDataStructures.pdf),
@@ -78,15 +80,17 @@ have information about LSTM integration in Tesseract 4.0x.
 
 ### Training
 - [Makefile based Training from Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
-- [TrainingTesseract 4.00 - Detailed Guide](TrainingTesseract-4.00.md)
--- [Hardware-Software Requirements](#hardware-software-requirements)
--- [Training Text Requirements](TrainingTesseract-4.00.md#training-text-requirements)
--- [Fonts](Fonts.md)
--- [Making-Box-Files---4.0](Making-Box-Files---4.0.md)
--- [LSTMTraining Command Line](TrainingTesseract-4.00.md#lstmtraining-command-line)
--- [Error Messages From Training](TrainingTesseract-4.00.md#error-messages-from-training)
-- [Community Contributions for Finetune Training](TrainingTesseract-4.00---Finetune.md)
+- [TrainingTesseract 4.00 - Detailed Guide by Ray Smith](TrainingTesseract-4.00.md)
+- [Hardware-Software Requirements](TrainingTesseract-4.00.md#hardware-software-requirements)
+- [Training Text Requirements](TrainingTesseract-4.00.md#training-text-requirements)
+- [Fonts](Fonts.md)
+- [Making-Box-Files---4.0](Making-Box-Files---4.0.md)
+- [LSTMTraining Command Line](TrainingTesseract-4.00.md#lstmtraining-command-line)
+- [Error Messages From Training](TrainingTesseract-4.00.md#error-messages-from-training)
 - [The-Hallucination-Effect](The-Hallucination-Effect.md)
+- [Links to Community Contributions for Finetune Training](TrainingTesseract-4.00---Finetune.md)
+- [Community training tips at tesseract-ocr forum](https://groups.google.com/g/tesseract-ocr/search?q=lorenzo)
+
 
 ### Testing
 - [TestingTesseract](TestingTesseract.md)
