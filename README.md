@@ -79,15 +79,18 @@ have information about LSTM integration in Tesseract 4.0x.
 - [Tesseract OpenCL - Experimental](TesseractOpenCL.md)
 
 ### Training
-- [Makefile based Training from Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
+- [Train Tesseract LSTM with make from Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
+    * [Example: Training Fraktur with GT4HistOCR](https://github.com/tesseract-ocr/tesstrain/wiki/GT4HistOCR)
+    * [Example: Training Arabic Handwriting](https://github.com/tesseract-ocr/tesstrain/wiki/Arabic-Handwriting)]
+    * [Demo of PlusMinus training for Sanskrit](https://github.com/Shreeshrii/tesstrain-sanPlusMinus)
 - [TrainingTesseract 4.00 - Detailed Guide by Ray Smith](TrainingTesseract-4.00.md)
-- [Hardware-Software Requirements](TrainingTesseract-4.00.md#hardware-software-requirements)
-- [Training Text Requirements](TrainingTesseract-4.00.md#training-text-requirements)
-- [Fonts](Fonts.md)
-- [Making-Box-Files---4.0](Making-Box-Files---4.0.md)
-- [LSTMTraining Command Line](TrainingTesseract-4.00.md#lstmtraining-command-line)
-- [Error Messages From Training](TrainingTesseract-4.00.md#error-messages-from-training)
-- [The-Hallucination-Effect](The-Hallucination-Effect.md)
+    * [Hardware-Software Requirements](TrainingTesseract-4.00.md#hardware-software-requirements)
+    * [Training Text Requirements](TrainingTesseract-4.00.md#training-text-requirements)
+    * [Fonts](Fonts.md)
+    * [Making-Box-Files---4.0](Making-Box-Files---4.0.md)
+    * [LSTMTraining Command Line](TrainingTesseract-4.00.md#lstmtraining-command-line)
+    * [Error Messages From Training](TrainingTesseract-4.00.md#error-messages-from-training)
+    * [The-Hallucination-Effect](The-Hallucination-Effect.md)
 - [Links to Community Contributions for Finetune Training](TrainingTesseract-4.00---Finetune.md)
 - [Community training tips at tesseract-ocr forum](https://groups.google.com/g/tesseract-ocr/search?q=lorenzo)
 
