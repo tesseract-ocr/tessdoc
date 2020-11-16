@@ -161,7 +161,7 @@ If you didn't successfully space out the characters on the training image, some 
 
 If you have an editor that understands UTF-8, this process will be a lot easier than if it doesn't, as each UTF-8 character has up to 4 bytes to code it, and dumb editors will show you all the bytes separately.
 
-There are several visual tools for editing box file - please check [AddOns](AddOns.md#For_Tesseract-OCR_2.0x).
+There are several visual tools for editing box file - please check [../AddOns](AddOns.md#For_Tesseract-OCR_2.0x).
 
 ### Bootstrapping a new character set
 

@@ -99,7 +99,7 @@ If you didn't successfully space out the characters on the training image, some 
 The last number on each line is the page number (0-based) of that character in the multi-page tiff file.
 
 There are several visual tools for editing box file.
-Please check the [AddOns](AddOns.md#tesseract-box-editors-and-training-tools) documentation.
+Please check the [AddOns](../AddOns.md#tesseract-box-editors-and-training-tools) documentation.
 
 ### Bootstrapping a new character set
 

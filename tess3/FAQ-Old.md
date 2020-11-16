@@ -258,7 +258,7 @@ sudo dpkg -i *.deb
 ## How do I Edit Box files used in training?
 
 There are a variety of programs to help with this,
-see [the AddOns page](AddOns.md#tesseract-box-editors-and-training-tools).
+see [the AddOns page](../AddOns.md#tesseract-box-editors-and-training-tools).
 
 ## Utf8 buffer too big, size=xx (Error during training)
 

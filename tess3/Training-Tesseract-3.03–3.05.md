@@ -54,7 +54,7 @@ Tesseract 3.0x is fully trainable. This page describes the training process, pro
 
 Please check the list of languages for which [traineddata](Data-Files.md) is already available as of release 3.04 before embarking on training.
 
-[3rd Party training tools](AddOns) are also available for training.
+[3rd Party training tools](../AddOns.md) are also available for training.
 
 # Background and Limitations
 

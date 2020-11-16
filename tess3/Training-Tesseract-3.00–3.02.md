@@ -31,7 +31,7 @@
 
 Tesseract 3.0x is fully trainable. This page describes the training process, provides some guidelines on applicability to various languages, and what to expect from the results.
 
-[3rd Party training tools](AddOns.md) are also available for training.
+[3rd Party training tools](../AddOns.md) are also available for training.
 
 Please check the list of languages for which [traineddata](Data-Files.md) is already available as of release 3.04 before embarking on training.
 
@@ -197,7 +197,7 @@ If you didn't successfully space out the characters on the training image, some 
 The last number on each line is the page number (0-based) of that character in the multi-page tiff file.
 
 There are several visual tools for editing box file.
-Please check the [AddOns](AddOns.md#tesseract-box-editors-and-training-tools) documentation.
+Please check the [AddOns](../AddOns.md#tesseract-box-editors-and-training-tools) documentation.
 
 ### Bootstrapping a new character set
 
