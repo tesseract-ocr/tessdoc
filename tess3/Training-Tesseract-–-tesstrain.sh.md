@@ -2,7 +2,7 @@
 
 This page details the version used for training of 3.0x branch. Not all files are required for LSTM training.
 
-For 4.0 LSTM training usage, please see [TrainingTesseract-4.00](TrainingTesseract-4.00.md).
+For 4.0 LSTM training usage, please see [TrainingTesseract-4.00](../TrainingTesseract-4.00.md).
 
 
 # Example usage

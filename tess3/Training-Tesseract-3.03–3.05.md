@@ -1,5 +1,5 @@
 ------------------------------------
-## For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](TrainingTesseract-4.00.md)
+## For training Neural net based LSTM Tesseract 4.00 see [Training Tesseract 4.00](../TrainingTesseract-4.00.md)
 -------------------------------------
 
 ## *How to use the tools provided to train Tesseract 3.03–3.05 for a new language.*
