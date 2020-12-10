@@ -1,6 +1,6 @@
 # Tesseract User Manual
 
-This user manual is for Tesseract versions `4.x.x` and `5.0.0.Alpha`. For versions `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
+This user manual is for Tesseract versions `4.x.x` and `5.0.0.x`. For versions `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
 
 ## Introduction
 
@@ -21,7 +21,7 @@ If not, search the [Issues List](https://github.com/tesseract-ocr/tesseract/issu
 and if you still can't find what you need, please ask a question in 
 [Tesseract user forum Google group](http://groups.google.com/group/tesseract-ocr).
 
-Also, it is free software, so if you want to pitch in and help, please do!
+Also, Tesseract is free software, so if you want to pitch in and help, please do!
 If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues).
 
 ## Releases and Changelog
@@ -36,7 +36,7 @@ If you find a bug and fix it yourself, the best thing to do is to attach the pat
 
 ## 4.0 with LSTM
 
-Tesseract **4.0x+** added a new OCR engine based on LSTM neural networks. It initially works (well) on x86/Linux with Model data for [100+ languages and 35+ scripts](Data-Files-in-different-versions.md). For detailed information about the different types of models, see [Data Files](Data-Files.md).
+Tesseract **4.0x+** added a new OCR engine based on LSTM neural networks. It initially works (well) on x86/Linux with official Language Model data available for [100+ languages and 35+ scripts](Data-Files-in-different-versions.md). For detailed information about the different types of models, see [Data Files](Data-Files.md).
 
 Model files for version `4.00` are available from [tessdata tagged 4.00](https://github.com/tesseract-ocr/tessdata/releases/tag/4.00). It has models from November 2016. The individual language file links are available from the following link.
 - [tessdata 4.00 November 2016](https://github.com/tesseract-ocr/tessdoc/blob/master/Data-Files.md#data-files-for-version-400-november-29-2016)
