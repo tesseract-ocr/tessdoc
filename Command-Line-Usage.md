@@ -1,12 +1,14 @@
-## [Tesseract 'main' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
+# Command Line Usage
 
-See the [main](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) page for command line syntax and other details.
+## [Tesseract 'man' page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
+
+See the [man](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) page for command line syntax and other details.
 
 --------------------------------------------
 
 ## Basic Command Line Usage
 
-See [Running Tesseract](https://github.com/tesseract-ocr/tesseract/wiki#running-tesseract) for basic command line usage.
+See [Running Tesseract](https://github.com/tesseract-ocr/tesseract#running-tesseract) for basic command line usage.
 
 ## FAQ
 
@@ -16,7 +18,9 @@ See [FAQ](FAQ.md#running-tesseract) for more examples and tips.
 
 ## Available OCR Engines in Tesseract 4
 
-   Use `--oem 1` for LSTM, `--oem 0` for Legacy Tesseract. Please note that Legacy Tesseract models are only included in traineddata files from [tessdata](https://github.com/tesseract-ocr/tessdata) repo.
+   Use `--oem 1` for LSTM, `--oem 0` for Legacy Tesseract. 
+
+   Please note that Legacy Tesseract models are included in traineddata files from [tessdata](https://github.com/tesseract-ocr/tessdata) repo only.
 
    `tesseract input.tiff output --oem 1 -l eng`
 
@@ -37,12 +41,12 @@ ____________________________________
 
 Following examples use this image which has text in multiple languages.
 
-![eurotext.png](http://dev.blog.fairway.ne.jp/wp-content/uploads/2014/04/eurotext.png)
+![eurotext.png](images/eurotext.png)
 ## Using One Language
 
 Add '-l LANG' to the command where LANG is three character language code from the list of supported languages. If this is not given then English language is assumed by default.
 
-    tesseract testing/eurotext.png testing/eurotext-eng -l eng
+    tesseract testing/eurotext.tif testing/eurotext-eng -l eng
 
 Output 
 
