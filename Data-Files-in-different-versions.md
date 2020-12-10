@@ -145,15 +145,15 @@
 |               | Greek                                       |          |          |           |     x     |       x       |         x        |
 |               | Gujarati                                    |          |          |           |     x     |       x       |         x        |
 |               | Gurmukhi                                    |          |          |           |     x     |       x       |         x        |
-|               | HanS(Han simplified)                        |          |          |           |     x     |       x       |         x        |
-|               | HanS_vert(Han simplified vertical)          |          |          |           |     x     |       x       |         x        |
-|               | HanT(Han traditional)                       |          |          |           |     x     |       x       |         x        |
-|               | HanT_vert(Han traditional vertical)         |          |          |           |     x     |       x       |         x        |
+|               | HanS (Han simplified)                        |          |          |           |     x     |       x       |         x        |
+|               | HanS_vert (Han simplified vertical)          |          |          |           |     x     |       x       |         x        |
+|               | HanT (Han traditional)                       |          |          |           |     x     |       x       |         x        |
+|               | HanT_vert (Han traditional vertical)         |          |          |           |     x     |       x       |         x        |
 |               | Hangul                                      |          |          |           |     x     |       x       |         x        |
-|               | Hangul_vert(Hangul vertical)                |          |          |           |     x     |       x       |         x        |
+|               | Hangul_vert (Hangul vertical)                |          |          |           |     x     |       x       |         x        |
 |               | Hebrew                                      |          |          |           |     x     |       x       |         x        |
 |               | Japanese                                    |          |          |           |     x     |       x       |         x        |
-|               | Japanese_vert(Japanese vertical)            |          |          |           |     x     |       x       |         x        |
+|               | Japanese_vert (Japanese vertical)            |          |          |           |     x     |       x       |         x        |
 |               | Kannada                                     |          |          |           |     x     |       x       |         x        |
 |               | Khmer                                       |          |          |           |     x     |       x       |         x        |
 |               | Lao                                         |          |          |           |     x     |       x       |         x        |
