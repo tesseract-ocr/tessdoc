@@ -1181,7 +1181,7 @@ follows:
 ```
 training/lstmtraining --stop_training \
   --continue_from ~/tesstutorial/eng_from_chi/base_checkpoint \
-  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
+  --traineddata /path/to/traineddata/used/in/lstmtraining/eng.traineddata \
   --model_output ~/tesstutorial/eng_from_chi/eng.traineddata
 ```
 
