@@ -23,15 +23,15 @@ The manual pages for tesseract and related training tools are available at follo
 ### Tesseract latest from GitHub
 
 Documentation of Tesseract generated on Jan 30 2020 from master branch (5.0.0-alpha-619-ge9db
-) generated using Doxygen can be found at [tesseract-ocr.github.io](https://tesseract-ocr.github.io/tessapi/5.x/index.html)
+) can be found at [tesseract-ocr.github.io](https://tesseract-ocr.github.io/tessapi/5.x/index.html)
 
 ### Tesseract 4.1.1
 
-Documentation of Tesseract generated on 1.8.17 (4.1.1 release) generated using Doxygen can be found at [fossies.org](https://fossies.org/dox/tesseract-4.1.1/index.html)
+Documentation of Tesseract generated on 1.8.17 (4.1.1 release) can be found at [fossies.org](https://fossies.org/dox/tesseract-4.1.1/index.html)
 
 ### Tesseract 4.00.00dev
 
-Documentation of Tesseract generated on Sat May 20, 2017 from master branch (4.0) generated using Doxygen can be found at [ub-mannheim.github.io](https://ub-mannheim.github.io/tesseract/)
+Documentation of Tesseract on Sat May 20, 2017 from master branch (4.0) generated using Doxygen can be found at [ub-mannheim.github.io](https://ub-mannheim.github.io/tesseract/)
 
 ## FAQ
 
