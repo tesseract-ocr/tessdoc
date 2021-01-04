@@ -11,7 +11,7 @@
 
 ## Make Box Files
 
-For the [Run Tesseract for Training](TrainingTesseract.md#run-tesseract-for-training) step, Tesseract needs a 'box' file to go with each training image.
+For the [Run Tesseract for Training](Training-Tesseract-3.03–3.05.md#run-tesseract-for-training) step, Tesseract needs a 'box' file to go with each training image.
 The box file is a text file that lists the characters in the training image, in order, one per line, with the coordinates of the bounding box around the image. Tesseract 3.0 has a mode in which it will output a text file of the required format, but if the character set is different to its current training, it will naturally have the text incorrect. So the key process here is to manually edit the file to put the correct characters in it.
 
 Run Tesseract on each of your training images using this command line:
