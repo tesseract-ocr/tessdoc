@@ -54,6 +54,34 @@ _**5.00 Alpha**_
 
 https://notesalexp.org/tesseract-ocr/
 
+#### AppImage
+
+_Instruction_
+1. Download AppImage from [releases](https://github.com/AlexanderP/tesseract-appimage/releases) page
+1. Open your terminal application, if not already open
+1. Browse to the location of the AppImage
+3. Make the AppImage executable:   
+    `$ chmod a+x tesseract*.AppImage`
+4. Run it:  
+    `./tesseract*.AppImage -l eng page.tif page.txt`
+    
+_AppImage compatibility_
+* Debian: ≥ 10
+* Fedora: ≥ 29
+* Ubuntu: ≥ 18.04
+* CentOS ≥ 8
+* openSUSE Tumbleweed
+
+_Included traineddata files_
+* deu - German
+* eng - English
+* fin - Finnish
+* fra - French
+* osd - Script and orientation
+* por - Portuguese
+* rus - Russian
+* spa - Spanish
+
 ### Tesseract 4 packages with LSTM engine and related traineddata
 
 #### Ubuntu
