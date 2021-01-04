@@ -1,3 +1,5 @@
+# API example for user patterns
+
 User patterns can be useful when recognizing ID type of fields which have non-dictionary words but follow specific patterns of alphabets and digits e.g. `\A\A\d\d\d\d\A`  or `\A\A\d\d\d\A`
 
 This documentation provides a simple example on how to use the tesseract-ocr API
