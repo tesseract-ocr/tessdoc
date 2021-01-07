@@ -1,8 +1,10 @@
 ---
-title: My Page
+title: User Patterns - C++ Example
 ---
-### MYINCLUDE
+## C++ Examples
 
-{% include_relative examples/mypage_content.md %}
+### User Patterns
 
-### AFTER INCLUDE
+{% include_relative examples/user_patterns.cc %}
+
+### Next Example
