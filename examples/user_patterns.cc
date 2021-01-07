@@ -1,6 +1,3 @@
-This is *my page* in markdown
-
-```
 #include <tesseract/baseapi.h>
 #include <leptonica/allheaders.h>
 
@@ -24,5 +21,3 @@ int main()
     pixDestroy(&image);
     return 0;
 }
-
-```
