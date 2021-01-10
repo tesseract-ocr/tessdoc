@@ -54,6 +54,9 @@
   * _More OS_:
     * [ScanBizCards](http://www.scanbizcards.com): Mobile solution for business card scanning. _Requirements:_ iPhone 4/iPhone 3/Android 2.0
 
+  * _macOS_:
+    * [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS) - Tesseract OCR framework for macOS, supporting both Objective C and swift. Compiled for both x86 and arm64.
+
 ## 4. Others (Utilities, Tools, Command-Line Interfaces [CLI], etc)
 
 ### A. PDF to Searchable PDF tools 
