@@ -100,10 +100,12 @@ have information about LSTM integration in Tesseract 4.0x.
 - [4.0 Accuracy and Performance](4.0-Accuracy-and-Performance.md)
 - [Tesseract OpenCL - Experimental](TesseractOpenCL.md)
 
-### Training
+### Training for Tesseract 5
 - [Train Tesseract LSTM with make from Single Line Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
     * [Example: Training Fraktur with GT4HistOCR](https://github.com/tesseract-ocr/tesstrain/wiki/GT4HistOCR)
     * [Demo of PlusMinus training for Sanskrit](https://github.com/Shreeshrii/tesstrain-sanPlusMinus)
+
+### Training for Tesseract 4
 - [TrainingTesseract 4.00 - Detailed Guide by Ray Smith](TrainingTesseract-4.00.md)
     * [Hardware-Software Requirements](TrainingTesseract-4.00.md#hardware-software-requirements)
     * [Training Text Requirements](TrainingTesseract-4.00.md#training-text-requirements)
