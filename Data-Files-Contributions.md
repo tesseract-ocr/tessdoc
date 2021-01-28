@@ -15,7 +15,7 @@ Such tessdata contributions should ideally document everything needed to reprodu
 |dot_matrix|MRZ|[best](https://github.com/ameera3/OCR_Expiration_Date/tree/master/OCR_Ensemble)|[ameera3/OCR_Expiration_Date](https://github.com/ameera3/OCR_Expiration_Date)|[tesseract-ocr forum post](https://groups.google.com/forum/#!topic/tesseract-ocr/BimLa0-z9ME)|
 |e13b|E13B (or MICR)|[best](https://github.com/ElMagoElGato/tess_e13b_training)|[ElMagoElGato/tess_e13b_training](https://github.com/ElMagoElGato/tess_e13b_training)|[tesseract-ocr forum post](https://groups.google.com/d/topic/tesseract-ocr/q8IRrufVRJo/discussion)|
 |e13b|E13B (or MICR)|[best](https://github.com/DoubangoTelecom/tesseractMICR/blob/master/tessdata_best/e13b.traineddata)|[DoubangoTelecom/tesseractMICR](https://github.com/DoubangoTelecom/tesseractMICR)|[tesseract-ocr forum post](https://groups.google.com/forum/#!topic/tesseract-ocr/FdwDjt1edX8)|
-|frak|Fraktur|[best](best_URL)|[stweil](https://ub-backup.bib.uni-mannheim.de/~stweil/ocrd-train/data/Fraktur_5000000/)|[tesstrain wiki](https://github.com/tesseract-ocr/tesstrain/wiki/Training-Fraktur)|
+|frak|Fraktur|[best](https://ub-backup.bib.uni-mannheim.de/~stweil/ocrd-train/data/Fraktur_5000000/)|[bib.uni-mannheim.de/~stweil](https://ub-backup.bib.uni-mannheim.de/~stweil/ocrd-train/data/Fraktur_5000000/)|[tesstrain wiki](https://github.com/tesseract-ocr/tesstrain/wiki/Training-Fraktur)|
 
 <!--
 -------------------------
