@@ -36,8 +36,11 @@ Table of Contents
 
 ![api_abi_changes.png](images/api_abi_changes.png)
 
-* [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=4.0.0&v2=current&obj=ff668&kind=abi) (maybe not updated for the latest code)
-* [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=compat_report&l=tesseract&v1=3.05.02&v2=4.0.0&obj=a88e1&kind=abi)
+
+* [Binary compatibility report for Tesseract: 4.1.1 vs master (will be 5.0)](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.1.1&v2=current)
+* [Binary compatibility report for Tesseract: 4.1.0 vs 4.1.1](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.1.0&v2=4.1.1)
+* [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.0.0&v2=4.1.0)
+* [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
 ## Changes made since last release
   * The master branch is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
