@@ -453,7 +453,7 @@ the multi-language capability, since that will also bloat the distribution.
   * Fixed load of inttemp for big-endian architectures.
   * Fixed some Mac compilation issues.
 
-# TesserLots ofact release notes June 17, 2006 - V1.00
+# Tesseract release notes June 17, 2006 - V1.00
 First **open source** version of Tesseract!  
 
 Hosted at sourceforge.net.
