@@ -40,7 +40,7 @@
 
   * _Android_:
     * [tess-two](https://github.com/rmtheis/tess-two) - A fork of Tesseract Tools for Android [tesseract-android-tools](http://code.google.com/p/tesseract-android-tools/) that adds some additional functions.
-    * [Tesseract4Android](https://github.com/adaptech-cz/Tesseract4Android) - A fork of [tess-two](https://github.com/rmtheis/tess-two) rewritten from scratch to support Android Studio 3.x and Tesseract 4.
+    * [Tesseract4Android](https://github.com/adaptech-cz/Tesseract4Android) - A fork of [tess-two](https://github.com/rmtheis/tess-two) rewritten from scratch to support latest version of Tesseract OCR.
     * [textfairy](https://play.google.com/store/apps/details?id=com.renard.ocr) Android OCR App with source code at [github.com](https://github.com/renard314/textfairy)
     * [Character Recognition](https://play.google.com/store/apps/details?id=org.atai.TessUI#?t=W251bGwsMSwxLDUwMSwib3JnLmF0YWkuVGVzc1VJIl0.) Android OCR App with source code at [gitorious.org](https://gitorious.org/character-recognition/)
     * [tesseract-android-tools](http://code.google.com/p/tesseract-android-tools/): set of Android APIs (archived in Google Code Archive at 2013-01-28)
