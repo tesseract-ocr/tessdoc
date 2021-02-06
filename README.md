@@ -122,7 +122,7 @@ have information about LSTM integration in Tesseract 4.0x.
 - [UNLV Testing of Tesseract](UNLV-Testing-of-Tesseract.md)
 
 ### External Projects
-- [AddOns](../AddOns.md)
+- [AddOns](AddOns.md)
 - [User Projects - 3rdParty](User-Projects-–-3rdParty.md)
 
 ### User Manual for Old Versions
