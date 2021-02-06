@@ -1,4 +1,4 @@
-For GUI interface to Tesseract and other 3rd Party projects, please see [User Projects - 3rd Party](User-Projects-%E2%80%93-3rdParty.md)
+For GUI interface to Tesseract and other 3rd Party projects, please see [User Projects - 3rd Party](User-Projects-–-3rdParty.md)
 
 # External tools, wrappers and training projects for Tesseract
 
