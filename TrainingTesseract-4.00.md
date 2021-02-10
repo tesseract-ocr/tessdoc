@@ -291,7 +291,8 @@ The following table describes its command-line options:
 | `traineddata`          | `string` | none        | Path to the starter traineddata file that contains the unicharset, recoder and optional language model. |
 | `net_spec`             | `string` | none        | Specifies the topology of the network. |
 | `model_output`         | `string` | none        | Base path of output model files/checkpoints. |
-| `max_image_MB`         | `int`    | `6000`      | Maximum amount of memory to use for caching images. | `learning_rate`        | `double` | `10e-4`     | Initial learning rate for SGD algorithm. |
+| `max_image_MB`         | `int`    | `6000`      | Maximum amount of memory to use for caching images. |
+| `learning_rate`        | `double` | `10e-4`     | Initial learning rate for SGD algorithm. |
 | `sequential_training`  | `bool`   | `false`     | Set to true for sequential training. Default is to process all training data in round-robin fashion. |
 | `net_mode`             | `int`    | `192`       | Flags from `NetworkFlags`in `network.h`. Possible values: `128` for Adam optimization instead of momentum; `64` to allow different layers to have their own learning  rates, discovered automatically. |
 | `perfect_sample_delay` | `int`    | `0`         | When the network gets good, only backprop a perfect sample after this many imperfect samples have been seen since the last perfect sample was allowed through. |
