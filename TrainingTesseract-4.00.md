@@ -296,7 +296,7 @@ The following table describes its command-line options:
 | `sequential_training`  | `bool`   | `false`     | Set to true for sequential training. Default is to process all training data in round-robin fashion. |
 | `net_mode`             | `int`    | `192`       | Flags from `NetworkFlags`in `network.h`. Possible values: `128` for Adam optimization instead of momentum; `64` to allow different layers to have their own learning  rates, discovered automatically. |
 | `perfect_sample_delay` | `int`    | `0`         | When the network gets good, only backprop a perfect sample after this many imperfect samples have been seen since the last perfect sample was allowed through. |
-| `debug_interval`       | `int`    | `0`         | If non-zero, show visual debugging every this many iterations. |
+| `debug_interval`       | `int`    | `0`         | If non-zero, show visual debugging every this many iterations (requires Java and ScrollView.jar). |
 | `weight_range`         | `double` | `0.1`       | Range of random values to initialize weights. |
 | `momentum`             | `double` | `0.5`       | Momentum for alpha smoothing gradients. |
 | `adam_beta`            | `double` | `0.999`     | Smoothing factor squared gradients in ADAM algorithm. |
@@ -636,15 +636,13 @@ Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/t
 as follows:
 
 ```
+cd tessdata
+wget https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata
 src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
-  --noextract_font_properties --langdata_dir ../langdata \
+  --noextract_font_properties --langdata_dir ~/tesstutorial/langdata \
   --tessdata_dir ./tessdata --output_dir ~/tesstutorial/engtrain
 ```
-And the following is printed out after a successful run:
-```
-Created starter traineddata for LSTM training of language 'eng'
-Run 'lstmtraining' command to continue LSTM training for language 'eng'
-```
+And the following is printed out after a successful run, `Created starter traineddata for LSTM training of language 'eng'`, file `~/tesstutorial/engeval/*.lstmf` have been created, you can the jump to section "Training From Scratch" below.
 
 The above command makes LSTM training data equivalent to the data used to train
 base Tesseract for English. For making a general-purpose LSTM-based OCR engine,
@@ -654,7 +652,7 @@ Now try this to make eval data for the 'Impact' font:
 
 ```
 src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
-  --noextract_font_properties --langdata_dir ../langdata \
+  --noextract_font_properties --langdata_dir ~/tesstutorial/langdata \
   --tessdata_dir ./tessdata \
   --fontlist "Impact Condensed" --output_dir ~/tesstutorial/engeval
 ```
@@ -689,9 +687,11 @@ The following example shows the command line for training from scratch. Try it
 with the default training data created with the command-lines above.
 
 ```
+mkdir ~/tesstutorial/engtrain/
+find ~/tesstutorial/engeval -name "*.lstmf" > ~/tesstutorial/engtrain/eng.training_files.txt
 mkdir -p ~/tesstutorial/engoutput
-training/lstmtraining --debug_interval 100 \
-  --traineddata ~/tesstutorial/engtrain/eng/eng.traineddata \
+src/training/lstmtraining \
+  --traineddata tessdata/eng.traineddata \
   --net_spec '[1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c111]' \
   --model_output ~/tesstutorial/engoutput/base --learning_rate 20e-4 \
   --train_listfile ~/tesstutorial/engtrain/eng.training_files.txt \
