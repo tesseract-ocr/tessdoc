@@ -94,55 +94,18 @@ is highly recommended to read the [ImproveQuality](ImproveQuality) page.
 
 # Additional Libraries Required
 
-Beginning with 3.03, additional libraries are required to build the training
+First you need to have a working compilation chain, see [Compiling](Compiling)
+
+Then, additional libraries are required to build the training
 tools.
 
 ```bash
 sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev
 ```
 
-# Building the Training Tools
-
-Beginning with 3.03, if you're compiling Tesseract from source you need to make
-and install the training tools with separate make commands. Once the above
-additional libraries have been installed, run the following from the Tesseract
-source directory:
+After configuring with `./configure`, you can attempt to build the training tools:
 
 ```bash
-./configure
-```
-or if you plan to run in docker (or do not require graphics):
-```bash
-./configure --disable-graphics
-```
-
-By default Tesseract configuration will proceed if dependencies required only
-for training are missing, but for training, you will have to ensure all those
-optional dependencies are installed and that Tesseract's build environment
-can locate them. Look for these lines in the output of `./configure`:
-
-```
-checking for pkg-config... [some valid path]
-checking for lept >= 1.74... yes
-checking for libarchive... yes
-checking for icu-uc >= 52.1... yes
-checking for icu-i18n >= 52.1... yes
-checking for pango >= 1.22.0... yes
-checking for cairo... yes
-[...]
-Training tools can be built and installed with:
-```
-
-(The version numbers may change over time, of course. What we are looking for is
-"yes", all of the optional dependencies are available.)
-
-If configure does not say the training tools can be built, you still need to add
-libraries or ensure that `pkg-config` can find them.
-
-After configuring, you can attempt to build the training tools:
-
-```bash
-make
 make training
 sudo make training-install
 ```
