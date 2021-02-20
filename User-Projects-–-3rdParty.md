@@ -4,6 +4,7 @@
 
 | **Name** | **Linux** | **Mac** | **Windows** | **License** | **Description** |
 |:---------|:----------|:--------|:------------|:------------|:----------------|
+| [normcap](https://github.com/dynobo/normcap) | X         | X       | X           | GPL v3      | OCR powered screen-capture tool to capture information instead of images. |
 | [gImageReader](https://github.com/manisandro/gImageReader) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
 | [TesseractStudio.Net](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | A graphical interface to tesseract 4.0 |
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
