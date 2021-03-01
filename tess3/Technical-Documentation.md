@@ -39,5 +39,10 @@ Spain July 25, 2009. https://dl.acm.org/citation.cfm?id=1577804
   * [Report on the comparison of Tesseract and ABBYY FineReader OCR engines](http://lib.psnc.pl/dlibra/docmetadata?id=358&from=publication&showContent=true) by Heliński, Kmieciak, and Parkoła
   * [The hOCR Embedded OCR Workflow and Output Format](https://github.com/kba/hocr-spec/) (hOCR specification)
   * [Text Detection on Nokia N900 Using Stroke Width Transform](https://sites.google.com/site/roboticssaurav/strokewidthnokia) (with source code)
-* [Generic Text Recognition using Long Short-Term Memory Networks - Ph.D. Thesis](https://kluedo.ub.uni-kl.de/files/4353/PhD_Thesis_Ul-Hasan.pdf)
-* [Creating a Modern OCR Pipeline Using Computer Vision and Deep Learning](https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/)
+  * [Generic Text Recognition using Long Short-Term Memory Networks - Ph.D. Thesis](https://kluedo.ub.uni-kl.de/files/4353/PhD_Thesis_Ul-Hasan.pdf)
+  * [Creating a Modern OCR Pipeline Using Computer Vision and Deep Learning](https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/)
+  * [Translation-Inspired OCR](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/37260.pdf) by Dmitriy Genzel, Ashok C. Popat, Nemanja Spasojevic, Michael Jahr, Andrew Senior, Eugene le, Frank ... Keywords-Optical character recognition; statistical machine ... (character) locations in Arabic, English, and Hindi PRAN-data examples.
+  * [Developing Multilingual OCR and Handwriting Recognition at Google](http://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/SSDA/slides/AshokPopat-IAPRJaipurJan2017.pdf) by Ashok Popat. Research Scientist, Google Inc. IAPR Summer School, Jaipur: Jan 23 2017.
+  * [General-Purpose OCR Paragraph Identification by Graph Convolutional Neural Networks](https://arxiv.org/pdf/2101.12741.pdf) by Renshen Wang, Yasuhisa Fujii, Ashok C. Popat January 2021
+  
+  
