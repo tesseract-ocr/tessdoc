@@ -146,11 +146,6 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 2. Run `sw setup` (may require administrator access)
 3. Run `sw build org.sw.demo.google.tesseract.tesseract-master`.
 
-#### Build the latest library (using CPPAN, deprecated, until tess5.0)
-
-1. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`.
-2. Run `cppan --build pvt.cppan.demo.google.tesseract.tesseract-master`.
-
 #### For visual studio project using tesseract
 
 1. Setup [Vcpkg](https://github.com/Microsoft/vcpkg/blob/master/README.md) the Visual C++ Package Manager.
@@ -168,12 +163,14 @@ Use --head for the master branch. It may still require one DLL for the OpenMP ru
 #### Build training tools
 
 Today it is possible to build a full set of tess training tools on Windows with Visual Studio.
-The latest versions (Win10, VS2015/VS2017) are preferable.
+The latest versions (Win10, 2019) are preferable.
 
 To do this:
 
-1. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`.
-2. Run `cppan --build pvt.cppan.demo.google.tesseract-master`.
+1. [Download](https://software-network.org/client/) the latest SW (Software Network `https://software-network.org/client/`) client from `https://software-network.org/client/`.
+2. Checkout tesseract sources `git clone https://github.com/tesseract-ocr/tesseract tesseract && cd tesseract`.
+3. Run `sw build`.
+4. Binaries will be available under .sw\out\some hash dir\...
 
 #### Develop Tesseract
 
@@ -185,7 +182,7 @@ To do this:
 4. Run `sw setup` (may require administrator access)
 5. If you have a release archive, unpack it to `tesseract` dir. 
 
-If you're using master branch (4.0) run
+If you're using master branch run
 
    ```
    git clone https://github.com/tesseract-ocr/tesseract tesseract
@@ -216,46 +213,6 @@ sw build
 
 You'll see a solution link appeared in the root directory of Tesseract.
 
-#### Develop Tesseract (with CPPAN, until tess 5.0)
-
-**For development purposes** of Tesseract itself do the next steps:
-
-1. Download and install Git, CMake and put them in PATH.
-2. [Download](https://cppan.org/client/cppan-master-Windows-client.zip) the latest CPPAN (C++ Archive Network `https://cppan.org/`) client from `https://cppan.org/client/`. CPPAN is a source package distribution system. Add CPPAN client in PATH too. (VS2015 redist is required.)
-3. If you have a release archive, unpack it to `tesseract` dir. 
-
-If you're using master branch (4.0) run
-
-   ```
-   git clone https://github.com/tesseract-ocr/tesseract tesseract
-   ```
-
-4. Run
-
-    ```
-    cd tesseract
-    cppan
-    mkdir build && cd build
-    cmake ..
-    ```
-
-5. Build a solution (`tesseract.sln`) in your Visual Studio version.
-If you want to build and install from command line (e.g. Release build) you can use this command:
-```
-cmake --build . --config Release --target install
-```
-If you want to install to other directory that C:\Program Files (you will need admin right for this), you need to specify install path during configuration:
-```
-cmake .. -G "Visual Studio 15 2017 Win64" -DCMAKE_INSTALL_PREFIX=inst
-```
-
-**For development purposes** of training tools after cloning a repo from previous paragraph, run 
-```
-cppan --build .
-```
-
-You'll see a solution link appeared in the root directory of Tesseract.
-
 ## Building for x64 platform
 
 #### sw
@@ -267,26 +224,6 @@ cmake .. -G "Visual Studio 14 2015 Win64"
 ```
 
 If you're building with sw run `sw generate`, it will create a solution link for you (not yet implemented!).
-
-
-
-#### cppan (until 5.0)
-
-If you're building with cppan+cmake, run cmake as follows:
-```
-mkdir win64 && cd win64
-cppan ..
-cmake .. -G "Visual Studio 14 2015 Win64"
-```
-
-If you're building with cppan, edit cppan.yml and uncomment this line:
-```
-#generator: Visual Studio 14 2015 Win64 -> generator: Visual Studio 14 2015 Win64
-```
-
-Then run `cppan --generate .` - it will create a solution link for you.
-
-(For VS2017, use '15 2017' instead of '14 2015'.)
 
 ## 3.05
 
