@@ -2,6 +2,25 @@
 
 This user manual is for Tesseract versions `4.x.x` and `5.0.0.x`. For versions `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
 
+- [Tesseract User Manual](#tesseract-user-manual)
+  * [Introduction](#introduction)
+  * [Releases and Changelog](#releases-and-changelog)
+  * [4.0 with LSTM](#40-with-lstm)
+    + [Traineddata Files](#traineddata-files)
+    + [Training for Tesseract 4](#training-for-tesseract-4)
+  * [5.0.0.x](#500x)
+    + [Source Code](#source-code)
+    + [Binaries](#binaries)
+    + [Traineddata Files](#traineddata-files-1)
+    + [Compiling and Installation](#compiling-and-installation)
+    + [Usage](#usage)
+    + [API Examples](#api-examples)
+    + [Technical Information](#technical-information)
+    + [Training for Tesseract 5](#training-for-tesseract-5)
+    + [Testing](#testing)
+    + [External Projects](#external-projects)
+    + [User Manual for Old Versions](#user-manual-for-old-versions)
+
 ## Introduction
 
 Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0).
@@ -59,9 +78,10 @@ Two more sets of `official` traineddata, trained at Google, are made available i
     * [Box Files](tess4/Make-Box-Files.md)
     * [LSTMTraining Command Line](tess4/TrainingTesseract-4.00.md#lstmtraining-command-line)
     * [Error Messages From Training](tess4/TrainingTesseract-4.00.md#error-messages-from-training)
-    * [The-Hallucination-Effect](The-Hallucination-Effect.md)
+    * [The-Hallucination-Effect](tess4/The-Hallucination-Effect.md)
 - [Links to Community Contributions for Finetune Training](tess4/TrainingTesseract-4.00---Finetune.md)
 - [Community training tips at tesseract-ocr forum](https://groups.google.com/g/tesseract-ocr/search?q=lorenzo)
+- [4.0 Accuracy and Performance](tess4/4.0-Accuracy-and-Performance.md)
 
 ## 5.0.0.x
 
@@ -73,7 +93,7 @@ Tesseract **5.0.0.x** source code is available in the 'master' branch of the [re
 
 Binaries are available from:
 - [Ubuntu - tesseract-ocr-devel PPA](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel)
-- [Debian - notesalexp.org](https://notesalexp.org/tesseract-ocr/)
+- [Debian - notesalexp.org](https://notesalexp.org/tesseract-ocr/#tesseract_5.x)
 - [Windows - Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki)
 
 ### Traineddata Files
@@ -87,8 +107,8 @@ Language model traineddata files same as listed above for version `4.0.0` can be
 
 ### Compiling and Installation
 
-- [Compiling and GitInstallation](Compiling-–-GitInstallation.md)
-- [Compiling](Compiling.md)
+- [Compiling and GitInstallation - Linux](Compiling-–-GitInstallation.md)
+- [Compiling - Other O/S](Compiling.md)
 - [Installation](Installation.md)
 - [Docker Containers](Docker-Containers.md)
 
@@ -96,12 +116,16 @@ Language model traineddata files same as listed above for version `4.0.0` can be
 
 - [Tips to Improve Recognition](ImproveQuality.md)
 - [Command Line Usage](Command-Line-Usage.md)
-- [API Example - user_patterns](APIExample-user_patterns.md)
-- [API Example](APIExample.md)
-- [User App Example](User-App-Example.md)
 - [Viewer Debugging](ViewerDebugging.md)
 - [Common Errors and Resolutions](Common-Errors-and-Resolutions.md)
 - [Frequently Asked Qustions](FAQ.md)
+
+### API Examples
+
+- [API Example](APIExample.md)
+- [API Example - user_patterns](APIExample-user_patterns.md)
+- [User App Example](User-App-Example.md)
+- [C++ Examples](Examples_C++.md)
 
 ### Technical Information
 
@@ -120,7 +144,6 @@ Slides
 [#6](https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/6ModernizationEfforts.pdf),
 [#7](https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/7Building%20a%20Multi-Lingual%20OCR%20Engine.pdf)
 have information about LSTM integration in Tesseract 4.0x.
-- [4.0 Accuracy and Performance](tess4/4.0-Accuracy-and-Performance.md)
 - [Tesseract OpenCL - Experimental](TesseractOpenCL.md)
 
 ### Training for Tesseract 5
