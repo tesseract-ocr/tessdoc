@@ -1,1 +1,0 @@
-TrainingTesseract-4.00.md

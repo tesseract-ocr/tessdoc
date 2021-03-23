@@ -1,6 +1,6 @@
 ## Errors during LSTM Training
 
-See  Ray Smith's notes in  [TrainingTesseract 4.00](TrainingTesseract-4.00.md),
+See  Ray Smith's notes in  [tess4/TrainingTesseract 4.00](TrainingTesseract-4.00.md),
 specifically the section on [errors](TrainingTesseract-4.00.md#error-messages-from-training).
 
 ## Errors related to Tesseract API
