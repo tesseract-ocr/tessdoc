@@ -127,7 +127,7 @@ This creates a pdf with the image and a separate searchable text layer with the 
 Files are attached (source JPG and output PDF)
 
 ![test_ara.jpg](https://cloud.githubusercontent.com/assets/17473681/13320324/bc160e22-dbd0-11e5-8090-6f3728fcc06d.jpg)
-![test_ara.pdf](https://github.com/tesseract-ocr/tesseract/files/146534/test_ara.pdf)
+[test_ara.pdf](https://github.com/tesseract-ocr/tesseract/files/146534/test_ara.pdf)
 
 ## HOCR output
 
