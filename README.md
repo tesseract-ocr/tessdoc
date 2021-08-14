@@ -40,6 +40,7 @@ and if you still can't find what you need, please ask your question in
 
 Tesseract is free software, so if you want to pitch in and help, please do!
 If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues).
+Tesseract is used for text detection on mobile devices, in video, and in Gmail image spam detection, by Google.Tesseract is an OCR engine with support for unicode and the ability to recognize more than 100 languages out of the box. It can be trained to recognize other languages.
 
 ## Releases and Changelog
 
