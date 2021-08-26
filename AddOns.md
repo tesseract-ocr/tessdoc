@@ -110,8 +110,13 @@ Platform support depends on used language and experience of user.
   * [tesseract](https://cran.r-project.org/package=tesseract) Bindings to the C++ API for the R programming language
 
 **Ruby**
-  * [rtesseract](https://github.com/dannnylo/rtesseract)
+  * [rtesseract](https://github.com/dannnylo/rtesseract) wrapper gem for Tesseract OCR (requires tesseract executable)
 
+**Elixir**
+  * [tesseract-ocr-elixir](https://github.com/dannnylo/tesseract-ocr-elixir)
+
+**Crystal**
+  * [tesseract-ocr-crystal](https://github.com/dannnylo/tesseract-ocr-crystal)
 
 ### Tesseract 3.0x
 
