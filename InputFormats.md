@@ -10,6 +10,8 @@ Tesseract uses the [Leptonica](https://github.com/DanBloomberg/leptonica) librar
 * JPEG 2000
 * GIF
 * WebP (including animated WebP)
+* BMP
+* PNM
 
 ## Unsupported input formats
 
