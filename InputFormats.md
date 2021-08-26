@@ -13,7 +13,7 @@ Tesseract uses the [Leptonica](https://github.com/DanBloomberg/leptonica) librar
 
 ## Unsupported input formats
 
-If a file format is not suppprted by Tesseract, you should use a third party software to convert it to another format that is supported by Tesseract.
+If a file format is not supported by Tesseract, you should use a third party software to convert it to another format that is supported by Tesseract.
 
 ### PDF
 
@@ -29,4 +29,4 @@ Tesseract does not support reading animated GIFs files. When given such a file, 
 
 ### Other formats
 
-Tesserct does not support the HEIC and the AVIF formats.
+Tesseract does not support the HEIC and the AVIF formats.
