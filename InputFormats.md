@@ -4,14 +4,16 @@
 
 Tesseract uses the [Leptonica](https://github.com/DanBloomberg/leptonica) library to read images with one of these formats:
 
-* PNG
-* JPEG
-* TIFF
-* JPEG 2000
-* GIF
-* WebP (including animated WebP)
-* BMP
-* PNM
+* PNG - requires libpng, libz
+* JPEG - requires libjpeg / libjpeg-turbo
+* TIFF - requires libtiff, libz
+* JPEG 2000 - requires libopenjp2
+* GIF - requires libgif (giflib)
+* WebP (including animated WebP) - requires libwebp
+* BMP - no library required\*
+* PNM - no library required\*
+
+\* Except Leptonica
 
 ## Unsupported input formats
 
