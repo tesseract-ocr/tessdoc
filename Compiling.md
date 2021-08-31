@@ -478,6 +478,74 @@ Another method of compiling is using the project [Building for Android with Dock
 
 Compilation of dependent libraries, **leptonica** and **tiff**, are included and handled as well.
 
+## Cross compile on Linux with NDK
+Another method of compiling is doing it on a Linux machine, with Android NDK r22 (22.1.7171670). This method compiles for following versions and architectures:
+
+
+| Arch \ Version | 4.1.0 |
+|----------------|---------|
+| armv7-a | ✔ |
+| arm64-v8a | ✔ |
+| x86 | ✔ |
+| x86_64 | ✔ |
+
+
+These prerequisites will be needed:
+* libjpeg - GitHub branch 2.1.1 - https://github.com/libjpeg-turbo/libjpeg-turbo
+* libpng - GitHub branch v1.6.37 - https://github.com/glennrp/libpng
+* libtiff - version 4.0.10 downloaded - https://download.osgeo.org/libtiff/
+* leptonica - version 1.74.4 downloaded - https://github.com/DanBloomberg/leptonica
+
+Compile Leptonica with:
+```
+./autobuild
+./configure \
+    --host=$TARGET \
+    --disable-programs \
+    --without-giflib \
+    --without-libwebp \
+    --without-zlib \
+    --without-libopenjpeg \
+    --prefix $ROOT/output/$OUTARCH/
+
+make -j && make install
+```
+
+Compile Tesseract with:
+```
+export API=23
+
+export TOOLCHAIN=$ANDROID_NDK_HOME_22/toolchains/llvm/prebuilt/linux-x86_64
+
+export ABI_CONFIGURE_HOST=$NDKTARGET
+export AR=$TOOLCHAIN/bin/$NDKTARGET-ar
+export CC=$TOOLCHAIN/bin/$TARGET$API-clang
+export CXX=$TOOLCHAIN/bin/$TARGET$API-clang++
+export AS=$CC
+export LD=$TOOLCHAIN/bin/$TARGET-ld
+export RANLIB=$TOOLCHAIN/bin/$NDKTARGET-ranlib
+export STRIP=$TOOLCHAIN/bin/$NDKTARGET-strip
+
+export LEPTONICA_LIBS="-L$ROOT/output/$OUTARCH/lib -llept"
+export LEPTONICA_CFLAGS="-I$ROOT/output/$OUTARCH/include/leptonica"
+export PKG_CONFIG_PATH="$ROOT/output/$OUTARCH/lib/pkgconfig"
+
+export LIBS="-L$ROOT/output/$OUTARCH/lib"
+
+make clean
+./autogen.sh
+./configure \
+    --host=$TARGET \
+    --disable-doc \
+    --without-archive \
+    --disable-openmp \
+    --without-curl \
+    --prefix $ROOT/output/$OUTARCH/
+
+make -j
+make install
+```
+
 # Common Errors
 
 * To fix this error
