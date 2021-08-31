@@ -479,7 +479,7 @@ Another method of compiling is using the project [Building for Android with Dock
 Compilation of dependent libraries, **leptonica** and **tiff**, are included and handled as well.
 
 ## Cross compile on Linux with NDK
-Another method of compiling is doing it on Linux machine, with Android NDK r22 (22.1.7171670). This method compiles for following versions and architectures:
+Another method of compiling is doing it on a Linux machine, with Android NDK r22 (22.1.7171670). This method compiles for following versions and architectures:
 
 
 | Arch \ Version | 4.1.0 |
