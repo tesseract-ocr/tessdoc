@@ -511,7 +511,7 @@ Compile Leptonica with:
 make -j && make install
 ```
 
-Compile tesseract with:
+Compile Tesseract with:
 ```
 export API=23
 
