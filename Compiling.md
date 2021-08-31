@@ -496,7 +496,7 @@ These prerequisites will be needed:
 * libtiff - version 4.0.10 downloaded - https://download.osgeo.org/libtiff/
 * leptonica - version 1.74.4 downloaded - https://github.com/DanBloomberg/leptonica
 
-Compile leptonica with:
+Compile Leptonica with:
 ```
 ./autobuild
 ./configure \
