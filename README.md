@@ -140,9 +140,9 @@ Language model traineddata files same as listed above for version `4.0.0` can be
 - [Network spec for tessdata_best models](Data-Files-in-tessdata_best.md)
 - [DAS 2016 tutorial slides](https://github.com/tesseract-ocr/docs/tree/master/das_tutorial2016)
 Slides
-[#2](https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/2ArchitectureAndDataStructures.pdf),
-[#6](https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/6ModernizationEfforts.pdf),
-[#7](https://github.com/tesseract-ocr/docs/blob/master/das_tutorial2016/7Building%20a%20Multi-Lingual%20OCR%20Engine.pdf)
+[#2](https://github.com/tesseract-ocr/docs/blob/main/das_tutorial2016/2ArchitectureAndDataStructures.pdf),
+[#6](https://github.com/tesseract-ocr/docs/blob/main/das_tutorial2016/6ModernizationEfforts.pdf),
+[#7](https://github.com/tesseract-ocr/docs/blob/main/das_tutorial2016/7Building%20a%20Multi-Lingual%20OCR%20Engine.pdf)
 have information about LSTM integration in Tesseract 4.0x.
 - [Tesseract OpenCL - Experimental](TesseractOpenCL.md)
 

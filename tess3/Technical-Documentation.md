@@ -12,14 +12,14 @@ The links below take you to PDF download.
 
 The following materials appeared in IEEE publications, and each carries an IEEE copyright designation. Papers may not be sold or distributed further without written permission of the IEEE.
 
-[An Overview of the Tesseract OCR Engine](https://github.com/tesseract-ocr/docs/blob/master/tesseracticdar2007.pdf)
+[An Overview of the Tesseract OCR Engine](https://github.com/tesseract-ocr/docs/blob/main/tesseracticdar2007.pdf)
 
-[Hybrid Page Layout Analysis via Tab-Stop Detection](https://github.com/tesseract-ocr/docs/blob/master/PageLayoutAnalysisICDAR2.pdf)
+[Hybrid Page Layout Analysis via Tab-Stop Detection](https://github.com/tesseract-ocr/docs/blob/main/PageLayoutAnalysisICDAR2.pdf)
 
 
 ## ACM Copyright Materials
 
-[Adapting the Tesseract Open Source OCR Engine for Multilingual OCR](https://github.com/tesseract-ocr/docs/blob/master/MOCRadaptingtesseract2.pdf)
+[Adapting the Tesseract Open Source OCR Engine for Multilingual OCR](https://github.com/tesseract-ocr/docs/blob/main/MOCRadaptingtesseract2.pdf)
 
 ©ACM, 2009. This is the authors’ version of the work. It is posted here by permission of ACM for your personal use. Not for redistribution. The definitive version was published in Proceedings of the International Workshop on Multilingual OCR 2009, Barcelona,
 Spain July 25, 2009. https://dl.acm.org/citation.cfm?id=1577804

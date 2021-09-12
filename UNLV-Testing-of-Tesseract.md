@@ -3,7 +3,7 @@
 # Introduction
 
 Tesseract 2.0+ provided scripts that make it possible to run some of the UNLV tests published in the Fourth Annual Test of OCR Accuracy.
-See [AT-1995.pdf](https://github.com/tesseract-ocr/docs/blob/master/AT-1995.pdf) (originally available at http://www.isri.unlv.edu/). The main purpose of providing these test scripts is to enable Tesseract users to verify that their installation is correct, and that no architecture-specific problems are causing bad recognition accuracy. It also serves as a benchmark to demonstrate accuracy improvements of each version. Developers working on Tesseract may find the benchmarking tools useful for measuring experimental new modules.
+See [AT-1995.pdf](https://github.com/tesseract-ocr/docs/blob/main/AT-1995.pdf) (originally available at http://www.isri.unlv.edu/). The main purpose of providing these test scripts is to enable Tesseract users to verify that their installation is correct, and that no architecture-specific problems are causing bad recognition accuracy. It also serves as a benchmark to demonstrate accuracy improvements of each version. Developers working on Tesseract may find the benchmarking tools useful for measuring experimental new modules.
 
 Note that **some** architecture-specific variation is bound to occur. Most of these should be caused by varying treatment and optimization of floating-point arithmetic between compilers. It is also possible of course that there are memory initialization errors that show up as differences between architectures, but we claim to have found most of these already in the unicodeization process.
 
@@ -23,7 +23,7 @@ See [README file for UNLV tests](https://github.com/tesseract-ocr/test/blob/mast
 
 # Example Results
 
-Here are some of the results of the 1995 test, taken from [AT-1995.pdf](https://github.com/tesseract-ocr/docs/blob/master/AT-1995.pdf) and reformatted to match the output of the Tesseract test tools:
+Here are some of the results of the 1995 test, taken from [AT-1995.pdf](https://github.com/tesseract-ocr/docs/blob/main/AT-1995.pdf) and reformatted to match the output of the Tesseract test tools:
 
 ```
 Testid  Testset Character               Word                    Non-stopword
