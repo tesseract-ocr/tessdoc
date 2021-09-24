@@ -193,6 +193,8 @@ The following examples are using this image with text in Devanagari script and S
 
 ![san002.png](https://cloud.githubusercontent.com/assets/82178/13678011/81953684-e6ba-11e5-91e8-5c40518e94a6.png)
 
+Page Segmentation Modes 6
+
     tesseract  testing/san002.png testing/san002-psm6 -l san -psm 6 
 
 Output
@@ -217,6 +219,8 @@ Output
     यमुनासहस्रनामरतोव्रम्- नम्पावळिय् 493
     'शिवगङ्गासद्दृस्रनत्माव'ळि 517
     गम्पत्रीसह्स्रनत्मक्तोत्रम्- नाम।व'ळिऽ (१) 531
+
+Page Segmentation Modes 3
 
     tesseract testing/san002.png testing/san002-psm3 -l san -psm 3
 
