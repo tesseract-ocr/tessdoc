@@ -98,7 +98,7 @@ Using English as primary language and then Hindi
 
 Output
 
-    हिदीसेअंठौजी
+    हिदीसेअंग्रेजी
     HINDI To
     
     ENGLISH
