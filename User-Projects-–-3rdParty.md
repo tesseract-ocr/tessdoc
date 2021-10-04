@@ -107,6 +107,7 @@
   1. [The ISRI Analytic Tools](https://github.com/eddieantonio/isri-ocr-evaluation-tools) consist of 17 tools for measuring the performance of and experimenting with OCR output.
   1. [Indic Messenger](https://indic-ocr.github.io/indicmessenger) A Facebook chat bot which can OCR images containing Indian/English text and transliterate it to other Indian scripts. 
   1. [LibreOCR](https://indic-ocr.github.io/LibreOCR/) A [LibreOffice](http://www.libreoffice.org) extension which can convert an image to OCT and open in the Writer application. 
+  1. [hertzg/tesseract-server](https://github.com/hertzg/tesseract-server/) A lightweight, docker based, mutli-arch, stateless JSON HTTP API service for tesseract.
 
 ### IMPACT related
 
