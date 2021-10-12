@@ -573,13 +573,13 @@ wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.wor
 cd ~/tesstutorial
 git clone --depth 1 https://github.com/tesseract-ocr/tesseract.git
 cd tesseract/tessdata
-wget https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata
-wget https://github.com/tesseract-ocr/tessdata/raw/master/osd.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/main/eng.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/main/osd.traineddata
 mkdir best
 cd best
-wget https://github.com/tesseract-ocr/tessdata_best/raw/master/eng.traineddata
-wget https://github.com/tesseract-ocr/tessdata_best/raw/master/heb.traineddata
-wget https://github.com/tesseract-ocr/tessdata_best/raw/master/chi_sim.traineddata
+wget https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata
+wget https://github.com/tesseract-ocr/tessdata_best/raw/main/heb.traineddata
+wget https://github.com/tesseract-ocr/tessdata_best/raw/main/chi_sim.traineddata
 
 ```
 
@@ -632,7 +632,7 @@ target domain is severely limited, then all the dire warnings about needing a
 lot of training data may not apply, but the network specification may need to be
 changed.
 
-Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/master/src/training/tesstrain.sh)
+Training data is created using [tesstrain.sh](https://github.com/tesseract-ocr/tesseract/blob/main/src/training/tesstrain.sh)
 as follows:
 
 ```
