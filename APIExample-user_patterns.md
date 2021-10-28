@@ -19,7 +19,7 @@ In order to apply user patterns for improving recognition, the following are req
 
 The _user patterns file_ should contain one pattern per line in UTF-8 format.  In choosing which patterns to include please be aware of the fact that providing very generic patterns will make tesseract run slower. Best results may be obtained by having a single pattern in the file.
 
-Details of type of patterns that can be used are given in [trie.h](https://github.com/tesseract-ocr/tesseract/blob/master/src/dict/trie.h#L185).
+Details of type of patterns that can be used are given in [trie.h](https://github.com/tesseract-ocr/tesseract/blob/main/src/dict/trie.h#L185).
 
 #### Example of a user patterns file
 

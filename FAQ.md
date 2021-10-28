@@ -42,7 +42,7 @@ See [Tesseract Wiki Home](Home.md) page for details.
 
 ### Which language models are available for Tesseract?
 
-See Tesseract man page for the list of [languages](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages) and [scripts](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#scripts) supported by Tesseract4.0.0.
+See Tesseract man page for the list of [languages](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#languages) and [scripts](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#scripts) supported by Tesseract4.0.0.
 
 See the [Tesseract Wiki Data Files](Data-Files.md#updated-data-files-for-version-400-september-15-2017) page for information regarding the three different types of language models available for Tesseract 4.0.0.
 
@@ -226,5 +226,5 @@ If you have a question which is not answered by the FAQ, Wiki pages and Issues, 
 
 If you think you found a bug in Tesseract, please search existing [issues](https://github.com/tesseract-ocr/tesseract/issues). If you find an existing similar issue, please add to it, otherwise create a [new issue](https://github.com/tesseract-ocr/tesseract/issues/new).
 
-Read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/master/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
+Read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/main/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
 ***

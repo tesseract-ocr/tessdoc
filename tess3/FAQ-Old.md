@@ -76,7 +76,7 @@ Table of Contents
 
 If you think you found a bug in Tesseract, please create an issue. Questions should be asked in the [users mailing-list](https://groups.google.com/d/forum/tesseract-ocr).
 
-You **must** read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/master/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
+You **must** read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/main/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
 
 ## Can I increase speed of OCR?
 
@@ -170,7 +170,7 @@ If you see this error, than you have a problem with your leptonica installation 
 ## Can't open eng.unicharset?
 
 You don't have language training data installed.
-Read the [README](https://github.com/tesseract-ocr/tesseract/blob/master/README.md).
+Read the [README](https://github.com/tesseract-ocr/tesseract/blob/main/README.md).
 
 ## leptonica library missing
 
@@ -337,13 +337,13 @@ Read the [Training Tesseract](TrainingTesseract.md) documentation.
 
 ## How do I unpack or alter existing language data files?
 
-Use the combine\_tessdata command. See the [combine\_tessdata manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) for details on its usage.
+Use the combine\_tessdata command. See the [combine\_tessdata manual page](https://github.com/tesseract-ocr/tesseract/blob/main/doc/combine_tessdata.1.asc) for details on its usage.
 
 ## How do I provide my own dictionary?
 
 ### Tesseract 3
 
-To add an extra word list, create a .user-words file as explained in [tesseract(1)](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
+To add an extra word list, create a .user-words file as explained in [tesseract(1)](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
 If you want to replace the whole dictionary, you will need to unpack the .traineddata file, create a new word-dawg file, and then pack the files back into a .traineddata file. See [TrainingTesseract](TrainingTesseract.md) for more details.
 
@@ -390,7 +390,7 @@ Other ways to fix the problem:
 
 If files contain very similar looking samples, then you can cat them together to make a single file to reduce the total number of files. DON'T do this if the characters in two files look very different.
 
-Increase MAX\_NUM\_CONFIGS (in [intproto.h](https://github.com/tesseract-ocr/tesseract/blob/master/classify/intproto.h)) There are consequences. You will make inttemp files generated with a different value of MAX\_NUM\_CONFIGS unreadable. We are working towards overcoming this weakness for version 3.0. Will not be in 2.04 though. Also, classification will be slower and use more memory.
+Increase MAX\_NUM\_CONFIGS (in [intproto.h](https://github.com/tesseract-ocr/tesseract/blob/main/classify/intproto.h)) There are consequences. You will make inttemp files generated with a different value of MAX\_NUM\_CONFIGS unreadable. We are working towards overcoming this weakness for version 3.0. Will not be in 2.04 though. Also, classification will be slower and use more memory.
 
 ## There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images
 
@@ -472,7 +472,7 @@ tesseract phototest.tif phototest quiet
 
 ## How can I get the coordinates and confidence of each word?
 
-There are two options. If you would rather not get into programming, you can use Tesseract's hOCR output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/master/api/baseapi.h).
+There are two options. If you would rather not get into programming, you can use Tesseract's hOCR output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/main/api/baseapi.h).
 
 ## How is confidence calculated?
 * **Character** - Compute a distance measure between 0 and 1 of the character from a training sample:

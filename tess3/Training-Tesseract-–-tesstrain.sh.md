@@ -116,4 +116,4 @@ For other variables that can be set, you're best off just reading the `set_lang_
 
 # tesstrain_utils.sh
 
-Note that the majority of the work that `tesstrain.sh` does is actually imported from the [training/tesstrain_utils.sh](https://github.com/tesseract-ocr/tesseract/blob/master/src/training/tesstrain_utils.sh) file, so if you're curious about exactly what it is doing, or want to change its behaviour, look there.
+Note that the majority of the work that `tesstrain.sh` does is actually imported from the [training/tesstrain_utils.sh](https://github.com/tesseract-ocr/tesseract/blob/main/src/training/tesstrain_utils.sh) file, so if you're curious about exactly what it is doing, or want to change its behaviour, look there.

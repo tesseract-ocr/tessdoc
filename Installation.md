@@ -1,6 +1,6 @@
 # Introduction 
 
-Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0) It can be used directly, or (for programmers) using an [API](https://github.com/tesseract-ocr/tesseract/blob/master/include/tesseract/baseapi.h) to extract printed text from images. It supports a wide variety of languages.
+Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0) It can be used directly, or (for programmers) using an [API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) to extract printed text from images. It supports a wide variety of languages.
 
 Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-%E2%80%93-3rdParty.md) page.
 
@@ -310,11 +310,11 @@ You can also create a searchable pdf directly from tesseract ( versions >=3.03):
   tesseract myscan.png out pdf
 ```
 
-More information about the various options is available in the [Tesseract manpage](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc).
+More information about the various options is available in the [Tesseract manpage](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc).
 
 # Other Languages
 
-Tesseract has been trained for [many languages](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc#languages), check for your language in the [Tessdata repository](https://github.com/tesseract-ocr/tessdata). 
+Tesseract has been trained for [many languages](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#languages), check for your language in the [Tessdata repository](https://github.com/tesseract-ocr/tessdata). 
 
 It can also be trained to support other languages and scripts; for more details see [TrainingTesseract](TrainingTesseract).
 

@@ -83,7 +83,7 @@ Note that if building Leptonica from source, you may need to ensure that /usr/lo
 
 Please follow instructions in [Compiling--GitInstallation](Compiling-%E2%80%93-GitInstallation.md)
 
-Also read [Install Instructions](https://github.com/tesseract-ocr/tesseract/blob/master/INSTALL.GIT.md)
+Also read [Install Instructions](https://github.com/tesseract-ocr/tesseract/blob/main/INSTALL.GIT.md)
 
 ## Install elsewhere / without root
 

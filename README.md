@@ -27,7 +27,7 @@ Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wi
 * The current official release is [4.1.1](https://github.com/tesseract-ocr/tesseract/releases/tag/4.1.1).
 * The [master branch on Github](https://github.com/tesseract-ocr/tesseract.git) can be used by those who want the latest code for LSTM (--oem 1) and legacy (--oem 0) Tesseract. The master branch is using 5.0.0 versioning because code modernization caused API compatibility issues with 4.x release.
 
-Tesseract can be used directly via [command line](Command-Line-Usage.md), or (for programmers) by using an [API](https://github.com/tesseract-ocr/tesseract/blob/master/include/tesseract/baseapi.h) to extract printed text from images. It supports a [wide variety of languages](Data-Files-in-different-versions.md). Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-–-3rdParty.md) page. External tools, wrappers and training projects for Tesseract are listed under [AddOns](AddOns.md).
+Tesseract can be used directly via [command line](Command-Line-Usage.md), or (for programmers) by using an [API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) to extract printed text from images. It supports a [wide variety of languages](Data-Files-in-different-versions.md). Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-–-3rdParty.md) page. External tools, wrappers and training projects for Tesseract are listed under [AddOns](AddOns.md).
 
 Tesseract can be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](User-Projects-–-3rdParty.md) and [AddOns](AddOns.md) pages for samples of what has been done with it.
 
@@ -48,7 +48,7 @@ If you find a bug and fix it yourself, the best thing to do is to attach the pat
 - [Downloads](Downloads.md)
 - [Releases](https://github.com/tesseract-ocr/tesseract/releases)
 - [Release Notes](ReleaseNotes.md)
-- [Changelog](https://github.com/tesseract-ocr/tesseract/blob/master/ChangeLog)
+- [Changelog](https://github.com/tesseract-ocr/tesseract/blob/main/ChangeLog)
 
 ## 4.0 with LSTM
 

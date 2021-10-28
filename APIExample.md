@@ -4,7 +4,7 @@ This documentation provides simple examples on how to use the tesseract-ocr API 
 It is expected that tesseract-ocr is correctly installed including all dependencies.
 It is expected the user is familiar with C++, compiling and linking program on their platform, [though basic compilation examples are included for beginners with Linux](#compiling-c-api-programs-on-linux).
 
-More details about tesseract-ocr API can be found at [baseapi.h](https://github.com/tesseract-ocr/tesseract/blob/master/include/tesseract/baseapi.h).
+More details about tesseract-ocr API can be found at [baseapi.h](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h).
 
 
 
@@ -97,7 +97,7 @@ It is possible to get confidence value and BoundingBox per word from a ResultIte
   }
 ```
 
-It is also possible to use other iterator levels (block, line, word, etc.), see [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/master/src/ccstruct/publictypes.h#L219).
+It is also possible to use other iterator levels (block, line, word, etc.), see [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/main/src/ccstruct/publictypes.h#L219).
 
 
 
@@ -124,7 +124,7 @@ It is also possible to use other iterator levels (block, line, word, etc.), see 
          orientation, direction, order, deskew_angle);
 ```
 
-Explanation for result codes are in [publictypes.h](https://github.com/tesseract-ocr/tesseract/blob/master/src/ccstruct/publictypes.h#L120)
+Explanation for result codes are in [publictypes.h](https://github.com/tesseract-ocr/tesseract/blob/main/src/ccstruct/publictypes.h#L120)
 
 
 ## Example of iterator over the classifier choices for a single symbol
@@ -185,7 +185,7 @@ int main()
   tesseract::PageIteratorLevel level = tesseract::RIL_WORD;
   tesseract::ResultIterator* res_it = api->GetIterator();
 // Get confidence level for alternative symbol choices. Code is based on
-// https://github.com/tesseract-ocr/tesseract/blob/master/src/api/hocrrenderer.cpp#L325-L344
+// https://github.com/tesseract-ocr/tesseract/blob/main/src/api/hocrrenderer.cpp#L325-L344
   std::vector<std::vector<std::pair<const char*, float>>>* choiceMap = nullptr;
   if (res_it != 0) {
     do {
@@ -289,7 +289,7 @@ g++ -o myprogram myprogram.cpp -I/home/nick/local/include/tesseract -L/home/nick
 
 # C-API in python
 
-Tesseract-ocr from version 3.02.02 provide C-API. This enable to [use tesseract-ocr shared library in python](https://github.com/tesseract-ocr/tesseract/blob/master/contrib/tesseract-c_api-demo.py) (and other languages that can use C libraries):
+Tesseract-ocr from version 3.02.02 provide C-API. This enable to [use tesseract-ocr shared library in python](https://github.com/tesseract-ocr/tesseract/blob/main/contrib/tesseract-c_api-demo.py) (and other languages that can use C libraries):
 
 ```python
 import os

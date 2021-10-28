@@ -2,17 +2,17 @@
 
 The manual pages for tesseract and related training tools are available at following links:
 
-  * [tesseract](https://github.com/tesseract-ocr/tesseract/blob/master/doc/tesseract.1.asc)
-  * [combine\_tessdata](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc)
-  * [combine_lang_model](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_lang_model.1.asc)
-  * [dawg2wordlist](https://github.com/tesseract-ocr/tesseract/blob/master/doc/dawg2wordlist.1.asc)
-  * [lstmeval](https://github.com/tesseract-ocr/tesseract/blob/master/doc/lstmeval.1.asc)
-  * [lstmtraining](https://github.com/tesseract-ocr/tesseract/blob/master/doc/lstmtraining.1.asc)
-  * [merge_unicharsets](https://github.com/tesseract-ocr/tesseract/blob/master/doc/merge_unicharsets.1.asc)
-  * [set_unicharset_properties](https://github.com/tesseract-ocr/tesseract/blob/master/doc/set_unicharset_properties.1.asc)
-  * [text2image](https://github.com/tesseract-ocr/tesseract/blob/master/doc/text2image.1.asc)
-  * [unicharset\_extractor](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharset_extractor.1.asc)
-  * [wordlist2dawg](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
+  * [tesseract](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc)
+  * [combine\_tessdata](https://github.com/tesseract-ocr/tesseract/blob/main/doc/combine_tessdata.1.asc)
+  * [combine_lang_model](https://github.com/tesseract-ocr/tesseract/blob/main/doc/combine_lang_model.1.asc)
+  * [dawg2wordlist](https://github.com/tesseract-ocr/tesseract/blob/main/doc/dawg2wordlist.1.asc)
+  * [lstmeval](https://github.com/tesseract-ocr/tesseract/blob/main/doc/lstmeval.1.asc)
+  * [lstmtraining](https://github.com/tesseract-ocr/tesseract/blob/main/doc/lstmtraining.1.asc)
+  * [merge_unicharsets](https://github.com/tesseract-ocr/tesseract/blob/main/doc/merge_unicharsets.1.asc)
+  * [set_unicharset_properties](https://github.com/tesseract-ocr/tesseract/blob/main/doc/set_unicharset_properties.1.asc)
+  * [text2image](https://github.com/tesseract-ocr/tesseract/blob/main/doc/text2image.1.asc)
+  * [unicharset\_extractor](https://github.com/tesseract-ocr/tesseract/blob/main/doc/unicharset_extractor.1.asc)
+  * [wordlist2dawg](https://github.com/tesseract-ocr/tesseract/blob/main/doc/wordlist2dawg.1.asc)
 
 ## API/ABI Changes Review
 

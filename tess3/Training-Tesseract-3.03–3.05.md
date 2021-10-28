@@ -331,13 +331,13 @@ wordlist2dawg words_list lang.word-dawg lang.unicharset
 
 For languages written from right to left (RTL), like Arabic and Hebrew, add `-r 1` to the `wordlist2dawg` command.
 
-Other options can be found in [wordlist2dawg Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/wordlist2dawg.1.asc)
+Other options can be found in [wordlist2dawg Manual Page](https://github.com/tesseract-ocr/tesseract/blob/main/doc/wordlist2dawg.1.asc)
 
 **NOTE:** If a dictionary file is included in the combined traineddata, it must contain at least one entry.  Dictionary files that would otherwise be empty are not required for the `combine_tessdata` step.
 
 Words with unusual spellings should be added to the dictionary files. Unusual spellings can include mixtures of alphabetical characters with punctuation or numeric characters. (E.g. i18n, l10n, google.com, news.bbc.co.uk, io9.com, utf8, ucs2)
 
-If you need example files for dictionary wordlists, uncombine (with [combine\_tessdata](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc)) existing language data file (e.g. eng.traineddata) and then extract wordlist with [dawg2wordlist](https://github.com/tesseract-ocr/tesseract/blob/master/doc/dawg2wordlist.1.asc)
+If you need example files for dictionary wordlists, uncombine (with [combine\_tessdata](https://github.com/tesseract-ocr/tesseract/blob/main/doc/combine_tessdata.1.asc)) existing language data file (e.g. eng.traineddata) and then extract wordlist with [dawg2wordlist](https://github.com/tesseract-ocr/tesseract/blob/main/doc/dawg2wordlist.1.asc)
 
 
 ## The unicharambigs file
@@ -360,7 +360,7 @@ The remaining lines are **tab** separated fields, in the following format:
 <number of characters for match source> <characters for match source> <number of characters for match target> <characters for match target> <type indicator>
 ```
 
-Type indicator [could have](https://github.com/tesseract-ocr/tesseract/blob/master/ccutil/ambigs.h#L44) following values:
+Type indicator [could have](https://github.com/tesseract-ocr/tesseract/blob/main/ccutil/ambigs.h#L44) following values:
 
 | **Value** | **Type** | **Description** |
 |:----------|:---------|:----------------|
@@ -390,7 +390,7 @@ In this format, the "error" and "correction" are simple UTF-8 strings separated 
 
 Like most other files used in training, the `unicharambigs` file must be encoded as UTF-8, and must end with a newline character.
 
-The `unicharambigs` format is also described in the [unicharambigs(5) man page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/unicharambigs.5.asc).
+The `unicharambigs` format is also described in the [unicharambigs(5) man page](https://github.com/tesseract-ocr/tesseract/blob/main/doc/unicharambigs.5.asc).
 
 The `unicharambigs` file may also be non-existent.
 
@@ -409,7 +409,7 @@ The resulting lang.traineddata goes in your tessdata directory. Tesseract can th
 tesseract image.tif output -l lang
 ```
 
-More options of `combine_tessdata` can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/master/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/master/training/combine_tessdata.cpp#L23).
+More options of `combine_tessdata` can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/main/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/main/training/combine_tessdata.cpp#L23).
 
 You can inspect some of the internals of traineddata files in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
 
