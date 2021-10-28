@@ -38,6 +38,9 @@ ask questions about training as
    * [Combining the Output Files](#combining-the-output-files)
    * [The Hallucination Effect](#the-hallucination-effect)
 
+# Initial Remark
+
+Training with `tesstrain.sh` in unsupported/abandoned. Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
 # Introduction
 

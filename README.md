@@ -147,6 +147,9 @@ have information about LSTM integration in Tesseract 4.0x.
 - [Tesseract OpenCL - Experimental](TesseractOpenCL.md)
 
 ### Training for Tesseract 5
+
+Training with `tesstrain.sh` (a.k.a tesseract 4 training) in unsupported/abandoned. Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
+
 - [Train Tesseract LSTM with make from Single Line Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
     * [Example: Training Fraktur with GT4HistOCR](https://github.com/tesseract-ocr/tesstrain/wiki/GT4HistOCR)
     * [Demo of PlusMinus training for Sanskrit](https://github.com/Shreeshrii/tesstrain-sanPlusMinus)
