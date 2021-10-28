@@ -390,7 +390,7 @@ Other ways to fix the problem:
 
 If files contain very similar looking samples, then you can cat them together to make a single file to reduce the total number of files. DON'T do this if the characters in two files look very different.
 
-Increase MAX\_NUM\_CONFIGS (in [intproto.h](https://github.com/tesseract-ocr/tesseract/blob/main/classify/intproto.h)) There are consequences. You will make inttemp files generated with a different value of MAX\_NUM\_CONFIGS unreadable. We are working towards overcoming this weakness for version 3.0. Will not be in 2.04 though. Also, classification will be slower and use more memory.
+Increase MAX\_NUM\_CONFIGS (in [intproto.h](https://github.com/tesseract-ocr/tesseract/blob/10f4998aee3ccc68e9c4931ce744dd292ad6ff19/classify/intproto.h#L46)) There are consequences. You will make inttemp files generated with a different value of MAX\_NUM\_CONFIGS unreadable. We are working towards overcoming this weakness for version 3.0. Will not be in 2.04 though. Also, classification will be slower and use more memory.
 
 ## There are inconsistent results from tesseract when the same TessBaseAPI object is used for decoding multiple images
 
@@ -472,7 +472,7 @@ tesseract phototest.tif phototest quiet
 
 ## How can I get the coordinates and confidence of each word?
 
-There are two options. If you would rather not get into programming, you can use Tesseract's hOCR output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/main/api/baseapi.h).
+There are two options. If you would rather not get into programming, you can use Tesseract's hOCR output format (read the [Tesseract manual page](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc) for details). If you are comfortable programming, use the [Tesseract API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h).
 
 ## How is confidence calculated?
 * **Character** - Compute a distance measure between 0 and 1 of the character from a training sample:
