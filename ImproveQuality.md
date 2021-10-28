@@ -153,11 +153,11 @@ To see a complete list of supported page segmentation modes, use `tesseract -h`.
 
 By default Tesseract is optimized to recognize sentences of words. If you're trying to recognize something else, like receipts, price lists, or codes, there are a few things you can do to improve the accuracy of your results, as well as double-checking that the appropriate [segmentation method](#page-segmentation-method) is selected.
 
-Disabling the dictionaries Tesseract uses should increase recognition if most of your text isn't dictionary words. They can be disabled by setting both of the [configuration variables](ControlParams) `load_system_dawg` and `load_freq_dawg` to `false`.
+Disabling the dictionaries Tesseract uses should increase recognition if most of your text isn't dictionary words. They can be disabled by setting both of the [configuration variables](tess3/ControlParams.md) `load_system_dawg` and `load_freq_dawg` to `false`.
 
 It is also possible to add words to the word list Tesseract uses to help recognition, or to add common character patterns, which can further help to improve accuracy if you have a good idea of the sort of input you expect. This is explained in more detail in the [Tesseract manual](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data).
 
-If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](ControlParams). See the [FAQ for an example](FAQ-Old#how-do-i-recognize-only-digits).
+If you know you will only encounter a subset of the characters available in the language, such as only digits, you can use the `tessedit_char_whitelist` [configuration variable](tess3/ControlParams.md). See the [FAQ for an example](tess3/FAQ-Old.md#how-do-i-recognize-only-digits).
 
 ## Tables recognitions
 
