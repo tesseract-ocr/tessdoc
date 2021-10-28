@@ -29,7 +29,7 @@ Spain July 25, 2009. https://dl.acm.org/citation.cfm?id=1577804
   * [Ray Smith Publications](http://research.google.com/pubs/author4479.html)
   * [The extraction and recognition of text from multimedia document images](http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.380162) by Smith, R.W. (Ph.D. thesis), 1987
   * [Slides from Tutorial on Tesseract presented at DAS2014](https://drive.google.com/file/d/0B7l10Bj_LprhbUlIUFlCdGtDYkE/edit?usp=sharing)
-  * [Slides from Tutorial on Tesseract presented at DAS2016](https://github.com/tesseract-ocr/docs/tree/master/das_tutorial2016)
+  * [Slides from Tutorial on Tesseract presented at DAS2016](https://github.com/tesseract-ocr/docs/tree/main/das_tutorial2016)
 
 ## Other
 

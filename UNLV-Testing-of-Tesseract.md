@@ -19,7 +19,7 @@ The current scripts only cover tests of the 3B test sets (ie 300 dpi bitonal). T
 
 # Running the tests
 
-See [README file for UNLV tests](https://github.com/tesseract-ocr/test/blob/master/unlvtests/README.md) for the current instructions on how to run the tests for Tesseract 4.
+See [README file for UNLV tests](https://github.com/tesseract-ocr/test/blob/main/unlvtests/README.md) for the current instructions on how to run the tests for Tesseract 4.
 
 # Example Results
 

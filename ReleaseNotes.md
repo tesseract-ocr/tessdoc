@@ -37,13 +37,13 @@ Table of Contents
 ![api_abi_changes.png](images/api_abi_changes.png)
 
 
-* [Binary compatibility report for Tesseract: 4.1.1 vs master (will be 5.0)](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.1.1&v2=current)
+* [Binary compatibility report for Tesseract: 4.1.1 vs main (will be 5.0)](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.1.1&v2=current)
 * [Binary compatibility report for Tesseract: 4.1.0 vs 4.1.1](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.1.0&v2=4.1.1)
 * [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.0.0&v2=4.1.0)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
 ## Changes made since last release
-  * The master branch is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release 
+  * The main branch is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release
 * Reorganized Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
 * Refactored the Autotools build. It now uses non-recursive (auto)make.
 
@@ -56,14 +56,14 @@ Table of Contents
 * Added an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
 * Fixed more locale handling issues found since 4.1.0.
 * Fixed a memory leak in text2image.
-* Fixed potential bugs discovered by running UndefinedBehaviorSanitizer. 
+* Fixed potential bugs discovered by running UndefinedBehaviorSanitizer.
 * Fixed many issues reported by Coverity Scan.
-* Code Cleanup and modernization. 
+* Code Cleanup and modernization.
 * Code optimization.
 * Many bug fixes.
 
 # Tesseract release notes Jul 07 2019 - V4.1.0
-  * Backward compatible release with 4.0.0  
+  * Backward compatible release with 4.0.0
   * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tesseract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
   * Added new renders LSTMBox, WordStrBox to simplify training
   * Added character boxes in hOCR output.
@@ -129,13 +129,13 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
 This release fixed a few bugs, backported from 4.0.0.
 
 # Tesseract release notes June 1 2017 - V3.05.01
-  * Added an option to render only the invisible text layer (without the full 
+  * Added an option to render only the invisible text layer (without the full
 input image) for PDF output.
   * Made some optimizations to GenericVector.
   * Fixed --disable-graphics build.
   * Fixed --enable-visibility build (including training tools).
   * Fixed reading config files with '\r\n' as line break.
-  * OpenCL - Fixed some issues. Removed a large part of the code.  
+  * OpenCL - Fixed some issues. Removed a large part of the code.
   * Removed dead code.
 
 # Tesseract release notes Feb 16 2017 - V3.05.00
@@ -155,7 +155,7 @@ input image) for PDF output.
   * Removed dead code.
   * Fixed many compiler warnings.
   * Fixed memory and resource leaks.
-  * Fixed some issues with the 'Cube' OCR engine. 
+  * Fixed some issues with the 'Cube' OCR engine.
   * Fixed some OpenCL issues.
   * Added option to build Tesseract with CMake build system.
   * Implemented [CPPAN](https://github.com/cppan) support for easy Windows building.
@@ -170,7 +170,7 @@ input image) for PDF output.
   * The project uses Travis CI and AppVeyor Continuous Integration services.
 
 # Tesseract release notes July 11 2015 - V3.04.00
-  * Tesseract development is now done with Git and hosted at github.com 
+  * Tesseract development is now done with Git and hosted at github.com
 (Previously we used Subversion as a VCS and code.google.com for hosting).
   * Tesseract now requires Leptonica 1.71 or a higher version.
   * Removed official support for VS2008.
@@ -178,14 +178,14 @@ input image) for PDF output.
   * New training data for over [100 languages](https://github.com/tesseract-ocr/tessdata/tree/3.04.00). Added support for 39 additional scripts/languages: amh, asm, aze_cyrl, bod, bos, ceb, cym, dzo, fas, gle, guj, hat, iku, jav, kat, kat_old, kaz, khm, kir, kur, lao, lat, mar, mya, nep, ori, pan, pus, san, sin, srp_latn, syr, tgk, tir, uig, urd, uzb, uzb_cyrl, yid.
   * Added a backup adaptive classifier to take over from primary when it fills on a large document.
   * Improved performance with PIC compilation option.
-  * Significant change to invisible font system in PDF output to improve 
+  * Significant change to invisible font system in PDF output to improve
 correctness and compatibility with external programs, particularly ghostscript.
   * Improved font identification.
-  * Major change to improve layout analysis for heavily diacritic languages: 
+  * Major change to improve layout analysis for heavily diacritic languages:
 Thai, Vietnamese, Kannada, Telugu etc.
-  * Fixed problems with shifted baselines so recognition can recover from 
+  * Fixed problems with shifted baselines so recognition can recover from
 layout analysis errors.
-  * Major refactor to improve speed on difficult images, especially when 
+  * Major refactor to improve speed on difficult images, especially when
 running a heap checker.
   * Moved params from global in page layout to tesseractclass.
   * Improved single column layout analysis.
@@ -193,11 +193,11 @@ running a heap checker.
   * Fixed issues with mixed eng+ara scripts.
   * Improved script consistency in numbers.
   * Major refactor of control.cpp to enable line recognition.
-  * Added tesstrain.sh - a master training script.
+  * Added tesstrain.sh - a main training script.
   * Added ability to text2image training tool to just list available fonts.
   * Added ability to text2image to underline words.
   * Improved efficiency of image processing for PDF output.
-  * Added parameter description for each parameter listed with 'print-parameters' 
+  * Added parameter description for each parameter listed with 'print-parameters'
 command line option.
   * Added font info to hOCR output.
   * Enabled streaming input and output of multi-page documents.
@@ -304,7 +304,7 @@ command line option.
 
 # Tesseract release notes April 22 2008 - V2.03
 2.02 was unrunnable, due to a last-minute "simple" change.
-2.03 fixes the problem.  
+2.03 fixes the problem.
 It also adds an include check for leptonica
 to make it more usable.
 
@@ -420,12 +420,12 @@ variable. Note that the directory must end in a /
 
 **All users**
 
-Fixed a bunch of name collisions - mostly with STL.  
+Fixed a bunch of name collisions - mostly with STL.
 Made some preliminary changes for unicode compatibility. Includes a new data
 file (unicharset) and renaming of the other data files to eng. to support
-different languages.  
+different languages.
 There are also several other minor bug fixes and **portability improvements**
-for 64 bit, the latest visual studio compiler etc.  
+for 64 bit, the latest visual studio compiler etc.
 
 **Thanks to all who have contributed these fixes.**
 
@@ -457,7 +457,7 @@ the multi-language capability, since that will also bloat the distribution.
   * Fixed some Mac compilation issues.
 
 # Tesseract release notes June 17, 2006 - V1.00
-First **open source** version of Tesseract!  
+First **open source** version of Tesseract!
 
 Hosted at sourceforge.net.
 CVS is used for version control.

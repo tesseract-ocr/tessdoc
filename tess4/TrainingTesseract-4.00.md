@@ -558,17 +558,17 @@ cd ~/tesstutorial
 
 mkdir langdata
 cd langdata
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/radical-stroke.txt
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/common.punc
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/font_properties
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/Latin.unicharset
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/master/Latin.xheights
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/main/radical-stroke.txt
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/main/common.punc
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/main/font_properties
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/main/Latin.unicharset
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata_lstm/main/Latin.xheights
 mkdir eng
 cd eng
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.training_text
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.punc
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.numbers
-wget https://raw.githubusercontent.com/tesseract-ocr/langdata/master/eng/eng.wordlist
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/main/eng/eng.training_text
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/main/eng/eng.punc
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/main/eng/eng.numbers
+wget https://raw.githubusercontent.com/tesseract-ocr/langdata/main/eng/eng.wordlist
 
 cd ~/tesstutorial
 git clone --depth 1 https://github.com/tesseract-ocr/tesseract.git

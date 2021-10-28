@@ -134,7 +134,7 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 # Windows
 
-## master branch, 3.05 and later
+## main branch, 3.05 and later
 
 #### Using Tesseract
 
@@ -158,7 +158,7 @@ To build a self-contained `tesseract.exe` executable (without any DLLs or runtim
 - `vcpkg install tesseract:x64-windows-static` for 64-bit
 - `vcpkg install tesseract:x86-windows-static` for 32-bit
 
-Use --head for the master branch. It may still require one DLL for the OpenMP runtime, `vcomp140.dll` (which you can find in the Visual C++ Redistributable 2015).
+Use --head for the main branch. It may still require one DLL for the OpenMP runtime, `vcomp140.dll` (which you can find in the Visual C++ Redistributable 2015).
 
 #### Build training tools
 
@@ -182,7 +182,7 @@ To do this:
 4. Run `sw setup` (may require administrator access)
 5. If you have a release archive, unpack it to `tesseract` dir. 
 
-If you're using master branch run
+If you're using main branch run
 
    ```
    git clone https://github.com/tesseract-ocr/tesseract tesseract
