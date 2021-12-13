@@ -88,7 +88,7 @@ be deleted in a future release.
 
 You don't need any background in neural networks to train Tesseract 4.00, but it
 may help in understanding the difference between the training options. Please
-read the [Implementation introduction](NeuralNetsInTesseract4.00) before delving
+read the [Implementation introduction](NeuralNetsInTesseract4.00.md) before delving
 too deeply into the training process, and the same note as for training
 Tesseract 3.04 applies:
 
