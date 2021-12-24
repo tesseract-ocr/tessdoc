@@ -43,9 +43,37 @@ Table of Contents
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
 ## Changes made since last release
-  * The main branch is using 5.0.0 versioning because of code modernization cause API compatibility issues with 4.x release
+
+Missing info, TBD.
+
+
+# Tesseract release notes Nov 30 2021 - V5.0.0
+
+* The 5.0.0 release is not API compatible with any 4.x release.
 * Reorganized Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
 * Refactored the Autotools build. It now uses non-recursive (auto)make.
+
+Missing more info, TBD.
+
+# Tesseract release notes Nov 15 2021 - V4.1.3
+
+Fix broken autoconf build.
+
+# Tesseract release notes Nov 14 2021 - V4.1.2
+
+* Move RowAttributes from LTRResultIterator to PageIterator.
+* Change the maximum allowed width of image to train on from 2560 to 4096.
+* Add SVMutex and SVSemaphore destructors to avoid system objects leaks.
+* Don't output empty ALTO sourceImageInformation.
+* Extend URI support for Tesseract with libcurl.
+* Warn and stop LSTM training process done using integer model.
+
+Changes in the Autotools build:
+
+* Fix autoconf build for MacOS.
+* Fix automake warning because of redefined DEFAULT_INCLUDES.
+* Don't use compiler flags -march=native -mtune=native in autoconf builds.
+* Make automake builds less noisy by default.
 
 # Tesseract release notes Dec 26 2019 - V4.1.1
 * Added support for image or image list by URL. This feature is implemented using libcurl. Usage: `tesseract http://IMAGE_URL OUTPUT ...`
