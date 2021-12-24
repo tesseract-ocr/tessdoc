@@ -41,6 +41,10 @@ Tesseract works best on images which have a DPI of at least 300 dpi, so it may b
 
 This is converting an image to black and white. Tesseract does this internally (Otsu algorithm), but the result can be suboptimal, particularly if the page background is of uneven darkness.
 
+Tesseract 5.0.0 added two new Leptonica based binarization methods.
+
+Use `tesseract --print-parameters | grep thresholding_` to see the relevant configuration options.
+
 If you are not able to fix this by providing a better input image, you can try a different algorithm. See [ImageJ Auto Threshold](https://imagej.net/Auto_Threshold) (java) or [OpenCV Image Thresholding](https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding.html) (python) or [scikit-image Thresholding](https://scikit-image.org/docs/dev/auto_examples/segmentation/plot_thresholding.html) documentation (python).
 
 
