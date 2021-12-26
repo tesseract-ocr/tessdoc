@@ -62,9 +62,12 @@ This means less RAM consumption and faster program execution.
     * Many other improvements.
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
-* **Misc**
-  * Reorganize Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
-  * Move src/api/tesseractmain.cpp to src/tesseract.cpp.
+* **Source code layout reorganization, files renaming**
+  * All public headers are now placed in the `include/tesseract` directory.
+  * Rename `tess_version.h.in` to `version.h.in`.
+  * Rename `platform.h` to `export.h`.
+  * Move `src/api/tesseractmain.cpp` to `src/tesseract.cpp`.
+  * `training` directory: Separate training tools from library.
 
 Missing more info, TBD.
 
