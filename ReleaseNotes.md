@@ -54,7 +54,7 @@ Table of Contents
 * Add SPDX-License-Identifier to public include files.
 
 CMake build:
-* Correctly detect amd64, x86_64 i386 and i686 targets.
+* Correctly detect amd64, x86_64, i386 and i686 targets.
 * Do not try to configure training tools if pkg-config is not present.
 * Installl tesseract configs files.
 
@@ -66,8 +66,8 @@ Missing info, TBD.
 * **Significant performance improvements**
   * Support float (32 bit) for LSTM model training and text recognition. float is now the default instead of double (64 bit). 
 This means less RAM consumption and faster program execution.
-  * Try OCR on inverted line only if mean confidence is below 50%. ([#3141](https://github.com/tesseract-ocr/tesseract/pull/3141))
-  * SIMD:
+  * Try OCR on inverted line only if mean confidence is below 50% ([#3141](https://github.com/tesseract-ocr/tesseract/pull/3141)).
+  * SIMD
     * Add manual dot product support for ARM NEON.
     * Many other improvements.
 * **Build system** 
