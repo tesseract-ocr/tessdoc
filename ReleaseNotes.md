@@ -70,6 +70,11 @@ This means less RAM consumption and faster program execution.
   * SIMD
     * Add manual dot product support for ARM NEON.
     * Many other improvements.
+* **General enhancements**
+  * Add two new Leptonica based binarization methods: Adaptive Otsu and Sauvola. Use `tesseract --print-parameters | grep thresholding_` to see the relevant configurable parameters.
+  * Add new option `-l` for `combine_tessdata` to see the network spec for traineddata that was trained with the LSTM engine.
+  * In Previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 it this file is no longer needed. The pseudo font is now embeded in the code.
+  * lstmtraining: Interpret negative value for `--max_iterations` as epochs.
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
 * **libtesseract API** 
