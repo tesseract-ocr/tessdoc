@@ -73,7 +73,7 @@ This means less RAM consumption and faster program execution.
 * **General enhancements**
   * Add two new Leptonica based binarization methods: Adaptive Otsu and Sauvola. Use `tesseract --print-parameters | grep thresholding_` to see the relevant configurable parameters.
   * Add new option `-l` for `combine_tessdata` to see the network spec for traineddata that was trained with the LSTM engine.
-  * In Previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
+  * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
   * lstmtraining: Interpret negative value for `--max_iterations` as epochs.
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
