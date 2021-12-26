@@ -49,6 +49,7 @@ Table of Contents
 
 * Fix compiler warning [-Wsign-compare].
 * Fix compiler warnings caused by empty statements.
+* Fix some other compiler warnings.
 * Support up to 8 redirections when running OCR on a URL.
 * Fix broken msys2 build with GCC 11.
 * Add SPDX-License-Identifier to public include files.
