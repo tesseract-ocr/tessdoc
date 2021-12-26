@@ -52,7 +52,6 @@ Missing info, TBD.
 
 # Tesseract release notes Nov 30 2021 - V5.0.0
 
-* The 5.0.0 release is not API compatible with any 4.x release.
 * **Significant performance improvements**
   * Support float (32 bit) for LSTM model training and text recognition. float is now the default instead of double (64 bit). 
 This means less RAM consumption and faster program execution.
@@ -62,6 +61,10 @@ This means less RAM consumption and faster program execution.
     * Many other improvements.
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
+* **libtessrtact API** 
+  * This releae includes major changes to the public API. Version 5.0.0 is incompatible with 4.x. Developers using libtesseract need to adapt their code to these changes.
+  * Reduce the number of public headers. This includes the `genericvector.h` and the `strng.h` headers files.
+  * Remove some unnessary methods from the APi.
 * **Source code layout reorganization, files renaming**
   * All public headers are now placed in the `include/tesseract` directory.
   * Rename `tess_version.h.in` to `version.h.in`.
