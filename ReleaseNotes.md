@@ -76,8 +76,8 @@ This means less RAM consumption and faster program execution.
   * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
   * lstmtraining: Interpret negative value for `--max_iterations` as epochs.
 * **Training scripts**
-    *  Remove the Bash based training scripts.
-    * Move the Python based training scripts to the [tesstrain repo](https://github.com/tesseract-ocr/tesstrain/tree/main/src/training).
+  * Remove the Bash based training scripts. If you still need these scripts, you can find them in the repository [history][https://github.com/tesseract-ocr/tesseract/tree/3b436a72c55107faf694baec2f14a542958e32c6/src/training]. Please don't open new issues asking about these old unsupported scripts.
+  * Move the Python based training scripts to the [tesstrain repo](https://github.com/tesseract-ocr/tesstrain/tree/main/src/training).
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
 * **libtesseract API** 
