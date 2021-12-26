@@ -47,6 +47,17 @@ Table of Contents
 
 ## Changes made since last release
 
+* Fix compiler warning [-Wsign-compare].
+* Fix compiler warnings caused by empty statements.
+* Support up to 8 redirections when running OCR on a URL.
+* Fix broken msys2 build with GCC 11.
+* Add SPDX-License-Identifier to public include files.
+
+CMake build:
+* Correctly detect amd64, x86_64 i386 and i686 targets.
+* Do not try to configure training tools if pkg-config is not present.
+* Installl tesseract configs files.
+
 Missing info, TBD.
 
 
