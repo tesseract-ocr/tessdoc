@@ -53,7 +53,7 @@ Missing info, TBD.
 # Tesseract release notes Nov 30 2021 - V5.0.0
 
 * The 5.0.0 release is not API compatible with any 4.x release.
-* **Signifant perfomance improvement**
+* **Significant performance improvements**
   * Support float (32 bit) for LSTM model training and text recognition. float is now the default instead of double (64 bit). 
 This means less RAM consumption and faster program execution.
   * Try OCR on inverted line only if mean confidence is below 50%. ([#3141](https://github.com/tesseract-ocr/tesseract/pull/3141))
@@ -64,6 +64,7 @@ This means less RAM consumption and faster program execution.
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
 * **Misc**
   * Reorganize Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
+  * Move src/api/tesseractmain.cpp to src/tesseract.cpp.
 
 Missing more info, TBD.
 
