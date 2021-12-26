@@ -61,9 +61,9 @@ This means less RAM consumption and faster program execution.
     * Add manual dot product support for ARM NEON.
     * Many other improvements.
 * **Build system** 
-* Refactor the Autotools build. It now uses non-recursive (auto)make.
+  * Refactor the Autotools build. It now uses non-recursive (auto)make.
 * **Misc**
-* Reorganize Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
+  * Reorganize Tesseract's source tree. All public headers are now placed in the `include/tesseract` directory.
 
 Missing more info, TBD.
 
