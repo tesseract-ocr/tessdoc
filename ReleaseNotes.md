@@ -75,6 +75,9 @@ This means less RAM consumption and faster program execution.
   * Add new option `-l` for `combine_tessdata` to see the network spec for traineddata that was trained with the LSTM engine.
   * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
   * lstmtraining: Interpret negative value for `--max_iterations` as epochs.
+* **Training scripts**
+    *  Remove the Bash based training scripts.
+    * Move the Python based training scripts to the [tesstrain repo](https://github.com/tesseract-ocr/tesstrain/tree/main/src/training).
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
 * **libtesseract API** 
