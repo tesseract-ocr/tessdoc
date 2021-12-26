@@ -73,9 +73,10 @@ This means less RAM consumption and faster program execution.
     * Many other improvements.
 * **General enhancements**
   * Add two new Leptonica based binarization methods: Adaptive Otsu and Sauvola. Use `tesseract --print-parameters | grep thresholding_` to see the relevant configurable parameters.
+  * Add new command line option `--loglevel`.
   * Add new option `-l` for `combine_tessdata` to see the network spec for traineddata that was trained with the LSTM engine.
-  * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
   * lstmtraining: Interpret negative value for `--max_iterations` as epochs.
+  * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
 * **Code modernization**
   * Remove the custom data types `STRING`,  `GenericVector` and `PointerVector` from the public API. The `STRING` type, which was removed entirely from the codebase, was replaced by `std::string`. The `GenericVector` type, was mostly replaced in the codebase by `std::vector`. `PointerVector` was partialy replecd by `std::vector`.
   * Use `std::bitset<16>` instead of custom `BITS16`.
