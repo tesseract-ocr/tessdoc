@@ -25,7 +25,7 @@ This user manual is for Tesseract versions `4.x.x` and `5.0.0.x`. For versions `
 
 Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0).
 * The current official release is [4.1.1](https://github.com/tesseract-ocr/tesseract/releases/tag/4.1.1).
-* The [master branch on Github](https://github.com/tesseract-ocr/tesseract.git) can be used by those who want the latest code for LSTM (--oem 1) and legacy (--oem 0) Tesseract. The master branch is using 5.0.0 versioning because code modernization caused API compatibility issues with 4.x release.
+* The [`main` branch on Github](https://github.com/tesseract-ocr/tesseract.git) can be used by those who want the latest code for LSTM (--oem 1) and legacy (--oem 0) Tesseract. The `main` branch is using 5.0.0 versioning because code modernization caused API compatibility issues with 4.x release.
 
 Tesseract can be used directly via [command line](Command-Line-Usage.md), or (for programmers) by using an [API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) to extract printed text from images. It supports a [wide variety of languages](Data-Files-in-different-versions.md). Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-–-3rdParty.md) page. External tools, wrappers and training projects for Tesseract are listed under [AddOns](AddOns.md).
 
@@ -87,7 +87,7 @@ Two more sets of `official` traineddata, trained at Google, are made available i
 
 ### Source Code
 
-Tesseract **5.0.0.x** source code is available in the 'master' branch of the [repository](https://github.com/tesseract-ocr/tesseract). The master branch is using `5.0.0` versioning because C++ code modernization caused API incompatibility with 4.x release.
+Tesseract **5.0.0.x** source code is available in the `main` branch of the [repository](https://github.com/tesseract-ocr/tesseract). The `main` branch is using `5.0.0` versioning because C++ code modernization caused API incompatibility with 4.x release.
 
 ### Binaries
 
