@@ -80,12 +80,12 @@ This means less RAM consumption and faster program execution.
 * **Code modernization**
   * Remove the custom data types `STRING`,  `GenericVector` and `PointerVector` from the public API. The `STRING` type, which was removed entirely from the codebase, was replaced by `std::string`. The `GenericVector` type, was mostly replaced in the codebase by `std::vector`. `PointerVector` was partialy replecd by `std::vector`.
   * Use `std::bitset<16>` instead of custom `BITS16`.
-  * Replace malloc and free with modern c++ code. 
+  * Replace malloc and free with modern C++ code. 
   * Replace `strdup`and `free` by `std::string`.
   * Replace some `snprintf` with `std::to_string`.
   * Replace C-style type casts with C++ type casts (fix `-Wold-style-cast` compiler warnings). Remove unneeded type casts.
   * Replace typedef structs with structs.
-  * Use `std::swap` instead of a manual function.
+  * Use `std::swap` instead of a custom function.
   * Use `unique_ptr` / `make_unique` in more places.
   * Modernize code using clang-tidy.
   * Many other changes made to modernize the codebase.
