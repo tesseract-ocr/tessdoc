@@ -69,7 +69,7 @@ Missing info, TBD.
 # Tesseract release notes Nov 30 2021 - V5.0.0
 
 * **Significant performance improvements**
-  * Support float (32 bit) for LSTM model training and text recognition. float is now the default instead of double (64 bit). 
+  * Support `float` (32 bit) for LSTM model training and text recognition. `float` is now the default instead of `double` (64 bit). 
 This means less RAM consumption and faster program execution.
   * Try OCR on inverted line only if mean confidence is below 50% ([#3141](https://github.com/tesseract-ocr/tesseract/pull/3141)).
   * SIMD
