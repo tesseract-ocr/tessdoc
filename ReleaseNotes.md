@@ -83,7 +83,7 @@ This means less RAM consumption and faster program execution.
   * `lstmtraining`: Interpret negative value for `--max_iterations` as epochs.
   * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
 * **Code modernization**
-  * Remove the custom data types `STRING`,  `GenericVector` and `PointerVector` from the public API. The `STRING` type, which was removed entirely from the codebase, was replaced by `std::string`. The `GenericVector` type, was mostly replaced in the codebase by `std::vector`. `PointerVector` was partialy replecd by `std::vector`.
+  * Remove the custom data types `STRING`,  `GenericVector` and `PointerVector` from the public API. The `STRING` type, which was removed entirely from the codebase, was replaced by `std::string`. The `GenericVector` type, was mostly replaced in the codebase by `std::vector`. `PointerVector` was partially replaced by `std::vector`.
   * Use `std::bitset<16>` instead of custom `BITS16`.
   * Replace malloc and free with modern C++ code. 
   * Replace `strdup`and `free` by `std::string`.
