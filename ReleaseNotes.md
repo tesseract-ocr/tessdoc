@@ -61,7 +61,7 @@ Table of Contents
 CMake build:
 * Correctly detect `amd64`, `x86_64`, `i386` and `i686` targets.
 * Do not try to configure training tools if pkg-config is not present.
-* Installl tesseract configs files.
+* Install tesseract configs files.
 
 Missing info, TBD.
 
