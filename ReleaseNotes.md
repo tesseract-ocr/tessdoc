@@ -51,7 +51,7 @@ Table of Contents
 * Support up to 8 redirections when running OCR on a URL.
 * Catch `nullptr` in `STATS::pile_count()`.
 * Remove `NetworkIO::ZeroTimeStepGeneral()`. This allows more inline code (optimization).
-* Update generator for lookup tables to use TFloat instead of double.
+* Update generator for lookup tables to use `TFloat` instead of `double`.
 * Fix clang compiler warnings in `functions.h`. The new code avoids some conversions between `double` and `float`, so it should also have a small positive effect on the performance.
 * Fix compiler warning [`-Wsign-compare`].
 * Fix compiler warnings caused by empty statements.
