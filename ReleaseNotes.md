@@ -49,17 +49,17 @@ Table of Contents
 
 * Fix broken msys2 build with GCC 11.
 * Support up to 8 redirections when running OCR on a URL.
-* Catch nullptr in STATS::pile_count().
-* Remove NetworkIO::ZeroTimeStepGeneral(). This allows more inline code (optimization).
+* Catch `nullptr` in `STATS::pile_count()`.
+* Remove `NetworkIO::ZeroTimeStepGeneral()`. This allows more inline code (optimization).
 * Update generator for lookup tables to use TFloat instead of double.
-* Fix clang compiler warnings in functions.h. The new code avoids some conversions between double and float, so it should also have a small positive effect on the performance.
-* Fix compiler warning [-Wsign-compare].
+* Fix clang compiler warnings in `functions.h`. The new code avoids some conversions between `double` and `float`, so it should also have a small positive effect on the performance.
+* Fix compiler warning [`-Wsign-compare`].
 * Fix compiler warnings caused by empty statements.
 * Fix some other compiler warnings.
-* Add SPDX-License-Identifier to public include files.
+* Add `SPDX-License-Identifier` to public include files.
 
 CMake build:
-* Correctly detect amd64, x86_64, i386 and i686 targets.
+* Correctly detect `amd64`, `x86_64`, `i386` and `i686` targets.
 * Do not try to configure training tools if pkg-config is not present.
 * Installl tesseract configs files.
 
@@ -118,18 +118,18 @@ Fix broken autoconf build.
 
 # Tesseract release notes Nov 14 2021 - V4.1.2
 
-* Move RowAttributes from LTRResultIterator to PageIterator.
-* Change the maximum allowed width of image to train on from 2560 to 4096.
-* Add SVMutex and SVSemaphore destructors to avoid system objects leaks.
-* Don't output empty ALTO sourceImageInformation.
+* Move `RowAttributes()` from `LTRResultIterator` to `PageIterator`.
+* Change the maximum allowed width of image to train on from `2560` to `4096`.
+* Add `SVMutex` and `SVSemaphore` destructors to avoid system objects leaks.
+* Don't output empty ALTO `sourceImageInformation`.
 * Extend URI support for Tesseract with libcurl.
 * Warn and stop LSTM training process done using integer model.
 
 Changes in the Autotools build:
 
 * Fix autoconf build for MacOS.
-* Fix automake warning because of redefined DEFAULT_INCLUDES.
-* Don't use compiler flags -march=native -mtune=native in autoconf builds.
+* Fix automake warning because of redefined `DEFAULT_INCLUDES`.
+* Don't use compiler flags `-march=native -mtune=native` in autoconf builds.
 * Make automake builds less noisy by default.
 
 # Tesseract release notes Dec 26 2019 - V4.1.1
