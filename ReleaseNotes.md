@@ -56,6 +56,7 @@ Table of Contents
 * Fix compiler warning [`-Wsign-compare`].
 * Fix compiler warnings caused by empty statements.
 * Fix some other compiler warnings.
+* Remove unused code.
 * Add `SPDX-License-Identifier` to public include files.
 
 CMake build:
