@@ -82,6 +82,8 @@ This means less RAM consumption and faster program execution.
   * Add new command line option `--loglevel`.
   * Add new option `-l` for `combine_tessdata` to see the network spec for traineddata that was trained with the LSTM engine.
   * `lstmtraining`: Interpret negative value for `--max_iterations` as epochs.
+  * Don't add a page separator for a single page image.
+  * hOCR output: Write `scan_res` property to the `ocr_page`.
   * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
 * **Code modernization**
   * Remove the custom data types `STRING`,  `GenericVector` and `PointerVector` from the public API. The `STRING` type, which was removed entirely from the codebase, was replaced by `std::string`. The `GenericVector` type, was mostly replaced in the codebase by `std::vector`. `PointerVector` was partially replaced by `std::vector`.
