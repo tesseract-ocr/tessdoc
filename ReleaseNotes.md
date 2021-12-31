@@ -82,7 +82,7 @@ This means less RAM consumption and faster program execution.
   * Add new command line option `--loglevel`.
   * Add new option `-l` for `combine_tessdata` to see the network spec for traineddata that was trained with the LSTM engine.
   * `lstmtraining`: Interpret negative value for `--max_iterations` as epochs.
-  * Don't add a page separator for a single page image.
+  * Don't add a page separator to a single page image.
   * hOCR output: Write `scan_res` property to the `ocr_page`.
   * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
 * **Code modernization**
@@ -102,6 +102,8 @@ This means less RAM consumption and faster program execution.
   * Move the Python based training scripts to the [tesstrain repo](https://github.com/tesseract-ocr/tesstrain/tree/main/src/training).
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
+  * configure.ac: Update minimum required autoconf version to 2.69.
+  * Raise Minimum required Pango version to 1.38.0.
 * **libtesseract API** 
   * This release includes major changes to the public API. Version 5.0.0 is incompatible with 4.x. Developers using libtesseract need to adapt their code to these changes.
   * Reduce the number of public headers. This includes the `genericvector.h` and the `strng.h` headers files.
