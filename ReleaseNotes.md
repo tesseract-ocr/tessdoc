@@ -82,6 +82,7 @@ This means less RAM consumption and faster program execution.
   * Add new command line option `--loglevel`.
   * Add new option `-l` for `combine_tessdata` to get the network spec for traineddata that was trained with the LSTM engine.
   * `lstmtraining`tool: Interpret negative value for `--max_iterations` as epochs.
+  * Switch from NFKC to NFC normalization (or switch from NFKD to NFD if decompose mode is requested).
   * Don't add a page separator to a single page image.
   * hOCR output: Write `scan_res` property to the `ocr_page`.
   * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
