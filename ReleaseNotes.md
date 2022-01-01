@@ -80,8 +80,8 @@ This means less RAM consumption and faster program execution.
   * Add two new Leptonica based binarization methods: Adaptive Otsu and Sauvola. For users: Use `tesseract --print-parameters | grep thresholding_` to see the relevant configurable parameters.
   * Disable music staff detection and removal because it interferes with the table detection feature. Change the default value of `pageseg_apply_music_mask` to `false`.
   * Add new command line option `--loglevel`.
-  * Add new option `-l` for `combine_tessdata` to see the network spec for traineddata that was trained with the LSTM engine.
-  * `lstmtraining`: Interpret negative value for `--max_iterations` as epochs.
+  * Add new option `-l` for `combine_tessdata` to get the network spec for traineddata that was trained with the LSTM engine.
+  * `lstmtraining`tool: Interpret negative value for `--max_iterations` as epochs.
   * Don't add a page separator to a single page image.
   * hOCR output: Write `scan_res` property to the `ocr_page`.
   * In previous releases `pdf.ttf` was needed for the PDF rendering. In 5.0.0 this file is no longer needed. The pseudo font is now embedded in the code.
@@ -113,7 +113,7 @@ This means less RAM consumption and faster program execution.
   * Rename `tess_version.h.in` to `version.h.in`.
   * Rename `platform.h` to `export.h`.
   * Move `src/api/tesseractmain.cpp` to `src/tesseract.cpp`.
-  * `training` directory: Separate training tools from library.
+  * `src/training` directory: Separate training tools from library.
 
 Missing more info, TBD.
 
