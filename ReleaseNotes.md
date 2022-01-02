@@ -64,9 +64,6 @@ CMake build:
 * Do not try to configure training tools if pkg-config is not present.
 * Install tesseract configs files.
 
-Missing info, TBD.
-
-
 # Tesseract release notes Nov 30 2021 - V5.0.0
 
 * **Significant performance improvements**
@@ -115,8 +112,6 @@ This means less RAM consumption and faster program execution.
   * Rename `platform.h` to `export.h`.
   * Move `src/api/tesseractmain.cpp` to `src/tesseract.cpp`.
   * `src/training` directory: Separate training tools from library.
-
-Missing more info, TBD.
 
 # Tesseract release notes Nov 15 2021 - V4.1.3
 
