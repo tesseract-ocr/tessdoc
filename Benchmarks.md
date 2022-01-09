@@ -1,5 +1,18 @@
-This page is dedicated to benchmarking various tesseract version and options.
+This page is dedicated to simple benchmarking of various tesseract version and options.
 As input image for testing is used image from [issue 236](https://github.com/tesseract-ocr/tesseract/issues/263).
+
+
+# Results
+
+| Build       | [tessdata_best ](https://github.com/tesseract-ocr/tessdata_best)| [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) | [tessdata ](https://github.com/tesseract-ocr/tessdata)|
+| ---              |    ---: |   ---: |     ---: |
+| 305              |    -    |    -   |  2.4713  |
+| 413noawx         | 37.6052 | 5.1589 | 10.1519  |
+| 501              |  6.1981 | 2.1241 |  2.9107  |
+| 501ap            |  6.1369 | 2.1254 |  2.9221  |
+| 501openmp        |  3.4590 | 1.9612 |  2.3554  |
+
+
 
 # Information about testing enviroment
 * Windows 10 64bit
@@ -7,10 +20,38 @@ As input image for testing is used image from [issue 236](https://github.com/tes
 * CPU: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz 6 cores
 * memory: 16GB RAM
 
-# tesseract version info
+Tested with python code
+```py
+import timeit
+import time
+import os
+import pytesseract
+
+start_time = time.time()
+tess_exe = r"msvc.v5.openmp\tesseract.exe"
+test_image = r"i263_speed.jpg"
+os.environ['TESSDATA_PREFIX'] = r"tessdata_best\tessdata"
+
+code_to_test = """
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r"{}"
+pytesseract.pytesseract.image_to_string(r"{}", lang = 'eng')
+"""
+
+runs = 15
+elapsed_time = timeit.timeit(code_to_test.format((tess_exe, test_image), number=runs)/runs
+print("\nDuration:", elapsed_time)
+
+```
+
+
+# Tesseract build info
  information provided by `tesseract -v`
 
 ## 3.05
+
+### 305
+It uses Legacy engine.
 
 ```sh
 tesseract 3.05.02
@@ -20,7 +61,9 @@ tesseract 3.05.02
 
 ## 4.1
 
-### No AVX  support
+### 413noawx
+
+Build without AVX support
 
 ```sh
 tesseract 4.1.3
@@ -29,9 +72,13 @@ tesseract 4.1.3
  Found libarchive 3.5.1 zlib/1.2.11 liblzma/5.2.4 bz2lib/1.0.6 libzstd/1.4.9
 ```
 
+
+
 ## 5.0
 
-### AVX supported + OpenMP
+### 501
+
+AVX supported
 
 ```sh
 tesseract 5.0.1
@@ -45,7 +92,7 @@ tesseract 5.0.1
  Found libcurl/7.75.0 zlib/1.2.11 libssh2/1.10.1_DEV
  ```
  
- ### AVX supported with VS autoparalalization support 
+ ### 501ap
  
  build with: `cmake -E env CXXFLAGS="/Qpar /fp:fast" cmake ..`
  
@@ -61,8 +108,10 @@ tesseract 5.0.1
  Found libcurl/7.75.0 zlib/1.2.11 libssh2/1.10.1_DEV
  ```
  
- ### AVX supported + OpenMP
-  
+ ### 501openmp
+
+OpenMP build is know to use huge waste of CPU time. Because several users report problems it is turn off by default in version 5.0.1. For other version (>= 4.x) it is suggested to use enviroment variable `OMP_THREAD_LIMIT=1`. Input from OpenMP experts would be appreciated.
+
  ```sh
  tesseract 5.0.1
  leptonica-1.83.0 (Dec 17 2021, 17:33:37) [MSC v.1929 LIB Release x64]
