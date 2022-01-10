@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
+* [Jan 07 2022 - V5.0.1](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-jan-07-2022---v501)
 * [Nov 30 2021 - V5.0.0](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-nov-30-2021---v500)
 * [Nov 15 2021 - V4.1.3](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-nov-15-2021---v413)
 * [Nov 14 2021 - V4.1.2](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-nov-14-2021---v412)
@@ -46,6 +47,10 @@ Table of Contents
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
 ## Changes made since last release
+
+Planned: Disable OpenMP by default when building with Autotools. 
+
+# Tesseract release notes Jan 07 2022 - V5.0.1
 
 * Fix broken msys2 build with GCC 11.
 * Support up to 8 redirections when running OCR on a URL.
