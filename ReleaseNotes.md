@@ -110,7 +110,7 @@ This means less RAM consumption and faster program execution.
 * **libtesseract API** 
   * This release includes major changes to the public API. Version 5.0.0 is incompatible with 4.x. Developers using libtesseract need to adapt their code to these changes.
   * Reduce the number of public headers. This includes the `genericvector.h` and the `strng.h` headers files.
-  * Remove some unnessary methods from the APi.
+  * Remove some unnecessary methods from the APi.
 * **Source code layout reorganization, files renaming**
   * All public headers are now placed in the `include/tesseract` directory.
   * Rename `tess_version.h.in` to `version.h.in`.
