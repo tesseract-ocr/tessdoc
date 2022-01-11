@@ -52,7 +52,7 @@ print("\nDuration:", elapsed_time)
 ### 3.05
 
 #### 305
-It uses thr legacy engine.
+It uses the legacy engine.
 
 ```sh
 tesseract 3.05.02
