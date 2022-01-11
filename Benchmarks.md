@@ -1,8 +1,10 @@
+# Benchmarks
+
 This page is dedicated to simple benchmarking of various tesseract version and options.
 As input image for testing is used image from [issue 236](https://github.com/tesseract-ocr/tesseract/issues/263).
 
 
-# Results
+## Results
 
 | Build       | [tessdata_best ](https://github.com/tesseract-ocr/tessdata_best)| [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) | [tessdata ](https://github.com/tesseract-ocr/tessdata)|
 | ---              |    ---: |   ---: |     ---: |
@@ -14,7 +16,7 @@ As input image for testing is used image from [issue 236](https://github.com/tes
 
 
 
-# Information about testing enviroment
+## Information about testing enviroment
 * Windows 10 64bit
 * compiler: VS 2019
 * CPU: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz 6 cores
@@ -45,12 +47,12 @@ print("\nDuration:", elapsed_time)
 ```
 
 
-# Tesseract build info
+## Tesseract build info
  information provided by `tesseract -v`
 
-## 3.05
+### 3.05
 
-### 305
+#### 305
 It uses Legacy engine.
 
 ```sh
@@ -59,9 +61,9 @@ tesseract 3.05.02
   libgif 5.2.1 : libjpeg 6b (libjpeg-turbo 2.0.91) : libpng 1.6.37 : libtiff 4.3.0 : zlib 1.2.11 : libwebp 1.2.0 : libopenjp2 2.4.0
 ```
 
-## 4.1
+### 4.1
 
-### 413noawx
+#### 413noawx
 
 Build without AVX support
 
@@ -72,11 +74,9 @@ tesseract 4.1.3
  Found libarchive 3.5.1 zlib/1.2.11 liblzma/5.2.4 bz2lib/1.0.6 libzstd/1.4.9
 ```
 
+### 5.0
 
-
-## 5.0
-
-### 501
+#### 501
 
 AVX supported
 
@@ -92,7 +92,7 @@ tesseract 5.0.1
  Found libcurl/7.75.0 zlib/1.2.11 libssh2/1.10.1_DEV
  ```
  
- ### 501ap
+ #### 501ap
  
  build with: `cmake -E env CXXFLAGS="/Qpar /fp:fast" cmake ..`
  
@@ -108,7 +108,7 @@ tesseract 5.0.1
  Found libcurl/7.75.0 zlib/1.2.11 libssh2/1.10.1_DEV
  ```
  
- ### 501openmp
+ #### 501openmp
 
 OpenMP build is know to use huge waste of CPU time. Because several users report problems it is turn off by default in version 5.0.1. For other version (>= 4.x) it is suggested to use enviroment variable `OMP_THREAD_LIMIT=1`. Input from OpenMP experts would be appreciated.
 
