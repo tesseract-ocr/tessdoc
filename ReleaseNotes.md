@@ -5,10 +5,10 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
-* [Jan 07 2022 - V5.0.1](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-jan-07-2022---v501)
-* [Nov 30 2021 - V5.0.0](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-nov-30-2021---v500)
-* [Nov 15 2021 - V4.1.3](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-nov-15-2021---v413)
-* [Nov 14 2021 - V4.1.2](https://github.com/tesseract-ocr/tessdoc/blob/main/ReleaseNotes.md#tesseract-release-notes-nov-14-2021---v412)
+* [Jan 07 2022 - V5.0.1](ReleaseNotes.md#tesseract-release-notes-jan-07-2022---v501)
+* [Nov 30 2021 - V5.0.0](ReleaseNotes.md#tesseract-release-notes-nov-30-2021---v500)
+* [Nov 15 2021 - V4.1.3](ReleaseNotes.md#tesseract-release-notes-nov-15-2021---v413)
+* [Nov 14 2021 - V4.1.2](ReleaseNotes.md#tesseract-release-notes-nov-14-2021---v412)
 * [Dec 26 2019 - V4.1.1](#tesseract-release-notes-dec-26-2019---v411)
 * [Jul 07 2019 - V4.1.0](#tesseract-release-notes-jul-07-2019---v410)
 * [Oct 29 2018 - V4.0.0](#tesseract-release-notes-oct-29-2018---v400)
