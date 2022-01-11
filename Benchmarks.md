@@ -9,7 +9,7 @@ As input image for testing is used image from [issue 236](https://github.com/tes
 | Build       | [tessdata_best ](https://github.com/tesseract-ocr/tessdata_best)| [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) | [tessdata ](https://github.com/tesseract-ocr/tessdata)|
 | ---              |    ---: |   ---: |     ---: |
 | 305              |    -    |    -   |  2.4713  |
-| 413noawx         | 37.6052 | 5.1589 | 10.1519  |
+| 413noavx         | 37.6052 | 5.1589 | 10.1519  |
 | 501              |  6.1981 | 2.1241 |  2.9107  |
 | 501ap            |  6.1369 | 2.1254 |  2.9221  |
 | 501openmp        |  3.4590 | 1.9612 |  2.3554  |
@@ -46,14 +46,13 @@ print("\nDuration:", elapsed_time)
 
 ```
 
-
 ## Tesseract build info
  information provided by `tesseract -v`
 
 ### 3.05
 
 #### 305
-It uses Legacy engine.
+It uses thr legacy engine.
 
 ```sh
 tesseract 3.05.02
@@ -63,9 +62,9 @@ tesseract 3.05.02
 
 ### 4.1
 
-#### 413noawx
+#### 413noavx
 
-Build without AVX support
+Build without AVX2/AVX/SSE4 support
 
 ```sh
 tesseract 4.1.3
@@ -78,7 +77,7 @@ tesseract 4.1.3
 
 #### 501
 
-AVX supported
+AVX2 supported
 
 ```sh
 tesseract 5.0.1
