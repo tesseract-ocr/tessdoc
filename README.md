@@ -23,7 +23,7 @@ This user manual is for Tesseract versions `4.x.x` and `5.0.0.x`. For versions `
 
 ## Introduction
 
-Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0).
+Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 * The current official release is [4.1.1](https://github.com/tesseract-ocr/tesseract/releases/tag/4.1.1).
 * The [`main` branch on Github](https://github.com/tesseract-ocr/tesseract.git) can be used by those who want the latest code for LSTM (--oem 1) and legacy (--oem 0) Tesseract. The `main` branch is using 5.0.0 versioning because code modernization caused API compatibility issues with 4.x release.
 
