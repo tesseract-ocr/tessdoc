@@ -45,7 +45,6 @@ _**5.x**_
 #### Ubuntu PPA
 
 * [Ubuntu Focal 20.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=focal)
-* [Ubuntu Eoan 19.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=eoan)
 * [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-devel?field.series_filter=bionic)
 
 #### Debian
@@ -94,7 +93,6 @@ _Included traineddata files_
 
 #### Ubuntu PPA 
 * [Ubuntu Focal 20.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=focal)
-* [Ubuntu Eoan 19.10](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=eoan)
 * [Ubuntu Bionic 18.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=bionic)
 * [Ubuntu Xenial 16.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=xenial)
 * [Ubuntu Trusty 14.04](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr?field.series_filter=trusty)
