@@ -96,6 +96,7 @@ Platform support depends on used language and experience of user.
   * [tesserocr](https://github.com/sirfz/tesserocr) - A Python wrapper around Tesseract's C++ API
   * [pytesseract](https://github.com/madmaze/pytesseract) - a wrapper class for Tesseract OCR (requires tesseract executable)
   * [tesseract-ocr-wrapper](https://github.com/Altabeh/tesseract-ocr-wrapper) - a python wrapper for tesseract-ocr with support for OCRing of pdf
+  * [aiopytesseract](https://github.com/amenezes/aiopytesseract) - asyncio tesseract wrapper for Tesseract-OCR.
 
 **Objective-C**
   * [Tesseract-macOS](https://github.com/scott0123/Tesseract-macOS)
@@ -134,6 +135,7 @@ Platform support depends on used language and experience of user.
   * [pytesseract](https://github.com/madmaze/pytesseract) - a wrapper class for Tesseract OCR (requires tesseract executable)
   * [python-tesseract](https://github.com/cookbrite/python-tesseract/commits/master) - A wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
   * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
+  * [aiopytesseract](https://github.com/amenezes/aiopytesseract) - asyncio tesseract wrapper for Tesseract-OCR.
 
 **R** 
   * [tesseract](https://cran.r-project.org/package=tesseract) Bindings to the C++ API for the R programming language
