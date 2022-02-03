@@ -1,6 +1,7 @@
 # Tesseract User Manual
 
-This user manual is for Tesseract versions `5.x`. For versions `4.x.x`, `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
+This user manual is for Tesseract versions `5.x`.
+For versions `4.x.x`, `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
 
 - [Tesseract User Manual](#tesseract-user-manual)
   * [Introduction](#introduction)
@@ -17,7 +18,7 @@ This user manual is for Tesseract versions `5.x`. For versions `4.x.x`, `3.05.02
     + [Training for Tesseract 5](#training-for-tesseract-5)
     + [Testing](#testing)
     + [External Projects](#external-projects)
-    + [User Manual for Old Versions](#user-manual-for-old-versions)
+  * [User Manual for Old Versions](#user-manual-for-old-versions)
 
 ## Introduction
 
@@ -160,4 +161,5 @@ Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
 ### User Manual for Old Versions
 
-- [Tesseract 3 Documentation](OldVersionDocs.md)
+- [Tesseract 4 Documentation](OldVersionDocs.md#tesseract-4)
+- [Tesseract 3 Documentation](OldVersionDocs.md#tesseract-3)

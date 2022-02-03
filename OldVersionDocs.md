@@ -2,6 +2,13 @@
 
 ## Tesseract 4
 
+### Manual pages for additional LSTM training tools
+
+  * [combine\_lang\_model](https://github.com/tesseract-ocr/tesseract/blob/main/doc/combine_lang_model.1.asc)
+  * [lstmeval](https://github.com/tesseract-ocr/tesseract/blob/main/doc/lstmeval.1.asc)
+  * [lstmtraining](https://github.com/tesseract-ocr/tesseract/blob/main/doc/lstmtraining.1.asc)
+  * [merge\_unicharsets](https://github.com/tesseract-ocr/tesseract/blob/main/doc/merge_unicharsets.1.asc)
+
 ### Training for Tesseract 4
 
 - [TrainingTesseract 4.00 - Detailed Guide by Ray Smith](tess4/TrainingTesseract-4.00.md)
@@ -18,7 +25,7 @@
 
 ## Tesseract 3
 
-### Manual pages for legacy Tesseract engine and training tools
+### Manual pages for legacy (and LSTM) Tesseract engine and training tools
 
   * [tesseract](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc)
   * [ambiguous\_words](https://github.com/tesseract-ocr/tesseract/blob/main/doc/ambiguous_words.1.asc)
