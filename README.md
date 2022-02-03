@@ -22,8 +22,12 @@ This user manual is for Tesseract versions `5.x`. For versions `4.x.x`, `3.05.02
 ## Introduction
 
 Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
-* The current official release is [4.1.1](https://github.com/tesseract-ocr/tesseract/releases/tag/4.1.1).
-* The [`main` branch on Github](https://github.com/tesseract-ocr/tesseract.git) can be used by those who want the latest code for LSTM (--oem 1) and legacy (--oem 0) Tesseract. The `main` branch is using 5.0.0 versioning because code modernization caused API compatibility issues with 4.x release.
+* Major version 5 is the current stable version and started with release [5.0.0](https://github.com/tesseract-ocr/tesseract/releases/tag/5.0.0) on November 30, 2021.
+* Newer minor versions and bugfix versions are available from
+[GitHub](https://github.com/tesseract-ocr/tesseract/releases/).
+* Latest source code is available from [main branch on GitHub](https://github.com/tesseract-ocr/tesseract/tree/main).
+Open issues can be found in [issue tracker](https://github.com/tesseract-ocr/tesseract/issues),
+and [planning documentation](https://tesseract-ocr.github.io/tessdoc/Planning.html).
 
 Tesseract can be used directly via [command line](Command-Line-Usage.md), or (for programmers) by using an [API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) to extract printed text from images. It supports a [wide variety of languages](Data-Files-in-different-versions.md). Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-–-3rdParty.md) page. External tools, wrappers and training projects for Tesseract are listed under [AddOns](AddOns.md).
 
@@ -143,8 +147,8 @@ Training with `tesstrain.sh` (a.k.a tesseract 4 training) in unsupported/abandon
 Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
 - [Train Tesseract LSTM with make from Single Line Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
-    * [Example: Training Fraktur with GT4HistOCR](https://github.com/tesseract-ocr/tesstrain/wiki/GT4HistOCR)
-    * [Demo of PlusMinus training for Sanskrit](https://github.com/Shreeshrii/tesstrain-sanPlusMinus)
+    * [Examples of Training using tesstrain Makefile](https://github.com/tesseract-ocr/tesstrain/wiki)
+- [Training LSTM Tesseract - based on guide by Ray Smith](tess5/TrainingTesseract-5.md)
 
 ### Testing
 - [TestingTesseract](TestingTesseract.md)

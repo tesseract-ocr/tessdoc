@@ -81,7 +81,7 @@ While the above options may sound different, the training steps are actually
 almost identical, apart from the command line, so it is relatively easy to try
 it all ways, given the time or hardware to run them in parallel.
 
-The old recognition engine is still present, and can also be  trained, but is
+The old recognition engine is still present, and can also be trained, but is
 deprecated, and, unless good reasons materialize to keep it, may be deleted
 in a future release.
 
