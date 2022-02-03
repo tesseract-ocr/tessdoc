@@ -1,4 +1,4 @@
-# How to use the tools provided to train Tesseract 4.00
+# How to train LSTM Tesseract
 
 **Have questions about the training process?** If you had some problems during
 the training process and you need help, use
@@ -6,6 +6,11 @@ the training process and you need help, use
 mailing-list to ask your question(s). **PLEASE DO NOT** report your problems and
 ask questions about training as
 [issues](https://github.com/tesseract-ocr/tesseract/issues)!
+
+# Initial Remark
+
+Training with `tesstrain.sh` in unsupported/abandoned for Tesseract 5.
+Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
    * [Introduction](#introduction)
    * [Before You Start](#before-you-start)
@@ -23,25 +28,9 @@ ask questions about training as
       * [Perfect Sample Delay](#perfect-sample-delay)
       * [Debug Interval and Visual Debugging](#debug-interval-and-visual-debugging)
       * [Iterations and Checkpoints](#iterations-and-checkpoints)
-   * [TessTutorial](#tesstutorial)
-      * [One-time Setup for TessTutorial](#one-time-setup-for-tesstutorial)
-      * [Creating Training Data](#creating-training-data)
-         * [Making Box Files](#making-box-files)
-         * [Using tesstrain.sh](#using-tesstrainsh)
-      * [Tutorial guide to lstmtraining](#tutorial-guide-to-lstmtraining)
-         * [Creating Starter Traineddata](#creating-starter-traineddata)
-         * [Training From Scratch](#training-from-scratch)
-         * [Fine Tuning for Impact](#fine-tuning-for-impact)
-         * [Fine Tuning for ± a few characters](#fine-tuning-for--a-few-characters)
-         * [Training Just a Few Layers](#training-just-a-few-layers)
       * [Error Messages From Training](#error-messages-from-training)
    * [Combining the Output Files](#combining-the-output-files)
    * [The Hallucination Effect](#the-hallucination-effect)
-
-# Initial Remark
-
-Training with `tesstrain.sh` in unsupported/abandoned for Tesseract 5.
-Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
 # Introduction
 
