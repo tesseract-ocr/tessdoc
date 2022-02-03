@@ -1,5 +1,21 @@
 # Documentation for old versions of Tesseract
 
+## Tesseract 4
+
+### Training for Tesseract 4
+
+- [TrainingTesseract 4.00 - Detailed Guide by Ray Smith](tess4/TrainingTesseract-4.00.md)
+    * [Hardware-Software Requirements](tess4/TrainingTesseract-4.00.md#hardware-software-requirements)
+    * [Training Text Requirements](tess4/TrainingTesseract-4.00.md#training-text-requirements)
+    * [Fonts](Fonts.md)
+    * [Box Files](tess4/Make-Box-Files.md)
+    * [LSTMTraining Command Line](tess4/TrainingTesseract-4.00.md#lstmtraining-command-line)
+    * [Error Messages From Training](tess4/TrainingTesseract-4.00.md#error-messages-from-training)
+    * [The-Hallucination-Effect](tess4/The-Hallucination-Effect.md)
+- [Links to Community Contributions for Finetune Training](tess4/TrainingTesseract-4.00---Finetune.md)
+- [Community training tips at tesseract-ocr forum](https://groups.google.com/g/tesseract-ocr/search?q=lorenzo)
+- [4.0 Accuracy and Performance](tess4/4.0-Accuracy-and-Performance.md)
+
 ## Tesseract 3
 
 ### Manual pages for legacy Tesseract engine and training tools

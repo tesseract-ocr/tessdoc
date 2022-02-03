@@ -1,17 +1,15 @@
 # Tesseract User Manual
 
-This user manual is for Tesseract versions `4.x.x` and `5.0.0.x`. For versions `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
+This user manual is for Tesseract versions `5.x`. For versions `4.x.x`, `3.05.02` and older, see the [documentation for old versions](OldVersionDocs.md).
 
 - [Tesseract User Manual](#tesseract-user-manual)
   * [Introduction](#introduction)
   * [Releases and Changelog](#releases-and-changelog)
-  * [4.0 with LSTM](#40-with-lstm)
-    + [Traineddata Files](#traineddata-files)
-    + [Training for Tesseract 4](#training-for-tesseract-4)
-  * [5.0.0.x](#500x)
+  * [Tesseract with LSTM](#Tesseract-with-lstm)
+  * [5.x.x](#5xx)
     + [Source Code](#source-code)
     + [Binaries](#binaries)
-    + [Traineddata Files](#traineddata-files-1)
+    + [Traineddata Files](#traineddata-files)
     + [Compiling and Installation](#compiling-and-installation)
     + [Usage](#usage)
     + [API Examples](#api-examples)
@@ -31,11 +29,11 @@ Tesseract can be used directly via [command line](Command-Line-Usage.md), or (fo
 
 Tesseract can be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](User-Projects-–-3rdParty.md) and [AddOns](AddOns.md) pages for samples of what has been done with it.
 
-If you have a question, first read the [documentation](https://tesseract-ocr.github.io/), 
-particularly the **[FAQ](FAQ.md)** to see if your problem is addressed there. 
-If not, search the [Issues List](https://github.com/tesseract-ocr/tesseract/issues), 
-[Tesseract user forum](http://groups.google.com/group/tesseract-ocr), 
-and if you still can't find what you need, please ask your question in 
+If you have a question, first read the [documentation](https://tesseract-ocr.github.io/),
+particularly the **[FAQ](FAQ.md)** to see if your problem is addressed there.
+If not, search the [Issues List](https://github.com/tesseract-ocr/tesseract/issues),
+[Tesseract user forum](http://groups.google.com/group/tesseract-ocr),
+and if you still can't find what you need, please ask your question in
 [Tesseract user forum Google group](http://groups.google.com/group/tesseract-ocr).
 
 Tesseract is free software, so if you want to pitch in and help, please do!
@@ -50,44 +48,17 @@ If you find a bug and fix it yourself, the best thing to do is to attach the pat
 - [Release Notes](ReleaseNotes.md)
 - [Changelog](https://github.com/tesseract-ocr/tesseract/blob/main/ChangeLog)
 
-## 4.0 with LSTM
+## Tesseract with LSTM
 
 Tesseract **4.0** added a new OCR engine based on LSTM neural networks. It works well on x86/Linux with official Language Model data available for [100+ languages and 35+ scripts](Data-Files-in-different-versions.md). See [4.0x-Changelog](tess4/4.0x-Changelog.md) for more details.
 
-### Traineddata Files
-
-For detailed information about the different types of models, see [Data Files](Data-Files.md).
-
-Model files for version `4.00` are available from [tessdata tagged 4.00](https://github.com/tesseract-ocr/tessdata/releases/tag/4.00). It has models from November 2016. The individual language file links are available from the following link.
-- [tessdata 4.00 November 2016](https://github.com/tesseract-ocr/tessdoc/blob/master/Data-Files.md#data-files-for-version-400-november-29-2016)
-
-Model files for version `4.0.0` and later are available from [tessdata tagged 4.0.0](https://github.com/tesseract-ocr/tessdata/releases/tag/4.0.0). It has legacy models from September 2017 that have been updated with Integer versions of `tessdata_best` LSTM models. This set of traineddata files has support for both the legacy recognizer with `--oem 0` and for LSTM models with `--oem 1`. These models are available from the following Github repo.
-- [tessdata](https://github.com/tesseract-ocr/tessdata)
-
-Two more sets of `official` traineddata, trained at Google, are made available in the following Github repos. These do not have the legacy models and only have LSTM models usable with `--oem 1`.
-
-- [tessdata_best](https://github.com/tesseract-ocr/tessdata_best)
-- [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast)
-
-### Training for Tesseract 4
-
-- [TrainingTesseract 4.00 - Detailed Guide by Ray Smith](tess4/TrainingTesseract-4.00.md)
-    * [Hardware-Software Requirements](tess4/TrainingTesseract-4.00.md#hardware-software-requirements)
-    * [Training Text Requirements](tess4/TrainingTesseract-4.00.md#training-text-requirements)
-    * [Fonts](Fonts.md)
-    * [Box Files](tess4/Make-Box-Files.md)
-    * [LSTMTraining Command Line](tess4/TrainingTesseract-4.00.md#lstmtraining-command-line)
-    * [Error Messages From Training](tess4/TrainingTesseract-4.00.md#error-messages-from-training)
-    * [The-Hallucination-Effect](tess4/The-Hallucination-Effect.md)
-- [Links to Community Contributions for Finetune Training](tess4/TrainingTesseract-4.00---Finetune.md)
-- [Community training tips at tesseract-ocr forum](https://groups.google.com/g/tesseract-ocr/search?q=lorenzo)
-- [4.0 Accuracy and Performance](tess4/4.0-Accuracy-and-Performance.md)
-
-## 5.0.0.x
+## 5.x.x
 
 ### Source Code
 
-Tesseract **5.0.0.x** source code is available in the `main` branch of the [repository](https://github.com/tesseract-ocr/tesseract). The `main` branch is using `5.0.0` versioning because C++ code modernization caused API incompatibility with 4.x release.
+Tesseract **5.x.x** source code is available in the `main` branch of the [repository](https://github.com/tesseract-ocr/tesseract).
+The `main` branch is using `5.0.0` semver versioning because C++ code modernization caused API
+incompatibility with 4.x release.
 
 ### Binaries
 
@@ -98,7 +69,27 @@ Binaries are available from:
 
 ### Traineddata Files
 
-Language model traineddata files same as listed above for version `4.0.0` can be used with Tesseract `5.0.0.x`. These are available from:
+For detailed information about the different types of models, see [Data Files](Data-Files.md).
+
+Model files for version `4.00` are available from [tessdata tagged 4.00](https://github.com/tesseract-ocr/tessdata/releases/tag/4.00). It has models from November 2016. The individual language file links are available from the following link.
+- [tessdata 4.00 November 2016](https://github.com/tesseract-ocr/tessdoc/blob/master/Data-Files.md#data-files-for-version-400-november-29-2016)
+
+Model files for version `4.0.0` and later are available from [tessdata tagged 4.0.0](https://github.com/tesseract-ocr/tessdata/releases/tag/4.0.0).
+It has legacy models from September 2017 that have been updated with Integer versions
+of `tessdata_best` LSTM models. This set of traineddata files has support for both
+the legacy recognizer with `--oem 0` and for LSTM models with `--oem 1`.
+These models are available from the following Github repo.
+- [tessdata](https://github.com/tesseract-ocr/tessdata)
+
+Two more sets of `official` traineddata, trained at Google, are made available in
+the following Github repos. These do not have the legacy models and only have
+LSTM models usable with `--oem 1`.
+
+- [tessdata_best](https://github.com/tesseract-ocr/tessdata_best)
+- [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast)
+
+Language model traineddata files same as listed above for version `4.0.0` can be used
+with Tesseract `5.x.x`. These are available from:
 - [tessdata](https://github.com/tesseract-ocr/tessdata)
 - [tessdata_best](https://github.com/tesseract-ocr/tessdata_best)
 - [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast)
@@ -148,7 +139,8 @@ have information about LSTM integration in Tesseract 4.0x.
 
 ### Training for Tesseract 5
 
-Training with `tesstrain.sh` (a.k.a tesseract 4 training) in unsupported/abandoned. Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
+Training with `tesstrain.sh` (a.k.a tesseract 4 training) in unsupported/abandoned.
+Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
 - [Train Tesseract LSTM with make from Single Line Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
     * [Example: Training Fraktur with GT4HistOCR](https://github.com/tesseract-ocr/tesstrain/wiki/GT4HistOCR)
