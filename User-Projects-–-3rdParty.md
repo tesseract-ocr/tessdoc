@@ -26,7 +26,8 @@
 | [PDF OCR X](http://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
 | [TaxWorkFlow](https://thetaxworkflow.com)|          |         | X           | Proprietary | TaxWorkFlow is an accounting practice management application that includes GUI frontend for Tesseract OCR engine. The app supports AVX and allows to create OCR'ed PDF files of selected resolution and compression from PDF files and 100+ image file formats. |
 | [AmhOCR](https://github.com/KumnegerH/AmhOCR) |           |         | X           |  GPLv3     | Tesseract Powered Windows Desktop OCR Application With Multiple Pre/Post Processing GUI |
-| [TesseractStudio.Net](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | (Exe, SourceCode Not Available,Site is Dead) A graphical interface to tesseract 4.0 |
+| [TesseractStudio.Net Github](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | (Exe, SourceCode Not Available,Site Urls are Dead) A graphical interface to tesseract 4.0 |
+| [TesseractStudio.Net](https://www.opait.com/TessStudio/index.html) |          |         | X           | Proprietary     |  A graphical interface to tesseract 4.0 |
 
 
 ## 2. Online OCR services
