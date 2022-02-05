@@ -6,7 +6,6 @@
 |:---------|:----------|:--------|:------------|:------------|:----------------|
 | [normcap](https://github.com/dynobo/normcap) | X         | X       | X           | GPL v3      | OCR powered screen-capture tool to capture information instead of images. |
 | [gImageReader](https://github.com/manisandro/gImageReader) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
-| [TesseractStudio.Net](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | A graphical interface to tesseract 4.0 |
 | [VietOCR](http://vietocr.sourceforge.net/) | X         | X       | X           | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
 | [NeOCR](https://sourceforge.net/projects/ne-ocr/) |          |        | X           | Freeware  | A GUI frontend for Tesseract 4.0 OCR engine. |
 | [Free-Ocr-Windows-Desktop](https://github.com/A9T9/Free-Ocr-Windows-Desktop/releases)|          |         | X           | [GNU AGPL v3](https://github.com/A9T9/Free-Ocr-Windows-Desktop/blob/master/LICENSE)     | Free OCR application for the Windows Desktop - Essentially a graphical user interface (GUI) for the Tesseract OCR engine. The application also includes support for reading and scanned PDF files |
@@ -27,6 +26,9 @@
 | [PDF OCR X](http://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
 | [TaxWorkFlow](https://thetaxworkflow.com)|          |         | X           | Proprietary | TaxWorkFlow is an accounting practice management application that includes GUI frontend for Tesseract OCR engine. The app supports AVX and allows to create OCR'ed PDF files of selected resolution and compression from PDF files and 100+ image file formats. |
 | [AmhOCR](https://github.com/KumnegerH/AmhOCR) |           |         | X           |  GPLv3     | Tesseract Powered Windows Desktop OCR Application With Multiple Pre/Post Processing GUI |
+| [TesseractStudio.Net Github](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | (Exe, SourceCode Not Available,Site Urls are Dead) A graphical interface to tesseract 4.0 |
+| [TesseractStudio.Net](https://www.opait.com/TessStudio/index.html) |          |         | X           | Proprietary     |  A graphical interface to tesseract 4.0 |
+
 
 ## 2. Online OCR services
 
