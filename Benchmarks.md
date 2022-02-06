@@ -10,6 +10,7 @@ As input image for testing is used image from [issue 236](https://github.com/tes
 | ---              |    ---: |   ---: |     ---: |
 | 305              |    -    |    -   |  2.4713  |
 | 413noavx         | 37.6052 | 5.1589 | 10.1519  |
+| 413avx           | 12.7300 | 2.9538 |  4.0860  |
 | 501              |  6.1981 | 2.1241 |  2.9107  |
 | 501ap            |  6.1369 | 2.1254 |  2.9221  |
 | 501openmp        |  3.4590 | 1.9612 |  2.3554  |
@@ -70,6 +71,21 @@ Build without AVX2/AVX/SSE4 support
 tesseract 4.1.3
  leptonica-1.83.0 (Dec 17 2021, 17:33:37) [MSC v.1929 LIB Release x64]
   libgif 5.2.1 : libjpeg 6b (libjpeg-turbo 2.0.91) : libpng 1.6.37 : libtiff 4.3.0 : zlib 1.2.11 : libwebp 1.2.0 : libopenjp2 2.4.0
+ Found libarchive 3.5.1 zlib/1.2.11 liblzma/5.2.4 bz2lib/1.0.6 libzstd/1.4.9
+```
+
+#### 413avx
+
+Build with AVX2/AVX/SSE4 support
+
+```sh
+tesseract 4.1.3-1-ge9986
+ leptonica-1.83.0 (Jan 26 2022, 19:15:03) [MSC v.1929 LIB Release x64]
+  libgif 5.2.1 : libjpeg 6b (libjpeg-turbo 2.0.91) : libpng 1.6.37 : libtiff 4.3.0 : zlib 1.2.11
+ Found AVX2
+ Found AVX
+ Found FMA
+ Found SSE
  Found libarchive 3.5.1 zlib/1.2.11 liblzma/5.2.4 bz2lib/1.0.6 libzstd/1.4.9
 ```
 
