@@ -76,7 +76,7 @@ CMake build:
 This means less RAM consumption and faster program execution.
   * Try OCR on inverted line only if mean confidence is below 50% ([#3141](https://github.com/tesseract-ocr/tesseract/pull/3141)).
   * SIMD
-    * Add manual dot product support for ARM NEON.
+    * Add manual dot product support for Arm Neon.
     * Many other improvements.
 * **General enhancements**
   * Add two new Leptonica based binarization methods: Adaptive Otsu and Sauvola. For users: Use `tesseract --print-parameters | grep thresholding_` to see the relevant configurable parameters.
