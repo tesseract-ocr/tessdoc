@@ -113,6 +113,9 @@ Platform support depends on used language and experience of user.
 **Ruby**
   * [rtesseract](https://github.com/dannnylo/rtesseract) wrapper gem for Tesseract OCR (requires tesseract executable)
 
+**Rust**
+  * [rusty-tesseract](https://github.com/thomasgruebl/rusty-tesseract) a wrapper class for Tesseract OCR (requires tesseract executable; based on pytesseract)
+
 **Elixir**
   * [tesseract-ocr-elixir](https://github.com/dannnylo/tesseract-ocr-elixir)
 
