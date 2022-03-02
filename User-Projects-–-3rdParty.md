@@ -28,11 +28,8 @@
 | **Tesseract-OCR QT4 gui** [[GitHub](https://github.com/zdenop/tesseract-ocr-qt4gui)] | Linux | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
 | **VietOCR** [[SourceForge](http://vietocr.sourceforge.net/)] | Linux, macOS, Windows | Apache 2.0  | A GUI frontend for Tesseract OCR engine. Supports optical character recognition for Vietnamese and other languages supported by Tesseract |
 | **YAGF** [[Sourceforge](http://sourceforge.net/projects/yagf-ocr/)] | Linux |  GPL v3     | A graphical front-end for cuneiform and tesseract |
-
-
-
-  1. **gscan2pdf** [[SourceForge](http://gscan2pdf.sourceforge.net/)] a GUI to produce PDFs or DjVus from scanned documents
-  1. **Bindery** [[GitHub](https://github.com/Blender3D/Bindery)] A simple GUI for binding post processed scanned pages into digital documents
+| **gscan2pdf** [[SourceForge](http://gscan2pdf.sourceforge.net/)] | Linux | GPL v3 | A Gtk3 application for producing PDFs or DjVu documents from scans |
+| **Bindery** [[website](https://blender3d.github.io/Bindery/)] [[GitHub](https://github.com/Blender3D/Bindery)] | Linux, Windows | Unknown | A PyQt4 application for binding processed images from Scan Tailor into PDFs or DjVu documents |
 
 ## 2. Web Applications
 
@@ -65,8 +62,7 @@
 | **Tesseract-iPhone-Demo** [[GitHub](https://github.com/nolanbrown/Tesseract-iPhone-Demo)] | iOS | Example based on tesseract 2.04.
 | **ScanBizCards** [[GitHub](http://www.scanbizcards.com)] | Android, iOS | Business card scanning |
 | **My Expenses** [[F-Droid](https://f-droid.org/en/packages/org.totschnig.myexpenses/)] [[GitHub](https://github.com/mtotschnig/MyExpenses)] | Android | Tracks income and expenses; uses **Totschnig OCR** for scanning receipts
-
-
+| **Shubham Tyagi OCR** [[F-Droid](https://f-droid.org/packages/io.github.subhamtyagi.ocr/)] [[GitHub](https://github.com/SubhamTyagi/android-ocr)] | Android | based on Tesseract 5 using **Tesseract4Android** |
 
 
 ## 4. Others (Utilities, Tools, Command-Line Interfaces [CLI], etc)
