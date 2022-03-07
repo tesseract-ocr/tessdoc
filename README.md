@@ -6,7 +6,7 @@ For versions `4.x.x`, `3.05.02` and older, see the [documentation for old versio
 - [Tesseract User Manual](#tesseract-user-manual)
   * [Introduction](#introduction)
   * [Releases and Changelog](#releases-and-changelog)
-  * [Tesseract with LSTM](#Tesseract-with-lstm)
+  * [Tesseract with LSTM](#tesseract-with-lstm)
   * [5.x.x](#5xx)
     + [Source Code](#source-code)
     + [Binaries](#binaries)
