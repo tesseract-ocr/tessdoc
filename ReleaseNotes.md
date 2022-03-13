@@ -115,7 +115,7 @@ This means less RAM consumption and faster program execution.
 * **Build system** 
   * Refactor the Autotools build. It now uses non-recursive (auto)make.
   * configure.ac: Update minimum required autoconf version to 2.69.
-  * Raise Minimum required Pango version to 1.38.0.
+  * Raise minimum required Pango version to 1.38.0.
 * **libtesseract API** 
   * This release includes major changes to the public API. Version 5.0.0 is incompatible with 4.x. Developers using libtesseract need to adapt their code to these changes.
   * Reduce the number of public headers. This includes the `genericvector.h` and the `strng.h` headers files.
