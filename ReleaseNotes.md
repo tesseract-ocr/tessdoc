@@ -55,9 +55,9 @@ TBD
 
 * Handle image and line separator regions in ALTO, hOCR and text output formats. 
 * Few other enhancements.
-* Small set of bug fixes and.
+* Small set of bug fixes.
 * Remove unused code.
-* Raise minimim cmake version required to 3.10.
+* Raise minimum required CMake version to 3.10.
 
 # Tesseract release notes Jan 07 2022 - V5.0.1
 
