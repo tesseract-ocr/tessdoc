@@ -129,7 +129,7 @@ This means less RAM consumption and faster program execution.
 
 # Tesseract release notes Nov 15 2021 - V4.1.3
 
-Fix broken autoconf build.
+Fix broken autotools build.
 
 # Tesseract release notes Nov 14 2021 - V4.1.2
 
