@@ -163,7 +163,7 @@ Use --head for the main branch. It may still require one DLL for the OpenMP runt
 #### Build training tools
 
 Today it is possible to build a full set of tess training tools on Windows with Visual Studio.
-The latest versions (Win10, 2019) are preferable.
+You need to have the latest VS compiler (VS2019/2022 or light VS 2019/2022 build tools distro installed.
 
 To do this:
 
