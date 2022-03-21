@@ -343,6 +343,7 @@ information                                                                     
 ### Use pdftotext for preserving layout for text output
 
 tesseract images/toc.png images/toc -l eng --psm 11 pdf
+
 pdftotext -layout  images/toc.pdf -
 
 ```
