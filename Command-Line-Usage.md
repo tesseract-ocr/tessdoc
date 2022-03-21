@@ -311,7 +311,7 @@ information 2
 1.3.5 Qubit copying circuit? 24
 ```
 
-### Use -c preserve_interword_spaces=1 ro preserve spaces
+### Use -c preserve_interword_spaces=1 to preserve spaces
 
     tesseract images/toc.png - --psm 6 -c preserve_interword_spaces=1
 
@@ -338,4 +338,38 @@ information                                                                     
 1.3.3 Measurements in bases other than the computational basis              2
 1.34 Quantum circuits                                                            2
 1.3.5 Qubit copying circuit?                                                  24
+```
+
+### Use pdftotext for preserving layout for text output
+
+tesseract images/toc.png images/toc -l eng --psm 11 pdf
+pdftotext -layout  images/toc.pdf -
+
+```
+                                    Contents
+
+
+
+
+Introduction to the Tenth Anniversary Edition                             page xvii
+Afterword to the Tenth Anniversary Edition                                      xix
+Preface                                                                         xxi
+Acknowledgements                                                              xx
+Nomenclature and notation                                                      xxix
+
+Part I Fundamental concepts
+
+ 1 Introduction and overview
+    1.1 Global perspectives
+          1.11 History of quantum computation and quantum
+                information
+          1.1.2 Future directions                                                12
+    12 Quantum bits                                                              13
+         1.2.1 Multiple qubits                                                   16
+    1.3 Quantum computation                                                      17
+               Single qubit gates
+             2 Multiple qubit gates                                              20
+               Measurements in bases other than the computational basis          2
+             4 Quantum circu                                                     2
+             5 Qubit copying circuit?                                            24
 ```
