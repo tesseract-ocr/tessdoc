@@ -287,24 +287,28 @@ Following examples uses this image which has a Table of Contents.
     tesseract images/toc.png - --psm 6
 
 ```
-TABLE OF
-CONTENTS
+Contents
 
-DATE ENTRY TLE Pace
-15/10/21 Science Safety 35
-MAO Teamwork 6
-2170/21 Science Tools 79
-24/10/21 Friction 012
-26/10/21 pH and Diffusion 1
-30/10/21 Ecosystem Assessment 1-16
-OUW/21 Composting Experiment n
-03/1/21 Lorem Ipsum ®
-05/1/21 Mascenas porttitor congue massa 2
-08/1/21 Vivamus a tellus 2
-10/1/21 Pron pharetra nonummy pede ES)
-12/1/21 Lorem Ipsum u
-1/1/21 Maecenas porttitor congue massa 2%
-15/1/21 Vivamus a tellus. 7
+Introduction to the Tenth Anniversary Edition page xvii
+Afterword to the Tenth Anniversary Edition xix
+Preface xxi
+Acknowledgements xxvii
+Nomenclature and notation xxix
+Part I Fundamental concepts 1
+1 Introduction and overview 1
+1.1 Global perspectives 1
+
+1.11 History of quantum computation and quantum
+information 2
+1.1.2 Future directions 12
+1.2 Quantum bits 13
+1.2.1 Multiple qubits 16
+1.3 Quantum computation 17
+1.3.1 Single qubit gates 17
+1.3.2 Multiple qubit gates 20
+1.3.3 Measurements in bases other than the computational basis 2
+1.34 Quantum circuits 2
+1.3.5 Qubit copying circuit? 24
 ```
 
 ### Use -c preserve_interword_spaces=1 ro preserve spaces
@@ -312,22 +316,26 @@ OUW/21 Composting Experiment n
     tesseract images/toc.png - --psm 6 -c preserve_interword_spaces=1
 
 ```
-TABLE OF
-CONTENTS
+Contents
 
-DATE                                       ENTRY TLE                                      Pace
-15/10/21 Science Safety                                                                  35
-MAO Teamwork                                                                          6
-2170/21 Science Tools                                                                   79
-24/10/21 Friction                                                                           012
-26/10/21 pH and Diffusion                                                                 1
-30/10/21 Ecosystem Assessment                                                     1-16
-OUW/21 Composting Experiment                                            n
-03/1/21 Lorem Ipsum                                                                     ®
-05/1/21 Mascenas porttitor congue massa                               2
-08/1/21 Vivamus a tellus                                                         2
-10/1/21 Pron pharetra nonummy pede                                        ES)
-12/1/21 Lorem Ipsum                                                       u
-1/1/21 Maecenas porttitor congue massa                               2%
-15/1/21 Vivamus a tellus.                                                         7
+Introduction to the Tenth Anniversary Edition                                       page xvii
+Afterword to the Tenth Anniversary Edition                                                 xix
+Preface                                                                                                         xxi
+Acknowledgements                                                                                    xxvii
+Nomenclature and notation                                                                        xxix
+Part I Fundamental concepts                                                                          1
+1 Introduction and overview                                                                              1
+1.1 Global perspectives                                                                                 1
+
+1.11 History of quantum computation and quantum
+information                                                                                 2
+1.1.2 Future directions                                                12
+1.2 Quantum bits                                                          13
+1.2.1 Multiple qubits                                                     16
+1.3 Quantum computation                                                  17
+1.3.1 Single qubit gates                                                17
+1.3.2 Multiple qubit gates                                                20
+1.3.3 Measurements in bases other than the computational basis              2
+1.34 Quantum circuits                                                            2
+1.3.5 Qubit copying circuit?                                                  24
 ```
