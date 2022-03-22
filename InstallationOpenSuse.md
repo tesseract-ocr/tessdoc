@@ -9,7 +9,7 @@
 
 For example, to install Tesseract with German language traineddata:
 
-** For CentOS_8_Stream, run the following as root:**
+**For CentOS_8_Stream, run the following as root:**
 
 ```
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov:/tesseract5/CentOS_8_Stream/
