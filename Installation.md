@@ -6,15 +6,23 @@ Tesseract doesn't have a built-in GUI, but there are several available from the 
 
 # Installation
 
-There are two parts to install, the engine itself, and the traineddata for a language.
-
-## Linux
+There are two parts to install, the engine itself, and the traineddata for the languages.
 
 Tesseract is available directly from many Linux distributions. The package is generally called **'tesseract'** or **'tesseract-ocr'** - search your distribution's repositories to find it.
 
-Packages for over 130 languages and over 35 scripts are also available directly from the Linux distributions. The language packages are called **'tesseract-ocr-langcode'** and **'tesseract-ocr-script-scriptcode'**, where langcode is three letter language code and scriptcode is four letter script code. 
+Packages for over 130 languages and over 35 scripts are also available directly from the Linux distributions. The language traineddata  packages are called **'tesseract-ocr-langcode'** and **'tesseract-ocr-script-scriptcode'**, where `langcode` is three letter language code and `scriptcode` is four letter script code. 
 
 **Examples:** tesseract-ocr-eng (**English**), tesseract-ocr-ara (**Arabic**), tesseract-ocr-chi-sim (**Simplified Chinese**), tesseract-ocr-script-latn (**Latin Script**),  tesseract-ocr-script-deva (**Devanagari script**), etc.
+
+** FOR EXPERTS ONLY.  **
+
+If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. 
+
+[Various types of training data](Data-Files) can be found on [GitHub](https://github.com/tesseract-ocr/.md). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribution. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. 
+
+Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
+
+If Tesseract is not available for your distribution, or you want to use a newer version than they offer, you can [compile your own](Compiling).
 
 ### Ubuntu
 
@@ -35,17 +43,29 @@ If you are using a different release of ubuntu, then replace bionic with the res
 deb http://archive.ubuntu.com/ubuntu bionic universe
 ```
 
-### Debian
+### Debian packages
 
-https://notesalexp.org/tesseract-ocr/
+* [Tesseract 4](https://notesalexp.org/tesseract-ocr/packages/)
+* [Tesseract 5](https://notesalexp.org/tesseract-ocr/packages5/)
+* [Tesseract 5 (devel)](https://notesalexp.org/tesseract-ocr/packages-dev/)
+
+### Raspbian packages
+
+* [Tesseract 4](https://notesalexp.org/tesseract-ocr/packages/)
+* [Tesseract 5](https://notesalexp.org/tesseract-ocr/packages5/)
+* [Tesseract 5 (devel)](https://notesalexp.org/tesseract-ocr/packages-dev/)
+
+### Ubuntu packages
+
+* [Tesseract 4](https://notesalexp.org/tesseract-ocr/packages/)
+* [Tesseract 5](https://notesalexp.org/tesseract-ocr/packages5/)
+* [Tesseract 5 (devel)](https://notesalexp.org/tesseract-ocr/packages-dev/)
 
 ### Ubuntu ppa
 
-https://launchpad.net/~alex-p
-
-### Raspbian
-
-https://notesalexp.org/tesseract-ocr/
+* [Tesseract 4](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr)
+* [Tesseract 5](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr5)
+* [Tesseract 5 (devel-daily)](https://launchpad.net/~alex-p/+archive/ubuntu/tesseract-ocr-daily)
 
 ## RHEL/CentOS/Scientific Linux, Fedora, openSUSE packages
 
@@ -90,16 +110,6 @@ For distributions that are supported by snapd you may also run the following com
 
 The traineddata is currently not shipped with the snap package and must be placed manually to `~/snap/tesseract/current`.
 
-### FOR EXPERTS ONLY. 
-
-If you are experimenting with OCR Engine modes, you will need to manually install language training data beyond what is available in your Linux distribution. 
-
-[Various types of training data](Data-Files) can be found on [GitHub](https://github.com/tesseract-ocr/.md). Unpack and copy the .traineddata file into a 'tessdata' directory. The exact directory will depend both on the type of training data, and your Linux distribution. Possibilities are `/usr/share/tesseract-ocr/tessdata` or `/usr/share/tessdata` or `/usr/share/tesseract-ocr/4.00/tessdata`. 
-
-Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
-
-If Tesseract is not available for your distribution, or you want to use a newer version than they offer, you can [compile your own](Compiling).
-
 ## macOS
 
 You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh).
@@ -130,7 +140,7 @@ e.g. `/usr/local/Cellar/tesseract/3.05.02/share/tessdata/`.
 
 ## Windows
 
-Installer for Windows for Tesseract 3.05, Tesseract 4 and development version 5.00 Alpha are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
+Installer for Windows for Tesseract 3.05, Tesseract 4 and Tesseract 5 are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
 
 An installer for the **OLD version 3.02** is available for Windows from our [download](Downloads.md) page.
 This includes the English training data.
