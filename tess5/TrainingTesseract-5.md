@@ -14,9 +14,9 @@ Please use python scripts from [tesstrain repo](https://github.com/tesseract-ocr
 
    * [Introduction](#introduction)
    * [Before You Start](#before-you-start)
+   * [Hardware-Software Requirements](#hardware-software-requirements)
    * [Additional Libraries Required](#additional-libraries-required)
    * [Building the Training Tools](#building-the-training-tools)
-   * [Hardware-Software Requirements](#hardware-software-requirements)
    * [Training Text Requirements](#training-text-requirements)
    * [Overview of Training Process](#overview-of-training-process)
    * [Understanding the Various Files Used During Training](#understanding-the-various-files-used-during-training)
@@ -81,8 +81,25 @@ may help in understanding the difference between the training options. Please
 read the [Implementation introduction](../tess4/NeuralNetsInTesseract4.00.md) before delving
 too deeply into the training process.
 
-**Important note**: Before you invest time and effort on training Tesseract, it
-is highly recommended to read the [ImproveQuality](ImproveQuality) page.
+**Important note**: 
+It's important to note that, unless you're using a very unusual font or
+a new language, retraining Tesseract is unlikely to help.
+Before you invest time and effort on training Tesseract, it
+is highly recommended to read the [ImproveQuality](../ImproveQuality.md) page.
+Many times recognition can be improved just by preprocessing the input image.
+
+## Hardware-Software Requirements
+
+At time of writing, training only works on Linux. (macOS almost works; it requires
+minor hacks to the shell scripts to account for the older version of `bash` it
+provides and differences in `mktemp`.) Windows is unknown, but would need msys or Cygwin.
+
+As for running Tesseract, it is useful, but not essential to have a multi-core (4 is good)
+machine, with OpenMP and Intel Intrinsics support for SSE/AVX extensions.
+Basically it will still run on anything with enough memory, but the higher-end
+your processor is, the faster it will go. No GPU is needed. (No support.) Memory
+use can be controlled via the --max_image_MB command-line option, but you are
+likely to need at least 1GB of memory over and above what is taken by your OS.
 
 ## Additional Libraries Required
 
@@ -132,19 +149,6 @@ make ScrollView.jar
 export SCROLLVIEW_PATH=$PWD/java
 ```
 
-## Hardware-Software Requirements
-
-At time of writing, training only works on Linux. (macOS almost works; it requires
-minor hacks to the shell scripts to account for the older version of `bash` it
-provides and differences in `mktemp`.) Windows is unknown, but would need msys or Cygwin.
-
-As for running Tesseract, it is useful, but not essential to have a multi-core (4 is good)
-machine, with OpenMP and Intel Intrinsics support for SSE/AVX extensions.
-Basically it will still run on anything with enough memory, but the higher-end
-your processor is, the faster it will go. No GPU is needed. (No support.) Memory
-use can be controlled via the --max_image_MB command-line option, but you are
-likely to need at least 1GB of memory over and above what is taken by your OS.
-
 ## Training Text Requirements
 
 For Latin-based languages, the existing model data provided has been trained on
@@ -170,7 +174,7 @@ The main steps in training are:
 1.  Make unicharset file. (Can be partially specified, i.e. created manually).
 1.  [Make a starter/proto traineddata from the unicharset and optional dictionary
      data.](#creating-starter-traineddata)
-1.  Run tesseract to process image + box file to make training data set.
+1.  Run tesseract to process image + box file to make training data set (lstmf files).
 1.  Run training on training data set.
 1.  Combine data files.
 
@@ -272,7 +276,7 @@ Most of the flags work with defaults, and several are only required for
 particular operations listed below, but first some detailed comments on the more
 complex flags:
 
-## Unicharset Compression-recoding
+### Unicharset Compression-recoding
 
 LSTMs are great at learning sequences, but slow down *a lot* when the number of
 states is too large. There are empirical results that suggest it is better to
@@ -292,7 +296,7 @@ encoding in the unicharset. To make full use of this improvement, the
 `--pass_through_recoder` flag should be set for `combine_lang_model` for these
 scripts.
 
-## Randomized Training Data and sequential_training
+### Randomized Training Data and sequential_training
 
 For Stochastic Gradient Descent to work properly, the training data is supposed
 to be randomly shuffled across all the sample files, so the trainer can read its
@@ -309,14 +313,14 @@ style (a handwritten manuscript book for instance) then you can use the
 since it will load data from only two files at a time, and process them in
 sequence. (The second file is read-ahead so it is ready when needed.)
 
-## Model output
+### Model output
 
 The trainer saves checkpoints periodically using `--model_output` as a basename.
 It is therefore possible to stop training at any point, and restart it, using
 the same command line, and it will continue. To force a restart, use a different
 `--model_output` or delete all the files.
 
-## Net Mode and Optimization
+### Net Mode and Optimization
 
 The `128` flag turns on Adam optimization, which seems to work a lot better than
 plain momentum.
@@ -329,7 +333,7 @@ learning.
 The default value of `net_mode` of `192` enables both Adam and layer-specific
 learning rates.
 
-## Perfect Sample Delay
+### Perfect Sample Delay
 
 Training on "easy" samples isn't necessarily a good idea, as it is a waste of
 time, but the network shouldn't be allowed to forget how to handle them, so it
@@ -342,7 +346,7 @@ value of zero uses all samples. In practice the value doesn't seem to have a
 huge effect, and if training is allowed to run long enough, zero produces the
 best results.
 
-## Debug Interval and Visual Debugging
+### Debug Interval and Visual Debugging
 
 With zero (default) `--debug_interval`, the trainer outputs a progress report
 every 100 iterations, similar to the following example.
@@ -426,7 +430,7 @@ strength of output against image x-coordinate. Instead of a heatmap, like the
 `Output` window, a different colored line is drawn for each character class and
 the y-axis is strength of output.
 
-## Iterations and Checkpoints
+### Iterations and Checkpoints
 
 During the training we see this kind of information :
 
@@ -469,7 +473,7 @@ Either kind of these checkpoint files can be converted to a standard (best/float
 slightly less accurate (fast/integer) traineddata file by using the `stop_training` and `convert_to_int`
 flags with lstmtraining.
 
-## Error Messages From Training
+### Error Messages From Training
 
 There are various error messages that can occur when running the training, some
 of which can be important, and others not so much:
