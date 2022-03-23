@@ -1,4 +1,7 @@
-# How to use the tools provided to train Tesseract 4.00
+# How to train Tesseract 4.00
+
+**Training with `tesstrain.sh` is now unsupported/abandoned. 
+Please use python scripts from https://github.com/tesseract-ocr/tesstrain for training. **
 
 **Have questions about the training process?** If you had some problems during
 the training process and you need help, use
@@ -6,6 +9,8 @@ the training process and you need help, use
 mailing-list to ask your question(s). **PLEASE DO NOT** report your problems and
 ask questions about training as
 [issues](https://github.com/tesseract-ocr/tesseract/issues)!
+
+# Contents of guide and tutorial by Ray Smith
 
    * [Introduction](#introduction)
    * [Before You Start](#before-you-start)
@@ -40,7 +45,9 @@ ask questions about training as
 
 # Initial Remark
 
-Training with `tesstrain.sh` in unsupported/abandoned. Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
+The following guide and tutorials is deprecated for Tesseract 5.
+Training with `tesstrain.sh` is unsupported/abandoned.
+Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
 # Introduction
 
