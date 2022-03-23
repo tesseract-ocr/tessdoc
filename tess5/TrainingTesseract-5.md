@@ -1,4 +1,4 @@
-# How to train LSTM Tesseract
+# How to train LSTM/neural net Tesseract
 
 **Have questions about the training process?** If you had some problems during
 the training process and you need help, use
@@ -7,10 +7,10 @@ mailing-list to ask your question(s). **PLEASE DO NOT** report your problems and
 ask questions about training as
 [issues](https://github.com/tesseract-ocr/tesseract/issues)!
 
-# Initial Remark
+**Training with `tesstrain.sh` bash scripts is unsupported/abandoned for Tesseract 5.
+Please use python scripts from [tesstrain repo](https://github.com/tesseract-ocr/tesstrain) for training.**
 
-Training with `tesstrain.sh` in unsupported/abandoned for Tesseract 5.
-Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
+# Contents
 
    * [Introduction](#introduction)
    * [Before You Start](#before-you-start)
@@ -32,7 +32,7 @@ Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
    * [Combining the Output Files](#combining-the-output-files)
    * [The Hallucination Effect](#the-hallucination-effect)
 
-# Introduction
+## Introduction
 
 Tesseract 4.00 introduced a new neural network-based recognition engine that
 delivers significantly higher accuracy (on document images) than the previous
@@ -74,7 +74,7 @@ The old recognition engine is still present, and can also be trained, but is
 deprecated, and, unless good reasons materialize to keep it, may be deleted
 in a future release.
 
-# Before You Start
+## Before You Start
 
 You don't need any background in neural networks to train Tesseract, but it
 may help in understanding the difference between the training options. Please
@@ -84,7 +84,7 @@ too deeply into the training process.
 **Important note**: Before you invest time and effort on training Tesseract, it
 is highly recommended to read the [ImproveQuality](ImproveQuality) page.
 
-# Additional Libraries Required
+## Additional Libraries Required
 
 Beginning with 3.03, additional libraries are required to build the training
 tools.
@@ -93,7 +93,7 @@ tools.
 sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev
 ```
 
-# Building the Training Tools
+## Building the Training Tools
 
 Beginning with 3.03, if you're compiling Tesseract from source you need to make
 and install the training tools with separate make commands.
@@ -132,7 +132,7 @@ make ScrollView.jar
 export SCROLLVIEW_PATH=$PWD/java
 ```
 
-# Hardware-Software Requirements
+## Hardware-Software Requirements
 
 At time of writing, training only works on Linux. (macOS almost works; it requires
 minor hacks to the shell scripts to account for the older version of `bash` it
@@ -145,7 +145,7 @@ your processor is, the faster it will go. No GPU is needed. (No support.) Memory
 use can be controlled via the --max_image_MB command-line option, but you are
 likely to need at least 1GB of memory over and above what is taken by your OS.
 
-# Training Text Requirements
+## Training Text Requirements
 
 For Latin-based languages, the existing model data provided has been trained on
 about [400000 textlines spanning about 4500
@@ -159,7 +159,7 @@ similar to what they will be running on. If the target domain is severely
 limited, then all the dire warnings about needing a lot of training data may not
 apply, but the network specification may need to be changed.
 
-# Overview of Training Process
+## Overview of Training Process
 
 The main steps in training are:
 
@@ -168,7 +168,7 @@ The main steps in training are:
 1.  Render text to image + box file. (Or create hand-made box files for existing
     image data.)
 1.  Make unicharset file. (Can be partially specified, i.e. created manually).
-1.  [Make a starter traineddata from the unicharset and optional dictionary
+1.  [Make a starter/proto traineddata from the unicharset and optional dictionary
      data.](#creating-starter-traineddata)
 1.  Run tesseract to process image + box file to make training data set.
 1.  Run training on training data set.
@@ -181,7 +181,7 @@ The key differences from training base Tesseract (Legacy Tesseract 3.04) are:
 *   The .tr files are replaced by .lstmf data files.
 *   Fonts *can and should be mixed freely* instead of being separate.
 *   The clustering steps (mftraining, cntraining, shapeclustering) are replaced
-    with a single slow lstmtraining step.
+    with a single slow `lstmtraining` step.
 
 The training cannot be quite as automated as the training for 3.04 for several
 reasons:
@@ -191,16 +191,15 @@ reasons:
     finished.
 *   There are multiple options for how to train the network (see above).
 *   The language models and unicharset are allowed to be different from those
-    used by base Tesseract, but don't have to be.
-*   It isn't necessary to have a base Tesseract of the same language as the
+    used by base/legacy Tesseract, but don't have to be.
+*   It isn't necessary to have a base/legacy Tesseract of the same language as the
     neural net Tesseract.
 
-# Understanding the Various Files Used During Training
+## Understanding the Various Files Used During Training
 
-As with base Tesseract, the completed LSTM model and everything else it needs is
-collected in the `traineddata` file. Unlike base Tesseract, a `starter
-traineddata` file is given during training, and has to be setup in advance. It
-can contain:
+As with base/legacy Tesseract, the completed LSTM model and everything else it needs is
+collected in the `traineddata` file. Unlike base/legacy Tesseract, a `starter/proto traineddata`
+file is given during training, and has to be setup in advance. It can contain:
 
 *   Config file providing control parameters.
 *   **Unicharset** defining the character set.
@@ -211,8 +210,9 @@ can contain:
 *   Number dawg, with patterns of numbers that are allowed.
 
 Bold elements **must** be provided. Others are optional, but if any of the dawgs
-are provided, the punctuation dawg must also be provided. A new tool:
-`combine_lang_model` is provided to make a `starter traineddata` from a
+are provided, the **punctuation dawg** must also be provided. 
+
+A new tool `combine_lang_model` is provided to make a `starter traineddata` from a
 `unicharset` and optional wordlists and is required for training.
 
 During training, the trainer writes checkpoint files, which is a standard
@@ -240,7 +240,7 @@ The training data is provided via `.lstmf` files, which are serialized
 transcription, and can be generated from tif/box file pairs using Tesseract in a
 similar manner to the way `.tr` files were created for the old engine.
 
-# LSTMTraining Command Line
+## LSTMTraining Command Line
 
 The lstmtraining program is a multi-purpose tool for training neural networks.
 The following table describes its command-line options:
@@ -279,7 +279,9 @@ states is too large. There are empirical results that suggest it is better to
 ask an LSTM to learn a long sequence than a short sequence of many classes, so
 for the complex scripts, (Han, Hangul, and the Indic scripts) it is better to
 recode each symbol as a short sequence of codes from a small number of classes
-than have a large set of classes. The `combine_lang_model` command has this
+than have a large set of classes. 
+
+The `combine_lang_model` command has this
 feature on by default. It encodes each Han character as a variable-length
 sequence of 1-5 codes, Hangul using the Jamo encoding as a sequence of 3 codes,
 and other scripts as a sequence of their unicode components. For the scripts
@@ -333,7 +335,9 @@ Training on "easy" samples isn't necessarily a good idea, as it is a waste of
 time, but the network shouldn't be allowed to forget how to handle them, so it
 is possible to discard some easy samples if they are coming up too often. The
 `--perfect_sample_delay` argument discards perfect samples if there haven't been
-that many imperfect ones seen since the last perfect sample. The current default
+that many imperfect ones seen since the last perfect sample. 
+
+The current default
 value of zero uses all samples. In practice the value doesn't seem to have a
 huge effect, and if training is allowed to run long enough, zero produces the
 best results.
@@ -387,7 +391,9 @@ Mean rms=0.941%, delta=12.329%, train=56.116%(99.965%), skip ratio=0.6%
 ```
 
 With `--debug_interval > 0`, the trainer displays several windows of debug
-information on the layers of the network. In the special case of
+information on the layers of the network. 
+
+In the special case of
 `--debug_interval 1` it waits for a click in the `LSTMForward` window before
 continuing to the next iteration, but for all others it just continues and draws
 information at the frequency requested.
@@ -510,7 +516,7 @@ in training. It is a consequence of unicharset compression and CTC training.
 (See Unicharset Compression and train_mode above). This should be harmless and
 can be safely ignored. Its frequency should fall as training progresses.
 
-# Combining the Output Files
+## Combining the Output Files
 
 The lstmtraining program outputs two kinds of checkpoint files:
 
@@ -537,7 +543,7 @@ If added to an existing Tesseract traineddata file, the `lstm-unicharset`
 doesn't have to match the Tesseract `unicharset`, but the same unicharset must
 be used to train the LSTM and build the `lstm-*-dawgs` files.
 
-# The Hallucination Effect
+## The Hallucination Effect
 
 If you notice that your model is misbehaving, for example by:
 * Adding a `Capital` letter instead of a `Small` letter at the beginning of certain words.
