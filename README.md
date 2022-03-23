@@ -149,7 +149,7 @@ Please use scripts from https://github.com/tesseract-ocr/tesstrain for training.
 
 - [Train Tesseract LSTM with make from Single Line Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
     * [Examples of Training using tesstrain Makefile](https://github.com/tesseract-ocr/tesstrain/wiki)
-- [Training LSTM Tesseract - based on guide by Ray Smith](tess5/TrainingTesseract-5.md)
+- [Training LSTM Tesseract 5](tess5/TrainingTesseract-5.md) - based on [detailed Tesseract 4 tutorial and guide by Ray Smith](tess4/TrainingTesseract-4.00.md)
 
 ### Testing
 - [TestingTesseract](TestingTesseract.md)
