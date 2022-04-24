@@ -1,6 +1,6 @@
 # Compilation guide for various platforms
 
-**Note:** This documentation expects you to be familiar with compiling software on your operation system.
+**Note:** This documentation expects you to be familiar with compiling software on your operating system.
 
 *Use the same tools for building tesseract as you used for [building leptonica](https://github.com/DanBloomberg/leptonica/issues/410).*
 
