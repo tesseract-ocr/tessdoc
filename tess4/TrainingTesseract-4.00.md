@@ -100,7 +100,7 @@ too deeply into the training process, and the same note as for training
 Tesseract 3.04 applies:
 
 **Important note**: Before you invest time and effort on training Tesseract, it
-is highly recommended to read the [ImproveQuality](ImproveQuality) page.
+is highly recommended to read the [ImproveQuality](https://github.com/tesseract-ocr/tessdoc/blob/main/ImproveQuality.md) page.
 
 # Additional Libraries Required
 
