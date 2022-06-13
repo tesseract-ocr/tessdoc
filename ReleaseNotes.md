@@ -60,7 +60,7 @@ Not yet released.
 * Fix regression with UZN files.
 * Replace direct access to Leptonica internal data structures by function calls (this is necessary for compatibility with rhe next Leptonica release).
 * Replace std::regex by std::string functions (issue [#3830](https://github.com/tesseract-ocr/tesseract/issues/3830)).
-* Set /Os for some 32 bit MS compilers(issue [#3739](https://github.com/tesseract-ocr/tesseract/issues/3739)).
+* Set /Os for some 32 bit MS compilers (issue [#3769](https://github.com/tesseract-ocr/tesseract/issues/3769)).
 * Use compiled-in TESSDATA_PREFIX also on Windows.
 
 # Tesseract release notes Mar 01 2022 - V5.1.0
