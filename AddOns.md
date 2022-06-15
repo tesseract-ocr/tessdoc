@@ -6,15 +6,20 @@ For GUI interface to Tesseract and other 3rd Party projects, please see [User Pr
 
 Platform support depends on used language and experience of user.
 
-### For Tesseract 3.0x-5.x.y
+### For Tesseract version 4 and up
 
+[jTessBoxEditor](http://vietocr.sourceforge.net/training.html)
+
+#### Box file editors
+
+### For Tesseract 3.0x
 
 #### Box file editors
 
 | **Name** | **Last update** | **Language** | Multipage support |
 |:---------|:----------------|:-------------|:------------------|
-| [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | 2018      | Java         | yes               |
-| [QT Box Editor](http://zdenop.github.com/qt-box-editor/) | 2018       | C++, Qt4/Qt5 | yes               |
+| [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | 2020      | Java         | yes               |
+| [QT Box Editor](http://zdenop.github.com/qt-box-editor/) | 2019       | C++, Qt4/Qt5 | yes               |
 | [tesseract-box-editor](https://github.com/scotts48/tesseract-box-editor) | 2013        | .NET 4       | yes               |
 | [Tesseract-OCR boxfile AJAX editor](http://pp19dd.com/tesseract-ocr-chopper/) | 2012      | online tool  |
 | [cowboxer](http://code.google.com/p/cowboxer/) | 2012        | C++, Qt4     | no                |
