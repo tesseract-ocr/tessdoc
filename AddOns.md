@@ -8,9 +8,9 @@ Platform support depends on used language and experience of user.
 
 ### For Tesseract version 4 and up
 
-[jTessBoxEditor](http://vietocr.sourceforge.net/training.html)
-
 #### Box file editors
+
+[jTessBoxEditor](http://vietocr.sourceforge.net/training.html)
 
 ### For Tesseract 3.0x
 
