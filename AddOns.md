@@ -6,7 +6,7 @@ For GUI interface to Tesseract and other 3rd Party projects, please see [User Pr
 
 Platform support depends on used language and experience of user.
 
-### For Tesseract-OCR 3.0x
+### For Tesseract 3.0x-5.x.y
 
 
 #### Box file editors
