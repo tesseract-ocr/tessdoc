@@ -56,6 +56,7 @@ TBD
 Not yet released.
 
 * Add initial support for Intel AVX512F.
+* C API: Add a function to init tesseract with traineddata from memory.
 * Fix for very large PDF files on 32 bit hosts.
 * Fix regression with UZN files.
 * Replace direct access to Leptonica internal data structures by function calls (this is necessary for compatibility with rhe next Leptonica release).
