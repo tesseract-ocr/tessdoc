@@ -63,6 +63,7 @@ Not yet released.
 * Replace std::regex by std::string functions (issue [#3830](https://github.com/tesseract-ocr/tesseract/issues/3830)).
 * Set /Os for some 32 bit MS compilers (issue [#3769](https://github.com/tesseract-ocr/tesseract/issues/3769)).
 * Use compiled-in TESSDATA_PREFIX also on Windows.
+* C API: Fix calling delete[] for memory allocated by malloc.
 
 # Tesseract release notes Mar 01 2022 - V5.1.0
 
