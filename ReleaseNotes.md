@@ -51,7 +51,7 @@ Table of Contents
 
 TBD 
 
-# Tesseract release notes ??? ?? 2022 - V5.1.1
+# Tesseract release notes ??? ?? 2022 - V5.1.2
 
 Not yet released.
 
