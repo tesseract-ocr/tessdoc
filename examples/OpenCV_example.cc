@@ -1,3 +1,12 @@
+/*
+  Windows compile example:
+  
+  SET TESS_INSTALATION=C:/win64
+  SET OPENCV_INSTALATION=C:/opencv/build
+  cl OpenCV_example.cc -I %TESS_INSTALATION%/include -I %OPENCV_INSTALATION%/include /link /LIBPATH:%TESS_INSTALATION%/lib /LIBPATH:%OPENCV_INSTALATION%/x64/vc14/lib tesseract51.lib leptonica-1.83.0.lib opencv_world460.lib /machine:x64
+  
+*/
+
 #include <leptonica/allheaders.h>
 #include <opencv2/opencv.hpp>
 #include <string>
