@@ -5,7 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
-* [Jul 06 2022 - V5.1.0](ReleaseNotes.md#tesseract-release-notes-jul-06-2022---v520)
+* [Jul 06 2022 - V5.2.0](ReleaseNotes.md#tesseract-release-notes-jul-06-2022---v520)
 * [Mar 01 2022 - V5.1.0](ReleaseNotes.md#tesseract-release-notes-mar-01-2022---v510)
 * [Jan 07 2022 - V5.0.1](ReleaseNotes.md#tesseract-release-notes-jan-07-2022---v501)
 * [Nov 30 2021 - V5.0.0](ReleaseNotes.md#tesseract-release-notes-nov-30-2021---v500)
