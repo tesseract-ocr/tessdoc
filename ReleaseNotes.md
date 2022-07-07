@@ -47,9 +47,7 @@ Table of Contents
 * [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.0.0&v2=4.1.0)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
-# Tesseract release notes ??? ?? 2022 - V5.2.0
-
-Not yet released.
+# Tesseract release notes Jul 06 2022 - V5.2.0
 
 * Add initial support for Intel AVX512F.
 * C API: Add a function to init tesseract with traineddata from memory.
@@ -61,6 +59,8 @@ Not yet released.
 * Set `/Os` for some 32 bit MS compilers (issue [#3769](https://github.com/tesseract-ocr/tesseract/issues/3769)).
 * Use compiled-in `TESSDATA_PREFIX` also on Windows.
 * C API: Fix calling `delete[]` for memory allocated by `malloc`.
+* Improve CI builds definitions.
+* Improve Autotools and CMake builds definitions.
 
 # Tesseract release notes Mar 01 2022 - V5.1.0
 
