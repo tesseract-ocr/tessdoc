@@ -50,7 +50,7 @@ Table of Contents
 
 # Tesseract release notes Jul 06 2022 - V5.2.0
 
-* Add initial support for Intel AVX512F.
+* Add initial support for Intel AVX512F. This improves the performance for recognition with the 'best' models and for training.
 * C API: Add a function to init tesseract with traineddata from memory.
 * Add a new parameter `invert_threshold`. The default value is `0.7`. In previous 5.x versions, the inversion threshold was `0.5`, without a way to change this value by the user. The `tessedit_do_invert` paramerer is deprecated and will be removed in version 6.0. To completely disable textlines inversion, you can set `invert_threshold` value to `0.0`.
 * Fix for very large PDF files on 32 bit hosts.
