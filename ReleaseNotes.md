@@ -206,7 +206,7 @@ Changes in the Autotools build:
     * Tesseract now uses [semantic versioning](https://semver.org/).
     * Added an option to compile Tesseract without the code of the legacy OCR engine.
   * **Updated requirements**
-    * For building Tesseract from source code, a compiler with good C++ 11 support is required. See [here](https://github.com/tesseract-ocr/tesseract#installing-tesseract) for a list of officially supported compilers.
+    * For building Tesseract from source code, a compiler with good C++11 support is required.
     * Tesseract now requires Leptonica 1.74.0 or a higher version.
     * Update minimum required autoconf version to 2.63.
     * Training tools dependencies - Update minimum required versions: ICU 52.1, Pango 1.22.0.
