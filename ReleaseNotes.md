@@ -138,6 +138,8 @@ This means less RAM consumption and faster program execution.
   * Rename `platform.h` to `export.h`.
   * Move `src/api/tesseractmain.cpp` to `src/tesseract.cpp`.
   * `src/training` directory: Separate training tools from library.
+* **Updated requirements**
+  * For building Tesseract from source code, a compiler with good C++17 support is required.
 
 # Tesseract release notes Nov 15 2021 - V4.1.3
 
