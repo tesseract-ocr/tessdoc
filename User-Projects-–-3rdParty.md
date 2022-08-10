@@ -28,7 +28,7 @@
 | [AmhOCR](https://github.com/KumnegerH/AmhOCR) |           |         | X           |  GPLv3     | Tesseract Powered Windows Desktop OCR Application With Multiple Pre/Post Processing GUI |
 | [TesseractStudio.Net Github](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | (Exe, SourceCode Not Available,Site Urls are Dead) A graphical interface to tesseract 4.0 |
 | [TesseractStudio.Net](https://www.opait.com/TessStudio/index.html) |          |         | X           | Proprietary     |  A graphical interface to tesseract 4.0 |
-
+| [ImageTrans](https://www.basiccat.org/imagetrans) | X        | X       | X           | Proprietary     |  An image translation tool which can use Tesseract to OCR a whole page, a selected region of an image or a screenshot |
 
 ## 2. Online OCR services
 
