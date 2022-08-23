@@ -114,7 +114,7 @@ with Tesseract `5.x.x`. These are available from:
 - [Command Line Usage](Command-Line-Usage.md)
 - [Viewer Debugging](ViewerDebugging.md)
 - [Common Errors and Resolutions](Common-Errors-and-Resolutions.md)
-- [Frequently Asked Qustions](FAQ.md)
+- [Frequently Asked Questions](FAQ.md)
 
 ### API Examples
 

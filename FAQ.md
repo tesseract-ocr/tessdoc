@@ -42,7 +42,7 @@ See [Tesseract Wiki Home](Home.md) page for details.
 
 ### Which language models are available for Tesseract?
 
-See Tesseract man page for the list of [languages](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#languages) and [scripts](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#scripts) supported by Tesseract4.0.0.
+See Tesseract man page for the list of [languages](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#languages) and [scripts](https://github.com/tesseract-ocr/tesseract/blob/main/doc/tesseract.1.asc#scripts) supported by Tesseract 4.0.0.
 
 See the [Tesseract Wiki Data Files](Data-Files.md#updated-data-files-for-version-400-september-15-2017) page for information regarding the three different types of language models available for Tesseract 4.0.0.
 
@@ -50,7 +50,7 @@ User contributed language models are linked from [Data Files Contributions](Data
 
 ### Where are the language models (traineddata files) for Tesseract installed?
 
-The files should be installed in /usr/share/tesseract-ocr/4.00/tessdata (on Ubuntu).
+The files should be installed in `/usr/share/tesseract-ocr/4.00/tessdata` (on Ubuntu).
 
 If you get an error message saying eng.traineddata not found, try setting `TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata` and all will be good.
 
@@ -60,16 +60,15 @@ If you get an error message saying eng.traineddata not found, try setting `TESSD
 -   pdf
 -   hocr
 -   tsv
-
 -   pdf with text layer only
 
-Tesseract’s standard output is a plain txt file (utf-8 encoded, with *' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)) and 'FF* as a form feed character after each page.
+Tesseract’s standard output is a plain txt file (UTF-8 encoded, with *' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)) and 'FF* as a form feed character after each page.
 
-With the configfile option set to *pdf*, tesseract will produce searchable PDF pages containing images with a hidden, searchable text layer.
+With the configfile option set to `pdf`, tesseract will produce searchable PDF pages containing images with a hidden, searchable text layer.
 
-With the configfile option set to *hocr*, tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than utf-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
+With the configfile option set to `hocr`, tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than UTF-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
 
-With the configfile option set to *tsv*, tesseract will produce [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) file.
+With the configfile option set to `tsv`, tesseract will produce [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) file.
 
 `tesseract -c textonly_pdf=1` will produce a text-only PDF which can be merged with an images-only PDF. See [issue 660](https://github.com/tesseract-ocr/tesseract/issues/660#issuecomment-385669193) for related discussion and utility for merging the PDFs.
 
@@ -107,9 +106,9 @@ Save it, and then give its name as input file to Tesseract.
 
 ### How to OCR single page of a multi-page tiff?
 
-Use the `tessedit_page_number` config variable as part of command eg. `tesseract myscan.png out -c tessedit_page_number=0`
+Use the `tessedit_page_number` config variable as part of the command (e.g. `tesseract myscan.png out -c tessedit_page_number=0`).
 
-### How to OCR streaming images to pdf using Tesseract?
+### How to OCR streaming images to PDF using Tesseract?
 
 Let’s say you have an amazing but slow multipage scanning device. It would be nice to OCR during scanning. In this example, the scanning program is sending image filenames to Tesseract as they are produced. Tesseract streams a searchable PDF to stdout.
 
@@ -119,17 +118,17 @@ Let’s say you have an amazing but slow multipage scanning device. It would be 
 
 To restore the old behaviour of writing to tesseract.log instead of writing to the console window, you need a text file that contains this:
 
-debug\_file tesseract.log
+    debug_file tesseract.log
 
-call the file *logfile* and put it in tessdata/configs/ Then add logfile to the end of your command line.
+Call the file `logfile` and put it in `tessdata/configs/`, then add `logfile` to the end of your command line.
 
 ### How can I suppress tesseract info line?
 
-See [issue 579](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On linux you can redirect stderr and stdout output to /dev/null. E.g.:
+See [issue 579](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On Linux you can redirect stderr and stdout output to `/dev/null`. E.g.:
 
     tesseract phototest.tif phototest 1>/dev/null 2>&1
 
-With tesseract 3.02 you can use config "quiet". E.g.:
+With tesseract 3.02 you can use the config `quiet`. E.g.:
 
     tesseract phototest.tif phototest quiet
 
@@ -143,7 +142,7 @@ See [Tesseract Wiki API examples](APIExample.md) page for sample programs for us
 
 Try to turn off the adaptive classifier by setting the config variable `classify_enable_learning` to `0`, or to clear the adaptive data with the method `ClearAdaptiveClassifier()`.
 
-See also the discussion on the [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ)
+See also the discussion on the [tesseract forum](https://groups.google.com/d/topic/tesseract-ocr/ByGJhocI9qQ).
 
 ### How do I improve OCR results?
 
@@ -169,13 +168,13 @@ Periodically stable versions go to the downloads page. Between releases, and in 
 
 ### How do I compare different versions of Tesseract
 
-If you want to have several versions of tesseract (e.g. you want to compare OCR result) I would suggest you to compile them from source (e.g. in /usr/src) and not install them. If you want to test particular version you can run it this way:
+If you want to have several versions of tesseract (e.g. you want to compare OCR result) I would suggest you to compile them from source (e.g. in `/usr/src`) and not install them. If you want to test particular version you can run it this way:
 
     /usr/src/tesseract-3.03/api/tesseract eurotext.tif eurotext
 
     /usr/src/tesseract-ocr.3.02/api/tesseract eurotext.tif eurotext
 
-/usr/src/tesseract-3.03/api/tesseract is shell wrapper script, and it will take care that correct shared library is used (without installation…).
+Where `/usr/src/tesseract-3.03/api/tesseract` is the shell wrapper script, and it will take care that the correct shared library is used (without installation…).
 
 ## Training
 
@@ -185,7 +184,7 @@ Tesseract can be trained to recognize other languages or finetune existing langu
 
 Please note that `tesstrain.sh` and `tesstrain.py` only support training using synthetic images created using a UTF-8 training text and Unicode fonts to render the text. Training from scanned images and transcription is supported via [tesstrain makefile](https://github.com/tesseract-ocr/tesstrain).
 
-## pdf
+## PDF
 
 ### How do I produce searchable PDF output?
 
