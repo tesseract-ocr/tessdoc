@@ -403,7 +403,7 @@ continuing to the next iteration, but for all others it just continues and draws
 information at the frequency requested.
 
 **NOTE that to use --debug_interval > 0 you must build
-[ScrollView.jar](ViewerDebugging) as well as the other training tools.** See
+[ScrollView.jar](https://github.com/tesseract-ocr/tessdoc/blob/main/ViewerDebugging) as well as the other training tools.** See
 [Building the Training Tools](#building-the-training-tools)
 
 The visual debug information includes:
@@ -554,4 +554,4 @@ If you notice that your model is misbehaving, for example by:
 * Adding `Space` where it should not do that.
 * etc...
 
-[Then read the hallucination topic.](The-Hallucination-Effect.md)
+[Then read the hallucination topic.]([The-Hallucination-Effect.md](https://github.com/tesseract-ocr/tessdoc/blob/bc73ab3c1ed7846a48ef2630a053017de3ec07c3/tess4/The-Hallucination-Effect.md))
