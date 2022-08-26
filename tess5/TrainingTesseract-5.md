@@ -142,7 +142,7 @@ make training
 sudo make training-install
 ```
 
-It is also useful, but not required, to build [ScrollView.jar](ViewerDebugging):
+It is also useful, but not required, to build [ScrollView.jar](https://github.com/tesseract-ocr/tessdoc/blob/main/ViewerDebugging.md):
 
 ```bash
 make ScrollView.jar
