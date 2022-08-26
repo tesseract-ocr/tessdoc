@@ -554,4 +554,4 @@ If you notice that your model is misbehaving, for example by:
 * Adding `Space` where it should not do that.
 * etc...
 
-[Then read the hallucination topic.]([The-Hallucination-Effect.md](https://github.com/tesseract-ocr/tessdoc/blob/bc73ab3c1ed7846a48ef2630a053017de3ec07c3/tess4/The-Hallucination-Effect.md))
+[Then read the hallucination topic.](https://github.com/tesseract-ocr/tessdoc/blob/bc73ab3c1ed7846a48ef2630a053017de3ec07c3/tess4/The-Hallucination-Effect.md)
