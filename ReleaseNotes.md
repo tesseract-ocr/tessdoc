@@ -53,10 +53,10 @@ Table of Contents
 * Add initial support for Intel AVX512F. This improves the performance for recognition with the 'best' models and for training.
 * C API: Add a function to init tesseract with traineddata from memory.
 * Add a new parameter `invert_threshold`. The default value is `0.7`. In previous 5.x versions, the inversion threshold was `0.5`, without a way to change this value by the user. The `tessedit_do_invert` paramerer is deprecated and will be removed in version 6.0. To completely disable textlines inversion, you can set `invert_threshold` value to `0.0`.
-* Fix for very large PDF files on 32 bit hosts.
 * Fix regression with UZN files.
 * Replace direct access to Leptonica internal data structures by function calls (this is necessary for compatibility with the next Leptonica release).
 * Replace `std::regex` by `std::string` functions (issue [#3830](https://github.com/tesseract-ocr/tesseract/issues/3830)).
+* Fix for very large PDF files on 32 bit hosts.
 * Set `/Os` for AVX2 code when compiled with some versions of the 32-bit MSVC compiler (issue [#3769](https://github.com/tesseract-ocr/tesseract/issues/3769)).
 * Use compiled-in `TESSDATA_PREFIX` also on Windows.
 * C API: Fix calling `delete[]` for memory allocated by `malloc`.
