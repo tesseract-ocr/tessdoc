@@ -48,6 +48,18 @@ Table of Contents
 * [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.0.0&v2=4.1.0)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
+# Tesseract release notes ??? ?? 202? - V5.3.0
+
+* PDF renderer: Ignore non-text blocks (Fix issue 3957).
+* Fix issue 3940 - remove colormap before thresholding.
+* Training tools: Replace call of exit function by return statement in main function.
+* Fix double free in function vigorous_noise_removal (fix issue 3876).
+* Create to_win if needed in Textord::make_spline_rows (fix issue 3875).
+* Move svpaint.cpp from src/viewer/ to src/. Add rule for svpaint executable in Autotools.
+* Fix memory issues in ScrollView::MessageReceiver.
+Catch potential nullptr in SVNetwork::SVNetwork.
+* Fix tesseract.pc from cmake to match autotools.
+
 # Tesseract release notes Jul 06 2022 - V5.2.0
 
 * Add initial support for Intel AVX512F. This improves the performance for recognition with the 'best' models and for training.
