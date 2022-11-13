@@ -50,15 +50,15 @@ Table of Contents
 
 # Tesseract release notes ??? ?? 202? - V5.3.0
 
-* PDF renderer: Ignore non-text blocks (Fix issue 3957).
+* PDF renderer: Ignore non-text blocks (fix issue 3957).
 * Fix issue 3940 - remove colormap before thresholding.
 * Training tools: Replace call of exit function by return statement in main function.
 * Fix double free in function vigorous_noise_removal (fix issue 3876).
 * Create to_win if needed in Textord::make_spline_rows (fix issue 3875).
-* Move svpaint.cpp from src/viewer/ to src/. Add rule for svpaint executable in Autotools.
+* Move `svpaint.cpp` from `src/viewer` to `src/`. Add rule for svpaint executable in Autotools.
 * Fix memory issues in ScrollView::MessageReceiver.
 Catch potential nullptr in SVNetwork::SVNetwork.
-* Fix tesseract.pc from cmake to match autotools.
+* Fix `tesseract.pc` generated from CMake to match Autotools.
 
 # Tesseract release notes Jul 06 2022 - V5.2.0
 
