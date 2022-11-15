@@ -50,7 +50,6 @@ Table of Contents
 
 # Tesseract release notes ??? ?? 202? - V5.3.0
 
-* Fix AMD64 detection with Autotools on FreeBSD.
 * PDF renderer: Ignore non-text blocks (fix issue 3957).
 * Fix issue 3940: Remove colormap before thresholding.
 * Training tools: Replace call of exit function by return statement in main function.
@@ -58,6 +57,7 @@ Table of Contents
 * Create to_win if needed in Textord::make_spline_rows (fix issue 3875).
 * Fix memory issues in ScrollView::MessageReceiver.
 * Catch potential nullptr in SVNetwork::SVNetwork.
+* Fix AMD64 detection with Autotools on FreeBSD.
 * Move `svpaint.cpp` from `src/viewer` to `src/`. Add rule for svpaint executable in Autotools.
 * Fix `tesseract.pc` generated from CMake to match Autotools.
 
