@@ -50,6 +50,7 @@ Table of Contents
 
 # Tesseract release notes ??? ?? 202? - V5.3.0
 
+* Fix AMD64 detection with Autotools on FreeBSD.
 * PDF renderer: Ignore non-text blocks (fix issue 3957).
 * Fix issue 3940: Remove colormap before thresholding.
 * Training tools: Replace call of exit function by return statement in main function.
