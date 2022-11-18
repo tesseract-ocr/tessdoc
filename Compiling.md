@@ -144,7 +144,7 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 1. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`.
 2. Run `sw setup` (may require administrator access)
-3. Run `sw build org.sw.demo.google.tesseract.tesseract-master`.
+3. Run `sw build org.sw.demo.google.tesseract.tesseract`.
 
 #### For visual studio project using tesseract
 
