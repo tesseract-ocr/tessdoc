@@ -51,7 +51,7 @@ Table of Contents
 # Tesseract release notes ??? ?? 202? - V5.3.0
 
 * PDF renderer: Ignore non-text blocks (fix issue 3957).
-* Fix issue 3940: Remove colormap before thresholding.
+* Remove colormap before thresholding (fix issue 3940).
 * Fix a number of performance issues reported by Coverity Scan.
 * Training tools: Replace call of exit function by return statement in main function.
 * Fix double free in function vigorous_noise_removal (fix issue 3876).
