@@ -50,6 +50,7 @@ Table of Contents
 
 # Tesseract release notes ??? ?? 202? - V5.3.0
 
+* Fix the training tools for the legacy OCR engine (issue 3925).
 * PDF renderer: Ignore non-text blocks (fix issue 3957).
 * Remove colormap before thresholding (fix issue 3940).
 * Fix a number of performance issues reported by Coverity Scan.
