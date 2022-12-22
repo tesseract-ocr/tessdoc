@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
+* [Dec 22 2022 - V5.3.0](ReleaseNotes.md#tesseract-release-notes-dec-22-2022---v530)
 * [Jul 06 2022 - V5.2.0](ReleaseNotes.md#tesseract-release-notes-jul-06-2022---v520)
 * [Mar 01 2022 - V5.1.0](ReleaseNotes.md#tesseract-release-notes-mar-01-2022---v510)
 * [Jan 07 2022 - V5.0.1](ReleaseNotes.md#tesseract-release-notes-jan-07-2022---v501)
@@ -48,7 +49,7 @@ Table of Contents
 * [Binary compatibility report for Tesseract: 4.0.0 vs 4.1.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.0.0&v2=4.1.0)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
-# Tesseract release notes Dec ?? 2022 - V5.3.0
+# Tesseract release notes Dec 22 2022 - V5.3.0
 
 * Fix the training tools for the legacy OCR engine (issue 3925).
 * PDF renderer: Ignore non-text blocks (fix issue 3957).
