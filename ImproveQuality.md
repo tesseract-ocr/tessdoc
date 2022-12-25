@@ -78,17 +78,24 @@ A skewed image is when a page has been scanned when not straight. The quality of
 
 ### Borders
 
-#### Scanning border Removal
-![borders.png](images/borders.png)
-
-Scanned pages often have dark borders around them. These can be erroneously picked up as extra characters, especially if they vary in shape and gradation.
-
 #### Missing borders
 
 If you OCR just text area without any border, tesseract could have problems with it. See for some details in [tesseract user forum](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/v26a-RYPSOE/2Sppq61GBwAJ)[#427](https://github.com/tesseract-ocr/tesseract/issues/427) . You can easy add small border (e.g. 10 pt) with [ImageMagick®](http://imagemagick.org/script/index.php):
 ```
 convert  427-1.jpg  -bordercolor White -border 10x10 427-1b.jpg
 ```
+
+#### Too big borders
+
+Big borders (especcially single letter/digit or one word on big background) can cause problems ("empty page"). Please try to crop you input image to text area with resonable border (e.g. 10 pt).
+
+
+#### Scanning border Removal
+![borders.png](images/borders.png)
+
+Scanned pages often have dark borders around them. These can be erroneously picked up as extra characters, especially if they vary in shape and gradation.
+
+
 
 ### Transparency / Alpha channel
 
