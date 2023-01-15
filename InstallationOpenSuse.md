@@ -1,4 +1,4 @@
-# Installation on openSUSE
+# Installation on Linux Distros — Unofficial binaries
 
 ## RHEL/CentOS/Scientific Linux, Fedora, openSUSE packages
 
