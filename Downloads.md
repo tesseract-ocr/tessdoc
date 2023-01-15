@@ -21,6 +21,6 @@ Currently, there is no **official** Windows installer for newer versions.
 
   * Cygwin includes [packages for Tesseract](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=tesseract&arch=x86_64).
 
-  * [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki) has installers available for version 3, 4 and current 5.0.0.Alpha.
+  * [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki) has installers available for [current (5.3.0) and older versions](https://digi.bib.uni-mannheim.de/tesseract/).
 
   * [Unofficial Binaries](Installation.md#windows)
