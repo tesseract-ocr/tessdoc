@@ -102,6 +102,7 @@ Platform support depends on used language and experience of user.
   * [pytesseract](https://github.com/madmaze/pytesseract) - a wrapper class for Tesseract OCR (requires tesseract executable)
   * [tesseract-ocr-wrapper](https://github.com/Altabeh/tesseract-ocr-wrapper) - a python wrapper for tesseract-ocr with support for OCRing of pdf
   * [aiopytesseract](https://github.com/amenezes/aiopytesseract) - asyncio tesseract wrapper for Tesseract-OCR.
+  * [image2text](https://github.com/prabhakar267/image2text) - A python wrapper for tesseract to work on large datasets and directories. 
 
 **Objective-C**
   * [Tesseract-macOS](https://github.com/scott0123/Tesseract-macOS)
