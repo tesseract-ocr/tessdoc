@@ -31,6 +31,7 @@
 | [TesseractStudio.Net](https://www.opait.com/TessStudio/index.html) |          |         | X           | Proprietary     |  A graphical interface to tesseract 4.0 |
 | [ImageTrans](https://www.basiccat.org/imagetrans) | X        | X       | X           | Proprietary     |  An image translation tool which can use Tesseract to OCR a whole page, a selected region of an image or a screenshot |
 | [NAPS2](https://www.naps2.com/) | X        | X       | X           | GLP2     |  Scan documents to PDF and more, as simply as possible. |
+| [Ave React OCR](https://github.com/rerender2021/ocr) |         |        | X           | MIT     |  A simple ocr app powered by avernakis react. |
 
 ## 2. Online OCR services
 
