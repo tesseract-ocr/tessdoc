@@ -30,6 +30,7 @@
 | [TesseractStudio.Net Github](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | (Exe, SourceCode Not Available,Site Urls are Dead) A graphical interface to tesseract 4.0 |
 | [TesseractStudio.Net](https://www.opait.com/TessStudio/index.html) |          |         | X           | Proprietary     |  A graphical interface to tesseract 4.0 |
 | [ImageTrans](https://www.basiccat.org/imagetrans) | X        | X       | X           | Proprietary     |  An image translation tool which can use Tesseract to OCR a whole page, a selected region of an image or a screenshot |
+| [NAPS2](https://www.naps2.com/) | X        | X       | X           | GLP2     |  Scan documents to PDF and more, as simply as possible. |
 
 ## 2. Online OCR services
 
