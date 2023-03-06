@@ -1,4 +1,6 @@
-## Languages supported in different versions of Tesseract
+## Languages/Scripts supported in different versions of Tesseract
+
+### Languages
 
 | LangCode|  Language                            |  3.02|  3.04| 4.00 |  4.0.0|    4.0.0 |    4.0.0  |
 |---------|--------------------------------------|:----:|:----:|:----:|:-----:|:--------:|:---------:|
@@ -131,7 +133,9 @@
 |  yid   |  Yiddish                             |   |    x |    x |    x |    x   |      x    |
 |  yor   |  Yoruba                              |   |   |    x |    x |    x   |      x    |
 
-|      |  SCRIPTS                            |  3.02|  3.04| 4.00 |  4.0.0|    4.0.0 |    4.0.0  |
+### Scripts
+
+|      |  Script                            |  3.02|  3.04| 4.00 |  4.0.0|    4.0.0 |    4.0.0  |
 |--------|---------------------------------------|:----:|:----:|:----:|:-----:|:--------:|:---------:|
 |      |                                    |   |   |Nov 2016|tessdata|tessdata_best|tessdata_fast|
 |      |Arabic                                  |   |   |    |  x   |    x   |    x    |
