@@ -177,4 +177,4 @@
 |      |Vietnamese                              |   |   |    |  x   |    x   |    x    |
 
 
-For detalls about the languages that each Script traindata file support see the files that end with langs.txt (e.g. Latin.langs.txt) [here](https://github.com/tesseract-ocr/langdata_lstm/tree/main/script].
+For detalls about the languages that each Script.traindata file supports, see the files that end with langs.txt (e.g. Latin.langs.txt) [here](https://github.com/tesseract-ocr/langdata_lstm/tree/main/script).
