@@ -23,7 +23,7 @@ There are a variety of reasons you might not get good quality output from Tesser
 
 Tesseract does various image processing operations internally (using the Leptonica library) before doing the actual OCR. It generally does a very good job of this, but there will inevitably be cases where it isn't good enough, which can result in a significant reduction in accuracy.
 
-You can see how Tesseract has processed the image by using the [configuration variable](ControlParams) `tessedit_write_images` to `true` (or using configfile `get.images`) when running Tesseract. If the resulting `tessinput.tif` file looks problematic, try some of these image processing operations before passing the image to Tesseract. 
+You can see how Tesseract has processed the image by using the [configuration variable](https://github.com/tesseract-ocr/tessdoc/blob/main/tess3/ControlParams.md) `tessedit_write_images` to `true` (or using configfile `get.images`) when running Tesseract. If the resulting `tessinput.tif` file looks problematic, try some of these image processing operations before passing the image to Tesseract. 
 
 ### Inverting images
 
@@ -31,7 +31,7 @@ While tesseract version 3.05 (and older) handle inverted image (dark background 
 
 ### Rescaling
 
-Tesseract works best on images which have a DPI of at least 300 dpi, so it may be beneficial to resize images. For more information see [the FAQ](FAQ-Old#is-there-a-minimum-text-size-it-wont-read-screen-text).
+Tesseract works best on images which have a DPI of at least 300 dpi, so it may be beneficial to resize images. For more information see [the FAQ](https://github.com/tesseract-ocr/tessdoc/blob/main/tess3/FAQ-Old.md#is-there-a-minimum--maximum-text-size-it-wont-read-screen-text).
 
 "Willus Dotkom" made interesting test for [Optimal image resolution](https://groups.google.com/d/msg/tesseract-ocr/Wdh_JJwnw94/24JHDYQbBQAJ) with suggestion for optimal Height of capital letter in pixels.
 
