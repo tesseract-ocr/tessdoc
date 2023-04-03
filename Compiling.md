@@ -4,6 +4,8 @@
 
 *Use the same tools for building tesseract as you used for [building leptonica](https://github.com/DanBloomberg/leptonica/issues/410).*
 
+There are several (known) toolchains that can help you build the tesseract: [GNU Autotools](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html), [CMake](https://cmake.org/), [Software Network](https://software-network.org/) (a.k.a. sw) and [vcpkg](https://vcpkg.io/en/). Please have a look at the [tesseract Github Action Worklows](https://github.com/tesseract-ocr/tesseract/tree/main/.github/workflows) if the following instructions are not clear to you.
+
 ## Table of contents
 * [Linux](Compiling.md#linux)
 * [Windows](Compiling.md#windows)
@@ -31,7 +33,7 @@ The following instructions are for building on Linux, which also can be applied 
 * GNU Autotools: autoconf, automake, libtool
 * pkg-config
 * [Leptonica](http://www.leptonica.org/)
-* libpng, libjpeg, libtiff
+* (optional) zlib, libpng, libjpeg, libtiff, giflib, openjpeg, webp, archive, curl
 
 ### Ubuntu
 
@@ -44,8 +46,12 @@ sudo apt-get install libpng-dev
 sudo apt-get install libjpeg8-dev
 sudo apt-get install libtiff5-dev
 sudo apt-get install zlib1g-dev
+sudo apt-get install libwebpdemux2 libwebp-dev
+sudo apt-get install libopenjp2-7-dev
+sudo apt-get install libgif-dev
+sudo apt-get install libarchive-dev libcurl4-openssl-dev
 ```
-if you plan to install the training tools, you also need the following libraries: 
+if you plan to install the training tools, you also need the following libraries:
 ```
 sudo apt-get install libicu-dev
 sudo apt-get install libpango1.0-dev
