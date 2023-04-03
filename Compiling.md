@@ -21,7 +21,7 @@ sudo apt install tesseract-ocr
 ```
 If you wish to install the **Developer Tools** which can be used for training, run the following command:
 ```
-sudo apt install libtesseract-dev 
+sudo apt install libtesseract-dev
 ```
 
 
@@ -67,13 +67,13 @@ Tesseract versions and the minimum version of Leptonica required:
 **Tesseract** | **Leptonica** | **Ubuntu**
 :-------------------: | :---------------------------------------: | :---------
 4.00 | 1.74.2 | [Ubuntu 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr)
-3.05 | 1.74.0 | Must build from source 
+3.05 | 1.74.0 | Must build from source
 3.04 | 1.71 | [Ubuntu 16.04](http://packages.ubuntu.com/xenial/tesseract-ocr)
 3.03 | 1.70 | [Ubuntu 14.04](http://packages.ubuntu.com/trusty/tesseract-ocr)
 3.02 | 1.69 | Ubuntu 12.04
 3.01 | 1.67 |
 
-One option is to install the distro's Leptonica package: 
+One option is to install the distro's Leptonica package:
 
 ```
 sudo apt-get install libleptonica-dev
@@ -186,7 +186,7 @@ To do this:
 2. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`. SW is a source package distribution system.
 3. Add SW client to PATH.
 4. Run `sw setup` (may require administrator access)
-5. If you have a release archive, unpack it to `tesseract` dir. 
+5. If you have a release archive, unpack it to `tesseract` dir.
 
 If you're using main branch run
 
@@ -212,7 +212,7 @@ If you want to install to other directory that C:\Program Files (you will need a
 cmake .. -G "Visual Studio 15 2017 Win64" -DCMAKE_INSTALL_PREFIX=inst
 ```
 
-**For development purposes** of training tools after cloning a repo from previous paragraph, run 
+**For development purposes** of training tools after cloning a repo from previous paragraph, run
 ```
 sw build
 ```
@@ -259,7 +259,7 @@ Windows relevant files are located in vs2008 directory (e.g. 'tesseract-3.01\vs2
 
 For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](http://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
 
-## Msys2 
+## Msys2
 
 Download and install MSYS2 Installer from https://msys2.github.io/
 
@@ -390,7 +390,7 @@ In the above training tools are not installed. You can install not only Tesserac
 #### Install packages required by training tools
 
 ```
-sudo port install cairo pango 
+sudo port install cairo pango
 sudo port install icu +devel
 ```
 
@@ -565,11 +565,11 @@ The latest code from GitHub does not require `autoconf-archive`.
 
 * If configure fails with such error "configure: error: Leptonica 1.74 or higher is required." Try to install libleptonica-dev package.
 
-* If you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with `pkg-config --variable pc_path pkg-config`). 
+* If you are sure you have installed leptonica (for example in /usr/local) then probably pkg-config is not looking at your install folder (check with `pkg-config --variable pc_path pkg-config`).
 
 A solution is to set PKG_CONFIG_PATH : example :`PKG_CONFIG_PATH=/usr/local/lib/pkgconfig`
 
-* On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'"). 
+* On some systems autotools does not create m4 directory automatically (giving the error: "configure: error: cannot find macro directory 'm4'").
 
 In this case you must create m4 directory (`mkdir m4`), and then rerun the above commands starting with ./configure.
 
