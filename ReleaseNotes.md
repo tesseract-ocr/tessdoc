@@ -118,7 +118,7 @@ This means less RAM consumption and faster program execution.
 * **General enhancements**
   * Add two new Leptonica based binarization methods: Adaptive Otsu and Sauvola. For users: Use `tesseract --print-parameters | grep thresholding_` to see the relevant configurable parameters.
   * Disable music staff detection and removal because it interferes with the table detection feature. Change the default value of `pageseg_apply_music_mask` to `false`.
-  * Add a new command line option `--print-fonts-table`. Prints list of fonts (id, name). Only applicable for traineddata files that have data for the legacy engine.
+  * Add a new command line option `--print-fonts-table`. Prints a list of fonts (id, name). Only applicable for traineddata files that have data for the legacy OCR engine.
   * Add a new parameter, `tessedit_font_id`. It can be used to force Tesseract to use a specific font from the traineddata file to recognize text in an image.  
   * Add a new command line option `--loglevel`.
   * Add a new option `-l` for `combine_tessdata` to get the network spec for traineddata that was trained with the LSTM engine.
