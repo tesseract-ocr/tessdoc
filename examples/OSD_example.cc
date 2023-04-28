@@ -1,20 +1,15 @@
 #include <tesseract/baseapi.h>
 #include <leptonica/allheaders.h>
+
 int main()
 {
     const char* inputfile = "/tesseract/testing/devatest-rotated-270.png";
     PIX *image = pixRead(inputfile);
     tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
     api->Init(NULL, "osd");
-    
-    tesseract::Orientation orientation;
-    tesseract::WritingDirection direction;
-    tesseract::TextlineOrder order;
-    float deskew_angle;
-    api->SetPageSegMode(tesseract::PSM_AUTO_OSD);
+    api->SetPageSegMode(tesseract::PSM_OSD_ONLY);
     api->SetImage(image);
-    
-    // Get OSD
+        
     int orient_deg;
     float orient_conf;
     const char* script_name;
