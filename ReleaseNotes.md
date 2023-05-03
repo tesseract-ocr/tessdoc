@@ -66,8 +66,8 @@ Improve the DebugDump output by slightly adjusting the format. By [@GerHobbelt](
 **CMake Build system**
 
 * Fix linkage of icu and pango. By [@autoantwort](https://github.com/autoantwort) in PR #4006.
-* (MSVC debug) Fix wrong lib name in generated pkgconfig file. By [@autoantwort](https://github.com/autoantwort) in PR #4008.
-* Fix libdir in Generated tesseract.pc. By [@ferdnyc](https://github.com/ferdnyc) in PR #4013.
+* (MSVC debug) Fix wrong lib name in generated file `tesseract.pc`. By [@autoantwort](https://github.com/autoantwort) in PR #4008.
+* Fix libdir in generated file `tesseract.pc`. By [@ferdnyc](https://github.com/ferdnyc) in PR #4013.
 
 # Tesseract release notes Dec 22 2022 - V5.3.0
 
