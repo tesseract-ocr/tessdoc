@@ -51,7 +51,7 @@ Table of Contents
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
 
 
-# Tesseract V5.3.1 Release notes
+# Tesseract V5.3.1 release notes
 
 _Apr 01 2023_
 
