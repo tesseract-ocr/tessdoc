@@ -53,7 +53,7 @@ Table of Contents
 
 # Tesseract V5.3.1 Release notes
 
-_Apr 01 2022_
+_Apr 01 2023_
 
 Improve the DebugDump output by slightly adjusting the format. By [@GerHobbelt](https://github.com/GerHobbelt) in PR #4022.
 
