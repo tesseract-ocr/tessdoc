@@ -78,7 +78,7 @@ LSTM trainIng: Extend the function `BoxFileName` to handle another image name ex
 
 **Bug fixes**
 
-* Fix the training tools for the legacy OCR engine (issue [#3925](https://github.com/tesseract-ocr/tesseract/issues/3925)). By [@stweil](https://github.com/stweil) in PR [#3970](https://github.com/tesseract-ocr/tesseract/pull/3970) and PR [#3977](https://github.com/tesseract-ocr/tesseract/pull/3977).
+* Fix the training tools for the legacy OCR engine (issue [#3925](https://github.com/tesseract-ocr/tesseract/issues/3925)). By [@stweil](https://github.com/stweil) in PRs: [#3970](https://github.com/tesseract-ocr/tesseract/pull/3970), [#3972](https://github.com/tesseract-ocr/tesseract/pull/3972), [#3977](https://github.com/tesseract-ocr/tesseract/pull/3977).
 * PDF renderer: Ignore non-text blocks (fix issue [#3957](https://github.com/tesseract-ocr/tesseract/issues/3957)). By [@amitdo](https://github.com/amitdo) in [#3959](https://github.com/tesseract-ocr/tesseract/pull/3959).
 * Remove colormap before thresholding (fix issue [#3940](https://github.com/tesseract-ocr/tesseract/issues/3940)). By [@zdenop](https://github.com/zdenop).
 * Fix a number of performance issues reported by Coverity Scan. By [@stweil](https://github.com/stweil) in PR [#3967](https://github.com/tesseract-ocr/tesseract/pull/3967).
@@ -87,6 +87,7 @@ LSTM trainIng: Extend the function `BoxFileName` to handle another image name ex
 * Create `to_win` if needed in `Textord::make_spline_rows` (fix issue [#3875](https://github.com/tesseract-ocr/tesseract/issues/3875)). By [@stweil](https://github.com/stweil) in commit [`99d6717c10`](https://github.com/tesseract-ocr/tesseract/commit/99d6717c101308).
 * Fix memory issues in `ScrollView::MessageReceiver` (issue [#3869](https://github.com/tesseract-ocr/tesseract/issues/3869)). By [@p12tic](https://github.com/p12tic) in PR [#3872](https://github.com/tesseract-ocr/tesseract/pull/3872).
 * Catch potential `nullptr` in `SVNetwork::SVNetwork`. By [@stweil](https://github.com/stweil) in commit [`02e834000c`](https://github.com/tesseract-ocr/tesseract/commit/02e834000ce1d7).
+* Modernize function `ObjectCache::DeleteUnusedObjects` (fix issue with sanitizers. By [@stweil](https://github.com/stweil) in PR [#3978](https://github.com/tesseract-ocr/tesseract/pull/3978).
 
 **Build systems**
 
