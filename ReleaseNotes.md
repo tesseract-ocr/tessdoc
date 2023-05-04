@@ -74,7 +74,7 @@ Improve the DebugDump output by slightly adjusting the format. By [@GerHobbelt](
 
 _Dec 22 2022_
 
-LSTM trainIng: Allow .box from .raw.png too. By [@bertsky](https://github.com/bertsky) in PR [#3962](https://github.com/tesseract-ocr/tesseract/pull/3962).
+LSTM trainIng: Extend the function BoxFileName to handle another image name extension, `.raw.png`. By [@bertsky](https://github.com/bertsky) in PR [#3962](https://github.com/tesseract-ocr/tesseract/pull/3962).
 
 **Bug fixes**
 
