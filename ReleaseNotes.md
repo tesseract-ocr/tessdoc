@@ -230,6 +230,7 @@ _Dec 26 2019_
 * Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `false`.
 * Added the parameter `pageseg_apply_music_mask` to allow disabling the music mask.
 * Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
+* Training: Extend the function `BoxFileName` to handle more image names: `.bin.png` and `.nrm.png`. In PR [#2686](https://github.com/tesseract-ocr/tesseract/pull/2686).
 * Added an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
 * Fixed more locale handling issues found since 4.1.0.
 * Fixed a memory leak in text2image.
