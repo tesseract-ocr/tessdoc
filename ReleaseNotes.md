@@ -5,36 +5,28 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
-* [V5.3.1](ReleaseNotes.md#tesseract-v531-release-notes), Apr 01 2023
-* [V5.3.0](ReleaseNotes.md#tesseract-release-notes-dec-22-2022---v530), Dec 22 2022
-* [V5.2.0](ReleaseNotes.md#tesseract-release-notes-jul-06-2022---v520), Jul 06 2022
-* [V5.1.0](ReleaseNotes.md#tesseract-release-notes-mar-01-2022---v510), Mar 01 2022
-* [V5.0.1](ReleaseNotes.md#tesseract-release-notes-jan-07-2022---v501), Jan 07 2022
-* [V5.0.0](ReleaseNotes.md#tesseract-release-notes-nov-30-2021---v500), Nov 30 2021
-* [Nov 15 2021 - V4.1.3](ReleaseNotes.md#tesseract-release-notes-nov-15-2021---v413)
-* [Nov 14 2021 - V4.1.2](ReleaseNotes.md#tesseract-release-notes-nov-14-2021---v412)
-* [Dec 26 2019 - V4.1.1](#tesseract-release-notes-dec-26-2019---v411)
-* [Jul 07 2019 - V4.1.0](#tesseract-release-notes-jul-07-2019---v410)
-* [Oct 29 2018 - V4.0.0](#tesseract-release-notes-oct-29-2018---v400)
-* [June 19 2018 - V3.05.02](#tesseract-release-notes-june-19-2018---v30502)
-* [June 1 2017 - V3.05.01](#tesseract-release-notes-june-1-2017---v30501)
-* [February 16 2017 - V3.05.00](#tesseract-release-notes-feb-16-2017---v30500)
-* [February 16 2016 - V3.04.01](#tesseract-release-notes-feb-16-2016---v30401)
-* [July 11 2015 - V3.04.00](#tesseract-release-notes-july-11-2015---v30400)
-* [February 4 2014 - V3.03(rc1)](#tesseract-release-notes-feb-4-2014---v303rc1)
-* [October 23 2012 - V3.02.02](#tesseract-release-notes-oct-23-2012---v30202)
-* [October 21 2011 - V3.01](#tesseract-release-notes-oct-21-2011---v301)
-* [September 30 2010 - V3.00](#tesseract-release-notes-sep-30-2010---v300)
-* [June 30 2009 - V2.04](#tesseract-release-notes-june-30-2009---v204)
-* [April 22 2008 - V2.03](#tesseract-release-notes-april-22-2008---v203)
-* [April 21 2008 - V2.02](#tesseract-release-notes-april-21-2008---v202)
-* [August 30 2007 - V2.01](#tesseract-release-notes-aug-30-2007---v201)
-* [July 18 2007 - V2.00](#tesseract-release-notes-jul-18-2007---v200)
-* [May 15 2007 - V1.04](#tesseract-release-notes-may-15-2007---v104)
-* [February 03 2007 - V1.03](#tesseract-release-notes-february-03-2007---v103)
-* [October 04 2006 - V1.02](#tesseract-release-notes-october-04-2006---v102)
-* [September 07 2006 - V1.01](#tesseract-release-notes-september-07-2006---v101)
-* [June 17 2006 - V1.00](#tesseract-release-notes-june-17-2006---v100)
+* [V5.3.1](ReleaseNotes.md#v531), Apr 01 2023
+* [V5.3.0](ReleaseNotes.md#v530), Dec 22 2022
+* [V5.2.0](ReleaseNotes.md#v520), Jul 06 2022
+* [V5.1.0](ReleaseNotes.md#v411), Dec 26 2019
+* [V4.1.0](#v410), Jul 07 2019
+* [V4.0.0](#v400), Oct 29 2018
+* [V3.05.02](#v30502), Jun 19 2018
+* [V3.05.01](#v30501), Jun 1 2017
+* [V3.05.00](#v30500), Feb 16 2017
+* [V3.04.01](#v30401), Feb 16 2016
+* [V3.04.00](#v30400), Jul 11 2015 
+* [V3.03(rc1)](#v300), Sep 30 2010
+* [V2.04](#v204), Jun 30 2009
+* [V2.03](#v203), Apr 22 2008
+* [V2.02](#v202), Apr 21 2008
+* [V2.01](#v201), Aug 30 2007
+* [V2.00](#v200), Jul 18 2007
+* [V1.04](#v104), May 15 2007
+* [V1.03](#v103), Feb 03 2007
+* [V1.02](#v102), Oct 04 2006
+* [V1.01](#v101), Sep 07 2006
+* [V1.00](#v100), Jun 17 2006
 
 # IN DEVELOPMENT
 
