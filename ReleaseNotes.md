@@ -5,10 +5,16 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
-* [V5.3.1](ReleaseNotes.md#v531), Apr 01 2023
-* [V5.3.0](ReleaseNotes.md#v530), Dec 22 2022
-* [V5.2.0](ReleaseNotes.md#v520), Jul 06 2022
-* [V5.1.0](ReleaseNotes.md#v411), Dec 26 2019
+* [V5.3.1](#v531), Apr 01 2023
+* [V5.3.0](#v530), Dec 22 2022
+* [V5.2.0](#v520), Jul 06 2022
+* [V5.1.0](#v510), Mar 01 2022
+* [V5.0.1](#v501), Jan 07 2022
+* [V5.0.0](#v500), Nov 30 2021
+* [V4.1.3](#v413), Nov 15 2021
+* [V4.1.3](#v413), Nov 15 2021
+* [V4.1.2](#v412), Nov 14 2021
+* [V4.1.1](#v411), Dec 26 2019
 * [V4.1.0](#v410), Jul 07 2019
 * [V4.0.0](#v400), Oct 29 2018
 * [V3.05.02](#v30502), Jun 19 2018
@@ -16,7 +22,10 @@ Table of Contents
 * [V3.05.00](#v30500), Feb 16 2017
 * [V3.04.01](#v30401), Feb 16 2016
 * [V3.04.00](#v30400), Jul 11 2015 
-* [V3.03(rc1)](#v300), Sep 30 2010
+* [V3.03(rc1)](#v303rc), Feb 4 2014
+* [V3.02.02](#v30202), Oct 23 2012
+* [V3.01](#v301), Oct 21 2011
+* [V3.00)](#v300), Sep 30 2010
 * [V2.04](#v204), Jun 30 2009
 * [V2.03](#v203), Apr 22 2008
 * [V2.02](#v202), Apr 21 2008
