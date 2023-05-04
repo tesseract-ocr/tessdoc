@@ -226,17 +226,17 @@ Changes in the Autotools build:
 
 _Dec 26 2019_
 
-* Added support for image or image list by URL. This feature is implemented using libcurl. Usage: `tesseract http://IMAGE_URL OUTPUT ...`
-* Added the parameter `document_title` to set the title in OCR output files (hOCR, PDF, ALTO).
-* Added the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `false`.
-* Added the parameter `pageseg_apply_music_mask` to allow disabling the music mask.
-* Added ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
-* Training: Extend the function `BoxFileName` to handle more image names: `.bin.png` and `.nrm.png`. In PR [#2686](https://github.com/tesseract-ocr/tesseract/pull/2686).
-* Added an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
-* Fixed more locale handling issues found since 4.1.0.
-* Fixed a memory leak in text2image.
-* Fixed potential bugs discovered by running UndefinedBehaviorSanitizer.
-* Fixed many issues reported by Coverity Scan.
+* Add support for image or image list by URL. This feature is implemented using libcurl. Usage: `tesseract http://IMAGE_URL OUTPUT ...`
+* Add the parameter `document_title` to set the title in OCR output files (hOCR, PDF, ALTO).
+* Add the parameter `tessedit_do_invert`, which can speed up tesseract execution, when set to `false`.
+* Add the parameter `pageseg_apply_music_mask` to allow disabling the music mask.
+* Add ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
+* Training. Extend the function `BoxFileName` to handle more image names: `.bin.png` and `.nrm.png`. In PR [#2686](https://github.com/tesseract-ocr/tesseract/pull/2686).
+* Add an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
+* Fix more locale handling issues found since 4.1.0.
+* Fix a memory leak in text2image.
+* Fix potential bugs discovered by running UndefinedBehaviorSanitizer.
+* Fix many issues reported by Coverity Scan.
 * Code Cleanup and modernization.
 * Code optimization.
 * Many bug fixes.
@@ -246,17 +246,17 @@ _Dec 26 2019_
 _Jul 07 2019_
 
   * Backward compatible release with 4.0.0
-  * Added a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tesseract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
-  * Added new renders LSTMBox, WordStrBox to simplify training
-  * Added character boxes in hOCR output.
-  * Added Python training scripts (experimental) as alternative shell scripts.
-  * [Fixed locale handling issue](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79). libtesseract now works with any locale.
+  * Add a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tesseract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
+  * Add new renders LSTMBox, WordStrBox to simplify training
+  * Add character boxes in hOCR output.
+  * Add Python training scripts (experimental) as alternative shell scripts.
+  * [Fix locale handling issue](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79). libtesseract now works with any locale.
   * Better support AVX / AVX2 / SSE.
   * Disable OpenMP support by default. This was done in the the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
   * Fix for bounding box problem.
   * Implemented support for whitelist/blacklist in LSTM engine.
-  * Made user-words and user-patterns files work with the LSTM engine. [#2328](https://github.com/tesseract-ocr/tesseract/pull/2328)
-  * Improved CMake configuration.
+  * Make user-words and user-patterns files work with the LSTM engine. [#2328](https://github.com/tesseract-ocr/tesseract/pull/2328)
+  * Improve CMake configuration.
   * Code modernization and improvements.
   * A lot of bug fixes.
 
