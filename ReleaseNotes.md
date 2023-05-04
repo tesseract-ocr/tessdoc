@@ -78,7 +78,7 @@ _Dec 22 2022_
 * PDF renderer: Ignore non-text blocks (fix issue 3957).
 * Remove colormap before thresholding (fix issue 3940).
 * Fix a number of performance issues reported by Coverity Scan.
-* Training tools: Replace call of `exit` function by return statement in main function.
+* Training tools: Replace call of `exit` function by return statement in `main` function.
 * Fix double free in function `vigorous_noise_removal` (fix issue 3876).
 * Create `to_win` if needed in `Textord::make_spline_rows` (fix issue 3875).
 * Fix memory issues in `ScrollView::MessageReceiver`.
