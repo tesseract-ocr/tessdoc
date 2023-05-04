@@ -61,7 +61,7 @@ Improve the DebugDump output by slightly adjusting the format. By [@GerHobbelt](
 **Bugs fixes**
 
 * Fix FP division by zero (issue #3995). By [@stweil](https://github.com/stweil) in PR #3996.
-* Fix issue #4010. Enable some code blocks that were wrongly disabled when the legacy engine is disabled at compile time. By [@amitdo](https://github.com/amitdo) in PR #4041.
+* Fix issues #3997 and #4010. Enable some code blocks that were wrongly disabled when the legacy engine is disabled at compile time. By [@amitdo](https://github.com/amitdo) in PR #4041.
 * Fix build with GCC 13 by including `<cstdint>`. By [@kraj](https://github.com/kraj) in PR #4009.
 
 **CMake Build system**
