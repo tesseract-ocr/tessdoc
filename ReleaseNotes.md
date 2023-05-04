@@ -74,7 +74,7 @@ Improve the DebugDump output by slightly adjusting the format. By [@GerHobbelt](
 
 _Dec 22 2022_
 
-LSTM trainIng: Extend the function BoxFileName to handle another image name extension, `.raw.png`. By [@bertsky](https://github.com/bertsky) in PR [#3962](https://github.com/tesseract-ocr/tesseract/pull/3962).
+LSTM trainIng: Extend the function `BoxFileName` to handle another image name extension, `.raw.png`. By [@bertsky](https://github.com/bertsky) in PR [#3962](https://github.com/tesseract-ocr/tesseract/pull/3962).
 
 **Bug fixes**
 
@@ -82,11 +82,11 @@ LSTM trainIng: Extend the function BoxFileName to handle another image name exte
 * PDF renderer: Ignore non-text blocks (fix issue [#3957](https://github.com/tesseract-ocr/tesseract/issues/3957)). By [@amitdo](https://github.com/amitdo) in [#3959](https://github.com/tesseract-ocr/tesseract/pull/3959).
 * Remove colormap before thresholding (fix issue [#3940](https://github.com/tesseract-ocr/tesseract/issues/3940)). By [@zdenop](https://github.com/zdenop).
 * Fix a number of performance issues reported by Coverity Scan. By [@stweil](https://github.com/stweil) in PR [#3967](https://github.com/tesseract-ocr/tesseract/pull/3967).
-* Training tools: Replace call of `exit` function by return statement in `main` function.
-* Fix double free in function `vigorous_noise_removal` (fix issue 3876).
-* Create `to_win` if needed in `Textord::make_spline_rows` (fix issue 3875).
-* Fix memory issues in `ScrollView::MessageReceiver`.
-* Catch potential `nullptr` in `SVNetwork::SVNetwork`.
+* Training tools: Replace call of `exit` function by return statement in `main` function. By [@stweil](https://github.com/stweil) in PR [#3878](https://github.com/tesseract-ocr/tesseract/pull/3878).
+* Fix double free in function `vigorous_noise_removal` (fix issue [#3876](https://github.com/tesseract-ocr/tesseract/issues/3876)). By [@stweil](https://github.com/stweil) in commit [`ee34b100bf`](https://github.com/tesseract-ocr/tesseract/commit/ee34b100bf9b54).
+* Create `to_win` if needed in `Textord::make_spline_rows` (fix issue [#3875](https://github.com/tesseract-ocr/tesseract/issues/3875)). By [@stweil](https://github.com/stweil) in commit [99d6717c10](https://github.com/tesseract-ocr/tesseract/commit/99d6717c101308).
+* Fix memory issues in `ScrollView::MessageReceiver` (issue [#3869](https://github.com/tesseract-ocr/tesseract/issues/3869)). By [@p12tic](https://github.com/p12tic) in PR [#3872](https://github.com/tesseract-ocr/tesseract/pull/3872).
+* Catch potential `nullptr` in `SVNetwork::SVNetwork`. By [@stweil](https://github.com/stweil) in commit [02e834000c](https://github.com/tesseract-ocr/tesseract/commit/02e834000ce1d7).
 
 **Build systems**
 
