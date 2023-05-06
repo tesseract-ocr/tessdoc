@@ -2,7 +2,7 @@
 
 ## Supported input formats
 
-Tesseract uses the [Leptonica](https://github.com/DanBloomberg/leptonica) library to read images with one of these formats:
+Tesseract uses the [Leptonica](https://github.com/DanBloomberg/leptonica) library to read images in one of these formats:
 
 * PNG - requires libpng, libz
 * JPEG - requires libjpeg / libjpeg-turbo
@@ -29,7 +29,8 @@ Note: Tesseract does support PDF as an **output** format.
 
 ### Animated GIF
 
-Tesseract does not support reading animated GIFs files. When given such a file, Tesseract will read only the first image in the sequence of images contained inside the file.
+Tesseract does not support reading animated GIF files.
+If given such a file, Tesseract will only read the first image in the sequence of images contained in the file.
 
 ### Other formats
 

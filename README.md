@@ -112,6 +112,7 @@ with Tesseract `5.x.x`. These are available from:
 
 - [Tips to Improve Recognition](ImproveQuality.md)
 - [Command Line Usage](Command-Line-Usage.md)
+- [Input Formats](InputFormats.md)
 - [Viewer Debugging](ViewerDebugging.md)
 - [Common Errors and Resolutions](Common-Errors-and-Resolutions.md)
 - [Frequently Asked Questions](FAQ.md)
