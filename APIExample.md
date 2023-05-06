@@ -70,6 +70,7 @@ If you want to restrict recognition to a sub-rectangle of the image - call _SetR
                     i, box->x, box->y, box->w, box->h, conf, ocrResult);
     boxDestroy(&box);
   }
+  delete api;
 ```
 
 ## Result iterator example
@@ -95,6 +96,7 @@ It is possible to get confidence value and BoundingBox per word from a ResultIte
       delete[] word;
     } while (ri->Next(level));
   }
+  delete api;
 ```
 
 It is also possible to use other iterator levels (block, line, word, etc.), see [PageiteratorLevel](https://github.com/tesseract-ocr/tesseract/blob/a7a729f6c315e751764b72ea945da961638effc5/include/tesseract/publictypes.h#L216-L222).
@@ -122,6 +124,7 @@ It is also possible to use other iterator levels (block, line, word, etc.), see 
   printf("Orientation: %d;\nWritingDirection: %d\nTextlineOrder: %d\n" \
          "Deskew angle: %.4f\n",
          orientation, direction, order, deskew_angle);
+  delete api;
 ```
 
 Explanation for result codes are in [publictypes.h](https://github.com/tesseract-ocr/tesseract/blob/a7a729f6c315e751764b72ea945da961638effc5/include/tesseract/publictypes.h#L116-L121)
@@ -161,6 +164,7 @@ Explanation for result codes are in [publictypes.h](https://github.com/tesseract
           delete[] symbol;
       } while((ri->Next(level)));
   }
+  delete api;
 ```
 
 ## Example to get confidence for alternative symbol choices per character for LSTM
@@ -210,10 +214,11 @@ int main()
       }
     } while (res_it->Next(level));
   }
-// Destroy used object and release memory
-    api->End();
-    pixDestroy(&image);
-    return 0;
+  // Destroy used object and release memory
+  api->End();
+  delete api;
+  pixDestroy(&image);
+  return 0;
 }
 
 ```
@@ -247,6 +252,7 @@ int main()
 
 // Destroy used object and release memory
     api->End();
+    delete api;
     delete [] outText;
     pixDestroy(&image);
 
@@ -459,6 +465,7 @@ int main()
       return EXIT_FAILURE;
     }
     api->End();
+    delete api;
     return EXIT_SUCCESS;
 }
 ```
@@ -511,6 +518,7 @@ int main() {
     if (outText)
        delete [] outText;
     api->End();
+    delete api;
     return 0;
 }
 ```
