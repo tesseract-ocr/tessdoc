@@ -152,6 +152,7 @@ Please use scripts from [tesseract-ocr/tesstrain](https://github.com/tesseract-o
 - [Training LSTM Tesseract 5](tess5/TrainingTesseract-5.md) - based on [detailed Tesseract 4 tutorial and guide by Ray Smith](tess4/TrainingTesseract-4.00.md)
 
 ### Testing
+- [Benchmarks](Benchmarks.md)
 - [TestingTesseract](TestingTesseract.md)
 - [UNLV Testing of Tesseract](UNLV-Testing-of-Tesseract.md)
 

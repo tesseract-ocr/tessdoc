@@ -17,7 +17,7 @@ As input image for testing is used image from [issue 236](https://github.com/tes
 
 
 
-## Information about testing enviroment
+## Information about testing environment
 * Windows 10 64bit
 * compiler: VS 2019
 * CPU: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz 6 cores
@@ -107,12 +107,12 @@ tesseract 5.0.1
  Found libcurl/7.75.0 zlib/1.2.11 libssh2/1.10.1_DEV
  ```
  
- #### 501ap
+#### 501ap
  
- build with: `cmake -E env CXXFLAGS="/Qpar /fp:fast" cmake ..`
+build with: `cmake -E env CXXFLAGS="/Qpar /fp:fast" cmake ..`
  
- ```sh
- tesseract 5.0.1
+```sh
+tesseract 5.0.1
  leptonica-1.83.0 (Dec 17 2021, 17:33:37) [MSC v.1929 LIB Release x64]
   libgif 5.2.1 : libjpeg 6b (libjpeg-turbo 2.0.91) : libpng 1.6.37 : libtiff 4.3.0 : zlib 1.2.11 : libwebp 1.2.0 : libopenjp2 2.4.0
  Found AVX2
@@ -121,14 +121,17 @@ tesseract 5.0.1
  Found SSE4.1
  Found libarchive 3.5.1 zlib/1.2.11 liblzma/5.2.4 bz2lib/1.0.6 libzstd/1.4.9
  Found libcurl/7.75.0 zlib/1.2.11 libssh2/1.10.1_DEV
- ```
+```
  
- #### 501openmp
+#### 501openmp
 
-OpenMP build is know to use huge waste of CPU time. Because several users report problems it is turn off by default in version 5.0.1. For other version (>= 4.x) it is suggested to use enviroment variable `OMP_THREAD_LIMIT=1`. Input from OpenMP experts would be appreciated.
+The OpenMP build is known to waste a lot of CPU time.
+As several users report problems, it is disabled by default in version 5.0.1 and later releases.
+For other versions (>= 4.x) it is suggested to use the environment variable `OMP_THREAD_LIMIT=1`.
+Input from OpenMP experts would be appreciated.
 
- ```sh
- tesseract 5.0.1
+```sh
+tesseract 5.0.1
  leptonica-1.83.0 (Dec 17 2021, 17:33:37) [MSC v.1929 LIB Release x64]
   libgif 5.2.1 : libjpeg 6b (libjpeg-turbo 2.0.91) : libpng 1.6.37 : libtiff 4.3.0 : zlib 1.2.11 : libwebp 1.2.0 : libopenjp2 2.4.0
  Found AVX2
@@ -138,5 +141,4 @@ OpenMP build is know to use huge waste of CPU time. Because several users report
  Found OpenMP 2019
  Found libarchive 3.5.1 zlib/1.2.11 liblzma/5.2.4 bz2lib/1.0.6 libzstd/1.4.9
  Found libcurl/7.75.0 zlib/1.2.11 libssh2/1.10.1_DEV
-  ```
- 
+```
