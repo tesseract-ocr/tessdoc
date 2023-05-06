@@ -24,5 +24,6 @@ int main(int argc, char *argv[]) {
   outText = std::string(api->GetUTF8Text());
   std::cout << outText;
   api->End();
+  delete api;
   return 0;
 }

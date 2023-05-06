@@ -85,6 +85,7 @@ int main()
     outText = api->GetUTF8Text();
     printf(outText);
     api->End();
+    delete api;
     delete [] outText;
     pixDestroy(&image);
     return 0;
