@@ -470,7 +470,7 @@ _Oct 21 2011_
   * `OcrEngineMode` in `Init` replaces `AccuracyVSpeed` to control cube.
   * Greatly improved segmentation search with consequent accuracy and speed improvements, especially for Chinese.
   * Added `PageIterator` and `ResultIterator` as cleaner ways to get the full results out of Tesseract, that are not currently provided by any of the `TessBaseAPI::Get*` methods. All other methods, such as the `ETEXT_STRUCT` in particular are deprecated and will be deleted in the future.
-  * ApplyBoxes totally rewritten to make training easier. It can now cope with touching/overlapping training characters, and a new boxfile format allows word boxes instead of character boxes, BUT to use that you have to have already boostrapped the language with character boxes. "Cyclic dependency" on traineddata.
+  * ApplyBoxes has been completely rewritten to make training easier. It can now handle touching/overlapping training characters, and a new boxfile format allows word boxes instead of character boxes, BUT to use this you must have already bootstrapped the language with character boxes. "Cyclic dependency on traineddata.
   * Auto orientation and script detection added to page layout analysis.
   * Deleted **lots** of dead code.
   * Fixxht module replaced with scalable data-driven module.
@@ -562,7 +562,7 @@ No major functionality change. Just a bunch of bug fixes.
   * Added new functionality to TessBaseAPI for Ocropus.
 
 No new data files for the original 6 languages. Use the files from v2.00.
-There are new data files for German Fraktur (deu-f) and Brazillian Portuguese (por).
+There are new data files for German Fraktur (deu-f) and Brazilian Portuguese (por).
 
 **STOP PRESS** There is a minor bug in unicharset\_extractor. Since this is only applicable to training, the main tarball is fine unless you need to run training, in which case, overwrite your unicharset\_extractor.cpp and unicharset\_extractor.exe with the ones in tesseract-2.01.patch1.tar.gz.
 

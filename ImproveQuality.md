@@ -87,7 +87,8 @@ convert  427-1.jpg  -bordercolor White -border 10x10 427-1b.jpg
 
 #### Too big borders
 
-Big borders (especcially single letter/digit or one word on big background) can cause problems ("empty page"). Please try to crop you input image to text area with resonable border (e.g. 10 pt).
+Big borders (especcially single letter/digit or one word on big background) can cause problems ("empty page").
+Please try to crop you input image to text area with reasonable border (e.g. 10 pt).
 
 
 #### Scanning border Removal
