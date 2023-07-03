@@ -245,6 +245,7 @@ _Dec 26 2019_
 _Jul 07 2019_
 
   * Backward compatible release with 4.0.0
+  * Add an option to select the dot product function using a configurable variable, `dotproduct`. Possible values: `auto` (default), `generic`, `native`, `avx`, `sse`.
   * Add a new output option formatted in the [ALTO](https://en.wikipedia.org/wiki/ALTO_(XML)) standard. Command line usage: `tesseract imagename outputbase alto`. This output is **experimental** and might be changed a bit before the next release.
   * Add new renders LSTMBox, WordStrBox to simplify training
   * Add character boxes in hOCR output.
