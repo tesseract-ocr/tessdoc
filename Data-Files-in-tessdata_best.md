@@ -14,7 +14,7 @@ network.
 
 There are two sections below: 125 languages, followed by 37 scripts.
 
-## Languages (123 + osd + eq)
+### Languages (123 + osd + eq)
 All language and script models have the same values for the following parameters which have been removed from the
 individual descriptions: `int_mode=0, recoding=1, learning_rate=0.001, momentum=0.5, adam_beta=0.999 `
 
@@ -641,7 +641,7 @@ LSTM: network=[1,48,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx192O1c1], iteration=42017
 Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.000125, :2(Maxpool)=0.001, :3:0(Lfys64)=0.000125, :4(Lfx96)=0.000125, :5:0(Lrx96)=0.000125, :6(Lfx192)=0.000125, :7(Output)=0.000125
 ```
 
-## Scripts (37)
+### Scripts (37)
 
 All language and script models have the same values for the following parameters which have been removed from the
 individual descriptions: `int_mode=0, recoding=1, learning_rate=0.001, momentum=0.5, adam_beta=0.999 `

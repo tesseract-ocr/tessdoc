@@ -639,21 +639,14 @@ Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0001
 
 ```
 
-### quantized 'fast' models and the lang_map that was used to select them.
-
-```
-afr l36-64-96-512
-ara l48-64-96-192
-bel l36-48-96-128
-ben l36-64-96-192
-bul l36-48-96-128
-...
-```
 
 ### Scripts (37_)
 
 All language and script models have the same values for the following parameters which have been removed from the
 individual descriptions: `int_mode=1, recoding=1, learning_rate=0.001, momentum=0.5, adam_beta=0.999`
+
+See the [best](https://github.com/tesseract-ocr/tessdoc/blob/main/Data-Files-in-tessdata_best.md) scripts description
+for details on which languages are included with which scripts.
 
 ```
 Arabic
