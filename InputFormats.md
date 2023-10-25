@@ -34,4 +34,8 @@ If given such a file, Tesseract will only read the first image in the sequence o
 
 ### Other formats
 
-Tesseract does not support the HEIC and the AVIF formats.
+Tesseract does not support these image formats:
+
+* HEIC
+* AVIF
+* JPEG-XL
