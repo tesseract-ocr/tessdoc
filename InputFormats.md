@@ -9,7 +9,7 @@ Tesseract uses the [Leptonica](https://github.com/DanBloomberg/leptonica) librar
 * TIFF - requires libtiff, libz
 * JPEG 2000 - requires libopenjp2
 * GIF - requires libgif (giflib)
-* WebP (including animated WebP) - requires libwebp
+* WebP requires libwebp
 * BMP - no library required\*
 * PNM - no library required\*
 
