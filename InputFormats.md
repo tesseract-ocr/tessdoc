@@ -27,7 +27,6 @@ If you need to OCR PDF files, you should either convert them to another format o
 
 Note: Tesseract does support PDF as an **output** format.
 
-
 ### Animated WebP
 
 Tesseract does not support reading animated WebP files.
