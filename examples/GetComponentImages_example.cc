@@ -10,7 +10,7 @@ int main()
       fprintf(stderr, "Could not initialize tesseract.\n");
       exit(1);
   }
-  Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
+  Pix *image = pixRead("phototest.tif");
   api->SetImage(image);
   Boxa* boxes = api->GetComponentImages(tesseract::RIL_TEXTLINE, true, NULL, NULL);
   printf("Found %d textline image components.\n", boxes->n);

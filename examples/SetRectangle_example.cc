@@ -13,7 +13,7 @@ int main()
     }
 
     // Open input image with leptonica library
-    Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
+    Pix *image = pixRead("phototest.tif");
     api->SetImage(image);
     // Restrict recognition to a sub-rectangle of the image
     // SetRectangle(left, top, width, height)
