@@ -1,7 +1,7 @@
 # Overview of the new neural network system in Tesseract 4.00
 
 *   [Introduction](#introduction)
-*   [Integration with Tesseract](#Integration-with-tesseract)
+*   [Integration with Tesseract](#integration-with-tesseract)
 *   [Hardware and CPU requirements](#hardware-and-cpu-requirements)
 *   [For Open Source Contributors](#for-open-source-contributors)
 *   [Basics of the Implementation](#basics-of-the-implementation)
