@@ -108,6 +108,7 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * http://www.steffmann.de/wordpress/test-2/
 
 #### Arabic Fonts
+
 * https://fonts.google.com/?subset=arabic
 
 #### Devanagari Fonts
@@ -160,6 +161,7 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 * http://www.morscher.com/3r/fonts/fraktur.htm
 
 #### Hebrew Fonts
+
 * [A list of Hebrew fonts from the Open Siddur Project](http://opensiddur.org/tools/fonts/)
 
 #### Collections of fonts

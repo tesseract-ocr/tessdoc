@@ -89,7 +89,8 @@ Depending on available resources and opinions, these suggestions will either be 
 
 * #### Add option to optionally select implementation for dot product (CPU, SSE, AVX, ...)
 
-* #### Relative includes for traineddata 
+* #### Relative includes for traineddata
+
   tessedit_load_sublangs should search for the sublangs relative to the parent, not starting in tessdata dir.
 
 * #### More fixes for compiler warnings and issues reported by Coverity Scan
@@ -97,8 +98,10 @@ Depending on available resources and opinions, these suggestions will either be 
 * #### Add a simple bash script for building tesseract
 
 * #### New traineddata format 
+
   In addition to the current proprietary format Tesseract could also support ZIP archives (see [discussion](https://github.com/tesseract-ocr/tesseract/pull/911)).
-A possible implementation using libarchive is [available](https://github.com/stweil/tesseract/tree/libarchive), but needs more testing.
+
+  A possible implementation using libarchive is [available](https://github.com/stweil/tesseract/tree/libarchive), but needs more testing.
 
 * #### "Training light" - Learning by doing (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1442))
 
@@ -143,8 +146,11 @@ Here we collect important issues and features for the release(s) following 4.0.0
   This does not include OpenCL or the old Tesseract engine.
 
 * #### Tesseract creates output for missing input (see [issue 1023](https://github.com/tesseract-ocr/tesseract/issues/1023)).
+
   Mostly solved, but could be improved.
 
 
 * ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
+
   It looks like it is not possible to run more than one training in the same process. The pull request describes a possible fix, but does not include a complete implementation (low priority).
+
