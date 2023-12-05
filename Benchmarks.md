@@ -48,11 +48,13 @@ print("\nDuration:", elapsed_time)
 ```
 
 ## Tesseract build info
- information provided by `tesseract -v`
+
+information provided by `tesseract -v`
 
 ### 3.05
 
 #### 305
+
 It uses the legacy engine.
 
 ```sh

@@ -12,9 +12,9 @@ See [FAQ](FAQ.md#running-tesseract) for more examples and tips.
 
 ## Available OCR Engines in Tesseract 5
 
-   Use `--oem 1` for LSTM/neural network, `--oem 0` for Legacy Tesseract. 
+Use `--oem 1` for LSTM/neural network, `--oem 0` for Legacy Tesseract. 
 
-   Please note that Legacy Tesseract models are included in traineddata files from [tessdata](https://github.com/tesseract-ocr/tessdata) repo only.
+Please note that Legacy Tesseract models are included in traineddata files from [tessdata](https://github.com/tesseract-ocr/tessdata) repo only.
 
    `tesseract input.tiff output --oem 1 -l eng`
 
@@ -63,7 +63,7 @@ salta sobre o cdo preguigoso.
 
 ## Using Multiple Languages
 
-Add '-l LANG[+LANG]' to the command line to use multiple languages together for recognition 
+Add `-l LANG[+LANG]` to the command line to use multiple languages together for recognition 
 
     tesseract images/eurotext.png - -l eng+deu
 
@@ -124,6 +124,7 @@ real    0m0.429s
 user    0m0.550s
 sys     0m0.074s
 ```
+
 ### Using script/Devanagari as primary language (it supports all languages in Devanagari script and English)
 
 ```
