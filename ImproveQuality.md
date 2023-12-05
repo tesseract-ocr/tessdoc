@@ -9,11 +9,11 @@ There are a variety of reasons you might not get good quality output from Tesser
   * [Noise Removal](#noise-removal)
   * [Dilation / Erosion](#dilation-and-erosion)
   * [Rotation / Deskewing](#rotation--deskewing)
-  * [Borders](#Borders)
+  * [Borders](#borders)
   * [Transparency / Alpha channel](#transparency--alpha-channel)
   * [Tools / Libraries](#tools--libraries)
   * [Examples](#examples)
-  * [Tables recognitions](#tables-recognitions)
+  * [Tables recognition](#tables-recognition)
 * [Page segmentation method](#page-segmentation-method)
 * [Dictionaries, word lists, and patterns](#dictionaries-word-lists-and-patterns)
 * [Still having problems?](#still-having-problems)
@@ -125,14 +125,14 @@ Tesseract 4.00 removes the alpha channel with leptonica function [pixRemoveAlpha
 
 If you need an example how to improve image quality programmatically, have a look at this examples:
 
-  * [OpenCV - Rotation (Deskewing)](http://felix.abecassis.me/2011/10/opencv-rotation-deskewing/) - c++ example
-  * [Fred's ImageMagick TEXTCLEANER](http://www.fmwconcepts.com/imagemagick/textcleaner/index.php) - bash script for processing a scanned document of text to clean the text background.
-  * [rotation\_spacing.py](https://gist.github.com/endolith/334196bac1cac45a4893#) - python script for automatic detection of rotation and line spacing of an image of text
-  * [crop\_morphology.py](https://github.com/danvk/oldnyc/blob/master/ocr/tess/crop_morphology.py) - [Finding blocks of text in an image using Python, OpenCV and numpy](http://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html)
-  * [Credit card OCR with OpenCV and Python](https://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python)
-  * [noteshrink](https://github.com/mzucker/noteshrink) - python example how to clean up scans. Details in blog [Compressing and enhancing hand-written notes](https://mzucker.github.io/2016/09/20/noteshrink.html).
-  * [uproject text](https://github.com/mzucker/unproject_text) - python example how to recover perspective of image. Details in blog [Unprojecting text with ellipses](https://mzucker.github.io/2016/10/11/unprojecting-text-with-ellipses.html).
-  * [page_dewarp](https://github.com/mzucker/page_dewarp) - python example for Text page dewarping using a "cubic sheet" model. Details in blog [Page dewarping](https://mzucker.github.io/2016/08/15/page-dewarping.html).
+* [OpenCV - Rotation (Deskewing)](http://felix.abecassis.me/2011/10/opencv-rotation-deskewing/) - c++ example
+* [Fred's ImageMagick TEXTCLEANER](http://www.fmwconcepts.com/imagemagick/textcleaner/index.php) - bash script for processing a scanned document of text to clean the text background.
+* [rotation\_spacing.py](https://gist.github.com/endolith/334196bac1cac45a4893#) - python script for automatic detection of rotation and line spacing of an image of text
+* [crop\_morphology.py](https://github.com/danvk/oldnyc/blob/master/ocr/tess/crop_morphology.py) - [Finding blocks of text in an image using Python, OpenCV and numpy](http://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html)
+* [Credit card OCR with OpenCV and Python](https://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python)
+* [noteshrink](https://github.com/mzucker/noteshrink) - python example how to clean up scans. Details in blog [Compressing and enhancing hand-written notes](https://mzucker.github.io/2016/09/20/noteshrink.html).
+* [uproject text](https://github.com/mzucker/unproject_text) - python example how to recover perspective of image. Details in blog [Unprojecting text with ellipses](https://mzucker.github.io/2016/10/11/unprojecting-text-with-ellipses.html).
+* [page_dewarp](https://github.com/mzucker/page_dewarp) - python example for Text page dewarping using a "cubic sheet" model. Details in blog [Page dewarping](https://mzucker.github.io/2016/08/15/page-dewarping.html).
 * [How to remove shadow from scanned images using OpenCV](https://stackoverflow.com/questions/44752240/how-to-remove-shadow-from-scanned-images-using-opencv)
 
 
