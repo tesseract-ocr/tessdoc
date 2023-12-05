@@ -465,4 +465,4 @@ tesseract image.tif output -l [lang]
 
 More options of `combine_tessdata` can be found on its [Manual Page](https://github.com/tesseract-ocr/tesseract/blob/3.02.02/doc/combine_tessdata.1.asc) or in comment of its [source code](https://github.com/tesseract-ocr/tesseract/blob/3.02.02/training/combine_tessdata.cpp#L23).
 
-You can inspect some of the internals of traineddata files  in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).
+You can inspect some of the internals of traineddata files in 3rd party online [Traineddata inspector](https://te-traineddata-ui.herokuapp.com).

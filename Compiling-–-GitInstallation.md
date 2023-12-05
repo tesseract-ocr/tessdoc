@@ -14,6 +14,7 @@
 These are the instructions for installing Tesseract from the git repository. You should be ready to face unexpected problems.
 
 ## Installing With Autoconf Tools
+
 In order to do this; you must have automake, libtool, leptonica, make and pkg-config installed. In addition, you need Git and a C++ compiler.
 
 On Debian or Ubuntu, you can probably install all required packages like this:
@@ -143,6 +144,7 @@ If you want to put the traineddata files in a different directory than the direc
 1. Place any language training data you need into this `tessdata` folder as well. For example, the English one is called `eng.traineddata`. Download it [from the tessdata repository here](https://github.com/tesseract-ocr/tessdata), and move it to your `tessdata` directory you just specified in your `TESSDATA_PREFIX` variable above. 
 
 ### Build with TensorFlow
+
 Building with TensorFlow requires additional packages for Protocol Buffers and TensorFlow.
 On Debian or Ubuntu, you can probably install them like this:
 
@@ -160,6 +162,7 @@ Build support with TensorFlow is a new feature in Git master. The resulting code
 
 
 ### Unit test builds
+
 Such builds can be used to run the automated regression tests, which have additional requirements. This includes the additional dependencies for the training tools (as mentioned above), and downloading all git submodules, as well as the model repositories (`*.traineddata`):
 
     # Clone the Tesseract source tree:
@@ -190,6 +193,7 @@ Failed tests will show prominently as segfaults or SIGILL handlers (depending on
 
 
 ### Debug Builds
+
 Such builds produce Tesseract binaries which run very slowly. They are not useful for production, but good to find or analyze software problems. This is a proven build sequence:
 
     cd tesseract
@@ -227,6 +231,7 @@ GNU gprof is used to show the profiling information from that file.
 
 
 ### Release Builds for Mass Production
+
 The default build creates a Tesseract executable which is fine for processing of single images. Tesseract then uses 4 CPU cores to get an OCR result as fast as possible.
 
 For mass production with hundreds or thousands of images that default is bad because the multi threaded execution has a very large overhead. It is better to run single threaded instances of Tesseract, so that every available CPU core will process a different image.
@@ -246,6 +251,7 @@ This disabled OpenMP (multi threading), does not use a shared Tesseract library 
 disables setting of `errno` for mathematical functions (faster execution!) and enables lots of compiler warnings.
 
 ### Builds for fuzzing
+
 Fuzzing is used to test the Tesseract API for bugs. Tesseract uses [OSS-Fuzz](https://oss-fuzz.com/),
 but fuzzing can also run locally. A newer Clang++ compiler is required.
 
@@ -273,4 +279,5 @@ Example (Run the fuzzer to find new bugs):
     nice bin/fuzzer/fuzzer-api -jobs=16 -workers=16
 
 ## Building using Windows Visual Studio
+
 See [Compiling for Windows](Compiling.md#windows).

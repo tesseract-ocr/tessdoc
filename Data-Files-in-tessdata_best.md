@@ -15,6 +15,7 @@ network.
 There are two sections below: 125 languages, followed by 37 scripts.
 
 ### Languages (123 + osd + eq)
+
 All language and script models have the same values for the following parameters which have been removed from the
 individual descriptions: `int_mode=0, recoding=1, learning_rate=0.001, momentum=0.5, adam_beta=0.999 `
 
