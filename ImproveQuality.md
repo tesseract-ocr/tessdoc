@@ -80,18 +80,19 @@ A skewed image is when a page has been scanned when not straight. The quality of
 
 #### Missing borders
 
-If you OCR just text area without any border, tesseract could have problems with it. See for some details in [tesseract user forum](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/v26a-RYPSOE/2Sppq61GBwAJ)[#427](https://github.com/tesseract-ocr/tesseract/issues/427) . You can easy add small border (e.g. 10 pt) with [ImageMagick®](http://imagemagick.org/script/index.php):
+If you OCR just text area without any border, tesseract could have problems with it. See for some details in [tesseract user forum](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/v26a-RYPSOE/2Sppq61GBwAJ)[#427](https://github.com/tesseract-ocr/tesseract/issues/427) . You can easy add small border (e.g. 10 px) with [ImageMagick®](http://imagemagick.org/script/index.php):
 ```
 convert  427-1.jpg  -bordercolor White -border 10x10 427-1b.jpg
 ```
 
 #### Too big borders
 
-Big borders (especcially single letter/digit or one word on big background) can cause problems ("empty page").
-Please try to crop you input image to text area with reasonable border (e.g. 10 pt).
+Big borders (especially when processing a single letter/digit or one word on a large background) can cause problems ("empty page").
+Please try to crop you input image to a text area with reasonable border (e.g. 10 px).
 
 
 #### Scanning border Removal
+
 ![borders.png](images/borders.png)
 
 Scanned pages often have dark borders around them. These can be erroneously picked up as extra characters, especially if they vary in shape and gradation.
@@ -107,7 +108,7 @@ Tesseract 3.0x expects that users remove the alpha channel from the image before
 convert input.png -alpha off output.png
 ```
 
-Tesseract 4.00 removes the alpha channel with leptonica function [pixRemoveAlpha()](https://github.com/DanBloomberg/leptonica/blob/648a3be52b6a004df14671de7004416f9a3ce489/src/pixconv.c#L133): it removes the alpha component by blending it with a white background. In some case (e.g. OCR of [movie subtitles](https://github.com/tesseract-ocr/tesseract/issues/2048#issuecomment-438015376)) this can lead to problems, so users would need to remove the alpha channel (or pre-process the image by inverting image colors) by themself.
+Tesseract 4.00 removes the alpha channel with leptonica function [pixRemoveAlpha()](https://github.com/DanBloomberg/leptonica/blob/648a3be52b6a004df14671de7004416f9a3ce489/src/pixconv.c#L133): it removes the alpha component by blending it with a white background. In some cases (e.g. OCR of [movie subtitles](https://github.com/tesseract-ocr/tesseract/issues/2048#issuecomment-438015376)) this can lead to problems, so users would need to remove the alpha channel (or pre-process the image by inverting image colors) by themselves.
 
 ### Tools / Libraries
 
