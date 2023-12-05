@@ -10,7 +10,7 @@ int main()
       fprintf(stderr, "Could not initialize tesseract.\n");
       exit(1);
   }
-  Pix *image = pixRead("/usr/src/tesseract/testing/phototest.tif");
+  Pix *image = pixRead("phototest.tif");
   api->SetImage(image);
   api->Recognize(0);
   tesseract::ResultIterator* ri = api->GetIterator();
