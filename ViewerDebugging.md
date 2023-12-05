@@ -1,4 +1,4 @@
-# How to use the Viewer to debug recognition.
+# How to use the Viewer to debug recognition
 
 ## Introduction
 
@@ -87,7 +87,7 @@ permute_characters : 45.49 -4.26 : c [63 ]a  : o [6f ]a  : d [64 ]a  : e [65 ]a
 What it all means:
 The line after each chop\_word: is the classifier output for each of the original connected components, as were shown in the Editor Image window in different colors. Each classifier result consists of a rating, a confidence, a character string, its hexadecimal unicode representation, and a character indicating its ctype. The rating is a positive distance number and is scaled by the outline length. The confidence is the distance from the nearest prototype, but negated so more negative numbers are worse than numbers closer to zero. The ctype is 'a' for lower case letter, 'A' for upper case letter, 'x' for letter that is neither, and '0' for digit. An absent ctype means none of the above.
 
-After the last chop\_word, is a permute\_characters. This shows the first attempt at building a word string from the classifier output. The rating is the sum of the ratings for all the characters, and the confidence is the worst of all the characters.
+After the last chop\_word is a permute\_characters. This shows the first attempt at building a word string from the classifier output. The rating is the sum of the ratings for all the characters, and the confidence is the worst of all the characters.
 
 There isn't one in this case, but an improve 1 and improve 2 would be 2 halves of a chopped blob, and a corresponding permute\_characters.
 

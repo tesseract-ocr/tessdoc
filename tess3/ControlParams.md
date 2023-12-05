@@ -1,4 +1,4 @@
-# A list of useful control parameters and config files.
+# A list of useful control parameters and config files
 
 # Introduction
 
@@ -10,6 +10,7 @@ tesseract --print-parameters
 There are 3 different types:
 
 ### Init only
+
 Characterized by **INIT** in its initialization macro.
 These parameters can **only** be set at the ` TessBaseAPI::Init ` function that takes a list of config files.
 
@@ -19,9 +20,11 @@ These parameters can **only** be set at the ` TessBaseAPI::Init ` function that 
 The rest can be set through ` TessBaseAPI::SetVariable ` and make 2 further groups:
 
 ### General parameters
+
 Control many different aspects of Tesseract's functionality.
 
 ### Debug parameters
+
 Contain debug in their name, control huge amounts of optional debug text and graphical output as Tesseract works.
 
 
