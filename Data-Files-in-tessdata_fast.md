@@ -640,12 +640,12 @@ Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0001
 ```
 
 
-### Scripts (37_)
+### Scripts (37)
 
 All language and script models have the same values for the following parameters which have been removed from the
 individual descriptions: `int_mode=1, recoding=1, learning_rate=0.001, momentum=0.5, adam_beta=0.999`
 
-See the [best](https://github.com/tesseract-ocr/tessdoc/blob/main/Data-Files-in-tessdata_best.md) scripts description
+See the [best](Data-Files-in-tessdata_best.md) scripts description
 for details on which languages are included with which scripts.
 
 ```
