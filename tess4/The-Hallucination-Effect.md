@@ -16,6 +16,6 @@ If your training text frequently includes a certain element in a certain form.
 
 Mostly, The Hallucination Effect is a product of the texts that have been used to create the `traineddata` model.
 
-* To combat such effect, one should refrain from excessive use of a single element/form/character/ etc... 
+> To combat such effect, one should refrain from excessive use of a single element/form/character/ etc... 
 
 Also, one should use a vast and diverse text input for training, while cleaning and removing the parts that you deem unnecessary, because `Neural Networks` also learn patterns & language behavior.
