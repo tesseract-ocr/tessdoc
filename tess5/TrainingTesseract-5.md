@@ -363,7 +363,6 @@ At iteration 718/10700/10700, Mean rms=0.111000%, delta=0.006000%, BCER train=0.
 At iteration 718/10800/10800, Mean rms=0.108000%, delta=0.002000%, BCER train=0.007000%, BWER train=0.052000%, skip ratio=0.000000%,  New best BCER = 0.007000 wrote best model:data/engRupee/checkpoints/engRupee_0.007000_718_10800.checkpoint wrote checkpoint.
 
 Finished! Selected model with minimal training error rate (BCER) = 0.007
-
 ```
 
 With `--debug_interval -1`, the trainer outputs verbose debug text for every

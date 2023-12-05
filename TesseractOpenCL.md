@@ -6,9 +6,11 @@ It is support for Linux, macOS and Windows.
 Modern graphic cards can do some computations which are needed for Tesseract very fast.
 By using that compute power, Tesseract ideally can be made faster.
 
+
 # How to build Tesseract with OpenCL
 
 **Important note**: OpenCL support in Tesseract is still considered experimental. There are some major bugs associated with it (see issue [837](https://github.com/tesseract-ocr/tesseract/issues/837)). Building Tesseract with OpenCL support is not recommended (for any version of Tesseract), unless you are a developer and want to improve the OpenCL code.
+
 
 ## Building Tesseract on VS 2010 with OpenCL
 
@@ -27,7 +29,9 @@ By using that compute power, Tesseract ideally can be made faster.
 
 5.	Build and run the solution.
 
+
 ## Building Tesseract on Linux with OpenCL
+
   1. Make sure you have installed OpenCL sdk and libtiff-dev
   1. The OpenCL header and library paths are currently defined by the variables OPENCL\_HDR\_PATH and OPENCL\_LIB in configure.ac. These have to be set to the appropriate paths depending on the OpenCL installation.
   1. To build on Linux use
@@ -41,6 +45,7 @@ CPPFLAGS+=-I/opt/AMDAPP/include/ ./configure --enable-opencl
 ```
 
 # Using Tesseract with OpenCL
+
 Normally Tesseract works with *OpenCL Installable Client Drivers* (ICD).
 It tests for available OpenCL drivers at runtime, so a Tesseract binary can work with different GPU hardware on different computers. All you have to do is installing the OpenCL driver for your GPU hardware. There also exists a generic OpenCL driver which uses the CPU instead of a GPU. More than one OpenCL driver can be enabled for a computer system.
 
@@ -48,8 +53,11 @@ When Tesseract with OpenCL support is started the first time, it looks for the a
 
 It is possible to override the automatic choice by setting the environment variable `TESSERACT_OPENCL_DEVICE`, for example `TESSERACT_OPENCL_DEVICE=1` selects the first OpenCL device. As the native CPU has also a device number (always the highest number) in Tesseract, use of OpenCL can be disabled by setting that number.
 
+
 ## Installable Client Drivers for OpenCL (ICD)
+
 These Debian packages provide such drivers:
+
 * amd-opencl-icd – AMD Radeon GPU
 * beignet-opencl-icd – Intel GPU
 * mesa-opencl-icd – AMD GPU
@@ -61,9 +69,11 @@ These Debian packages provide such drivers:
 
 It is possible to enable debug messages for some drivers by setting environment variables ([example](http://portablecl.org/docs/html/)).
 
+
 ## OpenCL devices (examples)
 
 ### Linux (x86)
+
 * Intel(R) HD Graphics IvyBridge M GT2
 * pthread-Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
 * pthread-Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
@@ -71,10 +81,15 @@ It is possible to enable debug messages for some drivers by setting environment 
 ### macOS
 
 ### Windows
+
 * pthread-Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
 
+
 ## Performance
+
 Only some parts of the OCR process are handled by OpenCL, so using OpenCL does not necessarily result in much faster OCR. More precise measurements have to be done.
 
+
 ## Known problems
+
 OpenCL is still experimental, so expect possible crashes, wrong OCR results or bad instead of improved performance.

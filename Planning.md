@@ -55,6 +55,7 @@ See the [release notes](ReleaseNotes.md).
 
 See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesseract/issues/1423).
 
+
 ### Open issues which should be fixed
 
 * #### Issues with the "bug" label (see [list here](https://github.com/tesseract-ocr/tesseract/labels/bug))
@@ -71,10 +72,12 @@ See also the discussion for [issue #1423](https://github.com/tesseract-ocr/tesse
 
 * #### mgr_.Init(traineddata_path.c_str()):Error:Assert failed: #1075 (see [issue 1075](https://github.com/tesseract-ocr/tesseract/issues/1075))
 
+
 ### Features wanted for this release
 
 * #### Script for installing only selected languages from github (see [issue](https://github.com/tesseract-ocr/tesseract/issues/1440))
   https://github.com/zdenop/tessdata_downloader
+
 
 ### To be discussed
 
@@ -109,6 +112,7 @@ Depending on available resources and opinions, these suggestions will either be 
 
 * #### Schedule date
 
+
 ### Regression of features from 3.0x
 
 Tesseract 4.0 should be a full replacement for Tesseract 3.05 and have the same features when used with the old OCR engine (`--oem 0`). The following regressions still need verification (are they really regressions, or are they just missing features for LSTM):
@@ -126,10 +130,11 @@ These features still work with the old OCR engine (`--oem 0`), but are missing a
 
 * #### Black list / White list (See [issue](https://github.com/tesseract-ocr/tesseract/issues/751)). Here is a [workaround](https://github.com/tesseract-ocr/tesseract/issues/751#issuecomment-333904808). [Fixed in 4.1.0](https://github.com/tesseract-ocr/tesseract/pull/2294).
 
-
 * #### hOCR font info (See [comment](https://github.com/tesseract-ocr/tesseract/issues/1074#issuecomment-3278142444))
 
+
 ## Future release
+
 Here we collect important issues and features for the release(s) following 4.0.0.
 
 * #### New LSTM-based OSD detector (see [comment](https://github.com/tesseract-ocr/tesseract/issues/707#issuecomment-374465989)).
@@ -148,7 +153,6 @@ Here we collect important issues and features for the release(s) following 4.0.0
 * #### Tesseract creates output for missing input (see [issue 1023](https://github.com/tesseract-ocr/tesseract/issues/1023)).
 
   Mostly solved, but could be improved.
-
 
 * ####  Issue 1353: Patch for /training/tessopt.cpp (see [pull request 13](https://github.com/tesseract-ocr/tesseract/pull/13))
 

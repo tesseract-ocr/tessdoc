@@ -14,5 +14,6 @@
 * [wiki.wareya.moe - tesstrain_utils.sh at pastebin](https://pastebin.com/TfqJUxSR)
 
 ### Community Training Guide
+
 * [Kristóf Horváth - LSTM training guide](https://docs.google.com/document/d/1qDqbnlptcCPVIvMOHwfNws-CQat-llZLOTHC6S94Vec).
 

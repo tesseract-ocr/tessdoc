@@ -7,6 +7,7 @@
 There are several (known) toolchains that can help you build the tesseract: [GNU Autotools](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html), [CMake](https://cmake.org/), [Software Network](https://software-network.org/) (a.k.a. sw) and [vcpkg](https://vcpkg.io/en/). Please have a look at the [tesseract Github Action Worklows](https://github.com/tesseract-ocr/tesseract/tree/main/.github/workflows) if the following instructions are not clear to you.
 
 ## Table of contents
+
 * [Linux](Compiling.md#linux)
 * [Windows](Compiling.md#windows)
 * [macOS](Compiling.md#macos)
@@ -14,7 +15,9 @@ There are several (known) toolchains that can help you build the tesseract: [GNU
 * [Common Errors](Compiling.md#common-errors)
 * [Miscellaneous](Compiling.md#miscellaneous)
 
+
 ## Linux
+
 To install **Tesseract 4.x** you can simply run the following command on your **Ubuntu 18.xx bionic**:
 ```
 sudo apt install tesseract-ocr
@@ -27,6 +30,7 @@ sudo apt install libtesseract-dev
 
 The following instructions are for building on Linux, which also can be applied to other UNIX like operating systems.
 
+
 ### Dependencies
 
 * A compiler for C and C++: GCC or Clang
@@ -34,6 +38,7 @@ The following instructions are for building on Linux, which also can be applied 
 * pkg-config
 * [Leptonica](http://www.leptonica.org/)
 * (optional) zlib, libpng, libjpeg, libtiff, giflib, openjpeg, webp, archive, curl
+
 
 ### Ubuntu
 
@@ -57,6 +62,7 @@ sudo apt-get install libicu-dev
 sudo apt-get install libpango1.0-dev
 sudo apt-get install libcairo2-dev
 ```
+
 
 ### Leptonica
 
@@ -85,11 +91,13 @@ The sources are at https://github.com/DanBloomberg/leptonica . The instructions 
 
 Note that if building Leptonica from source, you may need to ensure that /usr/local/lib is in your library path. This is a standard Linux bug, and the information at [Stackoverflow](http://stackoverflow.com/questions/4743233/is-usr-local-lib-searched-for-shared-libraries) is very helpful.
 
+
 ## Installing Tesseract from Git
 
 Please follow instructions in [Compiling--GitInstallation](Compiling-%E2%80%93-GitInstallation.md)
 
 Also read [Install Instructions](https://github.com/tesseract-ocr/tesseract/blob/main/INSTALL.GIT.md)
+
 
 ## Install elsewhere / without root
 
@@ -120,6 +128,7 @@ In some system, you might also need to specify the path to the `pkg-config` befo
 export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig
 ```
 
+
 ## Video representation of the Compiling process for Tesseract 4.0 and Leptonica 1.7.4 on Ubuntu 16.xx
 
   * Video [Build from Source Leptonica 1.7.4](https://www.youtube.com/watch?v=vOdnt2h1U8U)
@@ -146,16 +155,19 @@ to point to your tessdata directory (example: if your tessdata path is '/usr/loc
 
 **!!! IMPORTANT !!!** To use Tesseract in your application (to include tess or to link it into your app) see this very simple [example](User-App-Example.md).
 
+
 #### Build the latest library (using Software Network client)
 
 1. [Download](https://software-network.org/client/sw-master-windows-client.zip) the latest SW (Software Network `https://software-network.org/`) client from `https://software-network.org/client/`.
 2. Run `sw setup` (may require administrator access)
 3. Run `sw build org.sw.demo.google.tesseract.tesseract`.
 
+
 #### For visual studio project using tesseract
 
 1. Setup [Vcpkg](https://github.com/Microsoft/vcpkg/blob/master/README.md) the Visual C++ Package Manager.
 2. Run `vcpkg install tesseract:x64-windows` for 64-bit. Use --head for the master branch.
+
 
 #### Static linking
 
@@ -165,6 +177,7 @@ To build a self-contained `tesseract.exe` executable (without any DLLs or runtim
 - `vcpkg install tesseract:x86-windows-static` for 32-bit
 
 Use --head for the main branch. It may still require one DLL for the OpenMP runtime, `vcomp140.dll` (which you can find in the Visual C++ Redistributable 2015).
+
 
 #### Build training tools
 
@@ -177,6 +190,7 @@ To do this:
 2. Checkout tesseract sources `git clone https://github.com/tesseract-ocr/tesseract tesseract && cd tesseract`.
 3. Run `sw build`.
 4. Binaries will be available under .sw\out\some hash dir\...
+
 
 #### Develop Tesseract
 
@@ -219,6 +233,7 @@ sw build
 
 You'll see a solution link appeared in the root directory of Tesseract.
 
+
 ## Building for x64 platform
 
 #### sw
@@ -231,17 +246,21 @@ cmake .. -G "Visual Studio 14 2015 Win64"
 
 If you're building with sw run `sw generate`, it will create a solution link for you (not yet implemented!).
 
+
 ## 3.05
 
 If you have Visual Studio 2015, checkout the https://github.com/peirick/VS2015_Tesseract repository for [Visual Studio 2015 Projects for Tessearct and dependencies.](https://github.com/peirick/VS2015_Tesseract) and click on build_tesseract.bat. After that you still need to download the language packs.
+
 
 ## 3.03rc-1
 
 Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http://vorba.ch/2014/tesseract-3.03-vs2013.html).
 
+
 ## 3.02
 
 For tesseract-ocr 3.02 please follow instruction in [Visual Studio 2008 Developer Notes for Tesseract-OCR](http://tesseract-ocr.googlecode.com/svn/trunk/vs2008/doc/setup.html#using-the-latest-tesseractocr-sources).
+
 
 ## 3.01
 
@@ -255,9 +274,11 @@ Unpack them to one directory (e.g. `tesseract-3.01`). Note that `tesseract-ocr-3
 
 Windows relevant files are located in vs2008 directory (e.g. 'tesseract-3.01\vs2008'). The same build process as usual applies: Open tesseract.sln with VC++Express 2008 and build all (or just Tesseract.) It should compile (in at least release mode) without having to install anything further. The dll dependencies and Leptonica are included. Output will be in tesseract-3.01\vs2008\bin (or tesseract-3.01\vs2008\bin.rd or tesseract-3.01\vs2008\bin.dbg based on configuration build).
 
+
 ## Mingw+Msys
 
 For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](http://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
+
 
 ## Msys2
 
@@ -270,6 +291,7 @@ The core packages groups you need to install if you wish to build from PKGBUILDs
 - mingw-w64-x86_64-toolchain for building mingw64 packages
 
 To build the tesseract-ocr release package, use PKGBUILD from https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-tesseract-ocr
+
 
 ## Cygwin
 
@@ -287,7 +309,9 @@ tesseract-training-eng                  3.04-1
 tesseract-training-util                 3.04.01-1
 ```
 
+
 ## Mingw-w64
+
 [Mingw-w64](http://mingw-w64.org/) allows building 32- or 64-bit executables for Windows.
 It can be used for native compilations on Windows,
 but also for cross compilations on Linux (which are easier and faster than native compilations).
@@ -311,7 +335,9 @@ These prerequisites will be needed:
 * [openjpeg](https://github.com/uclouvain/openjpeg)
 * [leptonica](https://github.com/DanBloomberg/leptonica/)
 
+
 # macOS
+
 Typically a package manager like Fink, Homebrew or MacPorts is needed in addition to Apple's Xcode.
 Xcode and the related command line tools provides the compiler (`llvm-gcc`) and linker, but also libraries like `zlib`. The package manager provides free software packages which are not part of Xcode.
 
@@ -319,9 +345,12 @@ The Xcode Command Line Tools can be installed by running `xcode-select --install
 
 Note that Tesseract 4 can be built with OpenMP support, but that requires additional installations.
 
+
 ## macOS with Fink
+
 Fink (as of 2017-04) neither provides Leptonica nor the packages needed for the Tesseract training tools,
 so it cannot be recommended for building Tesseract.
+
 
 ## macOS with MacPorts
 
@@ -346,6 +375,7 @@ make
 sudo make install
 ```
 
+
 ### Install required packages
 
 ```
@@ -355,6 +385,7 @@ sudo port install autoconf \
                   pkgconfig \
                   leptonica
 ```
+
 
 ### Compilation
 
@@ -383,9 +414,11 @@ If compilation fails at the `make` command, with `libtool` erring on missing ins
 
 And then proceed with `make`.
 
+
 ### Install Tesseract with training tools
 
 In the above training tools are not installed. You can install not only Tesseract but also training tools like below.
+
 
 #### Install packages required by training tools
 
@@ -394,7 +427,9 @@ sudo port install cairo pango
 sudo port install icu +devel
 ```
 
+
 #### Build and Install
+
 ```
 git clone https://github.com/tesseract-ocr/tesseract/
 cd tesseract
@@ -422,6 +457,7 @@ brew install libarchive
 brew install gcc
 ```
 
+
 ### Compile
 
 As of January 2017, the clang builds but OpenMP will only use a single thread, potentially reducing performance. If you really need OpenMP, install and use gcc.
@@ -441,6 +477,8 @@ sudo make install
 make training
 sudo make training-install
 ```
+
+
 ## macOS: building for arm-apple-darwin64
 
 For cross-compiling see discussion in [issue 2334](https://github.com/tesseract-ocr/tesseract/issues/2334#issuecomment-477218027). You need to specify target this way:
@@ -448,6 +486,7 @@ For cross-compiling see discussion in [issue 2334](https://github.com/tesseract-
 ```bash
 ./configure CXX="g++ --target=arm-apple-darwin64"
 ```
+
 
 # Android
 
@@ -472,6 +511,7 @@ Tesseract Open Source OCR Engine v4.1.0 with Leptonica
     0m05.61s real     0m05.37s user     0m00.23s system
 ```
 
+
 ## Alternative
 
 Another method of compiling is using the project [Building for Android with Docker](https://github.com/rhardih/bad), which at the time of writing can produce shared libraries for the following versions and architectures:
@@ -484,7 +524,9 @@ Another method of compiling is using the project [Building for Android with Dock
 
 Compilation of dependent libraries, **leptonica** and **tiff**, are included and handled as well.
 
+
 ## Cross compile on Linux with NDK
+
 Another method of compiling is doing it on a Linux machine, with Android NDK r22 (22.1.7171670). This method compiles for following versions and architectures:
 
 
@@ -551,6 +593,7 @@ make clean
 make -j
 make install
 ```
+
 
 # Common Errors
 
