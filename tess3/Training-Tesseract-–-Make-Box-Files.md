@@ -120,5 +120,4 @@ Tif/Box file pairs are available in the [Downloads Archive on SourceForge](http:
 [Italian](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.ita.tar.gz/download)
 [Spanish](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.spa.tar.gz/download)
 
-Note the tiff files are G4 compressed
-to save space, so you will have to have libtiff or uncompress them first).
+Note the tiff files are G4 compressed to save space, so you will have to have libtiff or uncompress them first.
