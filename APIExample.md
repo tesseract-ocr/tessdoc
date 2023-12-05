@@ -46,7 +46,7 @@ int main()
 
 The program must be linked to the tesseract-ocr and leptonica libraries.
 
-If you want to restrict recognition to a sub-rectangle of the image - call _SetRectangle(left, top, width, height)_ after SetImage. Each SetRectangle clears the recogntion results so multiple rectangles can be recognized with the same image. E.g.
+If you want to restrict recognition to a sub-rectangle of the image - call _SetRectangle(left, top, width, height)_ after SetImage. Each SetRectangle clears the recognition results so multiple rectangles can be recognized with the same image. E.g.
 ```c++
   api->SetRectangle(30, 86, 590, 100);
 ```
@@ -435,6 +435,7 @@ int main(int argc, char *argv[]) {
 On Linux you can [compile it as you would build a program using the C++ API](#compiling-c-api-programs-on-linux).
 
 # Example creating searchable pdf from image in C++
+
 ```c++
 #include <leptonica/allheaders.h>
 #include <tesseract/baseapi.h>
@@ -471,6 +472,7 @@ int main()
 ```
 
 # Example of monitoring OCR progress in C++
+
 ```c++
 #include <tesseract/baseapi.h>
 #include <tesseract/ocrclass.h>
@@ -523,4 +525,4 @@ int main() {
 }
 ```
 
-More complex example (e.g. cancelling OCR process) can be found in source code of [TesseractGui](https://github.com/sashoalm/TesseractGui/blob/master/thread.cpp), [gimagereader](https://fossies.org/linux/gimagereader/qt/src/Recognizer.cc) or android [textfairy](https://github.com/renard314/textfairy/search?p=2&q=monitor&type=&utf8=%E2%9C%93) [app](https://www.youtube.com/watch?v=vUmZnwyLH6I).
+More complex examples (e.g. cancelling OCR process) can be found in source code of [TesseractGui](https://github.com/sashoalm/TesseractGui/blob/master/thread.cpp), [gimagereader](https://fossies.org/linux/gimagereader/qt/src/Recognizer.cc) or android [textfairy](https://github.com/renard314/textfairy/search?p=2&q=monitor&type=&utf8=%E2%9C%93) [app](https://www.youtube.com/watch?v=vUmZnwyLH6I).
