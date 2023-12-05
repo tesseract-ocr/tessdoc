@@ -18,7 +18,7 @@ Platform support depends on used language and experience of user.
 
 | **Name** | **Last update** | **Language** | Multipage support |
 |:---------|:----------------|:-------------|:------------------|
-| [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | 2020      | Java         | yes               |
+| [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | 2023      | Java         | yes               |
 | [QT Box Editor](http://zdenop.github.com/qt-box-editor/) | 2019       | C++, Qt4/Qt5 | yes               |
 | [tesseract-box-editor](https://github.com/scotts48/tesseract-box-editor) | 2013        | .NET 4       | yes               |
 | [Tesseract-OCR boxfile AJAX editor](http://pp19dd.com/tesseract-ocr-chopper/) | 2012      | online tool  |
@@ -46,7 +46,7 @@ Platform support depends on used language and experience of user.
 
 ## Other Training Tools
      
-  *  [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | Box Editor and Training Tool    
+  *  [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) - Box Editor and Training Tool    
 
   * [MzTesseract](https://github.com/mazluta/MzTesseract) - MS Windows program that can train new language from top to bottom
   * [FrankenPlus](https://github.com/this-is-ari/python-tesseract-3.02-training) - tool for creating font training for Tesseract OCR engine from page images. More information about Franken+ is at at [IT'S ALIVE!](http://emop.tamu.edu/node/54Franken+:) and [Franken+ homepage](http://dh-emopweb.tamu.edu/Franken+/).
@@ -57,13 +57,13 @@ Platform support depends on used language and experience of user.
   * [boxFactory](http://www.dinosaursandmoustaches.com/boxFactory.php) is a tool for quickly creating box files to train the Tesseract OCR engine. You can identify characters in the image by simply drawing boxes around them.
   * https://github.com/BaltoRouberol/TesseractTrainer - TesseractTrainer is a simple Python API, taking over the tedious process of manually training Tesseract3
   * [tess\_school](https://github.com/ddohler/tess_school) - a set of handy scripts to make the tesseract training process a bit easier
-  * [txt2img](http://code.google.com/p/txt2img/): Qt GUI application that generates image and box file based on text input
-  * [DangAmbigs Generator](http://www.cs.toronto.edu/~mreimer/tesseract.html): Creates a DangAmbigs file automatically given a set of OCR text output and correct text. _Requirements:_ Python
-  * [train.ps1](http://sourceforge.net/p/vietocr/code/HEAD/tree/jTessBoxEditor/trunk/tools/): Windows powershell script for Automate Tesseract 3.01 language data pack generation process.
-  * [Update unicharambigs.exe](http://code.google.com/p/tesseract-ocr/issues/detail?id=544): A small (windows) C# program for editing "lang.unicharambigs" file
-  * [train\_tess.pl](http://code.google.com/p/tesseract-ocr/issues/detail?id=640): perl script to facilitate training
-  * [boxedit](https://github.com/danvk/boxedit/) A web-based editor for Tesseract box files
-  * [TrainYourTesseract](http://trainyourtesseract.com) | Free online "no-hassle" TTF file to trainedata converter 
+  * [txt2img](http://code.google.com/p/txt2img/) - Qt GUI application that generates image and box file based on text input
+  * [DangAmbigs Generator](http://www.cs.toronto.edu/~mreimer/tesseract.html) - Creates a DangAmbigs file automatically given a set of OCR text output and correct text. _Requirements:_ Python
+  * [train.ps1](http://sourceforge.net/p/vietocr/code/HEAD/tree/jTessBoxEditor/trunk/tools/) - Windows powershell script for Automate Tesseract 3.01 language data pack generation process.
+  * [Update unicharambigs.exe](http://code.google.com/p/tesseract-ocr/issues/detail?id=544) - A small (windows) C# program for editing "lang.unicharambigs" file
+  * [train\_tess.pl](http://code.google.com/p/tesseract-ocr/issues/detail?id=640) - perl script to facilitate training
+  * [boxedit](https://github.com/danvk/boxedit/) - A web-based editor for Tesseract box files
+  * [TrainYourTesseract](http://trainyourtesseract.com) - Free online "no-hassle" TTF file to trainedata converter 
 
 
 ## Community training projects
