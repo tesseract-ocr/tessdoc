@@ -138,43 +138,43 @@
 |      |  Script                            |  3.02|  3.04| 4.00 |  4.0.0|    4.0.0 |    4.0.0  |
 |--------|---------------------------------------|:----:|:----:|:----:|:-----:|:--------:|:---------:|
 |      |                                    |   |   |Nov 2016|tessdata|tessdata_best|tessdata_fast|
-|      |Arabic                                  |   |   |    |  x   |    x   |    x    |
-|      |Armenian                                |   |   |    |  x   |    x   |    x    |
-|      |Bengali                                 |   |   |    |  x   |    x   |    x    |
-|      |Canadian_Aboriginal                     |   |   |    |  x   |    x   |    x    |
-|      |Cherokee                                |   |   |    |  x   |    x   |    x    |
-|      |Cyrillic                                |   |   |    |  x   |    x   |    x    |
-|      |Devanagari                              |   |   |    |  x   |    x   |    x    |
-|      |Ethiopic                                |   |   |    |  x   |    x   |    x    |
-|      |Fraktur                                 |   |   |    |  x   |    x   |    x    |
-|      |Georgian                                |   |   |    |  x   |    x   |    x    |
-|      |Greek                                   |   |   |    |  x   |    x   |    x    |
-|      |Gujarati                                |   |   |    |  x   |    x   |    x    |
-|      |Gurmukhi                                |   |   |    |  x   |    x   |    x    |
-|      |HanS (Han simplified)                   |   |   |    |  x   |    x   |    x    |
-|      |HanS_vert (Han simplified vertical)     |   |   |    |  x   |    x   |    x    |
-|      |HanT (Han traditional)                  |   |   |    |  x   |    x   |    x    |
-|      |HanT_vert (Han traditional vertical)    |   |   |    |  x   |    x   |    x    |
-|      |Hangul                                  |   |   |    |  x   |    x   |    x    |
-|      |Hangul_vert (Hangul vertical)           |   |   |    |  x   |    x   |    x    |
-|      |Hebrew                                  |   |   |    |  x   |    x   |    x    |
-|      |Japanese                                |   |   |    |  x   |    x   |    x    |
-|      |Japanese_vert (Japanese vertical)       |   |   |    |  x   |    x   |    x    |
-|      |Kannada                                 |   |   |    |  x   |    x   |    x    |
-|      |Khmer                                   |   |   |    |  x   |    x   |    x    |
-|      |Lao                                     |   |   |    |  x   |    x   |    x    |
-|      |Latin                                   |   |   |    |  x   |    x   |    x    |
-|      |Malayalam                               |   |   |    |  x   |    x   |    x    |
-|      |Myanmar                                 |   |   |    |  x   |    x   |    x    |
-|      |Oriya(Odia)                             |   |   |    |  x   |    x   |    x    |
-|      |Sinhala                                 |   |   |    |  x   |    x   |    x    |
-|      |Syriac                                  |   |   |    |  x   |    x   |    x    |
-|      |Tamil                                   |   |   |    |  x   |    x   |    x    |
-|      |Telugu                                  |   |   |    |  x   |    x   |    x    |
-|      |Thaana                                  |   |   |    |  x   |    x   |    x    |
-|      |Thai                                    |   |   |    |  x   |    x   |    x    |
-|      |Tibetan                                 |   |   |    |  x   |    x   |    x    |
-|      |Vietnamese                              |   |   |    |  x   |    x   |    x    |
+| arab |Arabic                                  |   |   |    |  x   |    x   |    x    |
+| armn |Armenian                                |   |   |    |  x   |    x   |    x    |
+| beng |Bengali                                 |   |   |    |  x   |    x   |    x    |
+| cans |Canadian_Aboriginal                     |   |   |    |  x   |    x   |    x    |
+| cher |Cherokee                                |   |   |    |  x   |    x   |    x    |
+| cyrl |Cyrillic                                |   |   |    |  x   |    x   |    x    |
+| deva |Devanagari                              |   |   |    |  x   |    x   |    x    |
+| ethi |Ethiopic                                |   |   |    |  x   |    x   |    x    |
+| frak |Fraktur                                 |   |   |    |  x   |    x   |    x    |
+| geor |Georgian                                |   |   |    |  x   |    x   |    x    |
+| grek |Greek                                   |   |   |    |  x   |    x   |    x    |
+| gujr |Gujarati                                |   |   |    |  x   |    x   |    x    |
+| guru |Gurmukhi                                |   |   |    |  x   |    x   |    x    |
+| hans |HanS (Han simplified)                   |   |   |    |  x   |    x   |    x    |
+| hans-vert |HanS_vert (Han simplified vertical)     |   |   |    |  x   |    x   |    x    |
+| hant |HanT (Han traditional)                  |   |   |    |  x   |    x   |    x    |
+| hant-vert |HanT_vert (Han traditional vertical)    |   |   |    |  x   |    x   |    x    |
+| hang |Hangul                                  |   |   |    |  x   |    x   |    x    |
+| hang-vert |Hangul_vert (Hangul vertical)           |   |   |    |  x   |    x   |    x    |
+| hebr |Hebrew                                  |   |   |    |  x   |    x   |    x    |
+| jpan |Japanese                                |   |   |    |  x   |    x   |    x    |
+| jpan-vert |Japanese_vert (Japanese vertical)       |   |   |    |  x   |    x   |    x    |
+| knda |Kannada                                 |   |   |    |  x   |    x   |    x    |
+| khmr |Khmer                                   |   |   |    |  x   |    x   |    x    |
+| laoo |Lao                                     |   |   |    |  x   |    x   |    x    |
+| latn |Latin                                   |   |   |    |  x   |    x   |    x    |
+| mlym |Malayalam                               |   |   |    |  x   |    x   |    x    |
+| mymr |Myanmar                                 |   |   |    |  x   |    x   |    x    |
+| orya |Oriya(Odia)                             |   |   |    |  x   |    x   |    x    |
+| sinh |Sinhala                                 |   |   |    |  x   |    x   |    x    |
+| syrc |Syriac                                  |   |   |    |  x   |    x   |    x    |
+| taml |Tamil                                   |   |   |    |  x   |    x   |    x    |
+| telu |Telugu                                  |   |   |    |  x   |    x   |    x    |
+| thaa |Thaana                                  |   |   |    |  x   |    x   |    x    |
+| thai |Thai                                    |   |   |    |  x   |    x   |    x    |
+| tibt |Tibetan                                 |   |   |    |  x   |    x   |    x    |
+| viet |Vietnamese                              |   |   |    |  x   |    x   |    x    |
 
 
 For detalls about the languages that each Script.traindata file supports, see the files that end with langs.txt (e.g. Latin.langs.txt) [here](https://github.com/tesseract-ocr/langdata_lstm/tree/main/script).
