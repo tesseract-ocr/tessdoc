@@ -144,6 +144,7 @@ The IntMatchWindow should show that the lower case c matches quite well. The fac
 
 In the IntMatchWindow, the correspondence between the features and prototypes is shown. The prototypes are the long thin lines, and the features the shorter thicker lines. The colors from best match to worst go in this somewhat arbitrary sequence: White, Green, Red, Blue. The gray lines should indicate which kind of prototype the unknown matched, but they seem to be one classification behind. The square indicates the static classifier and shows the unit of normalization. The tram-lines indicate an adaptive classification and show the position of the baseline, meanline, descenders and ascenders.
 
+
 ## Other MODE possibilities
 
 In general, the selected MODE will perform some action with blobs or words that you select or click on with the left mouse button.
@@ -156,9 +157,11 @@ Show point is useful to get the coordinates of a specific blob in tesseract coor
 
 About the only other MODEs that do anything are Dump Word, Row Gaps Hist, and Block Gaps Hist, all of which dump information to your terminal window.
 
+
 ## Other Display modes
 
 You can save some display time by not selecting Other/Uniform Display after deselecting Display/Bounding Boxes and selecting Display/Polygonal Approx. Instead, each word that you click on will get redisplayed in the new format
+
 
 ## Troubleshooting
 

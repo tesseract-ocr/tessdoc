@@ -88,6 +88,8 @@ vc6     Total   58610   -       -8.11%  15994   -       0.16%   12586   -       
 
 Future work may be directed at making these discrepancies smaller, if not eliminating them completely, on the grounds that where there is variation, there is room for improvement...
 
+
+
 ### Results for more recent versions of Tesseract [by Tom Morris](https://groups.google.com/forum/#!searchin/tesseract-dev/bus.3B%7Csort:date/tesseract-dev/LErriuT-sck/B5PR0QaCGwAJ)
 
 All compiled with Apple C compiler Apple LLVM version 7.0.2 (clang-700.1.81) with target x86_64-apple-darwin14.3.0.
@@ -141,6 +143,10 @@ Testid  Testset Character               Word                    Non-stopword
 2.04	news.3B	7655	98.44%	19.01%	1730	97.94%	-11.10%	1208	97.54	-19.57%
 2.04	Total	58159	-	-8.82%	15732	-	-1.48%	12384	-	-6.30%
 ```
+
+
+
+
 
 # How to use OCR Evaluation Tools by Nick White
 
