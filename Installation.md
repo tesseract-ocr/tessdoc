@@ -22,6 +22,8 @@ If you are experimenting with OCR Engine modes, you will need to manually instal
 
 Training data for obsolete Tesseract versions [=< 3.02](https://sourceforge.net/projects/tesseract-ocr-alt/files/?source=navbar) reside in another location.
 
+## Platforms 
+
 If Tesseract is not available for your distribution, or you want to use a newer version than they offer, you can [compile your own](Compiling).
 
 ### Ubuntu
@@ -110,13 +112,13 @@ For distributions that are supported by snapd you may also run the following com
 
 The traineddata is currently not shipped with the snap package and must be placed manually to `~/snap/tesseract/current`.
 
-## macOS
+### macOS
 
 You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh).
 
 A macOS wrapper for the Tesseract API is also available at [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS).
 
-### MacPorts
+#### MacPorts
 
 To install Tesseract run this command: 
 ```
@@ -128,7 +130,7 @@ sudo port install tesseract-<langcode>
 ```
 List of available langcodes can be found on [MacPorts tesseract page](https://www.macports.org/ports.php?by=name&substr=tesseract-).
 
-### Homebrew
+#### Homebrew
 
 To install Tesseract run this command:
 ```
@@ -138,7 +140,7 @@ brew install tesseract
 The tesseract directory can then be found using `brew info tesseract`,
 e.g. `/usr/local/Cellar/tesseract/3.05.02/share/tessdata/`.
 
-## Windows
+### Windows
 
 Installer for Windows for Tesseract 3.05, Tesseract 4 and Tesseract 5 are available from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki). These include the training tools. Both 32-bit and 64-bit installers are available.
 
@@ -151,13 +153,13 @@ To access tesseract-OCR from any location you may have to add the directory wher
 
 Experts can also get binaries build with Visual Studio from the build artifacts of the [Appveyor Continuous Integration](https://ci.appveyor.com/project/zdenop/tesseract/history).
 
-### Cygwin
+#### Cygwin
 
 Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) [Cygwin](https://www.cygwin.com/)
 
 The latest version available is 4.1.0. Please see [announcement](https://www.cygwin.com/ml/cygwin-announce/2019-07/msg00009.html).
 
-### MSYS2
+#### MSYS2
 
 Install tesseract-OCR:
 
