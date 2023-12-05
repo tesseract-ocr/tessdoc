@@ -214,8 +214,7 @@ The overall training process is similar to [training 3.04](TrainingTesseract).
 
 Conceptually the same:
 
-1.  [Prepare training
-    text.](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951)
+1.  [Prepare training text.](https://github.com/tesseract-ocr/tesseract/issues/654#issuecomment-274574951)
 1.  Render text to image + box file. (Or create hand-made box files for existing
     image data.)
 1.  Make unicharset file. (Can be partially specified, ie created manually).
@@ -532,15 +531,14 @@ flags with lstmtraining.
 
 # TessTutorial
 
-The process of [Creating the training data](#creating-training-data) is
-documented below, followed by a [Tutorial guide to
-lstmtraining](#tutorial-guide-to-lstmtraining) which gives an introduction to
-the main training process, with command-lines that have been tested for real. On
-Linux at least, you should be able to just copy-paste the command lines into
+The process of [Creating the training data](#creating-training-data) is 
+documented below, followed by a [Tutorial guide to lstmtraining](#tutorial-guide-to-lstmtraining) which gives an introduction to 
+the main training process, with command-lines that have been tested for real. On 
+Linux at least, you should be able to just copy-paste the command lines into 
 your terminal.
 
-To make the `tesstrain.sh` script work, it will be necessary to
-either set `PATH` to include your local `training` and `api` directories, or use
+To make the `tesstrain.sh` script work, it will be necessary to 
+either set `PATH` to include your local `training` and `api` directories, or use 
 `make install`.
 
 ## One-time Setup for TessTutorial
