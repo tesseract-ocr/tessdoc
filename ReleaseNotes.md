@@ -5,7 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
-* [V5.3.4](#v434) Jan 18 2024
+* [V5.3.4](#v534) Jan 18 2024
 * [V5.3.3](#v533), Oct 05 2023
 * [V5.3.2](#v532), Jul 11 2023
 * [V5.3.1](#v531), Apr 01 2023
