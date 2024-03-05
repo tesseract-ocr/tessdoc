@@ -163,7 +163,19 @@ to point to your tessdata directory (for example: if your tessdata path is '/usr
 3. Run `sw build org.sw.demo.google.tesseract.tesseract`.
 
 
-#### For visual studio project using Tesseract
+#### Build training tools
+
+Today it is possible to build a full set of Tesseract training tools on Windows with Visual Studio.
+You need to have the latest VS compiler (VS2019/2022 or light VS 2019/2022 build tools distro installed.
+
+To do this:
+
+1. [Download](https://software-network.org/client/) the latest SW (Software Network `https://software-network.org/client/`) client from `https://software-network.org/client/`.
+2. Checkout tesseract sources `git clone https://github.com/tesseract-ocr/tesseract tesseract && cd tesseract`.
+3. Run `sw build`.
+4. Binaries will be available under .sw\out\some hash dir\...
+
+#### For Visual Studio project using Tesseract (vcpkg build)
 
 1. Setup [Vcpkg](https://github.com/Microsoft/vcpkg/blob/master/README.md) the Visual C++ Package Manager.
 2. Run `vcpkg install tesseract:x64-windows` for 64-bit. Use --head for the master branch.
@@ -178,19 +190,19 @@ To build a self-contained `tesseract.exe` executable (without any DLLs or runtim
 
 Use --head for the main branch. It may still require one DLL for the OpenMP runtime, `vcomp140.dll` (which you can find in the Visual C++ Redistributable 2015).
 
+#### CMake build wint VS2017 without using Software Network client
 
-#### Build training tools
+1. Build and install Leptonica based as described on its [wiki](https://github.com/DanBloomberg/leptonica/wiki)
+2. Install [ICU library for Visual Studio](https://icu.unicode.org/download/64)
 
-Today it is possible to build a full set of Tesseract training tools on Windows with Visual Studio.
-You need to have the latest VS compiler (VS2019/2022 or light VS 2019/2022 build tools distro installed.
+```sh
+chdir tesseract
+cmake -Bbuild -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=%INSTALL_DIR% -DCMAKE_INSTALL_PREFIX=%INSTALL_DIR% -DSW_BUILD=OFF -DBUILD_SHARED_LIBS=ON -DENABLE_LTO=ON -DBUILD_TRAINING_TOOLS=ON -DFAST_FLOAT=ON -DGRAPHICS_DISABLED=ON -DOPENMP_BUILD=OFF
+cmake --build build --config Release --target install
+```
 
-To do this:
-
-1. [Download](https://software-network.org/client/) the latest SW (Software Network `https://software-network.org/client/`) client from `https://software-network.org/client/`.
-2. Checkout tesseract sources `git clone https://github.com/tesseract-ocr/tesseract tesseract && cd tesseract`.
-3. Run `sw build`.
-4. Binaries will be available under .sw\out\some hash dir\...
-
+This will create most of the training tools (excluding text2image as its requirements Pango library is not easy to build&installed on Windows).
+For more details have a look at https://github.com/tesseract-ocr/tesseract/blob/main/.github/workflows/cmake-win64.yml
 
 #### Develop Tesseract
 
