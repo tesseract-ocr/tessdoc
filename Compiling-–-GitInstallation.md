@@ -12,6 +12,7 @@
 * [Building using Windows Visual Studio](#building-using-windows-visual-studio)
 
 These are the instructions for installing Tesseract from the git repository. You should be ready to face unexpected problems.
+[C++ compiler with good C++17 support](https://en.wikipedia.org/wiki/C%2B%2B17#Compiler_support) is required for building Tesseract from source.
 
 ## Installing With Autoconf Tools
 
