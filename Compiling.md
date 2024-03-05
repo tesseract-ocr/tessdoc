@@ -190,7 +190,7 @@ To build a self-contained `tesseract.exe` executable (without any DLLs or runtim
 
 Use --head for the main branch. It may still require one DLL for the OpenMP runtime, `vcomp140.dll` (which you can find in the Visual C++ Redistributable 2015).
 
-#### CMake build wint VS2017 without using Software Network client
+#### CMake build with VS2017 without using Software Network client
 
 1. Build and install Leptonica based as described on its [wiki](https://github.com/DanBloomberg/leptonica/wiki)
 2. Install [ICU library for Visual Studio](https://icu.unicode.org/download/64)
