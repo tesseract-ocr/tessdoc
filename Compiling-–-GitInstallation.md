@@ -30,7 +30,7 @@ apt-get install --no-install-recommends asciidoc docbook-xsl xsltproc
 
 If you want to build the Tesseract training tools as well, you'll also require Pango and ICU:
 ```
-apt-get install libpango1.0-dev libicu-dev
+apt-get install libpango1.0-dev libicu-dev libfribidi-dev
 ```
 
 ---
