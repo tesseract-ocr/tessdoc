@@ -30,6 +30,7 @@
 |  dan_frak |  Danish - Fraktur (contrib)          |    x |    x |    |    |      |         |
 |  deu   |  German                              |    x |    x |    x |    x |    x   |      x    |
 |  deu_frak |  German - Fraktur (contrib)          |    x |    x |    |    |      |         |
+|  deu_latf | German (Fraktur Latin)            |      |      |    x |    x |    x   |      x    |
 |  dzo   |  Dzongkha                            |   |    x |    x |    x |    x   |      x    |
 |  ell   |  Greek, Modern (1453-)               |    x |    x |    x |    x |    x   |      x    |
 |  eng   |  English                             |    x |    x |    x |    x |    x   |      x    |
@@ -43,7 +44,7 @@
 |  fil   |  Filipino (old - Tagalog)            |   |   |    |    x |    x   |      x    |
 |  fin   |  Finnish                             |    x |    x |    x |    x |    x   |      x    |
 |  fra   |  French                              |    x |    x |    x |    x |    x   |      x    |
-|  frk   |  German - Fraktur                    |    x |    x |    x |    x |    x   |      x    |
+|  frk   |  German - Fraktur (now deu_latf)     |    x |    x |    x |    x |    x   |      x    |
 |  frm   |  French, Middle (ca.1400-1600)       |    x |    x |    x |    x |    x   |      x    |
 |  fry   |  Western Frisian                     |   |   |    |  x   |    x   |    x    |
 |  gla   |  Scottish Gaelic                     |   |   |    |  x   |    x   |    x    |
