@@ -140,6 +140,11 @@ Version:4.00.00alpha:deu:synth20170629
 LSTM: network=[1,48,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx384O1c1], iteration=3543300, sample_iteration=3543653, null_char=114
 Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.00025, :2(Maxpool)=0.001, :3:0(Lfys64)=0.00025, :4(Lfx96)=0.00025, :5:0(Lrx96)=0.00025, :6(Lfx384)=0.00025, :7(Output)=0.00025
 
+deu_latf (formerly frk)
+Version:4.00.00alpha:frk:synth20170629
+LSTM: network=[1,48,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx384O1c1], iteration=3692700, sample_iteration=3692967, null_char=98
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.000125, :2(Maxpool)=0.001, :3:0(Lfys64)=0.000125, :4(Lfx96)=0.000125, :5:0(Lrx96)=0.000125, :6(Lfx384)=0.000125, :7(Output)=0.000125
+
 div
 Version:4.00.00alpha:div:synth20170629
 LSTM: network=[1,48,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx192O1c1], iteration=3249400, sample_iteration=3256730, null_char=2
@@ -207,11 +212,6 @@ fra
 Version:4.00.00alpha:fra:synth20170629
 LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys48Lfx96Lrx96Lfx192O1c1], iteration=3486400, sample_iteration=3486632, null_char=139
 Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.000125, :2(Maxpool)=0.001, :3:0(Lfys48)=0.000125, :4(Lfx96)=0.000125, :5:0(Lrx96)=0.000125, :6(Lfx192)=0.000125, :7(Output)=0.000125
-
-frk
-Version:4.00.00alpha:frk:synth20170629
-LSTM: network=[1,48,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx384O1c1], iteration=3692700, sample_iteration=3692967, null_char=98
-Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.000125, :2(Maxpool)=0.001, :3:0(Lfys64)=0.000125, :4(Lfx96)=0.000125, :5:0(Lrx96)=0.000125, :6(Lfx384)=0.000125, :7(Output)=0.000125
 
 frm
 Version:4.00.00alpha:frm:synth20170629
