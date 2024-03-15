@@ -89,7 +89,7 @@ Improve the DebugDump output by slightly adjusting the format. By [@GerHobbelt](
 
 **Compiler support**
 
-We dropped support for GCC 8.X.
+We dropped support for GCC and libstdc++ 8.x.
 
 # V5.3.0
 
