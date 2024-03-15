@@ -87,6 +87,10 @@ Improve the DebugDump output by slightly adjusting the format. By [@GerHobbelt](
 * (MSVC debug) Fix wrong lib name in generated file `tesseract.pc`. By [@autoantwort](https://github.com/autoantwort) in PR #4008.
 * Fix libdir in generated file `tesseract.pc`. By [@ferdnyc](https://github.com/ferdnyc) in PR #4013.
 
+**Compiler support**
+
+We dropped support for GCC 8.X.
+
 # V5.3.0
 
 _Dec 22 2022_
