@@ -4,7 +4,7 @@
 
 | **Name** | **Linux** | **Mac** | **Windows** | **License** | **Description** |
 |:---------|:----------|:--------|:------------|:------------|:----------------|
-| [Scribe OCR](https://github.com/scribeocr/scribeocr)) | X         | X       | X           | AGPL-3.0 license      | Scribe OCR is a free and open-source web application for recognizing text, proofreading OCR data, and creating fully-digitized documents. Live site at [scribeocr.com](https://scribeocr.com/). |
+| [Scribe OCR](https://github.com/scribeocr/scribeocr) | X         | X       | X           | AGPL-3.0 license      | Scribe OCR is a free and open-source web application for recognizing text, proofreading OCR data, and creating fully-digitized documents. Live site at [scribeocr.com](https://scribeocr.com/). |
 | [Rescribe](https://rescribe.xyz/rescribe) | X         | X       | X           | GPL v3      | Easy to use Tesseract frontend with no install needed, including PDF processing, and Google Book downloading, and extra pre- and post-processing capabilities. |
 | [normcap](https://github.com/dynobo/normcap) | X         | X       | X           | GPL v3      | OCR powered screen-capture tool to capture information instead of images. |
 | [gImageReader](https://github.com/manisandro/gImageReader) | X         |         | X           | GPL v3      | A graphical GTK frontend to tesseract-ocr |
