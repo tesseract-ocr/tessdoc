@@ -7,7 +7,7 @@
 
 Older versions are not supported.
 
-### MacOS
+### macOS
 
 Latest 4 major versions.
 
