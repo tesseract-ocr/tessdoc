@@ -37,8 +37,6 @@
 ## 2. Online OCR services
 
   * [OCR.net](https://ocr.net): Powered by PDF OCR X in back-end.  Converts PDFs and Images to Text or searchable PDF.
-  * [WeOCR](https://ocr1.sc.isc.tohoku.ac.jp/e1/): is a platform for Web-enabled OCR (Optical Character Reader/Recognition) systems that enables people to use character recognition over networks
-  * [CustomOCR](https://www.customocr.com/index.php?r=site/page&view=demos.tesseract_ocr)
   * [Free OCR](https://www.free-ocr.com/)
   * [i2OCR](https://www.i2ocr.com/)
   * [Indic-OCR OCR Service](https://indic-ocr.github.io/ocrservice/)  An online OCR service for Indian languages 
