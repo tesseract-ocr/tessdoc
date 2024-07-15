@@ -118,16 +118,13 @@
 
 ### IMPACT related
 
-  * [IMPACT project](https://www.impact-project.eu/)
   * [IMPACT Centre](https://www.digitisation.eu/) - a not-for-profit organisation founded to sustain IMPACT outcomes and foster community building
   * [IMPACT data](https://www.digitisation.eu/data)
   * [IMPACT tools](https://github.com/impactcentre)
-  * [Results of the IMPACT project](https://dl.psnc.pl/activities/projekty/impact/results/) by PSNC Digital Libraries Team
-  * [Virtual Transcription Laboratory](https://wlt.synat.pcss.pl/wlt-web/index.xhtml) by PSNC
   * [IMPACT Interoperability Framework](https://github.com/impactcentre/interoperability-framework) - interoperability layer supporting the loose coupling of software components developed during the IMPACT project.
   * [Inventory-Extraction-Tool Prototype](https://github.com/impactcentre/inventory-extraction) is a prototype with graphical user interface (GUI) that allows for the extraction of a complete list of characters from a document, without reference to a specific language dictionary or a library of fonts.
   * [Post Correction Tool](https://github.com/impactcentre/PoCoTo) is interactive post-correction of OCRed documents. Using the information obtained by the Text and Error Profiler the whole correction process is adaptive to the document being processed. In this way, usually huge numbers of systematic errors can be corrected with just a few keystrokes..
   * [OCR evaluation tool](https://github.com/impactcentre/ocrevalUAtion).
   * [BlackLab](https://github.com/INL/BlackLab) is a corpus retrieval engine built on top of Apache Lucene. It allows fast, complex searches with accurate hit highlighting on large, tagged and annotated, bodies of text. It was developed at the Institute of Dutch Lexicology (INL) to provide a fast and feature-rich search interface on our historical and contemporary text corpora.
 
-For more information about [IMPACT project](https://www.impact-project.eu/) see [discussion in tesseract forum](https://groups.google.com/forum/?hl=en#!topic/tesseract-ocr/A1Qq_vfKyRs).
+For more information about IMPACT project see [discussion in tesseract forum](https://groups.google.com/forum/?hl=en#!topic/tesseract-ocr/A1Qq_vfKyRs).
