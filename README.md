@@ -145,7 +145,7 @@ have information about LSTM integration in Tesseract 4.0x.
 
 ### Training for Tesseract 5
 
-Training with `tesstrain.sh` (a.k.a tesseract 4 training) in unsupported/abandoned.
+Training with `tesstrain.sh` (a.k.a Tesseract 4 training) is unsupported/abandoned.
 Please use scripts from [tesseract-ocr/tesstrain](https://github.com/tesseract-ocr/tesstrain) for training.
 
 - [Train Tesseract LSTM with make from Single Line Images and Groundtruth Transcription](https://github.com/tesseract-ocr/tesstrain)
