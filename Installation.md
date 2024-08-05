@@ -1,6 +1,6 @@
 # Introduction 
 
-Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](http://www.apache.org/licenses/LICENSE-2.0) It can be used directly, or (for programmers) using an [API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) to extract printed text from images. It supports a wide variety of languages.
+Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license.](https://www.apache.org/licenses/LICENSE-2.0) It can be used directly, or (for programmers) using an [API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) to extract printed text from images. It supports a wide variety of languages.
 
 Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-%E2%80%93-3rdParty.md) page.
 
@@ -39,10 +39,10 @@ sudo apt install libtesseract-dev
 ```
 sudo vi /etc/apt/sources.list
 
-Copy the first line "deb http://archive.ubuntu.com/ubuntu bionic main" and paste it as shown below on the next line.
+Copy the first line "deb https://archive.ubuntu.com/ubuntu bionic main" and paste it as shown below on the next line.
 If you are using a different release of ubuntu, then replace bionic with the respective release name.
 
-deb http://archive.ubuntu.com/ubuntu bionic universe
+deb https://archive.ubuntu.com/ubuntu bionic universe
 ```
 
 ### Debian packages
@@ -114,7 +114,7 @@ The traineddata is currently not shipped with the snap package and must be place
 
 ### macOS
 
-You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh).
+You can install Tesseract using either [MacPorts](https://www.macports.org/) or [Homebrew](https://brew.sh).
 
 A macOS wrapper for the Tesseract API is also available at [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS).
 
@@ -147,7 +147,7 @@ Installer for Windows for Tesseract 3.05, Tesseract 4 and Tesseract 5 are availa
 An installer for the **OLD version 3.02** is available for Windows from our [download](Downloads.md) page.
 This includes the English training data.
 If you want to use another language, [download the appropriate training data](Data-Files.md),
-unpack it using [7-zip](http://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
+unpack it using [7-zip](https://www.7-zip.org), and copy the .traineddata file into the 'tessdata' directory, probably `C:\Program Files\Tesseract-OCR\tessdata`.
 
 To access tesseract-OCR from any location you may have to add the directory where the tesseract-OCR binaries are located to the Path variables, probably `C:\Program Files\Tesseract-OCR`.
 
@@ -173,7 +173,7 @@ and the data files:
  pacman -S mingw-w64-{i686,x86_64}-tesseract-data-eng
 ```
 
-In the above command, "eng" may be replaced with the [ISO 639 3-letter language code](http://www.loc.gov/standards/iso639-2/php/code_list.php) for supported languages. For a list of available language packages use:
+In the above command, "eng" may be replaced with the [ISO 639 3-letter language code](https://www.loc.gov/standards/iso639-2/php/code_list.php) for supported languages. For a list of available language packages use:
 
 ```
   pacman -Ss tesseract-data
@@ -232,7 +232,7 @@ It can also be trained to support other languages and scripts; for more details 
 
 # Development
 
-Tesseract can also be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](User-Projects-%E2%80%93-3rdParty) page for a sample of what has been done with it. Note that as yet there are very few  3rdParty Tesseract OCR projects [being developed for Mac](https://machow2.com/ocr-for-mac-best-software/#Tesseract_Freesoftware/) (with the only one being [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS).md), although there are several online OCR services that can be used on Mac that may use Tesseract as their OCR engine. 
+Tesseract can also be used in your own project, under the terms of the [Apache License 2.0.](https://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](User-Projects-%E2%80%93-3rdParty) page for a sample of what has been done with it. Note that as yet there are very few  3rdParty Tesseract OCR projects [being developed for Mac](https://machow2.com/ocr-for-mac-best-software/#Tesseract_Freesoftware/) (with the only one being [Tesseract macOS](https://github.com/scott0123/Tesseract-macOS).md), although there are several online OCR services that can be used on Mac that may use Tesseract as their OCR engine. 
 
 Also, it is free software, so if you want to pitch in and help, please do!
 If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues)
@@ -240,5 +240,5 @@ If you find a bug and fix it yourself, the best thing to do is to attach the pat
 # Support
 
 First read the [documentation](https://tesseract-ocr.github.io/), particularly the [FAQ](FAQ.md) to see if your problem is addressed there.
-If not, search the [Tesseract user forum](http://groups.google.com/group/tesseract-ocr) or the
-[Tesseract developer forum](http://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.
+If not, search the [Tesseract user forum](https://groups.google.com/group/tesseract-ocr) or the
+[Tesseract developer forum](https://groups.google.com/group/tesseract-dev), and if you still can't find what you need, please ask us there.

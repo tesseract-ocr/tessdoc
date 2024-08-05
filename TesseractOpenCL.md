@@ -20,8 +20,8 @@ By using that compute power, Tesseract ideally can be made faster.
 
 3.	Set up the OpenCL paths in “tesseract” project:
   * Right click on “tesseract” project and select Properties
-  * Header file paths : Go to Configuration Properties -> C/C++ -> General -> Additional Include Directories. Add the directory path where OpenCL header files are located on the given machine. E.g: On a machine with [AMD APP SDK](http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/) installed, this path will be `$(AMDAPPSDKROOT)include`.
-  * Library file path : Go to Configuration Properties -> Linker -> General -> Additional Library Directories. Add the directory path where OpenCL library file, `OpenCL.lib` is located on the given machine. E.g: On a machine with [AMD APP SDK](http://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/) installed, this path will be `$(AMDAPPSDKROOT)lib\x86`.
+  * Header file paths : Go to Configuration Properties -> C/C++ -> General -> Additional Include Directories. Add the directory path where OpenCL header files are located on the given machine. E.g: On a machine with [AMD APP SDK](https://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/) installed, this path will be `$(AMDAPPSDKROOT)include`.
+  * Library file path : Go to Configuration Properties -> Linker -> General -> Additional Library Directories. Add the directory path where OpenCL library file, `OpenCL.lib` is located on the given machine. E.g: On a machine with [AMD APP SDK](https://developer.amd.com/tools-and-sdks/heterogeneous-computing/amd-accelerated-parallel-processing-app-sdk/downloads/) installed, this path will be `$(AMDAPPSDKROOT)lib\x86`.
   * Library reference : Go to Configuration Properties -> Linker -> Input -> Additional Dependencies. Add OpenCL.lib to the list of dependent libraries.
   * Preprocessor definition : Go to Configuration Properties -> C/C++ -> Preprocessor -> Preprocessor Definitions. Add USE\_OPENCL to the list of preprocessor definitions list.
 
@@ -65,9 +65,9 @@ These Debian packages provide such drivers:
 * nvidia-legacy-304xx-opencl-icd – NVIDIA GPU
 * nvidia-legacy-340xx-opencl-icd – NVIDIA GPU
 * nvidia-opencl-icd – NVIDIA GPU
-* [pocl-opencl-icd](http://portablecl.org/) – native CPU
+* [pocl-opencl-icd](https://portablecl.org/) – native CPU
 
-It is possible to enable debug messages for some drivers by setting environment variables ([example](http://portablecl.org/docs/html/)).
+It is possible to enable debug messages for some drivers by setting environment variables ([example](https://portablecl.org/docs/html/)).
 
 
 ## OpenCL devices (examples)

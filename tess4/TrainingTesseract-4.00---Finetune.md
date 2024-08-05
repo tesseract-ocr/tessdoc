@@ -9,7 +9,7 @@
 ### Modified training scripts created by Tesseract users:
 
 * [By J Klein at pastebin](https://pastebin.com/gNLvXkiM)
-* [wiki.wareya.moe - info](http://wiki.wareya.moe/Tesseract)
+* [wiki.wareya.moe - info](https://wiki.wareya.moe/Tesseract)
 * [wiki.wareya.moe - tesstrain.sh at pastebin](https://pastebin.com/cD5wctUG)
 * [wiki.wareya.moe - tesstrain_utils.sh at pastebin](https://pastebin.com/TfqJUxSR)
 

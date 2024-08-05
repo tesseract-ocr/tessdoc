@@ -111,7 +111,7 @@ This should make the 2nd box file easier to make, as there is a good chance that
 
 ### Tif/Box pairs provided!
 
-Tif/Box file pairs are available in the [Downloads Archive on SourceForge](http://sourceforge.net/projects/tesseract-ocr-alt/files/) for these languages:
+Tif/Box file pairs are available in the [Downloads Archive on SourceForge](https://sourceforge.net/projects/tesseract-ocr-alt/files/) for these languages:
 [Dutch](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.nld.tar.gz/download)
 [English](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.eng.tar.gz/download)
 [French](https://sourceforge.net/projects/tesseract-ocr-alt/files/boxtiff-2.01.fra.tar.gz/download)

@@ -62,7 +62,7 @@ These are general files that can affect multiple languages, but may be edited if
 Nick White's xheight tool can be used to find xheight of different fonts.To clone it and build the xheights tool, do the following:
 
 ```
-$ git clone http://ancientgreekocr.org/grctraining.git
+$ git clone https://ancientgreekocr.org/grctraining.git
 $ cd grctraining
 $ make tools/xheight
 ```
