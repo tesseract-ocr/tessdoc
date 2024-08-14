@@ -287,10 +287,10 @@ _Jul 07 2019_
   * Add Python training scripts (experimental) as alternative shell scripts.
   * [Fix locale handling issue](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79). libtesseract now works with any locale.
   * Better support AVX / AVX2 / SSE.
-  * Disable OpenMP support by default. This was done in the the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
   * Fix for bounding box problem.
   * Implemented support for whitelist/blacklist in LSTM engine.
   * Make user-words and user-patterns files work with the LSTM engine. [#2328](https://github.com/tesseract-ocr/tesseract/pull/2328)
+  * Disable OpenMP support by default. This was done in the the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
   * Improve CMake configuration.
   * Code modernization and improvements.
   * A lot of bug fixes.
