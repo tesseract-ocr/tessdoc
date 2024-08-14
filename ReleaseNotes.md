@@ -266,7 +266,6 @@ _Dec 26 2019_
 * Add the parameter `pageseg_apply_music_mask` to allow disabling the music mask.
 * Add ComposedBlock level to the ALTO renderer making it more in line with the hOCR renderer.
 * Training. Extend the function `BoxFileName` to handle more image names: `.bin.png` and `.nrm.png`. In PR [#2686](https://github.com/tesseract-ocr/tesseract/pull/2686).
-* Add an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
 * Fix more locale handling issues found since 4.1.0.
 * Fix a memory leak in text2image.
 * Fix potential bugs discovered by running UndefinedBehaviorSanitizer.
@@ -274,6 +273,7 @@ _Dec 26 2019_
 * Code Cleanup and modernization.
 * Code optimization.
 * Many bug fixes.
+* Add an option to build tesseract with the sw build system and package manager. Building with cppan  is deprecated.
 
 # V4.1.0
 
@@ -290,10 +290,10 @@ _Jul 07 2019_
   * Fix for bounding box problem.
   * Implemented support for whitelist/blacklist in LSTM engine.
   * Make user-words and user-patterns files work with the LSTM engine. [#2328](https://github.com/tesseract-ocr/tesseract/pull/2328)
-  * Disable OpenMP support by default. This was done in the the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
-  * Improve CMake configuration.
   * Code modernization and improvements.
   * A lot of bug fixes.
+  * Improve CMake configuration.
+  * Disable OpenMP support by default. This was done in the the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
 
 # V4.0.0
 
