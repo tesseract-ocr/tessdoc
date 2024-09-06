@@ -497,7 +497,7 @@ s/\x20\x0e//g
 s/\x20\x0f//g
 ```
 
-`sed -i -f remove_control_chars.sed data/lang--ground-truth*.gt.txt`
+`sed -i -f remove_control_chars.sed data/lang-ground-truth*.gt.txt`
 
 In any case it will result in that training image being ignored by the trainer.
 If the error is infrequent, it is harmless, but it may indicate that your
