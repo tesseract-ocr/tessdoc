@@ -486,15 +486,19 @@ cannot be encoded using the given unicharset. Possible causes are:
 1.  There is an un-represented Indic grapheme/aksara in the text.
 
 You can simply remove the offending characters (CHARACTER TABULATION, CARRIAGE RETURN,
-NO-BREAK SPACE, LEFT-TO-RIGHT MARK, RIGHT-TO-LEFT MARK) in pct. 2 with a sed script:
+NO-BREAK SPACE, LEFT-TO-RIGHT MARK, RIGHT-TO-LEFT MARK, ZERO WIDTH NO-BREAK SPACE,
+POP DIRECTIONAL FORMATTING, ZERO WIDTH NON-JOINER) in pct. 2 with a sed script:
 
 `remove_control_chars.sed`
 ```
 s/\x09//g
 s/\x0d//g
-s/\xc2\xa0/ /g
+s/\x00\xa0/ /g
 s/\x20\x0e//g
 s/\x20\x0f//g
+s/\xfe\xff//g
+s/\x20\x2c//g
+s/\x20\x0c//g
 ```
 
 `sed -i -f remove_control_chars.sed data/lang-ground-truth*.gt.txt`
