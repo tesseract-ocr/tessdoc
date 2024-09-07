@@ -485,6 +485,24 @@ cannot be encoded using the given unicharset. Possible causes are:
 1.  A stray unprintable character (like tab or a control character) in the text.
 1.  There is an un-represented Indic grapheme/aksara in the text.
 
+You can simply remove the offending characters (CHARACTER TABULATION, CARRIAGE RETURN,
+NO-BREAK SPACE, LEFT-TO-RIGHT MARK, RIGHT-TO-LEFT MARK, ZERO WIDTH NO-BREAK SPACE,
+POP DIRECTIONAL FORMATTING, ZERO WIDTH NON-JOINER) in pct. 2 with a sed script:
+
+`remove_control_chars.sed`
+```
+s/\x09//g
+s/\x0d//g
+s/\x00\xa0/ /g
+s/\x20\x0e//g
+s/\x20\x0f//g
+s/\xfe\xff//g
+s/\x20\x2c//g
+s/\x20\x0c//g
+```
+
+`sed -i -f remove_control_chars.sed data/lang-ground-truth*.gt.txt`
+
 In any case it will result in that training image being ignored by the trainer.
 If the error is infrequent, it is harmless, but it may indicate that your
 unicharset is inadequate for representing the language that you are training.
