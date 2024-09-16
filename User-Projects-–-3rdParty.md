@@ -75,6 +75,12 @@
   
 ### B. Others:
 
+  1. [Scantools](https://gitlab.com/kebekus/scantools) - A library and a matching set of command line applications for
+graphics manipulation, written with a view toward handling scanned documents and generating high-quality PDF files.
+    **image2pdf** converts images to PDF.  HOCR files, produced by optical character recognition programs such as Tesseract, can optionally be
+specified to make the PDF file searchable.  The resulting file complies with the ISO PDF/A standard for long-term archiving of digital documents.
+    **hocr2any** converts HOCR files to text, or renders them as raster graphics or PDF files
+    **ocrPDF** uses the Tesseract OCR engine to detect text and generate a text layer in the PDF file.
   1. [ocr-fileformat](https://github.com/UB-Mannheim/ocr-fileformat) - Validate and transform between OCR file formats (hOCR, ALTO, PAGE, FineReader)
   1. [Tess4J](https://github.com/nguyenq/tess4j) - A Java JNA wrapper for Tesseract OCR API.
   1. [Traineddata inspector](https://mazoea.com/te/traineddata/) -  to inspect some of the internals of traineddata files 
@@ -83,7 +89,7 @@
   1. [Display OCR](https://github.com/arturaugusto/display_ocr) is OpenCV-Python + python-tesseract real-time image preprocess and OCR of 7 segments font.
   1. [OpenOCR](https://github.com/tleyden/open-ocr) makes it simple to host your own OCR REST API.
   1. https://github.com/guitarmind/tesseract-web-service is An implementation of RESTful web service for tesseract-OCR using tornado
-  1. [RasterEdge .NET Image SDK - OCR Recognition](https://www.rasteredge.com/dotnet-imaging/addon-ocr-sdk/) is robust, high-performance recognition application of royalty-free distribution for desktop or server applications.
+  1. [RasterEdge .NET Image SDK - OCR Recognition](https://www.rasteredge.com/dotnet-imaging/addon-ocr-sdk/) is a robust, high-performance recognition application of royalty-free distribution for desktop or server applications.
   1. [DevScope OCR SDK](https://www.devscope.net/products/DevScopeOCR) is an Optical Character Recognition toolkit engine based on Tesseract OCR v3 that allows to develop applications using Microsoft .NET framework
   1. [Paperwork](https://github.com/jflesch/paperwork) - using OCR to grep dead trees the easy way (requires pyocr)
   1. [Aletheia](https://www.primaresearch.org/tools.php) - An Advanced Document Layout and Text Ground-Truthing System for Production Environments
