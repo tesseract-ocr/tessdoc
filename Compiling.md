@@ -138,13 +138,13 @@ export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig
 ## Language Data
 
   * Download the [data file(s) for the language(s) you are interested in](Data-Files.md).
-  * Move it to the `tessdata` directory (e.g. `mv tessdata $TESSDATA\_PREFIX` if defined `TESSDATA_PREFIX`)
+  * Move it to the `tessdata` directory (e.g. `mv tessdata $TESSDATA_PREFIX` if defined `TESSDATA_PREFIX`)
 
 You can also use:
 ```
 export TESSDATA_PREFIX=/some/path/to/tessdata
 ```
-to point to your tessdata directory (for example: if your tessdata path is '/usr/local/share/tessdata' you have to use 'export TESSDATA\_PREFIX='/usr/local/share/').
+to point to your tessdata directory (for example: if your tessdata path is '/usr/local/share/tessdata' you have to use 'export TESSDATA_PREFIX='/usr/local/share/tessdata/').
 
 
 # Windows
