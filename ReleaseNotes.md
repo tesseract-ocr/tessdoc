@@ -56,7 +56,7 @@ Table of Contents
 
 # V5.5.0
 
-_Npv 10 2024_
+_Nov 10 2024_
 
 https://github.com/tesseract-ocr/tesseract/releases/tag/5.5.0
 
