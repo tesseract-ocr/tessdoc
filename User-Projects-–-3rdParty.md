@@ -75,6 +75,7 @@
   
 ### B. Others:
 
+  1. [Docling](https://ds4sd.github.io/docling/) - Docling parses documents and exports them to the desired format with ease and speed.
   1. [Scantools](https://gitlab.com/kebekus/scantools) - A library and a matching set of command line applications for
 graphics manipulation, written with a view toward handling scanned documents and generating high-quality PDF files.
     **image2pdf** converts images to PDF.  HOCR files, produced by optical character recognition programs such as Tesseract, can optionally be
