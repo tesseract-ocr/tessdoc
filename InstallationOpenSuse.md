@@ -12,8 +12,8 @@ For example, to install Tesseract with German language traineddata:
 **For CentOS_8_Stream, run the following as root:**
 
 ```
-sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov:/tesseract5/CentOS_8_Stream/
-sudo rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/public_key
+sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/CentOS_8_Stream/
+sudo rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/signing_keys/download?kind=gpg
 sudo dnf install tesseract
 sudo dnf install tesseract-langpack-*
 ```
@@ -21,7 +21,7 @@ sudo dnf install tesseract-langpack-*
 **For CentOS 8, run the following as root:**
 ```
 dnf config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/CentOS_8/
-rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/public_key
+rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/signing_keys/download?kind=gpg
 dnf install tesseract
 dnf install tesseract-langpack-deu
 ```
@@ -38,7 +38,7 @@ yum install tesseract-langpack-deu
 **For CentOS 7, run the following as root:**
 ```
 yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/CentOS_7/
-sudo rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/public_key
+sudo rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/signing_keys/download?kind=gpg
 yum update
 yum install tesseract 
 yum install tesseract-langpack-deu
