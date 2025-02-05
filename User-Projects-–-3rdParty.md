@@ -65,6 +65,11 @@
 
 ## 4. Others (Utilities, Tools, Command-Line Interfaces [CLI], etc)
 
+### Pre-processors
+ 
+  * **Scan Tailor** - An interactive post-processing tool for scanned pages. It performs operations such as: page splitting, deskewing, adding/removing borders, selecting content... There are various forks of original project e.g. [Scan Tailor Universal](https://github.com/trufanov-nok/scantailor-universal), [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) and [ScanTailor-Experimental](https://github.com/ImageProcessing-ElectronicPublications/scantailor-experimental)
+  * [ClearText](https://github.com/ajinkya933/ClearText) -  An AI-powered text detection and enhancement tool that helps make text in images more readable and clearer. Perfect for improving the legibility of text in scanned documents, photos, and other images.
+
 ### A. PDF to Searchable PDF tools 
 
 (ie: any tool which can also handle a non-searchable PDF as an input):
