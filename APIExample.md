@@ -325,7 +325,7 @@ print 'Tesseract-ocr version', tesseract_version
 print result_text
 ```
 
-Example of passing python file object to C-API can be found at [pastebin](http://pastebin.com/yDTkNfNm).
+Example of passing python file object to C-API can be found at [pastebin](https://pastebin.com/yDTkNfNm).
 
 Example of extracting orientation from Tesseract 4.0:
 
