@@ -54,7 +54,7 @@ Noise is random variation of brightness or colour in an image, that can make the
 
 ### Dilation and Erosion
 
-Bold characters or Thin characters (especially those with [Serifs](https://en.wikipedia.org/wiki/Serif)) may impact the recognition of details and reduce recognition accuracy.  Many image processing programs allow [Dilation and Erosion](http://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Morpholo.html#Heading96) of edges of characters against a common background to dilate or grow in size (Dilation) or shrink (Erosion).
+Bold characters or Thin characters (especially those with [Serifs](https://en.wikipedia.org/wiki/Serif)) may impact the recognition of details and reduce recognition accuracy.  Many image processing programs allow [Dilation and Erosion](https://www.mif.vu.lt/atpazinimas/dip/FIP/fip-Morpholo.html#Heading96) of edges of characters against a common background to dilate or grow in size (Dilation) or shrink (Erosion).
 
 Heavy ink bleeding from historical documents can be compensated for by using an Erosion technique. Erosion can be used to shrink characters back to their normal glyph structure.
 
@@ -80,7 +80,7 @@ A skewed image is when a page has been scanned when not straight. The quality of
 
 #### Missing borders
 
-If you OCR just text area without any border, tesseract could have problems with it. See for some details in [tesseract user forum](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/v26a-RYPSOE/2Sppq61GBwAJ)[#427](https://github.com/tesseract-ocr/tesseract/issues/427) . You can easy add small border (e.g. 10 px) with [ImageMagick®](http://imagemagick.org/script/index.php):
+If you OCR just text area without any border, tesseract could have problems with it. See for some details in [tesseract user forum](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/tesseract-ocr/v26a-RYPSOE/2Sppq61GBwAJ)[#427](https://github.com/tesseract-ocr/tesseract/issues/427) . You can easy add small border (e.g. 10 px) with [ImageMagick®](https://imagemagick.org/script/index.php):
 ```
 convert  427-1.jpg  -bordercolor White -border 10x10 427-1b.jpg
 ```
@@ -112,23 +112,23 @@ Tesseract 4.00 removes the alpha channel with leptonica function [pixRemoveAlpha
 
 ### Tools / Libraries
 
-* [Leptonica](http://leptonica.com)
-* [OpenCV](http://opencv.org/)
+* [Leptonica](https://leptonica.com)
+* [OpenCV](https://opencv.org/)
 * [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced#-scantailor-advanced)
-* [ImageMagick](http://www.imagemagick.org)
+* [ImageMagick](https://www.imagemagick.org)
 * [unpaper](https://www.flameeyes.eu/projects/unpaper)
-* [ImageJ](http://rsb.info.nih.gov/ij/)
-* [Gimp](http://www.gimp.org)
+* [ImageJ](https://rsb.info.nih.gov/ij/)
+* [Gimp](https://www.gimp.org)
 * [PRLib](https://github.com/leha-bot/PRLib) - Pre-Recognize Library with algorithms for improving OCR quality
 
 ### Examples
 
 If you need an example how to improve image quality programmatically, have a look at this examples:
 
-* [OpenCV - Rotation (Deskewing)](http://felix.abecassis.me/2011/10/opencv-rotation-deskewing/) - c++ example
-* [Fred's ImageMagick TEXTCLEANER](http://www.fmwconcepts.com/imagemagick/textcleaner/index.php) - bash script for processing a scanned document of text to clean the text background.
+* [OpenCV - Rotation (Deskewing)](https://felix.abecassis.me/2011/10/opencv-rotation-deskewing/) - c++ example
+* [Fred's ImageMagick TEXTCLEANER](https://www.fmwconcepts.com/imagemagick/textcleaner/index.php) - bash script for processing a scanned document of text to clean the text background.
 * [rotation\_spacing.py](https://gist.github.com/endolith/334196bac1cac45a4893#) - python script for automatic detection of rotation and line spacing of an image of text
-* [crop\_morphology.py](https://github.com/danvk/oldnyc/blob/master/ocr/tess/crop_morphology.py) - [Finding blocks of text in an image using Python, OpenCV and numpy](http://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html)
+* [crop\_morphology.py](https://github.com/danvk/oldnyc/blob/master/ocr/tess/crop_morphology.py) - [Finding blocks of text in an image using Python, OpenCV and numpy](https://www.danvk.org/2015/01/07/finding-blocks-of-text-in-an-image-using-python-opencv-and-numpy.html)
 * [Credit card OCR with OpenCV and Python](https://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python)
 * [noteshrink](https://github.com/mzucker/noteshrink) - python example how to clean up scans. Details in blog [Compressing and enhancing hand-written notes](https://mzucker.github.io/2016/09/20/noteshrink.html).
 * [uproject text](https://github.com/mzucker/unproject_text) - python example how to recover perspective of image. Details in blog [Unprojecting text with ellipses](https://mzucker.github.io/2016/10/11/unprojecting-text-with-ellipses.html).
