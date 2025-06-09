@@ -22,7 +22,7 @@ For versions `4.x.x`, `3.05.02` and older, see the [documentation for old versio
 
 ## Introduction
 
-Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
+Tesseract is an open source [text recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition) Engine, available under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0).
 * Major version 5 is the current stable version and started with release [5.0.0](https://github.com/tesseract-ocr/tesseract/releases/tag/5.0.0) on November 30, 2021.
 * Newer minor versions and bugfix versions are available from
 [GitHub](https://github.com/tesseract-ocr/tesseract/releases/).
@@ -32,14 +32,14 @@ and [planning documentation](https://tesseract-ocr.github.io/tessdoc/Planning.ht
 
 Tesseract can be used directly via [command line](Command-Line-Usage.md), or (for programmers) by using an [API](https://github.com/tesseract-ocr/tesseract/blob/main/include/tesseract/baseapi.h) to extract printed text from images. It supports a [wide variety of languages](Data-Files-in-different-versions.md). Tesseract doesn't have a built-in GUI, but there are several available from the [3rdParty](User-Projects-–-3rdParty.md) page. External tools, wrappers and training projects for Tesseract are listed under [AddOns](AddOns.md).
 
-Tesseract can be used in your own project, under the terms of the [Apache License 2.0.](http://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](User-Projects-–-3rdParty.md) and [AddOns](AddOns.md) pages for samples of what has been done with it.
+Tesseract can be used in your own project, under the terms of the [Apache License 2.0.](https://www.apache.org/licenses/LICENSE-2.0) It has a fully featured API, and can be compiled for a variety of targets including Android and the iPhone. See the [3rdParty](User-Projects-–-3rdParty.md) and [AddOns](AddOns.md) pages for samples of what has been done with it.
 
 If you have a question, first read the [documentation](https://tesseract-ocr.github.io/),
 particularly the **[FAQ](FAQ.md)** to see if your problem is addressed there.
 If not, search the [Issues List](https://github.com/tesseract-ocr/tesseract/issues),
-[Tesseract user forum](http://groups.google.com/group/tesseract-ocr),
+[Tesseract user forum](https://groups.google.com/group/tesseract-ocr),
 and if you still can't find what you need, please ask your question in
-[Tesseract user forum Google group](http://groups.google.com/group/tesseract-ocr).
+[Tesseract user forum Google group](https://groups.google.com/group/tesseract-ocr).
 
 Tesseract is free software, so if you want to pitch in and help, please do!
 If you find a bug and fix it yourself, the best thing to do is to attach the patch to your bug report in the [Issues List](https://github.com/tesseract-ocr/tesseract/issues).
