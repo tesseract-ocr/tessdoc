@@ -36,7 +36,7 @@ The following instructions are for building on Linux, which also can be applied 
 * A compiler for C and C++: GCC or Clang
 * GNU Autotools: autoconf, automake, libtool
 * pkg-config
-* [Leptonica](http://www.leptonica.org/)
+* [Leptonica](https://www.leptonica.org/)
 * (optional) zlib, libpng, libjpeg, libtiff, giflib, openjpeg, webp, archive, curl
 
 
@@ -66,7 +66,7 @@ sudo apt-get install libcairo2-dev
 
 ### Leptonica
 
-You also need to install [Leptonica](http://www.leptonica.org/). Ensure that the development headers for Leptonica are installed before compiling Tesseract.
+You also need to install [Leptonica](https://www.leptonica.org/). Ensure that the development headers for Leptonica are installed before compiling Tesseract.
 
 Tesseract versions and the minimum version of Leptonica required:
 
@@ -74,8 +74,8 @@ Tesseract versions and the minimum version of Leptonica required:
 :-------------------: | :---------------------------------------: | :---------
 4.00 | 1.74.2 | [Ubuntu 18.04](https://packages.ubuntu.com/bionic/tesseract-ocr)
 3.05 | 1.74.0 | Must build from source
-3.04 | 1.71 | [Ubuntu 16.04](http://packages.ubuntu.com/xenial/tesseract-ocr)
-3.03 | 1.70 | [Ubuntu 14.04](http://packages.ubuntu.com/trusty/tesseract-ocr)
+3.04 | 1.71 | [Ubuntu 16.04](https://packages.ubuntu.com/xenial/tesseract-ocr)
+3.03 | 1.70 | [Ubuntu 14.04](https://packages.ubuntu.com/trusty/tesseract-ocr)
 3.02 | 1.69 | Ubuntu 12.04
 3.01 | 1.67 |
 
@@ -87,9 +87,9 @@ sudo apt-get install libleptonica-dev
 
 **but if you are using an oldish version of Linux, the Leptonica version may be too old, so you will need to build from source.**
 
-The sources are at https://github.com/DanBloomberg/leptonica . The instructions for building are given in [Leptonica README](http://www.leptonica.org/source/README.html).
+The sources are at https://github.com/DanBloomberg/leptonica . The instructions for building are given in [Leptonica README](https://www.leptonica.org/source/README.html).
 
-Note that if building Leptonica from source, you may need to ensure that /usr/local/lib is in your library path. This is a standard Linux bug, and the information at [Stackoverflow](http://stackoverflow.com/questions/4743233/is-usr-local-lib-searched-for-shared-libraries) is very helpful.
+Note that if building Leptonica from source, you may need to ensure that /usr/local/lib is in your library path. This is a standard Linux bug, and the information at [Stackoverflow](https://stackoverflow.com/questions/4743233/is-usr-local-lib-searched-for-shared-libraries) is very helpful.
 
 
 ## Installing Tesseract from Git
@@ -266,12 +266,12 @@ If you have Visual Studio 2015, checkout the https://github.com/peirick/VS2015_T
 
 ## 3.03rc-1
 
-Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](http://vorba.ch/2014/tesseract-3.03-vs2013.html).
+Have a look at blog [How to build Tesseract 3.03 with Visual Studio 2013](https://vorba.ch/2014/tesseract-3.03-vs2013.html).
 
 
 ## 3.02
 
-For tesseract-ocr 3.02 please follow instruction in [Visual Studio 2008 Developer Notes for Tesseract-OCR](http://tesseract-ocr.googlecode.com/svn/trunk/vs2008/doc/setup.html#using-the-latest-tesseractocr-sources).
+For tesseract-ocr 3.02 please follow instruction in [Visual Studio 2008 Developer Notes for Tesseract-OCR](https://tesseract-ocr.googlecode.com/svn/trunk/vs2008/doc/setup.html#using-the-latest-tesseractocr-sources).
 
 
 ## 3.01
@@ -289,7 +289,7 @@ Windows relevant files are located in vs2008 directory (e.g. `tesseract-3.01\vs2
 
 ## Mingw+Msys
 
-For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](http://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
+For Mingw+Msys have a look at blog [Compiling Leptonica and Tesseract-ocr with Mingw+Msys](https://www.sk-spell.sk.cx/compiling-leptonica-and-tesseract-ocr-with-mingwmsys).
 
 
 ## Msys2
@@ -307,7 +307,7 @@ To build the tesseract-ocr release package, use PKGBUILD from https://github.com
 
 ## Cygwin
 
-To build on Cygwin have a look at blog [How to build Tesseract on Cygwin](http://vorba.ch/2014/tesseract-cygwin.html).
+To build on Cygwin have a look at blog [How to build Tesseract on Cygwin](https://vorba.ch/2014/tesseract-cygwin.html).
 
 Tesseract as well as the training utilities for 3.04.00 onwards are available as Cygwin packages.
 
@@ -324,7 +324,7 @@ tesseract-training-util                 3.04.01-1
 
 ## Mingw-w64
 
-[Mingw-w64](http://mingw-w64.org/) allows building 32- or 64-bit executables for Windows.
+[Mingw-w64](https://mingw-w64.org/) allows building 32- or 64-bit executables for Windows.
 It can be used for native compilations on Windows,
 but also for cross compilations on Linux (which are easier and faster than native compilations).
 Most large Linux distributions already contain packages with the tools need for a cross build.
@@ -631,4 +631,4 @@ In this case you must create m4 directory (`mkdir m4`), and then rerun the above
 
 # Miscellaneous
 
-* [Standalone Tesseract build bash script](http://pastebin.com/VnGLHfbr)
+* [Standalone Tesseract build bash script](https://pastebin.com/VnGLHfbr)

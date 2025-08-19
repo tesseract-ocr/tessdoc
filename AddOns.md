@@ -10,7 +10,7 @@ Platform support depends on used language and experience of user.
 
 #### Box file editors
 
-[jTessBoxEditor](http://vietocr.sourceforge.net/training.html)
+[jTessBoxEditor](https://vietocr.sourceforge.net/training.html)
 
 ### For Tesseract 3.0x
 
@@ -18,13 +18,13 @@ Platform support depends on used language and experience of user.
 
 | **Name** | **Last update** | **Language** | Multipage support |
 |:---------|:----------------|:-------------|:------------------|
-| [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) | 2023      | Java         | yes               |
-| [QT Box Editor](http://zdenop.github.com/qt-box-editor/) | 2019       | C++, Qt4/Qt5 | yes               |
+| [jTessBoxEditor](https://vietocr.sourceforge.net/training.html) | 2023      | Java         | yes               |
+| [QT Box Editor](https://zdenop.github.com/qt-box-editor/) | 2019       | C++, Qt4/Qt5 | yes               |
 | [tesseract-box-editor](https://github.com/scotts48/tesseract-box-editor) | 2013        | .NET 4       | yes               |
-| [Tesseract-OCR boxfile AJAX editor](http://pp19dd.com/tesseract-ocr-chopper/) | 2012      | online tool  |
-| [cowboxer](http://code.google.com/p/cowboxer/) | 2012        | C++, Qt4     | no                |
-| [moshPyTT ](http://code.google.com/p/moshpytt/) | 2011        | Python, GTK2 | no                |
-| [pytesseracttrainer](http://code.google.com/p/pytesseracttrainer/) | 2011        | Python, GTK2 | no                |
+| [Tesseract-OCR boxfile AJAX editor](https://pp19dd.com/tesseract-ocr-chopper/) | 2012      | online tool  |
+| [cowboxer](https://code.google.com/p/cowboxer/) | 2012        | C++, Qt4     | no                |
+| [moshPyTT ](https://code.google.com/p/moshpytt/) | 2011        | Python, GTK2 | no                |
+| [pytesseracttrainer](https://code.google.com/p/pytesseracttrainer/) | 2011        | Python, GTK2 | no                |
 
 
 ### For Tesseract-OCR 2.0x
@@ -34,36 +34,36 @@ Platform support depends on used language and experience of user.
 
 | **Name** | **Last update** | **Language** |
 |:---------|:----------------|:-------------|
-| [Tesseract-OCR boxfile AJAX editor](http://pp19dd.com/tesseract-ocr-chopper/) | 2012      | online tool  |
-| [owlboxer](http://code.google.com/p/owlboxer/) | 2010        | C++, Qt4     |
-| [Tessboxer](http://sites.google.com/site/spilkaondrej) | 2009        | .NET         |
-| [boxfilereader.php](http://tesseract-ocr.googlecode.com/files/boxfilereader.php) | 2009        |  php         |
-| [tessboxes](http://www.lbreyer.com/tessboxes.html) | 2008        | C            |
-| [JTesseract](http://code.google.com/p/jtesseract/) |  2008       | C#           |
-| [wx-tetra](http://code.google.com/p/wx-tetra/) | 2008        | perl, wx     |
-| [bbtesseract](http://code.google.com/p/bbtesseract/) | 2008        | VB.NET 2008  |
+| [Tesseract-OCR boxfile AJAX editor](https://pp19dd.com/tesseract-ocr-chopper/) | 2012      | online tool  |
+| [owlboxer](https://code.google.com/p/owlboxer/) | 2010        | C++, Qt4     |
+| [Tessboxer](https://sites.google.com/site/spilkaondrej) | 2009        | .NET         |
+| [boxfilereader.php](https://tesseract-ocr.googlecode.com/files/boxfilereader.php) | 2009        |  php         |
+| [tessboxes](https://www.lbreyer.com/tessboxes.html) | 2008        | C            |
+| [JTesseract](https://code.google.com/p/jtesseract/) |  2008       | C#           |
+| [wx-tetra](https://code.google.com/p/wx-tetra/) | 2008        | perl, wx     |
+| [bbtesseract](https://code.google.com/p/bbtesseract/) | 2008        | VB.NET 2008  |
 
 
 ## Other Training Tools
      
-  *  [jTessBoxEditor](http://vietocr.sourceforge.net/training.html) - Box Editor and Training Tool    
+  *  [jTessBoxEditor](https://vietocr.sourceforge.net/training.html) - Box Editor and Training Tool    
 
   * [MzTesseract](https://github.com/mazluta/MzTesseract) - MS Windows program that can train new language from top to bottom
-  * [FrankenPlus](https://github.com/this-is-ari/python-tesseract-3.02-training) - tool for creating font training for Tesseract OCR engine from page images. More information about Franken+ is at at [IT'S ALIVE!](http://emop.tamu.edu/node/54Franken+:) and [Franken+ homepage](http://dh-emopweb.tamu.edu/Franken+/).
+  * [FrankenPlus](https://github.com/this-is-ari/python-tesseract-3.02-training) - tool for creating font training for Tesseract OCR engine from page images. More information about Franken+ is at at [IT'S ALIVE!](https://emop.tamu.edu/node/54Franken+:) and [Franken+ homepage](http://dh-emopweb.tamu.edu/Franken+/).
   * [python-tesseract-3.02-training](https://github.com/this-is-ari/python-tesseract-3.02-training) - script to automate the generation of Tesseract 3.02 training files
   * [tesseract-box-file](https://code.google.com/p/tesseract-box-file/) - autoit script to make editing the box file easier
   * [Serak Tesseract Trainer for Tesseract 3.02](https://code.google.com/p/serak-tesseract-trainer/) - a front end GUI for training tesseract 3.02
-  * [BoxMaker](http://reza1615.github.com/index.html) is online tool for generating image&box pair. Offline version is available in download section of [PersianOCR project](https://github.com/reza1615/PersianOcr/downloads)
-  * [boxFactory](http://www.dinosaursandmoustaches.com/boxFactory.php) is a tool for quickly creating box files to train the Tesseract OCR engine. You can identify characters in the image by simply drawing boxes around them.
+  * [BoxMaker](https://reza1615.github.com/index.html) is online tool for generating image&box pair. Offline version is available in download section of [PersianOCR project](https://github.com/reza1615/PersianOcr/downloads)
+  * [boxFactory](https://www.dinosaursandmoustaches.com/boxFactory.php) is a tool for quickly creating box files to train the Tesseract OCR engine. You can identify characters in the image by simply drawing boxes around them.
   * https://github.com/BaltoRouberol/TesseractTrainer - TesseractTrainer is a simple Python API, taking over the tedious process of manually training Tesseract3
   * [tess\_school](https://github.com/ddohler/tess_school) - a set of handy scripts to make the tesseract training process a bit easier
-  * [txt2img](http://code.google.com/p/txt2img/) - Qt GUI application that generates image and box file based on text input
-  * [DangAmbigs Generator](http://www.cs.toronto.edu/~mreimer/tesseract.html) - Creates a DangAmbigs file automatically given a set of OCR text output and correct text. _Requirements:_ Python
-  * [train.ps1](http://sourceforge.net/p/vietocr/code/HEAD/tree/jTessBoxEditor/trunk/tools/) - Windows powershell script for Automate Tesseract 3.01 language data pack generation process.
-  * [Update unicharambigs.exe](http://code.google.com/p/tesseract-ocr/issues/detail?id=544) - A small (windows) C# program for editing "lang.unicharambigs" file
-  * [train\_tess.pl](http://code.google.com/p/tesseract-ocr/issues/detail?id=640) - perl script to facilitate training
+  * [txt2img](https://code.google.com/p/txt2img/) - Qt GUI application that generates image and box file based on text input
+  * [DangAmbigs Generator](https://www.cs.toronto.edu/~mreimer/tesseract.html) - Creates a DangAmbigs file automatically given a set of OCR text output and correct text. _Requirements:_ Python
+  * [train.ps1](https://sourceforge.net/p/vietocr/code/HEAD/tree/jTessBoxEditor/trunk/tools/) - Windows powershell script for Automate Tesseract 3.01 language data pack generation process.
+  * [Update unicharambigs.exe](https://code.google.com/p/tesseract-ocr/issues/detail?id=544) - A small (windows) C# program for editing "lang.unicharambigs" file
+  * [train\_tess.pl](https://code.google.com/p/tesseract-ocr/issues/detail?id=640) - perl script to facilitate training
   * [boxedit](https://github.com/danvk/boxedit/) - A web-based editor for Tesseract box files
-  * [TrainYourTesseract](http://trainyourtesseract.com) - Free online "no-hassle" TTF file to trainedata converter 
+  * [TrainYourTesseract](https://trainyourtesseract.com) - Free online "no-hassle" TTF file to trainedata converter 
 
 
 ## Community training projects
@@ -72,20 +72,20 @@ Platform support depends on used language and experience of user.
   * **MRZ**: https://groups.google.com/group/tesseract-ocr/attach/10d7c711c9cc80/mrz.traineddata
   * **Latin**: https://github.com/ryanfb/latinocr-lattraining
   * **tesseract-georgian**: https://github.com/ddohler/tesseract-georgian
-  * **Polish Fraktur**: training as [result of the IMPACT project](http://dl.psnc.pl/activities/projekty/impact/results/), [trained dataset](http://dl.psnc.pl/download/tesseract_traineddata.zip)
-  * **Ancient Greek**: http://ancientgreekocr.org
-  * **Indic**: http://code.google.com/p/tesseractindic/, https://github.com/debayan/Tesseract-Indic-OCR/, http://code.google.com/p/parichit/ (All are Obsolete)
-  * **Indic-OCR** http://indic-ocr.github.io/tessdata/ 
+  * **Polish Fraktur**: training as [result of the IMPACT project](https://dl.psnc.pl/activities/projekty/impact/results/), [trained dataset](http://dl.psnc.pl/download/tesseract_traineddata.zip)
+  * **Ancient Greek**: https://ancientgreekocr.org
+  * **Indic**: https://code.google.com/p/tesseractindic/, https://github.com/debayan/Tesseract-Indic-OCR/, http://code.google.com/p/parichit/ (All are Obsolete)
+  * **Indic-OCR** https://indic-ocr.github.io/tessdata/ 
   * **Irish uncial**: https://github.com/jimregan/tesseract-gle-uncial
-  * **Polish**: http://code.google.com/p/tesseract-polish/
+  * **Polish**: https://code.google.com/p/tesseract-polish/
   * **Fraktur** (dan, deu, swe):  https://github.com/paalberti/tesseract-dan-fraktur
-  * **Myanmar**: http://code.google.com/p/myaocr/
+  * **Myanmar**: https://code.google.com/p/myaocr/
   * **Persian (Farsi)**: https://github.com/reza1615/PersianOcr
   * **7 segments font**: https://github.com/arturaugusto/display_ocr/tree/master/letsgodigital
 
 ## Ports
 
-  * [Project Naptha](http://projectnaptha.com/)
+  * [Project Naptha](https://projectnaptha.com/)
   * [tesseract.js-core](https://github.com/naptha/tesseract.js-core) - Emscripten port of Tesseract C++ API
   * [tesseract.js](https://github.com/naptha/tesseract.js) - Pure Javascript OCR
 
@@ -94,7 +94,7 @@ Platform support depends on used language and experience of user.
 ### Tesseract 4.0x
 
 **Java**
-  * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
+  * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - https://tess4j.sourceforge.net/
   * [bytedeco](https://github.com/bytedeco/javacpp-presets/tree/master/tesseract) - Java configuration and interface classes for Tesseract based on the [JavaCPP-Presets](https://github.com/bytedeco/javacpp-presets) library from https://bytedeco.org 
 
 **Python**
@@ -143,7 +143,7 @@ Platform support depends on used language and experience of user.
   * [tesseract-sip](https://github.com/virtuald/python-tesseract-sip) - A python SIP wrapper for libtesseract (Apache license)
   * [pytesseract](https://github.com/madmaze/pytesseract) - a wrapper class for Tesseract OCR (requires tesseract executable)
   * [python-tesseract](https://github.com/cookbrite/python-tesseract/commits/master) - A wrapper class for Tesseract OCR that allows any conventional image files (SWIG based)
-  * http://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
+  * https://code.google.com/p/pytess/ - A simple SWIG-based interface to Tesseract
   * [aiopytesseract](https://github.com/amenezes/aiopytesseract) - asyncio tesseract wrapper for Tesseract-OCR.
 
 **R** 
@@ -155,7 +155,7 @@ Platform support depends on used language and experience of user.
 
 **Java**
   * [bytedeco](https://github.com/bytedeco/javacpp-presets/tree/master/tesseract) - Java configuration and interface classes for Tesseract based on 'JavaCPP-Presets' library from https://bytedeco.org - https://github.com/bytedeco/javacpp-presets
-  * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
+  * [tess4j](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - https://tess4j.sourceforge.net/
 
 **Node.js**
   * [penteract](https://github.com/kaelzhang/node-penteract) - The native node.js bindings to the Tesseract OCR project.
@@ -176,11 +176,11 @@ Platform support depends on used language and experience of user.
 ### Tesseract 2.0x
 
 **Python**
-  * http://code.google.com/p/pytesser/
-  * http://code.google.com/p/tesseract-python (pytesser clone)
+  * https://code.google.com/p/pytesser/
+  * https://code.google.com/p/tesseract-python (pytesser clone)
 
 **.NET**
-  * http://www.pixel-technology.com/freeware/tessnet2/
+  * https://www.pixel-technology.com/freeware/tessnet2/
 
 **Java**
-  * [tess4j (0.4)](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - http://tess4j.sourceforge.net/
+  * [tess4j (0.4)](https://github.com/nguyenq/tess4j) - JNA wrapper. Docs and discussions - https://tess4j.sourceforge.net/

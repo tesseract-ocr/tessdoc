@@ -313,7 +313,7 @@ The DangAmbigs file may also be empty.
 
 # Putting it all together
 
-That is all there is to it! All you need to do now is collect together all 8 files and rename them with a `lang.` prefix, where lang is the 3-letter code for your language taken from http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes and put them in your tessdata directory. Tesseract can then recognize text in your language (in theory) with the following:
+That is all there is to it! All you need to do now is collect together all 8 files and rename them with a `lang.` prefix, where lang is the 3-letter code for your language taken from https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes and put them in your tessdata directory. Tesseract can then recognize text in your language (in theory) with the following:
 ```
 tesseract image.tif output -l lang
 ```

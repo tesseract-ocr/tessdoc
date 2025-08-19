@@ -101,11 +101,11 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 
 * https://fontlibrary.org/en (GFS Bodoni)
 * https://fonts.google.com/
-* http://iginomarini.com/fell/the-revival-fonts/
-* http://scholarsfonts.net/ (Cardo)
-* http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=FontDownloads (SIL Fonts)
-* http://www.ctan.org/tex-archive/fonts (GFS Bodoni)
-* http://www.steffmann.de/wordpress/test-2/
+* https://iginomarini.com/fell/the-revival-fonts/
+* https://scholarsfonts.net/ (Cardo)
+* https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=FontDownloads (SIL Fonts)
+* https://www.ctan.org/tex-archive/fonts (GFS Bodoni)
+* https://www.steffmann.de/wordpress/test-2/
 
 #### Arabic Fonts
 
@@ -113,64 +113,64 @@ The installed fonts are shown by the command `fc-list`. See also the [Debian wik
 
 #### Devanagari Fonts
 
-* [Aksharayogini2](http://aksharyogini.sudhanwa.com/download/Aksharyogini2Normal.ttf)
-* [AksharayoginiBoldItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiBoldItalic.ttf)
-* [AksharayoginiBold](http://aksharyogini.sudhanwa.com/download/AksharyoginiBold.ttf)
-* [AksharayoginiItalic](http://aksharyogini.sudhanwa.com/download/AksharyoginiItalic.ttf)
-* [Aksharayogini](http://aksharyogini.sudhanwa.com/download/AksharyoginiNormal.ttf)
-* [Ananda Akchyar Devanagari](http://www.deviantart.com/download/528435924/ananda_akchyar_devanagari_unicode_by_lalitkala-d8qm7ro.zip?token=93007db762db7368ba4846c0de5b4e5f3dfdadd8&ts=1501873924)
-* [AnnapurnaSIL](http://software.sil.org/downloads/d/annapurna/AnnapurnaSIL-1.201.zip)
-* [CDAC-Surekh Bold](http://biharvidhanparishad.gov.in/Fonts/CDACSRBT.TTF)
-* [CDAC-Surekh Normal](http://biharvidhanparishad.gov.in/Fonts/CDACSRNT.TTF)
-* [CDAC-Yogesh Bold](http://biharvidhanparishad.gov.in/Fonts/CDACOTYGB.TTF)
-* [CDAC-Yogesh Italic](http://biharvidhanparishad.gov.in/Fonts/CDACYGIT.TTF)
-* [CDAC-Yogesh Normal](http://biharvidhanparishad.gov.in/Fonts/CDACOTYGN.TTF)
-* [Chandas](http://www.sanskritweb.net/cakram/chandas.ttf)
+* [Aksharayogini2](https://aksharyogini.sudhanwa.com/download/Aksharyogini2Normal.ttf)
+* [AksharayoginiBoldItalic](https://aksharyogini.sudhanwa.com/download/AksharyoginiBoldItalic.ttf)
+* [AksharayoginiBold](https://aksharyogini.sudhanwa.com/download/AksharyoginiBold.ttf)
+* [AksharayoginiItalic](https://aksharyogini.sudhanwa.com/download/AksharyoginiItalic.ttf)
+* [Aksharayogini](https://aksharyogini.sudhanwa.com/download/AksharyoginiNormal.ttf)
+* [Ananda Akchyar Devanagari](https://www.deviantart.com/download/528435924/ananda_akchyar_devanagari_unicode_by_lalitkala-d8qm7ro.zip?token=93007db762db7368ba4846c0de5b4e5f3dfdadd8&ts=1501873924)
+* [AnnapurnaSIL](https://software.sil.org/downloads/d/annapurna/AnnapurnaSIL-1.201.zip)
+* [CDAC-Surekh Bold](https://biharvidhanparishad.gov.in/Fonts/CDACSRBT.TTF)
+* [CDAC-Surekh Normal](https://biharvidhanparishad.gov.in/Fonts/CDACSRNT.TTF)
+* [CDAC-Yogesh Bold](https://biharvidhanparishad.gov.in/Fonts/CDACOTYGB.TTF)
+* [CDAC-Yogesh Italic](https://biharvidhanparishad.gov.in/Fonts/CDACYGIT.TTF)
+* [CDAC-Yogesh Normal](https://biharvidhanparishad.gov.in/Fonts/CDACOTYGN.TTF)
+* [Chandas](https://www.sanskritweb.net/cakram/chandas.ttf)
 * [Gotu](https://ektype.in/gotu.html)
 * [Jaini](https://ektype.in/jaini-1096.html)
 * [Jaini Purva](https://ektype.in/jaini-1096.html)
 * [Lohit Devanagari](https://releases.pagure.org/lohit/Lohit-Devanagari.ttf)
-* [Nakula](http://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
+* [Nakula](https://bombay.indology.info/software/fonts/devanagari/nakula.ttf)
 * [Mukta](https://ektype.in/mukta.html)
-* [Murty Hindi](http://www.murtylibrary.com/mcli-fonts.php)
-* [Murty Sanskrit](http://www.murtylibrary.com/mcli-fonts.php)
-* [Sahadeva](http://bombay.indology.info/software/fonts/devanagari/sahadeva.ttf)
-* [Sanskrit2003](http://www.sanskritweb.net/itrans/sanskrit2003.zip)
-* [Santipur OT](http://www.sanskritweb.net/itrans/santipurot.zip)
-* [Sharad76](http://www.setuadvertising.com/sharad76/)
+* [Murty Hindi](https://www.murtylibrary.com/mcli-fonts.php)
+* [Murty Sanskrit](https://www.murtylibrary.com/mcli-fonts.php)
+* [Sahadeva](https://bombay.indology.info/software/fonts/devanagari/sahadeva.ttf)
+* [Sanskrit2003](https://www.sanskritweb.net/itrans/sanskrit2003.zip)
+* [Santipur OT](https://www.sanskritweb.net/itrans/santipurot.zip)
+* [Sharad76](https://www.setuadvertising.com/sharad76/)
 * [Shobhika](https://github.com/Sandhi-IITBombay/Shobhika/releases/)
-* [Shree-DV0726-OT](http://biharvidhanparishad.gov.in/Fonts/SHREE-DV0726-OT.TTF)
+* [Shree-DV0726-OT](https://biharvidhanparishad.gov.in/Fonts/SHREE-DV0726-OT.TTF)
 * [Siddhanta](https://sites.google.com/site/bayaryn/siddhanta-variations.zip?attredirects=0)
-* [Uttara](http://www.sanskritweb.net/cakram/uttara.ttf)
+* [Uttara](https://www.sanskritweb.net/cakram/uttara.ttf)
 * [Yashomudra Fonts](https://github.com/RajyaMarathiVikasSanstha/Yashomudra/tree/master/TTF%20Files)
 * [Google Devanagari Fonts](https://fonts.google.com/?subset=devanagari)
-* [fonts from TDIL Hindi CD](http://ildc.in/Hindi/GIST/hindi_cd_2/windows/index.htm)
-* [Linked from Bihar Vidhan Parishad](http://biharvidhanparishad.gov.in/HindiFonts.htm)
-* [Linked from bih.nic.in](http://industries.bih.nic.in/HindiFonts.htm)
+* [fonts from TDIL Hindi CD](https://ildc.in/Hindi/GIST/hindi_cd_2/windows/index.htm)
+* [Linked from Bihar Vidhan Parishad](https://biharvidhanparishad.gov.in/HindiFonts.htm)
+* [Linked from bih.nic.in](https://industries.bih.nic.in/HindiFonts.htm)
 
 #### Fraktur Fonts
 
-* http://unifraktur.sourceforge.net/maguntia.html (UnifrakturMaguntia)
-* http://www.orbitals.com/self/ligature/ligature.htm (Wyld)
+* https://unifraktur.sourceforge.net/maguntia.html (UnifrakturMaguntia)
+* https://www.orbitals.com/self/ligature/ligature.htm (Wyld)
 * https://www.fontyukle.net/de/1,Walbaum
-* http://de.ffonts.net/Walbaum-Fraktur.font.download
-* http://www.1001fonts.com/fraktur-fonts.html
-* http://www.dafont.com/fette-unz-fraktur.font
-* http://www.1001freefonts.com/fette_fraktur.font
-* http://www.ligafaktur.de/Schriften.html
-* http://www.morscher.com/3r/fonts/fraktur.htm
+* https://de.ffonts.net/Walbaum-Fraktur.font.download
+* https://www.1001fonts.com/fraktur-fonts.html
+* https://www.dafont.com/fette-unz-fraktur.font
+* https://www.1001freefonts.com/fette_fraktur.font
+* https://www.ligafaktur.de/Schriften.html
+* https://www.morscher.com/3r/fonts/fraktur.htm
 
 #### Hebrew Fonts
 
-* [A list of Hebrew fonts from the Open Siddur Project](http://opensiddur.org/tools/fonts/)
+* [A list of Hebrew fonts from the Open Siddur Project](https://opensiddur.org/tools/fonts/)
 
 #### Collections of fonts
 
-* http://www.abstractfonts.com/
-* http://www.schriftarten-fonts.de/ (German)
+* https://www.abstractfonts.com/
+* https://www.schriftarten-fonts.de/ (German)
 
 ### More information on fonts
 
 * https://en.wikipedia.org/wiki/Fraktur
-* http://www.orbitals.com/self/ligature/ligature.htm 18th Century Ligatures and Fonts
-* http://www.steffmann.de/wordpress/ (German)
+* https://www.orbitals.com/self/ligature/ligature.htm 18th Century Ligatures and Fonts
+* https://www.steffmann.de/wordpress/ (German)

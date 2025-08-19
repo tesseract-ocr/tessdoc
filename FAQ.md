@@ -62,11 +62,11 @@ If you get an error message saying eng.traineddata not found, try setting `TESSD
 -   tsv
 -   pdf with text layer only
 
-Tesseract’s standard output is a plain txt file (UTF-8 encoded, with *' as [end-of-line marker](http://en.wikipedia.org/wiki/Newline)) and 'FF* as a form feed character after each page.
+Tesseract’s standard output is a plain txt file (UTF-8 encoded, with *' as [end-of-line marker](https://en.wikipedia.org/wiki/Newline)) and 'FF* as a form feed character after each page.
 
 With the configfile option set to `pdf`, tesseract will produce searchable PDF pages containing images with a hidden, searchable text layer.
 
-With the configfile option set to `hocr`, tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than UTF-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
+With the configfile option set to `hocr`, tesseract will produce XHTML output compliant with the [hOCR specification](https://docs.google.com/document/preview?id=1QQnIQtvdAC_8n92-LhwPcjtAUFwBlzE8EWnKAxlgVf0&pli=1) (the input image name must be ASCII if the operating system use something other than UTF-8 encoding for filenames - see [issue 809](https://web.archive.org/web/*/https://code.google.com/p/tesseract-ocr/issues/detail?id=809) for some details).
 
 With the configfile option set to `tsv`, tesseract will produce [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) file.
 
@@ -124,7 +124,7 @@ Call the file `logfile` and put it in `tessdata/configs/`, then add `logfile` to
 
 ### How can I suppress tesseract info line?
 
-See [issue 579](https://web.archive.org/web/*/http://code.google.com/p/tesseract-ocr/issues/detail?id=579). On Linux you can redirect stderr and stdout output to `/dev/null`. E.g.:
+See [issue 579](https://web.archive.org/web/*/https://code.google.com/p/tesseract-ocr/issues/detail?id=579). On Linux you can redirect stderr and stdout output to `/dev/null`. E.g.:
 
     tesseract phototest.tif phototest 1>/dev/null 2>&1
 
@@ -214,11 +214,11 @@ No. Tesseract is for text recognition.
 
 ### Where is the documentation?
 
-You’re looking at it. If things aren’t clear, search on the [Tesseract Google Group](http://groups.google.com/group/tesseract-ocr/) or ask us there. If you want to help us write more, please do, and post it to the group!
+You’re looking at it. If things aren’t clear, search on the [Tesseract Google Group](https://groups.google.com/group/tesseract-ocr/) or ask us there. If you want to help us write more, please do, and post it to the group!
 
 ### My question isn’t in here!
 
-Try searching the forum: <http://groups.google.com/group/tesseract-ocr> as well as open and closed issues on GitHub: <https://github.com/tesseract-ocr/tesseract/issues>, as your question may have come up before even if it is not listed here.
+Try searching the forum: <https://groups.google.com/group/tesseract-ocr> as well as open and closed issues on GitHub: <https://github.com/tesseract-ocr/tesseract/issues>, as your question may have come up before even if it is not listed here.
 
 ***
 If you have a question which is not answered by the FAQ, Wiki pages and Issues, please search in the [users mailing-list/forum](https://groups.google.com/d/forum/tesseract-ocr) before posting it there.

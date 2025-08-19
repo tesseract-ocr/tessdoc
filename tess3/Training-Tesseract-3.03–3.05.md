@@ -112,8 +112,8 @@ The traineddata file is simply a concatenation of the input files, with a table 
 ## Requirements for text input files
 
 Text input files (lang.config, lang.unicharambigs, font\_properties, box files, wordlists for dictionaries...) need to meet these criteria:
-  * ASCII or UTF-8 encoding without [BOM](http://en.wikipedia.org/wiki/Byte_order_mark)
-  * Unix [end-of-line marker](http://en.wikipedia.org/wiki/Newline) ('\n')
+  * ASCII or UTF-8 encoding without [BOM](https://en.wikipedia.org/wiki/Byte_order_mark)
+  * Unix [end-of-line marker](https://en.wikipedia.org/wiki/Newline) ('\n')
   * The last character must be an end of line marker ('\n'). Some text editors will show this as an empty line at the end of file. If you omit this you will get an error message containing `last_char == '\n':Error:Assert failed...`.
 
 ## How little can you get away with?
@@ -322,7 +322,7 @@ Seven of the files are coded as a Directed Acyclic Word Graph (DAWG), and the ot
 | bigram-dawg | dawg     | A dawg of word bigrams where the words are separated by a space and each digit is replaced by a _?_. |
 | user-words | text     | A list of extra words to add to the dictionary. Usually left empty to be added by users if they require it; see [tesseract(1)](https://github.com/tesseract-ocr/tesseract/blob/13b7900ebf21fbccbc3d89ebf63cc7165b6ae2ca/doc/tesseract.1.asc#config-files-and-augmenting-with-user-data). |
 
-To make the DAWG dictionary files, you first need a wordlist for your language. You may find an appropriate dictionary file to use as the basis for a wordlist from the spellcheckers (e. g. [ispell](http://ficus-www.cs.ucla.edu/geoff/ispell-dictionaries.html), [aspell](http://aspell.net/) or [hunspell](http://hunspell.sourceforge.net/)) - be careful about the license. The wordlist is formatted as a UTF-8 text file with one word per line. Split the wordlist into needed sets e.g.: the frequent words, and the rest of the words, and then use `wordlist2dawg` to make the DAWG files:
+To make the DAWG dictionary files, you first need a wordlist for your language. You may find an appropriate dictionary file to use as the basis for a wordlist from the spellcheckers (e. g. [ispell](https://ficus-www.cs.ucla.edu/geoff/ispell-dictionaries.html), [aspell](http://aspell.net/) or [hunspell](http://hunspell.sourceforge.net/)) - be careful about the license. The wordlist is formatted as a UTF-8 text file with one word per line. Split the wordlist into needed sets e.g.: the frequent words, and the rest of the words, and then use `wordlist2dawg` to make the DAWG files:
 
 ```
 wordlist2dawg frequent_words_list lang.freq-dawg lang.unicharset
@@ -402,7 +402,7 @@ combine_tessdata lang.
 ```
 
 Although you can use any string you like for the language code, we recommend that you use a 3-letter code 
-for your language matching one of the [ISO 639-2 codes](http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes).
+for your language matching one of the [ISO 639-2 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes).
 
 The resulting lang.traineddata goes in your tessdata directory. Tesseract can then recognize text in your language (in theory) with the following:
 ```
