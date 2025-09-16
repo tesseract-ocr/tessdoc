@@ -112,7 +112,7 @@ Tesseract 4.00 removes the alpha channel with leptonica function [pixRemoveAlpha
 
 ### Tools / Libraries
 
-* [Leptonica](http://leptonica.com)
+* [Leptonica](http://www.leptonica.org/)
 * [OpenCV](http://opencv.org/)
 * [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced#-scantailor-advanced)
 * [ImageMagick](http://www.imagemagick.org)
