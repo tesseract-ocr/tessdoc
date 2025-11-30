@@ -9,7 +9,7 @@ Older versions are not supported.
 
 ### macOS
 
-Latest 4 major versions.
+Latest 3 major versions.
 
 ### Linux
 
