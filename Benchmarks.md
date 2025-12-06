@@ -42,7 +42,7 @@ pytesseract.pytesseract.image_to_string(r"{}", lang = 'eng')
 """
 
 runs = 15
-elapsed_time = timeit.timeit(code_to_test.format((tess_exe, test_image), number=runs)/runs
+elapsed_time = timeit.timeit(code_to_test.format(tess_exe, test_image), number=runs)/runs
 print("\nDuration:", elapsed_time)
 
 ```
