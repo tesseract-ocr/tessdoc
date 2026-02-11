@@ -1,6 +1,6 @@
 # Supported compilers
 
-* MSVC 2022
+* MSVC 2022, 2026
 * GCC, version 11 and newer versions.
 * Clang, version 17 and newer versions.
 * XCode 26, 16
