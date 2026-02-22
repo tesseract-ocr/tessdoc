@@ -78,7 +78,7 @@ $ make langdata/Greek.xheights
 
 ## training_text
 
-The training text is a text file that will used to train Tesseract for the language. It should contain several samples of each character, and be as close to a realistic sample of text as possible.
+The training text is a text file that will be used to train Tesseract for the language. It should contain several samples of each character, and be as close to a realistic sample of text as possible.
 
 ## wordlist
 
