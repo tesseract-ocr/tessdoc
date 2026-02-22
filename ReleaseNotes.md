@@ -314,7 +314,7 @@ _Jul 07 2019_
   * Code modernization and improvements.
   * A lot of bug fixes.
   * Improve CMake configuration.
-  * Disable OpenMP support by default. This was done in the the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
+  * Disable OpenMP support by default. This was done in the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
 
 # V4.0.0
 
