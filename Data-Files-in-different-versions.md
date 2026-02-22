@@ -11,7 +11,7 @@
 |  ara   |  Arabic                              |    x |    x |    x |    x |    x   |      x    |
 |  asm   |  Assamese                            |   |    x |    x |    x |    x   |      x    |
 |  aze   |  Azerbaijani                         |   |    x |    x |    x |    x   |      x    |
-|  aze_cyrl |  Azerbaijani - Cyrilic               |    x |    x |    x |    x |    x   |      x    |
+|  aze_cyrl |  Azerbaijani - Cyrillic               |    x |    x |    x |    x |    x   |      x    |
 |  bel   |  Belarusian                          |    x |    x |    x |    x |    x   |      x    |
 |  ben   |  Bengali                             |    x |    x |    x |    x |    x   |      x    |
 |  bod   |  Tibetan                             |   |    x |    x |    x |    x   |      x    |
@@ -129,7 +129,7 @@
 |  ukr   |  Ukrainian                           |    x |    x |    x |    x |    x   |      x    |
 |  urd   |  Urdu                                |   |    x |    x |    x |    x   |      x    |
 |  uzb   |  Uzbek                               |   |    x |    x |    x |    x   |      x    |
-|  uzb_cyrl |  Uzbek - Cyrilic                     |   |    x |    x |    x |    x   |      x    |
+|  uzb_cyrl |  Uzbek - Cyrillic                     |   |    x |    x |    x |    x   |      x    |
 |  vie   |  Vietnamese                          |    x |    x |    x |    x |    x   |      x    |
 |  yid   |  Yiddish                             |   |    x |    x |    x |    x   |      x    |
 |  yor   |  Yoruba                              |   |   |    x |    x |    x   |      x    |
