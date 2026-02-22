@@ -6,11 +6,11 @@ Automated regression unit tests have additional requirements. This includes the 
 
 ### Build Unit Tests
 
-See [unit test builds](Compiling-%E2%80%93-GitInstallation.md#unit-test-builds) page for instructions.
+See [unit test builds](Compiling-–-GitInstallation.md#unit-test-builds) page for instructions.
 
 ### Run Unit Tests
 
-See [unit test builds](Compiling-%E2%80%93-GitInstallation.md#unit-test-builds) page for instructions.
+See [unit test builds](Compiling-–-GitInstallation.md#unit-test-builds) page for instructions.
 
 ## Performance Testing
 
