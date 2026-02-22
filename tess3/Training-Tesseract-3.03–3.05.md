@@ -217,7 +217,7 @@ Another error that can occur **that is also fatal and needs attention** is an er
 
 There is no need to edit the content of the `[lang].[fontname].exp[num].tr` file. The font name inside it need not be set.
 
-For the curious, [here](#the-tr-file-format) is some information on the format. 
+For the curious, [the *.tr file format](#the-tr-file-format) has some information on the format.
 
 ## Generate the unicharset file
 
