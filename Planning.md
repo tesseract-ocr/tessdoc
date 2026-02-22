@@ -6,7 +6,7 @@ Here we can plan the next releases of Tesseract.
 
 Here are some ideas for future Tesseract releases.
 
-* Modernize the code using C++11 (see [discussion in tesseract-ocr/tesseract#2000](https://github.com/tesseract-ocr/tesseract/pull/2000#issuecomment-431023531) and [here](https://github.com/tesseract-ocr/tesseract/commit/69a2e94bc52b57ba26081fb43051dacf2fdc56a0)).
+* Modernize the code using C++11 (see [discussion in tesseract-ocr/tesseract#2000](https://github.com/tesseract-ocr/tesseract/pull/2000#issuecomment-431023531) and [discussion on commit 69a2e94bc](https://github.com/tesseract-ocr/tesseract/commit/69a2e94bc52b57ba26081fb43051dacf2fdc56a0)).
 
 * Use llvm's tools: clang-format, clang-tidy, scan-build, sanitizers.
 
