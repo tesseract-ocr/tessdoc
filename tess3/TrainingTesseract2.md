@@ -190,7 +190,7 @@ of characters found in the box files when given to unicharset\_extractor, so you
 cat the box files together in the **same order** as the tr files.
 The command lines for cn/mftraining and unicharset\_extractor must be given the .tr
 and .box files (respectively) in the **same order** just in case you have different
-filterings for the different fonts.
+filters for the different fonts.
 There may be a program available to do all this and pick out the characters in
 the style of character map. This might make the whole thing easier.
 
