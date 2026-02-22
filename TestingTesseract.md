@@ -19,5 +19,5 @@ Currently there is no test suite for performance testing. Please see the followi
 * [RFC: Tesseract performance #943](https://github.com/tesseract-ocr/tesseract/issues/943)
 * [RFC: Situation with tests in Tesseract #1627](https://github.com/tesseract-ocr/tesseract/issues/1627)
 * [Accuracy and speed tests #3402](https://github.com/tesseract-ocr/tesseract/issues/3402)
-* [UNLV Test results][UNLV-Testing-of-Tesseract.md#example-results]
+* [UNLV Test results](UNLV-Testing-of-Tesseract.md#example-results)
 
