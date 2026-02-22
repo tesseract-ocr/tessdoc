@@ -77,7 +77,7 @@ Binaries are available from:
 For detailed information about the different types of models, see [Data Files](Data-Files.md).
 
 Model files for version `4.00` are available from [tessdata tagged 4.00](https://github.com/tesseract-ocr/tessdata/releases/tag/4.00). It has models from November 2016. The individual language file links are available from the following link.
-- [tessdata 4.00 November 2016](https://github.com/tesseract-ocr/tessdoc/blob/master/Data-Files.md#data-files-for-version-400-november-29-2016)
+- [tessdata 4.00 November 2016](Data-Files.md#data-files-for-version-400-november-29-2016)
 
 Model files for version `4.0.0` and later are available from [tessdata tagged 4.0.0](https://github.com/tesseract-ocr/tessdata/releases/tag/4.0.0).
 It has legacy models from September 2017 that have been updated with Integer versions
