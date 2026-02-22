@@ -23,7 +23,7 @@ There are a variety of reasons you might not get good quality output from Tesser
 
 Tesseract does various image processing operations internally (using the Leptonica library) before doing the actual OCR. It generally does a very good job of this, but there will inevitably be cases where it isn't good enough, which can result in a significant reduction in accuracy.
 
-You can see how Tesseract has processed the image by using the [configuration variable](https://github.com/tesseract-ocr/tessdoc/blob/main/tess3/ControlParams.md) `tessedit_write_images` to `true` (or using configfile `get.images`) when running Tesseract. If the resulting `tessinput.tif` file looks problematic, try some of these image processing operations before passing the image to Tesseract. 
+You can see how Tesseract has processed the image by setting the [configuration variable `tessedit_write_images`](tess3/ControlParams.md) to `true` (or using configfile `get.images`) when running Tesseract. If the resulting `tessinput.tif` file looks problematic, try some of these image processing operations before passing the image to Tesseract. 
 
 ### Inverting images
 
