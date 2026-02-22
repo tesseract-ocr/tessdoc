@@ -83,11 +83,11 @@ Model files for version `4.0.0` and later are available from [tessdata tagged 4.
 It has legacy models from September 2017 that have been updated with Integer versions
 of `tessdata_best` LSTM models. This set of traineddata files has support for both
 the legacy recognizer with `--oem 0` and for LSTM models with `--oem 1`.
-These models are available from the following Github repo.
+These models are available from the following GitHub repo.
 - [tessdata](https://github.com/tesseract-ocr/tessdata)
 
 Two more sets of `official` traineddata, trained at Google, are made available in
-the following Github repos. These do not have the legacy models and only have
+the following GitHub repos. These do not have the legacy models and only have
 LSTM models usable with `--oem 1`.
 
 - [tessdata_best](https://github.com/tesseract-ocr/tessdata_best)
