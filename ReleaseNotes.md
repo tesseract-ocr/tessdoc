@@ -272,7 +272,7 @@ _Nov 14 2021_
 
 Changes in the Autotools build:
 
-* Fix autoconf build for MacOS.
+* Fix autoconf build for macOS.
 * Fix automake warning because of redefined `DEFAULT_INCLUDES`.
 * Don't use compiler flags `-march=native -mtune=native` in autoconf builds.
 * Make automake builds less noisy by default.
