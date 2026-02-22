@@ -142,7 +142,7 @@ Left-click in IntegerMatch Window to continue or right click to debug...
 
 The IntMatchWindow should show that the lower case `c` matches quite well. The fact this it gets a number between that of the `e` and `a` above indicates that the `c` was rejected by the class pruner.
 
-In the IntMatchWindow, the correspondence between the features and prototypes is shown. The prototypes are the long thin lines, and the features the shorter thicker lines. The colors from best match to worst go in this somewhat arbitrary sequence: White, Green, Red, Blue. The gray lines should indicate which kind of prototype the unknown matched, but they seem to be one classification behind. The square indicates the static classifier and shows the unit of normalization. The tram-lines indicate an adaptive classification and show the position of the baseline, meanline, descenders and ascenders.
+In the IntMatchWindow, the correspondence between the features and prototypes is shown. The prototypes are the long thin lines, and the features are the shorter thicker lines. The colors from best match to worst go in this somewhat arbitrary sequence: White, Green, Red, Blue. The gray lines should indicate which kind of prototype the unknown matched, but they seem to be one classification behind. The square indicates the static classifier and shows the unit of normalization. The tram-lines indicate an adaptive classification and show the position of the baseline, meanline, descenders and ascenders.
 
 
 ## Other MODE possibilities
