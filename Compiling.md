@@ -261,7 +261,7 @@ If you're building with sw run `sw generate`, it will create a solution link for
 
 ## 3.05
 
-If you have Visual Studio 2015, checkout the https://github.com/peirick/VS2015_Tesseract repository for [Visual Studio 2015 Projects for Tessearct and dependencies.](https://github.com/peirick/VS2015_Tesseract) and click on build_tesseract.bat. After that you still need to download the language packs.
+If you have Visual Studio 2015, checkout the https://github.com/peirick/VS2015_Tesseract repository for [Visual Studio 2015 Projects for Tesseract and dependencies.](https://github.com/peirick/VS2015_Tesseract) and click on build_tesseract.bat. After that you still need to download the language packs.
 
 
 ## 3.03rc-1
