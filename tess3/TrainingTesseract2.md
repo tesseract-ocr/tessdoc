@@ -3,7 +3,7 @@
 -------------------------------------
 ## How to use the tools provided to train Tesseract 2.x for a new language?
 
-**NOTE:** These instructions are for an older version of Tesseract. Training instructions for more recent versions are [here](TrainingTesseract.md).
+**NOTE:** These instructions are for an older version of Tesseract. There are [training instructions for more recent versions](../tess5/TrainingTesseract-5.md).
 
   * [Introduction](#introduction)
   * [Background and Limitations](#background-and-limitations)
