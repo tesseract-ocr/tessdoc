@@ -1,5 +1,5 @@
 ***
-This is a collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4**. Also see [Common errors and information for their resolution](4.0x-Common-Errors-and-Resolutions.md).
+This is a collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4**. Also see [Common errors and information for their resolution](Common-Errors-and-Resolutions.md).
 
 For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha, please see [FAQ Old](tess3/FAQ-Old.md).
 ***
