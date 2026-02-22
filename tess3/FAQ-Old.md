@@ -416,7 +416,7 @@ Periodically stable versions go to the downloads page. Between releases, and in 
 
 ## actual\_tessdata\_num\_entries_<= TESSDATA\_NUM\_ENTRIES:Error:Assert failed:in file ..\ccutil\tessdatamanager.cpp, line 55_
 
-If you get an error while running **tesseract**, please check if you are using the correct version of traineddata (e.g. 3.00 with 3.01). You can not use 3.01 traineddata with tesseract 3.00.
+If you get an error while running **tesseract**, please check if you are using the correct version of traineddata (e.g. 3.00 with 3.01). You cannot use 3.01 traineddata with tesseract 3.00.
 
 ## last\_char == '\n':Error:Assert failed:in file ..\ccutil\tessdatamanager.cpp, line 95
 
