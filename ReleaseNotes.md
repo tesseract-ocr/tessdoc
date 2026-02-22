@@ -643,7 +643,7 @@ To recognize another language:
 tesseract inputimage outputbase -l langcode
 ```
 
-To train on a new language, see [TrainingTesseract2](TrainingTesseract2.md).
+To train on a new language, see [TrainingTesseract2](tess3/TrainingTesseract2.md).
 More languages will be appearing over time.
 
 List of changes in this release:
