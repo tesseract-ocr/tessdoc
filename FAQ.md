@@ -223,7 +223,7 @@ Try searching the forum: <http://groups.google.com/group/tesseract-ocr> as well 
 ***
 If you have a question which is not answered by the FAQ, Wiki pages and Issues, please search in the [users mailing-list/forum](https://groups.google.com/d/forum/tesseract-ocr) before posting it there.
 
-If you think you found a bug in Tesseract, please search existing [issues](https://github.com/tesseract-ocr/tesseract/issues). If you find an existing similar issue, please add to it, otherwise create a [new issue](https://github.com/tesseract-ocr/tesseract/issues/new).
+If you think you found a bug in Tesseract, please search existing [issues](https://github.com/tesseract-ocr/tesseract/issues). If you find an existing similar issue, please add to it; otherwise, create a [new issue](https://github.com/tesseract-ocr/tesseract/issues/new).
 
 Read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/main/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
 ***
