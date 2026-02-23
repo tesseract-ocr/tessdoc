@@ -104,7 +104,7 @@ Tesseract 4 also uses up to four CPU threads while processing a page, so it will
 
 ## Windows: tesseract closes automatically right after launching
 
-Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [3rdParty](User-Projects-–-3rdParty.md) page.
+Tesseract is a command line program, so you need to run it from the [command line](http://commandwindows.com/). If you need a program with a graphical interface, there are several available from the [3rdParty](../User-Projects-–-3rdParty.md) page.
 
 ## What output formats can Tesseract produce?
 
