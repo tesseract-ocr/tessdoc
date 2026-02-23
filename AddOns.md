@@ -87,7 +87,7 @@ Platform support depends on used language and experience of user.
 
   * [Project Naptha](http://projectnaptha.com/)
   * [tesseract.js-core](https://github.com/naptha/tesseract.js-core) - Emscripten port of Tesseract C++ API
-  * [tesseract.js](https://github.com/naptha/tesseract.js) - Pure Javascript OCR
+  * [tesseract.js](https://github.com/naptha/tesseract.js) - Pure JavaScript OCR
 
 ## Tesseract wrappers
 

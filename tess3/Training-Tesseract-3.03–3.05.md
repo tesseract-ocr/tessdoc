@@ -217,7 +217,7 @@ Another error that can occur **that is also fatal and needs attention** is an er
 
 There is no need to edit the content of the `[lang].[fontname].exp[num].tr` file. The font name inside it need not be set.
 
-For the curious, [here](#the-tr-file-format) is some information on the format. 
+For the curious, [the *.tr file format](#the-tr-file-format) has some information on the format.
 
 ## Generate the unicharset file
 
@@ -435,7 +435,7 @@ tb 1
 ```
 
 The Micro Features (`mf`) are polygon segments of the outline normalized to the
-1st and 2nd moments. The `mf` line will followed by a set of lines determined by \<number of features\>.  
+1st and 2nd moments. The `mf` line will be followed by a set of lines determined by \<number of features\>.  
 x is x position [-0.5,0.5]  
 y is y position [-0.25,0.75]  
 length is the length of the polygon segment [0,1.0]  

@@ -1,5 +1,5 @@
 ***
-This is a collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4**. Also see [Common errors and information for their resolution](4.0x-Common-Errors-and-Resolutions.md).
+This is a collection of frequently asked questions and the answers, or pointers to them for **Tesseract 4**. Also see [Common errors and information for their resolution](Common-Errors-and-Resolutions.md).
 
 For the older version of the FAQ pertaining to Tesseract 2.0x, 3.0x and 4.00.00alpha, please see [FAQ Old](tess3/FAQ-Old.md).
 ***
@@ -180,7 +180,7 @@ Where `/usr/src/tesseract-3.03/api/tesseract` is the shell wrapper script, and i
 
 ### How do I train Tesseract LSTM Engine?
 
-Tesseract can be trained to recognize other languages or finetune existing language models. See [Tesseract Wiki Training Tesseract 4.00](TrainingTesseract-4.00.md) page for information on training the LSTM engine.
+Tesseract can be trained to recognize other languages or finetune existing language models. See [Tesseract Wiki Training Tesseract 4.00](tess4/TrainingTesseract-4.00.md) page for information on training the LSTM engine.
 
 Please note that `tesstrain.sh` and `tesstrain.py` only support training using synthetic images created using a UTF-8 training text and Unicode fonts to render the text. Training from scanned images and transcription is supported via [tesstrain makefile](https://github.com/tesseract-ocr/tesstrain).
 
@@ -223,7 +223,7 @@ Try searching the forum: <http://groups.google.com/group/tesseract-ocr> as well 
 ***
 If you have a question which is not answered by the FAQ, Wiki pages and Issues, please search in the [users mailing-list/forum](https://groups.google.com/d/forum/tesseract-ocr) before posting it there.
 
-If you think you found a bug in Tesseract, please search existing [issues](https://github.com/tesseract-ocr/tesseract/issues). If you find an existing similar issue, please add to it, otherwise create a [new issue](https://github.com/tesseract-ocr/tesseract/issues/new).
+If you think you found a bug in Tesseract, please search existing [issues](https://github.com/tesseract-ocr/tesseract/issues). If you find an existing similar issue, please add to it; otherwise, create a [new issue](https://github.com/tesseract-ocr/tesseract/issues/new).
 
 Read the [CONTRIBUTING](https://github.com/tesseract-ocr/tesseract/blob/main/CONTRIBUTING.md) guide before you report an issue in GitHub or ask a question in the forum.
 ***

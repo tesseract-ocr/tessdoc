@@ -18,7 +18,7 @@
 | [Tesseract-OCR QT4 gui](https://github.com/zdenop/tesseract-ocr-qt4gui) | X         |         |             | Apache 2.0  | Tesseract-OCR QT4 gui is a simple GUI for tesseract |
 | [Lime OCR](https://code.google.com/p/lime-ocr/) |           |         | X           | GPL v3      | A simple, free OCR software for Windows using tesseract-ocr engine |
 | [Ocrivist](https://www.ocrivist.com/) | X         |         |             | GPL v3      | Ocrivist is a utility which makes it possible to scan and OCR books and other printed documents to PDF or Djvu format |
-| [Tesseract-GUI](https://tesseract-gui.sourceforge.net) | X         |         |             | GPL v2      | Tessract-GUI is not a front-end for tesseract-ocr, it is just a graphical way to use it  with simple image manipulation through ImageMagick |
+| [Tesseract-GUI](https://tesseract-gui.sourceforge.net) | X         |         |             | GPL v2      | Tesseract-GUI is not a front-end for tesseract-ocr, it is just a graphical way to use it  with simple image manipulation through ImageMagick |
 | [QTesseract](https://code.google.com/p/qtesseract/) | X         |         |             | LGPL v3     | QT GUI for the Tesseract OCR |
 | [dpScreenOCR](https://danpla.github.io/dpscreenocr/) | X         |          | X        | zlib | Program to recognize text on screen |
 | [pmOCR](https://github.com/deajan/pmocr/) | X         |          |          | BSD | Batch OCR tool, also file monitor event OCR with tesseract |
@@ -28,7 +28,7 @@
 | [PDF OCR X](https://solutions.weblite.ca/pdfocrx/) |           | X       | X           | Proprietary | PDF OCR is a simple drag-and-drop utility for Mac OS X and Windows, that converts your PDFs and images into text documents or searchable PDF files |
 | [TaxWorkFlow](https://thetaxworkflow.com)|          |         | X           | Proprietary | TaxWorkFlow is an accounting practice management application that includes GUI frontend for Tesseract OCR engine. The app supports AVX and allows to create OCR'ed PDF files of selected resolution and compression from PDF files and 100+ image file formats. |
 | [AmhOCR](https://github.com/KumnegerH/AmhOCR) |           |         | X           |  GPLv3     | Tesseract Powered Windows Desktop OCR Application With Multiple Pre/Post Processing GUI |
-| [TesseractStudio.Net Github](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | (Exe, SourceCode Not Available,Site Urls are Dead) A graphical interface to tesseract 4.0 |
+| [TesseractStudio.Net GitHub](https://github.com/OpaitSoftware/TesseractStudio.Net) |          |         | X           | Proprietary     | (Exe, SourceCode Not Available,Site Urls are Dead) A graphical interface to tesseract 4.0 |
 | [TesseractStudio.Net](https://www.opait.com/TessStudio/index.html) |          |         | X           | Proprietary     |  A graphical interface to tesseract 4.0 |
 | [ImageTrans](https://www.basiccat.org/imagetrans) | X        | X       | X           | Proprietary     |  An image translation tool which can use Tesseract to OCR a whole page, a selected region of an image or a screenshot |
 | [NAPS2](https://www.naps2.com/) | X        | X       | X           | GLP2     |  Scan documents to PDF and more, as simply as possible. |

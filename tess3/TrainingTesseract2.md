@@ -3,7 +3,7 @@
 -------------------------------------
 ## How to use the tools provided to train Tesseract 2.x for a new language?
 
-**NOTE:** These instructions are for an older version of Tesseract. Training instructions for more recent versions are [here](TrainingTesseract.md).
+**NOTE:** These instructions are for an older version of Tesseract. There are [training instructions for more recent versions](../tess5/TrainingTesseract-5.md).
 
   * [Introduction](#introduction)
   * [Background and Limitations](#background-and-limitations)
@@ -190,7 +190,7 @@ of characters found in the box files when given to unicharset\_extractor, so you
 cat the box files together in the **same order** as the tr files.
 The command lines for cn/mftraining and unicharset\_extractor must be given the .tr
 and .box files (respectively) in the **same order** just in case you have different
-filterings for the different fonts.
+filters for the different fonts.
 There may be a program available to do all this and pick out the characters in
 the style of character map. This might make the whole thing easier.
 

@@ -156,7 +156,7 @@ _Jul 06 2022_
 
 * Add initial support for Intel AVX512F. This improves the performance for recognition with the 'best' models and for training.
 * C API: Add a function to init tesseract with traineddata from memory.
-* Add a new parameter `invert_threshold`. The default value is `0.7`. In previous 5.x versions, the inversion threshold was `0.5`, without a way to change this value by the user. The `tessedit_do_invert` paramerer is deprecated and will be removed in version 6.0. To completely disable textlines inversion, you can set `invert_threshold` value to `0.0`.
+* Add a new parameter `invert_threshold`. The default value is `0.7`. In previous 5.x versions, the inversion threshold was `0.5`, without a way to change this value by the user. The `tessedit_do_invert` parameter is deprecated and will be removed in version 6.0. To completely disable textlines inversion, you can set `invert_threshold` value to `0.0`.
 * Fix regression with UZN files.
 * Replace direct access to Leptonica internal data structures by function calls (this is necessary for compatibility with the next Leptonica release).
 * Replace `std::regex` by `std::string` functions (issue [#3830](https://github.com/tesseract-ocr/tesseract/issues/3830)).
@@ -272,7 +272,7 @@ _Nov 14 2021_
 
 Changes in the Autotools build:
 
-* Fix autoconf build for MacOS.
+* Fix autoconf build for macOS.
 * Fix automake warning because of redefined `DEFAULT_INCLUDES`.
 * Don't use compiler flags `-march=native -mtune=native` in autoconf builds.
 * Make automake builds less noisy by default.
@@ -314,7 +314,7 @@ _Jul 07 2019_
   * Code modernization and improvements.
   * A lot of bug fixes.
   * Improve CMake configuration.
-  * Disable OpenMP support by default. This was done in the the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
+  * Disable OpenMP support by default. This was done in the CMake build, but not in the Autotools build, where the OpenMP is still enabled by default (see e.g. #1171, #1081).
 
 # V4.0.0
 
@@ -344,7 +344,7 @@ _Oct 29 2018_
     * Fixed many issues reported by [Coverity Scan](https://scan.coverity.com/projects/tesseract-ocr) or [LGTM](https://lgtm.com/projects/g/tesseract-ocr/tesseract/).
     * Fixes to trainingdata rendering.
     * Fixed damage to binary images when processing PDFs.
-    * Don't trigger a deliberate segmentation fault for fatal errors in release code [(Commit 5338a5a8d)](
+    * Don't trigger a deliberate segmentation fault for fatal errors in release code - commit [`5338a5a8d`](
 https://github.com/tesseract-ocr/tesseract/commit/5338a5a8d5e4ebad).
     * Fixed some issues in OpenCL code. OpenCL now works for the legacy Tesseract OCR engine, but does not improve the performance. It is not implemented for the LSTM OCR engine.
     * Improved  multi-page TIFF handling.
@@ -354,7 +354,7 @@ https://github.com/tesseract-ocr/tesseract/commit/5338a5a8d5e4ebad).
     * Documented in `tesseract` man page the option to use an input text file which contains lists of images.
     * Made 'osd' the default traineddata when psm 0 is requested (currently this feature is only implemented in the command line interface, but not in the API).
     * Removed `tessedit_pageseg_mode 1`
-from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` if that is desired [(Commit ecfee53ba)](https://github.com/tesseract-ocr/tesseract/commit/ecfee53bac59e546).
+from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` if that is desired - commit [`ecfee53ba`](https://github.com/tesseract-ocr/tesseract/commit/ecfee53bac59e546).
     * The list of available languages and scripts is now sorted alphabetically.
     * The parameter `unlv_tilde_crunching` changed to `false`, because `true` as a value cause issues (#948, #1449) in Tesseract 4.
     * Added parameter: `min_characters_to_try`.
@@ -364,7 +364,7 @@ from hocr, pdf, and tsv config files. The user should explicitly use `--psm 1` i
     * Removed obsolete code.
   * **Important notes**
     * The new LSTM engine still does not support all features from the old legacy engine (see [missing features](Planning.md#features-from-30x-which-are-missing-for-lstm)).
-    * Tesseract now requires the so called "C" locale. This has mainly implications when Tesseract is used as a library from programming languages like Java or Python. The _locale_ stands for several settings which depend on a language (or language variant) or country. Some of those setting determine the classification of symbols (for example "Is this character a blank (space) character?") or the way how numbers are printed (for example "3.141" or "3,141"). The current Tesseract code implicitly expects some fixed settings, otherwise it fails. Therefore the code fails right at the beginning with an assertion if it cannot be sure that the settings work. This is not a problem with C or C++ programs which by default get a "C" locale with the right settings. All other use cases must currently make sure that they switch to the "C" locale before running Tesseract code. [**Fixed**](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79) in version 4.1.0.
+    * Tesseract now requires the so called "C" locale. This has mainly implications when Tesseract is used as a library from programming languages like Java or Python. The _locale_ stands for several settings which depend on a language (or language variant) or country. Some of those setting determine the classification of symbols (for example "Is this character a blank (space) character?") or the way how numbers are printed (for example "3.141" or "3,141"). The current Tesseract code implicitly expects some fixed settings; otherwise, it fails. Therefore the code fails right at the beginning with an assertion if it cannot be sure that the settings work. This is not a problem with C or C++ programs which by default get a "C" locale with the right settings. All other use cases must currently make sure that they switch to the "C" locale before running Tesseract code. [**Fixed**](https://github.com/tesseract-ocr/tesseract/commit/331cc84d8d79) in version 4.1.0.
 
 # V3.05.02
 
@@ -522,7 +522,7 @@ _Oct 23 2012_
 _Oct 21 2011_
 
   * Thread-safety! Moved all critical global and static variables to members of the appropriate class. Tesseract is now thread-safe (multiple instances can be used in parallel in multiple threads.) with the minor exception that some control parameters are still global and affect all threads.
-  * Added `Cube`, a new **experimental** recognizer for Arabic and Hindi. Cube can also be used in combination with normal Tesseract for a few other languages with an small improvement in accuracy at the cost of much lower speed. **There is no training module for Cube.**
+  * Added `Cube`, a new **experimental** recognizer for Arabic and Hindi. Cube can also be used in combination with normal Tesseract for a few other languages with a small improvement in accuracy at the cost of much lower speed. **There is no training module for Cube.**
   * `OcrEngineMode` in `Init` replaces `AccuracyVSpeed` to control cube.
   * Greatly improved segmentation search with consequent accuracy and speed improvements, especially for Chinese.
   * Added `PageIterator` and `ResultIterator` as cleaner ways to get the full results out of Tesseract, that are not currently provided by any of the `TessBaseAPI::Get*` methods. All other methods, such as the `ETEXT_STRUCT` in particular are deprecated and will be deleted in the future.
@@ -643,7 +643,7 @@ To recognize another language:
 tesseract inputimage outputbase -l langcode
 ```
 
-To train on a new language, see [TrainingTesseract2](TrainingTesseract2.md).
+To train on a new language, see [TrainingTesseract2](tess3/TrainingTesseract2.md).
 More languages will be appearing over time.
 
 List of changes in this release:

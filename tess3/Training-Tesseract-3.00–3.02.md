@@ -289,7 +289,7 @@ Tesseract needs to have access to character properties isalpha, isdigit, isupper
 
 Example:
 
-  * ';' is an punctuation character. Its properties are thus represented by the binary number 10000 (10 in hexadecimal).
+  * ';' is a punctuation character. Its properties are thus represented by the binary number 10000 (10 in hexadecimal).
   * 'b' is an alphabetic character and a lower case character. Its properties are thus represented by the binary number 00011 (3 in hexadecimal).
   * 'W' is an alphabetic character and an upper case character. Its properties are thus represented by the binary number 00101 (5 in hexadecimal).
   * '7' is just a digit. Its properties are thus represented by the binary number 01000 (8 in hexadecimal).

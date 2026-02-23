@@ -11,7 +11,7 @@
 |  ara   |  Arabic                              |    x |    x |    x |    x |    x   |      x    |
 |  asm   |  Assamese                            |   |    x |    x |    x |    x   |      x    |
 |  aze   |  Azerbaijani                         |   |    x |    x |    x |    x   |      x    |
-|  aze_cyrl |  Azerbaijani - Cyrilic               |    x |    x |    x |    x |    x   |      x    |
+|  aze_cyrl |  Azerbaijani - Cyrillic               |    x |    x |    x |    x |    x   |      x    |
 |  bel   |  Belarusian                          |    x |    x |    x |    x |    x   |      x    |
 |  ben   |  Bengali                             |    x |    x |    x |    x |    x   |      x    |
 |  bod   |  Tibetan                             |   |    x |    x |    x |    x   |      x    |
@@ -129,7 +129,7 @@
 |  ukr   |  Ukrainian                           |    x |    x |    x |    x |    x   |      x    |
 |  urd   |  Urdu                                |   |    x |    x |    x |    x   |      x    |
 |  uzb   |  Uzbek                               |   |    x |    x |    x |    x   |      x    |
-|  uzb_cyrl |  Uzbek - Cyrilic                     |   |    x |    x |    x |    x   |      x    |
+|  uzb_cyrl |  Uzbek - Cyrillic                     |   |    x |    x |    x |    x   |      x    |
 |  vie   |  Vietnamese                          |    x |    x |    x |    x |    x   |      x    |
 |  yid   |  Yiddish                             |   |    x |    x |    x |    x   |      x    |
 |  yor   |  Yoruba                              |   |   |    x |    x |    x   |      x    |
@@ -178,4 +178,4 @@
 | viet |Vietnamese                              |   |   |    |  x   |    x   |    x    |
 
 
-For detalls about the languages that each Script.traindata file supports, see the files that end with langs.txt (e.g. Latin.langs.txt) [here](https://github.com/tesseract-ocr/langdata_lstm/tree/main/script).
+For details about the languages that each Script.traindata file supports, see the files that end with langs.txt in the [`script` directory](https://github.com/tesseract-ocr/langdata_lstm/tree/main/script) (e.g. Latin.langs.txt).

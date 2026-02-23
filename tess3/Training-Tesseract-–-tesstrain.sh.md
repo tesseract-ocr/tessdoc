@@ -34,7 +34,7 @@ tesstrain.sh needs certain files to use in the training process. These are norma
 
 ## Required files
 
-At a minimum the following files need to be provided in your langdata directory (note that [lang] is the language code, e.g. 'kan' or 'eng'):
+At a minimum, the following files need to be provided in your langdata directory (note that [lang] is the language code, e.g. 'kan' or 'eng'):
 
  * [lang]/[lang].training_text (alternatively this can be specified on the command line with `--training_text /path/to/textfile`)
 
@@ -78,7 +78,7 @@ $ make langdata/Greek.xheights
 
 ## training_text
 
-The training text is a text file that will used to train Tesseract for the language. It should contain several samples of each character, and be as close to a realistic sample of text as possible.
+The training text is a text file that will be used to train Tesseract for the language. It should contain several samples of each character, and be as close to a realistic sample of text as possible.
 
 ## wordlist
 
