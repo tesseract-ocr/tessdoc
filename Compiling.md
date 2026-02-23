@@ -4,7 +4,7 @@
 
 *Use the same tools for building tesseract as you used for [building leptonica](https://github.com/DanBloomberg/leptonica/issues/410).*
 
-[C++ compiler with good C++17 support](https://en.wikipedia.org/wiki/C%2B%2B17#Compiler_support) is required for building Tesseract from source.  Several (known) toolchains can help you build the tesseract: [GNU Autotools](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html), [CMake](https://cmake.org/), [Software Network](https://software-network.org/) (a.k.a. sw) and [vcpkg](https://vcpkg.io/en/). Please have a look at the [tesseract GitHub Action Workflows](https://github.com/tesseract-ocr/tesseract/tree/main/.github/workflows) if the following instructions are not clear to you. 
+[C++ compiler with good C++17 support](https://en.wikipedia.org/wiki/C%2B%2B17#Compiler_support) is required for building Tesseract from source.  Several (known) toolchains can help you build the tesseract: [GNU Autotools](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html), [CMake](https://cmake.org/), [Software Network](https://software-network.org/) (a.k.a. sw) and [vcpkg](https://vcpkg.io/en/). Please have a look at the [Tesseract GitHub Action Workflows](https://github.com/tesseract-ocr/tesseract/tree/main/.github/workflows) if the following instructions are not clear to you. 
 
 ## Table of contents
 
