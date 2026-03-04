@@ -155,13 +155,7 @@ Experts can also get binaries build with Visual Studio from the build artifacts 
 
 #### Package Managers
 
-Tesseract can also be installed via package managers:
-
-**winget:**
-
-```
-winget install UB-Mannheim.TesseractOCR
-```
+Tesseract can also be installed via third-party package managers. These packages are community-maintained and not officially supported by the Tesseract team. For packaging issues, please contact the respective package maintainers.
 
 **Chocolatey:**
 
@@ -175,7 +169,7 @@ choco install tesseract
 scoop install tesseract
 ```
 
-Note: Chocolatey and Scoop will automatically add Tesseract to your system `PATH`. If you used the installer or winget, you may need to add it manually:
+Note: Chocolatey and Scoop will automatically add Tesseract to your system `PATH`. If you used the installer, you may need to add it manually:
 
 **GUI:** Press `Win + R`, type `sysdm.cpl`, go to **Advanced** → **Environment Variables**, edit **Path** under **System variables**, and add the installation directory (e.g. `C:\Program Files\Tesseract-OCR`).
 
