@@ -153,6 +153,44 @@ To access tesseract-OCR from any location you may have to add the directory wher
 
 Experts can also get binaries build with Visual Studio from the build artifacts of the [Appveyor Continuous Integration](https://ci.appveyor.com/project/zdenop/tesseract/history).
 
+#### Package Managers
+
+Tesseract can also be installed via package managers:
+
+**winget:**
+
+```
+winget install UB-Mannheim.TesseractOCR
+```
+
+**Chocolatey:**
+
+```
+choco install tesseract
+```
+
+**Scoop:**
+
+```
+scoop install tesseract
+```
+
+Note: Chocolatey and Scoop will automatically add Tesseract to your system `PATH`. If you used the installer or winget, you may need to add it manually:
+
+**GUI:** Press `Win + R`, type `sysdm.cpl`, go to **Advanced** → **Environment Variables**, edit **Path** under **System variables**, and add the installation directory (e.g. `C:\Program Files\Tesseract-OCR`).
+
+**PowerShell (run as Administrator):**
+
+```powershell
+[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "Machine") + ";C:\Program Files\Tesseract-OCR", "Machine")
+```
+
+To verify the installation, open a new terminal and run:
+
+```
+tesseract --version
+```
+
 #### Cygwin
 
 Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) [Cygwin](https://www.cygwin.com/)
