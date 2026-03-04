@@ -155,7 +155,7 @@ Experts can also get binaries build with Visual Studio from the build artifacts 
 
 #### Package Managers
 
-Tesseract can also be installed via third-party package managers. These packages are community-maintained and not officially supported by the Tesseract team. For packaging issues, please contact the respective package maintainers.
+Tesseract is also available via the following third-party package managers. These are community-maintained and may lag behind the latest release. For the most up-to-date version, use the [UB Mannheim installer](https://github.com/UB-Mannheim/tesseract/wiki) instead. For packaging issues, please contact the respective package maintainers.
 
 **Chocolatey:**
 
