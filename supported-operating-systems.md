@@ -14,7 +14,7 @@ Latest 3 major versions.
 ### Linux
 
 * Ubuntu:
-  * LTS versions: Any version that was released in the last 5 years (24.04, 22.04).
+  * LTS versions: Any version that was released in the last 5 years (26.04, 24.04, 22.04).
   * Non-LTS versions: Any version that was released in the last 9 months.
 * Debian: Any version that was released in the last 3 years (13, 12).
 * RHEL (and its clones): Any version that was released in the last 6 years (10, 9).
