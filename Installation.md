@@ -153,6 +153,22 @@ To access tesseract-OCR from any location you may have to add the directory wher
 
 Experts can also get binaries build with Visual Studio from the build artifacts of the [Appveyor Continuous Integration](https://ci.appveyor.com/project/zdenop/tesseract/history).
 
+#### Package Managers
+
+Tesseract is also available via the following third-party package managers. These are community-maintained and may lag behind the latest release. For the most up-to-date version, use the [UB Mannheim installer](https://github.com/UB-Mannheim/tesseract/wiki) instead. For packaging issues, please contact the respective package maintainers.
+
+**Chocolatey:**
+
+```
+choco install tesseract
+```
+
+**Scoop:**
+
+```
+scoop install tesseract
+```
+
 #### Cygwin
 
 Released version >= 3.02 of tesseract-ocr [are part of ](https://mirrors.kernel.org/sourceware/cygwin/x86_64/release/tesseract-ocr/) [Cygwin](https://www.cygwin.com/)
