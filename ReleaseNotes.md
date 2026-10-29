@@ -5,6 +5,7 @@ This page keeps the most up-to-date release notes.
 Table of Contents
 =================
 * [IN DEVELOPMENT](ReleaseNotes.md#in-development)
+* [V5.5.4](#v554) Oct 28 2026
 * [V5.5.3](#v553) Jul 24 2026
 * [V5.5.2](#v552) Dec 26 2025
 * [V5.5.1](#v551) May 25 2025
@@ -55,6 +56,13 @@ Table of Contents
 
 * [Binary compatibility report for Tesseract: 4.1.3 vs 5.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=4.1.3&v2=5.0.0)
 * [Binary compatibility report for Tesseract: 3.05.02 vs 4.0.0](https://abi-laboratory.pro/index.php?view=objects_report&l=tesseract&v1=3.05.02&v2=4.0.0)
+
+
+# V5.5.4
+
+_Oct 28 2026_
+
+https://github.com/tesseract-ocr/tesseract/releases/tag/5.5.4
 
 # V5.5.3
 
