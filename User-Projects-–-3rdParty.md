@@ -79,6 +79,7 @@
   1. [pdf2pdfocr](https://github.com/LeoFCardoso/pdf2pdfocr) is a tool to OCR a PDF (or supported images) and add a text layer in the original file making it a searchable PDF. It is a python script that uses tesseract and other open source tools. Linux, macOS and Windows supported.
   1. [pdf2searchablepdf](https://github.com/ElectricRCAircraftGuy/PDF2SearchablePDF) - a tool which allows converting any non-searchable PDF, OR any entire directory of images, to a searchable PDF
   1. [Fizzdoc OCR PDF](https://fizzdoc.com/ocr-pdf/) ([source](https://github.com/kingrishabdugar/fizzdoc)) - Adds a searchable text layer to scanned PDFs in the browser with tesseract.js, so files are never uploaded. English only for now.
+  1. [Nyxiontech PDF Tools](https://tools.nyxiontech.com/ocr-pdf) ([source](https://github.com/jurecki007/nyxiontech-tools)) - Adds a searchable text layer to scanned PDFs with tesseract.js in the browser, so files are never uploaded. Polish and English. Also available as a Windows app.
   
 ### B. Others:
 
