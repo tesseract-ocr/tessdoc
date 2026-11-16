@@ -83,6 +83,7 @@
   
 ### B. Others:
 
+  1. [RedactPal](https://github.com/stefano2007517-star/redactpal) - Browser-based redaction tool built on tesseract.js: OCRs screenshots and scanned PDFs on-device, detects emails, card numbers and API keys, and covers them with solid boxes. MIT licensed; live at [redactpal.com](https://redactpal.com).
   1. [Tessract_path_finder](https://github.com/MrSpideyNihal/Tessract_path_finder) - A comprehensive, cross-platform Python utility that automatically discovers Tesseract OCR tessdata directories. 
   1. [Docling](https://ds4sd.github.io/docling/) - Docling parses documents and exports them to the desired format with ease and speed.
   1. [Scantools](https://gitlab.com/kebekus/scantools) - A library and a matching set of command line applications for
